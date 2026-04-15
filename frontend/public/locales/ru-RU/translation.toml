@@ -1,3 +1,4 @@
+accessInvite = "Пригласить"
 addToDoc = "Добавить в документ"
 alphabet = "Алфавит"
 apply = "Применить"
@@ -8,22 +9,22 @@ black = "Черный"
 blue = "Синий"
 bored = "Скучно ждать?"
 cancel = "Отмена"
-confirm = "Подтвердить"
 changedCredsMessage = "Учетные данные изменены!"
 chooseFile = "Выбрать файл"
 close = "Закрыть"
 color = "Цвет"
 comingSoon = "Скоро"
+confirm = "Подтвердить"
 confirmClose = "Подтвердить закрытие"
 confirmCloseCancel = "Отмена"
 confirmCloseConfirm = "Закрыть файл"
-confirmCloseMessage = "Вы уверены, что хотите закрыть этот файл?"
 confirmCloseDiscard = "Отменить изменения и закрыть"
+confirmCloseMessage = "Вы уверены, что хотите закрыть этот файл?"
 confirmCloseSave = "Сохранить и закрыть"
+confirmCloseSaveFailed = "Сохранено с ошибками. {{count}} файл{{plural}} не удалось сохранить."
+confirmCloseSaveFailedTitle = "Не удалось сохранить"
 confirmCloseUnsaved = "В этом файле есть несохранённые изменения."
 confirmCloseUnsavedList = "У вас {{count}} файл{{plural}} с несохранёнными изменениями.\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "Не удалось сохранить"
-confirmCloseSaveFailed = "Сохранено с ошибками. {{count}} файл{{plural}} не удалось сохранить."
 confirmPasswordErrorMessage = "Новый пароль и его подтверждение должны совпадать."
 custom = "Пользовательский..."
 customPosition = "Пользовательское положение"
@@ -43,11 +44,14 @@ downloadComplete = "Загрузка завершена"
 downloadPdf = "Скачать PDF"
 downloadUnavailable = "Загрузка недоступна для этого элемента"
 edit = "Редактировать"
+editSecret = "Изменить это значение"
 editYourNewFiles = "Отредактируйте ваши новые файлы"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "Экспорт и продолжить"
 false = "Нет"
-fileSavedToDisk = "Файл сохранён на диск"
 fileNotSavedToDisk = "Не сохранён на диск"
+fileSavedToDisk = "Файл сохранён на диск"
 fileSelected = "Выбрано: {{filename}}"
 filesSelected = "файлов выбрано"
 font = "Шрифт"
@@ -61,12 +65,15 @@ help = "Помощь"
 imgPrompt = "Выберите изображение(я)"
 incorrectPasswordMessage = "Текущий пароль неверен."
 info = "Информация"
+insufficientCredits = "Недостаточно кредитов. Требуется: {{requiredCredits}}, Доступно: {{currentBalance}}, Не хватает: {{shortfall}}"
 invalidPasswordMessage = "Пароль не должен быть пустым и не должен содержать пробелы в начале или конце."
 invalidUndoData = "Нельзя отменить: неверные данные операции"
 invalidUsernameMessage = "Недопустимое имя пользователя, оно может содержать только буквы, цифры и следующие специальные символы @._+- или должно быть действительным адресом электронной почты."
 joinDiscord = "Присоединиться к Discord"
 keepWorking = "Продолжить работу"
 loading = "Загрузка..."
+loadingCredits = "Проверка кредитов..."
+loadingProStatus = "Проверка статуса подписки..."
 logOut = "Выйти"
 marginTooltip = "Расстояние между номером страницы и краем страницы."
 moreOptions = "Больше параметров"
@@ -80,6 +87,7 @@ noFilesToUndo = "Нельзя отменить: в последней опера
 noOperationToUndo = "Нет операции для отмены"
 notAuthenticatedMessage = "Пользователь не прошел аутентификацию."
 nothingToUndo = "Отменять нечего"
+noticeTopUpOrPlan = "Недостаточно кредитов, пополните баланс или перейдите на тариф"
 noValidFiles = "Нет подходящих файлов для обработки"
 oops = "Упс!"
 openInViewer = "Открыть в просмотрщике"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "Неприменённые зачернения"
 pin = "Закрепить файл (оставить активным после выполнения инструмента)"
 poweredBy = "Работает на"
 pro = "Pro"
-processTimeWarning = "Внимание: Данный процесс может занять до минуты в зависимости от размера файла"
 processingComplete = "Ваш файл готов."
 processingCompleteMultiple = "{{count}} файлов готовы."
+processTimeWarning = "Внимание: Данный процесс может занять до минуты в зависимости от размера файла"
 property = "Свойство"
 quickPosition = "Быстрое положение"
 red = "Красный"
@@ -108,7 +116,6 @@ save = "Сохранить"
 saveToBrowser = "Сохранить в браузере"
 saveUnavailable = "Сохранение недоступно для этого элемента"
 seeDockerHub = "Посмотреть на Docker Hub"
-editSecret = "Изменить это значение"
 selectFillter = "-- Выбрать --"
 size = "Размер"
 sponsor = "Спонсор"
@@ -143,11 +150,6 @@ welcome = "Добро пожаловать"
 white = "Белый"
 WorkInProgess = "В разработке, возможны ошибки и сбои, пожалуйста, сообщайте о любых проблемах!"
 yes = "Да"
-insufficientCredits = "Недостаточно кредитов. Требуется: {{requiredCredits}}, Доступно: {{currentBalance}}, Не хватает: {{shortfall}}"
-loadingCredits = "Проверка кредитов..."
-loadingProStatus = "Проверка статуса подписки..."
-noticeTopUpOrPlan = "Недостаточно кредитов, пополните баланс или перейдите на тариф"
-accessInvite = "Пригласить"
 
 [account]
 accountSettings = "Настройки аккаунта"
@@ -851,6 +853,14 @@ title = "Эндпойнты API"
 userDefaults = "Значения по умолчанию для пользовательских настроек"
 userDefaultsDescription = "Задайте значения по умолчанию для пользовательских настроек. Пользователи могут переопределить их в личных настройках."
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "Удалять отключённые параметры конвертации вместо отображения их неактивными"
+label = "Скрывать недоступные конвертации по умолчанию"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "Удалять отключённые инструменты вместо отображения их неактивными"
+label = "Скрывать недоступные инструменты по умолчанию"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "Выберите группы эндпойнтов для отключения"
 label = "Отключенные группы эндпойнтов"
@@ -858,14 +868,6 @@ label = "Отключенные группы эндпойнтов"
 [admin.settings.endpoints.toRemove]
 description = "Выберите отдельные эндпойнты для отключения"
 label = "Отключенные эндпойнты"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "Удалять отключённые инструменты вместо отображения их неактивными"
-label = "Скрывать недоступные инструменты по умолчанию"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "Удалять отключённые параметры конвертации вместо отображения их неактивными"
-label = "Скрывать недоступные конвертации по умолчанию"
 
 [admin.settings.enterpriseRequired]
 message = "Для доступа к {{featureName}} требуется лицензия Enterprise. Вы просматриваете демонстрационные данные для справки."
@@ -974,6 +976,10 @@ label = "Локаль по умолчанию"
 description = "Максимальный размер загружаемого файла (например, 100MB, 1GB)"
 label = "Лимит загрузки файлов"
 
+[admin.settings.general.frontendUrl]
+description = "Базовый URL фронтенда (например, https://pdf.example.com). Используется для ссылок приглашений по email и загрузок через мобильный QR‑код. Оставьте пустым, чтобы использовать URL бэкенда."
+label = "Frontend URL"
+
 [admin.settings.general.hideDisabledTools]
 description = "Скрывать отключенные инструменты из интерфейса"
 label = "Скрывать отключенные инструменты"
@@ -985,10 +991,6 @@ label = "Скрывать Google Drive"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "Скрывать кнопку мобильного QR-сканера, если не включено"
 label = "Скрывать мобильный сканер"
-
-[admin.settings.general.frontendUrl]
-description = "Базовый URL фронтенда (например, https://pdf.example.com). Используется для ссылок приглашений по email и загрузок через мобильный QR‑код. Оставьте пустым, чтобы использовать URL бэкенда."
-label = "Frontend URL"
 
 [admin.settings.general.homeDescription]
 description = "Текст описания, показываемый на главной странице"
@@ -1169,9 +1171,25 @@ description = "Настройка аутентификации, поведени
 title = "Безопасность"
 
 [admin.settings.security.audit]
+hideDetails = "Скрыть подробности уровня аудита"
 label = "Журналирование аудита"
 showDetails = "Показать подробности уровня аудита"
-hideDetails = "Скрыть подробности уровня аудита"
+
+[admin.settings.security.audit.advancedOptions]
+description = "Следующие параметры увеличивают время обработки и использование памяти. Включайте только при реальной необходимости."
+title = "Расширенные параметры"
+
+[admin.settings.security.audit.captureFileHash]
+description = "Извлекать SHA-256 хэш загруженных PDF-файлов для проверки целостности. Независимо от уровня аудита."
+label = "Фиксировать хэш файла (SHA-256)"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "Фиксировать возвращаемые значения методов. Не рекомендуется: значительно увеличивает объем журналов и использование диска."
+label = "Фиксировать результаты операций"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "Извлекать поле автора из PDF-документов во время обработки. Требует разбора PDF, увеличивает задержку. Независимо от уровня аудита."
+label = "Фиксировать метаданные автора PDF"
 
 [admin.settings.security.audit.enabled]
 description = "Отслеживать действия пользователей и системные события для соответствия требованиям и мониторинга безопасности"
@@ -1182,30 +1200,14 @@ description = "0=ВЫКЛ, 1=БАЗОВЫЙ, 2=СТАНДАРТНЫЙ, 3=ПОД�
 label = "Уровень аудита"
 
 [admin.settings.security.audit.levelDetails]
-off = "Без журналирования аудита (кроме критических событий безопасности)"
 basic = "Операции с PDF-файлами (compress, split, merge и т. д.) и изменения настроек. Фиксируется: статус операции (успех/ошибка), параметры методов, тайминги. Минимальный объем журнала."
+off = "Без журналирования аудита (кроме критических событий безопасности)"
 standard = "События BASIC, а также: вход/выход пользователя, изменения учетной записи, общие GET-запросы. Исключает непрерывные опросы (/auth/me, /app-config, /health и т. д.), чтобы снизить шум в журналах. Оптимально для большинства развертываний."
 verbose = "События STANDARD, а также: непрерывные опросы, все GET-запросы, детальные тайминги. Внимание: большой объем журналов и влияние на производительность."
 
 [admin.settings.security.audit.retentionDays]
 description = "Количество дней хранения журналов аудита"
 label = "Срок хранения аудита (дни)"
-
-[admin.settings.security.audit.advancedOptions]
-title = "Расширенные параметры"
-description = "Следующие параметры увеличивают время обработки и использование памяти. Включайте только при реальной необходимости."
-
-[admin.settings.security.audit.captureFileHash]
-description = "Извлекать SHA-256 хэш загруженных PDF-файлов для проверки целостности. Независимо от уровня аудита."
-label = "Фиксировать хэш файла (SHA-256)"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "Извлекать поле автора из PDF-документов во время обработки. Требует разбора PDF, увеличивает задержку. Независимо от уровня аудита."
-label = "Фиксировать метаданные автора PDF"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "Фиксировать возвращаемые значения методов. Не рекомендуется: значительно увеличивает объем журналов и использование диска."
-label = "Фиксировать результаты операций"
 
 [admin.settings.security.csrfDisabled]
 description = "Отключить защиту от межсайтовой подделки запросов (не рекомендуется)"
@@ -1274,6 +1276,14 @@ label = "Начальное имя пользователя"
 [admin.settings.security.jwt]
 label = "Конфигурация JWT"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "Допуск расхождения времени клиента/сервера при проверке токена (по умолчанию: 60 секунд)"
+label = "Допустимое расхождение времени (секунды)"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "Время жизни токена доступа в минутах для настольных клиентов. Настольные приложения автоматически определяются по User-Agent и получают более длительные сессии для лучшего UX (по умолчанию: 43200 = 30 дней)"
+label = "Срок действия токена для настольных клиентов (в минутах)"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "Автоматически удалять просроченные ключи JWT"
 label = "Включить очистку ключей"
@@ -1282,29 +1292,21 @@ label = "Включить очистку ключей"
 description = "Автоматически периодически ротировать ключи подписи JWT"
 label = "Включить ротацию ключей"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "Время жизни токена доступа в минутах для веб‑клиентов (по умолчанию: 1440 = 24 часа)"
-label = "Срок действия веб‑токена (в минутах)"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "Время жизни токена доступа в минутах для настольных клиентов. Настольные приложения автоматически определяются по User-Agent и получают более длительные сессии для лучшего UX (по умолчанию: 43200 = 30 дней)"
-label = "Срок действия токена для настольных клиентов (в минутах)"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "Допуск расхождения времени клиента/сервера при проверке токена (по умолчанию: 60 секунд)"
-label = "Допустимое расхождение времени (секунды)"
+[admin.settings.security.jwt.persistence]
+description = "Хранить ключи JWT постоянно, чтобы переживать перезапуски сервера"
+label = "Включить постоянность ключей"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "Разрешить обновление токена в течение указанного количества минут после истечения срока (по умолчанию: 15 минут, максимум 3 попытки)"
 label = "Льготный период обновления (минуты)"
 
-[admin.settings.security.jwt.persistence]
-description = "Хранить ключи JWT постоянно, чтобы переживать перезапуски сервера"
-label = "Включить постоянность ключей"
-
 [admin.settings.security.jwt.secureCookie]
 description = "Требовать HTTPS для cookie с JWT (рекомендуется для продакшена)"
 label = "Безопасная cookie"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "Время жизни токена доступа в минутах для веб‑клиентов (по умолчанию: 1440 = 24 часа)"
+label = "Срок действия веб‑токена (в минутах)"
 
 [admin.settings.security.loginAttemptCount]
 description = "Максимальное число неудачных попыток входа до блокировки учетной записи"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "Управляйте хранением на сервере и параметрами общего доступа."
+title = "Хранение файлов и общий доступ"
+
+[admin.settings.storage.enabled]
+description = "Разрешить пользователям хранить файлы на сервере."
+label = "Включить хранение файлов на сервере"
+
+[admin.settings.storage.sharing.email]
+description = "Разрешить общий доступ по адресам электронной почты."
+label = "Включить общий доступ по электронной почте"
+mailLink = "Настроить параметры почты"
+mailNote = "Требуется настройка почты. "
+
+[admin.settings.storage.sharing.enabled]
+description = "Разрешить пользователям делиться сохранёнными файлами."
+label = "Включить общий доступ"
+
+[admin.settings.storage.sharing.links]
+description = "Разрешить общий доступ через ссылки для вошедших пользователей."
+frontendUrlLink = "Настроить в системных настройках"
+frontendUrlNote = "Требуется Frontend URL. "
+label = "Включить ссылки общего доступа"
+
+[admin.settings.storage.signing.enabled]
+description = "Разрешить пользователям создавать сессии подписания документа с несколькими участниками. Требуется включить хранение файлов на сервере."
+label = "Включить групповое подписание (Alpha)"
 
 [admin.settings.telegram]
 description = "Настройте подключение бота Telegram, контроль доступа и поведение обратной связи."
@@ -1429,34 +1459,6 @@ title = "Обработка"
 description = "Максимальное время ожидания выполнения задачи до сообщения об ошибке."
 label = "Таймаут обработки (секунды)"
 
-[admin.settings.storage]
-description = "Управляйте хранением на сервере и параметрами общего доступа."
-title = "Хранение файлов и общий доступ"
-
-[admin.settings.storage.enabled]
-description = "Разрешить пользователям хранить файлы на сервере."
-label = "Включить хранение файлов на сервере"
-
-[admin.settings.storage.sharing.email]
-description = "Разрешить общий доступ по адресам электронной почты."
-label = "Включить общий доступ по электронной почте"
-mailLink = "Настроить параметры почты"
-mailNote = "Требуется настройка почты. "
-
-[admin.settings.storage.sharing.enabled]
-description = "Разрешить пользователям делиться сохранёнными файлами."
-label = "Включить общий доступ"
-
-[admin.settings.storage.sharing.links]
-description = "Разрешить общий доступ через ссылки для вошедших пользователей."
-frontendUrlLink = "Настроить в системных настройках"
-frontendUrlNote = "Требуется Frontend URL. "
-label = "Включить ссылки общего доступа"
-
-[admin.settings.storage.signing.enabled]
-description = "Разрешить пользователям создавать сессии подписания документа с несколькими участниками. Требуется включить хранение файлов на сервере."
-label = "Включить групповое подписание (Alpha)"
-
 [admin.settings.unsavedChanges]
 cancel = "Продолжить редактирование"
 discard = "Отменить изменения"
@@ -1521,6 +1523,7 @@ settings = "Вы можете изменить настройки аналити
 title = "Хотите улучшить Stirling PDF?"
 
 [annotation]
+annotationStyle = "Стиль аннотаций"
 applyChanges = "Применить изменения"
 backgroundColor = "Цвет фона"
 borderOff = "Граница: Выкл."
@@ -1530,6 +1533,8 @@ chooseColor = "Выберите цвет"
 circle = "Круг"
 clearBackground = "Удалить фон"
 color = "Цвет"
+comment = "Комментарий"
+comments = "Комментарии"
 contents = "Текст"
 delete = "Удалить"
 desc = "Используйте выделение, перо, текст и заметки. Изменения остаются «живыми» — сплющивание не требуется."
@@ -1547,7 +1552,6 @@ editStampHint = "Чтобы изменить изображение, удали�
 editSwitchToSelect = "Переключитесь в «Выбрать и изменить», чтобы редактировать эту аннотацию."
 editText = "Изменить текстовое поле"
 editTextMarkup = "Изменить разметку текста"
-annotationStyle = "Стиль аннотаций"
 ellipse = "Эллипс"
 exit = "Выйти из режима аннотаций"
 fillColor = "Цвет заливки"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "Свободное выделение маркером"
 highlight = "Выделение"
 imagePreview = "Предпросмотр"
 inkHighlighter = "Свободное выделение маркером"
+insertText = "Вставить текст"
 line = "Линия"
 lineArrow = "Стрелка"
 noBackground = "Без фона"
 note = "Заметка"
-comment = "Комментарий"
-comments = "Комментарии"
-insertText = "Вставить текст"
-replaceText = "Заменить текст"
 noteIcon = "Значок заметки"
 notesStamps = "Заметки и штампы"
 opacity = "Непрозрачность"
@@ -1574,6 +1575,7 @@ polyline = "Полилиния"
 properties = "Свойства"
 rectangle = "Прямоугольник"
 redo = "Повторить"
+replaceText = "Заменить текст"
 saveChanges = "Сохранить изменения"
 saveFailed = "Не удалось сохранить копию"
 saveReady = "Готово к загрузке"
@@ -1627,68 +1629,6 @@ goToSettings = "Перейти к настройкам аудита"
 notAvailable = "Система аудита недоступна"
 notAvailableMessage = "Система аудита не настроена или недоступна."
 
-[audit.error]
-title = "Ошибка загрузки системы аудита"
-
-[audit.export]
-clearFilters = "Очистить"
-description = "Экспортируйте события аудита в формат CSV или JSON. Используйте фильтры, чтобы ограничить экспортируемые данные."
-endDate = "Дата окончания"
-error = "Не удалось экспортировать данные"
-exportButton = "Экспортировать данные"
-fieldAuthor = "Автор (из PDF)"
-fieldDate = "Дата"
-fieldDocumentName = "Имя документа"
-fieldFileHash = "Хэш файла (SHA-256)"
-fieldIpAddress = "IP-адрес"
-fieldOperationResults = "Результаты операции"
-fieldOutcome = "Результат (успех/ошибка)"
-fieldTool = "Инструмент"
-fieldUsername = "Имя пользователя"
-filterByType = "Фильтр по типу"
-filterByUser = "Фильтр по пользователю"
-filters = "Фильтры (необязательно)"
-format = "Формат экспорта"
-selectFields = "Выберите поля для включения"
-startDate = "Дата начала"
-title = "Экспорт данных аудита"
-verboseRequired = "Требуется уровень аудита VERBOSE"
-
-[audit.systemStatus]
-autoRefresh = "Автообновление"
-autoRefreshLabel = "Автообновление каждые 30 с"
-captureBySettings = "Включите в настройках"
-capturedFields = "Собираемые поля"
-date = "Дата"
-days = "дн."
-disabled = "Отключен"
-documentName = "Имя документа"
-enabled = "Включен"
-fileHash = "Хэш файла"
-level = "Уровень аудита"
-pdfAuthor = "Автор PDF"
-retention = "Срок хранения"
-status = "Журнал аудита"
-title = "Состояние системы"
-tool = "Инструмент"
-totalEvents = "Всего событий"
-username = "Имя пользователя"
-verboseOnly = "Только VERBOSE"
-
-[audit.stats]
-activeUsers = "Активные пользователи"
-attention = "Требуется внимание"
-avgLatency = "Средняя задержка"
-error = "Ошибка загрузки статистики"
-errorLoadingStats = "Не удалось загрузить статистику"
-excellent = "Отлично"
-good = "Хорошо"
-noData = "Н/Д"
-successRate = "Уровень успешности"
-title = "Сводка"
-totalEvents = "Всего событий"
-vsLastPeriod = "по сравнению с прошлым периодом"
-
 [audit.charts]
 byTool = "Топ используемых инструментов"
 byType = "События по типу"
@@ -1701,6 +1641,27 @@ noData = "Нет данных за этот период"
 overTime = "События во времени"
 title = "Панель аудита"
 week = "Неделя"
+
+[audit.clearData]
+cancel = "Отмена"
+codeDoesNotMatch = "Код не совпадает"
+codePlaceholder = "Введите код здесь"
+confirmationCode = "Код подтверждения"
+confirmationRequired = "Удалить все данные аудита"
+confirmMessage = "Это навсегда удалит все журналы аудита. Введите код подтверждения ниже, чтобы продолжить."
+confirmTitle = "Подтвердите удаление"
+deleteButton = "Удалить"
+enterCode = "Код подтверждения"
+enterCodeBelow = "Введите код в точности как выше (с учетом регистра)"
+initiateDelete = "Удалить все данные"
+irreversible = "НЕОБРАТИМО"
+success = "Успех"
+successMessage = "Все данные аудита успешно удалены"
+warning1 = "Это действие нельзя отменить"
+warning2 = "Удаление данных аудита навсегда удалит все исторические журналы аудита, включая события безопасности, действия пользователей и операции с файлами из базы данных."
+
+[audit.error]
+title = "Ошибка загрузки системы аудита"
 
 [audit.events]
 actions = "Действия"
@@ -1728,40 +1689,81 @@ type = "Тип"
 user = "Пользователь"
 viewDetails = "Просмотреть подробности"
 
+[audit.export]
+clearFilters = "Очистить"
+description = "Экспортируйте события аудита в формат CSV или JSON. Используйте фильтры, чтобы ограничить экспортируемые данные."
+endDate = "Дата окончания"
+error = "Не удалось экспортировать данные"
+exportButton = "Экспортировать данные"
+fieldAuthor = "Автор (из PDF)"
+fieldDate = "Дата"
+fieldDocumentName = "Имя документа"
+fieldFileHash = "Хэш файла (SHA-256)"
+fieldIpAddress = "IP-адрес"
+fieldOperationResults = "Результаты операции"
+fieldOutcome = "Результат (успех/ошибка)"
+fieldTool = "Инструмент"
+fieldUsername = "Имя пользователя"
+filterByType = "Фильтр по типу"
+filterByUser = "Фильтр по пользователю"
+filters = "Фильтры (необязательно)"
+format = "Формат экспорта"
+selectFields = "Выберите поля для включения"
+startDate = "Дата начала"
+title = "Экспорт данных аудита"
+verboseRequired = "Требуется уровень аудита VERBOSE"
+
 [audit.filters]
 allOutcomes = "Все"
 failureOnly = "Только ошибки"
-last7Days = "За последние 7 дней"
 last30Days = "За последние 30 дней"
+last7Days = "За последние 7 дней"
 outcomeFilter = "Результат"
 quickPresets = "Быстрые фильтры"
 successOnly = "Только успех"
 thisMonth = "В этом месяце"
 today = "Сегодня"
 
+[audit.stats]
+activeUsers = "Активные пользователи"
+attention = "Требуется внимание"
+avgLatency = "Средняя задержка"
+error = "Ошибка загрузки статистики"
+errorLoadingStats = "Не удалось загрузить статистику"
+excellent = "Отлично"
+good = "Хорошо"
+noData = "Н/Д"
+successRate = "Уровень успешности"
+title = "Сводка"
+totalEvents = "Всего событий"
+vsLastPeriod = "по сравнению с прошлым периодом"
+
+[audit.systemStatus]
+autoRefresh = "Автообновление"
+autoRefreshLabel = "Автообновление каждые 30 с"
+captureBySettings = "Включите в настройках"
+capturedFields = "Собираемые поля"
+date = "Дата"
+days = "дн."
+disabled = "Отключен"
+documentName = "Имя документа"
+enabled = "Включен"
+fileHash = "Хэш файла"
+level = "Уровень аудита"
+pdfAuthor = "Автор PDF"
+retention = "Срок хранения"
+status = "Журнал аудита"
+title = "Состояние системы"
+tool = "Инструмент"
+totalEvents = "Всего событий"
+username = "Имя пользователя"
+verboseOnly = "Только VERBOSE"
+
 [audit.tabs]
 clearData = "Очистить данные"
 dashboard = "Панель"
 events = "События аудита"
 export = "Экспорт"
-
-[audit.clearData]
-cancel = "Отмена"
-codeDoesNotMatch = "Код не совпадает"
-codePlaceholder = "Введите код здесь"
-confirmationCode = "Код подтверждения"
-confirmationRequired = "Удалить все данные аудита"
-confirmMessage = "Это навсегда удалит все журналы аудита. Введите код подтверждения ниже, чтобы продолжить."
-confirmTitle = "Подтвердите удаление"
-deleteButton = "Удалить"
-enterCode = "Код подтверждения"
-enterCodeBelow = "Введите код в точности как выше (с учетом регистра)"
-initiateDelete = "Удалить все данные"
-irreversible = "НЕОБРАТИМО"
-success = "Успех"
-successMessage = "Все данные аудита успешно удалены"
-warning1 = "Это действие нельзя отменить"
-warning2 = "Удаление данных аудита навсегда удалит все исторические журналы аудита, включая события безопасности, действия пользователей и операции с файлами из базы данных."
 
 [auth]
 accessDenied = "Доступ запрещен"
@@ -2088,43 +2090,70 @@ keywords = "Ключевые слова: odd, even"
 numbers = "Числа/диапазоны: 5, 10–20"
 progressions = "Прогрессии: 3n, 4n+1"
 
+[certificateChoice.tooltip]
+header = "Типы сертификатов"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "Управляется системными администраторами"
+bullet2 = "Доступен авторизованным пользователям"
+bullet3 = "Представляет компанию, а не конкретного человека"
+bullet4 = "Лучше всего для: официальных документов, командных подписей"
+description = "Общий сертификат вашей организации. Используется для корпоративной подписи."
+title = "Сертификат организации"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "Генерируется автоматически при первом использовании"
+bullet2 = "Привязан к вашей учётной записи"
+bullet3 = "Нельзя поделиться с другими пользователями"
+bullet4 = "Лучше всего для: личных документов, индивидуальной ответственности"
+description = "Автоматически сгенерированный сертификат, уникальный для вашей учётной записи. Подходит для индивидуальных подписей."
+title = "Личный сертификат"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "Требуются файл P12/PFX и пароль"
+bullet2 = "Может быть выдан внешними центрами сертификации"
+bullet3 = "Более высокий уровень доверия для юридических документов"
+bullet4 = "Лучше всего для: юридически значимых контрактов, внешней валидации"
+description = "Используйте собственный сертификат PKCS#12. Предоставляет полный контроль над свойствами сертификата."
+title = "Загрузить собственный P12"
+
 [certSign]
 allSigned = "Все участники подписали. Готово к завершению."
 awaitingSignatures = "Ожидание подписей"
-signatureProgress = "{{signedCount}}/{{totalCount}} подписей"
 chooseCertificate = "Выберите файл сертификата"
-declined = "Отклонено"
-fetchFailed = "Не удалось загрузить данные о подписании"
-finalized = "Завершено"
-notified = "Ожидает"
-partialNote = "Вы можете завершить раньше с текущими подписями. Неподписавшие участники будут исключены."
-pending = "Ожидает"
-readyToFinalize = "Готово к завершению"
-signed = "Подписано"
-viewed = "Просмотрено"
 chooseJksFile = "Выберите файл JKS"
 chooseP12File = "Выберите файл PKCS12"
 choosePfxFile = "Выберите файл PFX"
 choosePrivateKey = "Выберите файл закрытого ключа"
+declined = "Отклонено"
+fetchFailed = "Не удалось загрузить данные о подписании"
 filenamePrefix = "подписано"
+finalized = "Завершено"
 location = "Местоположение"
 logoTitle = "Логотип"
 name = "Имя"
 noLogo = "Без логотипа"
+notified = "Ожидает"
 pageNumber = "Номер страницы"
+partialNote = "Вы можете завершить раньше с текущими подписями. Неподписавшие участники будут исключены."
 password = "Пароль сертификата"
 passwordOptional = "Оставьте пустым, если пароля нет"
+pending = "Ожидает"
+readyToFinalize = "Готово к завершению"
 reason = "Причина"
 serverCertMessage = "Используется сертификат сервера — файлы и пароль не требуются"
 showLogo = "Показывать логотип"
+signatureProgress = "{{signedCount}}/{{totalCount}} подписей"
+signed = "Подписано"
 tags = "аутентификация,PEM,P12,официальный,шифрование"
 title = "Подписание сертификатом"
+viewed = "Просмотрено"
 
 [certSign.appearance]
 invisible = "Невидимая"
 stepTitle = "Вид подписи"
-visible = "Видимая"
 visibility = "Видимость"
+visible = "Видимая"
 
 [certSign.appearance.options]
 title = "Сведения о подписи"
@@ -2172,8 +2201,227 @@ title = "Какой вариант выбрать?"
 [certSign.certTypeStep]
 stepTitle = "Формат сертификата"
 
+[certSign.collab.addParticipants]
+add = "Добавить {{count}} участник(ов)"
+back = "Назад"
+configureSignatures = "Настроить параметры подписи"
+continue = "Перейти к настройкам подписи"
+reasonHelp = "Предустановить причину подписания для этих участников (необязательно; её можно изменить при подписании)"
+reasonPlaceholder = "например, «Утверждение», «Проверка»..."
+selectUsers = "Выбрать пользователей"
+
+[certSign.collab.finalize]
+button = "Завершить и загрузить подписанный PDF"
+early = "Завершить с текущими подписями"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "Недействительный сертификат"
+certNetworkError = "Не удалось подтвердить сертификат"
+certValid = "✓ Сертификат действителен"
+certValidating = "Проверка сертификата..."
+certValidUntil = " до {{date}}"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "Добавить страницу сводки подписей"
+includeSummaryPageHelp = "В конце будет добавлена страница со всеми метаданными подписи. Поля цифровой подписи на отдельных страницах будут скрыты (рукописные подписи не затронуты)."
+
+[certSign.collab.sessionDetail]
+addButton = "Добавить участников"
+addParticipants = "Добавить участников"
+addParticipantsError = "Не удалось добавить участников"
+backToList = "Назад к сессиям"
+deleteConfirm = "Вы уверены? Действие необратимо."
+deleted = "Сессия удалена"
+deleteError = "Не удалось удалить сессию"
+deleteSession = "Удалить сессию"
+dueDate = "Срок"
+finalizeError = "Не удалось завершить сессию"
+loadPdfError = "Не удалось загрузить подписанный PDF"
+loadSignedPdf = "Загрузить подписанный PDF в активные файлы"
+messageLabel = "Сообщение"
+noAdditionalInfo = "Нет дополнительной информации"
+owner = "Владелец"
+participantRemoved = "Участник удалён"
+participants = "Участники"
+participantsAdded = "Участники успешно добавлены"
+removeParticipant = "Удалить"
+removeParticipantError = "Не удалось удалить участника"
+selectUsers = "Выберите пользователей..."
+sessionInfo = "Информация о сессии"
+workbenchTitle = "Управление сессией"
+
+[certSign.collab.sessionList]
+active = "Активные"
+finalized = "Завершённые"
+
+[certSign.collab.signatureSettings]
+description = "Настройте, как будут выглядеть подписи для всех участников"
+title = "Внешний вид подписи"
+
+[certSign.collab.signRequest]
+addedToFiles = "Документ добавлен в активные файлы"
+addSignature = "Добавьте свою подпись"
+addToFiles = "Добавить в активные файлы"
+advancedSettings = "Дополнительные настройки"
+backToList = "Назад к запросам подписи"
+certificateChoice = "Выберите сертификат для подписи"
+changeSignature = "Изменить подпись"
+clearSignature = "Очистить подпись"
+completeAndSign = "Завершить и подписать"
+createNewSignature = "Создать новую подпись"
+decline = "Отклонить запрос"
+declineButton = "Отклонить"
+deleteSelected = "Удалить выбранную подпись"
+drawSignature = "Нарисуйте свою подпись ниже"
+dueDate = "Срок"
+fileTooLarge = "Размер файла должен быть меньше 5 МБ"
+fontFamily = "Шрифт"
+fontSize = "Размер шрифта: {{size}}px"
+fontSizePlaceholder = "Размер"
+from = "От"
+invalidCertFile = "Выберите файл сертификата P12 или PFX"
+invalidFileType = "Выберите файл изображения"
+location = "Местоположение (необязательно)"
+locationPlaceholder = "Откуда вы подписываете?"
+message = "Сообщение"
+noCertificate = "Выберите файл сертификата"
+noSignatures = "Разместите хотя бы одну подпись на PDF"
+p12File = "Файл сертификата P12/PFX"
+password = "Пароль сертификата"
+passwordPlaceholder = "Введите пароль..."
+penColor = "Цвет пера"
+penSize = "Толщина пера: {{size}}px"
+placementActive = "Щёлкните по PDF, чтобы разместить"
+placeSignatureButton = "Разместить подпись на PDF"
+reason = "Причина (необязательно)"
+reasonPlaceholder = "Зачем вы подписываете?"
+removeCertFile = "Удалить файл"
+removeImage = "Удалить изображение"
+savedSignatures = "Сохранённые подписи"
+selectFile = "Выбрать файл изображения"
+selectSignatureTitle = "Выбрать или создать подпись"
+signatureInfo = "Эти настройки задаёт владелец документа"
+signaturePlaced = "Подпись размещена на странице"
+signatureSettings = "Настройки подписи"
+signatureText = "Текст подписи"
+signatureTextPlaceholder = "Введите ваше имя..."
+signatureTypeLabel = "Тип подписи"
+signButton = "Подписать документ"
+signingTitle = "Подписание"
+textColor = "Цвет текста"
+typeSignature = "Введите своё имя, чтобы создать подпись"
+uploadCert = "Собственный сертификат"
+uploadCertDesc = "Используйте свой сертификат P12/PFX"
+uploadSignature = "Загрузите изображение подписи"
+usePersonalCert = "Личный сертификат"
+usePersonalCertDesc = "Автоматически сгенерирован для вашей учётной записи"
+useServerCert = "Сертификат организации"
+useServerCertDesc = "Общий сертификат организации"
+workbenchTitle = "Запрос подписи"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "Выберите цвет штриха"
+continue = "Продолжить"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "Недействительный сертификат: {{error}}"
+certInvalidFallback = "Недействительный сертификат"
+certNetworkError = "Не удалось подтвердить сертификат"
+certValidating = "Проверка сертификата..."
+certValidUntil = "Сертификат действителен до {{date}}"
+description = "Вы разместили {{count}} подпись(и). Выберите сертификат для завершения подписания."
+sign = "Подписать документ"
+title = "Настройка сертификата"
+
+[certSign.collab.signRequest.image]
+hint = "Загрузите изображение PNG или JPG с вашей подписью"
+
+[certSign.collab.signRequest.mode]
+move = "Переместить подпись"
+place = "Разместить подпись"
+title = "Режим размещения или перемещения"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "Рисовать"
+image = "Загрузить"
+text = "Ввести"
+
+[certSign.collab.signRequest.placeSignature]
+message = "Щёлкните по PDF, чтобы разместить свою подпись"
+title = "Разместить подпись"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "Выбранная подпись"
+missing = "Нет предпросмотра"
+textFallback = "Подпись"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "Рисованная подпись"
+defaultImageLabel = "Загруженная подпись"
+defaultLabel = "Подпись"
+defaultTextLabel = "Введённая подпись"
+delete = "Удалить подпись"
+none = "Сохранённых подписей нет"
+
+[certSign.collab.signRequest.signatureType]
+draw = "Рисовать"
+type = "Ввести"
+upload = "Загрузить"
+
+[certSign.collab.signRequest.steps]
+back = "Назад"
+cancelPlacement = "Отменить размещение"
+certificate = "Сертификат"
+clickMultipleTimes = "Щёлкните по PDF несколько раз, чтобы разместить подписи. Перетаскивайте подпись для перемещения или изменения размера."
+clickToPlace = "Щёлкните по PDF, где должна появиться ваша подпись."
+continue = "Перейти к выбору сертификата"
+continueToPlacement = "Перейти к размещению"
+continueToReview = "Перейти к проверке"
+createSignature = "Создать подпись"
+invisible = "Невидимая"
+location = "Местоположение:"
+multipleSignatures = "{{count}} подпись(и) будут применены к PDF"
+oneSignature = "1 подпись будет применена к PDF"
+placeOnPdf = "Разместить на PDF"
+reason = "Причина:"
+reviewTitle = "Проверка перед подписанием"
+signaturePlaced = "Подпись размещена на странице {{page}}. Вы можете скорректировать позицию, щёлкнув ещё раз, или продолжить к проверке."
+visibility = "Видимость:"
+visible = "Видимая"
+yourSignatures = "Ваши подписи ({{count}})"
+
+[certSign.collab.signRequest.text]
+colorLabel = "Цвет"
+fontLabel = "Шрифт"
+fontSizeLabel = "Размер"
+fontSizePlaceholder = "16"
+label = "Текст подписи"
+modalHint = "Введите своё имя, затем нажмите «Продолжить», чтобы разместить его на PDF."
+placeholder = "Введите ваше имя..."
+
+[certSign.collab.userSelector]
+inviteUsers = "Добавить пользователей"
+loadError = "Не удалось загрузить пользователей"
+noTeam = "Без команды"
+noUsers = "Другие пользователи не найдены."
+placeholder = "Выберите пользователей..."
+
 [certSign.error]
 failed = "Произошла ошибка при обработке подписей."
+
+[certSign.mobile]
+panelActions = "Действия"
+panelDocument = "Документ"
+panelPeople = "Люди"
+
+[certSign.sessions]
+deleted = "Сессия удалена"
+fetchFailed = "Не удалось загрузить данные сессии"
+finalized = "Сессия завершена"
+loaded = "Подписанный PDF загружен"
+pdfNotReady = "PDF не готов"
+pdfNotReadyDesc = "Подписанный PDF генерируется. Повторите попытку позже."
 
 [certSign.sign]
 results = "Подписанный PDF"
@@ -2230,252 +2478,6 @@ bullet3 = "Проверяет, изменялся ли документ посл
 bullet4 = "Можно использовать пользовательские сертификаты для проверки"
 text = "При проверке подписей инструмент сообщает, действительны ли они, кто подписал документ, когда он был подписан и менялся ли после подписания."
 title = "Проверка подписей"
-
-[certSign.collab.finalize]
-button = "Завершить и загрузить подписанный PDF"
-early = "Завершить с текущими подписями"
-
-[certSign.collab.sessionDetail]
-addButton = "Добавить участников"
-addParticipants = "Добавить участников"
-addParticipantsError = "Не удалось добавить участников"
-backToList = "Назад к сессиям"
-deleteConfirm = "Вы уверены? Действие необратимо."
-deleteError = "Не удалось удалить сессию"
-deleted = "Сессия удалена"
-deleteSession = "Удалить сессию"
-dueDate = "Срок"
-finalizeError = "Не удалось завершить сессию"
-loadPdfError = "Не удалось загрузить подписанный PDF"
-loadSignedPdf = "Загрузить подписанный PDF в активные файлы"
-messageLabel = "Сообщение"
-noAdditionalInfo = "Нет дополнительной информации"
-owner = "Владелец"
-participantRemoved = "Участник удалён"
-participants = "Участники"
-participantsAdded = "Участники успешно добавлены"
-removeParticipant = "Удалить"
-removeParticipantError = "Не удалось удалить участника"
-selectUsers = "Выберите пользователей..."
-sessionInfo = "Информация о сессии"
-workbenchTitle = "Управление сессией"
-
-[certSign.collab.signRequest]
-addedToFiles = "Документ добавлен в активные файлы"
-addSignature = "Добавьте свою подпись"
-addToFiles = "Добавить в активные файлы"
-advancedSettings = "Дополнительные настройки"
-backToList = "Назад к запросам подписи"
-certificateChoice = "Выберите сертификат для подписи"
-changeSignature = "Изменить подпись"
-clearSignature = "Очистить подпись"
-completeAndSign = "Завершить и подписать"
-createNewSignature = "Создать новую подпись"
-declineButton = "Отклонить"
-decline = "Отклонить запрос"
-deleteSelected = "Удалить выбранную подпись"
-drawSignature = "Нарисуйте свою подпись ниже"
-dueDate = "Срок"
-fileTooLarge = "Размер файла должен быть меньше 5 МБ"
-fontFamily = "Шрифт"
-fontSize = "Размер шрифта: {{size}}px"
-fontSizePlaceholder = "Размер"
-from = "От"
-invalidCertFile = "Выберите файл сертификата P12 или PFX"
-invalidFileType = "Выберите файл изображения"
-location = "Местоположение (необязательно)"
-locationPlaceholder = "Откуда вы подписываете?"
-message = "Сообщение"
-noCertificate = "Выберите файл сертификата"
-noSignatures = "Разместите хотя бы одну подпись на PDF"
-p12File = "Файл сертификата P12/PFX"
-password = "Пароль сертификата"
-passwordPlaceholder = "Введите пароль..."
-penColor = "Цвет пера"
-penSize = "Толщина пера: {{size}}px"
-placementActive = "Щёлкните по PDF, чтобы разместить"
-placeSignatureButton = "Разместить подпись на PDF"
-reason = "Причина (необязательно)"
-reasonPlaceholder = "Зачем вы подписываете?"
-removeImage = "Удалить изображение"
-removeCertFile = "Удалить файл"
-savedSignatures = "Сохранённые подписи"
-selectFile = "Выбрать файл изображения"
-selectSignatureTitle = "Выбрать или создать подпись"
-signButton = "Подписать документ"
-signatureInfo = "Эти настройки задаёт владелец документа"
-signaturePlaced = "Подпись размещена на странице"
-signatureSettings = "Настройки подписи"
-signatureText = "Текст подписи"
-signatureTextPlaceholder = "Введите ваше имя..."
-signatureTypeLabel = "Тип подписи"
-signingTitle = "Подписание"
-textColor = "Цвет текста"
-typeSignature = "Введите своё имя, чтобы создать подпись"
-uploadCert = "Собственный сертификат"
-uploadCertDesc = "Используйте свой сертификат P12/PFX"
-uploadSignature = "Загрузите изображение подписи"
-usePersonalCert = "Личный сертификат"
-usePersonalCertDesc = "Автоматически сгенерирован для вашей учётной записи"
-useServerCert = "Сертификат организации"
-useServerCertDesc = "Общий сертификат организации"
-workbenchTitle = "Запрос подписи"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "Выберите цвет штриха"
-continue = "Продолжить"
-
-[certSign.collab.signRequest.certModal]
-description = "Вы разместили {{count}} подпись(и). Выберите сертификат для завершения подписания."
-sign = "Подписать документ"
-certValidating = "Проверка сертификата..."
-certValidUntil = "Сертификат действителен до {{date}}"
-certInvalid = "Недействительный сертификат: {{error}}"
-certInvalidFallback = "Недействительный сертификат"
-certNetworkError = "Не удалось подтвердить сертификат"
-title = "Настройка сертификата"
-
-[certSign.collab.signRequest.image]
-hint = "Загрузите изображение PNG или JPG с вашей подписью"
-
-[certSign.collab.signRequest.mode]
-move = "Переместить подпись"
-place = "Разместить подпись"
-title = "Режим размещения или перемещения"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "Рисовать"
-image = "Загрузить"
-text = "Ввести"
-
-[certSign.collab.signRequest.placeSignature]
-message = "Щёлкните по PDF, чтобы разместить свою подпись"
-title = "Разместить подпись"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "Выбранная подпись"
-missing = "Нет предпросмотра"
-textFallback = "Подпись"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "Рисованная подпись"
-defaultImageLabel = "Загруженная подпись"
-defaultLabel = "Подпись"
-defaultTextLabel = "Введённая подпись"
-delete = "Удалить подпись"
-none = "Сохранённых подписей нет"
-
-[certSign.collab.signRequest.signatureType]
-draw = "Рисовать"
-type = "Ввести"
-upload = "Загрузить"
-
-[certSign.collab.signRequest.steps]
-back = "Назад"
-cancelPlacement = "Отменить размещение"
-certificate = "Сертификат"
-clickMultipleTimes = "Щёлкните по PDF несколько раз, чтобы разместить подписи. Перетаскивайте подпись для перемещения или изменения размера."
-clickToPlace = "Щёлкните по PDF, где должна появиться ваша подпись."
-continue = "Перейти к выбору сертификата"
-continueToPlacement = "Перейти к размещению"
-continueToReview = "Перейти к проверке"
-createSignature = "Создать подпись"
-invisible = "Невидимая"
-location = "Местоположение:"
-multipleSignatures = "{{count}} подпись(и) будут применены к PDF"
-oneSignature = "1 подпись будет применена к PDF"
-placeOnPdf = "Разместить на PDF"
-reason = "Причина:"
-reviewTitle = "Проверка перед подписанием"
-signaturePlaced = "Подпись размещена на странице {{page}}. Вы можете скорректировать позицию, щёлкнув ещё раз, или продолжить к проверке."
-visible = "Видимая"
-visibility = "Видимость:"
-yourSignatures = "Ваши подписи ({{count}})"
-
-[certSign.collab.signRequest.text]
-colorLabel = "Цвет"
-fontLabel = "Шрифт"
-fontSizeLabel = "Размер"
-fontSizePlaceholder = "16"
-label = "Текст подписи"
-modalHint = "Введите своё имя, затем нажмите «Продолжить», чтобы разместить его на PDF."
-placeholder = "Введите ваше имя..."
-
-[certSign.collab.participant]
-certValidating = "Проверка сертификата..."
-certValid = "✓ Сертификат действителен"
-certValidUntil = " до {{date}}"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "Недействительный сертификат"
-certNetworkError = "Не удалось подтвердить сертификат"
-
-[certSign.collab.addParticipants]
-add = "Добавить {{count}} участник(ов)"
-back = "Назад"
-configureSignatures = "Настроить параметры подписи"
-continue = "Перейти к настройкам подписи"
-reasonHelp = "Предустановить причину подписания для этих участников (необязательно; её можно изменить при подписании)"
-reasonPlaceholder = "например, «Утверждение», «Проверка»..."
-selectUsers = "Выбрать пользователей"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "Добавить страницу сводки подписей"
-includeSummaryPageHelp = "В конце будет добавлена страница со всеми метаданными подписи. Поля цифровой подписи на отдельных страницах будут скрыты (рукописные подписи не затронуты)."
-
-[certSign.collab.sessionList]
-active = "Активные"
-finalized = "Завершённые"
-
-[certSign.collab.signatureSettings]
-description = "Настройте, как будут выглядеть подписи для всех участников"
-title = "Внешний вид подписи"
-
-[certSign.collab.userSelector]
-inviteUsers = "Добавить пользователей"
-loadError = "Не удалось загрузить пользователей"
-noTeam = "Без команды"
-noUsers = "Другие пользователи не найдены."
-placeholder = "Выберите пользователей..."
-
-[certSign.mobile]
-panelActions = "Действия"
-panelDocument = "Документ"
-panelPeople = "Люди"
-
-[certSign.sessions]
-deleted = "Сессия удалена"
-fetchFailed = "Не удалось загрузить данные сессии"
-finalized = "Сессия завершена"
-loaded = "Подписанный PDF загружен"
-pdfNotReady = "PDF не готов"
-pdfNotReadyDesc = "Подписанный PDF генерируется. Повторите попытку позже."
-
-[certificateChoice.tooltip]
-header = "Типы сертификатов"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "Управляется системными администраторами"
-bullet2 = "Доступен авторизованным пользователям"
-bullet3 = "Представляет компанию, а не конкретного человека"
-bullet4 = "Лучше всего для: официальных документов, командных подписей"
-description = "Общий сертификат вашей организации. Используется для корпоративной подписи."
-title = "Сертификат организации"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "Генерируется автоматически при первом использовании"
-bullet2 = "Привязан к вашей учётной записи"
-bullet3 = "Нельзя поделиться с другими пользователями"
-bullet4 = "Лучше всего для: личных документов, индивидуальной ответственности"
-description = "Автоматически сгенерированный сертификат, уникальный для вашей учётной записи. Подходит для индивидуальных подписей."
-title = "Личный сертификат"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "Требуются файл P12/PFX и пароль"
-bullet2 = "Может быть выдан внешними центрами сертификации"
-bullet3 = "Более высокий уровень доверия для юридических документов"
-bullet4 = "Лучше всего для: юридически значимых контрактов, внешней валидации"
-description = "Используйте собственный сертификат PKCS#12. Предоставляет полный контроль над свойствами сертификата."
-title = "Загрузить собственный P12"
 
 [changeCreds]
 changePassword = "Вы используете стандартные учетные данные для входа. Пожалуйста, введите новый пароль"
@@ -2657,6 +2659,9 @@ title = "Изменить разрешения"
 
 [changePermissions.tooltip.warning]
 text = "Чтобы сделать эти разрешения неизменяемыми, используйте инструмент «Добавить пароль» и задайте пароль владельца."
+
+[cloudBadge]
+tooltip = "Эта операция использует ваши облачные кредиты"
 
 [colorPicker]
 title = "Выберите цвет"
@@ -2998,9 +3003,11 @@ blackwhite = "Чёрно-белый"
 cbrDpi = "DPI для отрисовки изображений"
 cbrOptions = "Параметры CBR"
 cbrOutputOptions = "Параметры PDF в CBR"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "DPI для отрисовки изображений"
 cbzOptions = "Параметры CBZ → PDF"
 cbzOutputOptions = "Параметры PDF → CBZ"
+cbzToPdf = "CBZ → PDF"
 color = "Цвет"
 colorType = "Тип цвета"
 combineImages = "Объединить изображения"
@@ -3018,13 +3025,16 @@ desc = "Преобразование файлов между разными фо
 downloadConverted = "Скачать преобразованный файл"
 downloadHtml = "Скачать промежуточный HTML вместо PDF"
 dpi = "DPI"
+ebookToPdf = "eBook → PDF"
 emailOptions = "Параметры Email→PDF"
+emlToPdf = "Email → PDF"
 errorConversion = "Произошла ошибка при конвертации файла."
 errorNoFiles = "Пожалуйста, выберите хотя бы один файл для преобразования."
 errorNoFormat = "Пожалуйста, выберите и исходный, и целевой формат."
 errorNotSupported = "Преобразование из {{from}} в {{to}} не поддерживается."
 fileFormat = "Формат файла"
 files = "Файлы"
+fileToPdf = "Office/Document → PDF"
 fillPage = "Заполнить страницу"
 fitDocumentToPage = "Подогнать документ под страницу"
 fitOption = "Вариант подгонки"
@@ -3052,6 +3062,9 @@ pdfaFormat = "Формат PDF/A"
 pdfaNote = "PDF/A-1b более совместим, PDF/A-2b поддерживает больше функций."
 pdfaOptions = "Параметры PDF/A"
 pdfOptions = "Параметры PDF"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X — это стандарт ISO, подмножество PDF для надежной печати и обмена графикой."
 pdfxDigitalSignatureWarning = "PDF содержит цифровую подпись. Она будет удалена на следующем шаге."
 pptExt = "PowerPoint (.pptx)"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "Исходный формат"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "Целевой формат"
 textRtf = "Текст/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "Параметры Web→PDF"
 wordDoc = "Документ Word"
 wordDocExt = "Документ Word (.docx)"
 zoomLevel = "Уровень масштабирования"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "eBook → PDF"
-emlToPdf = "Email → PDF"
-fileToPdf = "Office/Document → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "Параметры eBook в PDF"
@@ -3147,6 +3152,77 @@ description = "These cookies are essential for the website to function properly.
 [cookieBanner.services]
 posthog = "PostHog Analytics"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "Включить оплату перерасхода"
+maybeLater = "Позже"
+upgrade = "Обновить"
+
+[credits.insufficient]
+brief = "Недостаточно кредитов. Нужно {{required}} кредитов, а у вас {{current}}."
+freeTier = "Обновите до Team, чтобы получить в 10 раз больше кредитов и неограниченный биллинг перерасхода."
+managedMember = "Обратитесь к лидеру вашей команды за помощью."
+message = "У вас недостаточно кредитов для запуска {{tool}}. Сейчас у вас {{current}} кредитов."
+messageWithAmount = "Чтобы запустить {{tool}}, нужно {{required}} кредитов, но у вас только {{current}}."
+teamMember = "Включите биллинг перерасхода, чтобы никогда не оставаться без кредитов."
+title = "Недостаточно кредитов"
+
+[credits.modal]
+advancedMonitoring = "Расширенный мониторинг"
+allInOneWorkspace = "Единое рабочее пространство PDF (просмотрщик, инструменты и агент)"
+apiSandbox = "Песочница API"
+contactSales = "Связаться с отделом продаж"
+creditsRemaining = "Осталось {{current}} из {{total}}"
+creditsThisMonth = "Кредиты за месяц"
+current = "Текущий план"
+customPricing = "Индивидуально"
+customSmartFolders = "Индивидуальные умные папки"
+dedicatedSupportSlas = "Выделенная поддержка и SLA"
+enterpriseSubscription = "Enterprise"
+everythingInCredits = "Все из Credits, плюс:"
+everythingInFree = "Все из Free, плюс:"
+fasterThroughput = "Пропускная способность в 10 раз выше"
+forRegularWork = "Для регулярной работы с PDF:"
+freeTier = "Бесплатный тариф"
+fullyPrivateFiles = "Полностью приватные файлы"
+largeFileProcessing = "Обработка больших файлов"
+managedMemberMessage = "У вас неограниченный доступ к кредитам через вашу команду. Если нужна помощь, свяжитесь с лидером команды."
+managedMemberTitle = "Неограниченные кредиты"
+meteringBillingNote = "Кредиты сверх лимита выставляются ежемесячно вместе с вашей подпиской Team. Отслеживайте использование в любое время в настройках аккаунта."
+meteringExplanation = "Ваш план Team включает {{credits}} кредитов в месяц. Когда они заканчиваются, автоматический биллинг перерасхода предоставляет дополнительные кредиты, чтобы вы никогда не прерывали работу."
+meteringIncluded = "{{credits}} кредитов/месяц включено в Team"
+meteringNeverRunOut = "Никогда не оставайтесь без кредитов"
+meteringNoCommitment = "Без обязательств, отмена в любое время"
+meteringPayAsYouGo = "Платите только за фактическое использование"
+meteringPrice = "Дополнительные кредиты по {{price}}/кредит"
+meteringTitle = "Оплата перерасхода «плати по факту»"
+monthlyCredits = "кредитов в месяц"
+orgWideAccess = "Контроль доступа на уровне организации"
+overage = "перерасход"
+perMonth = "/месяц"
+popular = "Популярно"
+premiumAiModels = "Премиальные AI-модели"
+prioritySupport = "Приоритетная поддержка"
+privateDocCloud = "Приватное облако документов"
+ragFineTuning = "RAG + дообучение"
+secureApiAccess = "Безопасный доступ к API"
+selfHostLink = "Изучить документацию и планы"
+selfHostPrompt = "Хотите развернуть сами?"
+standardThroughput = "Стандартная пропускная способность"
+subtitle = "Обновите до Team, чтобы получить в 10 раз больше кредитов и более быструю обработку."
+subtitlePro = "Включите автоматический биллинг перерасхода, чтобы никогда не оставаться без кредитов."
+teamLeaderOnly = "Только лидеры команд могут включать биллинг перерасхода"
+teamSubscription = "Team"
+titleExhausted = "Вы исчерпали бесплатные кредиты"
+titleExhaustedPro = "У вас закончились кредиты"
+unlimitedApiAccess = "Неограниченный доступ к API"
+unlimitedMonthlyCredits = "Лицензия на сайт"
+unlimitedSeats = "Неограниченное число пользователей"
+
+[credits.modal.features]
+everythingInCredits = "Все из Credits, плюс:"
+everythingInFree = "Все из Free, плюс:"
+forRegularWork = "Для регулярной работы с PDF:"
 
 [crop]
 autoCrop = "Автообрезка пустых полей"
@@ -3352,6 +3428,9 @@ successBodyWithName = "Пароль удалён из {{fileName}}"
 successTitle = "Пароль удалён"
 title = "Удалите пароль, чтобы продолжить"
 unlock = "Разблокировать и продолжить"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "Разблокируйте PDF, чтобы продолжить"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "Добавить файлы"
 [fileManager]
 active = "Активный"
 addToUpload = "Добавить к загрузке"
+changesNotUploaded = "Изменения не загружены"
 clearAll = "Очистить всё"
 clearSelection = "Снять выделение"
 clickToUpload = "Нажмите, чтобы загрузить файлы"
 closeFile = "Закрыть файл"
+cloudFile = "Файл в облаке"
+copyCreated = "Копия сохранена на этом устройстве."
+copyFailed = "Не удалось создать копию."
 delete = "Удалить"
 deleteAll = "Удалить все"
 deleteSelected = "Удалить выбранные"
@@ -3486,14 +3569,24 @@ fileSize = "Размер"
 filesSelected = "файлов выбрано"
 filesStored = "файлов в хранилище"
 fileVersion = "Версия"
+filterAll = "Все"
+filterLocal = "Локальные"
+filterSharedByMe = "Мною предоставленные"
+filterSharedWithMe = "Предоставлены мне"
 googleDrive = "Google Drive"
 googleDriveNotAvailable = "Интеграция с Google Drive недоступна"
 googleDriveShort = "Диск"
 hideHistory = "Скрыть историю"
 lastModified = "Дата изменения"
+lastSynced = "Последняя синхронизация"
+leaveShare = "Убрать из моего списка"
+leaveShareFailed = "Не удалось удалить общий файл."
+leaveShareSuccess = "Удалено из вашего списка общих файлов."
 loadingFiles = "Загрузка файлов..."
 loadingHistory = "Загрузка истории..."
 localFiles = "Локальные файлы"
+localOnly = "Только локально"
+makeCopy = "Сделать копию"
 mobileShort = "Моб."
 mobileUpload = "Загрузка с мобильного"
 mobileUploadNotAvailable = "Загрузка с мобильного не включена"
@@ -3506,36 +3599,10 @@ openFile = "Открыть файл"
 openFiles = "Открыть файлы"
 openInFileEditor = "Открыть в редакторе файлов"
 openInPageEditor = "Открыть в редакторе страниц"
+owner = "Владелец"
+ownerUnknown = "Неизвестно"
 recent = "Недавние"
 reloadFiles = "Обновить список"
-restore = "Восстановить"
-saveSelected = "Сохранить выбранные"
-searchFiles = "Поиск файлов..."
-selectAll = "Выбрать все"
-selectedCount = "{{count}} выбрано"
-selectedFiles = "Выбранные файлы"
-showAll = "Показать все"
-showHistory = "Показать историю"
-sortByDate = "Сортировать по дате"
-sortByName = "Сортировать по имени"
-sortBySize = "Сортировать по размеру"
-storage = "Хранилище"
-storageCleared = "Браузер очистил хранилище. Файлы удалены. Пожалуйста, загрузите их снова."
-storageError = "Произошла ошибка хранилища"
-storageLow = "Недостаточно места в хранилище. Рассмотрите удаление старых файлов."
-subtitle = "Добавляйте файлы в хранилище для удобного доступа во всех инструментах"
-supportMessage = "Работает на базе хранилища браузера для неограниченной ёмкости"
-title = "Загрузить PDF-файлы"
-toolChain = "Применённые инструменты"
-totalSelected = "Всего выбрано"
-unsupported = "Не поддерживается"
-unzip = "Распаковать"
-uploadError = "Не удалось загрузить некоторые файлы."
-copyCreated = "Копия сохранена на этом устройстве."
-copyFailed = "Не удалось создать копию."
-leaveShare = "Убрать из моего списка"
-leaveShareFailed = "Не удалось удалить общий файл."
-leaveShareSuccess = "Удалено из вашего списка общих файлов."
 removeBoth = "Удалить из обоих"
 removeFilePrompt = "Этот файл сохранён на этом устройстве и на вашем сервере. Где вы хотите его удалить?"
 removeFileTitle = "Удалить файл"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "Удалено с сервера."
 removeSharedPrompt = "Этот файл предоставлен вам. Вы можете удалить его с этого устройства или из списка общих файлов."
 removeSharedServerOnlyBlockedPrompt = "Этот файл предоставлен вам и хранится только на сервере."
 removeSharedServerOnlyPrompt = "Этот файл предоставлен вам и хранится только на сервере. Удалить его из вашего списка?"
-changesNotUploaded = "Изменения не загружены"
-cloudFile = "Файл в облаке"
-filterAll = "Все"
-filterLocal = "Локальные"
-filterSharedByMe = "Мною предоставленные"
-filterSharedWithMe = "Предоставлены мне"
-lastSynced = "Последняя синхронизация"
-localOnly = "Только локально"
-makeCopy = "Сделать копию"
-owner = "Владелец"
-ownerUnknown = "Неизвестно"
+restore = "Восстановить"
+saveSelected = "Сохранить выбранные"
+searchFiles = "Поиск файлов..."
+selectAll = "Выбрать все"
+selectedCount = "{{count}} выбрано"
+selectedFiles = "Выбранные файлы"
 share = "Поделиться"
-shareSelected = "Поделиться выбранными"
 sharedByYou = "Предоставлены вами"
 sharedEditNoticeBody = "У вас нет прав на редактирование серверной версии этого файла. Любые изменения будут сохранены как локальная копия."
 sharedEditNoticeConfirm = "Понятно"
 sharedEditNoticeTitle = "Серверная копия только для чтения"
 sharedWithYou = "Предоставлены вам"
+shareSelected = "Поделиться выбранными"
 sharing = "Общий доступ"
+showAll = "Показать все"
+showHistory = "Показать историю"
+sortByDate = "Сортировать по дате"
+sortByName = "Сортировать по имени"
+sortBySize = "Сортировать по размеру"
+storage = "Хранилище"
+storageCleared = "Браузер очистил хранилище. Файлы удалены. Пожалуйста, загрузите их снова."
+storageError = "Произошла ошибка хранилища"
+storageLow = "Недостаточно места в хранилище. Рассмотрите удаление старых файлов."
 storageState = "Хранилище"
+subtitle = "Добавляйте файлы в хранилище для удобного доступа во всех инструментах"
+supportMessage = "Работает на базе хранилища браузера для неограниченной ёмкости"
 synced = "Синхронизировано"
+title = "Загрузить PDF-файлы"
+toolChain = "Применённые инструменты"
+totalSelected = "Всего выбрано"
+unsupported = "Не поддерживается"
+unzip = "Распаковать"
 updateOnServer = "Обновить на сервере"
+uploadError = "Не удалось загрузить некоторые файлы."
 uploadSelected = "Загрузить выбранные"
 uploadToServer = "Загрузить на сервер"
 
@@ -3696,77 +3775,6 @@ title = "Об уплощении PDF"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "О групповом подписании"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "Все подписи применяются в указанном вами порядке участников"
-bullet2 = "При необходимости можно завершить с неполным набором подписей"
-bullet3 = "После завершения сессию нельзя изменить"
-description = "Когда все участники подпишут (или вы решите завершить раньше), вы сможете сгенерировать финальный подписанный PDF."
-title = "Процесс завершения"
-
-[groupSigning.tooltip.roles]
-bullet1 = "Владелец (вы): создаёт сессию, настраивает значения по умолчанию, завершает документ"
-bullet2 = "Участники: создают подпись, выбирают сертификат, размещают на PDF"
-bullet3 = "Участники не могут изменять видимость, причину или местоположение подписи"
-description = "Вы управляете настройками внешнего вида подписи для всех участников."
-title = "Роли участников"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "Первый участник должен подписать, прежде чем второй получит доступ к документу"
-bullet2 = "Обеспечивает корректный порядок подписания для юридической соответствия"
-bullet3 = "Вы можете менять порядок участников, перетаскивая их в списке"
-description = "Участники подписывают документы в указанном вами порядке. Каждый подписант получает уведомление, когда наступает его очередь."
-title = "Последовательное подписание"
-
-[groupSigning.steps]
-back = "Назад"
-completed = "Завершено"
-current = "Текущий"
-stepLabel = "Шаг {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "Перейти к проверке"
-invisible = "Подписи будут невидимыми (только метаданные)"
-locationLabel = "Местоположение:"
-preview = "Предпросмотр"
-reasonLabel = "Причина:"
-title = "Настроить параметры подписи"
-visible = "Подписи будут видимы на странице {{page}}"
-
-[groupSigning.steps.review]
-document = "Документ"
-dueDate = "Срок (необязательно)"
-dueDatePlaceholder = "Выберите срок..."
-invisible = "Невидимая (только метаданные)"
-location = "Местоположение:"
-logo = "Логотип:"
-logoHidden = "Без логотипа"
-logoShown = "Логотип Stirling PDF отображается"
-participants = "Участники"
-reason = "Причина:"
-send = "Отправить запросы на подпись"
-signatureSettings = "Настройки подписи"
-title = "Проверка сведений о сессии"
-titleShort = "Проверка и отправка"
-visibility = "Видимость:"
-visible = "Видима на странице {{page}}"
-participantCount = "{{count}} участник(ов) будет подписывать по порядку"
-
-[groupSigning.steps.selectDocument]
-continue = "Перейти к выбору участников"
-noFile = "Выберите один PDF-файл из активных файлов, чтобы создать сессию подписания."
-selectedFile = "Выбранный документ"
-title = "Выберите документ"
-
-[groupSigning.steps.selectParticipants]
-continue = "Перейти к настройкам подписи"
-count = "Выбрано участник(ов): {{count}}"
-label = "Выберите участников"
-placeholder = "Выберите участников для подписи..."
-title = "Выбор участников"
-
 [getPdfInfo]
 downloadJson = "Скачать JSON"
 downloads = "Загрузки"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "Слои"
 multimedia = "Мультимедиа"
 
+[groupSigning.steps]
+back = "Назад"
+completed = "Завершено"
+current = "Текущий"
+stepLabel = "Шаг {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "Перейти к проверке"
+invisible = "Подписи будут невидимыми (только метаданные)"
+locationLabel = "Местоположение:"
+preview = "Предпросмотр"
+reasonLabel = "Причина:"
+title = "Настроить параметры подписи"
+visible = "Подписи будут видимы на странице {{page}}"
+
+[groupSigning.steps.review]
+document = "Документ"
+dueDate = "Срок (необязательно)"
+dueDatePlaceholder = "Выберите срок..."
+invisible = "Невидимая (только метаданные)"
+location = "Местоположение:"
+logo = "Логотип:"
+logoHidden = "Без логотипа"
+logoShown = "Логотип Stirling PDF отображается"
+participantCount = "{{count}} участник(ов) будет подписывать по порядку"
+participants = "Участники"
+reason = "Причина:"
+send = "Отправить запросы на подпись"
+signatureSettings = "Настройки подписи"
+title = "Проверка сведений о сессии"
+titleShort = "Проверка и отправка"
+visibility = "Видимость:"
+visible = "Видима на странице {{page}}"
+
+[groupSigning.steps.selectDocument]
+continue = "Перейти к выбору участников"
+noFile = "Выберите один PDF-файл из активных файлов, чтобы создать сессию подписания."
+selectedFile = "Выбранный документ"
+title = "Выберите документ"
+
+[groupSigning.steps.selectParticipants]
+continue = "Перейти к настройкам подписи"
+count = "Выбрано участник(ов): {{count}}"
+label = "Выберите участников"
+placeholder = "Выберите участников для подписи..."
+title = "Выбор участников"
+
+[groupSigning.tooltip]
+header = "О групповом подписании"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "Все подписи применяются в указанном вами порядке участников"
+bullet2 = "При необходимости можно завершить с неполным набором подписей"
+bullet3 = "После завершения сессию нельзя изменить"
+description = "Когда все участники подпишут (или вы решите завершить раньше), вы сможете сгенерировать финальный подписанный PDF."
+title = "Процесс завершения"
+
+[groupSigning.tooltip.roles]
+bullet1 = "Владелец (вы): создаёт сессию, настраивает значения по умолчанию, завершает документ"
+bullet2 = "Участники: создают подпись, выбирают сертификат, размещают на PDF"
+bullet3 = "Участники не могут изменять видимость, причину или местоположение подписи"
+description = "Вы управляете настройками внешнего вида подписи для всех участников."
+title = "Роли участников"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "Первый участник должен подписать, прежде чем второй получит доступ к документу"
+bullet2 = "Обеспечивает корректный порядок подписания для юридической соответствия"
+bullet3 = "Вы можете менять порядок участников, перетаскивая их в списке"
+description = "Участники подписывают документы в указанном вами порядке. Каждый подписант получает уведомление, когда наступает его очередь."
+title = "Последовательное подписание"
+
 [guestBanner]
 dismiss = "Скрыть баннер"
 message = "Создайте бесплатный аккаунт, чтобы сохранять работу, получить больше функций и поддержать проект."
@@ -3935,10 +4014,6 @@ title = "Аннотации"
 desc = "Создавайте многошаговые процессы, связывая PDF-действия. Идеально для повторяющихся задач."
 tags = "рабочий процесс,последовательность,автоматизация"
 title = "Автоматизация"
-
-[home.formFill]
-desc = "Заполняйте поля формы PDF интерактивно с визуальным редактором"
-title = "Заполнить форму"
 
 [home.autoRename]
 desc = "Автоматически переименовывает PDF по обнаруженному заголовку"
@@ -4034,6 +4109,10 @@ title = "Извлечь страницы"
 desc = "Удаляет все интерактивные элементы и формы из PDF"
 tags = "упростить,удалить,интерактив"
 title = "Сведение"
+
+[home.formFill]
+desc = "Заполняйте поля формы PDF интерактивно с визуальным редактором"
+title = "Заполнить форму"
 
 [home.getPdfInfo]
 desc = "Собирает всю возможную информацию о PDF"
@@ -4185,11 +4264,6 @@ desc = "Добавляет подпись в PDF рисованием, текс�
 tags = "подпись,автограф"
 title = "Подпись"
 
-[home.timestampPdf]
-desc = "Добавьте метку времени RFC 3161 к документу, чтобы подтвердить время существования вашего PDF"
-tags = "метка времени,RFC 3161,TSA,time stamp authority,метка времени документа,доказательство существования,токен метки времени,доверенная метка времени,подписать меткой времени,нотариально заверить"
-title = "Метка времени PDF"
-
 [home.split]
 desc = "Разделить PDF на несколько документов"
 tags = "разделить,отделить,разбить"
@@ -4209,6 +4283,11 @@ title = "Разделить PDF по секциям"
 desc = "Просмотр документации API и тестирование эндпоинтов"
 tags = "API,документация,тест"
 title = "Документация API"
+
+[home.timestampPdf]
+desc = "Добавьте метку времени RFC 3161 к документу, чтобы подтвердить время существования вашего PDF"
+tags = "метка времени,RFC 3161,TSA,time stamp authority,метка времени документа,доказательство существования,токен метки времени,доверенная метка времени,подписать меткой времени,нотариально заверить"
+title = "Метка времени PDF"
 
 [home.unlockPDFForms]
 desc = "Удалите свойство 'только для чтения' для полей формы в PDF-документа."
@@ -4298,6 +4377,8 @@ welcomeTitle = "Вас пригласили!"
 
 [landing]
 addFiles = "Добавить файлы"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "Загрузка с мобильного"
 openFromComputer = "Открыть с компьютера"
 uploadFromComputer = "Загрузить с компьютера"
@@ -4321,6 +4402,18 @@ module = "Модуль"
 nav = "Лицензии"
 title = "Лицензии сторонних компонентов"
 version = "Версия"
+
+[localMode]
+toolUnavailable = "Для этого инструмента требуется аккаунт. Войдите в Stirling Cloud или подключитесь к саморазмещённому серверу, чтобы использовать его."
+
+[localMode.banner]
+message = "Войдите, чтобы разблокировать все инструменты."
+signIn = "Войти"
+title = "Запущено локально"
+
+[localMode.toolPicker]
+message = "Войдите, чтобы разблокировать все инструменты."
+signIn = "Войти"
 
 [login]
 accountCreatedSuccess = "Учетная запись успешно создана! Теперь вы можете войти."
@@ -4382,12 +4475,12 @@ sendResetLink = "Отправить ссылку для сброса"
 sessionExpired = "Сеанс истек. Пожалуйста, войдите снова."
 signin = "Войти"
 signInAnonymously = "Войти как гость"
-subtitle = "Войдите снова в Stirling PDF"
 signingIn = "Входим..."
 signinTitle = "Пожалуйста, войдите"
 signInWith = "Войти с помощью"
 signOut = "Выйти"
 ssoSignIn = "Вход через единый вход"
+subtitle = "Войдите снова в Stirling PDF"
 title = "Вход"
 toManySessions = "У вас слишком много активных сессий"
 unexpectedError = "Непредвиденная ошибка: {{message}}"
@@ -4430,9 +4523,11 @@ tags = "разметка,веб-контент,преобразование,ко
 title = "Markdown в PDF"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "Объединить"
 tags = "объединение,операции со страницами,серверная часть"
 title = "Объединить"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "Произошла ошибка при объединении PDF."
@@ -4701,15 +4796,6 @@ viewSwitcher = "Используйте эти элементы управлен�
 workbench = "Это <strong>Рабочая область</strong> — основная зона, где вы просматриваете и редактируете свои PDF."
 wrapUp = "Готово! Вы узнали об основных областях приложения и о том, как ими пользоваться. Нажимайте кнопку <strong>Справка</strong> в любое время, чтобы снова посмотреть этот тур."
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "После окончания пробного периода вы продолжите на бесплатном тарифе. Добавьте способ оплаты, чтобы сохранить доступ к Pro."
-afterTrialWithPayment = "Ваша подписка Pro начнётся автоматически после окончания пробного периода."
-body = "Во время пробного периода у вас полный доступ к функциям Stirling PDF Pro. Наслаждайтесь неограниченными конвертациями, большими размерами файлов и приоритетной обработкой."
-daysRemaining = "Осталось {{days}} дней"
-daysRemainingSingular = "Остался {{days}} день"
-title = "Ваш 30-дневный пробный период Pro"
-trialEnds = "Пробный период заканчивается {{date}}"
-
 [onboarding.buttons]
 back = "Назад"
 download = "Скачать →"
@@ -4722,6 +4808,15 @@ skipTheTour = "Пропустить тур"
 body = "Stirling лучше всего работает как настольное приложение. Можно работать офлайн, быстрее открывать документы и редактировать их локально на компьютере."
 title = "Скачать"
 titleWithOs = "Скачать для {{osLabel}}"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "После окончания пробного периода вы продолжите на бесплатном тарифе. Добавьте способ оплаты, чтобы сохранить доступ к Pro."
+afterTrialWithPayment = "Ваша подписка Pro начнётся автоматически после окончания пробного периода."
+body = "Во время пробного периода у вас полный доступ к функциям Stirling PDF Pro. Наслаждайтесь неограниченными конвертациями, большими размерами файлов и приоритетной обработкой."
+daysRemaining = "Осталось {{days}} дней"
+daysRemainingSingular = "Остался {{days}} день"
+title = "Ваш 30-дневный пробный период Pro"
+trialEnds = "Пробный период заканчивается {{date}}"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "После включения режима входа вы сможете управлять пользователями, настраивать параметры и мониторить состояние сервера. Первые <strong>{{freeTierLimit}}</strong> человек на вашем сервере используют Stirling бесплатно."
@@ -4858,126 +4953,6 @@ title = "Редактор страниц"
 zoomIn = "Увеличить"
 zoomOut = "Уменьшить"
 
-[viewer]
-cannotPreviewFile = "Не удаётся просмотреть файл"
-disableColorFilter = "Отключить цветовой фильтр"
-dualPageView = "Двухстраничный вид"
-enableDarkFilter = "Включить тёмный фильтр"
-enableSepiaFilter = "Включить фильтр сепия"
-firstPage = "Первая страница"
-lastPage = "Последняя страница"
-nextPage = "Следующая страница"
-onlyPdfSupported = "Просмотрщик поддерживает только PDF-файлы. Похоже, этот файл другого формата."
-previousPage = "Предыдущая страница"
-singlePageView = "Одностраничный вид"
-unknownFile = "Неизвестный файл"
-zoomIn = "Увеличить"
-zoomOut = "Уменьшить"
-resetZoom = "Сбросить масштаб"
-
-[viewer.nonPdf]
-fileTypeBadge = "Файл {{type}}"
-convertToPdf = "Преобразовать в PDF"
-loading = "Загрузка..."
-emptyFile = "Пустой файл"
-csvStats = "{{rows}} строк · {{columns}} столбцов · {{size}}"
-sortedBy = "Сортировка по: {{column}}"
-columnDefault = "Столбец {{index}}"
-htmlPreviewWarning = "Предпросмотр HTML — внешние ресурсы могут не загрузиться · {{size}}"
-htmlPreview = "Предпросмотр HTML"
-invalidJson = "Некорректный JSON — показано исходное содержимое"
-textStats = "{{lines}} строк · {{size}}"
-lineNumbers = "Номера строк"
-renderMarkdown = "Отобразить markdown"
-
-[viewer.attachments]
-title = "Вложения"
-searchPlaceholder = "Поиск вложений"
-noSupport = "Поддержка вложений недоступна для этого просмотрщика."
-noDocument = "Откройте PDF, чтобы просмотреть его вложения."
-loading = "Загрузка вложений..."
-empty = "В этом документе нет вложений"
-noMatch = "Нет вложений, соответствующих вашему поиску"
-
-[viewer.comments]
-title = "Комментарии"
-hint = "Добавляйте комментарии с помощью инструментов «Комментарий», «Вставить текст» или «Заменить текст». Здесь они будут отображаться по страницам."
-placeholder = "Введите комментарий..."
-pageLabel = "Страница {{page}}"
-oneComment = "1 комментарий"
-nComments = "{{count}} комментариев"
-addCommentPlaceholder = "Добавить комментарий..."
-addLink = "Добавить ссылку"
-goToLink = "Перейти по ссылке"
-addComment = "Добавить комментарий"
-viewComment = "Просмотреть комментарий"
-addReplyPlaceholder = "Добавить ответ..."
-saveReply = "Сохранить ответ"
-send = "Отправить"
-moreActions = "Другие действия"
-typeComment = "Комментарий"
-typeInsertText = "Вставить текст"
-typeReplaceText = "Заменить текст"
-locateAnnotation = "Найти в документе"
-deleteTitle = "Удалить аннотацию из комментариев?"
-deleteDescription = "К этой аннотации прикреплён комментарий. Вы можете удалить только комментарий на боковой панели, сохранив аннотацию, или удалить всё."
-removeCommentOnly = "Удалить только комментарий"
-deleteAnnotationAndComment = "Удалить аннотацию и комментарий"
-
-[viewer.formBar]
-title = "Поля формы"
-unsavedBadge = "Несохранено"
-unsavedDesc = "У вас есть несохранённые изменения"
-hasFieldsDesc = "В этом PDF есть поля для заполнения"
-dismiss = "Скрыть"
-apply = "Применить изменения"
-download = "Скачать PDF"
-
-[rightRail]
-closeSelected = "Закрыть выбранные файлы"
-selectAll = "Выбрать все"
-deselectAll = "Отменить выбор всех"
-selectByNumber = "Выбрать по номерам страниц"
-deleteSelected = "Удалить выбранные страницы"
-closePdf = "Закрыть PDF"
-exportAll = "Экспортировать PDF"
-downloadSelected = "Скачать выбранные файлы"
-annotations = "Аннотации"
-exportSelected = "Экспортировать выбранные страницы"
-formFill = "Заполнить форму"
-saveChanges = "Сохранить изменения"
-toggleAttachments = "Показать/скрыть вложения"
-toggleTheme = "Переключить тему"
-language = "Язык"
-toggleAnnotations = "Показать/скрыть аннотации"
-toggleLayers = "Переключить слои"
-search = "Поиск по PDF"
-panMode = "Режим панорамирования"
-applyRedactionsFirst = "Сначала примените зачернения"
-rotateLeft = "Повернуть влево"
-rotateRight = "Повернуть вправо"
-toggleSidebar = "Показать/скрыть боковую панель"
-toggleBookmarks = "Показать/скрыть закладки"
-toggleComments = "Комментарии"
-print = "Печать PDF"
-ruler = "Линейка / Измерение"
-readAloud = "Читать вслух"
-readAloudSpeed = "Скорость"
-readAloudLanguage = "Язык"
-selectLanguage = "Выберите язык"
-draw = "Рисовать"
-redact = "Зачернить"
-exitRedaction = "Выйти из режима зачернения"
-save = "Сохранить"
-downloadAll = "Скачать все"
-saveAll = "Сохранить всё"
-saveAs = "Сохранить как"
-
-[textAlign]
-left = "По левому краю"
-center = "По центру"
-right = "По правому краю"
-
 [pageExtracter]
 header = "Извлечь страницы"
 placeholder = "(например, 1,2,8 или 4,7,12-16 или 2n-1)"
@@ -5000,10 +4975,24 @@ tags = "объединение,композиция,единый вид,орга
 title = "Многостраничная компоновка"
 top = "Верхнее поле"
 
-[pageLayout.mode]
-default = "По умолчанию"
-custom = "Пользовательский"
-label = "Режим:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "По строкам: сначала заполнять каждую строку."
+bullet2 = "По столбцам: сначала заполнять каждый столбец."
+text = "Определяет, заполняют ли страницы сетку построчно или по столбцам."
+title = "Порядок страниц"
+
+[pageLayout.advanced.tooltip.header]
+title = "Расширенные параметры макета"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "Выберите направление конечного листа. Книжная лучше для высокого контента, альбомная подходит для широких макетов."
+title = "Ориентация"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR: порядок слева направо."
+bullet2 = "RTL: порядок справа налево."
+text = "Задаёт горизонтальный порядок в сетке, полезно для традиций слева направо и справа налево."
+title = "Направление чтения"
 
 [pageLayout.arrangement]
 byColumns = "По столбцам"
@@ -5018,100 +5007,86 @@ label = "Порядок страниц:"
 
 [pageLayout.error]
 failed = "Произошла ошибка при создании многополосного макета."
-outerVerticalMarginsTooLarge = "Слишком большие верхнее/нижнее поля для этого размера страницы."
-outerHorizontalMarginsTooLarge = "Слишком большие левое/правое поля для этого размера страницы."
 innerMarginTooLarge = "Внутреннее поле слишком велико для выбранного макета."
+outerHorizontalMarginsTooLarge = "Слишком большие левое/правое поля для этого размера страницы."
+outerVerticalMarginsTooLarge = "Слишком большие верхнее/нижнее поля для этого размера страницы."
 
-[pageLayout.orientation]
-landscape = "Альбомная"
-portrait = "Книжная"
-label = "Ориентация:"
-
-[pageLayout.readingDirection]
-ltr = "Слева направо"
-rtl = "Справа налево"
-label = "Направление чтения:"
-
-[pageLayout.tooltip.header]
-title = "Руководство по макету страницы"
-
-[pageLayout.tooltip.overview]
-title = "Что такое макет страницы?"
-text = "Размещайте несколько страниц на одном листе для раздаток или экономии бумаги."
-
-[pageLayout.tooltip.mode]
-title = "Режим"
-text = "Выберите способ настройки сетки:"
-bullet1 = "По умолчанию: выберите предустановку, и сетка будет рассчитана автоматически."
-bullet2 = "Пользовательский: задайте строки и столбцы вручную."
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "Страниц на листе (Режим по умолчанию)"
-text = "Выберите, сколько страниц на лист (напр. 4 → 2×2, 9 → 3×3)."
-
-[pageLayout.tooltip.rowsCols]
-title = "Строки и столбцы (Пользовательский режим)"
-text = "Задайте точные размеры сетки. Всего страниц на листе = строки × столбцы."
-
-[pageLayout.tooltip.orientation]
-title = "Ориентация"
-text = "Задаёт ориентацию выходного листа:"
-bullet1 = "Книжная: выше, чем шире."
-bullet2 = "Альбомная: шире, чем выше."
-
-[pageLayout.tooltip.arrangement]
-title = "Порядок страниц"
-text = "Определяет, как страницы заполняют сетку:"
-bullet1 = "По строкам: заполнять построчно (слева направо или справа налево)."
-bullet2 = "По столбцам: заполнять сверху вниз, столбец за столбцом."
-
-[pageLayout.tooltip.readingDirection]
-title = "Направление чтения"
-text = "Управляет горизонтальным порядком страниц:"
-bullet1 = "LTR: слева направо."
-bullet2 = "RTL: справа налево."
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "Включите границы, чтобы рисовать линии вокруг каждой размещённой страницы. Это поможет визуальному разделению или подрезке."
 title = "Добавить границы"
-text = "Рисует линии границ вокруг каждой ячейки для обрезки или визуального разделения."
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "Толщина границы применяется только при включённых границах. Более высокие значения дают более толстые линии."
+title = "Толщина границы"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "Поля и границы"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "Поля"
-text = "Используйте верхнее, нижнее, левое и правое поля для управления отступами вокруг всего выходного листа."
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "Внутреннее поле"
 text = "Внутреннее поле добавляет расстояние между ячейками в сетке страниц для лучшей отделимости и читаемости."
+title = "Внутреннее поле"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "Используйте верхнее, нижнее, левое и правое поля для управления отступами вокруг всего выходного листа."
+title = "Поля"
+
+[pageLayout.mode]
+custom = "Пользовательский"
+default = "По умолчанию"
+label = "Режим:"
+
+[pageLayout.orientation]
+label = "Ориентация:"
+landscape = "Альбомная"
+portrait = "Книжная"
+
+[pageLayout.readingDirection]
+label = "Направление чтения:"
+ltr = "Слева направо"
+rtl = "Справа налево"
+
+[pageLayout.tooltip.addBorder]
+text = "Рисует линии границ вокруг каждой ячейки для обрезки или визуального разделения."
 title = "Добавить границы"
-text = "Включите границы, чтобы рисовать линии вокруг каждой размещённой страницы. Это поможет визуальному разделению или подрезке."
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "Толщина границы"
-text = "Толщина границы применяется только при включённых границах. Более высокие значения дают более толстые линии."
-
-[pageLayout.advanced.tooltip.header]
-title = "Расширенные параметры макета"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "Ориентация"
-text = "Выберите направление конечного листа. Книжная лучше для высокого контента, альбомная подходит для широких макетов."
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "По строкам: заполнять построчно (слева направо или справа налево)."
+bullet2 = "По столбцам: заполнять сверху вниз, столбец за столбцом."
+text = "Определяет, как страницы заполняют сетку:"
 title = "Порядок страниц"
-text = "Определяет, заполняют ли страницы сетку построчно или по столбцам."
-bullet1 = "По строкам: сначала заполнять каждую строку."
-bullet2 = "По столбцам: сначала заполнять каждый столбец."
 
-[pageLayout.advanced.tooltip.readingDirection]
+[pageLayout.tooltip.header]
+title = "Руководство по макету страницы"
+
+[pageLayout.tooltip.mode]
+bullet1 = "По умолчанию: выберите предустановку, и сетка будет рассчитана автоматически."
+bullet2 = "Пользовательский: задайте строки и столбцы вручную."
+text = "Выберите способ настройки сетки:"
+title = "Режим"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "Книжная: выше, чем шире."
+bullet2 = "Альбомная: шире, чем выше."
+text = "Задаёт ориентацию выходного листа:"
+title = "Ориентация"
+
+[pageLayout.tooltip.overview]
+text = "Размещайте несколько страниц на одном листе для раздаток или экономии бумаги."
+title = "Что такое макет страницы?"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "Выберите, сколько страниц на лист (напр. 4 → 2×2, 9 → 3×3)."
+title = "Страниц на листе (Режим по умолчанию)"
+
+[pageLayout.tooltip.readingDirection]
+bullet1 = "LTR: слева направо."
+bullet2 = "RTL: справа налево."
+text = "Управляет горизонтальным порядком страниц:"
 title = "Направление чтения"
-text = "Задаёт горизонтальный порядок в сетке, полезно для традиций слева направо и справа налево."
-bullet1 = "LTR: порядок слева направо."
-bullet2 = "RTL: порядок справа налево."
+
+[pageLayout.tooltip.rowsCols]
+text = "Задайте точные размеры сетки. Всего страниц на листе = строки × столбцы."
+title = "Строки и столбцы (Пользовательский режим)"
 
 [pageRemover]
 header = "Удаление страниц PDF"
@@ -5197,6 +5172,9 @@ title = "Советы"
 autoClose = "Это окно закроется автоматически..."
 billingPeriod = "Период оплаты"
 canCloseWindow = "Теперь можно закрыть это окно."
+checkoutInstructions = "Завершите покупку в открывшемся окне браузера. После оплаты вернитесь сюда и нажмите кнопку ниже, чтобы обновить платежную информацию."
+checkoutOpened = "Оформление покупки открыто в браузере"
+closeLater = "Сделаю это позже"
 emailInvalid = "Введите корректный адрес email"
 enterpriseNote = "Количество мест можно изменить на оплате (1–1000)."
 error = "Ошибка оплаты"
@@ -5218,6 +5196,7 @@ perMonth = "/месяц"
 perYear = "/год"
 preparing = "Подготовка к оплате..."
 redirecting = "Перенаправление на безопасную оплату..."
+refreshBilling = "Я завершил(а) оплату — обновить биллинг"
 stripeNotConfigured = "Stripe не настроен"
 stripeNotConfiguredMessage = "Интеграция платежей Stripe не настроена. Обратитесь к администратору."
 success = "Платеж успешно выполнен!"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "Подписка успешно обновлена. В
 upgradeSuccess = "Платёж прошёл успешно! Подписка обновлена. Лицензия на сервере обновлена. Вскоре вы получите подтверждение на email."
 upgradeTitle = "Обновить до {{planName}}"
 yearly = "Ежегодно"
-checkoutOpened = "Оформление покупки открыто в браузере"
-checkoutInstructions = "Завершите покупку в открывшемся окне браузера. После оплаты вернитесь сюда и нажмите кнопку ниже, чтобы обновить платежную информацию."
-refreshBilling = "Я завершил(а) оплату — обновить биллинг"
-closeLater = "Сделаю это позже"
 
 [payment.emailStage]
 continue = "Продолжить"
@@ -5456,13 +5431,6 @@ prompt = "Выберите страницу для извлечения табл
 submit = "Извлечь"
 title = "PDF в CSV"
 
-[PDFToXLSX]
-header = "PDF в Excel"
-prompt = "Выберите страницы для извлечения таблиц"
-submit = "Преобразовать"
-title = "PDF в Excel (XLSX)"
-tags = "табличный документ,excel,xlsx,таблица,извлечение,конвертация"
-
 [PDFToHTML]
 credit = "Этот сервис использует pdftohtml для преобразования файлов."
 header = "PDF в HTML"
@@ -5561,6 +5529,13 @@ title = "PDF в Word"
 [PDFToWord.selectText]
 1 = "Формат выходного файла"
 
+[PDFToXLSX]
+header = "PDF в Excel"
+prompt = "Выберите страницы для извлечения таблиц"
+submit = "Преобразовать"
+tags = "табличный документ,excel,xlsx,таблица,извлечение,конвертация"
+title = "PDF в Excel (XLSX)"
+
 [PDFToXML]
 credit = "Этот сервис использует LibreOffice для преобразования файлов."
 header = "PDF в XML"
@@ -5626,10 +5601,10 @@ manage = "Управлять"
 perMonth = "/месяц"
 perSeat = "/место"
 popular = "Популярный"
-selectPlan = "Выбрать тариф"
-selectCredits = "Выберите количество кредитов"
-showComparison = "Сравнить все функции"
 purchase = "Купить"
+selectCredits = "Выберите количество кредитов"
+selectPlan = "Выбрать тариф"
+showComparison = "Сравнить все функции"
 totalCost = "Итоговая стоимость"
 upgrade = "Обновить"
 withServer = "+ тариф Server"
@@ -5638,19 +5613,29 @@ withServer = "+ тариф Server"
 subtitle = "Детали вашей текущей подписки"
 title = "Активный план"
 
+[plan.api]
+large = "5,000 кредитов"
+medium = "1,000 кредитов"
+small = "500 кредитов"
+xsmall = "100 кредитов"
+
+[plan.apiPackages]
+subtitle = "Купите кредиты API для своих приложений"
+title = "Пакеты кредитов API"
+
 [plan.availablePlans]
-subtitle = "Выберите план, подходящий вашим потребностям"
 loadError = "Не удалось загрузить цены планов. Используются значения по умолчанию."
+subtitle = "Выберите план, подходящий вашим потребностям"
 title = "Доступные планы"
 
 [plan.enterprise]
-siteLicense = "Лицензия на сайт"
 highlight1 = "Индивидуальная цена"
 highlight2 = "Персональная поддержка"
 highlight3 = "Последние функции"
 name = "Корпоративный"
 requiresServer = "Требуется Server"
 requiresServerMessage = "Сначала перейдите на тариф Server, прежде чем обновляться до Enterprise."
+siteLicense = "Лицензия на сайт"
 
 [plan.feature]
 api = "Доступ к API"
@@ -5722,16 +5707,6 @@ successMessage = "Ваша лицензия успешно активирова�
 name = "Команда"
 siteLicense = "Лицензия на сайт"
 
-[plan.api]
-large = "5,000 кредитов"
-medium = "1,000 кредитов"
-small = "500 кредитов"
-xsmall = "100 кредитов"
-
-[plan.apiPackages]
-subtitle = "Купите кредиты API для своих приложений"
-title = "Пакеты кредитов API"
-
 [plan.trial]
 badge = "Пробный период"
 continueWithFree = "Продолжить с бесплатным тарифом"
@@ -5746,77 +5721,6 @@ subscribeToPro = "Оформить подписку Pro"
 subscriptionScheduled = "Подписка запланирована — начнётся {{date}}"
 title = "Пробный период активен"
 
-[credits]
-enableOverageBilling = "Включить оплату перерасхода"
-maybeLater = "Позже"
-upgrade = "Обновить"
-
-[credits.modal]
-advancedMonitoring = "Расширенный мониторинг"
-allInOneWorkspace = "Единое рабочее пространство PDF (просмотрщик, инструменты и агент)"
-apiSandbox = "Песочница API"
-contactSales = "Связаться с отделом продаж"
-creditsRemaining = "Осталось {{current}} из {{total}}"
-creditsThisMonth = "Кредиты за месяц"
-current = "Текущий план"
-customPricing = "Индивидуально"
-customSmartFolders = "Индивидуальные умные папки"
-dedicatedSupportSlas = "Выделенная поддержка и SLA"
-enterpriseSubscription = "Enterprise"
-everythingInCredits = "Все из Credits, плюс:"
-everythingInFree = "Все из Free, плюс:"
-fasterThroughput = "Пропускная способность в 10 раз выше"
-forRegularWork = "Для регулярной работы с PDF:"
-freeTier = "Бесплатный тариф"
-fullyPrivateFiles = "Полностью приватные файлы"
-largeFileProcessing = "Обработка больших файлов"
-managedMemberMessage = "У вас неограниченный доступ к кредитам через вашу команду. Если нужна помощь, свяжитесь с лидером команды."
-managedMemberTitle = "Неограниченные кредиты"
-meteringBillingNote = "Кредиты сверх лимита выставляются ежемесячно вместе с вашей подпиской Team. Отслеживайте использование в любое время в настройках аккаунта."
-meteringExplanation = "Ваш план Team включает {{credits}} кредитов в месяц. Когда они заканчиваются, автоматический биллинг перерасхода предоставляет дополнительные кредиты, чтобы вы никогда не прерывали работу."
-meteringIncluded = "{{credits}} кредитов/месяц включено в Team"
-meteringNoCommitment = "Без обязательств, отмена в любое время"
-meteringNeverRunOut = "Никогда не оставайтесь без кредитов"
-meteringPayAsYouGo = "Платите только за фактическое использование"
-meteringPrice = "Дополнительные кредиты по {{price}}/кредит"
-meteringTitle = "Оплата перерасхода «плати по факту»"
-monthlyCredits = "кредитов в месяц"
-orgWideAccess = "Контроль доступа на уровне организации"
-overage = "перерасход"
-perMonth = "/месяц"
-popular = "Популярно"
-premiumAiModels = "Премиальные AI-модели"
-prioritySupport = "Приоритетная поддержка"
-privateDocCloud = "Приватное облако документов"
-ragFineTuning = "RAG + дообучение"
-secureApiAccess = "Безопасный доступ к API"
-selfHostLink = "Изучить документацию и планы"
-selfHostPrompt = "Хотите развернуть сами?"
-standardThroughput = "Стандартная пропускная способность"
-subtitle = "Обновите до Team, чтобы получить в 10 раз больше кредитов и более быструю обработку."
-subtitlePro = "Включите автоматический биллинг перерасхода, чтобы никогда не оставаться без кредитов."
-teamLeaderOnly = "Только лидеры команд могут включать биллинг перерасхода"
-teamSubscription = "Team"
-titleExhausted = "Вы исчерпали бесплатные кредиты"
-titleExhaustedPro = "У вас закончились кредиты"
-unlimitedApiAccess = "Неограниченный доступ к API"
-unlimitedMonthlyCredits = "Лицензия на сайт"
-unlimitedSeats = "Неограниченное число пользователей"
-
-[credits.modal.features]
-everythingInCredits = "Все из Credits, плюс:"
-everythingInFree = "Все из Free, плюс:"
-forRegularWork = "Для регулярной работы с PDF:"
-
-[credits.insufficient]
-brief = "Недостаточно кредитов. Нужно {{required}} кредитов, а у вас {{current}}."
-freeTier = "Обновите до Team, чтобы получить в 10 раз больше кредитов и неограниченный биллинг перерасхода."
-managedMember = "Обратитесь к лидеру вашей команды за помощью."
-message = "У вас недостаточно кредитов для запуска {{tool}}. Сейчас у вас {{current}} кредитов."
-messageWithAmount = "Чтобы запустить {{tool}}, нужно {{required}} кредитов, но у вас только {{current}}."
-teamMember = "Включите биллинг перерасхода, чтобы никогда не оставаться без кредитов."
-title = "Недостаточно кредитов"
-
 [printFile]
 header = "Печать файла на принтер"
 submit = "Печать"
@@ -5825,6 +5729,207 @@ title = "Печать файла"
 [printFile.selectText]
 1 = "Выберите файл для печати"
 2 = "Введите имя принтера"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "Импорт файлов"
+
+[provider.googledrive.apiKey]
+description = "Ключ Google API для Google Picker API из Google Cloud Console"
+label = "API Key"
+
+[provider.googledrive.appId]
+description = "ID приложения Google Drive из Google Cloud Console"
+label = "ID приложения"
+
+[provider.googledrive.clientId]
+description = "Google OAuth 2.0 Client ID из Google Cloud Console"
+label = "Client ID"
+
+[provider.googledrive.enabled]
+description = "Разрешить пользователям импортировать файлы напрямую из Google Drive"
+label = "Включить селектор файлов Google Drive"
+
+[provider.oauth2.generic]
+name = "Универсальный OAuth2"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "Автоматически создавать учетные записи при первом входе через OAuth2"
+label = "Автосоздание пользователей"
+
+[provider.oauth2.generic.blockRegistration]
+description = "Запретить новую регистрацию через OAuth2"
+label = "Блокировать регистрацию"
+
+[provider.oauth2.generic.clientId]
+description = "OAuth2 Client ID от вашего провайдера"
+label = "Client ID"
+
+[provider.oauth2.generic.clientSecret]
+description = "OAuth2 Client Secret от вашего провайдера"
+label = "Client Secret"
+
+[provider.oauth2.generic.enabled]
+description = "Включить аутентификацию с использованием произвольного провайдера OAuth2"
+label = "Включить универсальный OAuth2"
+
+[provider.oauth2.generic.issuer]
+description = "Провайдер, поддерживающий OpenID Connect Discovery (/.well-known/openid-configuration)"
+label = "Issuer URL"
+
+[provider.oauth2.generic.provider]
+description = "Имя вашего провайдера OAuth2 (например, Azure AD, Okta)"
+label = "Имя провайдера"
+
+[provider.oauth2.generic.scopes]
+description = "OAuth2 scopes, разделенные запятыми"
+label = "Scopes"
+
+[provider.oauth2.generic.useAsUsername]
+description = "Поле для использования в качестве имени пользователя"
+label = "Использовать как имя пользователя"
+
+[provider.oauth2.github]
+scope = "Аутентификация входа"
+
+[provider.oauth2.github.clientId]
+description = "OAuth2 Client ID из GitHub Developer Settings"
+label = "Client ID"
+
+[provider.oauth2.github.clientSecret]
+description = "OAuth2 Client Secret из GitHub Developer Settings"
+label = "Client Secret"
+
+[provider.oauth2.github.scopes]
+description = "OAuth2 scopes, разделенные запятыми"
+label = "Scopes"
+
+[provider.oauth2.github.useAsUsername]
+description = "Поле для использования в качестве имени пользователя (email, login, name)"
+label = "Использовать как имя пользователя"
+
+[provider.oauth2.google]
+scope = "Аутентификация входа"
+
+[provider.oauth2.google.clientId]
+description = "OAuth2 Client ID из Google Cloud Console"
+label = "Client ID"
+
+[provider.oauth2.google.clientSecret]
+description = "OAuth2 Client Secret из Google Cloud Console"
+label = "Client Secret"
+
+[provider.oauth2.google.scopes]
+description = "OAuth2 scopes, разделенные запятыми"
+label = "Scopes"
+
+[provider.oauth2.google.useAsUsername]
+description = "Поле для использования в качестве имени пользователя (email, name, given_name, family_name)"
+label = "Использовать как имя пользователя"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "OAuth2 Client ID из Keycloak"
+label = "Client ID"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "OAuth2 Client Secret из Keycloak"
+label = "Client Secret"
+
+[provider.oauth2.keycloak.issuer]
+description = "URL конечной точки OpenID Connect Discovery realm в Keycloak"
+label = "Issuer URL"
+
+[provider.oauth2.keycloak.scopes]
+description = "OAuth2 scopes, разделенные запятыми"
+label = "Scopes"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "Поле для использования в качестве имени пользователя (email, name, given_name, family_name, preferred_username)"
+label = "Использовать как имя пользователя"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO (SAML)"
+
+[provider.saml2.autoCreateUser]
+description = "Автоматически создавать учетные записи при первом входе через SAML2"
+label = "Автосоздание пользователей"
+
+[provider.saml2.blockRegistration]
+description = "Запретить новую регистрацию через SAML2"
+label = "Блокировать регистрацию"
+
+[provider.saml2.enabled]
+description = "Включить аутентификацию SAML2 (только Enterprise)"
+label = "Включить SAML2"
+
+[provider.saml2.idpCert]
+description = "Путь к сертификату (например, classpath:okta.cert)"
+label = "Сертификат IDP"
+
+[provider.saml2.idpIssuer]
+description = "ID вашего провайдера"
+label = "IDP Issuer"
+
+[provider.saml2.idpMetadataUri]
+description = "URI метаданных вашего провайдера"
+label = "IDP Metadata URI"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "URL для инициирования SSO"
+label = "IDP Single Login URL"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "URL для инициирования SLO"
+label = "IDP Single Logout URL"
+
+[provider.saml2.privateKey]
+description = "Путь к вашему приватному ключу"
+label = "Приватный ключ"
+
+[provider.saml2.provider]
+description = "Имя вашего провайдера SAML2"
+label = "Имя провайдера"
+
+[provider.saml2.registrationId]
+description = "Имя вашего приложения Service Provider (SP)"
+label = "Registration ID"
+
+[provider.saml2.spCert]
+description = "Путь к вашему подписывающему сертификату"
+label = "Сертификат SP"
+
+[provider.smtp]
+name = "SMTP Почта"
+scope = "Email-уведомления"
+
+[provider.smtp.enabled]
+description = "Включить уведомления по email и функциональность SMTP"
+label = "Включить почту"
+
+[provider.smtp.from]
+description = "Адрес электронной почты, используемый как отправитель"
+label = "Адрес отправителя"
+
+[provider.smtp.host]
+description = "Имя хоста или IP-адрес вашего SMTP-сервера"
+label = "SMTP Host"
+
+[provider.smtp.password]
+description = "Пароль для аутентификации SMTP"
+label = "SMTP Password"
+
+[provider.smtp.port]
+description = "Номер порта для подключения SMTP (обычно 25, 465 или 587)"
+label = "SMTP Port"
+
+[provider.smtp.username]
+description = "Имя пользователя для аутентификации SMTP"
+label = "SMTP Username"
 
 [quickAccess]
 access = "Доступ"
@@ -5867,7 +5972,12 @@ createNew = "Создать новый запрос"
 createSession = "Создать запрос подписи"
 dueDate = "Срок (необязательно)"
 files = "Файлы"
+filterDeclined = "Отклонено"
+filterMine = "Мои"
+filterOverdue = "Просрочено"
+filterSigned = "Подписано"
 help = "Справка"
+newRequest = "Новый запрос"
 noActiveSessions = "Нет ожидающих запросов подписи или активных сессий"
 noCompletedSessions = "Нет завершённых сессий"
 noFile = "Файл не выбран"
@@ -5875,8 +5985,9 @@ read = "Чтение"
 reader = "Читалка"
 refresh = "Обновить"
 requestSignatures = "Запросить подписи"
-selectSingleFileToRequest = "Выберите один PDF-файл, чтобы запросить подписи"
+searchDocuments = "Поиск документов…"
 selectedFile = "Выбранный файл"
+selectSingleFileToRequest = "Выберите один PDF-файл, чтобы запросить подписи"
 selectUsers = "Выберите пользователей для подписи"
 selectUsersPlaceholder = "Выберите участников..."
 sendingRequest = "Отправка..."
@@ -5885,14 +5996,8 @@ showMeAround = "Проведите по интерфейсу"
 sign = "Подпись"
 signatureRequests = "Запросы подписи"
 signYourself = "Подписать самому"
-newRequest = "Новый запрос"
 tours = "Туры"
 wetSign = "Добавить подпись"
-filterMine = "Мои"
-filterOverdue = "Просрочено"
-filterSigned = "Подписано"
-filterDeclined = "Отклонено"
-searchDocuments = "Поиск документов…"
 
 [quickAccess.helpMenu]
 adminTour = "Обзор администрирования"
@@ -5933,15 +6038,15 @@ title = "Слова для скрытия"
 failed = "Произошла ошибка при редактировании (редакции) PDF."
 
 [redact.manual]
+activate = "Активировать инструмент скрытия"
+active = "Режим скрытия включён"
 apply = "Применить"
 applyChanges = "Применить изменения"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ Применение необратимо; отмена невозможна, данные под зачернением будут удалены"
 boxRedaction = "Скрытие рамкой"
-colourPicker = "Выбор цвета"
 colorLabel = "Цвет скрытия"
-active = "Режим скрытия включён"
-activate = "Активировать инструмент скрытия"
+colourPicker = "Выбор цвета"
 controlsTitle = "Ручные элементы управления зачернением"
 convertPDFToImageLabel = "Преобразовать PDF в PDF-изображение (для удаления текста за рамкой)"
 export = "Экспорт"
@@ -6337,6 +6442,46 @@ title = "Высокая контрастность"
 text = "Полностью инвертируйте все цвета в PDF, создавая эффект негатива. Полезно для темного режима или снижения нагрузки на глаза при слабом освещении."
 title = "Инвертировать все цвета"
 
+[rightRail]
+annotations = "Аннотации"
+applyRedactionsFirst = "Сначала примените зачернения"
+closePdf = "Закрыть PDF"
+closeSelected = "Закрыть выбранные файлы"
+deleteSelected = "Удалить выбранные страницы"
+deselectAll = "Отменить выбор всех"
+downloadAll = "Скачать все"
+downloadSelected = "Скачать выбранные файлы"
+draw = "Рисовать"
+exitRedaction = "Выйти из режима зачернения"
+exportAll = "Экспортировать PDF"
+exportSelected = "Экспортировать выбранные страницы"
+formFill = "Заполнить форму"
+language = "Язык"
+panMode = "Режим панорамирования"
+print = "Печать PDF"
+readAloud = "Читать вслух"
+readAloudLanguage = "Язык"
+readAloudSpeed = "Скорость"
+redact = "Зачернить"
+rotateLeft = "Повернуть влево"
+rotateRight = "Повернуть вправо"
+ruler = "Линейка / Измерение"
+save = "Сохранить"
+saveAll = "Сохранить всё"
+saveAs = "Сохранить как"
+saveChanges = "Сохранить изменения"
+search = "Поиск по PDF"
+selectAll = "Выбрать все"
+selectByNumber = "Выбрать по номерам страниц"
+selectLanguage = "Выберите язык"
+toggleAnnotations = "Показать/скрыть аннотации"
+toggleAttachments = "Показать/скрыть вложения"
+toggleBookmarks = "Показать/скрыть закладки"
+toggleComments = "Комментарии"
+toggleLayers = "Переключить слои"
+toggleSidebar = "Показать/скрыть боковую панель"
+toggleTheme = "Переключить тему"
+
 [rotate]
 rotateLeft = "Повернуть против часовой стрелки"
 rotateRight = "Повернуть по часовой стрелке"
@@ -6359,32 +6504,6 @@ text = "Поворачивайте страницы PDF по или против
 
 [rotate.tooltip.header]
 title = "Обзор настроек поворота"
-
-[timestampPdf]
-completed = "PDF успешно помечен меткой времени"
-desc = "Добавьте к своему PDF метку времени RFC 3161 с использованием доверенного сервера Time Stamp Authority (TSA)."
-filenamePrefix = "timestamped"
-results = "Результаты метки времени"
-submit = "Применить метку времени"
-title = "Метка времени PDF"
-
-[timestampPdf.error]
-failed = "Произошла ошибка при добавлении метки времени к PDF."
-generic = "Не удалось добавить метку времени"
-
-[timestampPdf.files]
-placeholder = "Выберите файл PDF в главном окне, чтобы начать"
-
-[timestampPdf.options]
-note = "На сервер TSA отправляется только хеш SHA-256 вашего документа; сам файл PDF никогда не отправляется."
-title = "Сервер метки времени (TSA)"
-
-[timestampPdf.options.tsaUrl]
-desc = "Выберите доверенную службу Time Stamp Authority"
-label = "Выберите сервер TSA"
-
-[timestampPdf.steps]
-settings = "Настройки"
 
 [sanitize]
 completed = "Санитизация успешно завершена"
@@ -6554,37 +6673,6 @@ bullet3 = "Критично для процессов утверждения и 
 description = "Порядок, который вы задаёте при создании сессии, определяет, кто подписывает первым."
 title = "Порядок подписей"
 
-[signatureSettings.tooltip]
-header = "Настройки внешнего вида подписи"
-
-[signatureSettings.tooltip.location]
-bullet1 = "Примеры: «New York, USA», «London Office», «Remote»"
-bullet2 = "Не то же самое, что позиция на странице"
-bullet3 = "Может требоваться в некоторых юрисдикциях"
-description = "Необязательное географическое местоположение, где была поставлена подпись. Хранится в метаданных сертификата."
-title = "Местоположение подписи"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "Отображается рядом с подписью и текстом"
-bullet2 = "Поддерживаются форматы PNG, JPG"
-bullet3 = "Повышает профессиональный вид"
-description = "Добавьте логотип компании к видимым подписям для брендинга и подтверждения подлинности."
-title = "Логотип компании"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "Примеры: «Утверждение», «Заключение контракта», «Проверка завершена»"
-bullet2 = "Видна в свойствах подписи PDF"
-bullet3 = "Полезна для аудита и соответствия требованиям"
-description = "Необязательный текст, объясняющий, почему документ подписывается. Хранится в метаданных сертификата."
-title = "Причина подписи"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>Видимая</b>: подпись появляется в PDF с настраиваемым видом"
-bullet2 = "<b>Невидимая</b>: сертификат встраивается без визуальной метки"
-bullet3 = "Невидимые подписи всё равно обеспечивают криптографическую проверку"
-description = "Определяет, будет ли подпись видна в документе или встроена невидимо."
-title = "Видимость подписи"
-
 [settings.configuration]
 advanced = "Дополнительно"
 database = "База данных"
@@ -6606,6 +6694,102 @@ user = "Вы вошли как"
 local = "Только локально"
 saas = "Stirling Cloud"
 selfhosted = "Самохостинг"
+
+[settings.developer]
+apiKeys = "Ключи API"
+title = "Разработчик"
+
+[settings.general]
+autoUnzip = "Автораспаковка ответов API"
+autoUnzipDescription = "Автоматически извлекать файлы из ZIP‑ответов"
+autoUnzipFileLimit = "Лимит автораспаковки файлов"
+autoUnzipFileLimitDescription = "Максимальное число файлов для извлечения из ZIP"
+autoUnzipFileLimitTooltip = "Распаковывать только если ZIP содержит не больше указанного количества файлов. Увеличьте для извлечения больших ZIP."
+autoUnzipTooltip = "Автоматически извлекать ZIP‑файлы, возвращаемые операциями API. Отключите, чтобы сохранять ZIP‑файлы как есть. Не влияет на автоматизации."
+defaultPdfEditor = "Редактор PDF по умолчанию"
+defaultPdfEditorActive = "Stirling PDF — ваш редактор PDF по умолчанию"
+defaultPdfEditorChecking = "Проверка..."
+defaultPdfEditorInactive = "Другое приложение назначено по умолчанию"
+defaultPdfEditorSet = "Уже по умолчанию"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "Режим выбора инструмента по умолчанию"
+defaultToolPickerModeDescription = "Выберите, должен ли выбор инструментов по умолчанию открываться в полноэкранном режиме или в боковой панели"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "Настройте общие параметры приложения."
+hideUnavailableConversions = "Скрывать недоступные конвертации"
+hideUnavailableConversionsDescription = "Убирать отключённые параметры конвертации в инструменте Convert вместо отображения их серыми."
+hideUnavailableTools = "Скрывать недоступные инструменты"
+hideUnavailableToolsDescription = "Убирать инструменты, отключённые на сервере, вместо отображения их серыми."
+logout = "Выйти"
+setAsDefault = "Сделать по умолчанию"
+title = "Общие"
+user = "Пользователь"
+
+[settings.general.enableFeatures]
+action = "Настроить"
+and = "и"
+benefit = "Включает роли пользователей, командную работу, админ‑контроль и корпоративные функции."
+dismiss = "Скрыть"
+intro = "Включите аутентификацию пользователей, управление командами и функции рабочей области для вашей организации."
+learnMore = "Подробнее в документации"
+title = "Для системных администраторов"
+
+[settings.general.mode]
+fullscreen = "Полноэкранный"
+sidebar = "Боковая панель"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "Проверить обновления"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "Проверка обновлений и сведения о версии"
+latestVersion = "Последняя версия"
+serverNeedsUpdate = "Сервер должен быть обновлён администратором"
+title = "Обновления ПО"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "Подробнее"
+
+[settings.general.versionInfo]
+description = "Сведения о версиях Desktop и сервера"
+desktop = "Версия Desktop"
+server = "Версия сервера"
+title = "Сведения о версии"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "Нажмите клавиши… (Esc — отмена)"
+change = "Изменить сочетание"
+customBadge = "Пользовательское"
+defaultLabel = "По умолчанию: {{shortcut}}"
+description = "Настройте горячие клавиши для быстрого доступа к инструментам. Нажмите «Изменить сочетание» и введите новую комбинацию клавиш. Нажмите Esc, чтобы отменить."
+errorConflict = "Сочетание уже используется инструментом {{tool}}."
+none = "Не назначено"
+noShortcut = "Сочетание не задано"
+reset = "Сброс"
+searchPlaceholder = "Поиск инструментов..."
+shortcut = "Сочетание"
+title = "Горячие клавиши"
+
+[settings.hotkeys.errorModifier]
+mac = "Добавьте ⌘ (Command), ⌥ (Option) или другой модификатор в сочетание."
+windows = "Добавьте Ctrl, Alt или другой модификатор в сочетание."
+
+[settings.licensingAnalytics]
+audit = "Аудит"
+plan = "План"
+title = "Лицензирование и аналитика"
+usageAnalytics = "Аналитика использования"
 
 [settings.planBilling]
 currentPlan = "Текущий план"
@@ -6637,6 +6821,10 @@ canceled = "Отменен"
 pastDue = "Просрочен"
 trial = "Пробный период"
 
+[settings.planBilling.team]
+managedByTeam = "Управляется командой"
+memberCount = "{{count}} участников команды"
+
 [settings.planBilling.tier]
 enterprise = "Enterprise"
 enterpriseDescription = "Индивидуальные корпоративные функции и поддержка"
@@ -6648,10 +6836,6 @@ teamDescription = "500 кредитов/месяц включено, автом�
 teamTooltipCredits = "План Team включает {{credits}} кредитов/месяц."
 teamTooltipFineprint = "Платите только за использование сверх включенных кредитов."
 teamTooltipOverage = "Автоматический биллинг перерасхода по {{price}}/кредит обеспечивает непрерывную работу."
-
-[settings.planBilling.team]
-managedByTeam = "Управляется командой"
-memberCount = "{{count}} участников команды"
 
 [settings.planBilling.trial]
 daysRemaining = "{{days}} дней осталось"
@@ -6670,88 +6854,6 @@ featureThroughput = "Более высокая пропускная способ
 opensInBrowser = "Откроется в браузере для завершения обновления"
 subtitle = "Обновите до Team, чтобы получить:"
 title = "Обновите свой план"
-
-[settings.developer]
-apiKeys = "Ключи API"
-title = "Разработчик"
-
-[settings.general]
-autoUnzip = "Автораспаковка ответов API"
-autoUnzipDescription = "Автоматически извлекать файлы из ZIP‑ответов"
-autoUnzipFileLimit = "Лимит автораспаковки файлов"
-autoUnzipFileLimitDescription = "Максимальное число файлов для извлечения из ZIP"
-autoUnzipFileLimitTooltip = "Распаковывать только если ZIP содержит не больше указанного количества файлов. Увеличьте для извлечения больших ZIP."
-autoUnzipTooltip = "Автоматически извлекать ZIP‑файлы, возвращаемые операциями API. Отключите, чтобы сохранять ZIP‑файлы как есть. Не влияет на автоматизации."
-defaultPdfEditor = "Редактор PDF по умолчанию"
-defaultPdfEditorActive = "Stirling PDF — ваш редактор PDF по умолчанию"
-defaultPdfEditorChecking = "Проверка..."
-defaultPdfEditorInactive = "Другое приложение назначено по умолчанию"
-defaultPdfEditorSet = "Уже по умолчанию"
-defaultToolPickerMode = "Режим выбора инструмента по умолчанию"
-defaultToolPickerModeDescription = "Выберите, должен ли выбор инструментов по умолчанию открываться в полноэкранном режиме или в боковой панели"
-description = "Настройте общие параметры приложения."
-hideUnavailableConversions = "Скрывать недоступные конвертации"
-hideUnavailableConversionsDescription = "Убирать отключённые параметры конвертации в инструменте Convert вместо отображения их серыми."
-hideUnavailableTools = "Скрывать недоступные инструменты"
-hideUnavailableToolsDescription = "Убирать инструменты, отключённые на сервере, вместо отображения их серыми."
-logout = "Выйти"
-setAsDefault = "Сделать по умолчанию"
-title = "Общие"
-user = "Пользователь"
-
-[settings.general.enableFeatures]
-action = "Настроить"
-and = "и"
-benefit = "Включает роли пользователей, командную работу, админ‑контроль и корпоративные функции."
-dismiss = "Скрыть"
-intro = "Включите аутентификацию пользователей, управление командами и функции рабочей области для вашей организации."
-learnMore = "Подробнее в документации"
-title = "Для системных администраторов"
-
-[settings.general.mode]
-fullscreen = "Полноэкранный"
-sidebar = "Боковая панель"
-
-[settings.general.updates]
-checkForUpdates = "Проверить обновления"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "Проверка обновлений и сведения о версии"
-latestVersion = "Последняя версия"
-serverNeedsUpdate = "Сервер должен быть обновлён администратором"
-title = "Обновления ПО"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "Подробнее"
-
-[settings.general.versionInfo]
-description = "Сведения о версиях Desktop и сервера"
-desktop = "Версия Desktop"
-server = "Версия сервера"
-title = "Сведения о версии"
-
-[settings.hotkeys]
-capturing = "Нажмите клавиши… (Esc — отмена)"
-change = "Изменить сочетание"
-customBadge = "Пользовательское"
-defaultLabel = "По умолчанию: {{shortcut}}"
-description = "Настройте горячие клавиши для быстрого доступа к инструментам. Нажмите «Изменить сочетание» и введите новую комбинацию клавиш. Нажмите Esc, чтобы отменить."
-errorConflict = "Сочетание уже используется инструментом {{tool}}."
-none = "Не назначено"
-noShortcut = "Сочетание не задано"
-reset = "Сброс"
-searchPlaceholder = "Поиск инструментов..."
-shortcut = "Сочетание"
-title = "Горячие клавиши"
-
-[settings.hotkeys.errorModifier]
-mac = "Добавьте ⌘ (Command), ⌥ (Option) или другой модификатор в сочетание."
-windows = "Добавьте Ctrl, Alt или другой модификатор в сочетание."
-
-[settings.licensingAnalytics]
-audit = "Аудит"
-plan = "План"
-title = "Лицензирование и аналитика"
-usageAnalytics = "Аналитика использования"
 
 [settings.policiesPrivacy]
 legal = "Юридическая информация"
@@ -6789,6 +6891,9 @@ security = "Безопасность"
 telegram = "Telegram"
 title = "Безопасность и аутентификация"
 
+[settings.team]
+title = "Команда"
+
 [settings.tooltips]
 enableLoginFirst = "Сначала включите режим входа"
 requiresEnterprise = "Требуется лицензия Enterprise"
@@ -6798,21 +6903,6 @@ people = "Участники"
 teams = "Команды"
 title = "Рабочее пространство"
 
-[settings.team]
-title = "Команда"
-
-[localMode]
-toolUnavailable = "Для этого инструмента требуется аккаунт. Войдите в Stirling Cloud или подключитесь к саморазмещённому серверу, чтобы использовать его."
-
-[localMode.banner]
-message = "Войдите, чтобы разблокировать все инструменты."
-signIn = "Войти"
-title = "Запущено локально"
-
-[localMode.toolPicker]
-message = "Войдите, чтобы разблокировать все инструменты."
-signIn = "Войти"
-
 [setup]
 description = "Начните с выбора способа использования Stirling PDF"
 welcome = "Добро пожаловать в Stirling PDF"
@@ -6820,7 +6910,6 @@ welcome = "Добро пожаловать в Stirling PDF"
 [setup.login]
 connectingTo = "Подключение к:"
 hideInstructions = "Скрыть инструкции"
-skipSignIn = "Продолжить без входа"
 instructions = "Чтобы включить вход в систему на вашем сервере Stirling PDF:"
 instructionsEnvVar = "Установите переменную окружения:"
 instructionsOrYml = "Или в settings.yml:"
@@ -6830,6 +6919,7 @@ orContinueWith = "Или продолжить по email"
 serverRequirement = "Примечание: на сервере должен быть включён вход в систему."
 showInstructions = "Как включить?"
 signInWith = "Войти через"
+skipSignIn = "Продолжить без входа"
 sso = "Единый вход (SSO)"
 submit = "Войти"
 subtitle = "Введите учётные данные для продолжения"
@@ -6866,9 +6956,9 @@ subtitle = "Войдите в аккаунт Stirling"
 title = "Вход в Stirling"
 
 [setup.selfhosted]
+changeServerLocked = "Ваша организация ограничила это приложение определённым сервером"
 link = "или подключитесь к самохостируемой учётной записи"
 subtitle = "Введите учётные данные сервера"
-changeServerLocked = "Ваша организация ограничила это приложение определённым сервером"
 switchToLocal = "Вместо этого использовать локальные инструменты"
 title = "Вход на сервер"
 
@@ -7068,14 +7158,45 @@ saved = "Сохранённое"
 text = "Текст"
 title = "Тип подписи"
 
+[signatureSettings.tooltip]
+header = "Настройки внешнего вида подписи"
+
+[signatureSettings.tooltip.location]
+bullet1 = "Примеры: «New York, USA», «London Office», «Remote»"
+bullet2 = "Не то же самое, что позиция на странице"
+bullet3 = "Может требоваться в некоторых юрисдикциях"
+description = "Необязательное географическое местоположение, где была поставлена подпись. Хранится в метаданных сертификата."
+title = "Местоположение подписи"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "Отображается рядом с подписью и текстом"
+bullet2 = "Поддерживаются форматы PNG, JPG"
+bullet3 = "Повышает профессиональный вид"
+description = "Добавьте логотип компании к видимым подписям для брендинга и подтверждения подлинности."
+title = "Логотип компании"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "Примеры: «Утверждение», «Заключение контракта», «Проверка завершена»"
+bullet2 = "Видна в свойствах подписи PDF"
+bullet3 = "Полезна для аудита и соответствия требованиям"
+description = "Необязательный текст, объясняющий, почему документ подписывается. Хранится в метаданных сертификата."
+title = "Причина подписи"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>Видимая</b>: подпись появляется в PDF с настраиваемым видом"
+bullet2 = "<b>Невидимая</b>: сертификат встраивается без визуальной метки"
+bullet3 = "Невидимые подписи всё равно обеспечивают криптографическую проверку"
+description = "Определяет, будет ли подпись видна в документе или встроена невидимо."
+title = "Видимость подписи"
+
 [signRequest]
 declined = "Запрос подписи отклонён"
 fetchFailed = "Не удалось загрузить запрос подписи"
 signed = "Документ успешно подписан"
 
 [signSession]
-createFailed = "Не удалось создать запрос подписи"
 created = "Запрос подписи отправлен"
+createFailed = "Не удалось создать запрос подписи"
 
 [signup]
 accountCreatedSuccessfully = "Аккаунт успешно создан! Теперь вы можете войти."
@@ -7156,15 +7277,15 @@ desc = "Авто-разделение с разделительными лист
 name = "Разделитель страниц"
 tooltip = "Используйте листы-разделители с QR-кодом между документами при сканировании"
 
-[split.methods.byPoster]
-name = "Печатаемые фрагменты"
-desc = "Разделяйте большие страницы на печатные форматы"
-tooltip = "Разделяйте сверхразмерные страницы на фрагменты, подходящие для печати на стандартной бумаге (A4, Letter и т. д.)"
-
 [split.methods.byPages]
 desc = "Извлечь конкретные страницы (1,3,5-10)"
 name = "Номера страниц"
 tooltip = "Введите номера страниц через запятую или диапазоны через дефис"
+
+[split.methods.byPoster]
+desc = "Разделяйте большие страницы на печатные форматы"
+name = "Печатаемые фрагменты"
+tooltip = "Разделяйте сверхразмерные страницы на фрагменты, подходящие для печати на стандартной бумаге (A4, Letter и т. д.)"
 
 [split.methods.bySections]
 desc = "Делить страницы на секции сетки"
@@ -7192,27 +7313,27 @@ title = "Выберите метод разделения"
 text = "Выберите способ разделения PDF. Каждый метод оптимизирован для разных сценариев и типов документов."
 title = "Выбор метода разделения"
 
+[split.poster]
+rightToLeft = "Разделять справа налево"
+
+[split.poster.pageSize]
+description = "Размер выходных страниц для печати"
+label = "Целевой размер страницы"
+
+[split.poster.xFactor]
+description = "Количество столбцов, на которые делится каждая страница"
+label = "Горизонтальные деления"
+
+[split.poster.yFactor]
+description = "Количество строк, на которые делится каждая страница"
+label = "Вертикальные деления"
+
 [split.settings]
 selectMethodFirst = "Сначала выберите метод разделения"
 
 [split.steps]
 chooseMethod = "Выбрать метод"
 settings = "Настройки"
-
-[split.poster]
-rightToLeft = "Разделять справа налево"
-
-[split.poster.pageSize]
-label = "Целевой размер страницы"
-description = "Размер выходных страниц для печати"
-
-[split.poster.xFactor]
-label = "Горизонтальные деления"
-description = "Количество столбцов, на которые делится каждая страница"
-
-[split.poster.yFactor]
-label = "Вертикальные деления"
-description = "Количество строк, на которые делится каждая страница"
 
 [split.tooltip.byChapters]
 bullet1 = "Уровень закладок: по какому уровню делить (1 = верхний)"
@@ -7251,6 +7372,13 @@ bullet5 = "Включите дуплексный режим, если скани
 text = "Автоматически разделяйте отсканированные документы с помощью физических листов‑разделителей с QR‑кодами. Отлично для обработки нескольких документов, отсканированных вместе."
 title = "Разделить по разделителям страниц"
 
+[split.tooltip.byPages]
+bullet1 = "Единичные точки: 3,7 (делит после страниц 3 и 7)"
+bullet2 = "Диапазоны: 3-8 (делит перед 3 и после 8)"
+bullet3 = "Смешанные: 2,5-10,15 (после 2, перед 5, после 10 и после 15)"
+text = "Разделяйте PDF в указанных точках. «n» — делит после страницы n. «n-m» — делит перед n и после m."
+title = "Делить по номерам страниц"
+
 [split.tooltip.byPoster]
 bullet1 = "Целевой размер страницы: выберите формат бумаги вывода (A4, Letter и т. д.)"
 bullet2 = "Горизонтальные/вертикальные деления: размер сетки для разделения"
@@ -7258,13 +7386,6 @@ bullet3 = "Справа налево: обратный порядок столб
 bullet4 = "Распечатайте и соберите части, чтобы создать постер"
 text = "Разделяйте большие страницы PDF на более мелкие печатные фрагменты, подходящие для стандартных размеров бумаги. Идеально для создания постеров из сверхбольших страниц."
 title = "Разделение для печати постера"
-
-[split.tooltip.byPages]
-bullet1 = "Единичные точки: 3,7 (делит после страниц 3 и 7)"
-bullet2 = "Диапазоны: 3-8 (делит перед 3 и после 8)"
-bullet3 = "Смешанные: 2,5-10,15 (после 2, перед 5, после 10 и после 15)"
-text = "Разделяйте PDF в указанных точках. «n» — делит после страницы n. «n-m» — делит перед n и после m."
-title = "Делить по номерам страниц"
 
 [split.tooltip.bySections]
 bullet1 = "Горизонтально: число строк"
@@ -7355,106 +7476,6 @@ title = "Разделить PDF по главам"
 [splitPdfByChapters]
 tags = "разделение,главы,закладки,организация"
 
-[storageShare]
-accessed = "Открыто"
-accessDenied = "У вас нет доступа к этому общему файлу. Попросите владельца поделиться им с вами."
-accessFailed = "Не удалось загрузить активность."
-accessDeniedBody = "У вас нет доступа к этому файлу. Попросите владельца поделиться им с вами."
-accessDeniedTitle = "Нет доступа"
-accessLimitedCommenter = "Доступ для комментариев скоро появится. Попросите у владельца доступ редактора, если нужно скачать."
-accessLimitedTitle = "Ограниченный доступ"
-accessLimitedViewer = "Эта ссылка только для просмотра. Попросите у владельца доступ редактора, если нужно скачать."
-createdAt = "Создано"
-download = "Скачать"
-downloadFailed = "Не удалось скачать этот файл."
-expiredBody = "Эта ссылка общего доступа недействительна или срок её действия истёк."
-expiredTitle = "Ссылка недействительна"
-goToLogin = "Перейти ко входу"
-loadFailed = "Не удалось открыть общий файл."
-loading = "Загрузка ссылки общего доступа..."
-loginPrompt = "Войдите, чтобы получить доступ к этому общему файлу."
-loginRequired = "Требуется вход"
-openInApp = "Открыть в Stirling PDF"
-ownerLabel = "Владелец"
-ownerUnknown = "Неизвестно"
-requiresLogin = "Для этого общего файла требуется вход."
-roleCommenter = "Комментатор"
-roleEditor = "Редактор"
-roleViewer = "Просмотр"
-shareHeading = "Общий файл"
-titleDefault = "Общий файл"
-tryAgain = "Повторите попытку позже."
-addUser = "Добавить"
-commenterHint = "Комментирование скоро появится."
-copied = "Ссылка скопирована в буфер обмена"
-copy = "Копировать"
-copyFailed = "Не удалось скопировать"
-description = "Создать ссылку общего доступа к этому файлу. Вошедшие пользователи со ссылкой смогут получить доступ."
-downloadsCount = "Загрузки: {{count}}"
-emailWarningBody = "Похоже на адрес электронной почты. Если этот человек ещё не является пользователем Stirling PDF, он не сможет получить доступ к файлу."
-emailWarningConfirm = "Всё равно поделиться"
-emailWarningTitle = "Адрес электронной почты"
-errorTitle = "Не удалось поделиться"
-failure = "Не удалось сгенерировать ссылку общего доступа. Повторите попытку."
-fileLabel = "Файл"
-generate = "Сгенерировать ссылку"
-generated = "Ссылка общего доступа создана"
-hideActivity = "Скрыть активность"
-invalidUsername = "Введите корректное имя пользователя или адрес электронной почты."
-lastAccessed = "Последний доступ"
-linkAccessTitle = "Доступ по ссылке общего доступа"
-linkLabel = "Ссылка общего доступа"
-linksDisabled = "Ссылки общего доступа отключены."
-linksDisabledBody = "Ссылки общего доступа отключены настройками вашего сервера."
-manage = "Управление общим доступом"
-manageDescription = "Создавайте и управляйте ссылками для общего доступа к этому файлу."
-manageLoadFailed = "Не удалось загрузить ссылки общего доступа."
-manageTitle = "Управление общим доступом"
-noActivity = "Пока нет активности."
-noLinks = "Активных ссылок общего доступа пока нет."
-noSharedUsers = "Пока нет пользователей с доступом."
-removeLink = "Удалить ссылку"
-removeUser = "Удалить"
-revokeFailed = "Не удалось удалить ссылку общего доступа."
-revoked = "Ссылка общего доступа удалена"
-roleLabel = "Роль"
-sharingDisabled = "Общий доступ отключен."
-sharingDisabledBody = "Общий доступ отключен настройками вашего сервера."
-sharedUsersTitle = "Пользователи с доступом"
-title = "Общий доступ к файлу"
-unknownUser = "Неизвестный пользователь"
-userAddFailed = "Не удалось предоставить общий доступ этому пользователю."
-userAdded = "Пользователь добавлен в список доступа."
-usernameLabel = "Имя пользователя или электронная почта"
-usernamePlaceholder = "Введите имя пользователя или электронную почту"
-userRemoveFailed = "Не удалось удалить этого пользователя."
-userRemoved = "Пользователь удален из списка доступа."
-viewActivity = "Просмотреть активность"
-viewed = "Просмотрено"
-viewsCount = "Просмотры: {{count}}"
-downloaded = "Скачано"
-bulkDescription = "Создать одну ссылку для предоставления общего доступа ко всем выбранным файлам авторизованным пользователям."
-bulkTitle = "Общий доступ к выбранным файлам"
-copyLink = "Скопировать ссылку общего доступа"
-fileCount = "Выбрано файлов: {{count}}"
-ownerOnly = "Только владелец может управлять общим доступом."
-selectSingleFile = "Выберите один файл для управления общим доступом."
-
-[storageUpload]
-description = "Это загружает текущий файл в хранилище сервера для вашего доступа."
-errorTitle = "Сбой загрузки"
-failure = "Не удалось загрузить. Проверьте свои учетные данные и настройки хранилища."
-fileLabel = "Файл"
-hint = "Публичные ссылки и режимы доступа управляются настройками вашего сервера."
-success = "Загружено на сервер"
-title = "Загрузить на сервер"
-updateButton = "Обновить на сервере"
-uploadButton = "Загрузить на сервер"
-bulkDescription = "Это загружает выбранные файлы в хранилище вашего сервера."
-bulkTitle = "Загрузить выбранные файлы"
-fileCount = "Выбрано файлов: {{count}}"
-more = " +{{count}} ещё"
-
 [storage]
 approximateSize = "Примерный размер"
 fileTooLarge = "Файл слишком большой. Максимальный размер на файл —"
@@ -7463,6 +7484,106 @@ storageLimit = "Лимит хранилища"
 storageQuotaExceeded = "Квота хранилища превышена. Пожалуйста, удалите часть файлов перед дальнейшей загрузкой."
 storageUsed = "Использовано временного хранилища"
 temporaryNotice = "Файлы временно сохраняются в вашем браузере и могут быть автоматически удалены"
+
+[storageShare]
+accessDenied = "У вас нет доступа к этому общему файлу. Попросите владельца поделиться им с вами."
+accessDeniedBody = "У вас нет доступа к этому файлу. Попросите владельца поделиться им с вами."
+accessDeniedTitle = "Нет доступа"
+accessed = "Открыто"
+accessFailed = "Не удалось загрузить активность."
+accessLimitedCommenter = "Доступ для комментариев скоро появится. Попросите у владельца доступ редактора, если нужно скачать."
+accessLimitedTitle = "Ограниченный доступ"
+accessLimitedViewer = "Эта ссылка только для просмотра. Попросите у владельца доступ редактора, если нужно скачать."
+addUser = "Добавить"
+bulkDescription = "Создать одну ссылку для предоставления общего доступа ко всем выбранным файлам авторизованным пользователям."
+bulkTitle = "Общий доступ к выбранным файлам"
+commenterHint = "Комментирование скоро появится."
+copied = "Ссылка скопирована в буфер обмена"
+copy = "Копировать"
+copyFailed = "Не удалось скопировать"
+copyLink = "Скопировать ссылку общего доступа"
+createdAt = "Создано"
+description = "Создать ссылку общего доступа к этому файлу. Вошедшие пользователи со ссылкой смогут получить доступ."
+download = "Скачать"
+downloaded = "Скачано"
+downloadFailed = "Не удалось скачать этот файл."
+downloadsCount = "Загрузки: {{count}}"
+emailWarningBody = "Похоже на адрес электронной почты. Если этот человек ещё не является пользователем Stirling PDF, он не сможет получить доступ к файлу."
+emailWarningConfirm = "Всё равно поделиться"
+emailWarningTitle = "Адрес электронной почты"
+errorTitle = "Не удалось поделиться"
+expiredBody = "Эта ссылка общего доступа недействительна или срок её действия истёк."
+expiredTitle = "Ссылка недействительна"
+failure = "Не удалось сгенерировать ссылку общего доступа. Повторите попытку."
+fileCount = "Выбрано файлов: {{count}}"
+fileLabel = "Файл"
+generate = "Сгенерировать ссылку"
+generated = "Ссылка общего доступа создана"
+goToLogin = "Перейти ко входу"
+hideActivity = "Скрыть активность"
+invalidUsername = "Введите корректное имя пользователя или адрес электронной почты."
+lastAccessed = "Последний доступ"
+linkAccessTitle = "Доступ по ссылке общего доступа"
+linkLabel = "Ссылка общего доступа"
+linksDisabled = "Ссылки общего доступа отключены."
+linksDisabledBody = "Ссылки общего доступа отключены настройками вашего сервера."
+loadFailed = "Не удалось открыть общий файл."
+loading = "Загрузка ссылки общего доступа..."
+loginPrompt = "Войдите, чтобы получить доступ к этому общему файлу."
+loginRequired = "Требуется вход"
+manage = "Управление общим доступом"
+manageDescription = "Создавайте и управляйте ссылками для общего доступа к этому файлу."
+manageLoadFailed = "Не удалось загрузить ссылки общего доступа."
+manageTitle = "Управление общим доступом"
+noActivity = "Пока нет активности."
+noLinks = "Активных ссылок общего доступа пока нет."
+noSharedUsers = "Пока нет пользователей с доступом."
+openInApp = "Открыть в Stirling PDF"
+ownerLabel = "Владелец"
+ownerOnly = "Только владелец может управлять общим доступом."
+ownerUnknown = "Неизвестно"
+removeLink = "Удалить ссылку"
+removeUser = "Удалить"
+requiresLogin = "Для этого общего файла требуется вход."
+revoked = "Ссылка общего доступа удалена"
+revokeFailed = "Не удалось удалить ссылку общего доступа."
+roleCommenter = "Комментатор"
+roleEditor = "Редактор"
+roleLabel = "Роль"
+roleViewer = "Просмотр"
+selectSingleFile = "Выберите один файл для управления общим доступом."
+sharedUsersTitle = "Пользователи с доступом"
+shareHeading = "Общий файл"
+sharingDisabled = "Общий доступ отключен."
+sharingDisabledBody = "Общий доступ отключен настройками вашего сервера."
+title = "Общий доступ к файлу"
+titleDefault = "Общий файл"
+tryAgain = "Повторите попытку позже."
+unknownUser = "Неизвестный пользователь"
+userAdded = "Пользователь добавлен в список доступа."
+userAddFailed = "Не удалось предоставить общий доступ этому пользователю."
+usernameLabel = "Имя пользователя или электронная почта"
+usernamePlaceholder = "Введите имя пользователя или электронную почту"
+userRemoved = "Пользователь удален из списка доступа."
+userRemoveFailed = "Не удалось удалить этого пользователя."
+viewActivity = "Просмотреть активность"
+viewed = "Просмотрено"
+viewsCount = "Просмотры: {{count}}"
+
+[storageUpload]
+bulkDescription = "Это загружает выбранные файлы в хранилище вашего сервера."
+bulkTitle = "Загрузить выбранные файлы"
+description = "Это загружает текущий файл в хранилище сервера для вашего доступа."
+errorTitle = "Сбой загрузки"
+failure = "Не удалось загрузить. Проверьте свои учетные данные и настройки хранилища."
+fileCount = "Выбрано файлов: {{count}}"
+fileLabel = "Файл"
+hint = "Публичные ссылки и режимы доступа управляются настройками вашего сервера."
+more = " +{{count}} ещё"
+success = "Загружено на сервер"
+title = "Загрузить на сервер"
+updateButton = "Обновить на сервере"
+uploadButton = "Загрузить на сервер"
 
 [subscription]
 cancelsOn = "Отменяется {{date}}"
@@ -7507,8 +7628,121 @@ title = "Документация API"
 [tableExtraxt]
 tags = "CSV,Извлечение таблиц,извлечение,конвертация"
 
+[team]
+cancelInviteError = "Не удалось отменить приглашение"
+confirmCancelInvite = "Вы уверены, что хотите отменить это приглашение?"
+confirmLeave = "Вы уверены, что хотите покинуть эту команду?"
+confirmLeaveLeader = "Как лидер команды, при выходе вы будете удалены из команды. Продолжить?"
+confirmRemove = "Вы уверены, что хотите удалить этого участника?"
+editName = "Изменить имя команды"
+inviteCancelled = "Приглашение отменено"
+inviteError = "Не удалось отправить приглашение"
+inviteSent = "Приглашение успешно отправлено"
+leader = "Лидер"
+leaveButton = "Покинуть команду"
+leaveError = "Не удалось выйти из команды"
+leaveSuccess = "Вы успешно покинули команду"
+loading = "Загрузка информации о команде..."
+memberCount = "{{count}} участников"
+memberRemoved = "Участник успешно удален"
+namePlaceholder = "Введите имя команды"
+personal = "Личная"
+removeError = "Не удалось удалить участника"
+renameError = "Не удалось переименовать команду"
+renameSuccess = "Команда успешно переименована"
+
+[team.features]
+badge = "Возможности Team"
+subtitle = "Сотрудничайте с вашей командой"
+title = "Совместная работа в команде"
+viewPlans = "Посмотреть планы"
+
+[team.features.billing]
+description = "Управление биллингом и подписками"
+title = "Управление биллингом"
+
+[team.features.credits]
+description = "Общий пул кредитов для всех участников"
+title = "Общие кредиты"
+
+[team.features.dashboard]
+description = "Просмотр активности и использования команды"
+title = "Панель команды"
+
+[team.features.invite]
+description = "Добавляйте участников в вашу команду"
+title = "Пригласить участников"
+
+[team.invitationBanner]
+acceptButton = "Принять"
+message = "пригласил(а) вас присоединиться"
+rejectButton = "Отклонить"
+
+[team.invite]
+cancelLabel = "Отмена"
+invalidEmail = "Недействительный адрес электронной почты"
+placeholder = "Введите адрес электронной почты"
+sendButton = "Отправить приглашение"
+title = "Пригласить участника команды"
+
+[team.members]
+emailColumn = "Эл. почта"
+empty = "Пока нет участников команды"
+nameColumn = "Имя"
+pending = "В ожидании"
+remove = "Удалить"
+roleColumn = "Роль"
+title = "Участники команды"
+
+[team.upgrade]
+button = "Обновить до Team"
+description = "Откройте функции совместной работы команды"
+title = "Обновление до плана Team"
+
+[textAlign]
+center = "По центру"
+left = "По левому краю"
+right = "По правому краю"
+
 [theme]
 toggle = "Переключить тему"
+
+[timestampPdf]
+completed = "PDF успешно помечен меткой времени"
+desc = "Добавьте к своему PDF метку времени RFC 3161 с использованием доверенного сервера Time Stamp Authority (TSA)."
+filenamePrefix = "timestamped"
+results = "Результаты метки времени"
+submit = "Применить метку времени"
+title = "Метка времени PDF"
+
+[timestampPdf.error]
+failed = "Произошла ошибка при добавлении метки времени к PDF."
+generic = "Не удалось добавить метку времени"
+
+[timestampPdf.files]
+placeholder = "Выберите файл PDF в главном окне, чтобы начать"
+
+[timestampPdf.options]
+note = "На сервер TSA отправляется только хеш SHA-256 вашего документа; сам файл PDF никогда не отправляется."
+title = "Сервер метки времени (TSA)"
+
+[timestampPdf.options.tsaUrl]
+desc = "Выберите доверенную службу Time Stamp Authority"
+label = "Выберите сервер TSA"
+
+[timestampPdf.steps]
+settings = "Настройки"
+
+[tool]
+endpointUnavailable = "Этот инструмент недоступен на вашем сервере."
+endpointUnavailableClickable = "Недоступно в этом режиме. Нажмите, чтобы войти."
+invalidParams = "Заполните обязательные настройки."
+noFiles = "Добавьте файл, чтобы начать."
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "Альфа"
@@ -7568,12 +7802,6 @@ pageFormatting = "Форматирование страниц"
 removal = "Удаление"
 signing = "Подписание"
 verification = "Проверка"
-
-[tool]
-endpointUnavailable = "Этот инструмент недоступен на вашем сервере."
-endpointUnavailableClickable = "Недоступно в этом режиме. Нажмите, чтобы войти."
-invalidParams = "Заполните обязательные настройки."
-noFiles = "Добавьте файл, чтобы начать."
 
 [tools]
 noSearchResults = "Инструменты не найдены"
@@ -7793,6 +8021,81 @@ fileManager = "Менеджер файлов"
 pageEditor = "Редактор страниц"
 viewer = "Просмотрщик"
 
+[viewer]
+cannotPreviewFile = "Не удаётся просмотреть файл"
+disableColorFilter = "Отключить цветовой фильтр"
+dualPageView = "Двухстраничный вид"
+enableDarkFilter = "Включить тёмный фильтр"
+enableSepiaFilter = "Включить фильтр сепия"
+firstPage = "Первая страница"
+lastPage = "Последняя страница"
+nextPage = "Следующая страница"
+onlyPdfSupported = "Просмотрщик поддерживает только PDF-файлы. Похоже, этот файл другого формата."
+previousPage = "Предыдущая страница"
+resetZoom = "Сбросить масштаб"
+singlePageView = "Одностраничный вид"
+unknownFile = "Неизвестный файл"
+zoomIn = "Увеличить"
+zoomOut = "Уменьшить"
+
+[viewer.attachments]
+empty = "В этом документе нет вложений"
+loading = "Загрузка вложений..."
+noDocument = "Откройте PDF, чтобы просмотреть его вложения."
+noMatch = "Нет вложений, соответствующих вашему поиску"
+noSupport = "Поддержка вложений недоступна для этого просмотрщика."
+searchPlaceholder = "Поиск вложений"
+title = "Вложения"
+
+[viewer.comments]
+addComment = "Добавить комментарий"
+addCommentPlaceholder = "Добавить комментарий..."
+addLink = "Добавить ссылку"
+addReplyPlaceholder = "Добавить ответ..."
+deleteAnnotationAndComment = "Удалить аннотацию и комментарий"
+deleteDescription = "К этой аннотации прикреплён комментарий. Вы можете удалить только комментарий на боковой панели, сохранив аннотацию, или удалить всё."
+deleteTitle = "Удалить аннотацию из комментариев?"
+goToLink = "Перейти по ссылке"
+hint = "Добавляйте комментарии с помощью инструментов «Комментарий», «Вставить текст» или «Заменить текст». Здесь они будут отображаться по страницам."
+locateAnnotation = "Найти в документе"
+moreActions = "Другие действия"
+nComments = "{{count}} комментариев"
+oneComment = "1 комментарий"
+pageLabel = "Страница {{page}}"
+placeholder = "Введите комментарий..."
+removeCommentOnly = "Удалить только комментарий"
+saveReply = "Сохранить ответ"
+send = "Отправить"
+title = "Комментарии"
+typeComment = "Комментарий"
+typeInsertText = "Вставить текст"
+typeReplaceText = "Заменить текст"
+viewComment = "Просмотреть комментарий"
+
+[viewer.formBar]
+apply = "Применить изменения"
+dismiss = "Скрыть"
+download = "Скачать PDF"
+hasFieldsDesc = "В этом PDF есть поля для заполнения"
+title = "Поля формы"
+unsavedBadge = "Несохранено"
+unsavedDesc = "У вас есть несохранённые изменения"
+
+[viewer.nonPdf]
+columnDefault = "Столбец {{index}}"
+convertToPdf = "Преобразовать в PDF"
+csvStats = "{{rows}} строк · {{columns}} столбцов · {{size}}"
+emptyFile = "Пустой файл"
+fileTypeBadge = "Файл {{type}}"
+htmlPreview = "Предпросмотр HTML"
+htmlPreviewWarning = "Предпросмотр HTML — внешние ресурсы могут не загрузиться · {{size}}"
+invalidJson = "Некорректный JSON — показано исходное содержимое"
+lineNumbers = "Номера строк"
+loading = "Загрузка..."
+renderMarkdown = "Отобразить markdown"
+sortedBy = "Сортировка по: {{column}}"
+textStats = "{{lines}} строк · {{size}}"
+
 [viewPdf]
 header = "Просмотр PDF"
 tags = "просмотр,чтение,аннотации,текст,изображение"
@@ -7800,30 +8103,6 @@ title = "Смотреть/Редактировать PDF"
 
 [warning]
 tooltipTitle = "Предупреждение"
-
-[wetSignature.tooltip]
-header = "Способы создания подписи"
-
-[wetSignature.tooltip.draw]
-bullet1 = "Настройте цвет и толщину пера"
-bullet2 = "Стирайте и перерисовывайте, пока не будете довольны"
-bullet3 = "Работает на сенсорных устройствах (планшеты, телефоны)"
-description = "Создайте рукописную подпись с помощью мыши или сенсорного экрана. Лучше всего для личных, аутентичных подписей."
-title = "Нарисовать подпись"
-
-[wetSignature.tooltip.type]
-bullet1 = "Выберите из нескольких шрифтов"
-bullet2 = "Настройте размер и цвет текста"
-bullet3 = "Идеально для стандартизированных подписей"
-description = "Создайте подпись из введенного текста. Быстро и единообразно, подходит для деловых документов."
-title = "Ввести подпись"
-
-[wetSignature.tooltip.upload]
-bullet1 = "Поддерживаются PNG, JPG и другие форматы изображений"
-bullet2 = "Для наилучших результатов рекомендуется прозрачный фон"
-bullet3 = "Изображение будет масштабировано под область подписи"
-description = "Загрузите заранее созданное изображение подписи. Идеально, если у вас есть скан подписи или логотип компании."
-title = "Загрузить изображение подписи"
 
 [watermark]
 completed = "Водяной знак добавлен"
@@ -7996,6 +8275,30 @@ title = "Текст водяного знака"
 image = "Изображение"
 text = "Текст"
 
+[wetSignature.tooltip]
+header = "Способы создания подписи"
+
+[wetSignature.tooltip.draw]
+bullet1 = "Настройте цвет и толщину пера"
+bullet2 = "Стирайте и перерисовывайте, пока не будете довольны"
+bullet3 = "Работает на сенсорных устройствах (планшеты, телефоны)"
+description = "Создайте рукописную подпись с помощью мыши или сенсорного экрана. Лучше всего для личных, аутентичных подписей."
+title = "Нарисовать подпись"
+
+[wetSignature.tooltip.type]
+bullet1 = "Выберите из нескольких шрифтов"
+bullet2 = "Настройте размер и цвет текста"
+bullet3 = "Идеально для стандартизированных подписей"
+description = "Создайте подпись из введенного текста. Быстро и единообразно, подходит для деловых документов."
+title = "Ввести подпись"
+
+[wetSignature.tooltip.upload]
+bullet1 = "Поддерживаются PNG, JPG и другие форматы изображений"
+bullet2 = "Для наилучших результатов рекомендуется прозрачный фон"
+bullet3 = "Изображение будет масштабировано под область подписи"
+description = "Загрузите заранее созданное изображение подписи. Идеально, если у вас есть скан подписи или логотип компании."
+title = "Загрузить изображение подписи"
+
 [workspace]
 title = "Рабочая область"
 
@@ -8014,9 +8317,9 @@ disable = "Отключить"
 disabled = "Отключен"
 editRole = "Изменить роль"
 enable = "Включить"
+loading = "Загрузка участников..."
 locked = "заблокирован"
 lockedBadge = "Заблокирован"
-loading = "Загрузка участников..."
 loginRequired = "Сначала включите режим входа"
 member = "Участник"
 noMembersFound = "Участники не найдены"
@@ -8262,278 +8565,3 @@ cancel = "Отмена"
 confirm = "Извлечь"
 message = "Этот ZIP содержит {{count}} файлов. Все равно извлечь?"
 title = "Большой ZIP-файл"
-
-[cloudBadge]
-tooltip = "Эта операция использует ваши облачные кредиты"
-
-[team]
-cancelInviteError = "Не удалось отменить приглашение"
-confirmCancelInvite = "Вы уверены, что хотите отменить это приглашение?"
-confirmLeave = "Вы уверены, что хотите покинуть эту команду?"
-confirmLeaveLeader = "Как лидер команды, при выходе вы будете удалены из команды. Продолжить?"
-confirmRemove = "Вы уверены, что хотите удалить этого участника?"
-editName = "Изменить имя команды"
-inviteCancelled = "Приглашение отменено"
-inviteError = "Не удалось отправить приглашение"
-inviteSent = "Приглашение успешно отправлено"
-leader = "Лидер"
-leaveButton = "Покинуть команду"
-leaveError = "Не удалось выйти из команды"
-leaveSuccess = "Вы успешно покинули команду"
-loading = "Загрузка информации о команде..."
-memberCount = "{{count}} участников"
-memberRemoved = "Участник успешно удален"
-namePlaceholder = "Введите имя команды"
-personal = "Личная"
-removeError = "Не удалось удалить участника"
-renameError = "Не удалось переименовать команду"
-renameSuccess = "Команда успешно переименована"
-
-[team.invitationBanner]
-message = "пригласил(а) вас присоединиться"
-acceptButton = "Принять"
-rejectButton = "Отклонить"
-
-[team.features]
-badge = "Возможности Team"
-subtitle = "Сотрудничайте с вашей командой"
-title = "Совместная работа в команде"
-viewPlans = "Посмотреть планы"
-
-[team.features.billing]
-description = "Управление биллингом и подписками"
-title = "Управление биллингом"
-
-[team.features.credits]
-description = "Общий пул кредитов для всех участников"
-title = "Общие кредиты"
-
-[team.features.dashboard]
-description = "Просмотр активности и использования команды"
-title = "Панель команды"
-
-[team.features.invite]
-description = "Добавляйте участников в вашу команду"
-title = "Пригласить участников"
-
-[team.invite]
-cancelLabel = "Отмена"
-invalidEmail = "Недействительный адрес электронной почты"
-placeholder = "Введите адрес электронной почты"
-sendButton = "Отправить приглашение"
-title = "Пригласить участника команды"
-
-[team.members]
-emailColumn = "Эл. почта"
-empty = "Пока нет участников команды"
-nameColumn = "Имя"
-pending = "В ожидании"
-remove = "Удалить"
-roleColumn = "Роль"
-title = "Участники команды"
-
-[team.upgrade]
-button = "Обновить до Team"
-description = "Откройте функции совместной работы команды"
-title = "Обновление до плана Team"
-
-[provider.oauth2.google]
-scope = "Аутентификация входа"
-
-[provider.oauth2.google.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID из Google Cloud Console"
-
-[provider.oauth2.google.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret из Google Cloud Console"
-
-[provider.oauth2.google.scopes]
-label = "Scopes"
-description = "OAuth2 scopes, разделенные запятыми"
-
-[provider.oauth2.google.useAsUsername]
-label = "Использовать как имя пользователя"
-description = "Поле для использования в качестве имени пользователя (email, name, given_name, family_name)"
-
-[provider.oauth2.github]
-scope = "Аутентификация входа"
-
-[provider.oauth2.github.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID из GitHub Developer Settings"
-
-[provider.oauth2.github.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret из GitHub Developer Settings"
-
-[provider.oauth2.github.scopes]
-label = "Scopes"
-description = "OAuth2 scopes, разделенные запятыми"
-
-[provider.oauth2.github.useAsUsername]
-label = "Использовать как имя пользователя"
-description = "Поле для использования в качестве имени пользователя (email, login, name)"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "Issuer URL"
-description = "URL конечной точки OpenID Connect Discovery realm в Keycloak"
-
-[provider.oauth2.keycloak.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID из Keycloak"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret из Keycloak"
-
-[provider.oauth2.keycloak.scopes]
-label = "Scopes"
-description = "OAuth2 scopes, разделенные запятыми"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "Использовать как имя пользователя"
-description = "Поле для использования в качестве имени пользователя (email, name, given_name, family_name, preferred_username)"
-
-[provider.oauth2.generic]
-name = "Универсальный OAuth2"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "Включить универсальный OAuth2"
-description = "Включить аутентификацию с использованием произвольного провайдера OAuth2"
-
-[provider.oauth2.generic.provider]
-label = "Имя провайдера"
-description = "Имя вашего провайдера OAuth2 (например, Azure AD, Okta)"
-
-[provider.oauth2.generic.issuer]
-label = "Issuer URL"
-description = "Провайдер, поддерживающий OpenID Connect Discovery (/.well-known/openid-configuration)"
-
-[provider.oauth2.generic.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID от вашего провайдера"
-
-[provider.oauth2.generic.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret от вашего провайдера"
-
-[provider.oauth2.generic.scopes]
-label = "Scopes"
-description = "OAuth2 scopes, разделенные запятыми"
-
-[provider.oauth2.generic.useAsUsername]
-label = "Использовать как имя пользователя"
-description = "Поле для использования в качестве имени пользователя"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "Автосоздание пользователей"
-description = "Автоматически создавать учетные записи при первом входе через OAuth2"
-
-[provider.oauth2.generic.blockRegistration]
-label = "Блокировать регистрацию"
-description = "Запретить новую регистрацию через OAuth2"
-
-[provider.smtp]
-name = "SMTP Почта"
-scope = "Email-уведомления"
-
-[provider.smtp.enabled]
-label = "Включить почту"
-description = "Включить уведомления по email и функциональность SMTP"
-
-[provider.smtp.host]
-label = "SMTP Host"
-description = "Имя хоста или IP-адрес вашего SMTP-сервера"
-
-[provider.smtp.port]
-label = "SMTP Port"
-description = "Номер порта для подключения SMTP (обычно 25, 465 или 587)"
-
-[provider.smtp.username]
-label = "SMTP Username"
-description = "Имя пользователя для аутентификации SMTP"
-
-[provider.smtp.password]
-label = "SMTP Password"
-description = "Пароль для аутентификации SMTP"
-
-[provider.smtp.from]
-label = "Адрес отправителя"
-description = "Адрес электронной почты, используемый как отправитель"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO (SAML)"
-
-[provider.saml2.enabled]
-label = "Включить SAML2"
-description = "Включить аутентификацию SAML2 (только Enterprise)"
-
-[provider.saml2.provider]
-label = "Имя провайдера"
-description = "Имя вашего провайдера SAML2"
-
-[provider.saml2.registrationId]
-label = "Registration ID"
-description = "Имя вашего приложения Service Provider (SP)"
-
-[provider.saml2.idpMetadataUri]
-label = "IDP Metadata URI"
-description = "URI метаданных вашего провайдера"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "IDP Single Login URL"
-description = "URL для инициирования SSO"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "IDP Single Logout URL"
-description = "URL для инициирования SLO"
-
-[provider.saml2.idpIssuer]
-label = "IDP Issuer"
-description = "ID вашего провайдера"
-
-[provider.saml2.idpCert]
-label = "Сертификат IDP"
-description = "Путь к сертификату (например, classpath:okta.cert)"
-
-[provider.saml2.privateKey]
-label = "Приватный ключ"
-description = "Путь к вашему приватному ключу"
-
-[provider.saml2.spCert]
-label = "Сертификат SP"
-description = "Путь к вашему подписывающему сертификату"
-
-[provider.saml2.autoCreateUser]
-label = "Автосоздание пользователей"
-description = "Автоматически создавать учетные записи при первом входе через SAML2"
-
-[provider.saml2.blockRegistration]
-label = "Блокировать регистрацию"
-description = "Запретить новую регистрацию через SAML2"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "Импорт файлов"
-
-[provider.googledrive.enabled]
-label = "Включить селектор файлов Google Drive"
-description = "Разрешить пользователям импортировать файлы напрямую из Google Drive"
-
-[provider.googledrive.clientId]
-label = "Client ID"
-description = "Google OAuth 2.0 Client ID из Google Cloud Console"
-
-[provider.googledrive.apiKey]
-label = "API Key"
-description = "Ключ Google API для Google Picker API из Google Cloud Console"
-
-[provider.googledrive.appId]
-label = "ID приложения"
-description = "ID приложения Google Drive из Google Cloud Console"

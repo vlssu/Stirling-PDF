@@ -1,3 +1,4 @@
+accessInvite = "Pozvať"
 addToDoc = "Pridať do dokumentu"
 alphabet = "Abeceda"
 apply = "Použiť"
@@ -8,22 +9,22 @@ black = "Čierna"
 blue = "Modrá"
 bored = "Nudíte sa pri čakaní?"
 cancel = "Zrušiť"
-confirm = "Potvrdiť"
 changedCredsMessage = "Údaje zmenené!"
 chooseFile = "Vybrať súbor"
 close = "Zatvoriť"
 color = "Farba"
 comingSoon = "Už čoskoro"
+confirm = "Potvrdiť"
 confirmClose = "Potvrdiť zatvorenie"
 confirmCloseCancel = "Zrušiť"
 confirmCloseConfirm = "Zatvoriť súbor"
-confirmCloseMessage = "Naozaj chcete zatvoriť tento súbor?"
 confirmCloseDiscard = "Zahodiť zmeny a zavrieť"
+confirmCloseMessage = "Naozaj chcete zatvoriť tento súbor?"
 confirmCloseSave = "Uložiť a zavrieť"
+confirmCloseSaveFailed = "Uložené s chybami. {{count}} súbor{{plural}} sa nepodarilo uložiť."
+confirmCloseSaveFailedTitle = "Uloženie zlyhalo"
 confirmCloseUnsaved = "Tento súbor má neuložené zmeny."
 confirmCloseUnsavedList = "Máte {{count}} súbor{{plural}} s neuloženými zmenami.\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "Uloženie zlyhalo"
-confirmCloseSaveFailed = "Uložené s chybami. {{count}} súbor{{plural}} sa nepodarilo uložiť."
 confirmPasswordErrorMessage = "Nové heslo a potvrdenie nového hesla sa musia zhodovať."
 custom = "Vlastné..."
 customPosition = "Vlastná pozícia"
@@ -43,11 +44,14 @@ downloadComplete = "Stiahnutie dokončené"
 downloadPdf = "Stiahnuť PDF"
 downloadUnavailable = "Sťahovanie nie je pre túto položku dostupné"
 edit = "Upraviť"
+editSecret = "Upraviť túto hodnotu"
 editYourNewFiles = "Upraviť nové súbory"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "Exportovať a pokračovať"
 false = "Nie"
-fileSavedToDisk = "Súbor uložený na disk"
 fileNotSavedToDisk = "Neuložené na disk"
+fileSavedToDisk = "Súbor uložený na disk"
 fileSelected = "Vybrané: {{filename}}"
 filesSelected = "vybrané súbory"
 font = "Písmo"
@@ -61,12 +65,15 @@ help = "Pomoc"
 imgPrompt = "Vyberte obrázok(y)"
 incorrectPasswordMessage = "Aktuálne heslo je nesprávne."
 info = "Info"
+insufficientCredits = "Nedostatok kreditov. Potrebné: {{requiredCredits}}, K dispozícii: {{currentBalance}}, Chýba: {{shortfall}}"
 invalidPasswordMessage = "Heslo nesmie byť prázdne a nesmie mať medzery na začiatku ani na konci."
 invalidUndoData = "Nemožno vrátiť: neplatné údaje operácie"
 invalidUsernameMessage = "Neplatné používateľské meno, používateľské meno musí obsahovať len abecedné znaky a čísla."
 joinDiscord = "Pripojte sa na náš Discord server"
 keepWorking = "Pokračovať v práci"
 loading = "Načítava sa..."
+loadingCredits = "Kontrolujú sa kredity..."
+loadingProStatus = "Kontroluje sa stav predplatného..."
 logOut = "Odhlásiť sa"
 marginTooltip = "Vzdialenosť medzi číslom strany a okrajom strany."
 moreOptions = "Ďalšie možnosti"
@@ -80,6 +87,7 @@ noFilesToUndo = "Nemožno vrátiť: v poslednej operácii neboli spracované ži
 noOperationToUndo = "Žiadna operácia na vrátenie"
 notAuthenticatedMessage = "Používateľ nie je overený."
 nothingToUndo = "Nič na vrátenie späť"
+noticeTopUpOrPlan = "Nedostatok kreditov, dobiť alebo prejsť na plán"
 noValidFiles = "Žiadne platné súbory na spracovanie"
 oops = "Ups!"
 openInViewer = "Otvoriť v prehliadači"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "Nepoužité začiernenia"
 pin = "Pripnúť súbor (ponechať aktívny po spustení nástroja)"
 poweredBy = "Poskytované"
 pro = "Pro"
-processTimeWarning = "Varovanie: Tento proces môže trvať až minútu v závislosti od veľkosti súboru"
 processingComplete = "Váš súbor je pripravený."
 processingCompleteMultiple = "Je pripravených {{count}} súborov."
+processTimeWarning = "Varovanie: Tento proces môže trvať až minútu v závislosti od veľkosti súboru"
 property = "Vlastnosť"
 quickPosition = "Rýchla pozícia"
 red = "Červená"
@@ -108,7 +116,6 @@ save = "Uložiť"
 saveToBrowser = "Uložiť do prehliadača"
 saveUnavailable = "Uloženie pre túto položku nie je dostupné"
 seeDockerHub = "Pozrieť Docker Hub"
-editSecret = "Upraviť túto hodnotu"
 selectFillter = "-- Vyberte --"
 size = "Veľkosť"
 sponsor = "Sponzorovať"
@@ -143,11 +150,6 @@ welcome = "Vitajte"
 white = "Biela"
 WorkInProgess = "Práca prebieha, nemusí fungovať alebo môže byť chybová, prosím nahláste akékoľvek problémy!"
 yes = "Áno"
-insufficientCredits = "Nedostatok kreditov. Potrebné: {{requiredCredits}}, K dispozícii: {{currentBalance}}, Chýba: {{shortfall}}"
-loadingCredits = "Kontrolujú sa kredity..."
-loadingProStatus = "Kontroluje sa stav predplatného..."
-noticeTopUpOrPlan = "Nedostatok kreditov, dobiť alebo prejsť na plán"
-accessInvite = "Pozvať"
 
 [account]
 accountSettings = "Nastavenia účtu"
@@ -851,6 +853,14 @@ title = "API endpointy"
 userDefaults = "Predvolené hodnoty používateľských preferencií"
 userDefaultsDescription = "Nastavte predvolené hodnoty používateľských preferencií. Používatelia ich môžu prepísať vo svojich osobných nastaveniach."
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "Odstrániť zakázané možnosti konverzie namiesto ich zobrazenia ako zosivených"
+label = "Predvolene skryť nedostupné konverzie"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "Odstrániť zakázané nástroje namiesto ich zobrazenia ako zosivených"
+label = "Predvolene skryť nedostupné nástroje"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "Vyberte skupiny endpointov na zakázanie"
 label = "Zakázané skupiny endpointov"
@@ -858,14 +868,6 @@ label = "Zakázané skupiny endpointov"
 [admin.settings.endpoints.toRemove]
 description = "Vyberte jednotlivé endpointy na zakázanie"
 label = "Zakázané endpointy"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "Odstrániť zakázané nástroje namiesto ich zobrazenia ako zosivených"
-label = "Predvolene skryť nedostupné nástroje"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "Odstrániť zakázané možnosti konverzie namiesto ich zobrazenia ako zosivených"
-label = "Predvolene skryť nedostupné konverzie"
 
 [admin.settings.enterpriseRequired]
 message = "Na prístup k {{featureName}} sa vyžaduje podniková licencia. Prezeráte si ukážkové údaje."
@@ -974,6 +976,10 @@ label = "Predvolená lokalizácia"
 description = "Maximálna veľkosť nahrávaného súboru (napr. 100MB, 1GB)"
 label = "Limit nahrávania súborov"
 
+[admin.settings.general.frontendUrl]
+description = "Základná URL pre frontend (napr. https://pdf.example.com). Používa sa pre odkazy v e-mailových pozvánkach a mobilné nahrávanie cez QR kód. Nechajte prázdne, aby sa použila URL backendu."
+label = "Frontend URL"
+
 [admin.settings.general.hideDisabledTools]
 description = "Skryť deaktivované nástroje v rozhraní"
 label = "Skryť deaktivované nástroje"
@@ -985,10 +991,6 @@ label = "Skryť Google Drive"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "Skryť tlačidlo mobilného QR skenera, keď nie je povolené"
 label = "Skryť mobilný skener"
-
-[admin.settings.general.frontendUrl]
-description = "Základná URL pre frontend (napr. https://pdf.example.com). Používa sa pre odkazy v e-mailových pozvánkach a mobilné nahrávanie cez QR kód. Nechajte prázdne, aby sa použila URL backendu."
-label = "Frontend URL"
 
 [admin.settings.general.homeDescription]
 description = "Text popisu zobrazený na domovskej stránke"
@@ -1169,9 +1171,25 @@ description = "Nakonfigurujte overenie, správanie prihlásenia a bezpečnostné
 title = "Zabezpečenie"
 
 [admin.settings.security.audit]
+hideDetails = "Skryť detaily úrovne auditu"
 label = "Auditné logovanie"
 showDetails = "Zobraziť detaily úrovne auditu"
-hideDetails = "Skryť detaily úrovne auditu"
+
+[admin.settings.security.audit.advancedOptions]
+description = "Nasledujúce voľby zvyšujú čas spracovania a využitie pamäte. Povoľte len v prípade skutočnej potreby."
+title = "Pokročilé možnosti"
+
+[admin.settings.security.audit.captureFileHash]
+description = "Extrahovať hash SHA-256 nahraných PDF súborov na overenie integrity. Nezávislé od úrovne auditu."
+label = "Zachytiť hash súboru (SHA-256)"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "Zachytiť návratové hodnoty metód. Neodporúča sa: výrazne zvyšuje objem záznamov a využitie disku."
+label = "Zachytiť výsledky operácií"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "Extrahovať pole autora z dokumentov PDF počas spracovania. Vyžaduje parsovanie PDF, zvyšuje latenciu. Nezávislé od úrovne auditu."
+label = "Zachytiť metadáta autora PDF"
 
 [admin.settings.security.audit.enabled]
 description = "Sledovať akcie používateľov a systémové udalosti na účely súladu a bezpečnostného monitoringu"
@@ -1182,30 +1200,14 @@ description = "0=VYP., 1=ZÁKLADNÉ, 2=ŠTANDARD, 3=PODROBNÉ"
 label = "Úroveň auditu"
 
 [admin.settings.security.audit.levelDetails]
-off = "Žiadne auditné logovanie (okrem kritických bezpečnostných udalostí)"
 basic = "Operácie so súbormi PDF (kompresia, rozdelenie, zlúčenie atď.) a zmeny nastavení. Zaznamenáva: stav operácie (úspech/zlyhanie), parametre metódy, načasovanie. Minimálny objem záznamov."
+off = "Žiadne auditné logovanie (okrem kritických bezpečnostných udalostí)"
 standard = "Udalosti BASIC plus: prihlásenie/odhlásenie používateľa, zmeny účtu, všeobecné požiadavky GET. Vylučuje priebežné dotazovacie volania (/auth/me, /app-config, /health atď.) na zníženie šumu v logoch. Ideálne pre väčšinu nasadení."
 verbose = "Udalosti STANDARD plus: priebežné dotazovacie volania, všetky požiadavky GET, podrobné načasovanie. Upozornenie: vysoký objem záznamov a vplyv na výkon."
 
 [admin.settings.security.audit.retentionDays]
 description = "Počet dní uchovávania auditných záznamov"
 label = "Doba uchovania auditu (dni)"
-
-[admin.settings.security.audit.advancedOptions]
-title = "Pokročilé možnosti"
-description = "Nasledujúce voľby zvyšujú čas spracovania a využitie pamäte. Povoľte len v prípade skutočnej potreby."
-
-[admin.settings.security.audit.captureFileHash]
-description = "Extrahovať hash SHA-256 nahraných PDF súborov na overenie integrity. Nezávislé od úrovne auditu."
-label = "Zachytiť hash súboru (SHA-256)"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "Extrahovať pole autora z dokumentov PDF počas spracovania. Vyžaduje parsovanie PDF, zvyšuje latenciu. Nezávislé od úrovne auditu."
-label = "Zachytiť metadáta autora PDF"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "Zachytiť návratové hodnoty metód. Neodporúča sa: výrazne zvyšuje objem záznamov a využitie disku."
-label = "Zachytiť výsledky operácií"
 
 [admin.settings.security.csrfDisabled]
 description = "Zakázať ochranu proti Cross-Site Request Forgery (neodporúča sa)"
@@ -1274,6 +1276,14 @@ label = "Počiatočné používateľské meno"
 [admin.settings.security.jwt]
 label = "Konfigurácia JWT"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "Tolerancia posunu času medzi klientom a serverom počas overovania tokenu (predvolené: 60 sekúnd)"
+label = "Tolerancia časového posunu (sekundy)"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "Životnosť prístupového tokenu v minútach pre desktopových klientov. Desktopové aplikácie sa automaticky rozpoznajú cez User-Agent a dostanú dlhšie relácie pre lepšie používateľské prostredie (predvolené: 43200 = 30 dní)"
+label = "Platnosť desktopového tokenu (minúty)"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "Automaticky odstraňovať kľúče JWT po uplynutí ich platnosti"
 label = "Povoliť čistenie kľúčov"
@@ -1282,29 +1292,21 @@ label = "Povoliť čistenie kľúčov"
 description = "Automaticky pravidelne rotovať podpisové kľúče JWT"
 label = "Povoliť rotáciu kľúčov"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "Životnosť prístupového tokenu v minútach pre webových klientov (predvolené: 1440 = 24 hodín)"
-label = "Platnosť webového tokenu (minúty)"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "Životnosť prístupového tokenu v minútach pre desktopových klientov. Desktopové aplikácie sa automaticky rozpoznajú cez User-Agent a dostanú dlhšie relácie pre lepšie používateľské prostredie (predvolené: 43200 = 30 dní)"
-label = "Platnosť desktopového tokenu (minúty)"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "Tolerancia posunu času medzi klientom a serverom počas overovania tokenu (predvolené: 60 sekúnd)"
-label = "Tolerancia časového posunu (sekundy)"
+[admin.settings.security.jwt.persistence]
+description = "Ukladať JWT kľúče perzistentne, aby prežili reštarty servera"
+label = "Povoliť perzistenciu kľúčov"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "Povoliť obnovenie tokenu v tomto počte minút po vypršaní platnosti (predvolené: 15 minút, max. 3 pokusy)"
 label = "Odkladná lehota na obnovenie (minúty)"
 
-[admin.settings.security.jwt.persistence]
-description = "Ukladať JWT kľúče perzistentne, aby prežili reštarty servera"
-label = "Povoliť perzistenciu kľúčov"
-
 [admin.settings.security.jwt.secureCookie]
 description = "Vyžadovať HTTPS pre JWT súbory cookie (odporúčané pre produkciu)"
 label = "Zabezpečený súbor cookie"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "Životnosť prístupového tokenu v minútach pre webových klientov (predvolené: 1440 = 24 hodín)"
+label = "Platnosť webového tokenu (minúty)"
 
 [admin.settings.security.loginAttemptCount]
 description = "Maximálny počet neúspešných pokusov o prihlásenie pred zablokovaním účtu"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "Spravujte úložisko servera a možnosti zdieľania."
+title = "Úložisko súborov a zdieľanie"
+
+[admin.settings.storage.enabled]
+description = "Umožniť používateľom ukladať súbory na server."
+label = "Povoliť serverové úložisko súborov"
+
+[admin.settings.storage.sharing.email]
+description = "Umožniť zdieľanie s e‑mailovými adresami."
+label = "Povoliť zdieľanie e‑mailom"
+mailLink = "Konfigurovať nastavenia pošty"
+mailNote = "Vyžaduje konfiguráciu pošty. "
+
+[admin.settings.storage.sharing.enabled]
+description = "Umožniť používateľom zdieľať uložené súbory."
+label = "Povoliť zdieľanie"
+
+[admin.settings.storage.sharing.links]
+description = "Umožniť zdieľanie cez odkazy pre prihlásených používateľov."
+frontendUrlLink = "Nastaviť v systémových nastaveniach"
+frontendUrlNote = "Vyžaduje Frontend URL. "
+label = "Povoliť zdieľacie odkazy"
+
+[admin.settings.storage.signing.enabled]
+description = "Umožniť používateľom vytvárať podpisové relácie s viacerými účastníkmi. Vyžaduje povolené serverové úložisko súborov."
+label = "Povoliť skupinové podpisovanie (Alpha)"
 
 [admin.settings.telegram]
 description = "Nakonfigurujte pripojenie Telegram bota, riadenie prístupu a správanie spätnej väzby."
@@ -1429,34 +1459,6 @@ title = "Spracovanie"
 description = "Maximálny čas čakania na spracovanie úlohy pred nahlásením chyby."
 label = "Časový limit spracovania (sekundy)"
 
-[admin.settings.storage]
-description = "Spravujte úložisko servera a možnosti zdieľania."
-title = "Úložisko súborov a zdieľanie"
-
-[admin.settings.storage.enabled]
-description = "Umožniť používateľom ukladať súbory na server."
-label = "Povoliť serverové úložisko súborov"
-
-[admin.settings.storage.sharing.email]
-description = "Umožniť zdieľanie s e‑mailovými adresami."
-label = "Povoliť zdieľanie e‑mailom"
-mailLink = "Konfigurovať nastavenia pošty"
-mailNote = "Vyžaduje konfiguráciu pošty. "
-
-[admin.settings.storage.sharing.enabled]
-description = "Umožniť používateľom zdieľať uložené súbory."
-label = "Povoliť zdieľanie"
-
-[admin.settings.storage.sharing.links]
-description = "Umožniť zdieľanie cez odkazy pre prihlásených používateľov."
-frontendUrlLink = "Nastaviť v systémových nastaveniach"
-frontendUrlNote = "Vyžaduje Frontend URL. "
-label = "Povoliť zdieľacie odkazy"
-
-[admin.settings.storage.signing.enabled]
-description = "Umožniť používateľom vytvárať podpisové relácie s viacerými účastníkmi. Vyžaduje povolené serverové úložisko súborov."
-label = "Povoliť skupinové podpisovanie (Alpha)"
-
 [admin.settings.unsavedChanges]
 cancel = "Pokračovať v úpravách"
 discard = "Zahodiť zmeny"
@@ -1521,6 +1523,7 @@ settings = "Nastavenia analytiky môžete zmeniť v súbore config/settings.yml"
 title = "Chcete zlepšiť Stirling PDF?"
 
 [annotation]
+annotationStyle = "Štýl anotácie"
 applyChanges = "Použiť zmeny"
 backgroundColor = "Farba pozadia"
 borderOff = "Okraj: Vypnuté"
@@ -1530,6 +1533,8 @@ chooseColor = "Vyberte farbu"
 circle = "Kruh"
 clearBackground = "Odstrániť pozadie"
 color = "Farba"
+comment = "Komentár"
+comments = "Komentáre"
 contents = "Text"
 delete = "Odstrániť"
 desc = "Použite zvýrazňovanie, pero, text a poznámky. Zmeny zostávajú aktívne — zploštenie nie je potrebné."
@@ -1547,7 +1552,6 @@ editStampHint = "Ak chcete zmeniť obrázok, odstráňte túto pečiatku a prida
 editSwitchToSelect = "Prepnite na Vybrať a upraviť, aby ste upravili túto anotáciu."
 editText = "Upraviť textové pole"
 editTextMarkup = "Upraviť značenie textu"
-annotationStyle = "Štýl anotácie"
 ellipse = "Elipsa"
 exit = "Ukončiť režim anotácií"
 fillColor = "Farba výplne"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "Zvýrazňovač voľnou rukou"
 highlight = "Zvýrazniť"
 imagePreview = "Náhľad"
 inkHighlighter = "Zvýrazňovač voľnou rukou"
+insertText = "Vložiť text"
 line = "Čiara"
 lineArrow = "Šípka"
 noBackground = "Bez pozadia"
 note = "Poznámka"
-comment = "Komentár"
-comments = "Komentáre"
-insertText = "Vložiť text"
-replaceText = "Nahradiť text"
 noteIcon = "Ikona poznámky"
 notesStamps = "Poznámky a pečiatky"
 opacity = "Nepriehľadnosť"
@@ -1574,6 +1575,7 @@ polyline = "Lomená čiara"
 properties = "Vlastnosti"
 rectangle = "Obdĺžnik"
 redo = "Znova"
+replaceText = "Nahradiť text"
 saveChanges = "Uložiť zmeny"
 saveFailed = "Kópiu sa nepodarilo uložiť"
 saveReady = "Sťahovanie pripravené"
@@ -1627,68 +1629,6 @@ goToSettings = "Prejsť do nastavení auditu"
 notAvailable = "Auditný systém nie je k dispozícii"
 notAvailableMessage = "Auditný systém nie je nakonfigurovaný alebo nie je k dispozícii."
 
-[audit.error]
-title = "Chyba pri načítaní auditného systému"
-
-[audit.export]
-clearFilters = "Vymazať"
-description = "Exportujte auditné udalosti do formátu CSV alebo JSON. Pomocou filtrov obmedzte exportované údaje."
-endDate = "Dátum konca"
-error = "Nepodarilo sa exportovať údaje"
-exportButton = "Exportovať údaje"
-fieldAuthor = "Autor (z PDF)"
-fieldDate = "Dátum"
-fieldDocumentName = "Názov dokumentu"
-fieldFileHash = "Hash súboru (SHA-256)"
-fieldIpAddress = "IP adresa"
-fieldOperationResults = "Výsledky operácie"
-fieldOutcome = "Výsledok (úspech/zlyhanie)"
-fieldTool = "Nástroj"
-fieldUsername = "Používateľské meno"
-filterByType = "Filter podľa typu"
-filterByUser = "Filter podľa používateľa"
-filters = "Filtre (voliteľné)"
-format = "Formát exportu"
-selectFields = "Vyberte polia na zahrnutie"
-startDate = "Dátum začiatku"
-title = "Exportovať auditné údaje"
-verboseRequired = "Vyžaduje úroveň auditu VERBOSE"
-
-[audit.systemStatus]
-autoRefresh = "Automatické obnovenie"
-autoRefreshLabel = "Automaticky obnovovať každých 30 s"
-captureBySettings = "Povoliť v nastaveniach"
-capturedFields = "Zachytené polia"
-date = "Dátum"
-days = "dní"
-disabled = "Zakázané"
-documentName = "Názov dokumentu"
-enabled = "Povolené"
-fileHash = "Hash súboru"
-level = "Úroveň auditu"
-pdfAuthor = "Autor PDF"
-retention = "Doba uchovávania"
-status = "Auditné protokolovanie"
-title = "Stav systému"
-tool = "Nástroj"
-totalEvents = "Celkovo udalostí"
-username = "Používateľské meno"
-verboseOnly = "Iba VERBOSE"
-
-[audit.stats]
-activeUsers = "Aktívni používatelia"
-attention = "Vyžaduje pozornosť"
-avgLatency = "Priem. latencia"
-error = "Chyba pri načítavaní štatistík"
-errorLoadingStats = "Nepodarilo sa načítať štatistiky"
-excellent = "Vynikajúce"
-good = "Dobré"
-noData = "Nedostupné"
-successRate = "Miera úspešnosti"
-title = "Zhrnutie"
-totalEvents = "Celkom udalostí"
-vsLastPeriod = "v porovnaní s minulým obdobím"
-
 [audit.charts]
 byTool = "Najpoužívanejšie nástroje"
 byType = "Udalosti podľa typu"
@@ -1701,6 +1641,27 @@ noData = "Žiadne údaje pre toto obdobie"
 overTime = "Udalosti v čase"
 title = "Auditný prehľad"
 week = "Týždeň"
+
+[audit.clearData]
+cancel = "Zrušiť"
+codeDoesNotMatch = "Kód sa nezhoduje"
+codePlaceholder = "Sem zadajte kód"
+confirmationCode = "Potvrdzovací kód"
+confirmationRequired = "Vymazať všetky auditné údaje"
+confirmMessage = "Týmto sa natrvalo odstránia všetky auditné záznamy. Na pokračovanie nižšie zadajte potvrdzovací kód."
+confirmTitle = "Potvrďte, že chcete odstrániť"
+deleteButton = "Odstrániť"
+enterCode = "Potvrdzovací kód"
+enterCodeBelow = "Zadajte kód presne tak, ako je uvedený vyššie (rozlišujú sa veľké/malé písmená)"
+initiateDelete = "Vymazať všetky údaje"
+irreversible = "NEVRATNÉ"
+success = "Úspech"
+successMessage = "Všetky auditné údaje boli úspešne vymazané"
+warning1 = "Túto akciu nemožno vrátiť späť"
+warning2 = "Vymazaním auditných údajov natrvalo odstránite všetky historické auditné záznamy vrátane bezpečnostných udalostí, aktivít používateľov a operácií so súbormi z databázy."
+
+[audit.error]
+title = "Chyba pri načítaní auditného systému"
 
 [audit.events]
 actions = "Akcie"
@@ -1728,40 +1689,81 @@ type = "Typ"
 user = "Používateľ"
 viewDetails = "Zobraziť podrobnosti"
 
+[audit.export]
+clearFilters = "Vymazať"
+description = "Exportujte auditné udalosti do formátu CSV alebo JSON. Pomocou filtrov obmedzte exportované údaje."
+endDate = "Dátum konca"
+error = "Nepodarilo sa exportovať údaje"
+exportButton = "Exportovať údaje"
+fieldAuthor = "Autor (z PDF)"
+fieldDate = "Dátum"
+fieldDocumentName = "Názov dokumentu"
+fieldFileHash = "Hash súboru (SHA-256)"
+fieldIpAddress = "IP adresa"
+fieldOperationResults = "Výsledky operácie"
+fieldOutcome = "Výsledok (úspech/zlyhanie)"
+fieldTool = "Nástroj"
+fieldUsername = "Používateľské meno"
+filterByType = "Filter podľa typu"
+filterByUser = "Filter podľa používateľa"
+filters = "Filtre (voliteľné)"
+format = "Formát exportu"
+selectFields = "Vyberte polia na zahrnutie"
+startDate = "Dátum začiatku"
+title = "Exportovať auditné údaje"
+verboseRequired = "Vyžaduje úroveň auditu VERBOSE"
+
 [audit.filters]
 allOutcomes = "Všetky"
 failureOnly = "Len zlyhania"
-last7Days = "Posledných 7 dní"
 last30Days = "Posledných 30 dní"
+last7Days = "Posledných 7 dní"
 outcomeFilter = "Výsledok"
 quickPresets = "Rýchle filtre"
 successOnly = "Len úspechy"
 thisMonth = "Tento mesiac"
 today = "Dnes"
 
+[audit.stats]
+activeUsers = "Aktívni používatelia"
+attention = "Vyžaduje pozornosť"
+avgLatency = "Priem. latencia"
+error = "Chyba pri načítavaní štatistík"
+errorLoadingStats = "Nepodarilo sa načítať štatistiky"
+excellent = "Vynikajúce"
+good = "Dobré"
+noData = "Nedostupné"
+successRate = "Miera úspešnosti"
+title = "Zhrnutie"
+totalEvents = "Celkom udalostí"
+vsLastPeriod = "v porovnaní s minulým obdobím"
+
+[audit.systemStatus]
+autoRefresh = "Automatické obnovenie"
+autoRefreshLabel = "Automaticky obnovovať každých 30 s"
+captureBySettings = "Povoliť v nastaveniach"
+capturedFields = "Zachytené polia"
+date = "Dátum"
+days = "dní"
+disabled = "Zakázané"
+documentName = "Názov dokumentu"
+enabled = "Povolené"
+fileHash = "Hash súboru"
+level = "Úroveň auditu"
+pdfAuthor = "Autor PDF"
+retention = "Doba uchovávania"
+status = "Auditné protokolovanie"
+title = "Stav systému"
+tool = "Nástroj"
+totalEvents = "Celkovo udalostí"
+username = "Používateľské meno"
+verboseOnly = "Iba VERBOSE"
+
 [audit.tabs]
 clearData = "Vymazať údaje"
 dashboard = "Prehľad"
 events = "Auditné udalosti"
 export = "Export"
-
-[audit.clearData]
-cancel = "Zrušiť"
-codeDoesNotMatch = "Kód sa nezhoduje"
-codePlaceholder = "Sem zadajte kód"
-confirmationCode = "Potvrdzovací kód"
-confirmationRequired = "Vymazať všetky auditné údaje"
-confirmMessage = "Týmto sa natrvalo odstránia všetky auditné záznamy. Na pokračovanie nižšie zadajte potvrdzovací kód."
-confirmTitle = "Potvrďte, že chcete odstrániť"
-deleteButton = "Odstrániť"
-enterCode = "Potvrdzovací kód"
-enterCodeBelow = "Zadajte kód presne tak, ako je uvedený vyššie (rozlišujú sa veľké/malé písmená)"
-initiateDelete = "Vymazať všetky údaje"
-irreversible = "NEVRATNÉ"
-success = "Úspech"
-successMessage = "Všetky auditné údaje boli úspešne vymazané"
-warning1 = "Túto akciu nemožno vrátiť späť"
-warning2 = "Vymazaním auditných údajov natrvalo odstránite všetky historické auditné záznamy vrátane bezpečnostných udalostí, aktivít používateľov a operácií so súbormi z databázy."
 
 [auth]
 accessDenied = "Prístup zamietnutý"
@@ -2088,43 +2090,70 @@ keywords = "Kľúčové slová: odd, even"
 numbers = "Čísla/rozsahy: 5, 10-20"
 progressions = "Postupnosti: 3n, 4n+1"
 
+[certificateChoice.tooltip]
+header = "Typy certifikátov"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "Spravované systémovými administrátormi"
+bullet2 = "Zdieľané medzi autorizovanými používateľmi"
+bullet3 = "Reprezentuje identitu spoločnosti, nie jednotlivca"
+bullet4 = "Vhodné pre: oficiálne dokumenty, tímové podpisy"
+description = "Zdieľaný certifikát poskytovaný vašou organizáciou. Používa sa na celofiremné podpisovanie."
+title = "Organizačný certifikát"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "Generuje sa automaticky pri prvom použití"
+bullet2 = "Viazaný na váš používateľský účet"
+bullet3 = "Nie je možné zdieľať s inými používateľmi"
+bullet4 = "Vhodné pre: osobné dokumenty, individuálnu zodpovednosť"
+description = "Automaticky generovaný certifikát jedinečný pre váš používateľský účet. Vhodný pre individuálne podpisy."
+title = "Osobný certifikát"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "Vyžaduje súbor P12/PFX a heslo"
+bullet2 = "Môže byť vydaný externými certifikačnými autoritami"
+bullet3 = "Vyššia úroveň dôvery pre právne dokumenty"
+bullet4 = "Vhodné pre: právne záväzné zmluvy, externé overenie"
+description = "Použite vlastný súbor certifikátu PKCS#12. Poskytuje plnú kontrolu nad vlastnosťami certifikátu."
+title = "Nahrať vlastný P12"
+
 [certSign]
 allSigned = "Všetci účastníci podpísali. Pripravené na finalizáciu."
 awaitingSignatures = "Čaká sa na podpisy"
-signatureProgress = "Podpisy: {{signedCount}}/{{totalCount}}"
 chooseCertificate = "Vybrať súbor certifikátu"
-declined = "Odmietnuté"
-fetchFailed = "Nepodarilo sa načítať údaje o podpisovaní"
-finalized = "Finalizované"
-notified = "Oznámené"
-partialNote = "Môžete finalizovať skôr s aktuálnymi podpismi. Nepodpísaní účastníci budú vylúčení."
-pending = "Čaká"
-readyToFinalize = "Pripravené na finalizáciu"
-signed = "Podpísané"
-viewed = "Zobrazené"
 chooseJksFile = "Vybrať súbor JKS"
 chooseP12File = "Vybrať súbor PKCS12"
 choosePfxFile = "Vybrať súbor PFX"
 choosePrivateKey = "Vybrať súbor súkromného kľúča"
+declined = "Odmietnuté"
+fetchFailed = "Nepodarilo sa načítať údaje o podpisovaní"
 filenamePrefix = "podpísané"
+finalized = "Finalizované"
 location = "Miesto"
 logoTitle = "Logo"
 name = "Meno"
 noLogo = "Bez loga"
+notified = "Oznámené"
 pageNumber = "Číslo strany"
+partialNote = "Môžete finalizovať skôr s aktuálnymi podpismi. Nepodpísaní účastníci budú vylúčení."
 password = "Zadajte heslo pre Keystore alebo súkromný kľúč (ak existuje):"
 passwordOptional = "Nechajte prázdne, ak nie je heslo"
+pending = "Čaká"
+readyToFinalize = "Pripravené na finalizáciu"
 reason = "Dôvod"
 serverCertMessage = "Používa sa serverový certifikát – nie sú potrebné súbory ani heslo"
 showLogo = "Zobraziť logo"
+signatureProgress = "Podpisy: {{signedCount}}/{{totalCount}}"
+signed = "Podpísané"
 tags = "autentifikovať,PEM,P12,oficiálne,šifrovať"
 title = "Podpis certifikátom"
+viewed = "Zobrazené"
 
 [certSign.appearance]
 invisible = "Neviditeľný"
 stepTitle = "Vzhľad podpisu"
-visible = "Viditeľný"
 visibility = "Viditeľnosť"
+visible = "Viditeľný"
 
 [certSign.appearance.options]
 title = "Podrobnosti podpisu"
@@ -2172,8 +2201,227 @@ title = "Ktorú možnosť mám použiť?"
 [certSign.certTypeStep]
 stepTitle = "Formát certifikátu"
 
+[certSign.collab.addParticipants]
+add = "Pridať {{count}} účastníka/ov"
+back = "Späť"
+configureSignatures = "Nastaviť parametre podpisu"
+continue = "Pokračovať na nastavenia podpisu"
+reasonHelp = "Prednastavte dôvod podpisu pre týchto účastníkov (voliteľné, pri podpisovaní ho môžu zmeniť)"
+reasonPlaceholder = "napr. Schválenie, Kontrola..."
+selectUsers = "Vybrať používateľov"
+
+[certSign.collab.finalize]
+button = "Finalizovať a načítať podpísané PDF"
+early = "Finalizovať s aktuálnymi podpismi"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "Neplatný certifikát"
+certNetworkError = "Certifikát sa nepodarilo overiť"
+certValid = "✓ Platný certifikát"
+certValidating = "Overuje sa certifikát..."
+certValidUntil = " do {{date}}"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "Zahrnúť súhrnnú stranu podpisov"
+includeSummaryPageHelp = "Na koniec bude pridaná súhrnná strana so všetkými metadátami podpisov. Rámiky digitálnych certifikátov na jednotlivých stranách budú potlačené (vlastnoručné podpisy nie sú ovplyvnené)."
+
+[certSign.collab.sessionDetail]
+addButton = "Pridať účastníkov"
+addParticipants = "Pridať účastníkov"
+addParticipantsError = "Nepodarilo sa pridať účastníkov"
+backToList = "Späť na relácie"
+deleteConfirm = "Ste si istí? Toto nie je možné vrátiť späť."
+deleted = "Relácia bola odstránená"
+deleteError = "Nepodarilo sa odstrániť reláciu"
+deleteSession = "Odstrániť reláciu"
+dueDate = "Termín"
+finalizeError = "Nepodarilo sa finalizovať reláciu"
+loadPdfError = "Nepodarilo sa načítať podpísané PDF"
+loadSignedPdf = "Načítať podpísané PDF do aktívnych súborov"
+messageLabel = "Správa"
+noAdditionalInfo = "Žiadne dodatočné informácie"
+owner = "Vlastník"
+participantRemoved = "Účastník odstránený"
+participants = "Účastníci"
+participantsAdded = "Účastníci boli úspešne pridaní"
+removeParticipant = "Odstrániť"
+removeParticipantError = "Nepodarilo sa odstrániť účastníka"
+selectUsers = "Vybrať používateľov..."
+sessionInfo = "Informácie o relácii"
+workbenchTitle = "Správa relácií"
+
+[certSign.collab.sessionList]
+active = "Aktívne"
+finalized = "Finalizované"
+
+[certSign.collab.signatureSettings]
+description = "Nakonfigurujte, ako sa budú podpisy zobrazovať všetkým účastníkom"
+title = "Vzhľad podpisu"
+
+[certSign.collab.signRequest]
+addedToFiles = "Dokument bol pridaný do aktívnych súborov"
+addSignature = "Pridajte svoj podpis"
+addToFiles = "Pridať do aktívnych súborov"
+advancedSettings = "Pokročilé nastavenia"
+backToList = "Späť na žiadosti o podpis"
+certificateChoice = "Vyberte certifikát na podpis"
+changeSignature = "Zmeniť podpis"
+clearSignature = "Vymazať podpis"
+completeAndSign = "Dokončiť a podpísať"
+createNewSignature = "Vytvoriť nový podpis"
+decline = "Odmietnuť žiadosť"
+declineButton = "Odmietnuť"
+deleteSelected = "Odstrániť vybraný podpis"
+drawSignature = "Nižšie nakreslite svoj podpis"
+dueDate = "Termín"
+fileTooLarge = "Veľkosť súboru musí byť menšia ako 5 MB"
+fontFamily = "Písmo"
+fontSize = "Veľkosť písma: {{size}}px"
+fontSizePlaceholder = "Veľkosť"
+from = "Od"
+invalidCertFile = "Vyberte súbor certifikátu P12 alebo PFX"
+invalidFileType = "Vyberte obrazový súbor"
+location = "Poloha (voliteľné)"
+locationPlaceholder = "Odkiaľ podpisujete?"
+message = "Správa"
+noCertificate = "Vyberte súbor certifikátu"
+noSignatures = "Umiestnite aspoň jeden podpis do PDF"
+p12File = "Súbor certifikátu P12/PFX"
+password = "Heslo certifikátu"
+passwordPlaceholder = "Zadajte heslo..."
+penColor = "Farba pera"
+penSize = "Hrúbka pera: {{size}}px"
+placementActive = "Kliknite do PDF na umiestnenie"
+placeSignatureButton = "Umiestniť podpis do PDF"
+reason = "Dôvod (voliteľné)"
+reasonPlaceholder = "Prečo podpisujete?"
+removeCertFile = "Odstrániť súbor"
+removeImage = "Odstrániť obrázok"
+savedSignatures = "Uložené podpisy"
+selectFile = "Vybrať obrazový súbor"
+selectSignatureTitle = "Vybrať alebo vytvoriť podpis"
+signatureInfo = "Tieto nastavenia nastavuje vlastník dokumentu"
+signaturePlaced = "Podpis umiestnený na stranu"
+signatureSettings = "Nastavenia podpisu"
+signatureText = "Text podpisu"
+signatureTextPlaceholder = "Zadajte svoje meno..."
+signatureTypeLabel = "Typ podpisu"
+signButton = "Podpísať dokument"
+signingTitle = "Podpisovanie"
+textColor = "Farba textu"
+typeSignature = "Zadajte svoje meno na vytvorenie podpisu"
+uploadCert = "Vlastný certifikát"
+uploadCertDesc = "Použite svoj certifikát P12/PFX"
+uploadSignature = "Nahrajte obrázok svojho podpisu"
+usePersonalCert = "Osobný certifikát"
+usePersonalCertDesc = "Automaticky generovaný pre váš účet"
+useServerCert = "Organizačný certifikát"
+useServerCertDesc = "Zdieľaný organizačný certifikát"
+workbenchTitle = "Podpisová žiadosť"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "Vyberte farbu ťahu"
+continue = "Pokračovať"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "Neplatný certifikát: {{error}}"
+certInvalidFallback = "Neplatný certifikát"
+certNetworkError = "Certifikát sa nepodarilo overiť"
+certValidating = "Overuje sa certifikát..."
+certValidUntil = "Certifikát platný do {{date}}"
+description = "Umiestnili ste {{count}} podpisov. Vyberte certifikát na dokončenie podpisovania."
+sign = "Podpísať dokument"
+title = "Konfigurácia certifikátu"
+
+[certSign.collab.signRequest.image]
+hint = "Nahrajte obrázok PNG alebo JPG svojho podpisu"
+
+[certSign.collab.signRequest.mode]
+move = "Presunúť podpis"
+place = "Umiestniť podpis"
+title = "Režim podpisu alebo presunu"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "Kresliť"
+image = "Nahrať"
+text = "Text"
+
+[certSign.collab.signRequest.placeSignature]
+message = "Kliknite na PDF, kam chcete umiestniť svoj podpis"
+title = "Umiestniť podpis"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "Vybraný podpis"
+missing = "Žiadny náhľad"
+textFallback = "Podpis"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "Kreslený podpis"
+defaultImageLabel = "Nahraný podpis"
+defaultLabel = "Podpis"
+defaultTextLabel = "Písaný podpis"
+delete = "Odstrániť podpis"
+none = "Žiadne uložené podpisy"
+
+[certSign.collab.signRequest.signatureType]
+draw = "Kresliť"
+type = "Text"
+upload = "Nahrať"
+
+[certSign.collab.signRequest.steps]
+back = "Späť"
+cancelPlacement = "Zrušiť umiestnenie"
+certificate = "Certifikát"
+clickMultipleTimes = "Kliknite do PDF viackrát na umiestnenie podpisov. Potiahnutím podpis presuňte alebo zmeňte jeho veľkosť."
+clickToPlace = "Kliknite do PDF tam, kde chcete, aby sa váš podpis zobrazil."
+continue = "Pokračovať na výber certifikátu"
+continueToPlacement = "Pokračovať na umiestnenie"
+continueToReview = "Pokračovať na kontrolu"
+createSignature = "Vytvoriť podpis"
+invisible = "Neviditeľné"
+location = "Poloha:"
+multipleSignatures = "{{count}} podpisov bude pridaných do PDF"
+oneSignature = "1 podpis bude pridaný do PDF"
+placeOnPdf = "Umiestniť do PDF"
+reason = "Dôvod:"
+reviewTitle = "Kontrola pred podpísaním"
+signaturePlaced = "Podpis umiestnený na strane {{page}}. Polohu môžete upraviť opätovným kliknutím alebo pokračovať na kontrolu."
+visibility = "Viditeľnosť:"
+visible = "Viditeľné"
+yourSignatures = "Vaše podpisy ({{count}})"
+
+[certSign.collab.signRequest.text]
+colorLabel = "Farba"
+fontLabel = "Písmo"
+fontSizeLabel = "Veľkosť"
+fontSizePlaceholder = "16"
+label = "Text podpisu"
+modalHint = "Zadajte svoje meno a kliknite na Pokračovať, aby ste ho umiestnili do PDF."
+placeholder = "Zadajte svoje meno..."
+
+[certSign.collab.userSelector]
+inviteUsers = "Pridať používateľov"
+loadError = "Nepodarilo sa načítať používateľov"
+noTeam = "Bez tímu"
+noUsers = "Nenašli sa žiadni ďalší používatelia."
+placeholder = "Vybrať používateľov..."
+
 [certSign.error]
 failed = "Počas spracovania podpisov došlo k chybe."
+
+[certSign.mobile]
+panelActions = "Akcie"
+panelDocument = "Dokument"
+panelPeople = "Ľudia"
+
+[certSign.sessions]
+deleted = "Relácia bola odstránená"
+fetchFailed = "Nepodarilo sa načítať podrobnosti relácie"
+finalized = "Relácia bola finalizovaná"
+loaded = "Podpísané PDF načítané"
+pdfNotReady = "PDF nie je pripravené"
+pdfNotReadyDesc = "Podpísané PDF sa generuje. Skúste to znova o chvíľu."
 
 [certSign.sign]
 results = "Podpísané PDF"
@@ -2230,252 +2478,6 @@ bullet3 = "Kontroluje, či bol dokument po podpise upravený"
 bullet4 = "Môže použiť vlastné certifikáty na overenie"
 text = "Pri kontrole podpisov vám nástroj oznámi, či sú platné, kto dokument podpísal, kedy bol podpísaný a či bol dokument po podpise zmenený."
 title = "Kontrola podpisov"
-
-[certSign.collab.finalize]
-button = "Finalizovať a načítať podpísané PDF"
-early = "Finalizovať s aktuálnymi podpismi"
-
-[certSign.collab.sessionDetail]
-addButton = "Pridať účastníkov"
-addParticipants = "Pridať účastníkov"
-addParticipantsError = "Nepodarilo sa pridať účastníkov"
-backToList = "Späť na relácie"
-deleteConfirm = "Ste si istí? Toto nie je možné vrátiť späť."
-deleteError = "Nepodarilo sa odstrániť reláciu"
-deleted = "Relácia bola odstránená"
-deleteSession = "Odstrániť reláciu"
-dueDate = "Termín"
-finalizeError = "Nepodarilo sa finalizovať reláciu"
-loadPdfError = "Nepodarilo sa načítať podpísané PDF"
-loadSignedPdf = "Načítať podpísané PDF do aktívnych súborov"
-messageLabel = "Správa"
-noAdditionalInfo = "Žiadne dodatočné informácie"
-owner = "Vlastník"
-participantRemoved = "Účastník odstránený"
-participants = "Účastníci"
-participantsAdded = "Účastníci boli úspešne pridaní"
-removeParticipant = "Odstrániť"
-removeParticipantError = "Nepodarilo sa odstrániť účastníka"
-selectUsers = "Vybrať používateľov..."
-sessionInfo = "Informácie o relácii"
-workbenchTitle = "Správa relácií"
-
-[certSign.collab.signRequest]
-addedToFiles = "Dokument bol pridaný do aktívnych súborov"
-addSignature = "Pridajte svoj podpis"
-addToFiles = "Pridať do aktívnych súborov"
-advancedSettings = "Pokročilé nastavenia"
-backToList = "Späť na žiadosti o podpis"
-certificateChoice = "Vyberte certifikát na podpis"
-changeSignature = "Zmeniť podpis"
-clearSignature = "Vymazať podpis"
-completeAndSign = "Dokončiť a podpísať"
-createNewSignature = "Vytvoriť nový podpis"
-declineButton = "Odmietnuť"
-decline = "Odmietnuť žiadosť"
-deleteSelected = "Odstrániť vybraný podpis"
-drawSignature = "Nižšie nakreslite svoj podpis"
-dueDate = "Termín"
-fileTooLarge = "Veľkosť súboru musí byť menšia ako 5 MB"
-fontFamily = "Písmo"
-fontSize = "Veľkosť písma: {{size}}px"
-fontSizePlaceholder = "Veľkosť"
-from = "Od"
-invalidCertFile = "Vyberte súbor certifikátu P12 alebo PFX"
-invalidFileType = "Vyberte obrazový súbor"
-location = "Poloha (voliteľné)"
-locationPlaceholder = "Odkiaľ podpisujete?"
-message = "Správa"
-noCertificate = "Vyberte súbor certifikátu"
-noSignatures = "Umiestnite aspoň jeden podpis do PDF"
-p12File = "Súbor certifikátu P12/PFX"
-password = "Heslo certifikátu"
-passwordPlaceholder = "Zadajte heslo..."
-penColor = "Farba pera"
-penSize = "Hrúbka pera: {{size}}px"
-placementActive = "Kliknite do PDF na umiestnenie"
-placeSignatureButton = "Umiestniť podpis do PDF"
-reason = "Dôvod (voliteľné)"
-reasonPlaceholder = "Prečo podpisujete?"
-removeImage = "Odstrániť obrázok"
-removeCertFile = "Odstrániť súbor"
-savedSignatures = "Uložené podpisy"
-selectFile = "Vybrať obrazový súbor"
-selectSignatureTitle = "Vybrať alebo vytvoriť podpis"
-signButton = "Podpísať dokument"
-signatureInfo = "Tieto nastavenia nastavuje vlastník dokumentu"
-signaturePlaced = "Podpis umiestnený na stranu"
-signatureSettings = "Nastavenia podpisu"
-signatureText = "Text podpisu"
-signatureTextPlaceholder = "Zadajte svoje meno..."
-signatureTypeLabel = "Typ podpisu"
-signingTitle = "Podpisovanie"
-textColor = "Farba textu"
-typeSignature = "Zadajte svoje meno na vytvorenie podpisu"
-uploadCert = "Vlastný certifikát"
-uploadCertDesc = "Použite svoj certifikát P12/PFX"
-uploadSignature = "Nahrajte obrázok svojho podpisu"
-usePersonalCert = "Osobný certifikát"
-usePersonalCertDesc = "Automaticky generovaný pre váš účet"
-useServerCert = "Organizačný certifikát"
-useServerCertDesc = "Zdieľaný organizačný certifikát"
-workbenchTitle = "Podpisová žiadosť"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "Vyberte farbu ťahu"
-continue = "Pokračovať"
-
-[certSign.collab.signRequest.certModal]
-description = "Umiestnili ste {{count}} podpisov. Vyberte certifikát na dokončenie podpisovania."
-sign = "Podpísať dokument"
-certValidating = "Overuje sa certifikát..."
-certValidUntil = "Certifikát platný do {{date}}"
-certInvalid = "Neplatný certifikát: {{error}}"
-certInvalidFallback = "Neplatný certifikát"
-certNetworkError = "Certifikát sa nepodarilo overiť"
-title = "Konfigurácia certifikátu"
-
-[certSign.collab.signRequest.image]
-hint = "Nahrajte obrázok PNG alebo JPG svojho podpisu"
-
-[certSign.collab.signRequest.mode]
-move = "Presunúť podpis"
-place = "Umiestniť podpis"
-title = "Režim podpisu alebo presunu"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "Kresliť"
-image = "Nahrať"
-text = "Text"
-
-[certSign.collab.signRequest.placeSignature]
-message = "Kliknite na PDF, kam chcete umiestniť svoj podpis"
-title = "Umiestniť podpis"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "Vybraný podpis"
-missing = "Žiadny náhľad"
-textFallback = "Podpis"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "Kreslený podpis"
-defaultImageLabel = "Nahraný podpis"
-defaultLabel = "Podpis"
-defaultTextLabel = "Písaný podpis"
-delete = "Odstrániť podpis"
-none = "Žiadne uložené podpisy"
-
-[certSign.collab.signRequest.signatureType]
-draw = "Kresliť"
-type = "Text"
-upload = "Nahrať"
-
-[certSign.collab.signRequest.steps]
-back = "Späť"
-cancelPlacement = "Zrušiť umiestnenie"
-certificate = "Certifikát"
-clickMultipleTimes = "Kliknite do PDF viackrát na umiestnenie podpisov. Potiahnutím podpis presuňte alebo zmeňte jeho veľkosť."
-clickToPlace = "Kliknite do PDF tam, kde chcete, aby sa váš podpis zobrazil."
-continue = "Pokračovať na výber certifikátu"
-continueToPlacement = "Pokračovať na umiestnenie"
-continueToReview = "Pokračovať na kontrolu"
-createSignature = "Vytvoriť podpis"
-invisible = "Neviditeľné"
-location = "Poloha:"
-multipleSignatures = "{{count}} podpisov bude pridaných do PDF"
-oneSignature = "1 podpis bude pridaný do PDF"
-placeOnPdf = "Umiestniť do PDF"
-reason = "Dôvod:"
-reviewTitle = "Kontrola pred podpísaním"
-signaturePlaced = "Podpis umiestnený na strane {{page}}. Polohu môžete upraviť opätovným kliknutím alebo pokračovať na kontrolu."
-visible = "Viditeľné"
-visibility = "Viditeľnosť:"
-yourSignatures = "Vaše podpisy ({{count}})"
-
-[certSign.collab.signRequest.text]
-colorLabel = "Farba"
-fontLabel = "Písmo"
-fontSizeLabel = "Veľkosť"
-fontSizePlaceholder = "16"
-label = "Text podpisu"
-modalHint = "Zadajte svoje meno a kliknite na Pokračovať, aby ste ho umiestnili do PDF."
-placeholder = "Zadajte svoje meno..."
-
-[certSign.collab.participant]
-certValidating = "Overuje sa certifikát..."
-certValid = "✓ Platný certifikát"
-certValidUntil = " do {{date}}"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "Neplatný certifikát"
-certNetworkError = "Certifikát sa nepodarilo overiť"
-
-[certSign.collab.addParticipants]
-add = "Pridať {{count}} účastníka/ov"
-back = "Späť"
-configureSignatures = "Nastaviť parametre podpisu"
-continue = "Pokračovať na nastavenia podpisu"
-reasonHelp = "Prednastavte dôvod podpisu pre týchto účastníkov (voliteľné, pri podpisovaní ho môžu zmeniť)"
-reasonPlaceholder = "napr. Schválenie, Kontrola..."
-selectUsers = "Vybrať používateľov"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "Zahrnúť súhrnnú stranu podpisov"
-includeSummaryPageHelp = "Na koniec bude pridaná súhrnná strana so všetkými metadátami podpisov. Rámiky digitálnych certifikátov na jednotlivých stranách budú potlačené (vlastnoručné podpisy nie sú ovplyvnené)."
-
-[certSign.collab.sessionList]
-active = "Aktívne"
-finalized = "Finalizované"
-
-[certSign.collab.signatureSettings]
-description = "Nakonfigurujte, ako sa budú podpisy zobrazovať všetkým účastníkom"
-title = "Vzhľad podpisu"
-
-[certSign.collab.userSelector]
-inviteUsers = "Pridať používateľov"
-loadError = "Nepodarilo sa načítať používateľov"
-noTeam = "Bez tímu"
-noUsers = "Nenašli sa žiadni ďalší používatelia."
-placeholder = "Vybrať používateľov..."
-
-[certSign.mobile]
-panelActions = "Akcie"
-panelDocument = "Dokument"
-panelPeople = "Ľudia"
-
-[certSign.sessions]
-deleted = "Relácia bola odstránená"
-fetchFailed = "Nepodarilo sa načítať podrobnosti relácie"
-finalized = "Relácia bola finalizovaná"
-loaded = "Podpísané PDF načítané"
-pdfNotReady = "PDF nie je pripravené"
-pdfNotReadyDesc = "Podpísané PDF sa generuje. Skúste to znova o chvíľu."
-
-[certificateChoice.tooltip]
-header = "Typy certifikátov"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "Spravované systémovými administrátormi"
-bullet2 = "Zdieľané medzi autorizovanými používateľmi"
-bullet3 = "Reprezentuje identitu spoločnosti, nie jednotlivca"
-bullet4 = "Vhodné pre: oficiálne dokumenty, tímové podpisy"
-description = "Zdieľaný certifikát poskytovaný vašou organizáciou. Používa sa na celofiremné podpisovanie."
-title = "Organizačný certifikát"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "Generuje sa automaticky pri prvom použití"
-bullet2 = "Viazaný na váš používateľský účet"
-bullet3 = "Nie je možné zdieľať s inými používateľmi"
-bullet4 = "Vhodné pre: osobné dokumenty, individuálnu zodpovednosť"
-description = "Automaticky generovaný certifikát jedinečný pre váš používateľský účet. Vhodný pre individuálne podpisy."
-title = "Osobný certifikát"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "Vyžaduje súbor P12/PFX a heslo"
-bullet2 = "Môže byť vydaný externými certifikačnými autoritami"
-bullet3 = "Vyššia úroveň dôvery pre právne dokumenty"
-bullet4 = "Vhodné pre: právne záväzné zmluvy, externé overenie"
-description = "Použite vlastný súbor certifikátu PKCS#12. Poskytuje plnú kontrolu nad vlastnosťami certifikátu."
-title = "Nahrať vlastný P12"
 
 [changeCreds]
 changePassword = "Používate predvolené prihlasovacie údaje. Prosím, zadajte nové heslo"
@@ -2657,6 +2659,9 @@ title = "Zmeniť povolenia"
 
 [changePermissions.tooltip.warning]
 text = "Aby boli tieto povolenia nezmeniteľné, použite nástroj Add Password na nastavenie hesla vlastníka."
+
+[cloudBadge]
+tooltip = "Táto operácia použije vaše cloudové kredity"
 
 [colorPicker]
 title = "Vyberte farbu"
@@ -2998,9 +3003,11 @@ blackwhite = "Čiernobiele"
 cbrDpi = "DPI pre vykresľovanie obrázkov"
 cbrOptions = "Možnosti CBR"
 cbrOutputOptions = "Možnosti PDF na CBR"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "DPI pre vykresľovanie obrázkov"
 cbzOptions = "Možnosti CBZ na PDF"
 cbzOutputOptions = "Možnosti PDF na CBZ"
+cbzToPdf = "CBZ → PDF"
 color = "Farba"
 colorType = "Typ farieb"
 combineImages = "Kombinovať obrázky"
@@ -3018,13 +3025,16 @@ desc = "Konvertovať súbory medzi rôznymi formátmi"
 downloadConverted = "Stiahnuť skonvertovaný súbor"
 downloadHtml = "Stiahnuť medzivýstupný súbor HTML namiesto PDF"
 dpi = "DPI"
+ebookToPdf = "eBook → PDF"
 emailOptions = "Možnosti Email na PDF"
+emlToPdf = "E‑mail → PDF"
 errorConversion = "Počas konverzie súboru došlo k chybe."
 errorNoFiles = "Vyberte aspoň jeden súbor na konverziu."
 errorNoFormat = "Vyberte zdrojový aj cieľový formát."
 errorNotSupported = "Konverzia z {{from}} do {{to}} nie je podporovaná."
 fileFormat = "Formát súboru"
 files = "Súbory"
+fileToPdf = "Office/Dokument → PDF"
 fillPage = "Vyplniť stránku"
 fitDocumentToPage = "Prispôsobiť dokument na stránku"
 fitOption = "Možnosť prispôsobenia"
@@ -3052,6 +3062,9 @@ pdfaFormat = "Formát PDF/A"
 pdfaNote = "PDF/A-1b je kompatibilnejší, PDF/A-2b podporuje viac funkcií."
 pdfaOptions = "Možnosti PDF/A"
 pdfOptions = "Možnosti PDF"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X je podmnožina PDF podľa štandardu ISO pre spoľahlivú tlač a výmenu grafiky."
 pdfxDigitalSignatureWarning = "PDF obsahuje digitálny podpis. Ten sa v nasledujúcom kroku odstráni."
 pptExt = "PowerPoint (.pptx)"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "Zdrojový formát"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "Cieľový formát"
 textRtf = "Text/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "Možnosti Web na PDF"
 wordDoc = "Dokument Word"
 wordDocExt = "Dokument Word (.docx)"
 zoomLevel = "Úroveň priblíženia"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "eBook → PDF"
-emlToPdf = "E‑mail → PDF"
-fileToPdf = "Office/Dokument → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "Možnosti eBook na PDF"
@@ -3147,6 +3152,77 @@ description = "These cookies are essential for the website to function properly.
 [cookieBanner.services]
 posthog = "PostHog Analytics"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "Povoliť nadlimitné účtovanie"
+maybeLater = "Možno neskôr"
+upgrade = "Prejsť na vyšší plán"
+
+[credits.insufficient]
+brief = "Nedostatok kreditov. Potrebujete {{required}} kreditov, ale máte {{current}}."
+freeTier = "Prejdite na Team a získajte 10× viac kreditov a neobmedzené nadlimitné účtovanie."
+managedMember = "Kontaktujte svojho vedúceho tímu."
+message = "Nemáte dostatok kreditov na spustenie {{tool}}. Aktuálne máte {{current}} kreditov."
+messageWithAmount = "Na spustenie {{tool}} potrebujete {{required}} kreditov, ale máte len {{current}}."
+teamMember = "Povoľte nadlimitné účtovanie, aby sa vám kredity nikdy neminuli."
+title = "Nedostatok kreditov"
+
+[credits.modal]
+advancedMonitoring = "Pokročilé monitorovanie"
+allInOneWorkspace = "Všetko v jednom: pracovné prostredie pre PDF (prehliadač, nástroje a agent)"
+apiSandbox = "API sandbox"
+contactSales = "Kontaktovať obchod"
+creditsRemaining = "{{current}} z {{total}} zostáva"
+creditsThisMonth = "Mesačné kredity"
+current = "Aktuálny plán"
+customPricing = "Vlastné"
+customSmartFolders = "Vlastné inteligentné priečinky"
+dedicatedSupportSlas = "Vyhradená podpora a SLA"
+enterpriseSubscription = "Enterprise"
+everythingInCredits = "Všetko z Credits, navyše:"
+everythingInFree = "Všetko z Free, navyše:"
+fasterThroughput = "10× rýchlejšia priepustnosť"
+forRegularWork = "Na bežnú prácu s PDF:"
+freeTier = "Bezplatný plán"
+fullyPrivateFiles = "Plne súkromné súbory"
+largeFileProcessing = "Spracovanie veľkých súborov"
+managedMemberMessage = "Máte neobmedzený prístup ku kreditom cez svoj tím. Ak potrebujete pomoc, kontaktujte svojho vedúceho tímu."
+managedMemberTitle = "Neobmedzené kredity"
+meteringBillingNote = "Nadlimitné kredity sa fakturujú mesačne spolu s vaším predplatným Team. Svoju spotrebu môžete kedykoľvek sledovať v nastaveniach účtu."
+meteringExplanation = "Váš plán Team obsahuje {{credits}} kreditov mesačne. Keď sa minú, nadlimitné účtovanie automaticky poskytne ďalšie kredity, aby ste nemuseli prerušovať prácu."
+meteringIncluded = "{{credits}} kreditov/mesiac zahrnutých v pláne Team"
+meteringNeverRunOut = "Kredity sa vám nikdy neminú"
+meteringNoCommitment = "Bez viazanosti, zrušiť môžete kedykoľvek"
+meteringPayAsYouGo = "Platíte len za skutočné použitie"
+meteringPrice = "Dodatočné kredity za {{price}}/kredit"
+meteringTitle = "Nadlimitné účtovanie podľa skutočného využitia"
+monthlyCredits = "mesačné kredity"
+orgWideAccess = "Celopodnikové riadenie prístupu"
+overage = "nadlimit"
+perMonth = "/mesiac"
+popular = "Obľúbené"
+premiumAiModels = "Prémiové modely AI"
+prioritySupport = "Prioritná podpora"
+privateDocCloud = "Súkromný cloud dokumentov"
+ragFineTuning = "RAG + fine-tuning"
+secureApiAccess = "Zabezpečený prístup k API"
+selfHostLink = "Pozrite si dokumentáciu a plány"
+selfHostPrompt = "Chcete self‑hosting?"
+standardThroughput = "Štandardná priepustnosť"
+subtitle = "Prejdite na Team a získajte 10× viac kreditov a rýchlejšie spracovanie."
+subtitlePro = "Povoľte automatické nadlimitné účtovanie, aby sa vám kredity nikdy neminuli."
+teamLeaderOnly = "Nadlimitné účtovanie môžu povoliť len vedúci tímu"
+teamSubscription = "Team"
+titleExhausted = "Minuli ste svoje bezplatné kredity"
+titleExhaustedPro = "Minuli sa vám kredity"
+unlimitedApiAccess = "Neobmedzený prístup k API"
+unlimitedMonthlyCredits = "Licencia pre celú organizáciu"
+unlimitedSeats = "Neobmedzený počet používateľov"
+
+[credits.modal.features]
+everythingInCredits = "Všetko z Credits, navyše:"
+everythingInFree = "Všetko z Free, navyše:"
+forRegularWork = "Na bežnú prácu s PDF:"
 
 [crop]
 autoCrop = "Automaticky orezať biele okraje"
@@ -3352,6 +3428,9 @@ successBodyWithName = "Heslo odstránené zo súboru {{fileName}}"
 successTitle = "Heslo odstránené"
 title = "Odstráňte heslo na pokračovanie"
 unlock = "Odomknúť a pokračovať"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "Odomknite PDF na pokračovanie"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "Pridať súbory"
 [fileManager]
 active = "Aktívne"
 addToUpload = "Pridať na nahratie"
+changesNotUploaded = "Zmeny neboli nahrané"
 clearAll = "Vymazať všetko"
 clearSelection = "Zrušiť výber"
 clickToUpload = "Kliknite pre nahratie súborov"
 closeFile = "Zatvoriť súbor"
+cloudFile = "Cloudový súbor"
+copyCreated = "Kópia uložená do tohto zariadenia."
+copyFailed = "Kópiu sa nepodarilo vytvoriť."
 delete = "Vymazať"
 deleteAll = "Odstrániť všetko"
 deleteSelected = "Odstrániť vybrané"
@@ -3486,14 +3569,24 @@ fileSize = "Veľkosť"
 filesSelected = "vybraných súborov"
 filesStored = "uložených súborov"
 fileVersion = "Verzia"
+filterAll = "Všetko"
+filterLocal = "Lokálne"
+filterSharedByMe = "Zdieľané mnou"
+filterSharedWithMe = "Zdieľané so mnou"
 googleDrive = "Google Drive"
 googleDriveNotAvailable = "Integrácia Google Drive nie je dostupná"
 googleDriveShort = "Drive"
 hideHistory = "Skryť históriu"
 lastModified = "Naposledy upravené"
+lastSynced = "Naposledy synchronizované"
+leaveShare = "Odstrániť z môjho zoznamu"
+leaveShareFailed = "Zdieľaný súbor sa nepodarilo odstrániť."
+leaveShareSuccess = "Odstránené z vášho zoznamu zdieľaných."
 loadingFiles = "Načítavajú sa súbory..."
 loadingHistory = "Načítava sa história..."
 localFiles = "Lokálne súbory"
+localOnly = "Len lokálne"
+makeCopy = "Vytvoriť kópiu"
 mobileShort = "Mobil"
 mobileUpload = "Nahrávanie z mobilu"
 mobileUploadNotAvailable = "Nahrávanie z mobilu nie je povolené"
@@ -3506,36 +3599,10 @@ openFile = "Otvoriť súbor"
 openFiles = "Otvoriť súbory"
 openInFileEditor = "Otvoriť v editore súborov"
 openInPageEditor = "Otvoriť v editore stránok"
+owner = "Vlastník"
+ownerUnknown = "Neznámy"
 recent = "Nedávne"
 reloadFiles = "Znovu načítať súbory"
-restore = "Obnoviť"
-saveSelected = "Uložiť vybrané"
-searchFiles = "Hľadať súbory..."
-selectAll = "Vybrať všetko"
-selectedCount = "{{count}} vybraných"
-selectedFiles = "Vybrané súbory"
-showAll = "Zobraziť všetko"
-showHistory = "Zobraziť históriu"
-sortByDate = "Zoradiť podľa dátumu"
-sortByName = "Zoradiť podľa názvu"
-sortBySize = "Zoradiť podľa veľkosti"
-storage = "Úložisko"
-storageCleared = "Prehliadač vyčistil úložisko. Súbory boli odstránené. Prosím, nahrajte ich znova."
-storageError = "Vyskytla sa chyba úložiska"
-storageLow = "Úložisku dochádza miesto. Zvážte odstránenie starých súborov."
-subtitle = "Pridajte súbory do úložiska pre ľahký prístup naprieč nástrojmi"
-supportMessage = "Poháňané databázovým úložiskom prehliadača pre neobmedzenú kapacitu"
-title = "Nahrať súbory PDF"
-toolChain = "Použité nástroje"
-totalSelected = "Celkom vybrané"
-unsupported = "Nepodporované"
-unzip = "Rozbaliť"
-uploadError = "Niektoré súbory sa nepodarilo nahrať."
-copyCreated = "Kópia uložená do tohto zariadenia."
-copyFailed = "Kópiu sa nepodarilo vytvoriť."
-leaveShare = "Odstrániť z môjho zoznamu"
-leaveShareFailed = "Zdieľaný súbor sa nepodarilo odstrániť."
-leaveShareSuccess = "Odstránené z vášho zoznamu zdieľaných."
 removeBoth = "Odstrániť z oboch"
 removeFilePrompt = "Tento súbor je uložený v tomto zariadení aj na vašom serveri. Odkiaľ ho chcete odstrániť?"
 removeFileTitle = "Odstrániť súbor"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "Odstránené zo servera."
 removeSharedPrompt = "Tento súbor je s vami zdieľaný. Môžete ho odstrániť z tohto zariadenia alebo zo svojho zdieľaného zoznamu."
 removeSharedServerOnlyBlockedPrompt = "Tento súbor je s vami zdieľaný a je uložený len na serveri."
 removeSharedServerOnlyPrompt = "Tento súbor je s vami zdieľaný a je uložený len na serveri. Odstrániť ho zo zoznamu?"
-changesNotUploaded = "Zmeny neboli nahrané"
-cloudFile = "Cloudový súbor"
-filterAll = "Všetko"
-filterLocal = "Lokálne"
-filterSharedByMe = "Zdieľané mnou"
-filterSharedWithMe = "Zdieľané so mnou"
-lastSynced = "Naposledy synchronizované"
-localOnly = "Len lokálne"
-makeCopy = "Vytvoriť kópiu"
-owner = "Vlastník"
-ownerUnknown = "Neznámy"
+restore = "Obnoviť"
+saveSelected = "Uložiť vybrané"
+searchFiles = "Hľadať súbory..."
+selectAll = "Vybrať všetko"
+selectedCount = "{{count}} vybraných"
+selectedFiles = "Vybrané súbory"
 share = "Zdieľať"
-shareSelected = "Zdieľať vybrané"
 sharedByYou = "Zdieľané vami"
 sharedEditNoticeBody = "Nemáte práva na úpravu serverovej verzie tohto súboru. Všetky úpravy sa uložia ako lokálna kópia."
 sharedEditNoticeConfirm = "Rozumiem"
 sharedEditNoticeTitle = "Serverová kópia len na čítanie"
 sharedWithYou = "Zdieľané s vami"
+shareSelected = "Zdieľať vybrané"
 sharing = "Zdieľanie"
+showAll = "Zobraziť všetko"
+showHistory = "Zobraziť históriu"
+sortByDate = "Zoradiť podľa dátumu"
+sortByName = "Zoradiť podľa názvu"
+sortBySize = "Zoradiť podľa veľkosti"
+storage = "Úložisko"
+storageCleared = "Prehliadač vyčistil úložisko. Súbory boli odstránené. Prosím, nahrajte ich znova."
+storageError = "Vyskytla sa chyba úložiska"
+storageLow = "Úložisku dochádza miesto. Zvážte odstránenie starých súborov."
 storageState = "Úložisko"
+subtitle = "Pridajte súbory do úložiska pre ľahký prístup naprieč nástrojmi"
+supportMessage = "Poháňané databázovým úložiskom prehliadača pre neobmedzenú kapacitu"
 synced = "Synchronizované"
+title = "Nahrať súbory PDF"
+toolChain = "Použité nástroje"
+totalSelected = "Celkom vybrané"
+unsupported = "Nepodporované"
+unzip = "Rozbaliť"
 updateOnServer = "Aktualizovať na serveri"
+uploadError = "Niektoré súbory sa nepodarilo nahrať."
 uploadSelected = "Nahrať vybrané"
 uploadToServer = "Nahrať na server"
 
@@ -3696,77 +3775,6 @@ title = "O splošťovaní PDF"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "O skupinovom podpisovaní"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "Všetky podpisy sa aplikujú v poradí účastníkov, ktoré ste určili"
-bullet2 = "V prípade potreby môžete finalizovať aj s čiastočnými podpismi"
-bullet3 = "Po finalizácii už reláciu nemožno upravovať"
-description = "Keď všetci účastníci podpíšu (alebo sa rozhodnete finalizovať skôr), môžete vygenerovať finálne podpísané PDF."
-title = "Proces finalizácie"
-
-[groupSigning.tooltip.roles]
-bullet1 = "Vlastník (vy): vytvára reláciu, nastavuje predvolené hodnoty podpisu, finalizuje dokument"
-bullet2 = "Účastníci: vytvoria svoj podpis, zvolia certifikát, umiestnia ho do PDF"
-bullet3 = "Účastníci nemôžu meniť nastavenia viditeľnosti podpisu, dôvodu ani polohy"
-description = "Nastavenia vzhľadu podpisu riadite pre všetkých účastníkov."
-title = "Roly účastníkov"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "Prvý účastník musí podpísať, aby mal druhý prístup k dokumentu"
-bullet2 = "Zabezpečuje správne poradie podpisov pre právny súlad"
-bullet3 = "Účastníkov môžete preusporiadať ťahaním v zozname"
-description = "Účastníci podpisujú dokumenty v poradí, ktoré určíte. Každý podpisovateľ dostane upozornenie, keď je na rade."
-title = "Postupné podpisovanie"
-
-[groupSigning.steps]
-back = "Späť"
-completed = "Dokončené"
-current = "Aktuálne"
-stepLabel = "Krok {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "Pokračovať na kontrolu"
-invisible = "Podpisy budú neviditeľné (len metadáta)"
-locationLabel = "Poloha:"
-preview = "Náhľad"
-reasonLabel = "Dôvod:"
-title = "Nastaviť parametre podpisu"
-visible = "Podpisy budú viditeľné na strane {{page}}"
-
-[groupSigning.steps.review]
-document = "Dokument"
-dueDate = "Termín (voliteľné)"
-dueDatePlaceholder = "Vyberte termín..."
-invisible = "Neviditeľné (len metadáta)"
-location = "Poloha:"
-logo = "Logo:"
-logoHidden = "Bez loga"
-logoShown = "Zobrazené logo Stirling PDF"
-participants = "Účastníci"
-reason = "Dôvod:"
-send = "Odoslať žiadosti o podpis"
-signatureSettings = "Nastavenia podpisu"
-title = "Skontrolovať podrobnosti relácie"
-titleShort = "Skontrolovať a odoslať"
-visibility = "Viditeľnosť:"
-visible = "Viditeľné na strane {{page}}"
-participantCount = "{{count}} účastníkov bude podpisovať v poradí"
-
-[groupSigning.steps.selectDocument]
-continue = "Pokračovať na výber účastníkov"
-noFile = "Vyberte jeden súbor PDF zo svojich aktívnych súborov na vytvorenie podpisovej relácie."
-selectedFile = "Vybraný dokument"
-title = "Vybrať dokument"
-
-[groupSigning.steps.selectParticipants]
-continue = "Pokračovať na nastavenia podpisu"
-count = "{{count}} vybraných účastníkov"
-label = "Vybrať účastníkov"
-placeholder = "Vyberte účastníkov na podpis..."
-title = "Vybrať účastníkov"
-
 [getPdfInfo]
 downloadJson = "Stiahnuť JSON"
 downloads = "Sťahovania"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "Vrstvy"
 multimedia = "Multimédiá"
 
+[groupSigning.steps]
+back = "Späť"
+completed = "Dokončené"
+current = "Aktuálne"
+stepLabel = "Krok {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "Pokračovať na kontrolu"
+invisible = "Podpisy budú neviditeľné (len metadáta)"
+locationLabel = "Poloha:"
+preview = "Náhľad"
+reasonLabel = "Dôvod:"
+title = "Nastaviť parametre podpisu"
+visible = "Podpisy budú viditeľné na strane {{page}}"
+
+[groupSigning.steps.review]
+document = "Dokument"
+dueDate = "Termín (voliteľné)"
+dueDatePlaceholder = "Vyberte termín..."
+invisible = "Neviditeľné (len metadáta)"
+location = "Poloha:"
+logo = "Logo:"
+logoHidden = "Bez loga"
+logoShown = "Zobrazené logo Stirling PDF"
+participantCount = "{{count}} účastníkov bude podpisovať v poradí"
+participants = "Účastníci"
+reason = "Dôvod:"
+send = "Odoslať žiadosti o podpis"
+signatureSettings = "Nastavenia podpisu"
+title = "Skontrolovať podrobnosti relácie"
+titleShort = "Skontrolovať a odoslať"
+visibility = "Viditeľnosť:"
+visible = "Viditeľné na strane {{page}}"
+
+[groupSigning.steps.selectDocument]
+continue = "Pokračovať na výber účastníkov"
+noFile = "Vyberte jeden súbor PDF zo svojich aktívnych súborov na vytvorenie podpisovej relácie."
+selectedFile = "Vybraný dokument"
+title = "Vybrať dokument"
+
+[groupSigning.steps.selectParticipants]
+continue = "Pokračovať na nastavenia podpisu"
+count = "{{count}} vybraných účastníkov"
+label = "Vybrať účastníkov"
+placeholder = "Vyberte účastníkov na podpis..."
+title = "Vybrať účastníkov"
+
+[groupSigning.tooltip]
+header = "O skupinovom podpisovaní"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "Všetky podpisy sa aplikujú v poradí účastníkov, ktoré ste určili"
+bullet2 = "V prípade potreby môžete finalizovať aj s čiastočnými podpismi"
+bullet3 = "Po finalizácii už reláciu nemožno upravovať"
+description = "Keď všetci účastníci podpíšu (alebo sa rozhodnete finalizovať skôr), môžete vygenerovať finálne podpísané PDF."
+title = "Proces finalizácie"
+
+[groupSigning.tooltip.roles]
+bullet1 = "Vlastník (vy): vytvára reláciu, nastavuje predvolené hodnoty podpisu, finalizuje dokument"
+bullet2 = "Účastníci: vytvoria svoj podpis, zvolia certifikát, umiestnia ho do PDF"
+bullet3 = "Účastníci nemôžu meniť nastavenia viditeľnosti podpisu, dôvodu ani polohy"
+description = "Nastavenia vzhľadu podpisu riadite pre všetkých účastníkov."
+title = "Roly účastníkov"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "Prvý účastník musí podpísať, aby mal druhý prístup k dokumentu"
+bullet2 = "Zabezpečuje správne poradie podpisov pre právny súlad"
+bullet3 = "Účastníkov môžete preusporiadať ťahaním v zozname"
+description = "Účastníci podpisujú dokumenty v poradí, ktoré určíte. Každý podpisovateľ dostane upozornenie, keď je na rade."
+title = "Postupné podpisovanie"
+
 [guestBanner]
 dismiss = "Skryť banner"
 message = "Vytvorte si bezplatný účet, uložte svoju prácu, získajte prístup k ďalším funkciám a podporte projekt."
@@ -3935,10 +4014,6 @@ title = "Anotovať"
 desc = "Stavať viacstupňové pracovné postupy spájaním akcií PDF. Ideálne pre opakované úlohy."
 tags = "workflow,sekvencia,automatizácia"
 title = "Automatizovať"
-
-[home.formFill]
-desc = "Interaktívne vyplňujte polia formulára PDF pomocou vizuálneho editora"
-title = "Vyplniť formulár"
 
 [home.autoRename]
 desc = "Automaticky premenuje PDF súbor podľa zistenej hlavičky"
@@ -4034,6 +4109,10 @@ title = "Extrahovať stránky"
 desc = "Odstrániť všetky interaktívne prvky a formuláre z PDF"
 tags = "zjednodušiť,odstrániť,interaktívne"
 title = "Zploštiť"
+
+[home.formFill]
+desc = "Interaktívne vyplňujte polia formulára PDF pomocou vizuálneho editora"
+title = "Vyplniť formulár"
 
 [home.getPdfInfo]
 desc = "Získava všetky dostupné informácie o PDF"
@@ -4185,11 +4264,6 @@ desc = "Pridáva podpis do PDF kreslením, textom alebo obrázkom"
 tags = "podpis,podpísať"
 title = "Podpísať"
 
-[home.timestampPdf]
-desc = "Pridajte dokumentu PDF časovú pečiatku RFC 3161, aby ste preukázali, kedy váš súbor PDF existoval"
-tags = "časová pečiatka,RFC 3161,TSA,autorita časovej pečiatky,časová pečiatka dokumentu,dôkaz existencie,token časovej pečiatky,dôveryhodná časová pečiatka,označiť časovou pečiatkou,notársky overiť"
-title = "Časová pečiatka PDF"
-
 [home.split]
 desc = "Rozdeľte PDF súbory na viacero dokumentov"
 tags = "rozdeliť,oddeliť,rozbiť"
@@ -4209,6 +4283,11 @@ title = "Rozdeliť PDF podľa sekcií"
 desc = "Zobraziť dokumentáciu API a testovacie koncové body"
 tags = "API,dokumentácia,test"
 title = "Dokumentácia API"
+
+[home.timestampPdf]
+desc = "Pridajte dokumentu PDF časovú pečiatku RFC 3161, aby ste preukázali, kedy váš súbor PDF existoval"
+tags = "časová pečiatka,RFC 3161,TSA,autorita časovej pečiatky,časová pečiatka dokumentu,dôkaz existencie,token časovej pečiatky,dôveryhodná časová pečiatka,označiť časovou pečiatkou,notársky overiť"
+title = "Časová pečiatka PDF"
 
 [home.unlockPDFForms]
 desc = "Odstráni vlastnosť len na čítanie v poliach formulára v dokumente PDF."
@@ -4298,6 +4377,8 @@ welcomeTitle = "Boli ste pozvaní!"
 
 [landing]
 addFiles = "Pridať súbory"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "Nahratie z mobilu"
 openFromComputer = "Otvoriť z počítača"
 uploadFromComputer = "Nahrať z počítača"
@@ -4321,6 +4402,18 @@ module = "Modul"
 nav = "Licencie"
 title = "Licencie tretích strán"
 version = "Verzia"
+
+[localMode]
+toolUnavailable = "Tento nástroj vyžaduje účet. Prihláste sa do Stirling Cloud alebo sa pripojte k vlastnému serveru, aby ste ho mohli používať."
+
+[localMode.banner]
+message = "Prihláste sa a odomknite všetky nástroje."
+signIn = "Prihlásiť sa"
+title = "Beží lokálne"
+
+[localMode.toolPicker]
+message = "Prihláste sa a odomknite všetky nástroje."
+signIn = "Prihlásiť sa"
 
 [login]
 accountCreatedSuccess = "Účet bol úspešne vytvorený! Teraz sa môžete prihlásiť."
@@ -4382,12 +4475,12 @@ sendResetLink = "Odoslať odkaz na obnovenie"
 sessionExpired = "Vaša relácia vypršala. Prihláste sa znova."
 signin = "Prihlásiť sa"
 signInAnonymously = "Prihlásiť sa ako hosť"
-subtitle = "Znovu sa prihláste do Stirling PDF"
 signingIn = "Prihlasovanie..."
 signinTitle = "Prosím, prihláste sa"
 signInWith = "Prihlásiť sa pomocou"
 signOut = "Odhlásiť sa"
 ssoSignIn = "Prihlásiť sa cez Single Sign-on"
+subtitle = "Znovu sa prihláste do Stirling PDF"
 title = "Prihlásenie"
 toManySessions = "Máte príliš veľa aktívnych relácií"
 unexpectedError = "Neočakávaná chyba: {{message}}"
@@ -4430,9 +4523,11 @@ tags = "markup, webový obsah, transformácia, konvertovať"
 title = "Markdown do PDF"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "Zlúčiť"
 tags = "zlúčenie,operácie so stránkami,back end,beží na serveri"
 title = "Zlúčiť"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "Pri zlúčení PDF došlo k chybe."
@@ -4701,15 +4796,6 @@ viewSwitcher = "Pomocou týchto ovládacích prvkov si vyberte, ako chcete zobra
 workbench = "Toto je <strong>Pracovná plocha</strong> - hlavná oblasť, kde si prezeráte a upravujete svoje PDF."
 wrapUp = "Všetko pripravené! Dozvedeli ste sa o hlavných častiach aplikácie a ich použití. Kedykoľvek chcete, kliknite na tlačidlo <strong>Pomoc</strong> a prehliadku si zobrazte znova."
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "Po skončení skúšobného obdobia budete pokračovať v bezplatnej úrovni. Ak chcete zachovať prístup Pro, pridajte platobnú metódu."
-afterTrialWithPayment = "Vaše predplatné Pro sa spustí automaticky po skončení skúšobného obdobia."
-body = "Počas skúšobného obdobia máte plný prístup k funkciám Stirling PDF Pro. Využívajte neobmedzené konverzie, väčšie veľkosti súborov a prioritné spracovanie."
-daysRemaining = "Zostáva {{days}} dní"
-daysRemainingSingular = "Zostáva {{days}} deň"
-title = "Vaše 30‑dňové Pro skúšobné obdobie"
-trialEnds = "Skúšobné obdobie končí {{date}}"
-
 [onboarding.buttons]
 back = "Späť"
 download = "Stiahnuť →"
@@ -4722,6 +4808,15 @@ skipTheTour = "Preskočiť prehliadku"
 body = "Stirling najlepšie funguje ako desktopová aplikácia. Môžete ju používať offline, pristupovať k dokumentom rýchlejšie a upravovať lokálne na počítači."
 title = "Stiahnuť"
 titleWithOs = "Stiahnuť pre {{osLabel}}"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "Po skončení skúšobného obdobia budete pokračovať v bezplatnej úrovni. Ak chcete zachovať prístup Pro, pridajte platobnú metódu."
+afterTrialWithPayment = "Vaše predplatné Pro sa spustí automaticky po skončení skúšobného obdobia."
+body = "Počas skúšobného obdobia máte plný prístup k funkciám Stirling PDF Pro. Využívajte neobmedzené konverzie, väčšie veľkosti súborov a prioritné spracovanie."
+daysRemaining = "Zostáva {{days}} dní"
+daysRemainingSingular = "Zostáva {{days}} deň"
+title = "Vaše 30‑dňové Pro skúšobné obdobie"
+trialEnds = "Skúšobné obdobie končí {{date}}"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "Keď zapnete režim prihlásenia, môžete spravovať používateľov, konfigurovať nastavenia a monitorovať stav servera. Prvých <strong>{{freeTierLimit}}</strong> ľudí na vašom serveri môže používať Stirling bezplatne."
@@ -4858,126 +4953,6 @@ title = "Editor strán"
 zoomIn = "Priblížiť"
 zoomOut = "Oddialiť"
 
-[viewer]
-cannotPreviewFile = "Nedá sa zobraziť náhľad súboru"
-disableColorFilter = "Zakázať farebný filter"
-dualPageView = "Dvojstranové zobrazenie"
-enableDarkFilter = "Povoliť tmavý filter"
-enableSepiaFilter = "Povoliť sépiový filter"
-firstPage = "Prvá strana"
-lastPage = "Posledná strana"
-nextPage = "Nasledujúca strana"
-onlyPdfSupported = "Prehliadač podporuje iba súbory PDF. Tento súbor sa zdá byť iného formátu."
-previousPage = "Predchádzajúca strana"
-singlePageView = "Zobrazenie jednej strany"
-unknownFile = "Neznámy súbor"
-zoomIn = "Priblížiť"
-zoomOut = "Oddialiť"
-resetZoom = "Obnoviť priblíženie"
-
-[viewer.nonPdf]
-fileTypeBadge = "{{type}} súbor"
-convertToPdf = "Konvertovať do PDF"
-loading = "Načítava sa..."
-emptyFile = "Prázdny súbor"
-csvStats = "{{rows}} riadkov · {{columns}} stĺpcov · {{size}}"
-sortedBy = "Zoradené podľa: {{column}}"
-columnDefault = "Stĺpec {{index}}"
-htmlPreviewWarning = "Náhľad HTML — externé zdroje sa nemusia načítať · {{size}}"
-htmlPreview = "Náhľad HTML"
-invalidJson = "Neplatný JSON — zobrazuje sa surový obsah"
-textStats = "{{lines}} riadkov · {{size}}"
-lineNumbers = "Čísla riadkov"
-renderMarkdown = "Zobraziť Markdown"
-
-[viewer.attachments]
-title = "Prílohy"
-searchPlaceholder = "Hľadať prílohy"
-noSupport = "Podpora príloh nie je pre tento prehliadač dostupná."
-noDocument = "Otvorte PDF, aby ste videli jeho prílohy."
-loading = "Načítavajú sa prílohy..."
-empty = "Tento dokument neobsahuje žiadne prílohy"
-noMatch = "Žiadne prílohy nezodpovedajú vášmu vyhľadávaniu"
-
-[viewer.comments]
-title = "Komentáre"
-hint = "Komentáre umiestnite pomocou nástrojov Komentár, Vložiť text alebo Nahradiť text. Zobrazia sa tu podľa strán."
-placeholder = "Napíšte svoj komentár..."
-pageLabel = "Strana {{page}}"
-oneComment = "1 komentár"
-nComments = "{{count}} komentárov"
-addCommentPlaceholder = "Pridať komentár..."
-addLink = "Pridať odkaz"
-goToLink = "Prejsť na odkaz"
-addComment = "Pridať komentár"
-viewComment = "Zobraziť komentár"
-addReplyPlaceholder = "Pridať odpoveď..."
-saveReply = "Uložiť odpoveď"
-send = "Odoslať"
-moreActions = "Ďalšie akcie"
-typeComment = "Komentár"
-typeInsertText = "Vložiť text"
-typeReplaceText = "Nahradiť text"
-locateAnnotation = "Vyhľadať v dokumente"
-deleteTitle = "Odstrániť anotáciu z komentárov?"
-deleteDescription = "Táto anotácia má pripojený komentár. Môžete odstrániť iba komentár z bočného panela a ponechať anotáciu, alebo vymazať všetko."
-removeCommentOnly = "Odstrániť iba komentár"
-deleteAnnotationAndComment = "Odstrániť anotáciu aj komentár"
-
-[viewer.formBar]
-title = "Polia formulára"
-unsavedBadge = "Neuložené"
-unsavedDesc = "Máte neuložené zmeny"
-hasFieldsDesc = "Toto PDF obsahuje vyplniteľné polia"
-dismiss = "Zavrieť"
-apply = "Použiť zmeny"
-download = "Stiahnuť PDF"
-
-[rightRail]
-closeSelected = "Zavrieť vybrané súbory"
-selectAll = "Vybrať všetko"
-deselectAll = "Zrušiť výber"
-selectByNumber = "Vybrať podľa čísel strán"
-deleteSelected = "Odstrániť vybrané strany"
-closePdf = "Zavrieť PDF"
-exportAll = "Exportovať PDF"
-downloadSelected = "Stiahnuť vybrané súbory"
-annotations = "Anotácie"
-exportSelected = "Exportovať vybrané strany"
-formFill = "Vyplniť formulár"
-saveChanges = "Uložiť zmeny"
-toggleAttachments = "Zobraziť/skryť prílohy"
-toggleTheme = "Prepnúť tému"
-language = "Jazyk"
-toggleAnnotations = "Prepnúť zobrazenie anotácií"
-toggleLayers = "Prepnúť vrstvy"
-search = "Hľadať v PDF"
-panMode = "Režim posunu"
-applyRedactionsFirst = "Najprv použite začiernenia"
-rotateLeft = "Otočiť doľava"
-rotateRight = "Otočiť doprava"
-toggleSidebar = "Prepnúť bočný panel"
-toggleBookmarks = "Prepnúť záložky"
-toggleComments = "Komentáre"
-print = "Vytlačiť PDF"
-ruler = "Pravítko / meranie"
-readAloud = "Čítanie nahlas"
-readAloudSpeed = "Rýchlosť"
-readAloudLanguage = "Jazyk"
-selectLanguage = "Vyberte jazyk"
-draw = "Kresliť"
-redact = "Začierniť"
-exitRedaction = "Ukončiť režim začiernenia"
-save = "Uložiť"
-downloadAll = "Stiahnuť všetko"
-saveAll = "Uložiť všetko"
-saveAs = "Uložiť ako"
-
-[textAlign]
-left = "Vľavo"
-center = "Na stred"
-right = "Vpravo"
-
 [pageExtracter]
 header = "Extrahovať stránky"
 placeholder = "(napr. 1,2,8 alebo 4,7,12-16 alebo 2n-1)"
@@ -5000,10 +4975,24 @@ tags = "zlúčiť,zjednotiť,jednostranový pohľad,organizovať"
 title = "Viacstranové usporiadanie"
 top = "Horný okraj"
 
-[pageLayout.mode]
-default = "Predvolené"
-custom = "Vlastné"
-label = "Režim:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "Podľa riadkov: Najprv vyplniť každý riadok."
+bullet2 = "Podľa stĺpcov: Najprv vyplniť každý stĺpec."
+text = "Určuje, či stránky vypĺňajú mriežku po riadkoch alebo po stĺpcoch."
+title = "Usporiadanie strán"
+
+[pageLayout.advanced.tooltip.header]
+title = "Pokročilé možnosti rozloženia"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "Vyberte výsledný smer listu. Na výšku je lepšie pre vysoký obsah, na šírku sa hodí pre širšie rozloženia."
+title = "Orientácia"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR: Poradie zľava doprava."
+bullet2 = "RTL: Poradie sprava doľava."
+text = "Nastaví vodorovné poradie v mriežke, užitočné pre zvyklosti čítania zľava doprava a sprava doľava."
+title = "Smer čítania"
 
 [pageLayout.arrangement]
 byColumns = "Podľa stĺpcov"
@@ -5018,100 +5007,86 @@ label = "Usporiadanie strán:"
 
 [pageLayout.error]
 failed = "Počas vytvárania viacstranového rozloženia došlo k chybe."
-outerVerticalMarginsTooLarge = "Horné/spodné okraje sú pre túto veľkosť strany príliš veľké."
-outerHorizontalMarginsTooLarge = "Ľavé/pravé okraje sú pre túto veľkosť strany príliš veľké."
 innerMarginTooLarge = "Vnútorný okraj je pre zvolené rozloženie príliš veľký."
+outerHorizontalMarginsTooLarge = "Ľavé/pravé okraje sú pre túto veľkosť strany príliš veľké."
+outerVerticalMarginsTooLarge = "Horné/spodné okraje sú pre túto veľkosť strany príliš veľké."
 
-[pageLayout.orientation]
-landscape = "Na šírku"
-portrait = "Na výšku"
-label = "Orientácia:"
-
-[pageLayout.readingDirection]
-ltr = "Zľava doprava"
-rtl = "Sprava doľava"
-label = "Smer čítania:"
-
-[pageLayout.tooltip.header]
-title = "Sprievodca rozložením strán"
-
-[pageLayout.tooltip.overview]
-title = "Čo je rozloženie strán?"
-text = "Umiestnite viac strán na jeden list pre podklady alebo na šetrenie papierom."
-
-[pageLayout.tooltip.mode]
-title = "Režim"
-text = "Vyberte, ako sa mriežka nakonfiguruje:"
-bullet1 = "Predvolené: Vyberte predvoľbu a mriežka sa vypočíta automaticky."
-bullet2 = "Vlastné: Nastavte riadky a stĺpce manuálne."
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "Strán na list (predvolený režim)"
-text = "Vyberte počet strán na list (napr. 4 → 2×2, 9 → 3×3)."
-
-[pageLayout.tooltip.rowsCols]
-title = "Riadky a stĺpce (vlastný režim)"
-text = "Nastavte presné rozmery mriežky. Celkový počet strán na list = riadky × stĺpce."
-
-[pageLayout.tooltip.orientation]
-title = "Orientácia"
-text = "Nastaví orientáciu výstupného listu:"
-bullet1 = "Na výšku: Vyššie ako široké."
-bullet2 = "Na šírku: Širšie ako vysoké."
-
-[pageLayout.tooltip.arrangement]
-title = "Usporiadanie strán"
-text = "Riadi poradie, v ktorom stránky vypĺňajú mriežku:"
-bullet1 = "Podľa riadkov: Vyplniť po riadkoch (zľava doprava alebo sprava doľava)."
-bullet2 = "Podľa stĺpcov: Vyplniť zhora nadol, po stĺpcoch."
-
-[pageLayout.tooltip.readingDirection]
-title = "Smer čítania"
-text = "Riadi vodorovné poradie strán:"
-bullet1 = "LTR: Zľava doprava."
-bullet2 = "RTL: Sprava doľava."
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "Zapnite orámovanie na kreslenie čiar okolo každej umiestnenej strany. Pomáha to s vizuálnym oddelením alebo orezávaním."
 title = "Pridať orámovanie"
-text = "Kreslí orámovacie čiary okolo každej bunky stránky na vodiace línie rezu alebo vizuálne oddelenie."
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "Hrúbka orámovania sa uplatní len pri zapnutom orámovaní. Vyššie hodnoty vytvárajú hrubšie línie."
+title = "Hrúbka orámovania"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "Okraje a orámovanie"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "Okraje"
-text = "Použite horný, spodný, ľavý a pravý okraj na ovládanie odsadenia okolo celého výstupného listu."
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "Vnútorný okraj"
 text = "Vnútorný okraj pridáva medzery medzi bunkami v mriežke strán pre lepšie oddelenie a čitateľnosť."
+title = "Vnútorný okraj"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "Použite horný, spodný, ľavý a pravý okraj na ovládanie odsadenia okolo celého výstupného listu."
+title = "Okraje"
+
+[pageLayout.mode]
+custom = "Vlastné"
+default = "Predvolené"
+label = "Režim:"
+
+[pageLayout.orientation]
+label = "Orientácia:"
+landscape = "Na šírku"
+portrait = "Na výšku"
+
+[pageLayout.readingDirection]
+label = "Smer čítania:"
+ltr = "Zľava doprava"
+rtl = "Sprava doľava"
+
+[pageLayout.tooltip.addBorder]
+text = "Kreslí orámovacie čiary okolo každej bunky stránky na vodiace línie rezu alebo vizuálne oddelenie."
 title = "Pridať orámovanie"
-text = "Zapnite orámovanie na kreslenie čiar okolo každej umiestnenej strany. Pomáha to s vizuálnym oddelením alebo orezávaním."
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "Hrúbka orámovania"
-text = "Hrúbka orámovania sa uplatní len pri zapnutom orámovaní. Vyššie hodnoty vytvárajú hrubšie línie."
-
-[pageLayout.advanced.tooltip.header]
-title = "Pokročilé možnosti rozloženia"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "Orientácia"
-text = "Vyberte výsledný smer listu. Na výšku je lepšie pre vysoký obsah, na šírku sa hodí pre širšie rozloženia."
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "Podľa riadkov: Vyplniť po riadkoch (zľava doprava alebo sprava doľava)."
+bullet2 = "Podľa stĺpcov: Vyplniť zhora nadol, po stĺpcoch."
+text = "Riadi poradie, v ktorom stránky vypĺňajú mriežku:"
 title = "Usporiadanie strán"
-text = "Určuje, či stránky vypĺňajú mriežku po riadkoch alebo po stĺpcoch."
-bullet1 = "Podľa riadkov: Najprv vyplniť každý riadok."
-bullet2 = "Podľa stĺpcov: Najprv vyplniť každý stĺpec."
 
-[pageLayout.advanced.tooltip.readingDirection]
+[pageLayout.tooltip.header]
+title = "Sprievodca rozložením strán"
+
+[pageLayout.tooltip.mode]
+bullet1 = "Predvolené: Vyberte predvoľbu a mriežka sa vypočíta automaticky."
+bullet2 = "Vlastné: Nastavte riadky a stĺpce manuálne."
+text = "Vyberte, ako sa mriežka nakonfiguruje:"
+title = "Režim"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "Na výšku: Vyššie ako široké."
+bullet2 = "Na šírku: Širšie ako vysoké."
+text = "Nastaví orientáciu výstupného listu:"
+title = "Orientácia"
+
+[pageLayout.tooltip.overview]
+text = "Umiestnite viac strán na jeden list pre podklady alebo na šetrenie papierom."
+title = "Čo je rozloženie strán?"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "Vyberte počet strán na list (napr. 4 → 2×2, 9 → 3×3)."
+title = "Strán na list (predvolený režim)"
+
+[pageLayout.tooltip.readingDirection]
+bullet1 = "LTR: Zľava doprava."
+bullet2 = "RTL: Sprava doľava."
+text = "Riadi vodorovné poradie strán:"
 title = "Smer čítania"
-text = "Nastaví vodorovné poradie v mriežke, užitočné pre zvyklosti čítania zľava doprava a sprava doľava."
-bullet1 = "LTR: Poradie zľava doprava."
-bullet2 = "RTL: Poradie sprava doľava."
+
+[pageLayout.tooltip.rowsCols]
+text = "Nastavte presné rozmery mriežky. Celkový počet strán na list = riadky × stĺpce."
+title = "Riadky a stĺpce (vlastný režim)"
 
 [pageRemover]
 header = "Odstraňovač stránok PDF"
@@ -5197,6 +5172,9 @@ title = "Tipy"
 autoClose = "Toto okno sa automaticky zatvorí..."
 billingPeriod = "Fakturačné obdobie"
 canCloseWindow = "Teraz môžete toto okno zavrieť."
+checkoutInstructions = "Dokončite nákup v okne prehliadača, ktoré sa práve otvorilo. Po dokončení platby sa vráťte sem a kliknite na tlačidlo nižšie na obnovenie fakturačných informácií."
+checkoutOpened = "Platba otvorená v prehliadači"
+closeLater = "Urobím to neskôr"
 emailInvalid = "Zadajte platnú emailovú adresu"
 enterpriseNote = "Miesta možno upraviť v pokladni (1-1000)."
 error = "Chyba platby"
@@ -5218,6 +5196,7 @@ perMonth = "/mesiac"
 perYear = "/rok"
 preparing = "Pripravuje sa platba..."
 redirecting = "Presmerovanie na zabezpečenú pokladňu..."
+refreshBilling = "Platbu som dokončil(a) – obnoviť fakturáciu"
 stripeNotConfigured = "Stripe nie je nastavený"
 stripeNotConfiguredMessage = "Integrácia platieb Stripe nie je nastavená. Kontaktujte svojho administrátora."
 success = "Platba bola úspešná!"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "Vaše predplatné bolo úspešne upgradované. Existuj
 upgradeSuccess = "Platba úspešná! Vaše predplatné bolo upgradované. Licencia bola aktualizovaná na vašom serveri. Čoskoro dostanete potvrdzujúci email."
 upgradeTitle = "Inovovať na {{planName}}"
 yearly = "Ročne"
-checkoutOpened = "Platba otvorená v prehliadači"
-checkoutInstructions = "Dokončite nákup v okne prehliadača, ktoré sa práve otvorilo. Po dokončení platby sa vráťte sem a kliknite na tlačidlo nižšie na obnovenie fakturačných informácií."
-refreshBilling = "Platbu som dokončil(a) – obnoviť fakturáciu"
-closeLater = "Urobím to neskôr"
 
 [payment.emailStage]
 continue = "Pokračovať"
@@ -5456,13 +5431,6 @@ prompt = "Vyberte stránku na extrakciu tabuľky"
 submit = "Extrahovať"
 title = "PDF na CSV"
 
-[PDFToXLSX]
-header = "PDF do Excelu"
-prompt = "Vyberte strany na extrakciu tabuliek"
-submit = "Konvertovať"
-title = "PDF do Excelu (XLSX)"
-tags = "tabuľkový hárok,excel,xlsx,tabuľka,extrakcia,konverzia"
-
 [PDFToHTML]
 credit = "Táto služba používa pdftohtml na konverziu súborov."
 header = "PDF na HTML"
@@ -5561,6 +5529,13 @@ title = "PDF na Word"
 [PDFToWord.selectText]
 1 = "Výstupný formát súboru"
 
+[PDFToXLSX]
+header = "PDF do Excelu"
+prompt = "Vyberte strany na extrakciu tabuliek"
+submit = "Konvertovať"
+tags = "tabuľkový hárok,excel,xlsx,tabuľka,extrakcia,konverzia"
+title = "PDF do Excelu (XLSX)"
+
 [PDFToXML]
 credit = "Táto služba používa LibreOffice na konverziu súborov."
 header = "PDF na XML"
@@ -5626,10 +5601,10 @@ manage = "Spravovať"
 perMonth = "/mesiac"
 perSeat = "/miesto"
 popular = "Populárne"
-selectPlan = "Vybrať plán"
-selectCredits = "Vyberte množstvo kreditov"
-showComparison = "Porovnať všetky funkcie"
 purchase = "Kúpiť"
+selectCredits = "Vyberte množstvo kreditov"
+selectPlan = "Vybrať plán"
+showComparison = "Porovnať všetky funkcie"
 totalCost = "Celková cena"
 upgrade = "Inovovať"
 withServer = "+ Server plán"
@@ -5638,19 +5613,29 @@ withServer = "+ Server plán"
 subtitle = "Podrobnosti vášho aktuálneho predplatného"
 title = "Aktívny plán"
 
+[plan.api]
+large = "5,000 kreditov"
+medium = "1,000 kreditov"
+small = "500 kreditov"
+xsmall = "100 kreditov"
+
+[plan.apiPackages]
+subtitle = "Nakúpte kredity API pre svoje aplikácie"
+title = "Balíky kreditov API"
+
 [plan.availablePlans]
-subtitle = "Vyberte si plán, ktorý vám vyhovuje"
 loadError = "Nie je možné načítať ceny plánov. Používajú sa predvolené hodnoty."
+subtitle = "Vyberte si plán, ktorý vám vyhovuje"
 title = "Dostupné plány"
 
 [plan.enterprise]
-siteLicense = "Licencia pre celú organizáciu"
 highlight1 = "Vlastné ceny"
 highlight2 = "Vyhradená podpora"
 highlight3 = "Najnovšie funkcie"
 name = "Enterprise"
 requiresServer = "Vyžaduje server"
 requiresServerMessage = "Pred prechodom na Enterprise najprv prejdite na Server plán."
+siteLicense = "Licencia pre celú organizáciu"
 
 [plan.feature]
 api = "Prístup k API"
@@ -5722,16 +5707,6 @@ successMessage = "Vaša licencia bola úspešne aktivovaná. Teraz môžete toto
 name = "Tím"
 siteLicense = "Licencia pre celú organizáciu"
 
-[plan.api]
-large = "5,000 kreditov"
-medium = "1,000 kreditov"
-small = "500 kreditov"
-xsmall = "100 kreditov"
-
-[plan.apiPackages]
-subtitle = "Nakúpte kredity API pre svoje aplikácie"
-title = "Balíky kreditov API"
-
 [plan.trial]
 badge = "Skúšobná verzia"
 continueWithFree = "Pokračovať s bezplatnou verziou"
@@ -5746,77 +5721,6 @@ subscribeToPro = "Predplatiť si Pro"
 subscriptionScheduled = "Predplatné naplánované – začína {{date}}"
 title = "Skúšobná verzia je aktívna"
 
-[credits]
-enableOverageBilling = "Povoliť nadlimitné účtovanie"
-maybeLater = "Možno neskôr"
-upgrade = "Prejsť na vyšší plán"
-
-[credits.modal]
-advancedMonitoring = "Pokročilé monitorovanie"
-allInOneWorkspace = "Všetko v jednom: pracovné prostredie pre PDF (prehliadač, nástroje a agent)"
-apiSandbox = "API sandbox"
-contactSales = "Kontaktovať obchod"
-creditsRemaining = "{{current}} z {{total}} zostáva"
-creditsThisMonth = "Mesačné kredity"
-current = "Aktuálny plán"
-customPricing = "Vlastné"
-customSmartFolders = "Vlastné inteligentné priečinky"
-dedicatedSupportSlas = "Vyhradená podpora a SLA"
-enterpriseSubscription = "Enterprise"
-everythingInCredits = "Všetko z Credits, navyše:"
-everythingInFree = "Všetko z Free, navyše:"
-fasterThroughput = "10× rýchlejšia priepustnosť"
-forRegularWork = "Na bežnú prácu s PDF:"
-freeTier = "Bezplatný plán"
-fullyPrivateFiles = "Plne súkromné súbory"
-largeFileProcessing = "Spracovanie veľkých súborov"
-managedMemberMessage = "Máte neobmedzený prístup ku kreditom cez svoj tím. Ak potrebujete pomoc, kontaktujte svojho vedúceho tímu."
-managedMemberTitle = "Neobmedzené kredity"
-meteringBillingNote = "Nadlimitné kredity sa fakturujú mesačne spolu s vaším predplatným Team. Svoju spotrebu môžete kedykoľvek sledovať v nastaveniach účtu."
-meteringExplanation = "Váš plán Team obsahuje {{credits}} kreditov mesačne. Keď sa minú, nadlimitné účtovanie automaticky poskytne ďalšie kredity, aby ste nemuseli prerušovať prácu."
-meteringIncluded = "{{credits}} kreditov/mesiac zahrnutých v pláne Team"
-meteringNoCommitment = "Bez viazanosti, zrušiť môžete kedykoľvek"
-meteringNeverRunOut = "Kredity sa vám nikdy neminú"
-meteringPayAsYouGo = "Platíte len za skutočné použitie"
-meteringPrice = "Dodatočné kredity za {{price}}/kredit"
-meteringTitle = "Nadlimitné účtovanie podľa skutočného využitia"
-monthlyCredits = "mesačné kredity"
-orgWideAccess = "Celopodnikové riadenie prístupu"
-overage = "nadlimit"
-perMonth = "/mesiac"
-popular = "Obľúbené"
-premiumAiModels = "Prémiové modely AI"
-prioritySupport = "Prioritná podpora"
-privateDocCloud = "Súkromný cloud dokumentov"
-ragFineTuning = "RAG + fine-tuning"
-secureApiAccess = "Zabezpečený prístup k API"
-selfHostLink = "Pozrite si dokumentáciu a plány"
-selfHostPrompt = "Chcete self‑hosting?"
-standardThroughput = "Štandardná priepustnosť"
-subtitle = "Prejdite na Team a získajte 10× viac kreditov a rýchlejšie spracovanie."
-subtitlePro = "Povoľte automatické nadlimitné účtovanie, aby sa vám kredity nikdy neminuli."
-teamLeaderOnly = "Nadlimitné účtovanie môžu povoliť len vedúci tímu"
-teamSubscription = "Team"
-titleExhausted = "Minuli ste svoje bezplatné kredity"
-titleExhaustedPro = "Minuli sa vám kredity"
-unlimitedApiAccess = "Neobmedzený prístup k API"
-unlimitedMonthlyCredits = "Licencia pre celú organizáciu"
-unlimitedSeats = "Neobmedzený počet používateľov"
-
-[credits.modal.features]
-everythingInCredits = "Všetko z Credits, navyše:"
-everythingInFree = "Všetko z Free, navyše:"
-forRegularWork = "Na bežnú prácu s PDF:"
-
-[credits.insufficient]
-brief = "Nedostatok kreditov. Potrebujete {{required}} kreditov, ale máte {{current}}."
-freeTier = "Prejdite na Team a získajte 10× viac kreditov a neobmedzené nadlimitné účtovanie."
-managedMember = "Kontaktujte svojho vedúceho tímu."
-message = "Nemáte dostatok kreditov na spustenie {{tool}}. Aktuálne máte {{current}} kreditov."
-messageWithAmount = "Na spustenie {{tool}} potrebujete {{required}} kreditov, ale máte len {{current}}."
-teamMember = "Povoľte nadlimitné účtovanie, aby sa vám kredity nikdy neminuli."
-title = "Nedostatok kreditov"
-
 [printFile]
 header = "Vytlačiť súbor na tlačiareň"
 submit = "Vytlačiť"
@@ -5825,6 +5729,207 @@ title = "Vytlačiť súbor"
 [printFile.selectText]
 1 = "Vyberte súbor na tlač"
 2 = "Zadajte názov tlačiarne"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "Import súborov"
+
+[provider.googledrive.apiKey]
+description = "Google API kľúč pre Google Picker API z Google Cloud Console"
+label = "API kľúč"
+
+[provider.googledrive.appId]
+description = "Google Drive App ID z Google Cloud Console"
+label = "ID aplikácie"
+
+[provider.googledrive.clientId]
+description = "Google OAuth 2.0 Client ID z Google Cloud Console"
+label = "ID klienta"
+
+[provider.googledrive.enabled]
+description = "Umožniť používateľom importovať súbory priamo z Google Drive"
+label = "Povoliť výber súborov z Google Drive"
+
+[provider.oauth2.generic]
+name = "Všeobecné OAuth2"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "Automaticky vytvoriť používateľské účty pri prvom prihlásení cez OAuth2"
+label = "Automaticky vytvárať používateľov"
+
+[provider.oauth2.generic.blockRegistration]
+description = "Zabrániť registrácii nových používateľov cez OAuth2"
+label = "Blokovať registráciu"
+
+[provider.oauth2.generic.clientId]
+description = "OAuth2 Client ID od vášho poskytovateľa"
+label = "ID klienta"
+
+[provider.oauth2.generic.clientSecret]
+description = "OAuth2 Client Secret od vášho poskytovateľa"
+label = "Tajný kľúč klienta"
+
+[provider.oauth2.generic.enabled]
+description = "Povoliť autentifikáciu pomocou vlastného poskytovateľa OAuth2"
+label = "Povoliť všeobecné OAuth2"
+
+[provider.oauth2.generic.issuer]
+description = "Poskytovateľ, ktorý podporuje OpenID Connect Discovery (/.well-known/openid-configuration)"
+label = "URL vydavateľa"
+
+[provider.oauth2.generic.provider]
+description = "Názov vášho poskytovateľa OAuth2 (napr. Azure AD, Okta)"
+label = "Názov poskytovateľa"
+
+[provider.oauth2.generic.scopes]
+description = "Čiarkou oddelené OAuth2 rozsahy"
+label = "Rozsahy"
+
+[provider.oauth2.generic.useAsUsername]
+description = "Pole použité ako používateľské meno"
+label = "Použiť ako používateľské meno"
+
+[provider.oauth2.github]
+scope = "Autentifikácia pri prihlásení"
+
+[provider.oauth2.github.clientId]
+description = "OAuth2 Client ID z GitHub Developer Settings"
+label = "ID klienta"
+
+[provider.oauth2.github.clientSecret]
+description = "OAuth2 Client Secret z GitHub Developer Settings"
+label = "Tajný kľúč klienta"
+
+[provider.oauth2.github.scopes]
+description = "Čiarkou oddelené OAuth2 rozsahy"
+label = "Rozsahy"
+
+[provider.oauth2.github.useAsUsername]
+description = "Pole použité ako používateľské meno (email, login, name)"
+label = "Použiť ako používateľské meno"
+
+[provider.oauth2.google]
+scope = "Autentifikácia pri prihlásení"
+
+[provider.oauth2.google.clientId]
+description = "OAuth2 Client ID z Google Cloud Console"
+label = "ID klienta"
+
+[provider.oauth2.google.clientSecret]
+description = "OAuth2 Client Secret z Google Cloud Console"
+label = "Tajný kľúč klienta"
+
+[provider.oauth2.google.scopes]
+description = "Čiarkou oddelené OAuth2 rozsahy"
+label = "Rozsahy"
+
+[provider.oauth2.google.useAsUsername]
+description = "Pole použité ako používateľské meno (email, name, given_name, family_name)"
+label = "Použiť ako používateľské meno"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "OAuth2 Client ID z Keycloak"
+label = "ID klienta"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "OAuth2 Client Secret z Keycloak"
+label = "Tajný kľúč klienta"
+
+[provider.oauth2.keycloak.issuer]
+description = "URL koncového bodu OpenID Connect Discovery pre realm Keycloak"
+label = "URL vydavateľa"
+
+[provider.oauth2.keycloak.scopes]
+description = "Čiarkou oddelené OAuth2 rozsahy"
+label = "Rozsahy"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "Pole použité ako používateľské meno (email, name, given_name, family_name, preferred_username)"
+label = "Použiť ako používateľské meno"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO (SAML)"
+
+[provider.saml2.autoCreateUser]
+description = "Automaticky vytvoriť používateľské účty pri prvom prihlásení cez SAML2"
+label = "Automaticky vytvárať používateľov"
+
+[provider.saml2.blockRegistration]
+description = "Zabrániť registrácii nových používateľov cez SAML2"
+label = "Blokovať registráciu"
+
+[provider.saml2.enabled]
+description = "Povoliť autentifikáciu SAML2 (iba pre Enterprise)"
+label = "Povoliť SAML2"
+
+[provider.saml2.idpCert]
+description = "Cesta k certifikátu (napr. classpath:okta.cert)"
+label = "Certifikát IDP"
+
+[provider.saml2.idpIssuer]
+description = "ID vášho poskytovateľa"
+label = "Vydavateľ IDP"
+
+[provider.saml2.idpMetadataUri]
+description = "URI pre metadáta vášho poskytovateľa"
+label = "URI metadát IDP"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "URL na spustenie SSO"
+label = "URL jednotného prihlásenia IDP"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "URL na spustenie SLO"
+label = "URL jednotného odhlásenia IDP"
+
+[provider.saml2.privateKey]
+description = "Cesta k vášmu súkromnému kľúču"
+label = "Súkromný kľúč"
+
+[provider.saml2.provider]
+description = "Názov vášho poskytovateľa SAML2"
+label = "Názov poskytovateľa"
+
+[provider.saml2.registrationId]
+description = "Názov vašej aplikácie poskytovateľa služby (SP)"
+label = "ID registrácie"
+
+[provider.saml2.spCert]
+description = "Cesta k vášmu podpisovému certifikátu"
+label = "Certifikát SP"
+
+[provider.smtp]
+name = "SMTP pošta"
+scope = "E‑mailové upozornenia"
+
+[provider.smtp.enabled]
+description = "Povoliť e‑mailové upozornenia a funkcionalitu SMTP"
+label = "Povoliť poštu"
+
+[provider.smtp.from]
+description = "E‑mailová adresa použitá ako odosielateľ"
+label = "Adresa odosielateľa"
+
+[provider.smtp.host]
+description = "Názov hostiteľa alebo IP adresa vášho servera SMTP"
+label = "Hostiteľ SMTP"
+
+[provider.smtp.password]
+description = "Heslo pre overenie SMTP"
+label = "Heslo SMTP"
+
+[provider.smtp.port]
+description = "Číslo portu pre pripojenie SMTP (zvyčajne 25, 465 alebo 587)"
+label = "Port SMTP"
+
+[provider.smtp.username]
+description = "Používateľské meno pre overenie SMTP"
+label = "Používateľské meno SMTP"
 
 [quickAccess]
 access = "Prístup"
@@ -5867,7 +5972,12 @@ createNew = "Vytvoriť novú žiadosť"
 createSession = "Vytvoriť žiadosť o podpis"
 dueDate = "Termín (voliteľné)"
 files = "Súbory"
+filterDeclined = "Odmietnuté"
+filterMine = "Moje"
+filterOverdue = "Po termíne"
+filterSigned = "Podpísané"
 help = "Pomoc"
+newRequest = "Nová žiadosť"
 noActiveSessions = "Žiadne čakajúce žiadosti o podpis ani aktívne relácie"
 noCompletedSessions = "Žiadne dokončené relácie"
 noFile = "Nie je vybraný žiadny súbor"
@@ -5875,8 +5985,9 @@ read = "Čítať"
 reader = "Čítačka"
 refresh = "Obnoviť"
 requestSignatures = "Požiadať o podpisy"
-selectSingleFileToRequest = "Vyberte jeden súbor PDF na vyžiadanie podpisov"
+searchDocuments = "Hľadať dokumenty…"
 selectedFile = "Vybraný súbor"
+selectSingleFileToRequest = "Vyberte jeden súbor PDF na vyžiadanie podpisov"
 selectUsers = "Vyberte používateľov na podpis"
 selectUsersPlaceholder = "Vyberte účastníkov..."
 sendingRequest = "Odosiela sa..."
@@ -5885,14 +5996,8 @@ showMeAround = "Previesť ma"
 sign = "Podpísať"
 signatureRequests = "Žiadosti o podpis"
 signYourself = "Podpísať sám/sama"
-newRequest = "Nová žiadosť"
 tours = "Prehliadky"
 wetSign = "Pridať podpis"
-filterMine = "Moje"
-filterOverdue = "Po termíne"
-filterSigned = "Podpísané"
-filterDeclined = "Odmietnuté"
-searchDocuments = "Hľadať dokumenty…"
 
 [quickAccess.helpMenu]
 adminTour = "Prehliadka administrácie"
@@ -5933,15 +6038,15 @@ title = "Slová na redigovanie"
 failed = "Počas redigovania PDF došlo k chybe."
 
 [redact.manual]
+activate = "Aktivovať nástroj na začiernenie"
+active = "Režim začiernenia je aktívny"
 apply = "Použiť"
 applyChanges = "Použiť zmeny"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ Trvalé použitie, nedá sa vrátiť späť a údaje pod tým budú odstránené"
 boxRedaction = "Redigovanie ťahaním rámčeka"
-colourPicker = "Výber farby"
 colorLabel = "Farba začiernenia"
-active = "Režim začiernenia je aktívny"
-activate = "Aktivovať nástroj na začiernenie"
+colourPicker = "Výber farby"
 controlsTitle = "Manuálne ovládanie začiernenia"
 convertPDFToImageLabel = "Konvertovať PDF na PDF-Image (Používa sa na odstránenie textu za rámčekom)"
 export = "Exportovať"
@@ -6337,6 +6442,46 @@ title = "Vysoký kontrast"
 text = "Úplne invertuje všetky farby v PDF a vytvorí efekt podobný negatívu. Užitočné na vytváranie verzií dokumentov v tmavom režime alebo na zníženie namáhania očí pri slabom osvetlení."
 title = "Invertovať všetky farby"
 
+[rightRail]
+annotations = "Anotácie"
+applyRedactionsFirst = "Najprv použite začiernenia"
+closePdf = "Zavrieť PDF"
+closeSelected = "Zavrieť vybrané súbory"
+deleteSelected = "Odstrániť vybrané strany"
+deselectAll = "Zrušiť výber"
+downloadAll = "Stiahnuť všetko"
+downloadSelected = "Stiahnuť vybrané súbory"
+draw = "Kresliť"
+exitRedaction = "Ukončiť režim začiernenia"
+exportAll = "Exportovať PDF"
+exportSelected = "Exportovať vybrané strany"
+formFill = "Vyplniť formulár"
+language = "Jazyk"
+panMode = "Režim posunu"
+print = "Vytlačiť PDF"
+readAloud = "Čítanie nahlas"
+readAloudLanguage = "Jazyk"
+readAloudSpeed = "Rýchlosť"
+redact = "Začierniť"
+rotateLeft = "Otočiť doľava"
+rotateRight = "Otočiť doprava"
+ruler = "Pravítko / meranie"
+save = "Uložiť"
+saveAll = "Uložiť všetko"
+saveAs = "Uložiť ako"
+saveChanges = "Uložiť zmeny"
+search = "Hľadať v PDF"
+selectAll = "Vybrať všetko"
+selectByNumber = "Vybrať podľa čísel strán"
+selectLanguage = "Vyberte jazyk"
+toggleAnnotations = "Prepnúť zobrazenie anotácií"
+toggleAttachments = "Zobraziť/skryť prílohy"
+toggleBookmarks = "Prepnúť záložky"
+toggleComments = "Komentáre"
+toggleLayers = "Prepnúť vrstvy"
+toggleSidebar = "Prepnúť bočný panel"
+toggleTheme = "Prepnúť tému"
+
 [rotate]
 rotateLeft = "Otočiť proti smeru hodinových ručičiek"
 rotateRight = "Otočiť v smere hodinových ručičiek"
@@ -6359,32 +6504,6 @@ text = "Otočte svoje strany PDF v smere alebo proti smeru hodinových ručičie
 
 [rotate.tooltip.header]
 title = "Prehľad nastavení otáčania"
-
-[timestampPdf]
-completed = "Súbor PDF bol úspešne označený časovou pečiatkou"
-desc = "Pridajte do svojho PDF časovú pečiatku podľa RFC 3161 pomocou dôveryhodného servera Time Stamp Authority (TSA)."
-filenamePrefix = "timestamped"
-results = "Výsledky časovej pečiatky"
-submit = "Použiť časovú pečiatku"
-title = "Časová pečiatka PDF"
-
-[timestampPdf.error]
-failed = "Počas označovania PDF časovou pečiatkou došlo k chybe."
-generic = "Zlyhalo pridanie časovej pečiatky"
-
-[timestampPdf.files]
-placeholder = "Vyberte v hlavnom zobrazení súbor PDF, aby ste mohli začať"
-
-[timestampPdf.options]
-note = "Na server TSA sa odosiela iba hash SHA-256 vášho dokumentu; samotný súbor PDF sa na server TSA nikdy neposiela."
-title = "Server časovej pečiatky (TSA)"
-
-[timestampPdf.options.tsaUrl]
-desc = "Vyberte dôveryhodnú autoritu časovej pečiatky"
-label = "Vyberte server TSA"
-
-[timestampPdf.steps]
-settings = "Nastavenia"
 
 [sanitize]
 completed = "Očistenie bolo úspešne dokončené"
@@ -6554,37 +6673,6 @@ bullet3 = "Kritické pre schvaľovacie postupy a právny reťazec držby"
 description = "Poradie, ktoré určíte pri vytváraní relácie, určuje, kto podpisuje ako prvý."
 title = "Poradie podpisov"
 
-[signatureSettings.tooltip]
-header = "Nastavenia vzhľadu podpisu"
-
-[signatureSettings.tooltip.location]
-bullet1 = "Príklady: \"New York, USA\", \"London Office\", \"Remote\""
-bullet2 = "Nie je to isté ako pozícia na strane"
-bullet3 = "Môže byť vyžadované v niektorých právnych jurisdikciách"
-description = "Voliteľná geografická poloha, kde bol podpis aplikovaný. Uložené v metadátach certifikátu."
-title = "Umiestnenie podpisu"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "Zobrazuje sa popri podpise a texte"
-bullet2 = "Podporované formáty PNG, JPG"
-bullet3 = "Zvyšuje profesionálny vzhľad"
-description = "Pridajte k viditeľným podpisom firemné logo pre branding a autenticitu."
-title = "Firemné logo"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "Príklady: \"Approval\", \"Contract Agreement\", \"Review Complete\""
-bullet2 = "Viditeľné vo vlastnostiach podpisu PDF"
-bullet3 = "Užitočné pre audit a compliance"
-description = "Voliteľný text vysvetľujúci, prečo sa dokument podpisuje. Uložené v metadátach certifikátu."
-title = "Dôvod podpisu"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>Viditeľné</b>: Podpis sa zobrazí v PDF s vlastným vzhľadom"
-bullet2 = "<b>Neviditeľné</b>: Certifikát je vložený bez vizuálnej stopy"
-bullet3 = "Neviditeľné podpisy stále poskytujú kryptografické overenie"
-description = "Určuje, či je podpis na dokumente viditeľný alebo vložený neviditeľne."
-title = "Viditeľnosť podpisu"
-
 [settings.configuration]
 advanced = "Pokročilé"
 database = "Databáza"
@@ -6606,6 +6694,102 @@ user = "Prihlásený ako"
 local = "Len lokálne"
 saas = "Stirling Cloud"
 selfhosted = "Self-hostovaný"
+
+[settings.developer]
+apiKeys = "API kľúče"
+title = "Vývojár"
+
+[settings.general]
+autoUnzip = "Automaticky rozbaliť odpovede API"
+autoUnzipDescription = "Automaticky extrahovať súbory zo ZIP odpovedí"
+autoUnzipFileLimit = "Limit automatického rozbalenia súborov"
+autoUnzipFileLimitDescription = "Maximálny počet súborov na extrakciu zo ZIP"
+autoUnzipFileLimitTooltip = "Rozbaľovať len vtedy, ak ZIP obsahuje najviac tento počet súborov. Zvýšte hodnotu pre extrakciu väčších ZIPov."
+autoUnzipTooltip = "Automaticky extrahuje ZIP súbory vrátené z operácií API. Zakážte, aby zostali ZIP súbory nedotknuté. Toto neovplyvní automatizačné pracovné postupy."
+defaultPdfEditor = "Predvolený editor PDF"
+defaultPdfEditorActive = "Stirling PDF je váš predvolený editor PDF"
+defaultPdfEditorChecking = "Kontroluje sa..."
+defaultPdfEditorInactive = "Iná aplikácia je nastavená ako predvolená"
+defaultPdfEditorSet = "Už je predvolené"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "Predvolený režim výberu nástrojov"
+defaultToolPickerModeDescription = "Vyberte, či sa výber nástrojov bude predvolene otvárať na celej obrazovke alebo v bočnom paneli"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "Nastavte všeobecné preferencie aplikácie."
+hideUnavailableConversions = "Skryť nedostupné konverzie"
+hideUnavailableConversionsDescription = "Odstrániť zakázané možnosti konverzie v nástroji Konvertovať namiesto ich sivého zobrazenia."
+hideUnavailableTools = "Skryť nedostupné nástroje"
+hideUnavailableToolsDescription = "Odstrániť nástroje zakázané vaším serverom namiesto ich sivého zobrazenia."
+logout = "Odhlásiť sa"
+setAsDefault = "Nastaviť ako predvolené"
+title = "Všeobecné"
+user = "Používateľ"
+
+[settings.general.enableFeatures]
+action = "Nastaviť"
+and = "a"
+benefit = "Umožňuje používateľské roly, tímovú spoluprácu, administrátorské ovládanie a podnikové funkcie."
+dismiss = "Zavrieť"
+intro = "Povoľte overovanie používateľov, správu tímov a funkcie pracovného priestoru pre vašu organizáciu."
+learnMore = "Viac v dokumentácii"
+title = "Pre správcov systému"
+
+[settings.general.mode]
+fullscreen = "Celá obrazovka"
+sidebar = "Bočný panel"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "Skontrolovať aktualizácie"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "Skontrolujte aktualizácie a zobrazte informácie o verzii"
+latestVersion = "Najnovšia verzia"
+serverNeedsUpdate = "Server musí aktualizovať administrátor"
+title = "Aktualizácie softvéru"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "Zobraziť podrobnosti"
+
+[settings.general.versionInfo]
+description = "Podrobnosti o verzii desktopu a servera"
+desktop = "Desktopová verzia"
+server = "Verzia servera"
+title = "Informácie o verzii"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "Stlačte klávesy… (Esc zruší)"
+change = "Zmeniť skratku"
+customBadge = "Vlastná"
+defaultLabel = "Predvolené: {{shortcut}}"
+description = "Prispôsobte klávesové skratky pre rýchly prístup k nástrojom. Kliknite na \"Zmeniť skratku\" a stlačte novú kombináciu klávesov. Stlačením Esc zrušíte."
+errorConflict = "Skratka sa už používa nástrojom {{tool}}."
+none = "Nepriradené"
+noShortcut = "Nastavená žiadna skratka"
+reset = "Resetovať"
+searchPlaceholder = "Hľadať nástroje..."
+shortcut = "Skratka"
+title = "Klávesové skratky"
+
+[settings.hotkeys.errorModifier]
+mac = "Do skratky zahrňte ⌘ (Command), ⌥ (Option) alebo iný modifikátor."
+windows = "Do skratky zahrňte Ctrl, Alt alebo iný modifikátor."
+
+[settings.licensingAnalytics]
+audit = "Audit"
+plan = "Plán"
+title = "Licencovanie a analytika"
+usageAnalytics = "Analytika používania"
 
 [settings.planBilling]
 currentPlan = "Aktuálny plán"
@@ -6637,6 +6821,10 @@ canceled = "Zrušený"
 pastDue = "Po splatnosti"
 trial = "Skúšobná verzia"
 
+[settings.planBilling.team]
+managedByTeam = "Spravované tímom"
+memberCount = "{{count}} členov tímu"
+
 [settings.planBilling.tier]
 enterprise = "Enterprise"
 enterpriseDescription = "Vlastné enterprise funkcie a podpora"
@@ -6648,10 +6836,6 @@ teamDescription = "500 kreditov/mesiac zahrnutých, automatické nadlimitné ú�
 teamTooltipCredits = "Plán Team zahŕňa {{credits}} kreditov/mesiac."
 teamTooltipFineprint = "Platíte len za to, čo presiahne zahrnuté kredity."
 teamTooltipOverage = "Automatické nadlimitné účtovanie za {{price}}/kredit zaručuje nepretržitú prevádzku."
-
-[settings.planBilling.team]
-managedByTeam = "Spravované tímom"
-memberCount = "{{count}} členov tímu"
 
 [settings.planBilling.trial]
 daysRemaining = "Zostáva {{days}} dní"
@@ -6670,88 +6854,6 @@ featureThroughput = "Rýchlejšie spracovanie"
 opensInBrowser = "Otvorí sa v prehliadači na dokončenie prechodu"
 subtitle = "Prejdite na Team a získajte:"
 title = "Prejdite na vyšší plán"
-
-[settings.developer]
-apiKeys = "API kľúče"
-title = "Vývojár"
-
-[settings.general]
-autoUnzip = "Automaticky rozbaliť odpovede API"
-autoUnzipDescription = "Automaticky extrahovať súbory zo ZIP odpovedí"
-autoUnzipFileLimit = "Limit automatického rozbalenia súborov"
-autoUnzipFileLimitDescription = "Maximálny počet súborov na extrakciu zo ZIP"
-autoUnzipFileLimitTooltip = "Rozbaľovať len vtedy, ak ZIP obsahuje najviac tento počet súborov. Zvýšte hodnotu pre extrakciu väčších ZIPov."
-autoUnzipTooltip = "Automaticky extrahuje ZIP súbory vrátené z operácií API. Zakážte, aby zostali ZIP súbory nedotknuté. Toto neovplyvní automatizačné pracovné postupy."
-defaultPdfEditor = "Predvolený editor PDF"
-defaultPdfEditorActive = "Stirling PDF je váš predvolený editor PDF"
-defaultPdfEditorChecking = "Kontroluje sa..."
-defaultPdfEditorInactive = "Iná aplikácia je nastavená ako predvolená"
-defaultPdfEditorSet = "Už je predvolené"
-defaultToolPickerMode = "Predvolený režim výberu nástrojov"
-defaultToolPickerModeDescription = "Vyberte, či sa výber nástrojov bude predvolene otvárať na celej obrazovke alebo v bočnom paneli"
-description = "Nastavte všeobecné preferencie aplikácie."
-hideUnavailableConversions = "Skryť nedostupné konverzie"
-hideUnavailableConversionsDescription = "Odstrániť zakázané možnosti konverzie v nástroji Konvertovať namiesto ich sivého zobrazenia."
-hideUnavailableTools = "Skryť nedostupné nástroje"
-hideUnavailableToolsDescription = "Odstrániť nástroje zakázané vaším serverom namiesto ich sivého zobrazenia."
-logout = "Odhlásiť sa"
-setAsDefault = "Nastaviť ako predvolené"
-title = "Všeobecné"
-user = "Používateľ"
-
-[settings.general.enableFeatures]
-action = "Nastaviť"
-and = "a"
-benefit = "Umožňuje používateľské roly, tímovú spoluprácu, administrátorské ovládanie a podnikové funkcie."
-dismiss = "Zavrieť"
-intro = "Povoľte overovanie používateľov, správu tímov a funkcie pracovného priestoru pre vašu organizáciu."
-learnMore = "Viac v dokumentácii"
-title = "Pre správcov systému"
-
-[settings.general.mode]
-fullscreen = "Celá obrazovka"
-sidebar = "Bočný panel"
-
-[settings.general.updates]
-checkForUpdates = "Skontrolovať aktualizácie"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "Skontrolujte aktualizácie a zobrazte informácie o verzii"
-latestVersion = "Najnovšia verzia"
-serverNeedsUpdate = "Server musí aktualizovať administrátor"
-title = "Aktualizácie softvéru"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "Zobraziť podrobnosti"
-
-[settings.general.versionInfo]
-description = "Podrobnosti o verzii desktopu a servera"
-desktop = "Desktopová verzia"
-server = "Verzia servera"
-title = "Informácie o verzii"
-
-[settings.hotkeys]
-capturing = "Stlačte klávesy… (Esc zruší)"
-change = "Zmeniť skratku"
-customBadge = "Vlastná"
-defaultLabel = "Predvolené: {{shortcut}}"
-description = "Prispôsobte klávesové skratky pre rýchly prístup k nástrojom. Kliknite na \"Zmeniť skratku\" a stlačte novú kombináciu klávesov. Stlačením Esc zrušíte."
-errorConflict = "Skratka sa už používa nástrojom {{tool}}."
-none = "Nepriradené"
-noShortcut = "Nastavená žiadna skratka"
-reset = "Resetovať"
-searchPlaceholder = "Hľadať nástroje..."
-shortcut = "Skratka"
-title = "Klávesové skratky"
-
-[settings.hotkeys.errorModifier]
-mac = "Do skratky zahrňte ⌘ (Command), ⌥ (Option) alebo iný modifikátor."
-windows = "Do skratky zahrňte Ctrl, Alt alebo iný modifikátor."
-
-[settings.licensingAnalytics]
-audit = "Audit"
-plan = "Plán"
-title = "Licencovanie a analytika"
-usageAnalytics = "Analytika používania"
 
 [settings.policiesPrivacy]
 legal = "Právne"
@@ -6789,6 +6891,9 @@ security = "Zabezpečenie"
 telegram = "Telegram"
 title = "Zabezpečenie a autentifikácia"
 
+[settings.team]
+title = "Tím"
+
 [settings.tooltips]
 enableLoginFirst = "Najprv zapnite režim prihlásenia"
 requiresEnterprise = "Vyžaduje licenciu Enterprise"
@@ -6798,21 +6903,6 @@ people = "Ľudia"
 teams = "Tímy"
 title = "Pracovný priestor"
 
-[settings.team]
-title = "Tím"
-
-[localMode]
-toolUnavailable = "Tento nástroj vyžaduje účet. Prihláste sa do Stirling Cloud alebo sa pripojte k vlastnému serveru, aby ste ho mohli používať."
-
-[localMode.banner]
-message = "Prihláste sa a odomknite všetky nástroje."
-signIn = "Prihlásiť sa"
-title = "Beží lokálne"
-
-[localMode.toolPicker]
-message = "Prihláste sa a odomknite všetky nástroje."
-signIn = "Prihlásiť sa"
-
 [setup]
 description = "Začnite výberom spôsobu používania Stirling PDF"
 welcome = "Vitajte v Stirling PDF"
@@ -6820,7 +6910,6 @@ welcome = "Vitajte v Stirling PDF"
 [setup.login]
 connectingTo = "Pripája sa k:"
 hideInstructions = "Skryť pokyny"
-skipSignIn = "Pokračovať bez prihlásenia"
 instructions = "Na povolenie prihlásenia na vašom serveri Stirling PDF:"
 instructionsEnvVar = "Nastavte premennú prostredia:"
 instructionsOrYml = "Alebo v súbore settings.yml:"
@@ -6830,6 +6919,7 @@ orContinueWith = "Alebo pokračujte emailom"
 serverRequirement = "Poznámka: Na serveri musí byť povolené prihlásenie."
 showInstructions = "Ako povoliť?"
 signInWith = "Prihlásiť sa cez"
+skipSignIn = "Pokračovať bez prihlásenia"
 sso = "Jednotné prihlásenie"
 submit = "Prihlásiť sa"
 subtitle = "Zadajte svoje údaje na pokračovanie"
@@ -6866,9 +6956,9 @@ subtitle = "Prihláste sa pomocou svojho účtu Stirling"
 title = "Prihláste sa do Stirling"
 
 [setup.selfhosted]
+changeServerLocked = "Vaša organizácia obmedzila túto aplikáciu na konkrétny server"
 link = "alebo sa pripojte k self-hosted účtu"
 subtitle = "Zadajte prihlasovacie údaje k serveru"
-changeServerLocked = "Vaša organizácia obmedzila túto aplikáciu na konkrétny server"
 switchToLocal = "Namiesto toho použiť lokálne nástroje"
 title = "Prihlásiť sa na server"
 
@@ -7068,14 +7158,45 @@ saved = "Uložené"
 text = "Text"
 title = "Typ podpisu"
 
+[signatureSettings.tooltip]
+header = "Nastavenia vzhľadu podpisu"
+
+[signatureSettings.tooltip.location]
+bullet1 = "Príklady: \"New York, USA\", \"London Office\", \"Remote\""
+bullet2 = "Nie je to isté ako pozícia na strane"
+bullet3 = "Môže byť vyžadované v niektorých právnych jurisdikciách"
+description = "Voliteľná geografická poloha, kde bol podpis aplikovaný. Uložené v metadátach certifikátu."
+title = "Umiestnenie podpisu"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "Zobrazuje sa popri podpise a texte"
+bullet2 = "Podporované formáty PNG, JPG"
+bullet3 = "Zvyšuje profesionálny vzhľad"
+description = "Pridajte k viditeľným podpisom firemné logo pre branding a autenticitu."
+title = "Firemné logo"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "Príklady: \"Approval\", \"Contract Agreement\", \"Review Complete\""
+bullet2 = "Viditeľné vo vlastnostiach podpisu PDF"
+bullet3 = "Užitočné pre audit a compliance"
+description = "Voliteľný text vysvetľujúci, prečo sa dokument podpisuje. Uložené v metadátach certifikátu."
+title = "Dôvod podpisu"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>Viditeľné</b>: Podpis sa zobrazí v PDF s vlastným vzhľadom"
+bullet2 = "<b>Neviditeľné</b>: Certifikát je vložený bez vizuálnej stopy"
+bullet3 = "Neviditeľné podpisy stále poskytujú kryptografické overenie"
+description = "Určuje, či je podpis na dokumente viditeľný alebo vložený neviditeľne."
+title = "Viditeľnosť podpisu"
+
 [signRequest]
 declined = "Žiadosť o podpis bola odmietnutá"
 fetchFailed = "Nepodarilo sa načítať žiadosť o podpis"
 signed = "Dokument bol úspešne podpísaný"
 
 [signSession]
-createFailed = "Nepodarilo sa vytvoriť žiadosť o podpis"
 created = "Žiadosť o podpis bola odoslaná"
+createFailed = "Nepodarilo sa vytvoriť žiadosť o podpis"
 
 [signup]
 accountCreatedSuccessfully = "Účet bol úspešne vytvorený! Teraz sa môžete prihlásiť."
@@ -7156,15 +7277,15 @@ desc = "Automatické rozdelenie s oddeľovacími listami"
 name = "Oddeľovač strán"
 tooltip = "Použite oddeľovacie listy s QR kódmi medzi dokumentmi pri skenovaní"
 
-[split.methods.byPoster]
-name = "Tlačiteľné časti"
-desc = "Rozdeľte veľké strany na tlačiteľné rozmery"
-tooltip = "Rozdeľte nadrozmerné strany na menšie časti vhodné na tlač na štandardný papier (A4, Letter atď.)"
-
 [split.methods.byPages]
 desc = "Extrahovať konkrétne strany (1,3,5-10)"
 name = "Čísla strán"
 tooltip = "Zadajte čísla strán oddelené čiarkami alebo rozsahy s pomlčkami"
+
+[split.methods.byPoster]
+desc = "Rozdeľte veľké strany na tlačiteľné rozmery"
+name = "Tlačiteľné časti"
+tooltip = "Rozdeľte nadrozmerné strany na menšie časti vhodné na tlač na štandardný papier (A4, Letter atď.)"
 
 [split.methods.bySections]
 desc = "Rozdeliť strany do mriežkových sekcií"
@@ -7192,27 +7313,27 @@ title = "Vyberte si metódu rozdelenia"
 text = "Vyberte, ako chcete rozdeliť svoj PDF dokument. Každá metóda je optimalizovaná pre iné prípady použitia a typy dokumentov."
 title = "Výber metódy rozdelenia"
 
+[split.poster]
+rightToLeft = "Deliť sprava doľava"
+
+[split.poster.pageSize]
+description = "Veľkosť výstupných strán na tlač"
+label = "Cieľová veľkosť strany"
+
+[split.poster.xFactor]
+description = "Počet stĺpcov, na ktoré sa má každá strana rozdeliť"
+label = "Horizontálne delenia"
+
+[split.poster.yFactor]
+description = "Počet riadkov, na ktoré sa má každá strana rozdeliť"
+label = "Vertikálne delenia"
+
 [split.settings]
 selectMethodFirst = "Prosím, najprv vyberte metódu rozdelenia"
 
 [split.steps]
 chooseMethod = "Vyberte metódu"
 settings = "Nastavenia"
-
-[split.poster]
-rightToLeft = "Deliť sprava doľava"
-
-[split.poster.pageSize]
-label = "Cieľová veľkosť strany"
-description = "Veľkosť výstupných strán na tlač"
-
-[split.poster.xFactor]
-label = "Horizontálne delenia"
-description = "Počet stĺpcov, na ktoré sa má každá strana rozdeliť"
-
-[split.poster.yFactor]
-label = "Vertikálne delenia"
-description = "Počet riadkov, na ktoré sa má každá strana rozdeliť"
 
 [split.tooltip.byChapters]
 bullet1 = "Úroveň záložiek: Na ktorej úrovni deliť (1=horná úroveň)"
@@ -7251,6 +7372,13 @@ bullet5 = "Povoľte duplexný režim, ak skenujete obe strany oddeľovacích lis
 text = "Automaticky rozdeľujte skenované dokumenty pomocou fyzických oddeľovacích listov s QR kódmi. Perfektné na spracovanie viacerých dokumentov naskenovaných spolu."
 title = "Rozdeliť podľa oddeľovača strán"
 
+[split.tooltip.byPages]
+bullet1 = "Jednotlivé body: 3,7 (rozdelenie po stranách 3 a 7)"
+bullet2 = "Rozsahy: 3-8 (rozdelenie pred stranou 3 a po strane 8)"
+bullet3 = "Zmiešané: 2,5-10,15 (rozdelenie po strane 2, pred stranou 5, po strane 10 a po strane 15)"
+text = "Rozdeľte PDF na konkrétnych číslach strán. Použitie 'n' rozdelí po strane n. Použitie 'n-m' rozdelí pred stranou n a po strane m."
+title = "Rozdeliť na číslach strán"
+
 [split.tooltip.byPoster]
 bullet1 = "Cieľová veľkosť strany: Vyberte výstupný formát papiera (A4, Letter atď.)"
 bullet2 = "Horizontálne/vertikálne delenia: Veľkosť mriežky na rozdelenie"
@@ -7258,13 +7386,6 @@ bullet3 = "Sprava doľava: Obráti poradie stĺpcov pre RTL rozloženia"
 bullet4 = "Vytlačte a poskladajte diely pre vytvorenie plagátu"
 text = "Rozdeľte veľké strany PDF na menšie tlačiteľné časti vhodné pre štandardné formáty papiera. Ideálne na vytváranie plagátových tlačí z nadrozmerných strán."
 title = "Rozdeliť pre tlač plagátu"
-
-[split.tooltip.byPages]
-bullet1 = "Jednotlivé body: 3,7 (rozdelenie po stranách 3 a 7)"
-bullet2 = "Rozsahy: 3-8 (rozdelenie pred stranou 3 a po strane 8)"
-bullet3 = "Zmiešané: 2,5-10,15 (rozdelenie po strane 2, pred stranou 5, po strane 10 a po strane 15)"
-text = "Rozdeľte PDF na konkrétnych číslach strán. Použitie 'n' rozdelí po strane n. Použitie 'n-m' rozdelí pred stranou n a po strane m."
-title = "Rozdeliť na číslach strán"
 
 [split.tooltip.bySections]
 bullet1 = "Horizontálne: Počet riadkov na vytvorenie"
@@ -7355,106 +7476,6 @@ title = "Rozdeliť PDF podľa kapitol"
 [splitPdfByChapters]
 tags = "rozdeliť,kapitoly,záložky,organizovať"
 
-[storageShare]
-accessed = "Otvorené"
-accessDenied = "K tomuto zdieľanému súboru nemáte prístup. Požiadajte vlastníka, aby ho s vami zdieľal."
-accessFailed = "Aktivitu sa nepodarilo načítať."
-accessDeniedBody = "K tomuto súboru nemáte prístup. Požiadajte vlastníka, aby ho s vami zdieľal."
-accessDeniedTitle = "Bez prístupu"
-accessLimitedCommenter = "Prístup na komentovanie čoskoro pribudne. Ak potrebujete sťahovať, požiadajte vlastníka o oprávnenie editora."
-accessLimitedTitle = "Obmedzený prístup"
-accessLimitedViewer = "Tento odkaz je len na zobrazenie. Ak potrebujete sťahovať, požiadajte vlastníka o oprávnenie editora."
-createdAt = "Vytvorené"
-download = "Stiahnuť"
-downloadFailed = "Nepodarilo sa stiahnuť tento súbor."
-expiredBody = "Tento zdieľací odkaz je neplatný alebo vypršal."
-expiredTitle = "Odkaz vypršal"
-goToLogin = "Prejsť na prihlásenie"
-loadFailed = "Zdieľaný súbor sa nepodarilo otvoriť."
-loading = "Načítava sa zdieľací odkaz..."
-loginPrompt = "Na prístup k tomuto zdieľanému súboru sa prihláste."
-loginRequired = "Vyžaduje sa prihlásenie"
-openInApp = "Otvoriť v Stirling PDF"
-ownerLabel = "Vlastník"
-ownerUnknown = "Neznámy"
-requiresLogin = "Tento zdieľaný súbor vyžaduje prihlásenie."
-roleCommenter = "Komentujúci"
-roleEditor = "Editor"
-roleViewer = "Čitateľ"
-shareHeading = "Zdieľaný súbor"
-titleDefault = "Zdieľaný súbor"
-tryAgain = "Skúste to znova neskôr."
-addUser = "Pridať"
-commenterHint = "Komentovanie čoskoro pribudne."
-copied = "Odkaz skopírovaný do schránky"
-copy = "Kopírovať"
-copyFailed = "Kopírovanie zlyhalo"
-description = "Vytvorte pre tento súbor zdieľací odkaz. Prihlásení používatelia s odkazom k nemu budú mať prístup."
-downloadsCount = "Stiahnutia: {{count}}"
-emailWarningBody = "Vyzerá to ako e‑mailová adresa. Ak táto osoba ešte nie je používateľom Stirling PDF, k súboru nebude mať prístup."
-emailWarningConfirm = "Aj tak zdieľať"
-emailWarningTitle = "E‑mailová adresa"
-errorTitle = "Zdieľanie zlyhalo"
-failure = "Zdieľací odkaz sa nepodarilo vygenerovať. Skúste to znova."
-fileLabel = "Súbor"
-generate = "Vygenerovať odkaz"
-generated = "Zdieľací odkaz bol vygenerovaný"
-hideActivity = "Skryť aktivitu"
-invalidUsername = "Zadajte platné používateľské meno alebo e‑mailovú adresu."
-lastAccessed = "Naposledy otvorené"
-linkAccessTitle = "Prístup cez zdieľací odkaz"
-linkLabel = "Zdieľací odkaz"
-linksDisabled = "Zdieľacie odkazy sú zakázané."
-linksDisabledBody = "Zdieľacie odkazy sú zakázané nastaveniami vášho servera."
-manage = "Spravovať zdieľanie"
-manageDescription = "Vytvárajte a spravujte odkazy na zdieľanie tohto súboru."
-manageLoadFailed = "Zdieľacie odkazy sa nepodarilo načítať."
-manageTitle = "Správa zdieľania"
-noActivity = "Zatiaľ žiadna aktivita."
-noLinks = "Zatiaľ žiadne aktívne zdieľacie odkazy."
-noSharedUsers = "Zatiaľ nemá prístup žiadny používateľ."
-removeLink = "Odstrániť odkaz"
-removeUser = "Odstrániť"
-revokeFailed = "Zdieľací odkaz sa nepodarilo odstrániť."
-revoked = "Odkaz na zdieľanie odstránený"
-roleLabel = "Rola"
-sharingDisabled = "Zdieľanie je zakázané."
-sharingDisabledBody = "Zdieľanie bolo zakázané nastaveniami servera."
-sharedUsersTitle = "Zdieľaní používatelia"
-title = "Zdieľať súbor"
-unknownUser = "Neznámy používateľ"
-userAddFailed = "Nepodarilo sa zdieľať s týmto používateľom."
-userAdded = "Používateľ pridaný do zoznamu zdieľania."
-usernameLabel = "Používateľské meno alebo e-mail"
-usernamePlaceholder = "Zadajte používateľské meno alebo e-mail"
-userRemoveFailed = "Nepodarilo sa odstrániť tohto používateľa."
-userRemoved = "Používateľ odstránený zo zoznamu zdieľania."
-viewActivity = "Zobraziť aktivitu"
-viewed = "Zobrazené"
-viewsCount = "Zobrazenia: {{count}}"
-downloaded = "Stiahnuté"
-bulkDescription = "Vytvorte jeden odkaz na zdieľanie všetkých vybraných súborov s prihlásenými používateľmi."
-bulkTitle = "Zdieľať vybrané súbory"
-copyLink = "Kopírovať odkaz na zdieľanie"
-fileCount = "{{count}} vybraných súborov"
-ownerOnly = "Zdieľanie môže spravovať iba vlastník."
-selectSingleFile = "Na správu zdieľania vyberte jeden súbor."
-
-[storageUpload]
-description = "Týmto nahráte aktuálny súbor do serverového úložiska pre vlastný prístup."
-errorTitle = "Nahrávanie zlyhalo"
-failure = "Nahrávanie zlyhalo. Skontrolujte svoje prihlásenie a nastavenia úložiska."
-fileLabel = "Súbor"
-hint = "Verejné odkazy a režimy prístupu sú riadené nastaveniami vášho servera."
-success = "Nahraté na server"
-title = "Nahrať na server"
-updateButton = "Aktualizovať na serveri"
-uploadButton = "Nahrať na server"
-bulkDescription = "Týmto nahráte vybrané súbory do serverového úložiska."
-bulkTitle = "Nahrať vybrané súbory"
-fileCount = "{{count}} vybraných súborov"
-more = " +{{count}} ďalších"
-
 [storage]
 approximateSize = "Približná veľkosť"
 fileTooLarge = "Súbor je príliš veľký. Maximálna veľkosť na súbor je"
@@ -7463,6 +7484,106 @@ storageLimit = "Limit úložiska"
 storageQuotaExceeded = "Kvóta úložiska prekročená. Pred ďalším nahrávaním odstráňte niektoré súbory."
 storageUsed = "Využité dočasné úložisko"
 temporaryNotice = "Súbory sa dočasne ukladajú vo vašom prehliadači a môžu byť automaticky vymazané"
+
+[storageShare]
+accessDenied = "K tomuto zdieľanému súboru nemáte prístup. Požiadajte vlastníka, aby ho s vami zdieľal."
+accessDeniedBody = "K tomuto súboru nemáte prístup. Požiadajte vlastníka, aby ho s vami zdieľal."
+accessDeniedTitle = "Bez prístupu"
+accessed = "Otvorené"
+accessFailed = "Aktivitu sa nepodarilo načítať."
+accessLimitedCommenter = "Prístup na komentovanie čoskoro pribudne. Ak potrebujete sťahovať, požiadajte vlastníka o oprávnenie editora."
+accessLimitedTitle = "Obmedzený prístup"
+accessLimitedViewer = "Tento odkaz je len na zobrazenie. Ak potrebujete sťahovať, požiadajte vlastníka o oprávnenie editora."
+addUser = "Pridať"
+bulkDescription = "Vytvorte jeden odkaz na zdieľanie všetkých vybraných súborov s prihlásenými používateľmi."
+bulkTitle = "Zdieľať vybrané súbory"
+commenterHint = "Komentovanie čoskoro pribudne."
+copied = "Odkaz skopírovaný do schránky"
+copy = "Kopírovať"
+copyFailed = "Kopírovanie zlyhalo"
+copyLink = "Kopírovať odkaz na zdieľanie"
+createdAt = "Vytvorené"
+description = "Vytvorte pre tento súbor zdieľací odkaz. Prihlásení používatelia s odkazom k nemu budú mať prístup."
+download = "Stiahnuť"
+downloaded = "Stiahnuté"
+downloadFailed = "Nepodarilo sa stiahnuť tento súbor."
+downloadsCount = "Stiahnutia: {{count}}"
+emailWarningBody = "Vyzerá to ako e‑mailová adresa. Ak táto osoba ešte nie je používateľom Stirling PDF, k súboru nebude mať prístup."
+emailWarningConfirm = "Aj tak zdieľať"
+emailWarningTitle = "E‑mailová adresa"
+errorTitle = "Zdieľanie zlyhalo"
+expiredBody = "Tento zdieľací odkaz je neplatný alebo vypršal."
+expiredTitle = "Odkaz vypršal"
+failure = "Zdieľací odkaz sa nepodarilo vygenerovať. Skúste to znova."
+fileCount = "{{count}} vybraných súborov"
+fileLabel = "Súbor"
+generate = "Vygenerovať odkaz"
+generated = "Zdieľací odkaz bol vygenerovaný"
+goToLogin = "Prejsť na prihlásenie"
+hideActivity = "Skryť aktivitu"
+invalidUsername = "Zadajte platné používateľské meno alebo e‑mailovú adresu."
+lastAccessed = "Naposledy otvorené"
+linkAccessTitle = "Prístup cez zdieľací odkaz"
+linkLabel = "Zdieľací odkaz"
+linksDisabled = "Zdieľacie odkazy sú zakázané."
+linksDisabledBody = "Zdieľacie odkazy sú zakázané nastaveniami vášho servera."
+loadFailed = "Zdieľaný súbor sa nepodarilo otvoriť."
+loading = "Načítava sa zdieľací odkaz..."
+loginPrompt = "Na prístup k tomuto zdieľanému súboru sa prihláste."
+loginRequired = "Vyžaduje sa prihlásenie"
+manage = "Spravovať zdieľanie"
+manageDescription = "Vytvárajte a spravujte odkazy na zdieľanie tohto súboru."
+manageLoadFailed = "Zdieľacie odkazy sa nepodarilo načítať."
+manageTitle = "Správa zdieľania"
+noActivity = "Zatiaľ žiadna aktivita."
+noLinks = "Zatiaľ žiadne aktívne zdieľacie odkazy."
+noSharedUsers = "Zatiaľ nemá prístup žiadny používateľ."
+openInApp = "Otvoriť v Stirling PDF"
+ownerLabel = "Vlastník"
+ownerOnly = "Zdieľanie môže spravovať iba vlastník."
+ownerUnknown = "Neznámy"
+removeLink = "Odstrániť odkaz"
+removeUser = "Odstrániť"
+requiresLogin = "Tento zdieľaný súbor vyžaduje prihlásenie."
+revoked = "Odkaz na zdieľanie odstránený"
+revokeFailed = "Zdieľací odkaz sa nepodarilo odstrániť."
+roleCommenter = "Komentujúci"
+roleEditor = "Editor"
+roleLabel = "Rola"
+roleViewer = "Čitateľ"
+selectSingleFile = "Na správu zdieľania vyberte jeden súbor."
+sharedUsersTitle = "Zdieľaní používatelia"
+shareHeading = "Zdieľaný súbor"
+sharingDisabled = "Zdieľanie je zakázané."
+sharingDisabledBody = "Zdieľanie bolo zakázané nastaveniami servera."
+title = "Zdieľať súbor"
+titleDefault = "Zdieľaný súbor"
+tryAgain = "Skúste to znova neskôr."
+unknownUser = "Neznámy používateľ"
+userAdded = "Používateľ pridaný do zoznamu zdieľania."
+userAddFailed = "Nepodarilo sa zdieľať s týmto používateľom."
+usernameLabel = "Používateľské meno alebo e-mail"
+usernamePlaceholder = "Zadajte používateľské meno alebo e-mail"
+userRemoved = "Používateľ odstránený zo zoznamu zdieľania."
+userRemoveFailed = "Nepodarilo sa odstrániť tohto používateľa."
+viewActivity = "Zobraziť aktivitu"
+viewed = "Zobrazené"
+viewsCount = "Zobrazenia: {{count}}"
+
+[storageUpload]
+bulkDescription = "Týmto nahráte vybrané súbory do serverového úložiska."
+bulkTitle = "Nahrať vybrané súbory"
+description = "Týmto nahráte aktuálny súbor do serverového úložiska pre vlastný prístup."
+errorTitle = "Nahrávanie zlyhalo"
+failure = "Nahrávanie zlyhalo. Skontrolujte svoje prihlásenie a nastavenia úložiska."
+fileCount = "{{count}} vybraných súborov"
+fileLabel = "Súbor"
+hint = "Verejné odkazy a režimy prístupu sú riadené nastaveniami vášho servera."
+more = " +{{count}} ďalších"
+success = "Nahraté na server"
+title = "Nahrať na server"
+updateButton = "Aktualizovať na serveri"
+uploadButton = "Nahrať na server"
 
 [subscription]
 cancelsOn = "Zruší sa {{date}}"
@@ -7507,8 +7628,121 @@ title = "Dokumentácia API"
 [tableExtraxt]
 tags = "CSV, extrakcia tabuliek, extrahovať, konvertovať"
 
+[team]
+cancelInviteError = "Pozvánku sa nepodarilo zrušiť"
+confirmCancelInvite = "Naozaj chcete zrušiť túto pozvánku?"
+confirmLeave = "Naozaj chcete opustiť tento tím?"
+confirmLeaveLeader = "Ako vedúci tímu budete po odchode odstránený z tímu. Ste si istý/istá?"
+confirmRemove = "Naozaj chcete odstrániť tohto člena?"
+editName = "Upraviť názov tímu"
+inviteCancelled = "Pozvánka zrušená"
+inviteError = "Pozvánku sa nepodarilo odoslať"
+inviteSent = "Pozvánka úspešne odoslaná"
+leader = "Vedúci"
+leaveButton = "Opustiť tím"
+leaveError = "Tím sa nepodarilo opustiť"
+leaveSuccess = "Tím ste úspešne opustili"
+loading = "Načítavajú sa informácie o tíme..."
+memberCount = "{{count}} členov"
+memberRemoved = "Člen bol úspešne odstránený"
+namePlaceholder = "Zadajte názov tímu"
+personal = "Osobné"
+removeError = "Člena sa nepodarilo odstrániť"
+renameError = "Tím sa nepodarilo premenovať"
+renameSuccess = "Tím bol úspešne premenovaný"
+
+[team.features]
+badge = "Funkcie tímu"
+subtitle = "Spolupracujte so svojím tímom"
+title = "Tímová spolupráca"
+viewPlans = "Zobraziť plány"
+
+[team.features.billing]
+description = "Spravujte fakturáciu a predplatné"
+title = "Správa fakturácie"
+
+[team.features.credits]
+description = "Zdieľaný fond kreditov pre všetkých členov"
+title = "Zdieľané kredity"
+
+[team.features.dashboard]
+description = "Zobraziť aktivitu a využitie tímu"
+title = "Tímový prehľad"
+
+[team.features.invite]
+description = "Pridajte členov do svojho tímu"
+title = "Pozvať členov"
+
+[team.invitationBanner]
+acceptButton = "Prijať"
+message = "vás pozval(a), aby ste sa pripojili"
+rejectButton = "Odmietnuť"
+
+[team.invite]
+cancelLabel = "Zrušiť"
+invalidEmail = "Neplatná e‑mailová adresa"
+placeholder = "Zadajte e‑mailovú adresu"
+sendButton = "Odoslať pozvánku"
+title = "Pozvať člena tímu"
+
+[team.members]
+emailColumn = "E‑mail"
+empty = "Zatiaľ žiadni členovia tímu"
+nameColumn = "Meno"
+pending = "Čakajúce"
+remove = "Odstrániť"
+roleColumn = "Rola"
+title = "Členovia tímu"
+
+[team.upgrade]
+button = "Prejsť na Team"
+description = "Odomknite tímové funkcie spolupráce"
+title = "Prejsť na plán Team"
+
+[textAlign]
+center = "Na stred"
+left = "Vľavo"
+right = "Vpravo"
+
 [theme]
 toggle = "Prepnúť tému"
+
+[timestampPdf]
+completed = "Súbor PDF bol úspešne označený časovou pečiatkou"
+desc = "Pridajte do svojho PDF časovú pečiatku podľa RFC 3161 pomocou dôveryhodného servera Time Stamp Authority (TSA)."
+filenamePrefix = "timestamped"
+results = "Výsledky časovej pečiatky"
+submit = "Použiť časovú pečiatku"
+title = "Časová pečiatka PDF"
+
+[timestampPdf.error]
+failed = "Počas označovania PDF časovou pečiatkou došlo k chybe."
+generic = "Zlyhalo pridanie časovej pečiatky"
+
+[timestampPdf.files]
+placeholder = "Vyberte v hlavnom zobrazení súbor PDF, aby ste mohli začať"
+
+[timestampPdf.options]
+note = "Na server TSA sa odosiela iba hash SHA-256 vášho dokumentu; samotný súbor PDF sa na server TSA nikdy neposiela."
+title = "Server časovej pečiatky (TSA)"
+
+[timestampPdf.options.tsaUrl]
+desc = "Vyberte dôveryhodnú autoritu časovej pečiatky"
+label = "Vyberte server TSA"
+
+[timestampPdf.steps]
+settings = "Nastavenia"
+
+[tool]
+endpointUnavailable = "Tento nástroj nie je na vašom serveri dostupný."
+endpointUnavailableClickable = "V tomto režime nie je k dispozícii. Kliknite pre prihlásenie."
+invalidParams = "Vyplňte povinné nastavenia."
+noFiles = "Pridajte súbor a začnite."
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "Alfa"
@@ -7568,12 +7802,6 @@ pageFormatting = "Formátovanie strán"
 removal = "Odstraňovanie"
 signing = "Podpisovanie"
 verification = "Overovanie"
-
-[tool]
-endpointUnavailable = "Tento nástroj nie je na vašom serveri dostupný."
-endpointUnavailableClickable = "V tomto režime nie je k dispozícii. Kliknite pre prihlásenie."
-invalidParams = "Vyplňte povinné nastavenia."
-noFiles = "Pridajte súbor a začnite."
 
 [tools]
 noSearchResults = "Nenašli sa žiadne nástroje"
@@ -7793,6 +8021,81 @@ fileManager = "Správca súborov"
 pageEditor = "Editor strán"
 viewer = "Prehliadač"
 
+[viewer]
+cannotPreviewFile = "Nedá sa zobraziť náhľad súboru"
+disableColorFilter = "Zakázať farebný filter"
+dualPageView = "Dvojstranové zobrazenie"
+enableDarkFilter = "Povoliť tmavý filter"
+enableSepiaFilter = "Povoliť sépiový filter"
+firstPage = "Prvá strana"
+lastPage = "Posledná strana"
+nextPage = "Nasledujúca strana"
+onlyPdfSupported = "Prehliadač podporuje iba súbory PDF. Tento súbor sa zdá byť iného formátu."
+previousPage = "Predchádzajúca strana"
+resetZoom = "Obnoviť priblíženie"
+singlePageView = "Zobrazenie jednej strany"
+unknownFile = "Neznámy súbor"
+zoomIn = "Priblížiť"
+zoomOut = "Oddialiť"
+
+[viewer.attachments]
+empty = "Tento dokument neobsahuje žiadne prílohy"
+loading = "Načítavajú sa prílohy..."
+noDocument = "Otvorte PDF, aby ste videli jeho prílohy."
+noMatch = "Žiadne prílohy nezodpovedajú vášmu vyhľadávaniu"
+noSupport = "Podpora príloh nie je pre tento prehliadač dostupná."
+searchPlaceholder = "Hľadať prílohy"
+title = "Prílohy"
+
+[viewer.comments]
+addComment = "Pridať komentár"
+addCommentPlaceholder = "Pridať komentár..."
+addLink = "Pridať odkaz"
+addReplyPlaceholder = "Pridať odpoveď..."
+deleteAnnotationAndComment = "Odstrániť anotáciu aj komentár"
+deleteDescription = "Táto anotácia má pripojený komentár. Môžete odstrániť iba komentár z bočného panela a ponechať anotáciu, alebo vymazať všetko."
+deleteTitle = "Odstrániť anotáciu z komentárov?"
+goToLink = "Prejsť na odkaz"
+hint = "Komentáre umiestnite pomocou nástrojov Komentár, Vložiť text alebo Nahradiť text. Zobrazia sa tu podľa strán."
+locateAnnotation = "Vyhľadať v dokumente"
+moreActions = "Ďalšie akcie"
+nComments = "{{count}} komentárov"
+oneComment = "1 komentár"
+pageLabel = "Strana {{page}}"
+placeholder = "Napíšte svoj komentár..."
+removeCommentOnly = "Odstrániť iba komentár"
+saveReply = "Uložiť odpoveď"
+send = "Odoslať"
+title = "Komentáre"
+typeComment = "Komentár"
+typeInsertText = "Vložiť text"
+typeReplaceText = "Nahradiť text"
+viewComment = "Zobraziť komentár"
+
+[viewer.formBar]
+apply = "Použiť zmeny"
+dismiss = "Zavrieť"
+download = "Stiahnuť PDF"
+hasFieldsDesc = "Toto PDF obsahuje vyplniteľné polia"
+title = "Polia formulára"
+unsavedBadge = "Neuložené"
+unsavedDesc = "Máte neuložené zmeny"
+
+[viewer.nonPdf]
+columnDefault = "Stĺpec {{index}}"
+convertToPdf = "Konvertovať do PDF"
+csvStats = "{{rows}} riadkov · {{columns}} stĺpcov · {{size}}"
+emptyFile = "Prázdny súbor"
+fileTypeBadge = "{{type}} súbor"
+htmlPreview = "Náhľad HTML"
+htmlPreviewWarning = "Náhľad HTML — externé zdroje sa nemusia načítať · {{size}}"
+invalidJson = "Neplatný JSON — zobrazuje sa surový obsah"
+lineNumbers = "Čísla riadkov"
+loading = "Načítava sa..."
+renderMarkdown = "Zobraziť Markdown"
+sortedBy = "Zoradené podľa: {{column}}"
+textStats = "{{lines}} riadkov · {{size}}"
+
 [viewPdf]
 header = "Zobraziť PDF"
 tags = "zobraziť,čítať,anotovať,text,obrázok"
@@ -7800,30 +8103,6 @@ title = "Zobraziť/Upraviť PDF"
 
 [warning]
 tooltipTitle = "Upozornenie"
-
-[wetSignature.tooltip]
-header = "Spôsoby vytvorenia podpisu"
-
-[wetSignature.tooltip.draw]
-bullet1 = "Prispôsobte farbu a hrúbku pera"
-bullet2 = "Mažte a kreslite znova, kým nebudete spokojní"
-bullet3 = "Funguje na dotykových zariadeniach (tablety, telefóny)"
-description = "Vytvorte vlastnoručný podpis pomocou myši alebo dotykovej obrazovky. Najlepšie pre osobné, autentické podpisy."
-title = "Nakresliť podpis"
-
-[wetSignature.tooltip.type]
-bullet1 = "Vyberte si z viacerých písiem"
-bullet2 = "Prispôsobte veľkosť a farbu textu"
-bullet3 = "Ideálne pre štandardizované podpisy"
-description = "Vygenerujte podpis zo zadaného textu. Rýchle a konzistentné, vhodné pre obchodné dokumenty."
-title = "Napísať podpis"
-
-[wetSignature.tooltip.upload]
-bullet1 = "Podporuje PNG, JPG a iné formáty obrázkov"
-bullet2 = "Pre najlepší výsledok sa odporúča priehľadné pozadie"
-bullet3 = "Obrázok bude zmenený, aby sa prispôsobil oblasti podpisu"
-description = "Nahrajte vopred vytvorený obrázok podpisu. Ideálne, ak máte naskenovaný podpis alebo logo spoločnosti."
-title = "Nahrať obrázok podpisu"
 
 [watermark]
 completed = "Vodoznak pridaný"
@@ -7996,6 +8275,30 @@ title = "Text vodoznaku"
 image = "Obrázok"
 text = "Text"
 
+[wetSignature.tooltip]
+header = "Spôsoby vytvorenia podpisu"
+
+[wetSignature.tooltip.draw]
+bullet1 = "Prispôsobte farbu a hrúbku pera"
+bullet2 = "Mažte a kreslite znova, kým nebudete spokojní"
+bullet3 = "Funguje na dotykových zariadeniach (tablety, telefóny)"
+description = "Vytvorte vlastnoručný podpis pomocou myši alebo dotykovej obrazovky. Najlepšie pre osobné, autentické podpisy."
+title = "Nakresliť podpis"
+
+[wetSignature.tooltip.type]
+bullet1 = "Vyberte si z viacerých písiem"
+bullet2 = "Prispôsobte veľkosť a farbu textu"
+bullet3 = "Ideálne pre štandardizované podpisy"
+description = "Vygenerujte podpis zo zadaného textu. Rýchle a konzistentné, vhodné pre obchodné dokumenty."
+title = "Napísať podpis"
+
+[wetSignature.tooltip.upload]
+bullet1 = "Podporuje PNG, JPG a iné formáty obrázkov"
+bullet2 = "Pre najlepší výsledok sa odporúča priehľadné pozadie"
+bullet3 = "Obrázok bude zmenený, aby sa prispôsobil oblasti podpisu"
+description = "Nahrajte vopred vytvorený obrázok podpisu. Ideálne, ak máte naskenovaný podpis alebo logo spoločnosti."
+title = "Nahrať obrázok podpisu"
+
 [workspace]
 title = "Pracovný priestor"
 
@@ -8014,9 +8317,9 @@ disable = "Zakázať"
 disabled = "Zakázaný"
 editRole = "Upraviť rolu"
 enable = "Povoliť"
+loading = "Načítavajú sa ľudia..."
 locked = "zamknutý"
 lockedBadge = "Zamknutý"
-loading = "Načítavajú sa ľudia..."
 loginRequired = "Najprv zapnite režim prihlásenia"
 member = "Člen"
 noMembersFound = "Nenašli sa žiadni členovia"
@@ -8262,278 +8565,3 @@ cancel = "Zrušiť"
 confirm = "Rozbaliť"
 message = "Tento ZIP obsahuje {{count}} súborov. Aj tak rozbaliť?"
 title = "Veľký ZIP súbor"
-
-[cloudBadge]
-tooltip = "Táto operácia použije vaše cloudové kredity"
-
-[team]
-cancelInviteError = "Pozvánku sa nepodarilo zrušiť"
-confirmCancelInvite = "Naozaj chcete zrušiť túto pozvánku?"
-confirmLeave = "Naozaj chcete opustiť tento tím?"
-confirmLeaveLeader = "Ako vedúci tímu budete po odchode odstránený z tímu. Ste si istý/istá?"
-confirmRemove = "Naozaj chcete odstrániť tohto člena?"
-editName = "Upraviť názov tímu"
-inviteCancelled = "Pozvánka zrušená"
-inviteError = "Pozvánku sa nepodarilo odoslať"
-inviteSent = "Pozvánka úspešne odoslaná"
-leader = "Vedúci"
-leaveButton = "Opustiť tím"
-leaveError = "Tím sa nepodarilo opustiť"
-leaveSuccess = "Tím ste úspešne opustili"
-loading = "Načítavajú sa informácie o tíme..."
-memberCount = "{{count}} členov"
-memberRemoved = "Člen bol úspešne odstránený"
-namePlaceholder = "Zadajte názov tímu"
-personal = "Osobné"
-removeError = "Člena sa nepodarilo odstrániť"
-renameError = "Tím sa nepodarilo premenovať"
-renameSuccess = "Tím bol úspešne premenovaný"
-
-[team.invitationBanner]
-message = "vás pozval(a), aby ste sa pripojili"
-acceptButton = "Prijať"
-rejectButton = "Odmietnuť"
-
-[team.features]
-badge = "Funkcie tímu"
-subtitle = "Spolupracujte so svojím tímom"
-title = "Tímová spolupráca"
-viewPlans = "Zobraziť plány"
-
-[team.features.billing]
-description = "Spravujte fakturáciu a predplatné"
-title = "Správa fakturácie"
-
-[team.features.credits]
-description = "Zdieľaný fond kreditov pre všetkých členov"
-title = "Zdieľané kredity"
-
-[team.features.dashboard]
-description = "Zobraziť aktivitu a využitie tímu"
-title = "Tímový prehľad"
-
-[team.features.invite]
-description = "Pridajte členov do svojho tímu"
-title = "Pozvať členov"
-
-[team.invite]
-cancelLabel = "Zrušiť"
-invalidEmail = "Neplatná e‑mailová adresa"
-placeholder = "Zadajte e‑mailovú adresu"
-sendButton = "Odoslať pozvánku"
-title = "Pozvať člena tímu"
-
-[team.members]
-emailColumn = "E‑mail"
-empty = "Zatiaľ žiadni členovia tímu"
-nameColumn = "Meno"
-pending = "Čakajúce"
-remove = "Odstrániť"
-roleColumn = "Rola"
-title = "Členovia tímu"
-
-[team.upgrade]
-button = "Prejsť na Team"
-description = "Odomknite tímové funkcie spolupráce"
-title = "Prejsť na plán Team"
-
-[provider.oauth2.google]
-scope = "Autentifikácia pri prihlásení"
-
-[provider.oauth2.google.clientId]
-label = "ID klienta"
-description = "OAuth2 Client ID z Google Cloud Console"
-
-[provider.oauth2.google.clientSecret]
-label = "Tajný kľúč klienta"
-description = "OAuth2 Client Secret z Google Cloud Console"
-
-[provider.oauth2.google.scopes]
-label = "Rozsahy"
-description = "Čiarkou oddelené OAuth2 rozsahy"
-
-[provider.oauth2.google.useAsUsername]
-label = "Použiť ako používateľské meno"
-description = "Pole použité ako používateľské meno (email, name, given_name, family_name)"
-
-[provider.oauth2.github]
-scope = "Autentifikácia pri prihlásení"
-
-[provider.oauth2.github.clientId]
-label = "ID klienta"
-description = "OAuth2 Client ID z GitHub Developer Settings"
-
-[provider.oauth2.github.clientSecret]
-label = "Tajný kľúč klienta"
-description = "OAuth2 Client Secret z GitHub Developer Settings"
-
-[provider.oauth2.github.scopes]
-label = "Rozsahy"
-description = "Čiarkou oddelené OAuth2 rozsahy"
-
-[provider.oauth2.github.useAsUsername]
-label = "Použiť ako používateľské meno"
-description = "Pole použité ako používateľské meno (email, login, name)"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "URL vydavateľa"
-description = "URL koncového bodu OpenID Connect Discovery pre realm Keycloak"
-
-[provider.oauth2.keycloak.clientId]
-label = "ID klienta"
-description = "OAuth2 Client ID z Keycloak"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "Tajný kľúč klienta"
-description = "OAuth2 Client Secret z Keycloak"
-
-[provider.oauth2.keycloak.scopes]
-label = "Rozsahy"
-description = "Čiarkou oddelené OAuth2 rozsahy"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "Použiť ako používateľské meno"
-description = "Pole použité ako používateľské meno (email, name, given_name, family_name, preferred_username)"
-
-[provider.oauth2.generic]
-name = "Všeobecné OAuth2"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "Povoliť všeobecné OAuth2"
-description = "Povoliť autentifikáciu pomocou vlastného poskytovateľa OAuth2"
-
-[provider.oauth2.generic.provider]
-label = "Názov poskytovateľa"
-description = "Názov vášho poskytovateľa OAuth2 (napr. Azure AD, Okta)"
-
-[provider.oauth2.generic.issuer]
-label = "URL vydavateľa"
-description = "Poskytovateľ, ktorý podporuje OpenID Connect Discovery (/.well-known/openid-configuration)"
-
-[provider.oauth2.generic.clientId]
-label = "ID klienta"
-description = "OAuth2 Client ID od vášho poskytovateľa"
-
-[provider.oauth2.generic.clientSecret]
-label = "Tajný kľúč klienta"
-description = "OAuth2 Client Secret od vášho poskytovateľa"
-
-[provider.oauth2.generic.scopes]
-label = "Rozsahy"
-description = "Čiarkou oddelené OAuth2 rozsahy"
-
-[provider.oauth2.generic.useAsUsername]
-label = "Použiť ako používateľské meno"
-description = "Pole použité ako používateľské meno"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "Automaticky vytvárať používateľov"
-description = "Automaticky vytvoriť používateľské účty pri prvom prihlásení cez OAuth2"
-
-[provider.oauth2.generic.blockRegistration]
-label = "Blokovať registráciu"
-description = "Zabrániť registrácii nových používateľov cez OAuth2"
-
-[provider.smtp]
-name = "SMTP pošta"
-scope = "E‑mailové upozornenia"
-
-[provider.smtp.enabled]
-label = "Povoliť poštu"
-description = "Povoliť e‑mailové upozornenia a funkcionalitu SMTP"
-
-[provider.smtp.host]
-label = "Hostiteľ SMTP"
-description = "Názov hostiteľa alebo IP adresa vášho servera SMTP"
-
-[provider.smtp.port]
-label = "Port SMTP"
-description = "Číslo portu pre pripojenie SMTP (zvyčajne 25, 465 alebo 587)"
-
-[provider.smtp.username]
-label = "Používateľské meno SMTP"
-description = "Používateľské meno pre overenie SMTP"
-
-[provider.smtp.password]
-label = "Heslo SMTP"
-description = "Heslo pre overenie SMTP"
-
-[provider.smtp.from]
-label = "Adresa odosielateľa"
-description = "E‑mailová adresa použitá ako odosielateľ"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO (SAML)"
-
-[provider.saml2.enabled]
-label = "Povoliť SAML2"
-description = "Povoliť autentifikáciu SAML2 (iba pre Enterprise)"
-
-[provider.saml2.provider]
-label = "Názov poskytovateľa"
-description = "Názov vášho poskytovateľa SAML2"
-
-[provider.saml2.registrationId]
-label = "ID registrácie"
-description = "Názov vašej aplikácie poskytovateľa služby (SP)"
-
-[provider.saml2.idpMetadataUri]
-label = "URI metadát IDP"
-description = "URI pre metadáta vášho poskytovateľa"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "URL jednotného prihlásenia IDP"
-description = "URL na spustenie SSO"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "URL jednotného odhlásenia IDP"
-description = "URL na spustenie SLO"
-
-[provider.saml2.idpIssuer]
-label = "Vydavateľ IDP"
-description = "ID vášho poskytovateľa"
-
-[provider.saml2.idpCert]
-label = "Certifikát IDP"
-description = "Cesta k certifikátu (napr. classpath:okta.cert)"
-
-[provider.saml2.privateKey]
-label = "Súkromný kľúč"
-description = "Cesta k vášmu súkromnému kľúču"
-
-[provider.saml2.spCert]
-label = "Certifikát SP"
-description = "Cesta k vášmu podpisovému certifikátu"
-
-[provider.saml2.autoCreateUser]
-label = "Automaticky vytvárať používateľov"
-description = "Automaticky vytvoriť používateľské účty pri prvom prihlásení cez SAML2"
-
-[provider.saml2.blockRegistration]
-label = "Blokovať registráciu"
-description = "Zabrániť registrácii nových používateľov cez SAML2"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "Import súborov"
-
-[provider.googledrive.enabled]
-label = "Povoliť výber súborov z Google Drive"
-description = "Umožniť používateľom importovať súbory priamo z Google Drive"
-
-[provider.googledrive.clientId]
-label = "ID klienta"
-description = "Google OAuth 2.0 Client ID z Google Cloud Console"
-
-[provider.googledrive.apiKey]
-label = "API kľúč"
-description = "Google API kľúč pre Google Picker API z Google Cloud Console"
-
-[provider.googledrive.appId]
-label = "ID aplikácie"
-description = "Google Drive App ID z Google Cloud Console"

@@ -1,3 +1,4 @@
+accessInvite = "เชิญ"
 addToDoc = "เพิ่มเข้าสู่เอกสาร"
 alphabet = "ตัวอักษร"
 apply = "ใช้"
@@ -8,22 +9,22 @@ black = "ดำ"
 blue = "น้ำเงิน"
 bored = "เบื่อรอหรือยัง?"
 cancel = "ยกเลิก"
-confirm = "ยืนยัน"
 changedCredsMessage = "ข้อมูลรับรองเปลี่ยนแปลงแล้ว!"
 chooseFile = "เลือกไฟล์"
 close = "ปิด"
 color = "สี"
 comingSoon = "เร็วๆ นี้"
+confirm = "ยืนยัน"
 confirmClose = "ยืนยันการปิด"
 confirmCloseCancel = "ยกเลิก"
 confirmCloseConfirm = "ปิดไฟล์"
-confirmCloseMessage = "แน่ใจหรือไม่ว่าต้องการปิดไฟล์นี้?"
 confirmCloseDiscard = "ยกเลิกการเปลี่ยนแปลงและปิด"
+confirmCloseMessage = "แน่ใจหรือไม่ว่าต้องการปิดไฟล์นี้?"
 confirmCloseSave = "บันทึกและปิด"
+confirmCloseSaveFailed = "บันทึกพร้อมข้อผิดพลาด มี {{count}} ไฟล์{{plural}} ที่ไม่สามารถบันทึกได้"
+confirmCloseSaveFailedTitle = "บันทึกล้มเหลว"
 confirmCloseUnsaved = "ไฟล์นี้มีการเปลี่ยนแปลงที่ยังไม่บันทึก"
 confirmCloseUnsavedList = "คุณมี {{count}} ไฟล์{{plural}} ที่ยังไม่บันทึกการเปลี่ยนแปลง\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "บันทึกล้มเหลว"
-confirmCloseSaveFailed = "บันทึกพร้อมข้อผิดพลาด มี {{count}} ไฟล์{{plural}} ที่ไม่สามารถบันทึกได้"
 confirmPasswordErrorMessage = "รหัสผ่านใหม่และยืนยันรหัสผ่านใหม่ต้องตรงกัน"
 custom = "ปรับแต่ง..."
 customPosition = "ตำแหน่งกำหนดเอง"
@@ -43,11 +44,14 @@ downloadComplete = "การดาวน์โหลดเสร็จสมบ
 downloadPdf = "ดาวน์โหลด PDF"
 downloadUnavailable = "ไม่สามารถดาวน์โหลดรายการนี้ได้"
 edit = "แก้ไข"
+editSecret = "แก้ไขค่านี้"
 editYourNewFiles = "แก้ไขไฟล์ใหม่ของคุณ"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "ส่งออกและทำต่อ"
 false = "เท็จ"
-fileSavedToDisk = "บันทึกไฟล์ลงดิสก์แล้ว"
 fileNotSavedToDisk = "ยังไม่ได้บันทึกลงดิสก์"
+fileSavedToDisk = "บันทึกไฟล์ลงดิสก์แล้ว"
 fileSelected = "ที่เลือก: {{filename}}"
 filesSelected = "ไฟล์ที่เลือก"
 font = "ฟอนต์"
@@ -61,12 +65,15 @@ help = "ช่วยเหลือ"
 imgPrompt = "เลือกภาพ"
 incorrectPasswordMessage = "รหัสผ่านปัจจุบันไม่ถูกต้อง"
 info = "ข้อมูล"
+insufficientCredits = "เครดิตไม่เพียงพอ ต้องการ: {{requiredCredits}} มีอยู่: {{currentBalance}} ขาด: {{shortfall}}"
 invalidPasswordMessage = "รหัสผ่านไม่ควรว่าง และไม่ควรมีพื้นที่ว่างที่ขอบของข้อความ"
 invalidUndoData = "ไม่สามารถยกเลิก: ข้อมูลการดำเนินการไม่ถูกต้อง"
 invalidUsernameMessage = "ชื่อผู้ใช้ไม่ถูกต้อง ชื่อผู้ใช้สามารถประกอบด้วยตัวอักษร ตัวเลข และอักขระพิเศษต่อไปนี้ @._+- หรือจะต้องเป็นที่อยู่อีเมลที่ถูกต้อง"
 joinDiscord = "เข้าร่วมเซิร์ฟเวอร์ Discord ของเรา"
 keepWorking = "ทำงานต่อ"
 loading = "กำลังโหลด..."
+loadingCredits = "กำลังตรวจสอบเครดิต..."
+loadingProStatus = "กำลังตรวจสอบสถานะการสมัครสมาชิก..."
 logOut = "ออกจากระบบ"
 marginTooltip = "ระยะห่างระหว่างหมายเลขหน้ากับขอบกระดาษ"
 moreOptions = "ตัวเลือกเพิ่มเติม"
@@ -80,6 +87,7 @@ noFilesToUndo = "ไม่สามารถยกเลิก: ไม่มี�
 noOperationToUndo = "ไม่มีการดำเนินการให้ยกเลิก"
 notAuthenticatedMessage = "ผู้ใช้ไม่ได้รับการยืนยัน"
 nothingToUndo = "ไม่มีรายการให้เลิกทำ"
+noticeTopUpOrPlan = "เครดิตไม่พอ โปรดเติมเครดิตหรืออัปเกรดเป็นแผน"
 noValidFiles = "ไม่มีไฟล์ที่ใช้ได้สำหรับประมวลผล"
 oops = "อุ๊ย!"
 openInViewer = "เปิดในโปรแกรมดู"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "การปกปิดที่ยังไม่ไ
 pin = "ปักหมุดไฟล์ (คงไว้หลังรันเครื่องมือ)"
 poweredBy = "ขับเคลื่อนโดย"
 pro = "โปร"
-processTimeWarning = "คำเตือน: กระบวนการนี้อาจใช้เวลาสูงสุดหนึ่งนาทีขึ้นอยู่กับขนาดไฟล์"
 processingComplete = "ไฟล์ของคุณพร้อมแล้ว"
 processingCompleteMultiple = "ไฟล์ {{count}} รายการพร้อมแล้ว"
+processTimeWarning = "คำเตือน: กระบวนการนี้อาจใช้เวลาสูงสุดหนึ่งนาทีขึ้นอยู่กับขนาดไฟล์"
 property = "คุณสมบัติ"
 quickPosition = "ตำแหน่งแบบด่วน"
 red = "แดง"
@@ -108,7 +116,6 @@ save = "บันทึก"
 saveToBrowser = "บันทึกในเบราว์เซอร์"
 saveUnavailable = "ไม่สามารถบันทึกสำหรับรายการนี้"
 seeDockerHub = "ดู Docker Hub"
-editSecret = "แก้ไขค่านี้"
 selectFillter = "-- เลือก --"
 size = "ขนาด"
 sponsor = "ผู้สนับสนุน"
@@ -143,11 +150,6 @@ welcome = "ยินดีต้อนรับ"
 white = "ขาว"
 WorkInProgess = "กำลังดำเนินการ อาจไม่ทำงานหรือมีบั๊ก โปรดรายงานปัญหาใด ๆ!"
 yes = "ใช่"
-insufficientCredits = "เครดิตไม่เพียงพอ ต้องการ: {{requiredCredits}} มีอยู่: {{currentBalance}} ขาด: {{shortfall}}"
-loadingCredits = "กำลังตรวจสอบเครดิต..."
-loadingProStatus = "กำลังตรวจสอบสถานะการสมัครสมาชิก..."
-noticeTopUpOrPlan = "เครดิตไม่พอ โปรดเติมเครดิตหรืออัปเกรดเป็นแผน"
-accessInvite = "เชิญ"
 
 [account]
 accountSettings = "การตั้งค่าบัญชี"
@@ -851,6 +853,14 @@ title = "API Endpoints"
 userDefaults = "ค่าเริ่มต้นของการตั้งค่าผู้ใช้"
 userDefaultsDescription = "กำหนดค่าเริ่มต้นสำหรับการตั้งค่าผู้ใช้ ผู้ใช้สามารถแทนที่ได้ในการตั้งค่าส่วนตัวของตน"
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "นำตัวเลือกการแปลงที่ปิดใช้งานออกแทนที่จะแสดงเป็นสีเทา"
+label = "ซ่อนการแปลงที่ไม่พร้อมใช้งานโดยค่าเริ่มต้น"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "นำเครื่องมือที่ปิดใช้งานออกแทนที่จะแสดงเป็นสีเทา"
+label = "ซ่อนเครื่องมือที่ไม่พร้อมใช้งานโดยค่าเริ่มต้น"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "เลือกกลุ่มจุดปลายทางที่จะปิดใช้งาน"
 label = "กลุ่ม Endpoints ที่ปิดใช้งาน"
@@ -858,14 +868,6 @@ label = "กลุ่ม Endpoints ที่ปิดใช้งาน"
 [admin.settings.endpoints.toRemove]
 description = "เลือกจุดปลายทางเป็นรายรายการเพื่อปิดใช้งาน"
 label = "Endpoints ที่ปิดใช้งาน"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "นำเครื่องมือที่ปิดใช้งานออกแทนที่จะแสดงเป็นสีเทา"
-label = "ซ่อนเครื่องมือที่ไม่พร้อมใช้งานโดยค่าเริ่มต้น"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "นำตัวเลือกการแปลงที่ปิดใช้งานออกแทนที่จะแสดงเป็นสีเทา"
-label = "ซ่อนการแปลงที่ไม่พร้อมใช้งานโดยค่าเริ่มต้น"
 
 [admin.settings.enterpriseRequired]
 message = "ต้องมีสิทธิ์การใช้งานสำหรับองค์กรเพื่อเข้าถึง {{featureName}} ขณะนี้คุณกำลังดูข้อมูลสาธิตเพื่อเป็นข้อมูลอ้างอิง"
@@ -974,6 +976,10 @@ label = "Locale เริ่มต้น"
 description = "ขนาดไฟล์อัปโหลดสูงสุด (เช่น 100MB, 1GB)"
 label = "ขนาดอัปโหลดไฟล์สูงสุด"
 
+[admin.settings.general.frontendUrl]
+description = "URL ฐานสำหรับ Frontend (เช่น https://pdf.example.com) ใช้สำหรับลิงก์เชิญทางอีเมลและการอัปโหลดด้วยรหัส QR บนมือถือ เว้นว่างเพื่อใช้ Backend URL"
+label = "Frontend URL"
+
 [admin.settings.general.hideDisabledTools]
 description = "ซ่อนเครื่องมือที่ปิดใช้งานออกจากอินเทอร์เฟซ"
 label = "ซ่อนเครื่องมือที่ปิดใช้งาน"
@@ -985,10 +991,6 @@ label = "ซ่อน Google Drive"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "ซ่อนปุ่มสแกน QR บนมือถือเมื่อไม่ได้เปิดใช้งาน"
 label = "ซ่อนสแกนเนอร์มือถือ"
-
-[admin.settings.general.frontendUrl]
-description = "URL ฐานสำหรับ Frontend (เช่น https://pdf.example.com) ใช้สำหรับลิงก์เชิญทางอีเมลและการอัปโหลดด้วยรหัส QR บนมือถือ เว้นว่างเพื่อใช้ Backend URL"
-label = "Frontend URL"
 
 [admin.settings.general.homeDescription]
 description = "ข้อความคำอธิบายที่แสดงบนหน้าแรก"
@@ -1169,9 +1171,25 @@ description = "กำหนดค่าการยืนยันตัวต�
 title = "ความปลอดภัย"
 
 [admin.settings.security.audit]
+hideDetails = "ซ่อนรายละเอียดระดับการตรวจสอบ"
 label = "บันทึกการตรวจสอบ"
 showDetails = "แสดงรายละเอียดระดับการตรวจสอบ"
-hideDetails = "ซ่อนรายละเอียดระดับการตรวจสอบ"
+
+[admin.settings.security.audit.advancedOptions]
+description = "ตัวเลือกต่อไปนี้จะเพิ่มเวลาและหน่วยความจำในการประมวลผล เปิดใช้เฉพาะเมื่อจำเป็นจริงๆ"
+title = "ตัวเลือกขั้นสูง"
+
+[admin.settings.security.audit.captureFileHash]
+description = "ดึงค่าแฮช SHA-256 ของไฟล์ PDF ที่อัปโหลดเพื่อการตรวจสอบความถูกต้อง ไม่ขึ้นกับระดับการตรวจสอบ"
+label = "เก็บแฮชไฟล์ (SHA-256)"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "เก็บค่าที่เมธอดส่งกลับ ไม่แนะนำ: เพิ่มปริมาณล็อกและการใช้ดิสก์อย่างมาก"
+label = "เก็บผลการดำเนินการ"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "ดึงค่าผู้เขียนจากเอกสาร PDF ระหว่างประมวลผล ต้องแยกวิเคราะห์ PDF ทำให้เกิดความหน่วงมากขึ้น ไม่ขึ้นกับระดับการตรวจสอบ"
+label = "เก็บข้อมูลเมตาผู้เขียน PDF"
 
 [admin.settings.security.audit.enabled]
 description = "ติดตามการกระทำของผู้ใช้และเหตุการณ์ของระบบเพื่อการปฏิบัติตามและการตรวจสอบความปลอดภัย"
@@ -1182,30 +1200,14 @@ description = "0=ปิด, 1=พื้นฐาน, 2=มาตรฐาน, 3=
 label = "ระดับการตรวจสอบ"
 
 [admin.settings.security.audit.levelDetails]
-off = "ไม่บันทึกการตรวจสอบ (ยกเว้นเหตุการณ์ด้านความปลอดภัยที่สำคัญ)"
 basic = "การดำเนินการกับไฟล์ PDF (บีบอัด แยก รวม ฯลฯ) และการเปลี่ยนแปลงการตั้งค่า บันทึก: สถานะการดำเนินการ (สำเร็จ/ล้มเหลว) พารามิเตอร์ของเมธอด เวลา ปริมาณล็อกขั้นต่ำ"
+off = "ไม่บันทึกการตรวจสอบ (ยกเว้นเหตุการณ์ด้านความปลอดภัยที่สำคัญ)"
 standard = "เหตุการณ์แบบ BASIC เพิ่มเติม: การเข้าสู่ระบบ/ออกจากระบบของผู้ใช้ การเปลี่ยนแปลงบัญชี คำขอ GET ทั่วไป ไม่รวมการเรียกแบบโพลลิงอย่างต่อเนื่อง (/auth/me, /app-config, /health ฯลฯ) เพื่อลดสัญญาณรบกวนของล็อก เหมาะสำหรับการใช้งานส่วนใหญ่"
 verbose = "เหตุการณ์แบบ STANDARD เพิ่มเติม: การเรียกแบบโพลลิงอย่างต่อเนื่อง คำขอ GET ทั้งหมด รายละเอียดเวลา คำเตือน: ปริมาณล็อกสูงและกระทบต่อประสิทธิภาพ"
 
 [admin.settings.security.audit.retentionDays]
 description = "จำนวนวันที่เก็บบันทึกการตรวจสอบ"
 label = "ระยะเวลาเก็บบันทึก (วัน)"
-
-[admin.settings.security.audit.advancedOptions]
-title = "ตัวเลือกขั้นสูง"
-description = "ตัวเลือกต่อไปนี้จะเพิ่มเวลาและหน่วยความจำในการประมวลผล เปิดใช้เฉพาะเมื่อจำเป็นจริงๆ"
-
-[admin.settings.security.audit.captureFileHash]
-description = "ดึงค่าแฮช SHA-256 ของไฟล์ PDF ที่อัปโหลดเพื่อการตรวจสอบความถูกต้อง ไม่ขึ้นกับระดับการตรวจสอบ"
-label = "เก็บแฮชไฟล์ (SHA-256)"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "ดึงค่าผู้เขียนจากเอกสาร PDF ระหว่างประมวลผล ต้องแยกวิเคราะห์ PDF ทำให้เกิดความหน่วงมากขึ้น ไม่ขึ้นกับระดับการตรวจสอบ"
-label = "เก็บข้อมูลเมตาผู้เขียน PDF"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "เก็บค่าที่เมธอดส่งกลับ ไม่แนะนำ: เพิ่มปริมาณล็อกและการใช้ดิสก์อย่างมาก"
-label = "เก็บผลการดำเนินการ"
 
 [admin.settings.security.csrfDisabled]
 description = "ปิดการป้องกัน Cross-Site Request Forgery (ไม่แนะนำ)"
@@ -1274,6 +1276,14 @@ label = "ชื่อผู้ใช้เริ่มต้น"
 [admin.settings.security.jwt]
 label = "การกำหนดค่า JWT"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "ค่าความคลาดเคลื่อนเวลาระหว่างไคลเอนต์/เซิร์ฟเวอร์ระหว่างการตรวจสอบโทเค็น (ค่าเริ่มต้น: 60 วินาที)"
+label = "ค่าความคลาดเคลื่อนของนาฬิกา (วินาที)"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "อายุการใช้งานโทเค็นการเข้าถึงสำหรับไคลเอนต์เดสก์ท็อปเป็นนาที ตรวจพบแอปเดสก์ท็อปโดยอัตโนมัติผ่าน User-Agent และจะได้รับช่วงเวลาเซสชันที่ยาวขึ้นเพื่อ UX ที่ดีกว่า (ค่าเริ่มต้น: 43200 = 30 วัน)"
+label = "การหมดอายุของโทเค็นเดสก์ท็อป (นาที)"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "ลบคีย์ JWT ที่หมดอายุโดยอัตโนมัติ"
 label = "เปิดใช้งานการล้างคีย์"
@@ -1282,29 +1292,21 @@ label = "เปิดใช้งานการล้างคีย์"
 description = "หมุนคีย์ลงนาม JWT โดยอัตโนมัติเป็นระยะ"
 label = "เปิดใช้งานการหมุนคีย์"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "อายุการใช้งานโทเค็นการเข้าถึงสำหรับไคลเอนต์เว็บเป็นนาที (ค่าเริ่มต้น: 1440 = 24 ชั่วโมง)"
-label = "การหมดอายุของโทเค็นเว็บ (นาที)"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "อายุการใช้งานโทเค็นการเข้าถึงสำหรับไคลเอนต์เดสก์ท็อปเป็นนาที ตรวจพบแอปเดสก์ท็อปโดยอัตโนมัติผ่าน User-Agent และจะได้รับช่วงเวลาเซสชันที่ยาวขึ้นเพื่อ UX ที่ดีกว่า (ค่าเริ่มต้น: 43200 = 30 วัน)"
-label = "การหมดอายุของโทเค็นเดสก์ท็อป (นาที)"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "ค่าความคลาดเคลื่อนเวลาระหว่างไคลเอนต์/เซิร์ฟเวอร์ระหว่างการตรวจสอบโทเค็น (ค่าเริ่มต้น: 60 วินาที)"
-label = "ค่าความคลาดเคลื่อนของนาฬิกา (วินาที)"
+[admin.settings.security.jwt.persistence]
+description = "จัดเก็บคีย์ JWT แบบคงอยู่เพื่อให้ผ่านการรีสตาร์ทเซิร์ฟเวอร์"
+label = "เปิดใช้งานการคงอยู่ของคีย์"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "อนุญาตให้รีเฟรชโทเค็นภายในจำนวนนาทีนับจากหมดอายุ (ค่าเริ่มต้น: 15 นาที สูงสุด 3 ครั้ง)"
 label = "ช่วงผ่อนผันสำหรับการรีเฟรช (นาที)"
 
-[admin.settings.security.jwt.persistence]
-description = "จัดเก็บคีย์ JWT แบบคงอยู่เพื่อให้ผ่านการรีสตาร์ทเซิร์ฟเวอร์"
-label = "เปิดใช้งานการคงอยู่ของคีย์"
-
 [admin.settings.security.jwt.secureCookie]
 description = "ต้องใช้ HTTPS สำหรับคุกกี้ JWT (แนะนำสำหรับการใช้งานจริง)"
 label = "คุกกี้แบบปลอดภัย"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "อายุการใช้งานโทเค็นการเข้าถึงสำหรับไคลเอนต์เว็บเป็นนาที (ค่าเริ่มต้น: 1440 = 24 ชั่วโมง)"
+label = "การหมดอายุของโทเค็นเว็บ (นาที)"
 
 [admin.settings.security.loginAttemptCount]
 description = "จำนวนครั้งสูงสุดของการเข้าสู่ระบบที่ล้มเหลวก่อนล็อกบัญชี"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "ควบคุมการจัดเก็บไฟล์บนเซิร์ฟเวอร์และตัวเลือกการแชร์"
+title = "การจัดเก็บไฟล์และการแชร์"
+
+[admin.settings.storage.enabled]
+description = "อนุญาตให้ผู้ใช้จัดเก็บไฟล์บนเซิร์ฟเวอร์"
+label = "เปิดใช้งานการจัดเก็บไฟล์บนเซิร์ฟเวอร์"
+
+[admin.settings.storage.sharing.email]
+description = "อนุญาตให้แชร์ด้วยที่อยู่อีเมล"
+label = "เปิดใช้งานการแชร์ผ่านอีเมล"
+mailLink = "กำหนดค่าเมล"
+mailNote = "ต้องกำหนดค่าเมล "
+
+[admin.settings.storage.sharing.enabled]
+description = "อนุญาตให้ผู้ใช้แชร์ไฟล์ที่จัดเก็บไว้"
+label = "เปิดใช้งานการแชร์"
+
+[admin.settings.storage.sharing.links]
+description = "อนุญาตให้แชร์ผ่านลิงก์ที่ต้องลงชื่อเข้าใช้"
+frontendUrlLink = "กำหนดค่าในการตั้งค่าระบบ"
+frontendUrlNote = "ต้องมี Frontend URL "
+label = "เปิดใช้งานลิงก์แชร์"
+
+[admin.settings.storage.signing.enabled]
+description = "อนุญาตให้ผู้ใช้สร้างเซสชันการลงนามเอกสารหลายผู้เข้าร่วม จำเป็นต้องเปิดใช้งานการจัดเก็บไฟล์บนเซิร์ฟเวอร์"
+label = "เปิดใช้งานการลงนามแบบกลุ่ม (อัลฟา)"
 
 [admin.settings.telegram]
 description = "กำหนดค่าการเชื่อมต่อบอต Telegram การควบคุมการเข้าถึง และพฤติกรรมข้อความตอบกลับ"
@@ -1429,34 +1459,6 @@ title = "การประมวลผล"
 description = "เวลาสูงสุดที่รอการประมวลผลก่อนรายงานข้อผิดพลาด"
 label = "เวลา Timeout การประมวลผล (วินาที)"
 
-[admin.settings.storage]
-description = "ควบคุมการจัดเก็บไฟล์บนเซิร์ฟเวอร์และตัวเลือกการแชร์"
-title = "การจัดเก็บไฟล์และการแชร์"
-
-[admin.settings.storage.enabled]
-description = "อนุญาตให้ผู้ใช้จัดเก็บไฟล์บนเซิร์ฟเวอร์"
-label = "เปิดใช้งานการจัดเก็บไฟล์บนเซิร์ฟเวอร์"
-
-[admin.settings.storage.sharing.email]
-description = "อนุญาตให้แชร์ด้วยที่อยู่อีเมล"
-label = "เปิดใช้งานการแชร์ผ่านอีเมล"
-mailLink = "กำหนดค่าเมล"
-mailNote = "ต้องกำหนดค่าเมล "
-
-[admin.settings.storage.sharing.enabled]
-description = "อนุญาตให้ผู้ใช้แชร์ไฟล์ที่จัดเก็บไว้"
-label = "เปิดใช้งานการแชร์"
-
-[admin.settings.storage.sharing.links]
-description = "อนุญาตให้แชร์ผ่านลิงก์ที่ต้องลงชื่อเข้าใช้"
-frontendUrlLink = "กำหนดค่าในการตั้งค่าระบบ"
-frontendUrlNote = "ต้องมี Frontend URL "
-label = "เปิดใช้งานลิงก์แชร์"
-
-[admin.settings.storage.signing.enabled]
-description = "อนุญาตให้ผู้ใช้สร้างเซสชันการลงนามเอกสารหลายผู้เข้าร่วม จำเป็นต้องเปิดใช้งานการจัดเก็บไฟล์บนเซิร์ฟเวอร์"
-label = "เปิดใช้งานการลงนามแบบกลุ่ม (อัลฟา)"
-
 [admin.settings.unsavedChanges]
 cancel = "แก้ไขต่อ"
 discard = "ละทิ้งการเปลี่ยนแปลง"
@@ -1521,6 +1523,7 @@ settings = "คุณสามารถเปลี่ยนแปลงกา�
 title = "คุณต้องการที่จะทำให้ Stirling PDF ดียิ่งขึ้นไหม?"
 
 [annotation]
+annotationStyle = "สไตล์คำอธิบายประกอบ"
 applyChanges = "ใช้การเปลี่ยนแปลง"
 backgroundColor = "สีพื้นหลัง"
 borderOff = "เส้นขอบ: ปิด"
@@ -1530,6 +1533,8 @@ chooseColor = "เลือกสี"
 circle = "วงกลม"
 clearBackground = "ลบพื้นหลัง"
 color = "สี"
+comment = "ความคิดเห็น"
+comments = "ความคิดเห็น"
 contents = "ข้อความ"
 delete = "ลบ"
 desc = "ใช้ไฮไลต์ ปากกา ข้อความ และโน้ต การเปลี่ยนแปลงมีผลทันที—ไม่ต้องแปลงเป็นชั้นเดียว"
@@ -1547,7 +1552,6 @@ editStampHint = "หากต้องการเปลี่ยนรูปภ
 editSwitchToSelect = "สลับไปยัง เลือกและแก้ไข เพื่อแก้ไขคำอธิบายประกอบนี้"
 editText = "แก้ไขกล่องข้อความ"
 editTextMarkup = "แก้ไขการมาร์กอัปข้อความ"
-annotationStyle = "สไตล์คำอธิบายประกอบ"
 ellipse = "วงรี"
 exit = "ออกจากโหมดคำอธิบายประกอบ"
 fillColor = "สีพื้น"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "ไฮไลต์แบบวาดอิสระ"
 highlight = "ไฮไลต์"
 imagePreview = "แสดงตัวอย่าง"
 inkHighlighter = "ไฮไลต์แบบวาดอิสระ"
+insertText = "แทรกข้อความ"
 line = "เส้น"
 lineArrow = "ลูกศร"
 noBackground = "ไม่มีพื้นหลัง"
 note = "โน้ต"
-comment = "ความคิดเห็น"
-comments = "ความคิดเห็น"
-insertText = "แทรกข้อความ"
-replaceText = "แทนที่ข้อความ"
 noteIcon = "ไอคอนโน้ต"
 notesStamps = "โน้ตและตราประทับ"
 opacity = "ความทึบ"
@@ -1574,6 +1575,7 @@ polyline = "โพลีไลน์"
 properties = "คุณสมบัติ"
 rectangle = "สี่เหลี่ยมผืนผ้า"
 redo = "ทำซ้ำ"
+replaceText = "แทนที่ข้อความ"
 saveChanges = "บันทึกการเปลี่ยนแปลง"
 saveFailed = "ไม่สามารถบันทึกสำเนาได้"
 saveReady = "พร้อมดาวน์โหลด"
@@ -1627,68 +1629,6 @@ goToSettings = "ไปที่การตั้งค่าการตรว�
 notAvailable = "ระบบบันทึกการตรวจสอบไม่พร้อมใช้งาน"
 notAvailableMessage = "ระบบบันทึกการตรวจสอบยังไม่ได้กำหนดค่าหรือไม่พร้อมใช้งาน"
 
-[audit.error]
-title = "เกิดข้อผิดพลาดในการโหลดระบบบันทึกการตรวจสอบ"
-
-[audit.export]
-clearFilters = "ล้าง"
-description = "ส่งออกเหตุการณ์การตรวจสอบเป็นไฟล์ CSV หรือ JSON ใช้ตัวกรองเพื่อจำกัดข้อมูลที่ส่งออก"
-endDate = "วันที่สิ้นสุด"
-error = "ไม่สามารถส่งออกข้อมูล"
-exportButton = "ส่งออกข้อมูล"
-fieldAuthor = "ผู้เขียน (จาก PDF)"
-fieldDate = "วันที่"
-fieldDocumentName = "ชื่อเอกสาร"
-fieldFileHash = "แฮชไฟล์ (SHA-256)"
-fieldIpAddress = "ที่อยู่ IP"
-fieldOperationResults = "ผลการดำเนินการ"
-fieldOutcome = "ผลลัพธ์ (สำเร็จ/ล้มเหลว)"
-fieldTool = "เครื่องมือ"
-fieldUsername = "ชื่อผู้ใช้"
-filterByType = "กรองตามประเภท"
-filterByUser = "กรองตามผู้ใช้"
-filters = "ตัวกรอง (ไม่บังคับ)"
-format = "รูปแบบการส่งออก"
-selectFields = "เลือกฟิลด์ที่จะรวม"
-startDate = "วันที่เริ่มต้น"
-title = "ส่งออกข้อมูลการตรวจสอบ"
-verboseRequired = "ต้องใช้ระดับการตรวจสอบแบบ VERBOSE"
-
-[audit.systemStatus]
-autoRefresh = "รีเฟรชอัตโนมัติ"
-autoRefreshLabel = "รีเฟรชอัตโนมัติทุก 30 วินาที"
-captureBySettings = "เปิดใช้งานในการตั้งค่า"
-capturedFields = "ฟิลด์ที่เก็บข้อมูล"
-date = "วันที่"
-days = "วัน"
-disabled = "ปิดใช้งาน"
-documentName = "ชื่อเอกสาร"
-enabled = "เปิดใช้งาน"
-fileHash = "แฮชไฟล์"
-level = "ระดับการตรวจสอบ"
-pdfAuthor = "ผู้เขียน PDF"
-retention = "ระยะเวลาเก็บรักษา"
-status = "การบันทึกการตรวจสอบ"
-title = "สถานะระบบ"
-tool = "เครื่องมือ"
-totalEvents = "จำนวนเหตุการณ์ทั้งหมด"
-username = "ชื่อผู้ใช้"
-verboseOnly = "เฉพาะ VERBOSE"
-
-[audit.stats]
-activeUsers = "ผู้ใช้ที่ใช้งานอยู่"
-attention = "ต้องดำเนินการ"
-avgLatency = "เวลาแฝงเฉลี่ย"
-error = "เกิดข้อผิดพลาดในการโหลดสถิติ"
-errorLoadingStats = "ไม่สามารถโหลดสถิติได้"
-excellent = "ยอดเยี่ยม"
-good = "ดี"
-noData = "N/A"
-successRate = "อัตราความสำเร็จ"
-title = "สรุป"
-totalEvents = "เหตุการณ์ทั้งหมด"
-vsLastPeriod = "เทียบกับช่วงก่อนหน้า"
-
 [audit.charts]
 byTool = "เครื่องมือที่ถูกใช้มากที่สุด"
 byType = "เหตุการณ์ตามประเภท"
@@ -1701,6 +1641,27 @@ noData = "ไม่มีข้อมูลสำหรับช่วงนี�
 overTime = "เหตุการณ์ตามช่วงเวลา"
 title = "แดชบอร์ดการตรวจสอบ"
 week = "สัปดาห์"
+
+[audit.clearData]
+cancel = "ยกเลิก"
+codeDoesNotMatch = "โค้ดไม่ตรงกัน"
+codePlaceholder = "พิมพ์รหัสที่นี่"
+confirmationCode = "รหัสยืนยัน"
+confirmationRequired = "ลบข้อมูลการตรวจสอบทั้งหมด"
+confirmMessage = "การดำเนินการนี้จะลบล็อกการตรวจสอบทั้งหมดอย่างถาวร ป้อนรหัสยืนยันด้านล่างเพื่อดำเนินการต่อ"
+confirmTitle = "โปรดยืนยันว่าคุณต้องการลบ"
+deleteButton = "ลบ"
+enterCode = "รหัสยืนยัน"
+enterCodeBelow = "ป้อนรหัสให้ตรงกับที่แสดงด้านบน (ตัวพิมพ์เล็ก-ใหญ่มีผล)"
+initiateDelete = "ลบข้อมูลทั้งหมด"
+irreversible = "ไม่สามารถย้อนกลับได้"
+success = "สำเร็จ"
+successMessage = "ล้างข้อมูลการตรวจสอบทั้งหมดเรียบร้อยแล้ว"
+warning1 = "ไม่สามารถยกเลิกการทำรายการนี้ได้"
+warning2 = "การลบข้อมูลการตรวจสอบจะลบล็อกการตรวจสอบทั้งหมดในอดีตอย่างถาวร รวมทั้งเหตุการณ์ด้านความปลอดภัย กิจกรรมของผู้ใช้ และการดำเนินการกับไฟล์ออกจากฐานข้อมูล"
+
+[audit.error]
+title = "เกิดข้อผิดพลาดในการโหลดระบบบันทึกการตรวจสอบ"
 
 [audit.events]
 actions = "การดำเนินการ"
@@ -1728,40 +1689,81 @@ type = "ประเภท"
 user = "ผู้ใช้"
 viewDetails = "ดูรายละเอียด"
 
+[audit.export]
+clearFilters = "ล้าง"
+description = "ส่งออกเหตุการณ์การตรวจสอบเป็นไฟล์ CSV หรือ JSON ใช้ตัวกรองเพื่อจำกัดข้อมูลที่ส่งออก"
+endDate = "วันที่สิ้นสุด"
+error = "ไม่สามารถส่งออกข้อมูล"
+exportButton = "ส่งออกข้อมูล"
+fieldAuthor = "ผู้เขียน (จาก PDF)"
+fieldDate = "วันที่"
+fieldDocumentName = "ชื่อเอกสาร"
+fieldFileHash = "แฮชไฟล์ (SHA-256)"
+fieldIpAddress = "ที่อยู่ IP"
+fieldOperationResults = "ผลการดำเนินการ"
+fieldOutcome = "ผลลัพธ์ (สำเร็จ/ล้มเหลว)"
+fieldTool = "เครื่องมือ"
+fieldUsername = "ชื่อผู้ใช้"
+filterByType = "กรองตามประเภท"
+filterByUser = "กรองตามผู้ใช้"
+filters = "ตัวกรอง (ไม่บังคับ)"
+format = "รูปแบบการส่งออก"
+selectFields = "เลือกฟิลด์ที่จะรวม"
+startDate = "วันที่เริ่มต้น"
+title = "ส่งออกข้อมูลการตรวจสอบ"
+verboseRequired = "ต้องใช้ระดับการตรวจสอบแบบ VERBOSE"
+
 [audit.filters]
 allOutcomes = "ทั้งหมด"
 failureOnly = "เฉพาะที่ล้มเหลว"
-last7Days = "7 วันที่ผ่านมา"
 last30Days = "30 วันที่ผ่านมา"
+last7Days = "7 วันที่ผ่านมา"
 outcomeFilter = "ผลลัพธ์"
 quickPresets = "ตัวกรองด่วน"
 successOnly = "เฉพาะที่สำเร็จ"
 thisMonth = "เดือนนี้"
 today = "วันนี้"
 
+[audit.stats]
+activeUsers = "ผู้ใช้ที่ใช้งานอยู่"
+attention = "ต้องดำเนินการ"
+avgLatency = "เวลาแฝงเฉลี่ย"
+error = "เกิดข้อผิดพลาดในการโหลดสถิติ"
+errorLoadingStats = "ไม่สามารถโหลดสถิติได้"
+excellent = "ยอดเยี่ยม"
+good = "ดี"
+noData = "N/A"
+successRate = "อัตราความสำเร็จ"
+title = "สรุป"
+totalEvents = "เหตุการณ์ทั้งหมด"
+vsLastPeriod = "เทียบกับช่วงก่อนหน้า"
+
+[audit.systemStatus]
+autoRefresh = "รีเฟรชอัตโนมัติ"
+autoRefreshLabel = "รีเฟรชอัตโนมัติทุก 30 วินาที"
+captureBySettings = "เปิดใช้งานในการตั้งค่า"
+capturedFields = "ฟิลด์ที่เก็บข้อมูล"
+date = "วันที่"
+days = "วัน"
+disabled = "ปิดใช้งาน"
+documentName = "ชื่อเอกสาร"
+enabled = "เปิดใช้งาน"
+fileHash = "แฮชไฟล์"
+level = "ระดับการตรวจสอบ"
+pdfAuthor = "ผู้เขียน PDF"
+retention = "ระยะเวลาเก็บรักษา"
+status = "การบันทึกการตรวจสอบ"
+title = "สถานะระบบ"
+tool = "เครื่องมือ"
+totalEvents = "จำนวนเหตุการณ์ทั้งหมด"
+username = "ชื่อผู้ใช้"
+verboseOnly = "เฉพาะ VERBOSE"
+
 [audit.tabs]
 clearData = "ล้างข้อมูล"
 dashboard = "แดชบอร์ด"
 events = "เหตุการณ์การตรวจสอบ"
 export = "ส่งออก"
-
-[audit.clearData]
-cancel = "ยกเลิก"
-codeDoesNotMatch = "โค้ดไม่ตรงกัน"
-codePlaceholder = "พิมพ์รหัสที่นี่"
-confirmationCode = "รหัสยืนยัน"
-confirmationRequired = "ลบข้อมูลการตรวจสอบทั้งหมด"
-confirmMessage = "การดำเนินการนี้จะลบล็อกการตรวจสอบทั้งหมดอย่างถาวร ป้อนรหัสยืนยันด้านล่างเพื่อดำเนินการต่อ"
-confirmTitle = "โปรดยืนยันว่าคุณต้องการลบ"
-deleteButton = "ลบ"
-enterCode = "รหัสยืนยัน"
-enterCodeBelow = "ป้อนรหัสให้ตรงกับที่แสดงด้านบน (ตัวพิมพ์เล็ก-ใหญ่มีผล)"
-initiateDelete = "ลบข้อมูลทั้งหมด"
-irreversible = "ไม่สามารถย้อนกลับได้"
-success = "สำเร็จ"
-successMessage = "ล้างข้อมูลการตรวจสอบทั้งหมดเรียบร้อยแล้ว"
-warning1 = "ไม่สามารถยกเลิกการทำรายการนี้ได้"
-warning2 = "การลบข้อมูลการตรวจสอบจะลบล็อกการตรวจสอบทั้งหมดในอดีตอย่างถาวร รวมทั้งเหตุการณ์ด้านความปลอดภัย กิจกรรมของผู้ใช้ และการดำเนินการกับไฟล์ออกจากฐานข้อมูล"
 
 [auth]
 accessDenied = "ปฏิเสธการเข้าถึง"
@@ -2088,43 +2090,70 @@ keywords = "คีย์เวิร์ด: odd, even"
 numbers = "ตัวเลข/ช่วง: 5, 10-20"
 progressions = "ลำดับขั้น: 3n, 4n+1"
 
+[certificateChoice.tooltip]
+header = "ประเภทของใบรับรอง"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "จัดการโดยผู้ดูแลระบบของระบบ"
+bullet2 = "ใช้ร่วมกันระหว่างผู้ใช้ที่ได้รับอนุญาต"
+bullet3 = "แสดงตัวตนของบริษัท ไม่ใช่บุคคล"
+bullet4 = "เหมาะสำหรับ: เอกสารทางการ ลายเซ็นของทีม"
+description = "ใบรับรองที่ใช้ร่วมกันซึ่งจัดเตรียมโดยองค์กรของคุณ ใช้สำหรับอำนาจการลงนามในระดับบริษัท"
+title = "ใบรับรองขององค์กร"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "สร้างโดยอัตโนมัติเมื่อใช้ครั้งแรก"
+bullet2 = "ผูกกับบัญชีผู้ใช้ของคุณ"
+bullet3 = "ไม่สามารถใช้ร่วมกับผู้ใช้อื่นได้"
+bullet4 = "เหมาะสำหรับ: เอกสารส่วนบุคคล ความรับผิดชอบรายบุคคล"
+description = "ใบรับรองที่สร้างอัตโนมัติเฉพาะบัญชีผู้ใช้ของคุณ เหมาะสำหรับลายเซ็นส่วนบุคคล"
+title = "ใบรับรองส่วนบุคคล"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "ต้องมีไฟล์ P12/PFX และรหัสผ่าน"
+bullet2 = "สามารถออกโดยหน่วยงานออกใบรับรองภายนอก"
+bullet3 = "ระดับความน่าเชื่อถือสูงสำหรับเอกสารทางกฎหมาย"
+bullet4 = "เหมาะสำหรับ: สัญญาที่มีผลผูกพันตามกฎหมาย การตรวจสอบจากภายนอก"
+description = "ใช้ไฟล์ใบรับรอง PKCS#12 ของคุณเอง ให้การควบคุมคุณสมบัติใบรับรองอย่างเต็มที่"
+title = "อัปโหลด P12 แบบกำหนดเอง"
+
 [certSign]
 allSigned = "ผู้เข้าร่วมทั้งหมดได้ลงนามแล้ว พร้อมสำหรับการสรุปผล"
 awaitingSignatures = "รอการลงนาม"
-signatureProgress = "{{signedCount}}/{{totalCount}} ลายเซ็น"
 chooseCertificate = "เลือกไฟล์ใบรับรอง"
-declined = "ปฏิเสธแล้ว"
-fetchFailed = "ไม่สามารถโหลดข้อมูลการลงนามได้"
-finalized = "สรุปผลแล้ว"
-notified = "รอดำเนินการ"
-partialNote = "คุณสามารถสรุปผลล่วงหน้าด้วยลายเซ็นปัจจุบันได้ ผู้เข้าร่วมที่ยังไม่ลงนามจะถูกตัดออก"
-pending = "รอดำเนินการ"
-readyToFinalize = "พร้อมสรุปผล"
-signed = "ลงนามแล้ว"
-viewed = "เปิดดูแล้ว"
 chooseJksFile = "เลือกไฟล์ JKS"
 chooseP12File = "เลือกไฟล์ PKCS12"
 choosePfxFile = "เลือกไฟล์ PFX"
 choosePrivateKey = "เลือกไฟล์กุญแจส่วนตัว"
+declined = "ปฏิเสธแล้ว"
+fetchFailed = "ไม่สามารถโหลดข้อมูลการลงนามได้"
 filenamePrefix = "ลงนาม"
+finalized = "สรุปผลแล้ว"
 location = "ตำแหน่ง"
 logoTitle = "โลโก้"
 name = "ชื่อ"
 noLogo = "ไม่มีโลโก้"
+notified = "รอดำเนินการ"
 pageNumber = "หมายเลขหน้า"
+partialNote = "คุณสามารถสรุปผลล่วงหน้าด้วยลายเซ็นปัจจุบันได้ ผู้เข้าร่วมที่ยังไม่ลงนามจะถูกตัดออก"
 password = "ใส่รหัสผ่าน Keystore หรือคีย์ส่วนตัวของคุณ (ถ้ามี):"
 passwordOptional = "เว้นว่างหากไม่มีรหัสผ่าน"
+pending = "รอดำเนินการ"
+readyToFinalize = "พร้อมสรุปผล"
 reason = "เหตุผล"
 serverCertMessage = "กำลังใช้ใบรับรองของเซิร์ฟเวอร์ - ไม่ต้องใช้ไฟล์หรือรหัสผ่าน"
 showLogo = "แสดงโลโก้"
+signatureProgress = "{{signedCount}}/{{totalCount}} ลายเซ็น"
+signed = "ลงนามแล้ว"
 tags = "ยืนยัน, PEM, P12, เป็นทางการ, เข้ารหัส"
 title = "การเซ็นชื่อด้วยใบรับรอง"
+viewed = "เปิดดูแล้ว"
 
 [certSign.appearance]
 invisible = "มองไม่เห็น"
 stepTitle = "ลักษณะลายเซ็น"
-visible = "มองเห็นได้"
 visibility = "การแสดงผล"
+visible = "มองเห็นได้"
 
 [certSign.appearance.options]
 title = "รายละเอียดลายเซ็น"
@@ -2172,8 +2201,227 @@ title = "ควรใช้ตัวเลือกใด?"
 [certSign.certTypeStep]
 stepTitle = "รูปแบบใบรับรอง"
 
+[certSign.collab.addParticipants]
+add = "เพิ่มผู้เข้าร่วม {{count}} คน"
+back = "ย้อนกลับ"
+configureSignatures = "กำหนดค่าการตั้งค่าลายเซ็น"
+continue = "ดำเนินการต่อไปยังการตั้งค่าลายเซ็น"
+reasonHelp = "ตั้งค่าเหตุผลการลงนามล่วงหน้าสำหรับผู้เข้าร่วมเหล่านี้ (ไม่บังคับ พวกเขาสามารถเปลี่ยนได้เมื่อทำการลงนาม)"
+reasonPlaceholder = "เช่น อนุมัติ, ตรวจทาน..."
+selectUsers = "เลือกผู้ใช้"
+
+[certSign.collab.finalize]
+button = "สรุปผลและโหลด PDF ที่ลงนามแล้ว"
+early = "สรุปผลด้วยลายเซ็นปัจจุบัน"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "ใบรับรองไม่ถูกต้อง"
+certNetworkError = "ไม่สามารถตรวจสอบความถูกต้องของใบรับรองได้"
+certValid = "✓ ใบรับรองถูกต้อง"
+certValidating = "กำลังตรวจสอบความถูกต้องของใบรับรอง..."
+certValidUntil = " จนถึง {{date}}"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "รวมหน้าสรุปลายเซ็น"
+includeSummaryPageHelp = "จะมีการเพิ่มหน้าสรุปที่ท้ายเอกสารพร้อมเมทาดาต้าลายเซ็นทั้งหมด กล่องลายเซ็นใบรับรองดิจิทัลบนแต่ละหน้าจะถูกระงับ (ลายเซ็นแบบเปียกไม่ได้รับผลกระทบ)"
+
+[certSign.collab.sessionDetail]
+addButton = "เพิ่มผู้เข้าร่วม"
+addParticipants = "เพิ่มผู้เข้าร่วม"
+addParticipantsError = "ไม่สามารถเพิ่มผู้เข้าร่วมได้"
+backToList = "ย้อนกลับไปยังเซสชัน"
+deleteConfirm = "แน่ใจหรือไม่? การดำเนินการนี้ไม่สามารถยกเลิกได้"
+deleted = "ลบเซสชันแล้ว"
+deleteError = "ไม่สามารถลบเซสชันได้"
+deleteSession = "ลบเซสชัน"
+dueDate = "วันครบกำหนด"
+finalizeError = "ไม่สามารถสรุปผลเซสชันได้"
+loadPdfError = "ไม่สามารถโหลด PDF ที่ลงนามแล้วได้"
+loadSignedPdf = "โหลด PDF ที่ลงนามแล้วไปยังไฟล์ที่ใช้งานอยู่"
+messageLabel = "ข้อความ"
+noAdditionalInfo = "ไม่มีข้อมูลเพิ่มเติม"
+owner = "เจ้าของ"
+participantRemoved = "ลบผู้เข้าร่วมแล้ว"
+participants = "ผู้เข้าร่วม"
+participantsAdded = "เพิ่มผู้เข้าร่วมเรียบร้อยแล้ว"
+removeParticipant = "ลบ"
+removeParticipantError = "ไม่สามารถลบผู้เข้าร่วมได้"
+selectUsers = "เลือกผู้ใช้..."
+sessionInfo = "ข้อมูลเซสชัน"
+workbenchTitle = "การจัดการเซสชัน"
+
+[certSign.collab.sessionList]
+active = "ใช้งานอยู่"
+finalized = "สรุปผลแล้ว"
+
+[certSign.collab.signatureSettings]
+description = "กำหนดวิธีการแสดงลายเซ็นสำหรับผู้เข้าร่วมทั้งหมด"
+title = "ลักษณะลายเซ็น"
+
+[certSign.collab.signRequest]
+addedToFiles = "เพิ่มเอกสารไปยังไฟล์ที่ใช้งานอยู่แล้ว"
+addSignature = "เพิ่มลายเซ็นของคุณ"
+addToFiles = "เพิ่มไปยังไฟล์ที่ใช้งานอยู่"
+advancedSettings = "การตั้งค่าขั้นสูง"
+backToList = "ย้อนกลับไปยังคำขอลงนาม"
+certificateChoice = "เลือกใบรับรองสำหรับการลงนาม"
+changeSignature = "เปลี่ยนลายเซ็น"
+clearSignature = "ล้างลายเซ็น"
+completeAndSign = "เสร็จสิ้นและลงนาม"
+createNewSignature = "สร้างลายเซ็นใหม่"
+decline = "ปฏิเสธคำขอ"
+declineButton = "ปฏิเสธ"
+deleteSelected = "ลบลายเซ็นที่เลือก"
+drawSignature = "วาดลายเซ็นของคุณด้านล่าง"
+dueDate = "วันครบกำหนด"
+fileTooLarge = "ขนาดไฟล์ต้องน้อยกว่า 5MB"
+fontFamily = "ตระกูลฟอนต์"
+fontSize = "ขนาดฟอนต์: {{size}}px"
+fontSizePlaceholder = "ขนาด"
+from = "จาก"
+invalidCertFile = "โปรดเลือกไฟล์ใบรับรอง P12 หรือ PFX"
+invalidFileType = "โปรดเลือกไฟล์รูปภาพ"
+location = "สถานที่ (ไม่บังคับ)"
+locationPlaceholder = "คุณกำลังลงนามจากที่ไหน?"
+message = "ข้อความ"
+noCertificate = "โปรดเลือกไฟล์ใบรับรอง"
+noSignatures = "โปรดวางลายเซ็นอย่างน้อยหนึ่งลายเซ็นบน PDF"
+p12File = "ไฟล์ใบรับรอง P12/PFX"
+password = "รหัสผ่านใบรับรอง"
+passwordPlaceholder = "กรอกรหัสผ่าน..."
+penColor = "สีปากกา"
+penSize = "ขนาดปากกา: {{size}}px"
+placementActive = "คลิกที่ PDF เพื่อวาง"
+placeSignatureButton = "วางลายเซ็นบน PDF"
+reason = "เหตุผล (ไม่บังคับ)"
+reasonPlaceholder = "ทำไมคุณจึงลงนาม?"
+removeCertFile = "นำไฟล์ออก"
+removeImage = "นำรูปภาพออก"
+savedSignatures = "ลายเซ็นที่บันทึกไว้"
+selectFile = "เลือกไฟล์รูปภาพ"
+selectSignatureTitle = "เลือกหรือสร้างลายเซ็น"
+signatureInfo = "การตั้งค่าเหล่านี้กำหนดโดยเจ้าของเอกสาร"
+signaturePlaced = "วางลายเซ็นบนหน้าแล้ว"
+signatureSettings = "การตั้งค่าลายเซ็น"
+signatureText = "ข้อความลายเซ็น"
+signatureTextPlaceholder = "กรอกชื่อของคุณ..."
+signatureTypeLabel = "ประเภทลายเซ็น"
+signButton = "ลงนามเอกสาร"
+signingTitle = "การลงนาม"
+textColor = "สีข้อความ"
+typeSignature = "พิมพ์ชื่อของคุณเพื่อสร้างลายเซ็น"
+uploadCert = "ใบรับรองกำหนดเอง"
+uploadCertDesc = "ใช้ใบรับรอง P12/PFX ของคุณเอง"
+uploadSignature = "อัปโหลดรูปภาพลายเซ็นของคุณ"
+usePersonalCert = "ใบรับรองส่วนบุคคล"
+usePersonalCertDesc = "สร้างอัตโนมัติสำหรับบัญชีของคุณ"
+useServerCert = "ใบรับรองขององค์กร"
+useServerCertDesc = "ใบรับรองที่ใช้ร่วมกันขององค์กร"
+workbenchTitle = "คำขอลงนาม"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "เลือกสีเส้น"
+continue = "ดำเนินการต่อ"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "ใบรับรองไม่ถูกต้อง: {{error}}"
+certInvalidFallback = "ใบรับรองไม่ถูกต้อง"
+certNetworkError = "ไม่สามารถตรวจสอบความถูกต้องของใบรับรองได้"
+certValidating = "กำลังตรวจสอบความถูกต้องของใบรับรอง..."
+certValidUntil = "ใบรับรองใช้ได้จนถึง {{date}}"
+description = "คุณได้วางลายเซ็น {{count}} รายการ เลือกใบรับรองของคุณเพื่อทำการลงนามให้เสร็จสิ้น"
+sign = "ลงนามเอกสาร"
+title = "กำหนดค่าใบรับรอง"
+
+[certSign.collab.signRequest.image]
+hint = "อัปโหลดรูปภาพ PNG หรือ JPG ของลายเซ็นของคุณ"
+
+[certSign.collab.signRequest.mode]
+move = "ย้ายลายเซ็น"
+place = "วางลายเซ็น"
+title = "โหมดลงนามหรือย้าย"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "วาด"
+image = "อัปโหลด"
+text = "พิมพ์"
+
+[certSign.collab.signRequest.placeSignature]
+message = "คลิกบน PDF เพื่อวางลายเซ็นของคุณ"
+title = "วางลายเซ็น"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "ลายเซ็นที่เลือก"
+missing = "ไม่มีตัวอย่าง"
+textFallback = "ลายเซ็น"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "ลายเซ็นแบบวาด"
+defaultImageLabel = "ลายเซ็นที่อัปโหลด"
+defaultLabel = "ลายเซ็น"
+defaultTextLabel = "ลายเซ็นแบบพิมพ์"
+delete = "ลบลายเซ็น"
+none = "ยังไม่มีลายเซ็นที่บันทึกไว้"
+
+[certSign.collab.signRequest.signatureType]
+draw = "วาด"
+type = "พิมพ์"
+upload = "อัปโหลด"
+
+[certSign.collab.signRequest.steps]
+back = "ย้อนกลับ"
+cancelPlacement = "ยกเลิกการวาง"
+certificate = "ใบรับรอง"
+clickMultipleTimes = "คลิกบน PDF หลายครั้งเพื่อวางลายเซ็น ลากลายเซ็นใดๆ เพื่อย้ายหรือปรับขนาด"
+clickToPlace = "คลิกบน PDF ตำแหน่งที่คุณต้องการให้ลายเซ็นปรากฏ"
+continue = "ดำเนินการต่อไปยังการเลือกใบรับรอง"
+continueToPlacement = "ดำเนินการต่อไปยังการวาง"
+continueToReview = "ดำเนินการต่อไปยังการตรวจทาน"
+createSignature = "สร้างลายเซ็น"
+invisible = "ไม่แสดง"
+location = "สถานที่:"
+multipleSignatures = "จะมีการใช้ลายเซ็น {{count}} รายการกับ PDF"
+oneSignature = "จะมีการใช้ลายเซ็น 1 รายการกับ PDF"
+placeOnPdf = "วางบน PDF"
+reason = "เหตุผล:"
+reviewTitle = "ตรวจทานก่อนลงนาม"
+signaturePlaced = "วางลายเซ็นบนหน้า {{page}} แล้ว คุณสามารถปรับตำแหน่งได้โดยการคลิกอีกครั้ง หรือดำเนินการต่อเพื่อการตรวจทาน"
+visibility = "การแสดงผล:"
+visible = "แสดง"
+yourSignatures = "ลายเซ็นของคุณ ({{count}})"
+
+[certSign.collab.signRequest.text]
+colorLabel = "สี"
+fontLabel = "ฟอนต์"
+fontSizeLabel = "ขนาด"
+fontSizePlaceholder = "16"
+label = "ข้อความลายเซ็น"
+modalHint = "กรอกชื่อของคุณ แล้วคลิก ดำเนินการต่อ เพื่อวางลงบน PDF"
+placeholder = "กรอกชื่อของคุณ..."
+
+[certSign.collab.userSelector]
+inviteUsers = "เพิ่มผู้ใช้"
+loadError = "ไม่สามารถโหลดผู้ใช้ได้"
+noTeam = "ไม่มีทีม"
+noUsers = "ไม่พบผู้ใช้อื่น"
+placeholder = "เลือกผู้ใช้..."
+
 [certSign.error]
 failed = "เกิดข้อผิดพลาดขณะประมวลผลลายเซ็น"
+
+[certSign.mobile]
+panelActions = "การดำเนินการ"
+panelDocument = "เอกสาร"
+panelPeople = "บุคคล"
+
+[certSign.sessions]
+deleted = "ลบเซสชันแล้ว"
+fetchFailed = "ไม่สามารถโหลดรายละเอียดเซสชันได้"
+finalized = "สรุปผลเซสชันแล้ว"
+loaded = "โหลด PDF ที่ลงนามแล้ว"
+pdfNotReady = "PDF ยังไม่พร้อม"
+pdfNotReadyDesc = "กำลังสร้าง PDF ที่ลงนาม โปรดลองอีกครั้งในสักครู่"
 
 [certSign.sign]
 results = "PDF ที่ลงนามแล้ว"
@@ -2230,252 +2478,6 @@ bullet3 = "ตรวจสอบว่าเอกสารถูกแก้ไ
 bullet4 = "สามารถใช้ใบรับรองแบบกำหนดเองเพื่อการตรวจสอบได้"
 text = "เมื่อคุณตรวจสอบลายเซ็น เครื่องมือจะแจ้งว่าถูกต้องหรือไม่ ใครเป็นผู้ลงนาม ลงนามเมื่อใด และเอกสารถูกเปลี่ยนแปลงหลังการลงนามหรือไม่"
 title = "การตรวจสอบลายเซ็น"
-
-[certSign.collab.finalize]
-button = "สรุปผลและโหลด PDF ที่ลงนามแล้ว"
-early = "สรุปผลด้วยลายเซ็นปัจจุบัน"
-
-[certSign.collab.sessionDetail]
-addButton = "เพิ่มผู้เข้าร่วม"
-addParticipants = "เพิ่มผู้เข้าร่วม"
-addParticipantsError = "ไม่สามารถเพิ่มผู้เข้าร่วมได้"
-backToList = "ย้อนกลับไปยังเซสชัน"
-deleteConfirm = "แน่ใจหรือไม่? การดำเนินการนี้ไม่สามารถยกเลิกได้"
-deleteError = "ไม่สามารถลบเซสชันได้"
-deleted = "ลบเซสชันแล้ว"
-deleteSession = "ลบเซสชัน"
-dueDate = "วันครบกำหนด"
-finalizeError = "ไม่สามารถสรุปผลเซสชันได้"
-loadPdfError = "ไม่สามารถโหลด PDF ที่ลงนามแล้วได้"
-loadSignedPdf = "โหลด PDF ที่ลงนามแล้วไปยังไฟล์ที่ใช้งานอยู่"
-messageLabel = "ข้อความ"
-noAdditionalInfo = "ไม่มีข้อมูลเพิ่มเติม"
-owner = "เจ้าของ"
-participantRemoved = "ลบผู้เข้าร่วมแล้ว"
-participants = "ผู้เข้าร่วม"
-participantsAdded = "เพิ่มผู้เข้าร่วมเรียบร้อยแล้ว"
-removeParticipant = "ลบ"
-removeParticipantError = "ไม่สามารถลบผู้เข้าร่วมได้"
-selectUsers = "เลือกผู้ใช้..."
-sessionInfo = "ข้อมูลเซสชัน"
-workbenchTitle = "การจัดการเซสชัน"
-
-[certSign.collab.signRequest]
-addedToFiles = "เพิ่มเอกสารไปยังไฟล์ที่ใช้งานอยู่แล้ว"
-addSignature = "เพิ่มลายเซ็นของคุณ"
-addToFiles = "เพิ่มไปยังไฟล์ที่ใช้งานอยู่"
-advancedSettings = "การตั้งค่าขั้นสูง"
-backToList = "ย้อนกลับไปยังคำขอลงนาม"
-certificateChoice = "เลือกใบรับรองสำหรับการลงนาม"
-changeSignature = "เปลี่ยนลายเซ็น"
-clearSignature = "ล้างลายเซ็น"
-completeAndSign = "เสร็จสิ้นและลงนาม"
-createNewSignature = "สร้างลายเซ็นใหม่"
-declineButton = "ปฏิเสธ"
-decline = "ปฏิเสธคำขอ"
-deleteSelected = "ลบลายเซ็นที่เลือก"
-drawSignature = "วาดลายเซ็นของคุณด้านล่าง"
-dueDate = "วันครบกำหนด"
-fileTooLarge = "ขนาดไฟล์ต้องน้อยกว่า 5MB"
-fontFamily = "ตระกูลฟอนต์"
-fontSize = "ขนาดฟอนต์: {{size}}px"
-fontSizePlaceholder = "ขนาด"
-from = "จาก"
-invalidCertFile = "โปรดเลือกไฟล์ใบรับรอง P12 หรือ PFX"
-invalidFileType = "โปรดเลือกไฟล์รูปภาพ"
-location = "สถานที่ (ไม่บังคับ)"
-locationPlaceholder = "คุณกำลังลงนามจากที่ไหน?"
-message = "ข้อความ"
-noCertificate = "โปรดเลือกไฟล์ใบรับรอง"
-noSignatures = "โปรดวางลายเซ็นอย่างน้อยหนึ่งลายเซ็นบน PDF"
-p12File = "ไฟล์ใบรับรอง P12/PFX"
-password = "รหัสผ่านใบรับรอง"
-passwordPlaceholder = "กรอกรหัสผ่าน..."
-penColor = "สีปากกา"
-penSize = "ขนาดปากกา: {{size}}px"
-placementActive = "คลิกที่ PDF เพื่อวาง"
-placeSignatureButton = "วางลายเซ็นบน PDF"
-reason = "เหตุผล (ไม่บังคับ)"
-reasonPlaceholder = "ทำไมคุณจึงลงนาม?"
-removeImage = "นำรูปภาพออก"
-removeCertFile = "นำไฟล์ออก"
-savedSignatures = "ลายเซ็นที่บันทึกไว้"
-selectFile = "เลือกไฟล์รูปภาพ"
-selectSignatureTitle = "เลือกหรือสร้างลายเซ็น"
-signButton = "ลงนามเอกสาร"
-signatureInfo = "การตั้งค่าเหล่านี้กำหนดโดยเจ้าของเอกสาร"
-signaturePlaced = "วางลายเซ็นบนหน้าแล้ว"
-signatureSettings = "การตั้งค่าลายเซ็น"
-signatureText = "ข้อความลายเซ็น"
-signatureTextPlaceholder = "กรอกชื่อของคุณ..."
-signatureTypeLabel = "ประเภทลายเซ็น"
-signingTitle = "การลงนาม"
-textColor = "สีข้อความ"
-typeSignature = "พิมพ์ชื่อของคุณเพื่อสร้างลายเซ็น"
-uploadCert = "ใบรับรองกำหนดเอง"
-uploadCertDesc = "ใช้ใบรับรอง P12/PFX ของคุณเอง"
-uploadSignature = "อัปโหลดรูปภาพลายเซ็นของคุณ"
-usePersonalCert = "ใบรับรองส่วนบุคคล"
-usePersonalCertDesc = "สร้างอัตโนมัติสำหรับบัญชีของคุณ"
-useServerCert = "ใบรับรองขององค์กร"
-useServerCertDesc = "ใบรับรองที่ใช้ร่วมกันขององค์กร"
-workbenchTitle = "คำขอลงนาม"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "เลือกสีเส้น"
-continue = "ดำเนินการต่อ"
-
-[certSign.collab.signRequest.certModal]
-description = "คุณได้วางลายเซ็น {{count}} รายการ เลือกใบรับรองของคุณเพื่อทำการลงนามให้เสร็จสิ้น"
-sign = "ลงนามเอกสาร"
-certValidating = "กำลังตรวจสอบความถูกต้องของใบรับรอง..."
-certValidUntil = "ใบรับรองใช้ได้จนถึง {{date}}"
-certInvalid = "ใบรับรองไม่ถูกต้อง: {{error}}"
-certInvalidFallback = "ใบรับรองไม่ถูกต้อง"
-certNetworkError = "ไม่สามารถตรวจสอบความถูกต้องของใบรับรองได้"
-title = "กำหนดค่าใบรับรอง"
-
-[certSign.collab.signRequest.image]
-hint = "อัปโหลดรูปภาพ PNG หรือ JPG ของลายเซ็นของคุณ"
-
-[certSign.collab.signRequest.mode]
-move = "ย้ายลายเซ็น"
-place = "วางลายเซ็น"
-title = "โหมดลงนามหรือย้าย"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "วาด"
-image = "อัปโหลด"
-text = "พิมพ์"
-
-[certSign.collab.signRequest.placeSignature]
-message = "คลิกบน PDF เพื่อวางลายเซ็นของคุณ"
-title = "วางลายเซ็น"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "ลายเซ็นที่เลือก"
-missing = "ไม่มีตัวอย่าง"
-textFallback = "ลายเซ็น"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "ลายเซ็นแบบวาด"
-defaultImageLabel = "ลายเซ็นที่อัปโหลด"
-defaultLabel = "ลายเซ็น"
-defaultTextLabel = "ลายเซ็นแบบพิมพ์"
-delete = "ลบลายเซ็น"
-none = "ยังไม่มีลายเซ็นที่บันทึกไว้"
-
-[certSign.collab.signRequest.signatureType]
-draw = "วาด"
-type = "พิมพ์"
-upload = "อัปโหลด"
-
-[certSign.collab.signRequest.steps]
-back = "ย้อนกลับ"
-cancelPlacement = "ยกเลิกการวาง"
-certificate = "ใบรับรอง"
-clickMultipleTimes = "คลิกบน PDF หลายครั้งเพื่อวางลายเซ็น ลากลายเซ็นใดๆ เพื่อย้ายหรือปรับขนาด"
-clickToPlace = "คลิกบน PDF ตำแหน่งที่คุณต้องการให้ลายเซ็นปรากฏ"
-continue = "ดำเนินการต่อไปยังการเลือกใบรับรอง"
-continueToPlacement = "ดำเนินการต่อไปยังการวาง"
-continueToReview = "ดำเนินการต่อไปยังการตรวจทาน"
-createSignature = "สร้างลายเซ็น"
-invisible = "ไม่แสดง"
-location = "สถานที่:"
-multipleSignatures = "จะมีการใช้ลายเซ็น {{count}} รายการกับ PDF"
-oneSignature = "จะมีการใช้ลายเซ็น 1 รายการกับ PDF"
-placeOnPdf = "วางบน PDF"
-reason = "เหตุผล:"
-reviewTitle = "ตรวจทานก่อนลงนาม"
-signaturePlaced = "วางลายเซ็นบนหน้า {{page}} แล้ว คุณสามารถปรับตำแหน่งได้โดยการคลิกอีกครั้ง หรือดำเนินการต่อเพื่อการตรวจทาน"
-visible = "แสดง"
-visibility = "การแสดงผล:"
-yourSignatures = "ลายเซ็นของคุณ ({{count}})"
-
-[certSign.collab.signRequest.text]
-colorLabel = "สี"
-fontLabel = "ฟอนต์"
-fontSizeLabel = "ขนาด"
-fontSizePlaceholder = "16"
-label = "ข้อความลายเซ็น"
-modalHint = "กรอกชื่อของคุณ แล้วคลิก ดำเนินการต่อ เพื่อวางลงบน PDF"
-placeholder = "กรอกชื่อของคุณ..."
-
-[certSign.collab.participant]
-certValidating = "กำลังตรวจสอบความถูกต้องของใบรับรอง..."
-certValid = "✓ ใบรับรองถูกต้อง"
-certValidUntil = " จนถึง {{date}}"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "ใบรับรองไม่ถูกต้อง"
-certNetworkError = "ไม่สามารถตรวจสอบความถูกต้องของใบรับรองได้"
-
-[certSign.collab.addParticipants]
-add = "เพิ่มผู้เข้าร่วม {{count}} คน"
-back = "ย้อนกลับ"
-configureSignatures = "กำหนดค่าการตั้งค่าลายเซ็น"
-continue = "ดำเนินการต่อไปยังการตั้งค่าลายเซ็น"
-reasonHelp = "ตั้งค่าเหตุผลการลงนามล่วงหน้าสำหรับผู้เข้าร่วมเหล่านี้ (ไม่บังคับ พวกเขาสามารถเปลี่ยนได้เมื่อทำการลงนาม)"
-reasonPlaceholder = "เช่น อนุมัติ, ตรวจทาน..."
-selectUsers = "เลือกผู้ใช้"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "รวมหน้าสรุปลายเซ็น"
-includeSummaryPageHelp = "จะมีการเพิ่มหน้าสรุปที่ท้ายเอกสารพร้อมเมทาดาต้าลายเซ็นทั้งหมด กล่องลายเซ็นใบรับรองดิจิทัลบนแต่ละหน้าจะถูกระงับ (ลายเซ็นแบบเปียกไม่ได้รับผลกระทบ)"
-
-[certSign.collab.sessionList]
-active = "ใช้งานอยู่"
-finalized = "สรุปผลแล้ว"
-
-[certSign.collab.signatureSettings]
-description = "กำหนดวิธีการแสดงลายเซ็นสำหรับผู้เข้าร่วมทั้งหมด"
-title = "ลักษณะลายเซ็น"
-
-[certSign.collab.userSelector]
-inviteUsers = "เพิ่มผู้ใช้"
-loadError = "ไม่สามารถโหลดผู้ใช้ได้"
-noTeam = "ไม่มีทีม"
-noUsers = "ไม่พบผู้ใช้อื่น"
-placeholder = "เลือกผู้ใช้..."
-
-[certSign.mobile]
-panelActions = "การดำเนินการ"
-panelDocument = "เอกสาร"
-panelPeople = "บุคคล"
-
-[certSign.sessions]
-deleted = "ลบเซสชันแล้ว"
-fetchFailed = "ไม่สามารถโหลดรายละเอียดเซสชันได้"
-finalized = "สรุปผลเซสชันแล้ว"
-loaded = "โหลด PDF ที่ลงนามแล้ว"
-pdfNotReady = "PDF ยังไม่พร้อม"
-pdfNotReadyDesc = "กำลังสร้าง PDF ที่ลงนาม โปรดลองอีกครั้งในสักครู่"
-
-[certificateChoice.tooltip]
-header = "ประเภทของใบรับรอง"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "จัดการโดยผู้ดูแลระบบของระบบ"
-bullet2 = "ใช้ร่วมกันระหว่างผู้ใช้ที่ได้รับอนุญาต"
-bullet3 = "แสดงตัวตนของบริษัท ไม่ใช่บุคคล"
-bullet4 = "เหมาะสำหรับ: เอกสารทางการ ลายเซ็นของทีม"
-description = "ใบรับรองที่ใช้ร่วมกันซึ่งจัดเตรียมโดยองค์กรของคุณ ใช้สำหรับอำนาจการลงนามในระดับบริษัท"
-title = "ใบรับรองขององค์กร"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "สร้างโดยอัตโนมัติเมื่อใช้ครั้งแรก"
-bullet2 = "ผูกกับบัญชีผู้ใช้ของคุณ"
-bullet3 = "ไม่สามารถใช้ร่วมกับผู้ใช้อื่นได้"
-bullet4 = "เหมาะสำหรับ: เอกสารส่วนบุคคล ความรับผิดชอบรายบุคคล"
-description = "ใบรับรองที่สร้างอัตโนมัติเฉพาะบัญชีผู้ใช้ของคุณ เหมาะสำหรับลายเซ็นส่วนบุคคล"
-title = "ใบรับรองส่วนบุคคล"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "ต้องมีไฟล์ P12/PFX และรหัสผ่าน"
-bullet2 = "สามารถออกโดยหน่วยงานออกใบรับรองภายนอก"
-bullet3 = "ระดับความน่าเชื่อถือสูงสำหรับเอกสารทางกฎหมาย"
-bullet4 = "เหมาะสำหรับ: สัญญาที่มีผลผูกพันตามกฎหมาย การตรวจสอบจากภายนอก"
-description = "ใช้ไฟล์ใบรับรอง PKCS#12 ของคุณเอง ให้การควบคุมคุณสมบัติใบรับรองอย่างเต็มที่"
-title = "อัปโหลด P12 แบบกำหนดเอง"
 
 [changeCreds]
 changePassword = "คุณกำลังใช้ข้อมูลรับรองการเข้าสู่ระบบเริ่มต้น กรุณาใส่รหัสผ่านใหม่"
@@ -2657,6 +2659,9 @@ title = "เปลี่ยนสิทธิ์"
 
 [changePermissions.tooltip.warning]
 text = "เพื่อให้สิทธิ์เหล่านี้ไม่สามารถเปลี่ยนได้ ให้ใช้เครื่องมือเพิ่มรหัสผ่านเพื่อตั้งรหัสผ่านเจ้าของ"
+
+[cloudBadge]
+tooltip = "การดำเนินการนี้จะใช้เครดิตคลาวด์ของคุณ"
 
 [colorPicker]
 title = "เลือกสี"
@@ -2998,9 +3003,11 @@ blackwhite = "ขาวดำ"
 cbrDpi = "DPI สำหรับการเรนเดอร์ภาพ"
 cbrOptions = "ตัวเลือก CBR"
 cbrOutputOptions = "ตัวเลือก PDF เป็น CBR"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "DPI สำหรับการเรนเดอร์ภาพ"
 cbzOptions = "ตัวเลือก CBZ เป็น PDF"
 cbzOutputOptions = "ตัวเลือก PDF เป็น CBZ"
+cbzToPdf = "CBZ → PDF"
 color = "สี"
 colorType = "ชนิดสี"
 combineImages = "รวมรูปภาพ"
@@ -3018,13 +3025,16 @@ desc = "แปลงไฟล์ระหว่างรูปแบบต่า
 downloadConverted = "ดาวน์โหลดไฟล์ที่แปลงแล้ว"
 downloadHtml = "ดาวน์โหลดไฟล์ HTML ขั้นกลางแทน PDF"
 dpi = "DPI"
+ebookToPdf = "eBook → PDF"
 emailOptions = "ตัวเลือก Email เป็น PDF"
+emlToPdf = "อีเมล → PDF"
 errorConversion = "เกิดข้อผิดพลาดระหว่างการแปลงไฟล์"
 errorNoFiles = "โปรดเลือกอย่างน้อยหนึ่งไฟล์เพื่อแปลง"
 errorNoFormat = "โปรดเลือกรูปแบบต้นทางและปลายทาง"
 errorNotSupported = "ไม่รองรับการแปลงจาก {{from}} เป็น {{to}}"
 fileFormat = "รูปแบบไฟล์"
 files = "ไฟล์"
+fileToPdf = "Office/Document → PDF"
 fillPage = "เติมหน้า"
 fitDocumentToPage = "ปรับเอกสารให้พอดีกับหน้า"
 fitOption = "ตัวเลือกการปรับพอดี"
@@ -3052,6 +3062,9 @@ pdfaFormat = "รูปแบบ PDF/A"
 pdfaNote = "PDF/A-1b เข้ากันได้มากกว่า ส่วน PDF/A-2b รองรับฟีเจอร์มากกว่า"
 pdfaOptions = "ตัวเลือก PDF/A"
 pdfOptions = "ตัวเลือก PDF"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X เป็นชุดย่อยของ PDF ตามมาตรฐาน ISO สำหรับการพิมพ์และแลกเปลี่ยนกราฟิกที่เชื่อถือได้"
 pdfxDigitalSignatureWarning = "ไฟล์ PDF มีลายเซ็นดิจิทัล ซึ่งจะถูกลบในขั้นตอนถัดไป"
 pptExt = "PowerPoint (.pptx)"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "รูปแบบต้นทาง"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "รูปแบบปลายทาง"
 textRtf = "ข้อความ/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "ตัวเลือก Web เป็น PDF"
 wordDoc = "เอกสาร Word"
 wordDocExt = "เอกสาร Word (.docx)"
 zoomLevel = "ระดับการซูม"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "eBook → PDF"
-emlToPdf = "อีเมล → PDF"
-fileToPdf = "Office/Document → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "ตัวเลือก eBook เป็น PDF"
@@ -3147,6 +3152,77 @@ description = "These cookies are essential for the website to function properly.
 [cookieBanner.services]
 posthog = "PostHog Analytics"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "เปิดใช้งานการคิดค่าบริการส่วนเกิน"
+maybeLater = "ไว้ทีหลัง"
+upgrade = "อัปเกรด"
+
+[credits.insufficient]
+brief = "เครดิตไม่เพียงพอ คุณต้องใช้ {{required}} เครดิต แต่มีเพียง {{current}}"
+freeTier = "อัปเกรดเป็น Team เพื่อรับเครดิตมากขึ้น 10 เท่าและการคิดค่าบริการส่วนเกินแบบไม่จำกัด"
+managedMember = "โปรดติดต่อหัวหน้าทีมของคุณเพื่อขอความช่วยเหลือ"
+message = "คุณมีเครดิตไม่เพียงพอที่จะรัน {{tool}} ขณะนี้คุณมี {{current}} เครดิต"
+messageWithAmount = "คุณต้องใช้ {{required}} เครดิตเพื่อรัน {{tool}} แต่คุณมีเพียง {{current}}"
+teamMember = "เปิดใช้งานการคิดค่าบริการส่วนเกินเพื่อไม่ให้เครดิตหมด"
+title = "เครดิตไม่เพียงพอ"
+
+[credits.modal]
+advancedMonitoring = "การมอนิเตอร์ขั้นสูง"
+allInOneWorkspace = "พื้นที่ทำงาน PDF แบบครบวงจร (ตัวดูไฟล์ เครื่องมือ และเอเจนต์)"
+apiSandbox = "API sandbox"
+contactSales = "ติดต่อฝ่ายขาย"
+creditsRemaining = "เหลือ {{current}} จาก {{total}}"
+creditsThisMonth = "เครดิตรายเดือน"
+current = "แผนปัจจุบัน"
+customPricing = "กำหนดเอง"
+customSmartFolders = "โฟลเดอร์อัจฉริยะกำหนดเอง"
+dedicatedSupportSlas = "การสนับสนุนเฉพาะทางและ SLA"
+enterpriseSubscription = "Enterprise"
+everythingInCredits = "ทุกอย่างใน Credits และเพิ่มเติม:"
+everythingInFree = "ทุกอย่างใน Free และเพิ่มเติม:"
+fasterThroughput = "อัตราการประมวลผลเร็วขึ้น 10 เท่า"
+forRegularWork = "สำหรับงาน PDF ทั่วไป:"
+freeTier = "ฟรี"
+fullyPrivateFiles = "ไฟล์เป็นส่วนตัวอย่างเต็มรูปแบบ"
+largeFileProcessing = "ประมวลผลไฟล์ขนาดใหญ่"
+managedMemberMessage = "คุณมีสิทธิ์เข้าถึงเครดิตไม่จำกัดผ่านทีมของคุณ หากต้องการความช่วยเหลือ โปรดติดต่อหัวหน้าทีมของคุณ"
+managedMemberTitle = "เครดิตไม่จำกัด"
+meteringBillingNote = "เครดิตส่วนเกินจะถูกเรียกเก็บทุกเดือนพร้อมกับการสมัครสมาชิก Team ของคุณ ติดตามการใช้งานได้ตลอดเวลาในการตั้งค่าบัญชีของคุณ"
+meteringExplanation = "แผน Team ของคุณรวม {{credits}} เครดิตต่อเดือน เมื่อใช้หมด ระบบคิดค่าบริการส่วนเกินจะเพิ่มเครดิตให้อัตโนมัติเพื่อไม่ให้การทำงานของคุณสะดุด"
+meteringIncluded = "รวม {{credits}} เครดิต/เดือน กับ Team"
+meteringNeverRunOut = "ไม่ให้เครดิตหมด"
+meteringNoCommitment = "ไม่มีข้อผูกมัด ยกเลิกได้ทุกเมื่อ"
+meteringPayAsYouGo = "จ่ายตามที่ใช้จริง"
+meteringPrice = "เครดิตเพิ่มเติมที่ {{price}}/เครดิต"
+meteringTitle = "การคิดค่าบริการส่วนเกินแบบจ่ายตามการใช้งาน"
+monthlyCredits = "เครดิตรายเดือน"
+orgWideAccess = "การควบคุมการเข้าถึงทั่วทั้งองค์กร"
+overage = "ส่วนเกิน"
+perMonth = "/เดือน"
+popular = "ยอดนิยม"
+premiumAiModels = "โมเดล AI ระดับพรีเมียม"
+prioritySupport = "การสนับสนุนแบบเร่งด่วน"
+privateDocCloud = "Private Document Cloud"
+ragFineTuning = "RAG + fine-tuning"
+secureApiAccess = "การเข้าถึง API อย่างปลอดภัย"
+selfHostLink = "ดูเอกสารและแผน"
+selfHostPrompt = "ต้องการโฮสต์เองไหม?"
+standardThroughput = "อัตราการประมวลผลมาตรฐาน"
+subtitle = "อัปเกรดเป็น Team เพื่อรับเครดิตเพิ่ม 10 เท่าและประมวลผลได้เร็วขึ้น"
+subtitlePro = "เปิดใช้งานการคิดค่าบริการส่วนเกินเพื่อไม่ให้เครดิตหมด"
+teamLeaderOnly = "เฉพาะหัวหน้าทีมเท่านั้นที่สามารถเปิดใช้งานการคิดค่าบริการส่วนเกิน"
+teamSubscription = "Team"
+titleExhausted = "คุณใช้เครดิตฟรีหมดแล้ว"
+titleExhaustedPro = "เครดิตของคุณหมดแล้ว"
+unlimitedApiAccess = "การเข้าถึง API แบบไม่จำกัด"
+unlimitedMonthlyCredits = "สิทธิ์การใช้งานทั้งไซต์"
+unlimitedSeats = "ผู้ใช้ไม่จำกัด"
+
+[credits.modal.features]
+everythingInCredits = "ทุกอย่างใน Credits และเพิ่มเติม:"
+everythingInFree = "ทุกอย่างใน Free และเพิ่มเติม:"
+forRegularWork = "สำหรับงาน PDF ทั่วไป:"
 
 [crop]
 autoCrop = "ครอบตัดช่องว่างอัตโนมัติ"
@@ -3352,6 +3428,9 @@ successBodyWithName = "ลบรหัสผ่านจาก {{fileName}} แ�
 successTitle = "ลบรหัสผ่านแล้ว"
 title = "เอารหัสผ่านออกเพื่อดำเนินการต่อ"
 unlock = "ปลดล็อกและดำเนินการต่อ"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "ปลดล็อก PDF เพื่อดำเนินการต่อ"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "เพิ่มไฟล์"
 [fileManager]
 active = "ใช้งานอยู่"
 addToUpload = "เพิ่มไปยังอัปโหลด"
+changesNotUploaded = "ยังไม่ได้อัปโหลดการเปลี่ยนแปลง"
 clearAll = "ล้างทั้งหมด"
 clearSelection = "ล้างการเลือก"
 clickToUpload = "คลิกเพื่ออัปโหลดไฟล์"
 closeFile = "ปิดไฟล์"
+cloudFile = "ไฟล์คลาวด์"
+copyCreated = "บันทึกสำเนาลงในอุปกรณ์นี้แล้ว"
+copyFailed = "ไม่สามารถสร้างสำเนาได้"
 delete = "ลบ"
 deleteAll = "ลบทั้งหมด"
 deleteSelected = "ลบที่เลือก"
@@ -3486,14 +3569,24 @@ fileSize = "ขนาด"
 filesSelected = "ไฟล์ที่เลือก"
 filesStored = "ไฟล์ที่จัดเก็บ"
 fileVersion = "เวอร์ชัน"
+filterAll = "ทั้งหมด"
+filterLocal = "ภายในเครื่อง"
+filterSharedByMe = "ฉันเป็นผู้แชร์"
+filterSharedWithMe = "แชร์กับฉัน"
 googleDrive = "Google Drive"
 googleDriveNotAvailable = "ไม่สามารถใช้งานการเชื่อมต่อกับ Google Drive"
 googleDriveShort = "Drive"
 hideHistory = "ซ่อนประวัติ"
 lastModified = "แก้ไขล่าสุด"
+lastSynced = "ซิงค์ล่าสุด"
+leaveShare = "นำออกจากรายการของฉัน"
+leaveShareFailed = "ไม่สามารถนำไฟล์ที่แชร์ออกได้"
+leaveShareSuccess = "นำออกจากรายการที่แชร์ของคุณแล้ว"
 loadingFiles = "กำลังโหลดไฟล์..."
 loadingHistory = "กำลังโหลดประวัติ..."
 localFiles = "ไฟล์ในเครื่อง"
+localOnly = "เฉพาะภายในเครื่อง"
+makeCopy = "สร้างสำเนา"
 mobileShort = "มือถือ"
 mobileUpload = "อัปโหลดจากมือถือ"
 mobileUploadNotAvailable = "ไม่ได้เปิดใช้งานการอัปโหลดจากมือถือ"
@@ -3506,36 +3599,10 @@ openFile = "เปิดไฟล์"
 openFiles = "เปิดไฟล์"
 openInFileEditor = "เปิดในตัวแก้ไขไฟล์"
 openInPageEditor = "เปิดในตัวแก้ไขหน้า"
+owner = "เจ้าของ"
+ownerUnknown = "ไม่ทราบ"
 recent = "ล่าสุด"
 reloadFiles = "โหลดไฟล์ใหม่"
-restore = "กู้คืน"
-saveSelected = "บันทึกที่เลือก"
-searchFiles = "ค้นหาไฟล์..."
-selectAll = "เลือกทั้งหมด"
-selectedCount = "เลือกแล้ว {{count}} รายการ"
-selectedFiles = "ไฟล์ที่เลือก"
-showAll = "แสดงทั้งหมด"
-showHistory = "แสดงประวัติ"
-sortByDate = "เรียงตามวันที่"
-sortByName = "เรียงตามชื่อ"
-sortBySize = "เรียงตามขนาด"
-storage = "ที่เก็บ"
-storageCleared = "เบราว์เซอร์ได้ล้างที่เก็บ ไฟล์ถูกลบแล้ว โปรดอัปโหลดใหม่"
-storageError = "เกิดข้อผิดพลาดของที่เก็บ"
-storageLow = "พื้นที่เก็บข้อมูลใกล้เต็ม โปรดพิจารณาลบไฟล์เก่า"
-subtitle = "เพิ่มไฟล์ไปยังที่เก็บของคุณเพื่อเข้าถึงได้ง่ายข้ามเครื่องมือ"
-supportMessage = "ขับเคลื่อนด้วยพื้นที่จัดเก็บฐานข้อมูลของเบราว์เซอร์เพื่อความจุที่ไม่จำกัด"
-title = "อัปโหลดไฟล์ PDF"
-toolChain = "เครื่องมือที่ใช้"
-totalSelected = "จำนวนที่เลือกทั้งหมด"
-unsupported = "ไม่รองรับ"
-unzip = "แตกไฟล์"
-uploadError = "อัปโหลดไฟล์บางไฟล์ไม่สำเร็จ"
-copyCreated = "บันทึกสำเนาลงในอุปกรณ์นี้แล้ว"
-copyFailed = "ไม่สามารถสร้างสำเนาได้"
-leaveShare = "นำออกจากรายการของฉัน"
-leaveShareFailed = "ไม่สามารถนำไฟล์ที่แชร์ออกได้"
-leaveShareSuccess = "นำออกจากรายการที่แชร์ของคุณแล้ว"
 removeBoth = "นำออกจากทั้งสองที่"
 removeFilePrompt = "ไฟล์นี้ถูกบันทึกไว้ในอุปกรณ์นี้และบนเซิร์ฟเวอร์ของคุณ คุณต้องการนำออกจากที่ใด?"
 removeFileTitle = "นำไฟล์ออก"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "นำออกจากเซิร์ฟเวอร์
 removeSharedPrompt = "ไฟล์นี้ถูกแชร์กับคุณ คุณสามารถนำออกจากอุปกรณ์นี้หรือจากรายการที่แชร์ของคุณ"
 removeSharedServerOnlyBlockedPrompt = "ไฟล์นี้ถูกแชร์กับคุณและจัดเก็บไว้เฉพาะบนเซิร์ฟเวอร์"
 removeSharedServerOnlyPrompt = "ไฟล์นี้ถูกแชร์กับคุณและจัดเก็บไว้เฉพาะบนเซิร์ฟเวอร์ นำออกจากรายการของคุณหรือไม่?"
-changesNotUploaded = "ยังไม่ได้อัปโหลดการเปลี่ยนแปลง"
-cloudFile = "ไฟล์คลาวด์"
-filterAll = "ทั้งหมด"
-filterLocal = "ภายในเครื่อง"
-filterSharedByMe = "ฉันเป็นผู้แชร์"
-filterSharedWithMe = "แชร์กับฉัน"
-lastSynced = "ซิงค์ล่าสุด"
-localOnly = "เฉพาะภายในเครื่อง"
-makeCopy = "สร้างสำเนา"
-owner = "เจ้าของ"
-ownerUnknown = "ไม่ทราบ"
+restore = "กู้คืน"
+saveSelected = "บันทึกที่เลือก"
+searchFiles = "ค้นหาไฟล์..."
+selectAll = "เลือกทั้งหมด"
+selectedCount = "เลือกแล้ว {{count}} รายการ"
+selectedFiles = "ไฟล์ที่เลือก"
 share = "แชร์"
-shareSelected = "แชร์ที่เลือก"
 sharedByYou = "คุณเป็นผู้แชร์"
 sharedEditNoticeBody = "คุณไม่มีสิทธิ์แก้ไขเวอร์ชันบนเซิร์ฟเวอร์ของไฟล์นี้ การแก้ไขใดๆ ที่คุณทำจะถูกบันทึกเป็นสำเนาภายในเครื่อง"
 sharedEditNoticeConfirm = "รับทราบ"
 sharedEditNoticeTitle = "สำเนาบนเซิร์ฟเวอร์แบบอ่านอย่างเดียว"
 sharedWithYou = "แชร์กับคุณ"
+shareSelected = "แชร์ที่เลือก"
 sharing = "การแชร์"
+showAll = "แสดงทั้งหมด"
+showHistory = "แสดงประวัติ"
+sortByDate = "เรียงตามวันที่"
+sortByName = "เรียงตามชื่อ"
+sortBySize = "เรียงตามขนาด"
+storage = "ที่เก็บ"
+storageCleared = "เบราว์เซอร์ได้ล้างที่เก็บ ไฟล์ถูกลบแล้ว โปรดอัปโหลดใหม่"
+storageError = "เกิดข้อผิดพลาดของที่เก็บ"
+storageLow = "พื้นที่เก็บข้อมูลใกล้เต็ม โปรดพิจารณาลบไฟล์เก่า"
 storageState = "ที่เก็บข้อมูล"
+subtitle = "เพิ่มไฟล์ไปยังที่เก็บของคุณเพื่อเข้าถึงได้ง่ายข้ามเครื่องมือ"
+supportMessage = "ขับเคลื่อนด้วยพื้นที่จัดเก็บฐานข้อมูลของเบราว์เซอร์เพื่อความจุที่ไม่จำกัด"
 synced = "ซิงค์แล้ว"
+title = "อัปโหลดไฟล์ PDF"
+toolChain = "เครื่องมือที่ใช้"
+totalSelected = "จำนวนที่เลือกทั้งหมด"
+unsupported = "ไม่รองรับ"
+unzip = "แตกไฟล์"
 updateOnServer = "อัปเดตบนเซิร์ฟเวอร์"
+uploadError = "อัปโหลดไฟล์บางไฟล์ไม่สำเร็จ"
 uploadSelected = "อัปโหลดที่เลือก"
 uploadToServer = "อัปโหลดไปยังเซิร์ฟเวอร์"
 
@@ -3696,77 +3775,6 @@ title = "เกี่ยวกับการทำให้ PDF แบน"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "เกี่ยวกับการลงนามแบบกลุ่ม"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "จะใช้ลายเซ็นทั้งหมดตามลำดับผู้เข้าร่วมที่คุณกำหนด"
-bullet2 = "คุณสามารถสรุปผลด้วยลายเซ็นบางส่วนได้หากจำเป็น"
-bullet3 = "เมื่อสรุปผลแล้วจะไม่สามารถแก้ไขเซสชันได้"
-description = "เมื่อผู้เข้าร่วมทั้งหมดลงนามแล้ว (หรือคุณเลือกสรุปผลล่วงหน้า) คุณสามารถสร้าง PDF ฉบับลงนามสุดท้ายได้"
-title = "กระบวนการสรุปผล"
-
-[groupSigning.tooltip.roles]
-bullet1 = "เจ้าของ (คุณ): สร้างเซสชัน กำหนดค่าเริ่มต้นของลายเซ็น สรุปผลเอกสาร"
-bullet2 = "ผู้เข้าร่วม: สร้างลายเซ็น เลือกใบรับรอง วางบน PDF"
-bullet3 = "ผู้เข้าร่วมไม่สามารถแก้ไขการตั้งค่าการแสดงผล เหตุผล หรือสถานที่ของลายเซ็นได้"
-description = "คุณควบคุมการตั้งค่าลักษณะลายเซ็นสำหรับผู้เข้าร่วมทั้งหมด"
-title = "บทบาทของผู้เข้าร่วม"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "ผู้เข้าร่วมคนแรกต้องลงนามก่อน คนที่สองจึงจะเข้าถึงเอกสารได้"
-bullet2 = "รับรองลำดับการลงนามที่ถูกต้องตามข้อกำหนดทางกฎหมาย"
-bullet3 = "คุณสามารถจัดเรียงลำดับผู้เข้าร่วมใหม่ได้โดยการลากในรายการ"
-description = "ผู้เข้าร่วมจะลงนามเอกสารตามลำดับที่คุณกำหนด ผู้ลงนามแต่ละคนจะได้รับการแจ้งเตือนเมื่อถึงคิว"
-title = "การลงนามตามลำดับ"
-
-[groupSigning.steps]
-back = "ย้อนกลับ"
-completed = "เสร็จสมบูรณ์"
-current = "ปัจจุบัน"
-stepLabel = "ขั้นตอนที่ {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "ดำเนินการต่อไปยังการตรวจทาน"
-invisible = "ลายเซ็นจะไม่แสดง (เฉพาะเมทาดาต้า)"
-locationLabel = "สถานที่:"
-preview = "แสดงตัวอย่าง"
-reasonLabel = "เหตุผล:"
-title = "กำหนดค่าการตั้งค่าลายเซ็น"
-visible = "ลายเซ็นจะแสดงบนหน้า {{page}}"
-
-[groupSigning.steps.review]
-document = "เอกสาร"
-dueDate = "วันครบกำหนด (ไม่บังคับ)"
-dueDatePlaceholder = "เลือกวันครบกำหนด..."
-invisible = "ไม่แสดง (เฉพาะเมทาดาต้า)"
-location = "สถานที่:"
-logo = "โลโก้:"
-logoHidden = "ไม่มีโลโก้"
-logoShown = "แสดงโลโก้ Stirling PDF"
-participants = "ผู้เข้าร่วม"
-reason = "เหตุผล:"
-send = "ส่งคำขอลงนาม"
-signatureSettings = "การตั้งค่าลายเซ็น"
-title = "ตรวจทานรายละเอียดเซสชัน"
-titleShort = "ตรวจทานและส่ง"
-visibility = "การแสดงผล:"
-visible = "แสดงบนหน้า {{page}}"
-participantCount = "ผู้เข้าร่วม {{count}} คนจะลงนามตามลำดับ"
-
-[groupSigning.steps.selectDocument]
-continue = "ดำเนินการต่อไปยังการเลือกผู้เข้าร่วม"
-noFile = "โปรดเลือกไฟล์ PDF เดียวจากไฟล์ที่ใช้งานอยู่เพื่อสร้างเซสชันการลงนาม"
-selectedFile = "เอกสารที่เลือก"
-title = "เลือกเอกสาร"
-
-[groupSigning.steps.selectParticipants]
-continue = "ดำเนินการต่อไปยังการตั้งค่าลายเซ็น"
-count = "เลือกผู้เข้าร่วมแล้ว {{count}} คน"
-label = "เลือกผู้เข้าร่วม"
-placeholder = "เลือกผู้เข้าร่วมเพื่อลงนาม..."
-title = "เลือกผู้เข้าร่วม"
-
 [getPdfInfo]
 downloadJson = "ดาวน์โหลด JSON"
 downloads = "ดาวน์โหลด"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "เลเยอร์"
 multimedia = "มัลติมีเดีย"
 
+[groupSigning.steps]
+back = "ย้อนกลับ"
+completed = "เสร็จสมบูรณ์"
+current = "ปัจจุบัน"
+stepLabel = "ขั้นตอนที่ {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "ดำเนินการต่อไปยังการตรวจทาน"
+invisible = "ลายเซ็นจะไม่แสดง (เฉพาะเมทาดาต้า)"
+locationLabel = "สถานที่:"
+preview = "แสดงตัวอย่าง"
+reasonLabel = "เหตุผล:"
+title = "กำหนดค่าการตั้งค่าลายเซ็น"
+visible = "ลายเซ็นจะแสดงบนหน้า {{page}}"
+
+[groupSigning.steps.review]
+document = "เอกสาร"
+dueDate = "วันครบกำหนด (ไม่บังคับ)"
+dueDatePlaceholder = "เลือกวันครบกำหนด..."
+invisible = "ไม่แสดง (เฉพาะเมทาดาต้า)"
+location = "สถานที่:"
+logo = "โลโก้:"
+logoHidden = "ไม่มีโลโก้"
+logoShown = "แสดงโลโก้ Stirling PDF"
+participantCount = "ผู้เข้าร่วม {{count}} คนจะลงนามตามลำดับ"
+participants = "ผู้เข้าร่วม"
+reason = "เหตุผล:"
+send = "ส่งคำขอลงนาม"
+signatureSettings = "การตั้งค่าลายเซ็น"
+title = "ตรวจทานรายละเอียดเซสชัน"
+titleShort = "ตรวจทานและส่ง"
+visibility = "การแสดงผล:"
+visible = "แสดงบนหน้า {{page}}"
+
+[groupSigning.steps.selectDocument]
+continue = "ดำเนินการต่อไปยังการเลือกผู้เข้าร่วม"
+noFile = "โปรดเลือกไฟล์ PDF เดียวจากไฟล์ที่ใช้งานอยู่เพื่อสร้างเซสชันการลงนาม"
+selectedFile = "เอกสารที่เลือก"
+title = "เลือกเอกสาร"
+
+[groupSigning.steps.selectParticipants]
+continue = "ดำเนินการต่อไปยังการตั้งค่าลายเซ็น"
+count = "เลือกผู้เข้าร่วมแล้ว {{count}} คน"
+label = "เลือกผู้เข้าร่วม"
+placeholder = "เลือกผู้เข้าร่วมเพื่อลงนาม..."
+title = "เลือกผู้เข้าร่วม"
+
+[groupSigning.tooltip]
+header = "เกี่ยวกับการลงนามแบบกลุ่ม"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "จะใช้ลายเซ็นทั้งหมดตามลำดับผู้เข้าร่วมที่คุณกำหนด"
+bullet2 = "คุณสามารถสรุปผลด้วยลายเซ็นบางส่วนได้หากจำเป็น"
+bullet3 = "เมื่อสรุปผลแล้วจะไม่สามารถแก้ไขเซสชันได้"
+description = "เมื่อผู้เข้าร่วมทั้งหมดลงนามแล้ว (หรือคุณเลือกสรุปผลล่วงหน้า) คุณสามารถสร้าง PDF ฉบับลงนามสุดท้ายได้"
+title = "กระบวนการสรุปผล"
+
+[groupSigning.tooltip.roles]
+bullet1 = "เจ้าของ (คุณ): สร้างเซสชัน กำหนดค่าเริ่มต้นของลายเซ็น สรุปผลเอกสาร"
+bullet2 = "ผู้เข้าร่วม: สร้างลายเซ็น เลือกใบรับรอง วางบน PDF"
+bullet3 = "ผู้เข้าร่วมไม่สามารถแก้ไขการตั้งค่าการแสดงผล เหตุผล หรือสถานที่ของลายเซ็นได้"
+description = "คุณควบคุมการตั้งค่าลักษณะลายเซ็นสำหรับผู้เข้าร่วมทั้งหมด"
+title = "บทบาทของผู้เข้าร่วม"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "ผู้เข้าร่วมคนแรกต้องลงนามก่อน คนที่สองจึงจะเข้าถึงเอกสารได้"
+bullet2 = "รับรองลำดับการลงนามที่ถูกต้องตามข้อกำหนดทางกฎหมาย"
+bullet3 = "คุณสามารถจัดเรียงลำดับผู้เข้าร่วมใหม่ได้โดยการลากในรายการ"
+description = "ผู้เข้าร่วมจะลงนามเอกสารตามลำดับที่คุณกำหนด ผู้ลงนามแต่ละคนจะได้รับการแจ้งเตือนเมื่อถึงคิว"
+title = "การลงนามตามลำดับ"
+
 [guestBanner]
 dismiss = "ปิดแบนเนอร์"
 message = "สร้างบัญชีฟรีเพื่อบันทึกงานของคุณ เข้าถึงฟีเจอร์เพิ่มเติม และสนับสนุนโครงการ"
@@ -3935,10 +4014,6 @@ title = "ใส่คำอธิบายประกอบ"
 desc = "สร้างเวิร์กโฟลว์หลายขั้นตอนโดยเชื่อมโยงการกระทำ PDF เข้าด้วยกัน เหมาะสำหรับงานที่เกิดซ้ำ"
 tags = "เวิร์กโฟลว์,ลำดับ,ระบบอัตโนมัติ"
 title = "ทำให้อัตโนมัติ"
-
-[home.formFill]
-desc = "กรอกช่องแบบฟอร์ม PDF แบบโต้ตอบด้วยเครื่องมือแก้ไขแบบภาพ"
-title = "กรอกแบบฟอร์ม"
 
 [home.autoRename]
 desc = "เปลี่ยนชื่อไฟล์ PDF อัตโนมัติตามส่วนหัวที่ตรวจพบ"
@@ -4034,6 +4109,10 @@ title = "แยกหน้า"
 desc = "ลบองค์ประกอบแบบอินเตอร์แอคทีฟและฟอร์มทั้งหมดจาก PDF"
 tags = "ทำให้เรียบ,ลบ,โต้ตอบ"
 title = "แบน"
+
+[home.formFill]
+desc = "กรอกช่องแบบฟอร์ม PDF แบบโต้ตอบด้วยเครื่องมือแก้ไขแบบภาพ"
+title = "กรอกแบบฟอร์ม"
 
 [home.getPdfInfo]
 desc = "รับข้อมูลที่เป็นไปได้ทั้งหมดเกี่ยวกับ PDF"
@@ -4185,11 +4264,6 @@ desc = "เพิ่มลายเซ็นลงใน PDF ด้วยกา�
 tags = "ลายเซ็น,ลงนาม"
 title = "เซ็นชื่อ"
 
-[home.timestampPdf]
-desc = "เพิ่มการประทับเวลาเอกสารตาม RFC 3161 เพื่อพิสูจน์ว่า PDF ของคุณมีอยู่เมื่อใด"
-tags = "การประทับเวลา,RFC 3161,TSA,หน่วยงานประทับเวลา,การประทับเวลาเอกสาร,หลักฐานการมีอยู่,โทเค็นการประทับเวลา,การประทับเวลาที่เชื่อถือได้,ลงนามการประทับเวลา,รับรอง"
-title = "ประทับเวลา PDF"
-
 [home.split]
 desc = "แยก PDF เป็นหลายเอกสาร"
 tags = "แบ่ง,แยก,แตก"
@@ -4209,6 +4283,11 @@ title = "แยก PDF ตามส่วน"
 desc = "ดูเอกสาร API และทดสอบเอ็นด์พอยต์"
 tags = "API,documentation,test"
 title = "เอกสาร API"
+
+[home.timestampPdf]
+desc = "เพิ่มการประทับเวลาเอกสารตาม RFC 3161 เพื่อพิสูจน์ว่า PDF ของคุณมีอยู่เมื่อใด"
+tags = "การประทับเวลา,RFC 3161,TSA,หน่วยงานประทับเวลา,การประทับเวลาเอกสาร,หลักฐานการมีอยู่,โทเค็นการประทับเวลา,การประทับเวลาที่เชื่อถือได้,ลงนามการประทับเวลา,รับรอง"
+title = "ประทับเวลา PDF"
 
 [home.unlockPDFForms]
 desc = "ลบคุณสมบัติอ่านอย่างเดียวของช่องฟอร์มในเอกสาร PDF"
@@ -4298,6 +4377,8 @@ welcomeTitle = "คุณได้รับคำเชิญ!"
 
 [landing]
 addFiles = "เพิ่มไฟล์"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "อัปโหลดจากมือถือ"
 openFromComputer = "เปิดจากคอมพิวเตอร์"
 uploadFromComputer = "อัปโหลดจากคอมพิวเตอร์"
@@ -4321,6 +4402,18 @@ module = "โมดูล"
 nav = "ใบอนุญาต"
 title = "ใบอนุญาตบุคคลที่สาม"
 version = "เวอร์ชัน"
+
+[localMode]
+toolUnavailable = "เครื่องมือนี้ต้องมีบัญชี ลงชื่อเข้าใช้ Stirling Cloud หรือเชื่อมต่อกับเซิร์ฟเวอร์ที่โฮสต์เองเพื่อใช้งาน"
+
+[localMode.banner]
+message = "ลงชื่อเข้าใช้เพื่อปลดล็อกเครื่องมือทั้งหมด"
+signIn = "ลงชื่อเข้าใช้"
+title = "ทำงานภายในเครื่อง"
+
+[localMode.toolPicker]
+message = "ลงชื่อเข้าใช้เพื่อปลดล็อกเครื่องมือทั้งหมด"
+signIn = "ลงชื่อเข้าใช้"
 
 [login]
 accountCreatedSuccess = "สร้างบัญชีสำเร็จ! ตอนนี้คุณสามารถลงชื่อเข้าใช้ได้"
@@ -4382,12 +4475,12 @@ sendResetLink = "ส่งลิงก์รีเซ็ต"
 sessionExpired = "เซสชันของคุณหมดอายุ โปรดลงชื่อเข้าใช้อีกครั้ง"
 signin = "ลงชื่อเข้าใช้"
 signInAnonymously = "เข้าสู่ระบบในฐานะแขก"
-subtitle = "ลงชื่อเข้าใช้ Stirling PDF อีกครั้ง"
 signingIn = "กำลังลงชื่อเข้าใช้..."
 signinTitle = "กรุณาลงชื่อเข้าใช้"
 signInWith = "ลงชื่อเข้าใช้ด้วย"
 signOut = "ออกจากระบบ"
 ssoSignIn = "เข้าสู่ระบบด้วย Single Sign-on"
+subtitle = "ลงชื่อเข้าใช้ Stirling PDF อีกครั้ง"
 title = "ลงชื่อเข้าใช้"
 toManySessions = "คุณมีการเข้าสู่ระบบพร้อมกันเกินกว่ากำหนด"
 unexpectedError = "ข้อผิดพลาดที่ไม่คาดคิด: {{message}}"
@@ -4430,9 +4523,11 @@ tags = "มาร์กอัป, เนื้อหาเว็บ, การ�
 title = "Markdown เป็น PDF"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "รวม"
 tags = "รวม, การดำเนินการหน้า, ฝั่งเซิร์ฟเวอร์"
 title = "รวม"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "เกิดข้อผิดพลาดระหว่างการผสาน PDF"
@@ -4701,15 +4796,6 @@ viewSwitcher = "ใช้ตัวควบคุมเหล่านี้เ�
 workbench = "นี่คือ <strong>Workbench</strong> - พื้นที่หลักที่คุณใช้ดูและแก้ไข PDF ของคุณ"
 wrapUp = "เสร็จเรียบร้อย! คุณได้เรียนรู้พื้นที่หลักของแอปและวิธีใช้งานแล้ว คลิกปุ่ม <strong>ช่วยเหลือ</strong> เมื่อใดก็ได้เพื่อดูทัวร์นี้อีกครั้ง"
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "หลังสิ้นสุดช่วงทดลอง คุณจะใช้งานต่อในระดับฟรี เพิ่มวิธีชำระเงินเพื่อคงสิทธิ์การเข้าถึง Pro"
-afterTrialWithPayment = "การสมัครสมาชิก Pro ของคุณจะเริ่มโดยอัตโนมัติเมื่อสิ้นสุดช่วงทดลอง"
-body = "คุณสามารถเข้าถึงคุณสมบัติ Stirling PDF Pro ได้เต็มรูปแบบระหว่างช่วงทดลอง เพลิดเพลินกับการแปลงแบบไม่จำกัด รองรับขนาดไฟล์ที่ใหญ่ขึ้น และการประมวลผลแบบมีลำดับความสำคัญ"
-daysRemaining = "เหลือ {{days}} วัน"
-daysRemainingSingular = "เหลือ {{days}} วัน"
-title = "ทดลองใช้ฟรี Pro 30 วันของคุณ"
-trialEnds = "ช่วงทดลองสิ้นสุด {{date}}"
-
 [onboarding.buttons]
 back = "ย้อนกลับ"
 download = "ดาวน์โหลด →"
@@ -4722,6 +4808,15 @@ skipTheTour = "ข้ามทัวร์"
 body = "Stirling ใช้งานได้ดีที่สุดแบบแอปเดสก์ท็อป คุณสามารถใช้งานออฟไลน์ เข้าถึงเอกสารได้เร็วขึ้น และแก้ไขบนคอมพิวเตอร์ของคุณโดยตรง"
 title = "ดาวน์โหลด"
 titleWithOs = "ดาวน์โหลดสำหรับ {{osLabel}}"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "หลังสิ้นสุดช่วงทดลอง คุณจะใช้งานต่อในระดับฟรี เพิ่มวิธีชำระเงินเพื่อคงสิทธิ์การเข้าถึง Pro"
+afterTrialWithPayment = "การสมัครสมาชิก Pro ของคุณจะเริ่มโดยอัตโนมัติเมื่อสิ้นสุดช่วงทดลอง"
+body = "คุณสามารถเข้าถึงคุณสมบัติ Stirling PDF Pro ได้เต็มรูปแบบระหว่างช่วงทดลอง เพลิดเพลินกับการแปลงแบบไม่จำกัด รองรับขนาดไฟล์ที่ใหญ่ขึ้น และการประมวลผลแบบมีลำดับความสำคัญ"
+daysRemaining = "เหลือ {{days}} วัน"
+daysRemainingSingular = "เหลือ {{days}} วัน"
+title = "ทดลองใช้ฟรี Pro 30 วันของคุณ"
+trialEnds = "ช่วงทดลองสิ้นสุด {{date}}"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "เมื่อเปิดใช้โหมดล็อกอิน คุณจะสามารถจัดการผู้ใช้ กำหนดค่าต่างๆ และติดตามสุขภาพเซิร์ฟเวอร์ ผู้ใช้ <strong>{{freeTierLimit}}</strong> คนแรกบนเซิร์ฟเวอร์ของคุณใช้งาน Stirling ได้ฟรี"
@@ -4858,126 +4953,6 @@ title = "ตัวแก้ไขหน้า"
 zoomIn = "ซูมเข้า"
 zoomOut = "ซูมออก"
 
-[viewer]
-cannotPreviewFile = "ไม่สามารถแสดงตัวอย่างไฟล์ได้"
-disableColorFilter = "ปิดใช้งานตัวกรองสี"
-dualPageView = "มุมมองสองหน้า"
-enableDarkFilter = "เปิดใช้งานตัวกรองโทนมืด"
-enableSepiaFilter = "เปิดใช้งานตัวกรองเซเปีย"
-firstPage = "หน้าแรก"
-lastPage = "หน้าสุดท้าย"
-nextPage = "หน้าถัดไป"
-onlyPdfSupported = "ตัวแสดงผลรองรับเฉพาะไฟล์ PDF ไฟล์นี้ดูเหมือนจะเป็นรูปแบบอื่น"
-previousPage = "หน้าก่อนหน้า"
-singlePageView = "มุมมองหน้าเดียว"
-unknownFile = "ไฟล์ไม่รู้จัก"
-zoomIn = "ซูมเข้า"
-zoomOut = "ซูมออก"
-resetZoom = "รีเซ็ตการซูม"
-
-[viewer.nonPdf]
-fileTypeBadge = "ไฟล์ {{type}}"
-convertToPdf = "แปลงเป็น PDF"
-loading = "กำลังโหลด..."
-emptyFile = "ไฟล์ว่างเปล่า"
-csvStats = "{{rows}} แถว · {{columns}} คอลัมน์ · {{size}}"
-sortedBy = "เรียงตาม: {{column}}"
-columnDefault = "คอลัมน์ {{index}}"
-htmlPreviewWarning = "ตัวอย่าง HTML — อาจไม่โหลดทรัพยากรภายนอก · {{size}}"
-htmlPreview = "ตัวอย่าง HTML"
-invalidJson = "JSON ไม่ถูกต้อง — แสดงเนื้อหาดิบ"
-textStats = "{{lines}} บรรทัด · {{size}}"
-lineNumbers = "หมายเลขบรรทัด"
-renderMarkdown = "แสดงผล Markdown"
-
-[viewer.attachments]
-title = "ไฟล์แนบ"
-searchPlaceholder = "ค้นหาไฟล์แนบ"
-noSupport = "ตัวแสดงผลนี้ไม่รองรับไฟล์แนบ"
-noDocument = "เปิด PDF เพื่อดูไฟล์แนบ"
-loading = "กำลังโหลดไฟล์แนบ..."
-empty = "ไม่มีไฟล์แนบในเอกสารนี้"
-noMatch = "ไม่มีไฟล์แนบที่ตรงกับการค้นหา"
-
-[viewer.comments]
-title = "ความคิดเห็น"
-hint = "วางความคิดเห็นด้วยเครื่องมือ ความคิดเห็น แทรกข้อความ หรือ แทนที่ข้อความ โดยจะแสดงที่นี่ตามหน้า"
-placeholder = "พิมพ์ความคิดเห็นของคุณ..."
-pageLabel = "หน้า {{page}}"
-oneComment = "1 ความคิดเห็น"
-nComments = "{{count}} ความคิดเห็น"
-addCommentPlaceholder = "เพิ่มความคิดเห็น..."
-addLink = "เพิ่มลิงก์"
-goToLink = "ไปที่ลิงก์"
-addComment = "เพิ่มความคิดเห็น"
-viewComment = "ดูความคิดเห็น"
-addReplyPlaceholder = "เพิ่มการตอบกลับ..."
-saveReply = "บันทึกการตอบกลับ"
-send = "ส่ง"
-moreActions = "การดำเนินการเพิ่มเติม"
-typeComment = "ความคิดเห็น"
-typeInsertText = "แทรกข้อความ"
-typeReplaceText = "แทนที่ข้อความ"
-locateAnnotation = "ค้นหาตำแหน่งในเอกสาร"
-deleteTitle = "เอาคำอธิบายประกอบออกจากความคิดเห็นหรือไม่?"
-deleteDescription = "คำอธิบายประกอบนี้มีความคิดเห็นแนบอยู่ คุณสามารถลบเฉพาะความคิดเห็นจากแถบด้านข้างโดยคงคำอธิบายประกอบไว้ หรือจะลบทั้งหมด"
-removeCommentOnly = "ลบเฉพาะความคิดเห็น"
-deleteAnnotationAndComment = "ลบคำอธิบายประกอบและความคิดเห็น"
-
-[viewer.formBar]
-title = "ช่องแบบฟอร์ม"
-unsavedBadge = "ยังไม่บันทึก"
-unsavedDesc = "คุณมีการเปลี่ยนแปลงที่ยังไม่บันทึก"
-hasFieldsDesc = "PDF นี้มีช่องที่กรอกได้"
-dismiss = "ปิด"
-apply = "ใช้การเปลี่ยนแปลง"
-download = "ดาวน์โหลด PDF"
-
-[rightRail]
-closeSelected = "ปิดไฟล์ที่เลือก"
-selectAll = "เลือกทั้งหมด"
-deselectAll = "ยกเลิกการเลือกทั้งหมด"
-selectByNumber = "เลือกตามหมายเลขหน้า"
-deleteSelected = "ลบหน้าที่เลือก"
-closePdf = "ปิด PDF"
-exportAll = "ส่งออก PDF"
-downloadSelected = "ดาวน์โหลดไฟล์ที่เลือก"
-annotations = "คำอธิบายประกอบ"
-exportSelected = "ส่งออกหน้าที่เลือก"
-formFill = "กรอกแบบฟอร์ม"
-saveChanges = "บันทึกการเปลี่ยนแปลง"
-toggleAttachments = "สลับไฟล์แนบ"
-toggleTheme = "สลับธีม"
-language = "ภาษา"
-toggleAnnotations = "สลับการแสดงคำอธิบายประกอบ"
-toggleLayers = "สลับเลเยอร์"
-search = "ค้นหาใน PDF"
-panMode = "โหมดเลื่อนดู"
-applyRedactionsFirst = "ใช้การปกปิดก่อน"
-rotateLeft = "หมุนซ้าย"
-rotateRight = "หมุนขวา"
-toggleSidebar = "สลับแถบข้าง"
-toggleBookmarks = "สลับที่คั่นหน้า"
-toggleComments = "ความคิดเห็น"
-print = "พิมพ์ PDF"
-ruler = "ไม้บรรทัด / วัด"
-readAloud = "อ่านออกเสียง"
-readAloudSpeed = "ความเร็ว"
-readAloudLanguage = "ภาษา"
-selectLanguage = "เลือกภาษา"
-draw = "วาด"
-redact = "ปกปิด"
-exitRedaction = "ออกจากโหมดการปกปิด"
-save = "บันทึก"
-downloadAll = "ดาวน์โหลดทั้งหมด"
-saveAll = "บันทึกทั้งหมด"
-saveAs = "บันทึกเป็น"
-
-[textAlign]
-left = "ชิดซ้าย"
-center = "กึ่งกลาง"
-right = "ชิดขวา"
-
 [pageExtracter]
 header = "แยกหน้า"
 placeholder = "(เช่น 1,2,8 หรือ 4,7,12-16 หรือ 2n-1)"
@@ -5000,10 +4975,24 @@ tags = "รวม, ประกอบ, มุมมองเดียว, จั
 title = "เลย์เอาต์หลายหน้า"
 top = "ระยะขอบบน"
 
-[pageLayout.mode]
-default = "ค่าเริ่มต้น"
-custom = "กำหนดเอง"
-label = "โหมด:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "ตามแถว: เติมแต่ละแถวก่อน"
+bullet2 = "ตามคอลัมน์: เติมแต่ละคอลัมน์ก่อน"
+text = "กำหนดว่าจะเติมกริดทีละแถวหรือทีละคอลัมน์"
+title = "การจัดเรียงหน้า"
+
+[pageLayout.advanced.tooltip.header]
+title = "ตัวเลือกเลย์เอาต์ขั้นสูง"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "เลือกทิศทางสุดท้ายของแผ่น แนวตั้งเหมาะกับเนื้อหาสูง ส่วนแนวนอนเหมาะกับเลย์เอาต์ที่กว้าง"
+title = "การวางแนว"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR: ลำดับซ้ายไปขวา"
+bullet2 = "RTL: ลำดับขวาไปซ้าย"
+text = "กำหนดลำดับแนวนอนในกริด มีประโยชน์สำหรับเอกสารแบบซ้ายไปขวาและขวาไปซ้าย"
+title = "ทิศทางการอ่าน"
 
 [pageLayout.arrangement]
 byColumns = "ตามคอลัมน์"
@@ -5018,100 +5007,86 @@ label = "การจัดเรียงหน้า:"
 
 [pageLayout.error]
 failed = "เกิดข้อผิดพลาดขณะสร้างเลย์เอาต์หลายหน้า"
-outerVerticalMarginsTooLarge = "ระยะขอบบน/ล่างใหญ่เกินไปสำหรับขนาดหน้านี้"
-outerHorizontalMarginsTooLarge = "ระยะขอบซ้าย/ขวาใหญ่เกินไปสำหรับขนาดหน้านี้"
 innerMarginTooLarge = "ระยะขอบด้านในใหญ่เกินไปสำหรับเลย์เอาต์ที่เลือก"
+outerHorizontalMarginsTooLarge = "ระยะขอบซ้าย/ขวาใหญ่เกินไปสำหรับขนาดหน้านี้"
+outerVerticalMarginsTooLarge = "ระยะขอบบน/ล่างใหญ่เกินไปสำหรับขนาดหน้านี้"
 
-[pageLayout.orientation]
-landscape = "แนวนอน"
-portrait = "แนวตั้ง"
-label = "การวางแนว:"
-
-[pageLayout.readingDirection]
-ltr = "ซ้ายไปขวา"
-rtl = "ขวาไปซ้าย"
-label = "ทิศทางการอ่าน:"
-
-[pageLayout.tooltip.header]
-title = "คู่มือเลย์เอาต์หน้า"
-
-[pageLayout.tooltip.overview]
-title = "เลย์เอาต์หน้าคืออะไร?"
-text = "จัดหลายหน้าให้อยู่ในแผ่นเดียวสำหรับเอกสารแจก หรือเพื่อประหยัดกระดาษ"
-
-[pageLayout.tooltip.mode]
-title = "โหมด"
-text = "เลือกวิธีการกำหนดค่ากริด:"
-bullet1 = "ค่าเริ่มต้น: เลือกค่าพรีเซ็ตแล้วระบบจะคำนวณกริดให้อัตโนมัติ"
-bullet2 = "กำหนดเอง: ตั้งค่าแถวและคอลัมน์ด้วยตนเอง"
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "จำนวนหน้าต่อแผ่น (โหมดค่าเริ่มต้น)"
-text = "เลือกจำนวนหน้าต่อแผ่น (เช่น 4 → 2×2, 9 → 3×3)"
-
-[pageLayout.tooltip.rowsCols]
-title = "แถวและคอลัมน์ (โหมดกำหนดเอง)"
-text = "กำหนดขนาดกริดอย่างแม่นยำ จำนวนหน้าต่อแผ่น = แถว × คอลัมน์"
-
-[pageLayout.tooltip.orientation]
-title = "การวางแนว"
-text = "กำหนดการวางแนวของแผ่นผลลัพธ์:"
-bullet1 = "แนวตั้ง: สูงมากกว่ากว้าง"
-bullet2 = "แนวนอน: กว้างมากกว่าสูง"
-
-[pageLayout.tooltip.arrangement]
-title = "การจัดเรียงหน้า"
-text = "ควบคุมลำดับการเติมหน้าลงในกริด:"
-bullet1 = "ตามแถว: เติมทีละแถว (ซ้ายไปขวาหรือขวาไปซ้าย)"
-bullet2 = "ตามคอลัมน์: เติมจากบนลงล่าง ทีละคอลัมน์"
-
-[pageLayout.tooltip.readingDirection]
-title = "ทิศทางการอ่าน"
-text = "ควบคุมลำดับแนวนอนของหน้า:"
-bullet1 = "LTR: ซ้ายไปขวา"
-bullet2 = "RTL: ขวาไปซ้าย"
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "เปิดใช้เส้นขอบเพื่อวาดเส้นรอบแต่ละหน้าที่วางอยู่ ช่วยแยกสายตาหรือใช้ในการตัดแต่ง"
 title = "เพิ่มเส้นขอบ"
-text = "วาดเส้นขอบรอบแต่ละช่องของหน้าเพื่อช่วยตัดหรือแยกสายตา"
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "ความหนาของเส้นขอบจะมีผลเมื่อเปิดใช้เส้นขอบเท่านั้น ค่ายิ่งสูงเส้นยิ่งหนา"
+title = "ความหนาของเส้นขอบ"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "ระยะขอบและเส้นขอบ"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "ระยะขอบ"
-text = "ใช้ระยะขอบบน ล่าง ซ้าย และขวาเพื่อควบคุมช่องว่างรอบแผ่นผลลัพธ์ทั้งหมด"
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "ระยะขอบด้านใน"
 text = "ระยะขอบด้านในช่วยเพิ่มช่องว่างระหว่างช่องในกริดของหน้า เพื่อแยกและอ่านได้ง่ายขึ้น"
+title = "ระยะขอบด้านใน"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "ใช้ระยะขอบบน ล่าง ซ้าย และขวาเพื่อควบคุมช่องว่างรอบแผ่นผลลัพธ์ทั้งหมด"
+title = "ระยะขอบ"
+
+[pageLayout.mode]
+custom = "กำหนดเอง"
+default = "ค่าเริ่มต้น"
+label = "โหมด:"
+
+[pageLayout.orientation]
+label = "การวางแนว:"
+landscape = "แนวนอน"
+portrait = "แนวตั้ง"
+
+[pageLayout.readingDirection]
+label = "ทิศทางการอ่าน:"
+ltr = "ซ้ายไปขวา"
+rtl = "ขวาไปซ้าย"
+
+[pageLayout.tooltip.addBorder]
+text = "วาดเส้นขอบรอบแต่ละช่องของหน้าเพื่อช่วยตัดหรือแยกสายตา"
 title = "เพิ่มเส้นขอบ"
-text = "เปิดใช้เส้นขอบเพื่อวาดเส้นรอบแต่ละหน้าที่วางอยู่ ช่วยแยกสายตาหรือใช้ในการตัดแต่ง"
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "ความหนาของเส้นขอบ"
-text = "ความหนาของเส้นขอบจะมีผลเมื่อเปิดใช้เส้นขอบเท่านั้น ค่ายิ่งสูงเส้นยิ่งหนา"
-
-[pageLayout.advanced.tooltip.header]
-title = "ตัวเลือกเลย์เอาต์ขั้นสูง"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "การวางแนว"
-text = "เลือกทิศทางสุดท้ายของแผ่น แนวตั้งเหมาะกับเนื้อหาสูง ส่วนแนวนอนเหมาะกับเลย์เอาต์ที่กว้าง"
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "ตามแถว: เติมทีละแถว (ซ้ายไปขวาหรือขวาไปซ้าย)"
+bullet2 = "ตามคอลัมน์: เติมจากบนลงล่าง ทีละคอลัมน์"
+text = "ควบคุมลำดับการเติมหน้าลงในกริด:"
 title = "การจัดเรียงหน้า"
-text = "กำหนดว่าจะเติมกริดทีละแถวหรือทีละคอลัมน์"
-bullet1 = "ตามแถว: เติมแต่ละแถวก่อน"
-bullet2 = "ตามคอลัมน์: เติมแต่ละคอลัมน์ก่อน"
 
-[pageLayout.advanced.tooltip.readingDirection]
+[pageLayout.tooltip.header]
+title = "คู่มือเลย์เอาต์หน้า"
+
+[pageLayout.tooltip.mode]
+bullet1 = "ค่าเริ่มต้น: เลือกค่าพรีเซ็ตแล้วระบบจะคำนวณกริดให้อัตโนมัติ"
+bullet2 = "กำหนดเอง: ตั้งค่าแถวและคอลัมน์ด้วยตนเอง"
+text = "เลือกวิธีการกำหนดค่ากริด:"
+title = "โหมด"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "แนวตั้ง: สูงมากกว่ากว้าง"
+bullet2 = "แนวนอน: กว้างมากกว่าสูง"
+text = "กำหนดการวางแนวของแผ่นผลลัพธ์:"
+title = "การวางแนว"
+
+[pageLayout.tooltip.overview]
+text = "จัดหลายหน้าให้อยู่ในแผ่นเดียวสำหรับเอกสารแจก หรือเพื่อประหยัดกระดาษ"
+title = "เลย์เอาต์หน้าคืออะไร?"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "เลือกจำนวนหน้าต่อแผ่น (เช่น 4 → 2×2, 9 → 3×3)"
+title = "จำนวนหน้าต่อแผ่น (โหมดค่าเริ่มต้น)"
+
+[pageLayout.tooltip.readingDirection]
+bullet1 = "LTR: ซ้ายไปขวา"
+bullet2 = "RTL: ขวาไปซ้าย"
+text = "ควบคุมลำดับแนวนอนของหน้า:"
 title = "ทิศทางการอ่าน"
-text = "กำหนดลำดับแนวนอนในกริด มีประโยชน์สำหรับเอกสารแบบซ้ายไปขวาและขวาไปซ้าย"
-bullet1 = "LTR: ลำดับซ้ายไปขวา"
-bullet2 = "RTL: ลำดับขวาไปซ้าย"
+
+[pageLayout.tooltip.rowsCols]
+text = "กำหนดขนาดกริดอย่างแม่นยำ จำนวนหน้าต่อแผ่น = แถว × คอลัมน์"
+title = "แถวและคอลัมน์ (โหมดกำหนดเอง)"
 
 [pageRemover]
 header = "ตัวลบหน้า PDF"
@@ -5197,6 +5172,9 @@ title = "เคล็ดลับ"
 autoClose = "หน้าต่างนี้จะปิดโดยอัตโนมัติ..."
 billingPeriod = "รอบบิล"
 canCloseWindow = "คุณสามารถปิดหน้าต่างนี้ได้แล้ว"
+checkoutInstructions = "กรุณาทำการซื้อให้เสร็จในหน้าต่างเบราว์เซอร์ที่เพิ่งเปิดขึ้น หลังการชำระเงินเสร็จสิ้น กลับมาที่นี่และกดปุ่มด้านล่างเพื่อรีเฟรชข้อมูลการเรียกเก็บเงินของคุณ"
+checkoutOpened = "เปิดหน้าชำระเงินในเบราว์เซอร์แล้ว"
+closeLater = "ทำภายหลัง"
 emailInvalid = "โปรดกรอกที่อยู่อีเมลที่ถูกต้อง"
 enterpriseNote = "ปรับจำนวนที่นั่งได้ในหน้าเช็คเอาต์ (1-1000)"
 error = "ข้อผิดพลาดในการชำระเงิน"
@@ -5218,6 +5196,7 @@ perMonth = "/เดือน"
 perYear = "/ปี"
 preparing = "กำลังเตรียมหน้าชำระเงินของคุณ..."
 redirecting = "กำลังเปลี่ยนเส้นทางไปยังการชำระเงินที่ปลอดภัย..."
+refreshBilling = "ชำระเงินเสร็จแล้ว - รีเฟรชการเรียกเก็บเงิน"
 stripeNotConfigured = "ยังไม่ได้ตั้งค่า Stripe"
 stripeNotConfiguredMessage = "ยังไม่ได้ตั้งค่าการชำระเงินผ่าน Stripe โปรดติดต่อผู้ดูแลระบบของคุณ"
 success = "ชำระเงินสำเร็จ!"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "การสมัครของคุณอัปเ
 upgradeSuccess = "ชำระเงินสำเร็จ! การสมัครของคุณได้รับการอัปเกรดแล้ว ไลเซนส์บนเซิร์ฟเวอร์ของคุณถูกอัปเดตแล้ว คุณจะได้รับอีเมลยืนยันในไม่ช้า"
 upgradeTitle = "อัปเกรดเป็น {{planName}}"
 yearly = "รายปี"
-checkoutOpened = "เปิดหน้าชำระเงินในเบราว์เซอร์แล้ว"
-checkoutInstructions = "กรุณาทำการซื้อให้เสร็จในหน้าต่างเบราว์เซอร์ที่เพิ่งเปิดขึ้น หลังการชำระเงินเสร็จสิ้น กลับมาที่นี่และกดปุ่มด้านล่างเพื่อรีเฟรชข้อมูลการเรียกเก็บเงินของคุณ"
-refreshBilling = "ชำระเงินเสร็จแล้ว - รีเฟรชการเรียกเก็บเงิน"
-closeLater = "ทำภายหลัง"
 
 [payment.emailStage]
 continue = "ดำเนินการต่อ"
@@ -5456,13 +5431,6 @@ prompt = "เลือกหน้าที่ต้องการแยกต�
 submit = "แยก"
 title = "PDF เป็น CSV"
 
-[PDFToXLSX]
-header = "PDF เป็น Excel"
-prompt = "เลือกหน้าที่ต้องการดึงตาราง"
-submit = "แปลง"
-title = "PDF เป็น Excel (XLSX)"
-tags = "สเปรดชีต,excel,xlsx,ตาราง,แยก,แปลง"
-
 [PDFToHTML]
 credit = "บริการนี้ใช้ pdftohtml สำหรับการแปลงไฟล์"
 header = "PDF เป็น HTML"
@@ -5561,6 +5529,13 @@ title = "PDF เป็น Word"
 [PDFToWord.selectText]
 1 = "รูปแบบไฟล์ผลลัพธ์"
 
+[PDFToXLSX]
+header = "PDF เป็น Excel"
+prompt = "เลือกหน้าที่ต้องการดึงตาราง"
+submit = "แปลง"
+tags = "สเปรดชีต,excel,xlsx,ตาราง,แยก,แปลง"
+title = "PDF เป็น Excel (XLSX)"
+
 [PDFToXML]
 credit = "บริการนี้ใช้ LibreOffice สำหรับการแปลงไฟล์"
 header = "PDF เป็น XML"
@@ -5626,10 +5601,10 @@ manage = "จัดการ"
 perMonth = "/เดือน"
 perSeat = "/ที่นั่ง"
 popular = "ยอดนิยม"
-selectPlan = "เลือกแพ็กเกจ"
-selectCredits = "เลือกจำนวนเครดิต"
-showComparison = "เปรียบเทียบฟีเจอร์ทั้งหมด"
 purchase = "ซื้อ"
+selectCredits = "เลือกจำนวนเครดิต"
+selectPlan = "เลือกแพ็กเกจ"
+showComparison = "เปรียบเทียบฟีเจอร์ทั้งหมด"
 totalCost = "ราคารวม"
 upgrade = "อัปเกรด"
 withServer = "+ แพ็กเกจเซิร์ฟเวอร์"
@@ -5638,19 +5613,29 @@ withServer = "+ แพ็กเกจเซิร์ฟเวอร์"
 subtitle = "รายละเอียดการสมัครใช้งานปัจจุบันของคุณ"
 title = "แผนที่ใช้งาน"
 
+[plan.api]
+large = "5,000 เครดิต"
+medium = "1,000 เครดิต"
+small = "500 เครดิต"
+xsmall = "100 เครดิต"
+
+[plan.apiPackages]
+subtitle = "ซื้อเครดิต API สำหรับแอปของคุณ"
+title = "แพ็กเกจเครดิต API"
+
 [plan.availablePlans]
-subtitle = "เลือกแผนที่เหมาะกับความต้องการของคุณ"
 loadError = "ไม่สามารถโหลดราคาของแผนได้ กำลังใช้ค่าเริ่มต้น"
+subtitle = "เลือกแผนที่เหมาะกับความต้องการของคุณ"
 title = "แผนที่มีให้"
 
 [plan.enterprise]
-siteLicense = "สิทธิ์การใช้งานทั้งไซต์"
 highlight1 = "กำหนดราคาเอง"
 highlight2 = "การสนับสนุนเฉพาะทาง"
 highlight3 = "ฟีเจอร์ล่าสุด"
 name = "องค์กร"
 requiresServer = "ต้องใช้เซิร์ฟเวอร์"
 requiresServerMessage = "โปรดอัปเกรดเป็นแพ็กเกจ Server ก่อนจึงอัปเกรดเป็น Enterprise"
+siteLicense = "สิทธิ์การใช้งานทั้งไซต์"
 
 [plan.feature]
 api = "การเข้าถึง API"
@@ -5722,16 +5707,6 @@ successMessage = "เปิดใช้งานไลเซนส์ของ�
 name = "Team"
 siteLicense = "สิทธิ์การใช้งานทั้งไซต์"
 
-[plan.api]
-large = "5,000 เครดิต"
-medium = "1,000 เครดิต"
-small = "500 เครดิต"
-xsmall = "100 เครดิต"
-
-[plan.apiPackages]
-subtitle = "ซื้อเครดิต API สำหรับแอปของคุณ"
-title = "แพ็กเกจเครดิต API"
-
 [plan.trial]
 badge = "ทดลอง"
 continueWithFree = "ใช้งานต่อด้วยระดับฟรี"
@@ -5746,77 +5721,6 @@ subscribeToPro = "สมัครสมาชิก Pro"
 subscriptionScheduled = "กำหนดเวลาการสมัครสมาชิกแล้ว - เริ่ม {{date}}"
 title = "ทดลองใช้ฟรีอยู่"
 
-[credits]
-enableOverageBilling = "เปิดใช้งานการคิดค่าบริการส่วนเกิน"
-maybeLater = "ไว้ทีหลัง"
-upgrade = "อัปเกรด"
-
-[credits.modal]
-advancedMonitoring = "การมอนิเตอร์ขั้นสูง"
-allInOneWorkspace = "พื้นที่ทำงาน PDF แบบครบวงจร (ตัวดูไฟล์ เครื่องมือ และเอเจนต์)"
-apiSandbox = "API sandbox"
-contactSales = "ติดต่อฝ่ายขาย"
-creditsRemaining = "เหลือ {{current}} จาก {{total}}"
-creditsThisMonth = "เครดิตรายเดือน"
-current = "แผนปัจจุบัน"
-customPricing = "กำหนดเอง"
-customSmartFolders = "โฟลเดอร์อัจฉริยะกำหนดเอง"
-dedicatedSupportSlas = "การสนับสนุนเฉพาะทางและ SLA"
-enterpriseSubscription = "Enterprise"
-everythingInCredits = "ทุกอย่างใน Credits และเพิ่มเติม:"
-everythingInFree = "ทุกอย่างใน Free และเพิ่มเติม:"
-fasterThroughput = "อัตราการประมวลผลเร็วขึ้น 10 เท่า"
-forRegularWork = "สำหรับงาน PDF ทั่วไป:"
-freeTier = "ฟรี"
-fullyPrivateFiles = "ไฟล์เป็นส่วนตัวอย่างเต็มรูปแบบ"
-largeFileProcessing = "ประมวลผลไฟล์ขนาดใหญ่"
-managedMemberMessage = "คุณมีสิทธิ์เข้าถึงเครดิตไม่จำกัดผ่านทีมของคุณ หากต้องการความช่วยเหลือ โปรดติดต่อหัวหน้าทีมของคุณ"
-managedMemberTitle = "เครดิตไม่จำกัด"
-meteringBillingNote = "เครดิตส่วนเกินจะถูกเรียกเก็บทุกเดือนพร้อมกับการสมัครสมาชิก Team ของคุณ ติดตามการใช้งานได้ตลอดเวลาในการตั้งค่าบัญชีของคุณ"
-meteringExplanation = "แผน Team ของคุณรวม {{credits}} เครดิตต่อเดือน เมื่อใช้หมด ระบบคิดค่าบริการส่วนเกินจะเพิ่มเครดิตให้อัตโนมัติเพื่อไม่ให้การทำงานของคุณสะดุด"
-meteringIncluded = "รวม {{credits}} เครดิต/เดือน กับ Team"
-meteringNoCommitment = "ไม่มีข้อผูกมัด ยกเลิกได้ทุกเมื่อ"
-meteringNeverRunOut = "ไม่ให้เครดิตหมด"
-meteringPayAsYouGo = "จ่ายตามที่ใช้จริง"
-meteringPrice = "เครดิตเพิ่มเติมที่ {{price}}/เครดิต"
-meteringTitle = "การคิดค่าบริการส่วนเกินแบบจ่ายตามการใช้งาน"
-monthlyCredits = "เครดิตรายเดือน"
-orgWideAccess = "การควบคุมการเข้าถึงทั่วทั้งองค์กร"
-overage = "ส่วนเกิน"
-perMonth = "/เดือน"
-popular = "ยอดนิยม"
-premiumAiModels = "โมเดล AI ระดับพรีเมียม"
-prioritySupport = "การสนับสนุนแบบเร่งด่วน"
-privateDocCloud = "Private Document Cloud"
-ragFineTuning = "RAG + fine-tuning"
-secureApiAccess = "การเข้าถึง API อย่างปลอดภัย"
-selfHostLink = "ดูเอกสารและแผน"
-selfHostPrompt = "ต้องการโฮสต์เองไหม?"
-standardThroughput = "อัตราการประมวลผลมาตรฐาน"
-subtitle = "อัปเกรดเป็น Team เพื่อรับเครดิตเพิ่ม 10 เท่าและประมวลผลได้เร็วขึ้น"
-subtitlePro = "เปิดใช้งานการคิดค่าบริการส่วนเกินเพื่อไม่ให้เครดิตหมด"
-teamLeaderOnly = "เฉพาะหัวหน้าทีมเท่านั้นที่สามารถเปิดใช้งานการคิดค่าบริการส่วนเกิน"
-teamSubscription = "Team"
-titleExhausted = "คุณใช้เครดิตฟรีหมดแล้ว"
-titleExhaustedPro = "เครดิตของคุณหมดแล้ว"
-unlimitedApiAccess = "การเข้าถึง API แบบไม่จำกัด"
-unlimitedMonthlyCredits = "สิทธิ์การใช้งานทั้งไซต์"
-unlimitedSeats = "ผู้ใช้ไม่จำกัด"
-
-[credits.modal.features]
-everythingInCredits = "ทุกอย่างใน Credits และเพิ่มเติม:"
-everythingInFree = "ทุกอย่างใน Free และเพิ่มเติม:"
-forRegularWork = "สำหรับงาน PDF ทั่วไป:"
-
-[credits.insufficient]
-brief = "เครดิตไม่เพียงพอ คุณต้องใช้ {{required}} เครดิต แต่มีเพียง {{current}}"
-freeTier = "อัปเกรดเป็น Team เพื่อรับเครดิตมากขึ้น 10 เท่าและการคิดค่าบริการส่วนเกินแบบไม่จำกัด"
-managedMember = "โปรดติดต่อหัวหน้าทีมของคุณเพื่อขอความช่วยเหลือ"
-message = "คุณมีเครดิตไม่เพียงพอที่จะรัน {{tool}} ขณะนี้คุณมี {{current}} เครดิต"
-messageWithAmount = "คุณต้องใช้ {{required}} เครดิตเพื่อรัน {{tool}} แต่คุณมีเพียง {{current}}"
-teamMember = "เปิดใช้งานการคิดค่าบริการส่วนเกินเพื่อไม่ให้เครดิตหมด"
-title = "เครดิตไม่เพียงพอ"
-
 [printFile]
 header = "พิมพ์ไฟล์ไปยังเครื่องพิมพ์"
 submit = "พิมพ์"
@@ -5825,6 +5729,207 @@ title = "พิมพ์ไฟล์"
 [printFile.selectText]
 1 = "เลือกไฟล์ที่จะพิมพ์"
 2 = "ป้อนชื่อเครื่องพิมพ์"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "นำเข้าไฟล์"
+
+[provider.googledrive.apiKey]
+description = "Google API Key สำหรับ Google Picker API จาก Google Cloud Console"
+label = "API Key"
+
+[provider.googledrive.appId]
+description = "Google Drive App ID จาก Google Cloud Console"
+label = "App ID"
+
+[provider.googledrive.clientId]
+description = "Google OAuth 2.0 Client ID จาก Google Cloud Console"
+label = "Client ID"
+
+[provider.googledrive.enabled]
+description = "อนุญาตให้ผู้นำเข้าไฟล์จาก Google Drive ได้โดยตรง"
+label = "เปิดใช้งานตัวเลือกไฟล์ Google Drive"
+
+[provider.oauth2.generic]
+name = "OAuth2 ทั่วไป"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "สร้างบัญชีผู้ใช้อัตโนมัติเมื่อเข้าสู่ระบบด้วย OAuth2 ครั้งแรก"
+label = "สร้างผู้ใช้อัตโนมัติ"
+
+[provider.oauth2.generic.blockRegistration]
+description = "ป้องกันการลงทะเบียนผู้ใช้ใหม่ผ่าน OAuth2"
+label = "บล็อกการลงทะเบียน"
+
+[provider.oauth2.generic.clientId]
+description = "OAuth2 Client ID จากผู้ให้บริการของคุณ"
+label = "Client ID"
+
+[provider.oauth2.generic.clientSecret]
+description = "OAuth2 Client Secret จากผู้ให้บริการของคุณ"
+label = "Client Secret"
+
+[provider.oauth2.generic.enabled]
+description = "เปิดใช้งานการยืนยันตัวตนด้วยผู้ให้บริการ OAuth2 แบบกำหนดเอง"
+label = "เปิดใช้งาน OAuth2 ทั่วไป"
+
+[provider.oauth2.generic.issuer]
+description = "ผู้ให้บริการที่รองรับ OpenID Connect Discovery (/.well-known/openid-configuration)"
+label = "Issuer URL"
+
+[provider.oauth2.generic.provider]
+description = "ชื่อผู้ให้บริการ OAuth2 ของคุณ (เช่น Azure AD, Okta)"
+label = "ชื่อผู้ให้บริการ"
+
+[provider.oauth2.generic.scopes]
+description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
+label = "Scopes"
+
+[provider.oauth2.generic.useAsUsername]
+description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้"
+label = "ใช้เป็นชื่อผู้ใช้"
+
+[provider.oauth2.github]
+scope = "การยืนยันตัวตนสำหรับลงชื่อเข้าใช้"
+
+[provider.oauth2.github.clientId]
+description = "OAuth2 Client ID จาก GitHub Developer Settings"
+label = "Client ID"
+
+[provider.oauth2.github.clientSecret]
+description = "OAuth2 Client Secret จาก GitHub Developer Settings"
+label = "Client Secret"
+
+[provider.oauth2.github.scopes]
+description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
+label = "Scopes"
+
+[provider.oauth2.github.useAsUsername]
+description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้ (email, login, name)"
+label = "ใช้เป็นชื่อผู้ใช้"
+
+[provider.oauth2.google]
+scope = "การยืนยันตัวตนสำหรับลงชื่อเข้าใช้"
+
+[provider.oauth2.google.clientId]
+description = "OAuth2 Client ID จาก Google Cloud Console"
+label = "Client ID"
+
+[provider.oauth2.google.clientSecret]
+description = "OAuth2 Client Secret จาก Google Cloud Console"
+label = "Client Secret"
+
+[provider.oauth2.google.scopes]
+description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
+label = "Scopes"
+
+[provider.oauth2.google.useAsUsername]
+description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้ (email, name, given_name, family_name)"
+label = "ใช้เป็นชื่อผู้ใช้"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "OAuth2 Client ID จาก Keycloak"
+label = "Client ID"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "OAuth2 Client Secret จาก Keycloak"
+label = "Client Secret"
+
+[provider.oauth2.keycloak.issuer]
+description = "URL ของจุดค้นพบ OpenID Connect ของ realm ใน Keycloak"
+label = "Issuer URL"
+
+[provider.oauth2.keycloak.scopes]
+description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
+label = "Scopes"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้ (email, name, given_name, family_name, preferred_username)"
+label = "ใช้เป็นชื่อผู้ใช้"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO (SAML)"
+
+[provider.saml2.autoCreateUser]
+description = "สร้างบัญชีผู้ใช้อัตโนมัติเมื่อเข้าสู่ระบบด้วย SAML2 ครั้งแรก"
+label = "สร้างผู้ใช้อัตโนมัติ"
+
+[provider.saml2.blockRegistration]
+description = "ป้องกันการลงทะเบียนผู้ใช้ใหม่ผ่าน SAML2"
+label = "บล็อกการลงทะเบียน"
+
+[provider.saml2.enabled]
+description = "เปิดใช้งานการยืนยันตัวตนด้วย SAML2 (เฉพาะ Enterprise)"
+label = "เปิดใช้งาน SAML2"
+
+[provider.saml2.idpCert]
+description = "พาธใบรับรอง (เช่น classpath:okta.cert)"
+label = "IDP Certificate"
+
+[provider.saml2.idpIssuer]
+description = "ID ของผู้ให้บริการของคุณ"
+label = "IDP Issuer"
+
+[provider.saml2.idpMetadataUri]
+description = "URI สำหรับ metadata ของผู้ให้บริการของคุณ"
+label = "IDP Metadata URI"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "URL สำหรับเริ่มต้น SSO"
+label = "IDP Single Login URL"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "URL สำหรับเริ่มต้น SLO"
+label = "IDP Single Logout URL"
+
+[provider.saml2.privateKey]
+description = "พาธคีย์ส่วนตัวของคุณ"
+label = "Private Key"
+
+[provider.saml2.provider]
+description = "ชื่อผู้ให้บริการ SAML2 ของคุณ"
+label = "ชื่อผู้ให้บริการ"
+
+[provider.saml2.registrationId]
+description = "ชื่อแอป Service Provider (SP) ของคุณ"
+label = "Registration ID"
+
+[provider.saml2.spCert]
+description = "พาธใบรับรองสำหรับการลงนามของคุณ"
+label = "SP Certificate"
+
+[provider.smtp]
+name = "SMTP Mail"
+scope = "การแจ้งเตือนทางอีเมล"
+
+[provider.smtp.enabled]
+description = "เปิดใช้งานการแจ้งเตือนทางอีเมลและฟังก์ชัน SMTP"
+label = "เปิดใช้งานอีเมล"
+
+[provider.smtp.from]
+description = "ที่อยู่อีเมลที่จะใช้เป็นผู้ส่ง"
+label = "ที่อยู่อีเมลผู้ส่ง"
+
+[provider.smtp.host]
+description = "ชื่อโฮสต์หรือที่อยู่ IP ของเซิร์ฟเวอร์ SMTP ของคุณ"
+label = "SMTP Host"
+
+[provider.smtp.password]
+description = "รหัสผ่านสำหรับการยืนยันตัวตน SMTP"
+label = "SMTP Password"
+
+[provider.smtp.port]
+description = "หมายเลขพอร์ตสำหรับการเชื่อมต่อ SMTP (โดยทั่วไป 25, 465 หรือ 587)"
+label = "SMTP Port"
+
+[provider.smtp.username]
+description = "ชื่อผู้ใช้สำหรับการยืนยันตัวตน SMTP"
+label = "SMTP Username"
 
 [quickAccess]
 access = "การเข้าถึง"
@@ -5867,7 +5972,12 @@ createNew = "สร้างคำขอใหม่"
 createSession = "สร้างคำขอลงนาม"
 dueDate = "วันครบกำหนด (ไม่บังคับ)"
 files = "ไฟล์"
+filterDeclined = "ถูกปฏิเสธ"
+filterMine = "ของฉัน"
+filterOverdue = "เกินกำหนด"
+filterSigned = "ลงนามแล้ว"
 help = "วิธีใช้"
+newRequest = "คำขอใหม่"
 noActiveSessions = "ไม่มีคำขอลงนามที่ค้างอยู่หรือเซสชันที่ใช้งานอยู่"
 noCompletedSessions = "ไม่มีเซสชันที่เสร็จสิ้น"
 noFile = "ไม่ได้เลือกไฟล์"
@@ -5875,8 +5985,9 @@ read = "อ่าน"
 reader = "ตัวอ่าน"
 refresh = "รีเฟรช"
 requestSignatures = "ขอลายเซ็น"
-selectSingleFileToRequest = "เลือกไฟล์ PDF เพียงไฟล์เดียวเพื่อขอลายเซ็น"
+searchDocuments = "ค้นหาเอกสาร…"
 selectedFile = "ไฟล์ที่เลือก"
+selectSingleFileToRequest = "เลือกไฟล์ PDF เพียงไฟล์เดียวเพื่อขอลายเซ็น"
 selectUsers = "เลือกผู้ใช้เพื่อลงนาม"
 selectUsersPlaceholder = "เลือกผู้เข้าร่วม..."
 sendingRequest = "กำลังส่ง..."
@@ -5885,14 +5996,8 @@ showMeAround = "พาชมรอบๆ"
 sign = "เซ็นชื่อ"
 signatureRequests = "คำขอลายเซ็น"
 signYourself = "ลงนามด้วยตนเอง"
-newRequest = "คำขอใหม่"
 tours = "ทัวร์"
 wetSign = "เพิ่มลายเซ็น"
-filterMine = "ของฉัน"
-filterOverdue = "เกินกำหนด"
-filterSigned = "ลงนามแล้ว"
-filterDeclined = "ถูกปฏิเสธ"
-searchDocuments = "ค้นหาเอกสาร…"
 
 [quickAccess.helpMenu]
 adminTour = "ทัวร์ผู้ดูแล"
@@ -5933,15 +6038,15 @@ title = "คำที่จะปกปิด"
 failed = "เกิดข้อผิดพลาดขณะปกปิดข้อมูลใน PDF"
 
 [redact.manual]
+activate = "เปิดใช้งานเครื่องมือปกปิด"
+active = "โหมดการปกปิดทำงานอยู่"
 apply = "ใช้"
 applyChanges = "นำการเปลี่ยนแปลงไปใช้"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ การใช้แบบถาวร ไม่สามารถยกเลิกได้ และข้อมูลด้านล่างจะถูกลบ"
 boxRedaction = "วาดกล่องเพื่อปกปิด"
-colourPicker = "ตัวเลือกสี"
 colorLabel = "สีของการปกปิด"
-active = "โหมดการปกปิดทำงานอยู่"
-activate = "เปิดใช้งานเครื่องมือปกปิด"
+colourPicker = "ตัวเลือกสี"
 controlsTitle = "การควบคุมการปกปิดแบบแมนนวล"
 convertPDFToImageLabel = "แปลง PDF เป็น PDF-Image (ใช้เพื่อลบข้อความที่อยู่หลังกรอบ)"
 export = "ส่งออก"
@@ -6337,6 +6442,46 @@ title = "คอนทราสต์สูง"
 text = "กลับสีทั้งหมดใน PDF ให้กลายเป็นภาพเชิงลบ มีประโยชน์สำหรับสร้างเวอร์ชันโหมดมืดของเอกสารหรือช่วยลดอาการล้าตาในที่แสงน้อย"
 title = "กลับสีทั้งหมด"
 
+[rightRail]
+annotations = "คำอธิบายประกอบ"
+applyRedactionsFirst = "ใช้การปกปิดก่อน"
+closePdf = "ปิด PDF"
+closeSelected = "ปิดไฟล์ที่เลือก"
+deleteSelected = "ลบหน้าที่เลือก"
+deselectAll = "ยกเลิกการเลือกทั้งหมด"
+downloadAll = "ดาวน์โหลดทั้งหมด"
+downloadSelected = "ดาวน์โหลดไฟล์ที่เลือก"
+draw = "วาด"
+exitRedaction = "ออกจากโหมดการปกปิด"
+exportAll = "ส่งออก PDF"
+exportSelected = "ส่งออกหน้าที่เลือก"
+formFill = "กรอกแบบฟอร์ม"
+language = "ภาษา"
+panMode = "โหมดเลื่อนดู"
+print = "พิมพ์ PDF"
+readAloud = "อ่านออกเสียง"
+readAloudLanguage = "ภาษา"
+readAloudSpeed = "ความเร็ว"
+redact = "ปกปิด"
+rotateLeft = "หมุนซ้าย"
+rotateRight = "หมุนขวา"
+ruler = "ไม้บรรทัด / วัด"
+save = "บันทึก"
+saveAll = "บันทึกทั้งหมด"
+saveAs = "บันทึกเป็น"
+saveChanges = "บันทึกการเปลี่ยนแปลง"
+search = "ค้นหาใน PDF"
+selectAll = "เลือกทั้งหมด"
+selectByNumber = "เลือกตามหมายเลขหน้า"
+selectLanguage = "เลือกภาษา"
+toggleAnnotations = "สลับการแสดงคำอธิบายประกอบ"
+toggleAttachments = "สลับไฟล์แนบ"
+toggleBookmarks = "สลับที่คั่นหน้า"
+toggleComments = "ความคิดเห็น"
+toggleLayers = "สลับเลเยอร์"
+toggleSidebar = "สลับแถบข้าง"
+toggleTheme = "สลับธีม"
+
 [rotate]
 rotateLeft = "หมุนทวนเข็มนาฬิกา"
 rotateRight = "หมุนตามเข็มนาฬิกา"
@@ -6359,32 +6504,6 @@ text = "หมุนหน้าของ PDF ตามหรือทวนเ�
 
 [rotate.tooltip.header]
 title = "ภาพรวมการตั้งค่าการหมุน"
-
-[timestampPdf]
-completed = "ประทับเวลาบน PDF สำเร็จ"
-desc = "เพิ่มการประทับเวลาเอกสาร RFC 3161 ให้กับ PDF ของคุณโดยใช้เซิร์ฟเวอร์ Time Stamp Authority (TSA) ที่เชื่อถือได้"
-filenamePrefix = "timestamped"
-results = "ผลลัพธ์การประทับเวลา"
-submit = "ใช้การประทับเวลา"
-title = "ประทับเวลา PDF"
-
-[timestampPdf.error]
-failed = "เกิดข้อผิดพลาดระหว่างการประทับเวลา PDF"
-generic = "การประทับเวลาไม่สำเร็จ"
-
-[timestampPdf.files]
-placeholder = "เลือกไฟล์ PDF ในมุมมองหลักเพื่อเริ่มต้น"
-
-[timestampPdf.options]
-note = "จะส่งเพียงแฮชแบบ SHA-256 ของเอกสารของคุณไปยังเซิร์ฟเวอร์ TSA; ไฟล์ PDF จะไม่ถูกส่งไปยังเซิร์ฟเวอร์ TSA"
-title = "เซิร์ฟเวอร์การประทับเวลา (TSA)"
-
-[timestampPdf.options.tsaUrl]
-desc = "เลือก Time Stamp Authority ที่เชื่อถือได้"
-label = "เลือกเซิร์ฟเวอร์ TSA"
-
-[timestampPdf.steps]
-settings = "การตั้งค่า"
 
 [sanitize]
 completed = "ทำให้ปลอดภัยเสร็จสมบูรณ์"
@@ -6554,37 +6673,6 @@ bullet3 = "สำคัญสำหรับเวิร์กโฟลว์ก
 description = "ลำดับที่คุณกำหนดเมื่อสร้างเซสชันจะกำหนดว่าใครลงนามก่อน"
 title = "ลำดับลายเซ็น"
 
-[signatureSettings.tooltip]
-header = "การตั้งค่าลักษณะลายเซ็น"
-
-[signatureSettings.tooltip.location]
-bullet1 = "ตัวอย่าง: \"New York, USA\", \"London Office\", \"Remote\""
-bullet2 = "ไม่ใช่ตำแหน่งบนหน้า"
-bullet3 = "อาจจำเป็นสำหรับบางเขตอำนาจศาลทางกฎหมาย"
-description = "สถานที่ทางภูมิศาสตร์ (ไม่บังคับ) ที่มีการลงนาม จะถูกจัดเก็บในเมทาดาต้าใบรับรอง"
-title = "สถานที่ลายเซ็น"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "แสดงเคียงข้างกับลายเซ็นและข้อความ"
-bullet2 = "รองรับรูปแบบ PNG, JPG"
-bullet3 = "ช่วยเพิ่มความเป็นมืออาชีพ"
-description = "เพิ่มโลโก้บริษัทให้กับลายเซ็นที่มองเห็นได้เพื่อสร้างแบรนด์และเพิ่มความน่าเชื่อถือ"
-title = "โลโก้บริษัท"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "ตัวอย่าง: \"Approval\", \"Contract Agreement\", \"Review Complete\""
-bullet2 = "แสดงในคุณสมบัติลายเซ็นของ PDF"
-bullet3 = "มีประโยชน์สำหรับบันทึกตรวจสอบและการปฏิบัติตามข้อกำหนด"
-description = "ข้อความอธิบายเหตุผลที่ลงนาม (ไม่บังคับ) จะถูกจัดเก็บในเมทาดาต้าใบรับรอง"
-title = "เหตุผลของลายเซ็น"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>แสดง</b>: ลายเซ็นปรากฏบน PDF พร้อมลักษณะเฉพาะ"
-bullet2 = "<b>ไม่แสดง</b>: ฝังใบรับรองโดยไม่มีรอยภาพ"
-bullet3 = "ลายเซ็นที่ไม่แสดงยังคงให้การยืนยันด้วยการเข้ารหัส"
-description = "ควบคุมว่าลายเซ็นจะแสดงบนเอกสารหรือฝังแบบไม่แสดง"
-title = "การแสดงผลของลายเซ็น"
-
 [settings.configuration]
 advanced = "ขั้นสูง"
 database = "ฐานข้อมูล"
@@ -6606,6 +6694,102 @@ user = "เข้าสู่ระบบเป็น"
 local = "ภายในเครื่องเท่านั้น"
 saas = "Stirling Cloud"
 selfhosted = "โฮสต์เอง"
+
+[settings.developer]
+apiKeys = "API Keys"
+title = "นักพัฒนา"
+
+[settings.general]
+autoUnzip = "แตก ZIP จาก API อัตโนมัติ"
+autoUnzipDescription = "แยกไฟล์จากการตอบกลับ ZIP โดยอัตโนมัติ"
+autoUnzipFileLimit = "จำกัดจำนวนไฟล์ที่แตกอัตโนมัติ"
+autoUnzipFileLimitDescription = "จำนวนไฟล์สูงสุดที่จะดึงออกจาก ZIP"
+autoUnzipFileLimitTooltip = "แตกไฟล์ก็ต่อเมื่อ ZIP มีจำนวนไฟล์เท่ากับหรือน้อยกว่านี้ ตั้งค่าสูงขึ้นเพื่อแตก ZIP ขนาดใหญ่"
+autoUnzipTooltip = "แยกไฟล์ ZIP ที่ส่งกลับจากการทำงานของ API โดยอัตโนมัติ ปิดเพื่อเก็บไฟล์ ZIP ไว้ครบถ้วน การตั้งค่านี้ไม่กระทบเวิร์กโฟลว์อัตโนมัติ"
+defaultPdfEditor = "โปรแกรมแก้ไข PDF เริ่มต้น"
+defaultPdfEditorActive = "Stirling PDF เป็นโปรแกรมแก้ไข PDF เริ่มต้นของคุณ"
+defaultPdfEditorChecking = "กำลังตรวจสอบ..."
+defaultPdfEditorInactive = "มีแอปอื่นตั้งเป็นค่าเริ่มต้น"
+defaultPdfEditorSet = "เป็นค่าเริ่มต้นอยู่แล้ว"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "โหมดตัวเลือกเครื่องมือเริ่มต้น"
+defaultToolPickerModeDescription = "เลือกว่าตัวเลือกเครื่องมือจะเปิดแบบเต็มหน้าจอหรือแถบด้านข้างโดยค่าเริ่มต้น"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "กำหนดการตั้งค่าทั่วไปของแอปพลิเคชัน"
+hideUnavailableConversions = "ซ่อนการแปลงที่ใช้ไม่ได้"
+hideUnavailableConversionsDescription = "ลบตัวเลือกการแปลงที่ถูกปิดใช้งานในเครื่องมือ Convert แทนการแสดงเป็นจาง"
+hideUnavailableTools = "ซ่อนเครื่องมือที่ใช้ไม่ได้"
+hideUnavailableToolsDescription = "ลบเครื่องมือที่ถูกปิดใช้งานโดยเซิร์ฟเวอร์ของคุณแทนการแสดงเป็นจาง"
+logout = "ออกจากระบบ"
+setAsDefault = "ตั้งเป็นค่าเริ่มต้น"
+title = "ทั่วไป"
+user = "ผู้ใช้"
+
+[settings.general.enableFeatures]
+action = "กำหนดค่า"
+and = "และ"
+benefit = "เปิดใช้บทบาทผู้ใช้ การทำงานร่วมกันในทีม การควบคุมผู้ดูแล และฟีเจอร์ระดับองค์กร"
+dismiss = "ปิด"
+intro = "เปิดใช้การยืนยันตัวตนผู้ใช้ การจัดการทีม และฟีเจอร์พื้นที่ทำงานสำหรับองค์กรของคุณ"
+learnMore = "เรียนรู้เพิ่มเติมในเอกสาร"
+title = "สำหรับผู้ดูแลระบบ"
+
+[settings.general.mode]
+fullscreen = "เต็มหน้าจอ"
+sidebar = "แถบด้านข้าง"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "ตรวจสอบอัปเดต"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "ตรวจสอบอัปเดตและดูข้อมูลเวอร์ชัน"
+latestVersion = "เวอร์ชันล่าสุด"
+serverNeedsUpdate = "เซิร์ฟเวอร์จำเป็นต้องอัปเดตโดยผู้ดูแลระบบ"
+title = "อัปเดตซอฟต์แวร์"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "ดูรายละเอียด"
+
+[settings.general.versionInfo]
+description = "รายละเอียดเวอร์ชันของเดสก์ท็อปและเซิร์ฟเวอร์"
+desktop = "เวอร์ชันเดสก์ท็อป"
+server = "เวอร์ชันเซิร์ฟเวอร์"
+title = "ข้อมูลเวอร์ชัน"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "กดแป้น… (Esc เพื่อยกเลิก)"
+change = "เปลี่ยนปุ่มลัด"
+customBadge = "กำหนดเอง"
+defaultLabel = "ค่าเริ่มต้น: {{shortcut}}"
+description = "ปรับแต่งแป้นพิมพ์ลัดเพื่อเข้าถึงเครื่องมือได้รวดเร็ว คลิก \"Change shortcut\" แล้วกดปุ่มลัดชุดใหม่ กด Esc เพื่อยกเลิก"
+errorConflict = "ปุ่มลัดถูกใช้โดย {{tool}} แล้ว"
+none = "ไม่ได้กำหนด"
+noShortcut = "ยังไม่ได้ตั้งปุ่มลัด"
+reset = "รีเซ็ต"
+searchPlaceholder = "ค้นหาเครื่องมือ..."
+shortcut = "ปุ่มลัด"
+title = "แป้นพิมพ์ลัด"
+
+[settings.hotkeys.errorModifier]
+mac = "ให้มี ⌘ (Command), ⌥ (Option) หรือปุ่มดัดแปลงอื่นในชุดแป้นลัดของคุณ"
+windows = "ให้มี Ctrl, Alt หรือปุ่มดัดแปลงอื่นในชุดแป้นลัดของคุณ"
+
+[settings.licensingAnalytics]
+audit = "การตรวจสอบ"
+plan = "แผน"
+title = "สิทธิ์การใช้งานและการวิเคราะห์"
+usageAnalytics = "การวิเคราะห์การใช้งาน"
 
 [settings.planBilling]
 currentPlan = "แผนปัจจุบัน"
@@ -6637,6 +6821,10 @@ canceled = "ยกเลิกแล้ว"
 pastDue = "ค้างชำระ"
 trial = "ทดลองใช้"
 
+[settings.planBilling.team]
+managedByTeam = "จัดการโดยทีม"
+memberCount = "สมาชิก {{count}} คน"
+
 [settings.planBilling.tier]
 enterprise = "Enterprise"
 enterpriseDescription = "ฟีเจอร์และการสนับสนุนระดับองค์กรที่ปรับแต่งได้"
@@ -6648,10 +6836,6 @@ teamDescription = "รวม 500 เครดิต/เดือน พร้อ
 teamTooltipCredits = "แผน Team รวม {{credits}} เครดิต/เดือน"
 teamTooltipFineprint = "จ่ายเฉพาะส่วนที่ใช้เกินจากเครดิตที่รวมมาให้"
 teamTooltipOverage = "การคิดค่าบริการส่วนเกินอัตโนมัติที่ {{price}}/เครดิต ช่วยให้บริการไม่สะดุด"
-
-[settings.planBilling.team]
-managedByTeam = "จัดการโดยทีม"
-memberCount = "สมาชิก {{count}} คน"
 
 [settings.planBilling.trial]
 daysRemaining = "เหลืออีก {{days}} วัน"
@@ -6670,88 +6854,6 @@ featureThroughput = "การประมวลผลที่เร็วข�
 opensInBrowser = "เปิดในเบราว์เซอร์เพื่อทำการอัปเกรดให้เสร็จสิ้น"
 subtitle = "อัปเกรดเป็น Team เพื่อ:"
 title = "อัปเกรดแผนของคุณ"
-
-[settings.developer]
-apiKeys = "API Keys"
-title = "นักพัฒนา"
-
-[settings.general]
-autoUnzip = "แตก ZIP จาก API อัตโนมัติ"
-autoUnzipDescription = "แยกไฟล์จากการตอบกลับ ZIP โดยอัตโนมัติ"
-autoUnzipFileLimit = "จำกัดจำนวนไฟล์ที่แตกอัตโนมัติ"
-autoUnzipFileLimitDescription = "จำนวนไฟล์สูงสุดที่จะดึงออกจาก ZIP"
-autoUnzipFileLimitTooltip = "แตกไฟล์ก็ต่อเมื่อ ZIP มีจำนวนไฟล์เท่ากับหรือน้อยกว่านี้ ตั้งค่าสูงขึ้นเพื่อแตก ZIP ขนาดใหญ่"
-autoUnzipTooltip = "แยกไฟล์ ZIP ที่ส่งกลับจากการทำงานของ API โดยอัตโนมัติ ปิดเพื่อเก็บไฟล์ ZIP ไว้ครบถ้วน การตั้งค่านี้ไม่กระทบเวิร์กโฟลว์อัตโนมัติ"
-defaultPdfEditor = "โปรแกรมแก้ไข PDF เริ่มต้น"
-defaultPdfEditorActive = "Stirling PDF เป็นโปรแกรมแก้ไข PDF เริ่มต้นของคุณ"
-defaultPdfEditorChecking = "กำลังตรวจสอบ..."
-defaultPdfEditorInactive = "มีแอปอื่นตั้งเป็นค่าเริ่มต้น"
-defaultPdfEditorSet = "เป็นค่าเริ่มต้นอยู่แล้ว"
-defaultToolPickerMode = "โหมดตัวเลือกเครื่องมือเริ่มต้น"
-defaultToolPickerModeDescription = "เลือกว่าตัวเลือกเครื่องมือจะเปิดแบบเต็มหน้าจอหรือแถบด้านข้างโดยค่าเริ่มต้น"
-description = "กำหนดการตั้งค่าทั่วไปของแอปพลิเคชัน"
-hideUnavailableConversions = "ซ่อนการแปลงที่ใช้ไม่ได้"
-hideUnavailableConversionsDescription = "ลบตัวเลือกการแปลงที่ถูกปิดใช้งานในเครื่องมือ Convert แทนการแสดงเป็นจาง"
-hideUnavailableTools = "ซ่อนเครื่องมือที่ใช้ไม่ได้"
-hideUnavailableToolsDescription = "ลบเครื่องมือที่ถูกปิดใช้งานโดยเซิร์ฟเวอร์ของคุณแทนการแสดงเป็นจาง"
-logout = "ออกจากระบบ"
-setAsDefault = "ตั้งเป็นค่าเริ่มต้น"
-title = "ทั่วไป"
-user = "ผู้ใช้"
-
-[settings.general.enableFeatures]
-action = "กำหนดค่า"
-and = "และ"
-benefit = "เปิดใช้บทบาทผู้ใช้ การทำงานร่วมกันในทีม การควบคุมผู้ดูแล และฟีเจอร์ระดับองค์กร"
-dismiss = "ปิด"
-intro = "เปิดใช้การยืนยันตัวตนผู้ใช้ การจัดการทีม และฟีเจอร์พื้นที่ทำงานสำหรับองค์กรของคุณ"
-learnMore = "เรียนรู้เพิ่มเติมในเอกสาร"
-title = "สำหรับผู้ดูแลระบบ"
-
-[settings.general.mode]
-fullscreen = "เต็มหน้าจอ"
-sidebar = "แถบด้านข้าง"
-
-[settings.general.updates]
-checkForUpdates = "ตรวจสอบอัปเดต"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "ตรวจสอบอัปเดตและดูข้อมูลเวอร์ชัน"
-latestVersion = "เวอร์ชันล่าสุด"
-serverNeedsUpdate = "เซิร์ฟเวอร์จำเป็นต้องอัปเดตโดยผู้ดูแลระบบ"
-title = "อัปเดตซอฟต์แวร์"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "ดูรายละเอียด"
-
-[settings.general.versionInfo]
-description = "รายละเอียดเวอร์ชันของเดสก์ท็อปและเซิร์ฟเวอร์"
-desktop = "เวอร์ชันเดสก์ท็อป"
-server = "เวอร์ชันเซิร์ฟเวอร์"
-title = "ข้อมูลเวอร์ชัน"
-
-[settings.hotkeys]
-capturing = "กดแป้น… (Esc เพื่อยกเลิก)"
-change = "เปลี่ยนปุ่มลัด"
-customBadge = "กำหนดเอง"
-defaultLabel = "ค่าเริ่มต้น: {{shortcut}}"
-description = "ปรับแต่งแป้นพิมพ์ลัดเพื่อเข้าถึงเครื่องมือได้รวดเร็ว คลิก \"Change shortcut\" แล้วกดปุ่มลัดชุดใหม่ กด Esc เพื่อยกเลิก"
-errorConflict = "ปุ่มลัดถูกใช้โดย {{tool}} แล้ว"
-none = "ไม่ได้กำหนด"
-noShortcut = "ยังไม่ได้ตั้งปุ่มลัด"
-reset = "รีเซ็ต"
-searchPlaceholder = "ค้นหาเครื่องมือ..."
-shortcut = "ปุ่มลัด"
-title = "แป้นพิมพ์ลัด"
-
-[settings.hotkeys.errorModifier]
-mac = "ให้มี ⌘ (Command), ⌥ (Option) หรือปุ่มดัดแปลงอื่นในชุดแป้นลัดของคุณ"
-windows = "ให้มี Ctrl, Alt หรือปุ่มดัดแปลงอื่นในชุดแป้นลัดของคุณ"
-
-[settings.licensingAnalytics]
-audit = "การตรวจสอบ"
-plan = "แผน"
-title = "สิทธิ์การใช้งานและการวิเคราะห์"
-usageAnalytics = "การวิเคราะห์การใช้งาน"
 
 [settings.policiesPrivacy]
 legal = "กฎหมาย"
@@ -6789,6 +6891,9 @@ security = "ความปลอดภัย"
 telegram = "Telegram"
 title = "ความปลอดภัยและการยืนยันตัวตน"
 
+[settings.team]
+title = "ทีม"
+
 [settings.tooltips]
 enableLoginFirst = "เปิดใช้งานโหมดเข้าสู่ระบบก่อน"
 requiresEnterprise = "ต้องมีสิทธิ์การใช้งานระดับ Enterprise"
@@ -6798,21 +6903,6 @@ people = "สมาชิก"
 teams = "ทีม"
 title = "พื้นที่ทำงาน"
 
-[settings.team]
-title = "ทีม"
-
-[localMode]
-toolUnavailable = "เครื่องมือนี้ต้องมีบัญชี ลงชื่อเข้าใช้ Stirling Cloud หรือเชื่อมต่อกับเซิร์ฟเวอร์ที่โฮสต์เองเพื่อใช้งาน"
-
-[localMode.banner]
-message = "ลงชื่อเข้าใช้เพื่อปลดล็อกเครื่องมือทั้งหมด"
-signIn = "ลงชื่อเข้าใช้"
-title = "ทำงานภายในเครื่อง"
-
-[localMode.toolPicker]
-message = "ลงชื่อเข้าใช้เพื่อปลดล็อกเครื่องมือทั้งหมด"
-signIn = "ลงชื่อเข้าใช้"
-
 [setup]
 description = "เริ่มต้นโดยเลือกวิธีที่คุณต้องการใช้ Stirling PDF"
 welcome = "ยินดีต้อนรับสู่ Stirling PDF"
@@ -6820,7 +6910,6 @@ welcome = "ยินดีต้อนรับสู่ Stirling PDF"
 [setup.login]
 connectingTo = "กำลังเชื่อมต่อกับ:"
 hideInstructions = "ซ่อนคำแนะนำ"
-skipSignIn = "ดำเนินการต่อโดยไม่ต้องลงชื่อเข้าใช้"
 instructions = "วิธีเปิดใช้งานการเข้าสู่ระบบบนเซิร์ฟเวอร์ Stirling PDF ของคุณ:"
 instructionsEnvVar = "ตั้งค่าตัวแปรสภาพแวดล้อม:"
 instructionsOrYml = "หรือใน settings.yml:"
@@ -6830,6 +6919,7 @@ orContinueWith = "หรือดำเนินการต่อด้วย�
 serverRequirement = "หมายเหตุ: เซิร์ฟเวอร์ต้องเปิดใช้งานการเข้าสู่ระบบ"
 showInstructions = "เปิดใช้งานอย่างไร?"
 signInWith = "ลงชื่อเข้าใช้ด้วย"
+skipSignIn = "ดำเนินการต่อโดยไม่ต้องลงชื่อเข้าใช้"
 sso = "Single Sign-On"
 submit = "เข้าสู่ระบบ"
 subtitle = "ป้อนข้อมูลรับรองเพื่อดำเนินการต่อ"
@@ -6866,9 +6956,9 @@ subtitle = "ลงชื่อเข้าใช้ด้วยบัญชี S
 title = "ลงชื่อเข้าใช้ Stirling"
 
 [setup.selfhosted]
+changeServerLocked = "องค์กรของคุณจำกัดแอปนี้ไว้กับเซิร์ฟเวอร์เฉพาะ"
 link = "หรือเชื่อมต่อกับบัญชีแบบ self-hosted"
 subtitle = "ป้อนข้อมูลรับรองของเซิร์ฟเวอร์ของคุณ"
-changeServerLocked = "องค์กรของคุณจำกัดแอปนี้ไว้กับเซิร์ฟเวอร์เฉพาะ"
 switchToLocal = "ใช้เครื่องมือภายในเครื่องแทน"
 title = "ลงชื่อเข้าใช้เซิร์ฟเวอร์"
 
@@ -7068,14 +7158,45 @@ saved = "ที่บันทึกไว้"
 text = "ข้อความ"
 title = "ประเภทลายเซ็น"
 
+[signatureSettings.tooltip]
+header = "การตั้งค่าลักษณะลายเซ็น"
+
+[signatureSettings.tooltip.location]
+bullet1 = "ตัวอย่าง: \"New York, USA\", \"London Office\", \"Remote\""
+bullet2 = "ไม่ใช่ตำแหน่งบนหน้า"
+bullet3 = "อาจจำเป็นสำหรับบางเขตอำนาจศาลทางกฎหมาย"
+description = "สถานที่ทางภูมิศาสตร์ (ไม่บังคับ) ที่มีการลงนาม จะถูกจัดเก็บในเมทาดาต้าใบรับรอง"
+title = "สถานที่ลายเซ็น"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "แสดงเคียงข้างกับลายเซ็นและข้อความ"
+bullet2 = "รองรับรูปแบบ PNG, JPG"
+bullet3 = "ช่วยเพิ่มความเป็นมืออาชีพ"
+description = "เพิ่มโลโก้บริษัทให้กับลายเซ็นที่มองเห็นได้เพื่อสร้างแบรนด์และเพิ่มความน่าเชื่อถือ"
+title = "โลโก้บริษัท"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "ตัวอย่าง: \"Approval\", \"Contract Agreement\", \"Review Complete\""
+bullet2 = "แสดงในคุณสมบัติลายเซ็นของ PDF"
+bullet3 = "มีประโยชน์สำหรับบันทึกตรวจสอบและการปฏิบัติตามข้อกำหนด"
+description = "ข้อความอธิบายเหตุผลที่ลงนาม (ไม่บังคับ) จะถูกจัดเก็บในเมทาดาต้าใบรับรอง"
+title = "เหตุผลของลายเซ็น"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>แสดง</b>: ลายเซ็นปรากฏบน PDF พร้อมลักษณะเฉพาะ"
+bullet2 = "<b>ไม่แสดง</b>: ฝังใบรับรองโดยไม่มีรอยภาพ"
+bullet3 = "ลายเซ็นที่ไม่แสดงยังคงให้การยืนยันด้วยการเข้ารหัส"
+description = "ควบคุมว่าลายเซ็นจะแสดงบนเอกสารหรือฝังแบบไม่แสดง"
+title = "การแสดงผลของลายเซ็น"
+
 [signRequest]
 declined = "คำขอลงนามถูกปฏิเสธ"
 fetchFailed = "ไม่สามารถโหลดคำขอลงนามได้"
 signed = "ลงนามเอกสารสำเร็จ"
 
 [signSession]
-createFailed = "ไม่สามารถสร้างคำขอลงนามได้"
 created = "ส่งคำขอลงนามแล้ว"
+createFailed = "ไม่สามารถสร้างคำขอลงนามได้"
 
 [signup]
 accountCreatedSuccessfully = "สร้างบัญชีสำเร็จ! ตอนนี้คุณสามารถลงชื่อเข้าใช้ได้"
@@ -7156,15 +7277,15 @@ desc = "แยกอัตโนมัติด้วยแผ่นคั่น
 name = "แผ่นแบ่งหน้า"
 tooltip = "ใช้แผ่นคั่น QR code ระหว่างเอกสารเมื่อสแกน"
 
-[split.methods.byPoster]
-name = "แบ่งเป็นชิ้นพิมพ์"
-desc = "แยกหน้าขนาดใหญ่ให้เป็นขนาดที่พิมพ์ได้"
-tooltip = "แบ่งหน้าที่มีขนาดใหญ่เกินเป็นชิ้นเล็กลง เหมาะสำหรับการพิมพ์บนกระดาษมาตรฐาน (A4, Letter ฯลฯ)"
-
 [split.methods.byPages]
 desc = "สกัดหน้าเฉพาะ (1,3,5-10)"
 name = "หมายเลขหน้า"
 tooltip = "กรอกหมายเลขหน้าคั่นด้วยจุลภาค หรือช่วงด้วยขีด"
+
+[split.methods.byPoster]
+desc = "แยกหน้าขนาดใหญ่ให้เป็นขนาดที่พิมพ์ได้"
+name = "แบ่งเป็นชิ้นพิมพ์"
+tooltip = "แบ่งหน้าที่มีขนาดใหญ่เกินเป็นชิ้นเล็กลง เหมาะสำหรับการพิมพ์บนกระดาษมาตรฐาน (A4, Letter ฯลฯ)"
 
 [split.methods.bySections]
 desc = "แบ่งหน้าเป็นตารางส่วน"
@@ -7192,27 +7313,27 @@ title = "เลือกวิธีการแยกของคุณ"
 text = "เลือกวิธีที่คุณต้องการแยกเอกสาร PDF ของคุณ แต่ละวิธีถูกปรับให้เหมาะกับกรณีใช้งานและประเภทเอกสารที่ต่างกัน"
 title = "การเลือกวิธีการแยก"
 
+[split.poster]
+rightToLeft = "แยกจากขวาไปซ้าย"
+
+[split.poster.pageSize]
+description = "ขนาดหน้าผลลัพธ์สำหรับการพิมพ์"
+label = "ขนาดหน้ากระดาษเป้าหมาย"
+
+[split.poster.xFactor]
+description = "จำนวนคอลัมน์ที่จะแบ่งแต่ละหน้า"
+label = "การแบ่งแนวนอน"
+
+[split.poster.yFactor]
+description = "จำนวนแถวที่จะแบ่งแต่ละหน้า"
+label = "การแบ่งแนวตั้ง"
+
 [split.settings]
 selectMethodFirst = "โปรดเลือกวิธีการแยกก่อน"
 
 [split.steps]
 chooseMethod = "เลือกวิธี"
 settings = "การตั้งค่า"
-
-[split.poster]
-rightToLeft = "แยกจากขวาไปซ้าย"
-
-[split.poster.pageSize]
-label = "ขนาดหน้ากระดาษเป้าหมาย"
-description = "ขนาดหน้าผลลัพธ์สำหรับการพิมพ์"
-
-[split.poster.xFactor]
-label = "การแบ่งแนวนอน"
-description = "จำนวนคอลัมน์ที่จะแบ่งแต่ละหน้า"
-
-[split.poster.yFactor]
-label = "การแบ่งแนวตั้ง"
-description = "จำนวนแถวที่จะแบ่งแต่ละหน้า"
 
 [split.tooltip.byChapters]
 bullet1 = "ระดับบุ๊กมาร์ก: เลือกระดับที่จะใช้แยก (1=ระดับบนสุด)"
@@ -7251,6 +7372,13 @@ bullet5 = "เปิดใช้โหมดพิมพ์สองหน้า
 text = "แยกเอกสารที่สแกนอัตโนมัติโดยใช้แผ่นคั่นที่มี QR codes เหมาะสำหรับประมวลผลเอกสารหลายชุดที่สแกนรวมกัน"
 title = "แยกด้วยแผ่นแบ่งหน้า"
 
+[split.tooltip.byPages]
+bullet1 = "จุดแยกเดี่ยว: 3,7 (ตัดหลังหน้า 3 และ 7)"
+bullet2 = "จุดแยกช่วง: 3-8 (ตัดก่อนหน้า 3 และหลังหน้า 8)"
+bullet3 = "ผสม: 2,5-10,15 (ตัดหลังหน้า 2 ก่อนหน้า 5 หลังหน้า 10 และหลังหน้า 15)"
+text = "แยก PDF ที่หมายเลขหน้าที่กำหนด การใช้ 'n' จะตัดหลังหน้า n การใช้ 'n-m' จะตัดก่อนหน้า n และหลังหน้า m"
+title = "แยกที่หมายเลขหน้า"
+
 [split.tooltip.byPoster]
 bullet1 = "ขนาดหน้ากระดาษเป้าหมาย: เลือกขนาดกระดาษผลลัพธ์ (A4, Letter ฯลฯ)"
 bullet2 = "การแบ่งแนวนอน/แนวตั้ง: ขนาดกริดสำหรับการแบ่งหน้า"
@@ -7258,13 +7386,6 @@ bullet3 = "ขวาไปซ้าย: สลับลำดับคอลั�
 bullet4 = "พิมพ์และประกอบชิ้นส่วนเพื่อสร้างโปสเตอร์ของคุณ"
 text = "แยกหน้า PDF ขนาดใหญ่เป็นชิ้นเล็กที่พิมพ์ได้ เหมาะกับขนาดกระดาษมาตรฐาน เหมาะสำหรับสร้างงานพิมพ์โปสเตอร์จากหน้าที่มีขนาดใหญ่เกิน"
 title = "แบ่งสำหรับพิมพ์โปสเตอร์"
-
-[split.tooltip.byPages]
-bullet1 = "จุดแยกเดี่ยว: 3,7 (ตัดหลังหน้า 3 และ 7)"
-bullet2 = "จุดแยกช่วง: 3-8 (ตัดก่อนหน้า 3 และหลังหน้า 8)"
-bullet3 = "ผสม: 2,5-10,15 (ตัดหลังหน้า 2 ก่อนหน้า 5 หลังหน้า 10 และหลังหน้า 15)"
-text = "แยก PDF ที่หมายเลขหน้าที่กำหนด การใช้ 'n' จะตัดหลังหน้า n การใช้ 'n-m' จะตัดก่อนหน้า n และหลังหน้า m"
-title = "แยกที่หมายเลขหน้า"
 
 [split.tooltip.bySections]
 bullet1 = "แนวนอน: จำนวนแถวที่จะสร้าง"
@@ -7355,106 +7476,6 @@ title = "แบ่งไฟล์ PDF ตามหมวดหมู่"
 [splitPdfByChapters]
 tags = "แยก,บท,บุ๊กมาร์ก,จัดระเบียบ"
 
-[storageShare]
-accessed = "เข้าถึงแล้ว"
-accessDenied = "คุณไม่มีสิทธิ์เข้าถึงไฟล์ที่แชร์นี้ โปรดขอให้เจ้าของแชร์ให้คุณ"
-accessFailed = "ไม่สามารถโหลดกิจกรรมได้"
-accessDeniedBody = "คุณไม่มีสิทธิ์เข้าถึงไฟล์นี้ โปรดขอให้เจ้าของแชร์ให้คุณ"
-accessDeniedTitle = "ไม่มีสิทธิ์เข้าถึง"
-accessLimitedCommenter = "สิทธิ์แสดงความคิดเห็นจะมาเร็วๆ นี้ หากคุณต้องการดาวน์โหลด โปรดขอสิทธิ์ผู้แก้ไขจากเจ้าของ"
-accessLimitedTitle = "สิทธิ์เข้าถึงจำกัด"
-accessLimitedViewer = "ลิงก์นี้ใช้เพื่อดูเท่านั้น หากคุณต้องการดาวน์โหลด โปรดขอสิทธิ์ผู้แก้ไขจากเจ้าของ"
-createdAt = "สร้างเมื่อ"
-download = "ดาวน์โหลด"
-downloadFailed = "ไม่สามารถดาวน์โหลดไฟล์นี้ได้"
-expiredBody = "ลิงก์แชร์นี้ไม่ถูกต้องหรือหมดอายุแล้ว"
-expiredTitle = "ลิงก์หมดอายุ"
-goToLogin = "ไปที่หน้าเข้าสู่ระบบ"
-loadFailed = "ไม่สามารถเปิดไฟล์ที่แชร์ได้"
-loading = "กำลังโหลดลิงก์แชร์..."
-loginPrompt = "ลงชื่อเข้าใช้เพื่อเข้าถึงไฟล์ที่แชร์นี้"
-loginRequired = "ต้องเข้าสู่ระบบ"
-openInApp = "เปิดใน Stirling PDF"
-ownerLabel = "เจ้าของ"
-ownerUnknown = "ไม่ทราบ"
-requiresLogin = "ไฟล์ที่แชร์นี้ต้องเข้าสู่ระบบ"
-roleCommenter = "ผู้แสดงความคิดเห็น"
-roleEditor = "ผู้แก้ไข"
-roleViewer = "ผู้ชม"
-shareHeading = "ไฟล์ที่แชร์"
-titleDefault = "ไฟล์ที่แชร์"
-tryAgain = "โปรดลองใหม่ในภายหลัง"
-addUser = "เพิ่ม"
-commenterHint = "การแสดงความคิดเห็นจะมาเร็วๆ นี้"
-copied = "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว"
-copy = "คัดลอก"
-copyFailed = "คัดลอกไม่สำเร็จ"
-description = "สร้างลิงก์แชร์สำหรับไฟล์นี้ ผู้ใช้ที่ลงชื่อเข้าใช้และมีลิงก์สามารถเข้าถึงได้"
-downloadsCount = "ดาวน์โหลด: {{count}}"
-emailWarningBody = "นี่ดูเหมือนเป็นที่อยู่อีเมล หากบุคคลนี้ยังไม่เป็นผู้ใช้ Stirling PDF พวกเขาจะไม่สามารถเข้าถึงไฟล์ได้"
-emailWarningConfirm = "แชร์ต่อไป"
-emailWarningTitle = "ที่อยู่อีเมล"
-errorTitle = "แชร์ไม่สำเร็จ"
-failure = "ไม่สามารถสร้างลิงก์แชร์ได้ โปรดลองอีกครั้ง"
-fileLabel = "ไฟล์"
-generate = "สร้างลิงก์"
-generated = "สร้างลิงก์แชร์แล้ว"
-hideActivity = "ซ่อนกิจกรรม"
-invalidUsername = "ป้อนชื่อผู้ใช้หรือที่อยู่อีเมลที่ถูกต้อง"
-lastAccessed = "เข้าถึงล่าสุด"
-linkAccessTitle = "การเข้าถึงผ่านลิงก์แชร์"
-linkLabel = "ลิงก์แชร์"
-linksDisabled = "ปิดใช้งานลิงก์แชร์"
-linksDisabledBody = "ลิงก์แชร์ถูกปิดใช้งานโดยการตั้งค่าเซิร์ฟเวอร์ของคุณ"
-manage = "จัดการการแชร์"
-manageDescription = "สร้างและจัดการลิงก์เพื่อแชร์ไฟล์นี้"
-manageLoadFailed = "ไม่สามารถโหลดลิงก์แชร์ได้"
-manageTitle = "จัดการการแชร์"
-noActivity = "ยังไม่มีกิจกรรม"
-noLinks = "ยังไม่มีลิงก์แชร์ที่ใช้งานอยู่"
-noSharedUsers = "ยังไม่มีผู้ใช้ที่มีสิทธิ์เข้าถึง"
-removeLink = "นำลิงก์ออก"
-removeUser = "นำออก"
-revokeFailed = "ไม่สามารถลบลิงก์แชร์ได้"
-revoked = "ลบลิงก์แชร์แล้ว"
-roleLabel = "บทบาท"
-sharingDisabled = "ปิดใช้งานการแชร์แล้ว"
-sharingDisabledBody = "การแชร์ถูกปิดใช้งานโดยการตั้งค่าเซิร์ฟเวอร์ของคุณ"
-sharedUsersTitle = "ผู้ใช้ที่แชร์ให้"
-title = "แชร์ไฟล์"
-unknownUser = "ผู้ใช้ที่ไม่รู้จัก"
-userAddFailed = "ไม่สามารถแชร์กับผู้ใช้นั้นได้"
-userAdded = "เพิ่มผู้ใช้ไปยังรายการการแชร์แล้ว"
-usernameLabel = "ชื่อผู้ใช้หรืออีเมล"
-usernamePlaceholder = "ป้อนชื่อผู้ใช้หรืออีเมล"
-userRemoveFailed = "ไม่สามารถลบผู้ใช้นั้นได้"
-userRemoved = "ลบผู้ใช้ออกจากรายการการแชร์แล้ว"
-viewActivity = "ดูกิจกรรม"
-viewed = "ดูแล้ว"
-viewsCount = "การดู: {{count}}"
-downloaded = "ดาวน์โหลดแล้ว"
-bulkDescription = "สร้างลิงก์เดียวเพื่อแชร์ไฟล์ที่เลือกทั้งหมดกับผู้ใช้ที่ลงชื่อเข้าใช้"
-bulkTitle = "แชร์ไฟล์ที่เลือก"
-copyLink = "คัดลอกลิงก์แชร์"
-fileCount = "{{count}} ไฟล์ที่เลือก"
-ownerOnly = "มีเพียงเจ้าของเท่านั้นที่จัดการการแชร์ได้"
-selectSingleFile = "เลือกไฟล์เดียวเพื่อจัดการการแชร์"
-
-[storageUpload]
-description = "อัปโหลดไฟล์ปัจจุบันไปยังพื้นที่จัดเก็บบนเซิร์ฟเวอร์สำหรับการเข้าถึงของคุณเอง"
-errorTitle = "อัปโหลดล้มเหลว"
-failure = "อัปโหลดล้มเหลว โปรดตรวจสอบการเข้าสู่ระบบและการตั้งค่าการจัดเก็บของคุณ"
-fileLabel = "ไฟล์"
-hint = "ลิงก์สาธารณะและโหมดการเข้าถึงถูกควบคุมโดยการตั้งค่าเซิร์ฟเวอร์ของคุณ"
-success = "อัปโหลดไปยังเซิร์ฟเวอร์แล้ว"
-title = "อัปโหลดไปยังเซิร์ฟเวอร์"
-updateButton = "อัปเดตบนเซิร์ฟเวอร์"
-uploadButton = "อัปโหลดไปยังเซิร์ฟเวอร์"
-bulkDescription = "นี่จะอัปโหลดไฟล์ที่เลือกไปยังพื้นที่จัดเก็บบนเซิร์ฟเวอร์ของคุณ"
-bulkTitle = "อัปโหลดไฟล์ที่เลือก"
-fileCount = "{{count}} ไฟล์ที่เลือก"
-more = " +{{count}} รายการเพิ่มเติม"
-
 [storage]
 approximateSize = "ขนาดโดยประมาณ"
 fileTooLarge = "ไฟล์มีขนาดใหญ่เกินไป ขนาดสูงสุดต่อไฟล์คือ"
@@ -7463,6 +7484,106 @@ storageLimit = "ขีดจำกัดพื้นที่จัดเก็�
 storageQuotaExceeded = "เกินโควตาพื้นที่จัดเก็บ โปรดลบไฟล์บางส่วนก่อนอัปโหลดเพิ่มเติม"
 storageUsed = "ใช้พื้นที่จัดเก็บชั่วคราวไปแล้ว"
 temporaryNotice = "ไฟล์จะถูกเก็บชั่วคราวในเบราว์เซอร์ของคุณและอาจถูกลบโดยอัตโนมัติ"
+
+[storageShare]
+accessDenied = "คุณไม่มีสิทธิ์เข้าถึงไฟล์ที่แชร์นี้ โปรดขอให้เจ้าของแชร์ให้คุณ"
+accessDeniedBody = "คุณไม่มีสิทธิ์เข้าถึงไฟล์นี้ โปรดขอให้เจ้าของแชร์ให้คุณ"
+accessDeniedTitle = "ไม่มีสิทธิ์เข้าถึง"
+accessed = "เข้าถึงแล้ว"
+accessFailed = "ไม่สามารถโหลดกิจกรรมได้"
+accessLimitedCommenter = "สิทธิ์แสดงความคิดเห็นจะมาเร็วๆ นี้ หากคุณต้องการดาวน์โหลด โปรดขอสิทธิ์ผู้แก้ไขจากเจ้าของ"
+accessLimitedTitle = "สิทธิ์เข้าถึงจำกัด"
+accessLimitedViewer = "ลิงก์นี้ใช้เพื่อดูเท่านั้น หากคุณต้องการดาวน์โหลด โปรดขอสิทธิ์ผู้แก้ไขจากเจ้าของ"
+addUser = "เพิ่ม"
+bulkDescription = "สร้างลิงก์เดียวเพื่อแชร์ไฟล์ที่เลือกทั้งหมดกับผู้ใช้ที่ลงชื่อเข้าใช้"
+bulkTitle = "แชร์ไฟล์ที่เลือก"
+commenterHint = "การแสดงความคิดเห็นจะมาเร็วๆ นี้"
+copied = "คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว"
+copy = "คัดลอก"
+copyFailed = "คัดลอกไม่สำเร็จ"
+copyLink = "คัดลอกลิงก์แชร์"
+createdAt = "สร้างเมื่อ"
+description = "สร้างลิงก์แชร์สำหรับไฟล์นี้ ผู้ใช้ที่ลงชื่อเข้าใช้และมีลิงก์สามารถเข้าถึงได้"
+download = "ดาวน์โหลด"
+downloaded = "ดาวน์โหลดแล้ว"
+downloadFailed = "ไม่สามารถดาวน์โหลดไฟล์นี้ได้"
+downloadsCount = "ดาวน์โหลด: {{count}}"
+emailWarningBody = "นี่ดูเหมือนเป็นที่อยู่อีเมล หากบุคคลนี้ยังไม่เป็นผู้ใช้ Stirling PDF พวกเขาจะไม่สามารถเข้าถึงไฟล์ได้"
+emailWarningConfirm = "แชร์ต่อไป"
+emailWarningTitle = "ที่อยู่อีเมล"
+errorTitle = "แชร์ไม่สำเร็จ"
+expiredBody = "ลิงก์แชร์นี้ไม่ถูกต้องหรือหมดอายุแล้ว"
+expiredTitle = "ลิงก์หมดอายุ"
+failure = "ไม่สามารถสร้างลิงก์แชร์ได้ โปรดลองอีกครั้ง"
+fileCount = "{{count}} ไฟล์ที่เลือก"
+fileLabel = "ไฟล์"
+generate = "สร้างลิงก์"
+generated = "สร้างลิงก์แชร์แล้ว"
+goToLogin = "ไปที่หน้าเข้าสู่ระบบ"
+hideActivity = "ซ่อนกิจกรรม"
+invalidUsername = "ป้อนชื่อผู้ใช้หรือที่อยู่อีเมลที่ถูกต้อง"
+lastAccessed = "เข้าถึงล่าสุด"
+linkAccessTitle = "การเข้าถึงผ่านลิงก์แชร์"
+linkLabel = "ลิงก์แชร์"
+linksDisabled = "ปิดใช้งานลิงก์แชร์"
+linksDisabledBody = "ลิงก์แชร์ถูกปิดใช้งานโดยการตั้งค่าเซิร์ฟเวอร์ของคุณ"
+loadFailed = "ไม่สามารถเปิดไฟล์ที่แชร์ได้"
+loading = "กำลังโหลดลิงก์แชร์..."
+loginPrompt = "ลงชื่อเข้าใช้เพื่อเข้าถึงไฟล์ที่แชร์นี้"
+loginRequired = "ต้องเข้าสู่ระบบ"
+manage = "จัดการการแชร์"
+manageDescription = "สร้างและจัดการลิงก์เพื่อแชร์ไฟล์นี้"
+manageLoadFailed = "ไม่สามารถโหลดลิงก์แชร์ได้"
+manageTitle = "จัดการการแชร์"
+noActivity = "ยังไม่มีกิจกรรม"
+noLinks = "ยังไม่มีลิงก์แชร์ที่ใช้งานอยู่"
+noSharedUsers = "ยังไม่มีผู้ใช้ที่มีสิทธิ์เข้าถึง"
+openInApp = "เปิดใน Stirling PDF"
+ownerLabel = "เจ้าของ"
+ownerOnly = "มีเพียงเจ้าของเท่านั้นที่จัดการการแชร์ได้"
+ownerUnknown = "ไม่ทราบ"
+removeLink = "นำลิงก์ออก"
+removeUser = "นำออก"
+requiresLogin = "ไฟล์ที่แชร์นี้ต้องเข้าสู่ระบบ"
+revoked = "ลบลิงก์แชร์แล้ว"
+revokeFailed = "ไม่สามารถลบลิงก์แชร์ได้"
+roleCommenter = "ผู้แสดงความคิดเห็น"
+roleEditor = "ผู้แก้ไข"
+roleLabel = "บทบาท"
+roleViewer = "ผู้ชม"
+selectSingleFile = "เลือกไฟล์เดียวเพื่อจัดการการแชร์"
+sharedUsersTitle = "ผู้ใช้ที่แชร์ให้"
+shareHeading = "ไฟล์ที่แชร์"
+sharingDisabled = "ปิดใช้งานการแชร์แล้ว"
+sharingDisabledBody = "การแชร์ถูกปิดใช้งานโดยการตั้งค่าเซิร์ฟเวอร์ของคุณ"
+title = "แชร์ไฟล์"
+titleDefault = "ไฟล์ที่แชร์"
+tryAgain = "โปรดลองใหม่ในภายหลัง"
+unknownUser = "ผู้ใช้ที่ไม่รู้จัก"
+userAdded = "เพิ่มผู้ใช้ไปยังรายการการแชร์แล้ว"
+userAddFailed = "ไม่สามารถแชร์กับผู้ใช้นั้นได้"
+usernameLabel = "ชื่อผู้ใช้หรืออีเมล"
+usernamePlaceholder = "ป้อนชื่อผู้ใช้หรืออีเมล"
+userRemoved = "ลบผู้ใช้ออกจากรายการการแชร์แล้ว"
+userRemoveFailed = "ไม่สามารถลบผู้ใช้นั้นได้"
+viewActivity = "ดูกิจกรรม"
+viewed = "ดูแล้ว"
+viewsCount = "การดู: {{count}}"
+
+[storageUpload]
+bulkDescription = "นี่จะอัปโหลดไฟล์ที่เลือกไปยังพื้นที่จัดเก็บบนเซิร์ฟเวอร์ของคุณ"
+bulkTitle = "อัปโหลดไฟล์ที่เลือก"
+description = "อัปโหลดไฟล์ปัจจุบันไปยังพื้นที่จัดเก็บบนเซิร์ฟเวอร์สำหรับการเข้าถึงของคุณเอง"
+errorTitle = "อัปโหลดล้มเหลว"
+failure = "อัปโหลดล้มเหลว โปรดตรวจสอบการเข้าสู่ระบบและการตั้งค่าการจัดเก็บของคุณ"
+fileCount = "{{count}} ไฟล์ที่เลือก"
+fileLabel = "ไฟล์"
+hint = "ลิงก์สาธารณะและโหมดการเข้าถึงถูกควบคุมโดยการตั้งค่าเซิร์ฟเวอร์ของคุณ"
+more = " +{{count}} รายการเพิ่มเติม"
+success = "อัปโหลดไปยังเซิร์ฟเวอร์แล้ว"
+title = "อัปโหลดไปยังเซิร์ฟเวอร์"
+updateButton = "อัปเดตบนเซิร์ฟเวอร์"
+uploadButton = "อัปโหลดไปยังเซิร์ฟเวอร์"
 
 [subscription]
 cancelsOn = "ยกเลิกในวันที่ {{date}}"
@@ -7507,8 +7628,121 @@ title = "เอกสาร API"
 [tableExtraxt]
 tags = "CSV, การแยกตาราง, แยก, การแปลง"
 
+[team]
+cancelInviteError = "ยกเลิกคำเชิญไม่สำเร็จ"
+confirmCancelInvite = "คุณแน่ใจหรือไม่ว่าต้องการยกเลิกคำเชิญนี้?"
+confirmLeave = "คุณแน่ใจหรือไม่ว่าต้องการออกจากทีมนี้?"
+confirmLeaveLeader = "ในฐานะหัวหน้าทีม การออกจะนำคุณออกจากทีม คุณแน่ใจหรือไม่?"
+confirmRemove = "คุณแน่ใจหรือไม่ว่าต้องการลบสมาชิกนี้?"
+editName = "แก้ไขชื่อทีม"
+inviteCancelled = "ยกเลิกคำเชิญแล้ว"
+inviteError = "ส่งคำเชิญไม่สำเร็จ"
+inviteSent = "ส่งคำเชิญเรียบร้อยแล้ว"
+leader = "หัวหน้าทีม"
+leaveButton = "ออกจากทีม"
+leaveError = "ออกจากทีมไม่สำเร็จ"
+leaveSuccess = "ออกจากทีมเรียบร้อยแล้ว"
+loading = "กำลังโหลดข้อมูลทีม..."
+memberCount = "สมาชิก {{count}} คน"
+memberRemoved = "ลบสมาชิกเรียบร้อยแล้ว"
+namePlaceholder = "ป้อนชื่อทีม"
+personal = "ส่วนบุคคล"
+removeError = "ลบสมาชิกล้มเหลว"
+renameError = "เปลี่ยนชื่อทีมไม่สำเร็จ"
+renameSuccess = "เปลี่ยนชื่อทีมเรียบร้อยแล้ว"
+
+[team.features]
+badge = "ฟีเจอร์สำหรับทีม"
+subtitle = "ทำงานร่วมกันกับทีมของคุณ"
+title = "การทำงานร่วมกันในทีม"
+viewPlans = "ดูแผน"
+
+[team.features.billing]
+description = "จัดการการเรียกเก็บเงินและการสมัครสมาชิก"
+title = "การจัดการการเรียกเก็บเงิน"
+
+[team.features.credits]
+description = "พูลเครดิตร่วมสำหรับสมาชิกทุกคน"
+title = "เครดิตที่ใช้ร่วมกัน"
+
+[team.features.dashboard]
+description = "ดูความเคลื่อนไหวและการใช้งานของทีม"
+title = "แดชบอร์ดทีม"
+
+[team.features.invite]
+description = "เพิ่มสมาชิกในทีมของคุณ"
+title = "เชิญสมาชิก"
+
+[team.invitationBanner]
+acceptButton = "ยอมรับ"
+message = "ได้เชิญคุณให้เข้าร่วม"
+rejectButton = "ปฏิเสธ"
+
+[team.invite]
+cancelLabel = "ยกเลิก"
+invalidEmail = "ที่อยู่อีเมลไม่ถูกต้อง"
+placeholder = "ป้อนที่อยู่อีเมล"
+sendButton = "ส่งคำเชิญ"
+title = "เชิญสมาชิกทีม"
+
+[team.members]
+emailColumn = "อีเมล"
+empty = "ยังไม่มีสมาชิกทีม"
+nameColumn = "ชื่อ"
+pending = "รอดำเนินการ"
+remove = "ลบ"
+roleColumn = "บทบาท"
+title = "สมาชิกทีม"
+
+[team.upgrade]
+button = "อัปเกรดเป็น Team"
+description = "ปลดล็อกฟีเจอร์การทำงานร่วมกันของทีม"
+title = "อัปเกรดเป็นแผน Team"
+
+[textAlign]
+center = "กึ่งกลาง"
+left = "ชิดซ้าย"
+right = "ชิดขวา"
+
 [theme]
 toggle = "สลับธีม"
+
+[timestampPdf]
+completed = "ประทับเวลาบน PDF สำเร็จ"
+desc = "เพิ่มการประทับเวลาเอกสาร RFC 3161 ให้กับ PDF ของคุณโดยใช้เซิร์ฟเวอร์ Time Stamp Authority (TSA) ที่เชื่อถือได้"
+filenamePrefix = "timestamped"
+results = "ผลลัพธ์การประทับเวลา"
+submit = "ใช้การประทับเวลา"
+title = "ประทับเวลา PDF"
+
+[timestampPdf.error]
+failed = "เกิดข้อผิดพลาดระหว่างการประทับเวลา PDF"
+generic = "การประทับเวลาไม่สำเร็จ"
+
+[timestampPdf.files]
+placeholder = "เลือกไฟล์ PDF ในมุมมองหลักเพื่อเริ่มต้น"
+
+[timestampPdf.options]
+note = "จะส่งเพียงแฮชแบบ SHA-256 ของเอกสารของคุณไปยังเซิร์ฟเวอร์ TSA; ไฟล์ PDF จะไม่ถูกส่งไปยังเซิร์ฟเวอร์ TSA"
+title = "เซิร์ฟเวอร์การประทับเวลา (TSA)"
+
+[timestampPdf.options.tsaUrl]
+desc = "เลือก Time Stamp Authority ที่เชื่อถือได้"
+label = "เลือกเซิร์ฟเวอร์ TSA"
+
+[timestampPdf.steps]
+settings = "การตั้งค่า"
+
+[tool]
+endpointUnavailable = "เครื่องมือนี้ไม่พร้อมใช้งานบนเซิร์ฟเวอร์ของคุณ"
+endpointUnavailableClickable = "ไม่พร้อมใช้งานในโหมดนี้ คลิกเพื่อลงชื่อเข้าใช้"
+invalidParams = "กรอกการตั้งค่าที่จำเป็นให้ครบถ้วน"
+noFiles = "เพิ่มไฟล์เพื่อเริ่มต้น"
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "อัลฟา"
@@ -7568,12 +7802,6 @@ pageFormatting = "การจัดรูปแบบหน้า"
 removal = "การลบ"
 signing = "การลงนาม"
 verification = "การตรวจสอบ"
-
-[tool]
-endpointUnavailable = "เครื่องมือนี้ไม่พร้อมใช้งานบนเซิร์ฟเวอร์ของคุณ"
-endpointUnavailableClickable = "ไม่พร้อมใช้งานในโหมดนี้ คลิกเพื่อลงชื่อเข้าใช้"
-invalidParams = "กรอกการตั้งค่าที่จำเป็นให้ครบถ้วน"
-noFiles = "เพิ่มไฟล์เพื่อเริ่มต้น"
 
 [tools]
 noSearchResults = "ไม่พบเครื่องมือ"
@@ -7793,6 +8021,81 @@ fileManager = "ตัวจัดการไฟล์"
 pageEditor = "ตัวแก้ไขหน้า"
 viewer = "ตัวดูเอกสาร"
 
+[viewer]
+cannotPreviewFile = "ไม่สามารถแสดงตัวอย่างไฟล์ได้"
+disableColorFilter = "ปิดใช้งานตัวกรองสี"
+dualPageView = "มุมมองสองหน้า"
+enableDarkFilter = "เปิดใช้งานตัวกรองโทนมืด"
+enableSepiaFilter = "เปิดใช้งานตัวกรองเซเปีย"
+firstPage = "หน้าแรก"
+lastPage = "หน้าสุดท้าย"
+nextPage = "หน้าถัดไป"
+onlyPdfSupported = "ตัวแสดงผลรองรับเฉพาะไฟล์ PDF ไฟล์นี้ดูเหมือนจะเป็นรูปแบบอื่น"
+previousPage = "หน้าก่อนหน้า"
+resetZoom = "รีเซ็ตการซูม"
+singlePageView = "มุมมองหน้าเดียว"
+unknownFile = "ไฟล์ไม่รู้จัก"
+zoomIn = "ซูมเข้า"
+zoomOut = "ซูมออก"
+
+[viewer.attachments]
+empty = "ไม่มีไฟล์แนบในเอกสารนี้"
+loading = "กำลังโหลดไฟล์แนบ..."
+noDocument = "เปิด PDF เพื่อดูไฟล์แนบ"
+noMatch = "ไม่มีไฟล์แนบที่ตรงกับการค้นหา"
+noSupport = "ตัวแสดงผลนี้ไม่รองรับไฟล์แนบ"
+searchPlaceholder = "ค้นหาไฟล์แนบ"
+title = "ไฟล์แนบ"
+
+[viewer.comments]
+addComment = "เพิ่มความคิดเห็น"
+addCommentPlaceholder = "เพิ่มความคิดเห็น..."
+addLink = "เพิ่มลิงก์"
+addReplyPlaceholder = "เพิ่มการตอบกลับ..."
+deleteAnnotationAndComment = "ลบคำอธิบายประกอบและความคิดเห็น"
+deleteDescription = "คำอธิบายประกอบนี้มีความคิดเห็นแนบอยู่ คุณสามารถลบเฉพาะความคิดเห็นจากแถบด้านข้างโดยคงคำอธิบายประกอบไว้ หรือจะลบทั้งหมด"
+deleteTitle = "เอาคำอธิบายประกอบออกจากความคิดเห็นหรือไม่?"
+goToLink = "ไปที่ลิงก์"
+hint = "วางความคิดเห็นด้วยเครื่องมือ ความคิดเห็น แทรกข้อความ หรือ แทนที่ข้อความ โดยจะแสดงที่นี่ตามหน้า"
+locateAnnotation = "ค้นหาตำแหน่งในเอกสาร"
+moreActions = "การดำเนินการเพิ่มเติม"
+nComments = "{{count}} ความคิดเห็น"
+oneComment = "1 ความคิดเห็น"
+pageLabel = "หน้า {{page}}"
+placeholder = "พิมพ์ความคิดเห็นของคุณ..."
+removeCommentOnly = "ลบเฉพาะความคิดเห็น"
+saveReply = "บันทึกการตอบกลับ"
+send = "ส่ง"
+title = "ความคิดเห็น"
+typeComment = "ความคิดเห็น"
+typeInsertText = "แทรกข้อความ"
+typeReplaceText = "แทนที่ข้อความ"
+viewComment = "ดูความคิดเห็น"
+
+[viewer.formBar]
+apply = "ใช้การเปลี่ยนแปลง"
+dismiss = "ปิด"
+download = "ดาวน์โหลด PDF"
+hasFieldsDesc = "PDF นี้มีช่องที่กรอกได้"
+title = "ช่องแบบฟอร์ม"
+unsavedBadge = "ยังไม่บันทึก"
+unsavedDesc = "คุณมีการเปลี่ยนแปลงที่ยังไม่บันทึก"
+
+[viewer.nonPdf]
+columnDefault = "คอลัมน์ {{index}}"
+convertToPdf = "แปลงเป็น PDF"
+csvStats = "{{rows}} แถว · {{columns}} คอลัมน์ · {{size}}"
+emptyFile = "ไฟล์ว่างเปล่า"
+fileTypeBadge = "ไฟล์ {{type}}"
+htmlPreview = "ตัวอย่าง HTML"
+htmlPreviewWarning = "ตัวอย่าง HTML — อาจไม่โหลดทรัพยากรภายนอก · {{size}}"
+invalidJson = "JSON ไม่ถูกต้อง — แสดงเนื้อหาดิบ"
+lineNumbers = "หมายเลขบรรทัด"
+loading = "กำลังโหลด..."
+renderMarkdown = "แสดงผล Markdown"
+sortedBy = "เรียงตาม: {{column}}"
+textStats = "{{lines}} บรรทัด · {{size}}"
+
 [viewPdf]
 header = "ดู PDF"
 tags = "ดู, อ่าน, เพิ่มคำอธิบาย, ข้อความ, รูปภาพ"
@@ -7800,30 +8103,6 @@ title = "ดู/แก้ไข PDF"
 
 [warning]
 tooltipTitle = "คำเตือน"
-
-[wetSignature.tooltip]
-header = "วิธีการสร้างลายเซ็น"
-
-[wetSignature.tooltip.draw]
-bullet1 = "ปรับแต่งสีและความหนาของปากกา"
-bullet2 = "ลบและวาดใหม่ได้จนกว่าจะพอใจ"
-bullet3 = "ใช้งานได้บนอุปกรณ์สัมผัส (แท็บเล็ต โทรศัพท์)"
-description = "สร้างลายเซ็นลายมือโดยใช้เมาส์หรือหน้าจอสัมผัส เหมาะที่สุดสำหรับลายเซ็นส่วนบุคคลที่เป็นธรรมชาติ"
-title = "วาดลายเซ็น"
-
-[wetSignature.tooltip.type]
-bullet1 = "เลือกจากหลายฟอนต์"
-bullet2 = "ปรับแต่งขนาดและสีของข้อความ"
-bullet3 = "เหมาะสำหรับลายเซ็นแบบมาตรฐาน"
-description = "สร้างลายเซ็นจากข้อความที่พิมพ์ รวดเร็วและสม่ำเสมอ เหมาะกับเอกสารทางธุรกิจ"
-title = "พิมพ์ลายเซ็น"
-
-[wetSignature.tooltip.upload]
-bullet1 = "รองรับ PNG, JPG และรูปแบบภาพอื่นๆ"
-bullet2 = "แนะนำให้ใช้ภาพพื้นหลังโปร่งใสเพื่อผลลัพธ์ที่ดีที่สุด"
-bullet3 = "รูปภาพจะถูกปรับขนาดให้พอดีกับพื้นที่ลายเซ็น"
-description = "อัปโหลดรูปภาพลายเซ็นที่สร้างไว้แล้ว เหมาะอย่างยิ่งหากคุณมีลายเซ็นที่สแกนไว้หรือโลโก้บริษัท"
-title = "อัปโหลดรูปภาพลายเซ็น"
 
 [watermark]
 completed = "เพิ่มวอเตอร์มาร์กแล้ว"
@@ -7996,6 +8275,30 @@ title = "ข้อความลายน้ำ"
 image = "รูปภาพ"
 text = "ข้อความ"
 
+[wetSignature.tooltip]
+header = "วิธีการสร้างลายเซ็น"
+
+[wetSignature.tooltip.draw]
+bullet1 = "ปรับแต่งสีและความหนาของปากกา"
+bullet2 = "ลบและวาดใหม่ได้จนกว่าจะพอใจ"
+bullet3 = "ใช้งานได้บนอุปกรณ์สัมผัส (แท็บเล็ต โทรศัพท์)"
+description = "สร้างลายเซ็นลายมือโดยใช้เมาส์หรือหน้าจอสัมผัส เหมาะที่สุดสำหรับลายเซ็นส่วนบุคคลที่เป็นธรรมชาติ"
+title = "วาดลายเซ็น"
+
+[wetSignature.tooltip.type]
+bullet1 = "เลือกจากหลายฟอนต์"
+bullet2 = "ปรับแต่งขนาดและสีของข้อความ"
+bullet3 = "เหมาะสำหรับลายเซ็นแบบมาตรฐาน"
+description = "สร้างลายเซ็นจากข้อความที่พิมพ์ รวดเร็วและสม่ำเสมอ เหมาะกับเอกสารทางธุรกิจ"
+title = "พิมพ์ลายเซ็น"
+
+[wetSignature.tooltip.upload]
+bullet1 = "รองรับ PNG, JPG และรูปแบบภาพอื่นๆ"
+bullet2 = "แนะนำให้ใช้ภาพพื้นหลังโปร่งใสเพื่อผลลัพธ์ที่ดีที่สุด"
+bullet3 = "รูปภาพจะถูกปรับขนาดให้พอดีกับพื้นที่ลายเซ็น"
+description = "อัปโหลดรูปภาพลายเซ็นที่สร้างไว้แล้ว เหมาะอย่างยิ่งหากคุณมีลายเซ็นที่สแกนไว้หรือโลโก้บริษัท"
+title = "อัปโหลดรูปภาพลายเซ็น"
+
 [workspace]
 title = "พื้นที่ทำงาน"
 
@@ -8014,9 +8317,9 @@ disable = "ปิดใช้งาน"
 disabled = "ปิดการใช้งาน"
 editRole = "แก้ไขบทบาท"
 enable = "เปิดใช้งาน"
+loading = "กำลังโหลดรายชื่อ..."
 locked = "ถูกล็อก"
 lockedBadge = "ถูกล็อก"
-loading = "กำลังโหลดรายชื่อ..."
 loginRequired = "เปิดโหมดล็อกอินก่อน"
 member = "สมาชิก"
 noMembersFound = "ไม่พบสมาชิก"
@@ -8262,278 +8565,3 @@ cancel = "ยกเลิก"
 confirm = "แตกไฟล์"
 message = "ZIP นี้มี {{count}} ไฟล์ ต้องการแตกไฟล์ต่อหรือไม่?"
 title = "ไฟล์ ZIP ขนาดใหญ่"
-
-[cloudBadge]
-tooltip = "การดำเนินการนี้จะใช้เครดิตคลาวด์ของคุณ"
-
-[team]
-cancelInviteError = "ยกเลิกคำเชิญไม่สำเร็จ"
-confirmCancelInvite = "คุณแน่ใจหรือไม่ว่าต้องการยกเลิกคำเชิญนี้?"
-confirmLeave = "คุณแน่ใจหรือไม่ว่าต้องการออกจากทีมนี้?"
-confirmLeaveLeader = "ในฐานะหัวหน้าทีม การออกจะนำคุณออกจากทีม คุณแน่ใจหรือไม่?"
-confirmRemove = "คุณแน่ใจหรือไม่ว่าต้องการลบสมาชิกนี้?"
-editName = "แก้ไขชื่อทีม"
-inviteCancelled = "ยกเลิกคำเชิญแล้ว"
-inviteError = "ส่งคำเชิญไม่สำเร็จ"
-inviteSent = "ส่งคำเชิญเรียบร้อยแล้ว"
-leader = "หัวหน้าทีม"
-leaveButton = "ออกจากทีม"
-leaveError = "ออกจากทีมไม่สำเร็จ"
-leaveSuccess = "ออกจากทีมเรียบร้อยแล้ว"
-loading = "กำลังโหลดข้อมูลทีม..."
-memberCount = "สมาชิก {{count}} คน"
-memberRemoved = "ลบสมาชิกเรียบร้อยแล้ว"
-namePlaceholder = "ป้อนชื่อทีม"
-personal = "ส่วนบุคคล"
-removeError = "ลบสมาชิกล้มเหลว"
-renameError = "เปลี่ยนชื่อทีมไม่สำเร็จ"
-renameSuccess = "เปลี่ยนชื่อทีมเรียบร้อยแล้ว"
-
-[team.invitationBanner]
-message = "ได้เชิญคุณให้เข้าร่วม"
-acceptButton = "ยอมรับ"
-rejectButton = "ปฏิเสธ"
-
-[team.features]
-badge = "ฟีเจอร์สำหรับทีม"
-subtitle = "ทำงานร่วมกันกับทีมของคุณ"
-title = "การทำงานร่วมกันในทีม"
-viewPlans = "ดูแผน"
-
-[team.features.billing]
-description = "จัดการการเรียกเก็บเงินและการสมัครสมาชิก"
-title = "การจัดการการเรียกเก็บเงิน"
-
-[team.features.credits]
-description = "พูลเครดิตร่วมสำหรับสมาชิกทุกคน"
-title = "เครดิตที่ใช้ร่วมกัน"
-
-[team.features.dashboard]
-description = "ดูความเคลื่อนไหวและการใช้งานของทีม"
-title = "แดชบอร์ดทีม"
-
-[team.features.invite]
-description = "เพิ่มสมาชิกในทีมของคุณ"
-title = "เชิญสมาชิก"
-
-[team.invite]
-cancelLabel = "ยกเลิก"
-invalidEmail = "ที่อยู่อีเมลไม่ถูกต้อง"
-placeholder = "ป้อนที่อยู่อีเมล"
-sendButton = "ส่งคำเชิญ"
-title = "เชิญสมาชิกทีม"
-
-[team.members]
-emailColumn = "อีเมล"
-empty = "ยังไม่มีสมาชิกทีม"
-nameColumn = "ชื่อ"
-pending = "รอดำเนินการ"
-remove = "ลบ"
-roleColumn = "บทบาท"
-title = "สมาชิกทีม"
-
-[team.upgrade]
-button = "อัปเกรดเป็น Team"
-description = "ปลดล็อกฟีเจอร์การทำงานร่วมกันของทีม"
-title = "อัปเกรดเป็นแผน Team"
-
-[provider.oauth2.google]
-scope = "การยืนยันตัวตนสำหรับลงชื่อเข้าใช้"
-
-[provider.oauth2.google.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID จาก Google Cloud Console"
-
-[provider.oauth2.google.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret จาก Google Cloud Console"
-
-[provider.oauth2.google.scopes]
-label = "Scopes"
-description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
-
-[provider.oauth2.google.useAsUsername]
-label = "ใช้เป็นชื่อผู้ใช้"
-description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้ (email, name, given_name, family_name)"
-
-[provider.oauth2.github]
-scope = "การยืนยันตัวตนสำหรับลงชื่อเข้าใช้"
-
-[provider.oauth2.github.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID จาก GitHub Developer Settings"
-
-[provider.oauth2.github.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret จาก GitHub Developer Settings"
-
-[provider.oauth2.github.scopes]
-label = "Scopes"
-description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
-
-[provider.oauth2.github.useAsUsername]
-label = "ใช้เป็นชื่อผู้ใช้"
-description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้ (email, login, name)"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "Issuer URL"
-description = "URL ของจุดค้นพบ OpenID Connect ของ realm ใน Keycloak"
-
-[provider.oauth2.keycloak.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID จาก Keycloak"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret จาก Keycloak"
-
-[provider.oauth2.keycloak.scopes]
-label = "Scopes"
-description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "ใช้เป็นชื่อผู้ใช้"
-description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้ (email, name, given_name, family_name, preferred_username)"
-
-[provider.oauth2.generic]
-name = "OAuth2 ทั่วไป"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "เปิดใช้งาน OAuth2 ทั่วไป"
-description = "เปิดใช้งานการยืนยันตัวตนด้วยผู้ให้บริการ OAuth2 แบบกำหนดเอง"
-
-[provider.oauth2.generic.provider]
-label = "ชื่อผู้ให้บริการ"
-description = "ชื่อผู้ให้บริการ OAuth2 ของคุณ (เช่น Azure AD, Okta)"
-
-[provider.oauth2.generic.issuer]
-label = "Issuer URL"
-description = "ผู้ให้บริการที่รองรับ OpenID Connect Discovery (/.well-known/openid-configuration)"
-
-[provider.oauth2.generic.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID จากผู้ให้บริการของคุณ"
-
-[provider.oauth2.generic.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret จากผู้ให้บริการของคุณ"
-
-[provider.oauth2.generic.scopes]
-label = "Scopes"
-description = "OAuth2 scopes คั่นด้วยเครื่องหมายจุลภาค"
-
-[provider.oauth2.generic.useAsUsername]
-label = "ใช้เป็นชื่อผู้ใช้"
-description = "ฟิลด์ที่จะใช้เป็นชื่อผู้ใช้"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "สร้างผู้ใช้อัตโนมัติ"
-description = "สร้างบัญชีผู้ใช้อัตโนมัติเมื่อเข้าสู่ระบบด้วย OAuth2 ครั้งแรก"
-
-[provider.oauth2.generic.blockRegistration]
-label = "บล็อกการลงทะเบียน"
-description = "ป้องกันการลงทะเบียนผู้ใช้ใหม่ผ่าน OAuth2"
-
-[provider.smtp]
-name = "SMTP Mail"
-scope = "การแจ้งเตือนทางอีเมล"
-
-[provider.smtp.enabled]
-label = "เปิดใช้งานอีเมล"
-description = "เปิดใช้งานการแจ้งเตือนทางอีเมลและฟังก์ชัน SMTP"
-
-[provider.smtp.host]
-label = "SMTP Host"
-description = "ชื่อโฮสต์หรือที่อยู่ IP ของเซิร์ฟเวอร์ SMTP ของคุณ"
-
-[provider.smtp.port]
-label = "SMTP Port"
-description = "หมายเลขพอร์ตสำหรับการเชื่อมต่อ SMTP (โดยทั่วไป 25, 465 หรือ 587)"
-
-[provider.smtp.username]
-label = "SMTP Username"
-description = "ชื่อผู้ใช้สำหรับการยืนยันตัวตน SMTP"
-
-[provider.smtp.password]
-label = "SMTP Password"
-description = "รหัสผ่านสำหรับการยืนยันตัวตน SMTP"
-
-[provider.smtp.from]
-label = "ที่อยู่อีเมลผู้ส่ง"
-description = "ที่อยู่อีเมลที่จะใช้เป็นผู้ส่ง"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO (SAML)"
-
-[provider.saml2.enabled]
-label = "เปิดใช้งาน SAML2"
-description = "เปิดใช้งานการยืนยันตัวตนด้วย SAML2 (เฉพาะ Enterprise)"
-
-[provider.saml2.provider]
-label = "ชื่อผู้ให้บริการ"
-description = "ชื่อผู้ให้บริการ SAML2 ของคุณ"
-
-[provider.saml2.registrationId]
-label = "Registration ID"
-description = "ชื่อแอป Service Provider (SP) ของคุณ"
-
-[provider.saml2.idpMetadataUri]
-label = "IDP Metadata URI"
-description = "URI สำหรับ metadata ของผู้ให้บริการของคุณ"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "IDP Single Login URL"
-description = "URL สำหรับเริ่มต้น SSO"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "IDP Single Logout URL"
-description = "URL สำหรับเริ่มต้น SLO"
-
-[provider.saml2.idpIssuer]
-label = "IDP Issuer"
-description = "ID ของผู้ให้บริการของคุณ"
-
-[provider.saml2.idpCert]
-label = "IDP Certificate"
-description = "พาธใบรับรอง (เช่น classpath:okta.cert)"
-
-[provider.saml2.privateKey]
-label = "Private Key"
-description = "พาธคีย์ส่วนตัวของคุณ"
-
-[provider.saml2.spCert]
-label = "SP Certificate"
-description = "พาธใบรับรองสำหรับการลงนามของคุณ"
-
-[provider.saml2.autoCreateUser]
-label = "สร้างผู้ใช้อัตโนมัติ"
-description = "สร้างบัญชีผู้ใช้อัตโนมัติเมื่อเข้าสู่ระบบด้วย SAML2 ครั้งแรก"
-
-[provider.saml2.blockRegistration]
-label = "บล็อกการลงทะเบียน"
-description = "ป้องกันการลงทะเบียนผู้ใช้ใหม่ผ่าน SAML2"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "นำเข้าไฟล์"
-
-[provider.googledrive.enabled]
-label = "เปิดใช้งานตัวเลือกไฟล์ Google Drive"
-description = "อนุญาตให้ผู้นำเข้าไฟล์จาก Google Drive ได้โดยตรง"
-
-[provider.googledrive.clientId]
-label = "Client ID"
-description = "Google OAuth 2.0 Client ID จาก Google Cloud Console"
-
-[provider.googledrive.apiKey]
-label = "API Key"
-description = "Google API Key สำหรับ Google Picker API จาก Google Cloud Console"
-
-[provider.googledrive.appId]
-label = "App ID"
-description = "Google Drive App ID จาก Google Cloud Console"

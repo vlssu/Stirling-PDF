@@ -1,3 +1,4 @@
+accessInvite = "دعوت"
 addToDoc = "اضافه کردن به سند"
 alphabet = "حروف الفبا"
 apply = "اعمال"
@@ -8,22 +9,22 @@ black = "سیاه"
 blue = "آبی"
 bored = "منتظر ماندن خسته‌کننده است؟"
 cancel = "انصراف"
-confirm = "تأیید"
 changedCredsMessage = "مشخصات تغییر یافت!"
 chooseFile = "انتخاب فایل"
 close = "بستن"
 color = "رنگ"
 comingSoon = "به‌زودی"
+confirm = "تأیید"
 confirmClose = "تأیید بستن"
 confirmCloseCancel = "انصراف"
 confirmCloseConfirm = "بستن فایل"
-confirmCloseMessage = "مطمئنید می‌خواهید این فایل را ببندید؟"
 confirmCloseDiscard = "لغو تغییرات و بستن"
+confirmCloseMessage = "مطمئنید می‌خواهید این فایل را ببندید؟"
 confirmCloseSave = "ذخیره و بستن"
+confirmCloseSaveFailed = "با خطا ذخیره شد. {{count}} فایل{{plural}} ذخیره نشد."
+confirmCloseSaveFailedTitle = "ذخیره ناموفق"
 confirmCloseUnsaved = "این فایل دارای تغییرات ذخیره‌نشده است."
 confirmCloseUnsavedList = "شما {{count}} فایل{{plural}} با تغییرات ذخیره‌نشده دارید.\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "ذخیره ناموفق"
-confirmCloseSaveFailed = "با خطا ذخیره شد. {{count}} فایل{{plural}} ذخیره نشد."
 confirmPasswordErrorMessage = "رمز عبور جدید و تأیید رمز عبور جدید باید یکسان باشند."
 custom = "سفارشی..."
 customPosition = "موقعیت سفارشی"
@@ -43,11 +44,14 @@ downloadComplete = "دانلود کامل شد"
 downloadPdf = "دانلود PDF"
 downloadUnavailable = "دانلود برای این مورد در دسترس نیست"
 edit = "ویرایش"
+editSecret = "ویرایش این مقدار"
 editYourNewFiles = "فایل(های) جدید خود را ویرایش کنید"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "خروجی بگیرید و ادامه دهید"
 false = "غلط"
-fileSavedToDisk = "فایل روی دیسک ذخیره شد"
 fileNotSavedToDisk = "روی دیسک ذخیره نشد"
+fileSavedToDisk = "فایل روی دیسک ذخیره شد"
 fileSelected = "انتخاب‌شده: {{filename}}"
 filesSelected = "فایل‌ها انتخاب شدند"
 font = "فونت"
@@ -61,12 +65,15 @@ help = "راهنما"
 imgPrompt = "انتخاب تصویر(ها)"
 incorrectPasswordMessage = "رمز عبور فعلی نادرست است."
 info = "اطلاعات"
+insufficientCredits = "اعتبار کافی نیست. موردنیاز: {{requiredCredits}}، موجود: {{currentBalance}}، کمبود: {{shortfall}}"
 invalidPasswordMessage = "رمز عبور نباید خالی باشد و نباید در ابتدا یا انتها فاصله داشته باشد."
 invalidUndoData = "امکان واگردانی نیست: داده‌های عملیات نامعتبر است"
 invalidUsernameMessage = "نام کاربری نامعتبر است، نام کاربری فقط می‌تواند شامل حروف، اعداد و کاراکترهای خاص @._+- باشد یا باید یک آدرس ایمیل معتبر باشد."
 joinDiscord = "به سرور دیسکورد ما بپیوندید"
 keepWorking = "ادامه کار"
 loading = "در حال بارگذاری..."
+loadingCredits = "در حال بررسی اعتبار..."
+loadingProStatus = "در حال بررسی وضعیت اشتراک..."
 logOut = "خروج از حساب"
 marginTooltip = "فاصله بین شماره صفحه و لبه صفحه."
 moreOptions = "گزینه‌های بیشتر"
@@ -80,6 +87,7 @@ noFilesToUndo = "امکان واگردانی نیست: هیچ فایلی در آ
 noOperationToUndo = "عملیاتی برای واگردانی وجود ندارد"
 notAuthenticatedMessage = "کاربر تأیید نشده است."
 nothingToUndo = "موردی برای واگرد نیست"
+noticeTopUpOrPlan = "اعتبار کافی نیست، لطفاً اعتبار را شارژ کنید یا طرح خود را ارتقا دهید"
 noValidFiles = "فایل معتبری برای پردازش وجود ندارد"
 oops = "اوپس!"
 openInViewer = "باز کردن در نمایشگر"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "سانسورهای اعمال‌نشده"
 pin = "سنجاق کردن فایل (پس از اجرای ابزار فعال بماند)"
 poweredBy = "قدرت گرفته از"
 pro = "نسخه حرفه‌ای"
-processTimeWarning = "هشدار: این فرآیند ممکن است بسته به اندازه فایل تا یک دقیقه طول بکشد"
 processingComplete = "فایل شما آماده است."
 processingCompleteMultiple = "{{count}} فایل آماده‌اند."
+processTimeWarning = "هشدار: این فرآیند ممکن است بسته به اندازه فایل تا یک دقیقه طول بکشد"
 property = "ویژگی"
 quickPosition = "موقعیت سریع"
 red = "قرمز"
@@ -108,7 +116,6 @@ save = "ذخیره"
 saveToBrowser = "ذخیره در مرورگر"
 saveUnavailable = "ذخیره برای این مورد در دسترس نیست"
 seeDockerHub = "مشاهده Docker Hub"
-editSecret = "ویرایش این مقدار"
 selectFillter = "-- انتخاب کنید --"
 size = "اندازه"
 sponsor = "حمایت مالی"
@@ -143,11 +150,6 @@ welcome = "خوش آمدید"
 white = "سفید"
 WorkInProgess = "کار در حال پیشرفت است، ممکن است کار نکند یا دارای اشکال باشد، لطفاً هر مشکلی را گزارش دهید!"
 yes = "بله"
-insufficientCredits = "اعتبار کافی نیست. موردنیاز: {{requiredCredits}}، موجود: {{currentBalance}}، کمبود: {{shortfall}}"
-loadingCredits = "در حال بررسی اعتبار..."
-loadingProStatus = "در حال بررسی وضعیت اشتراک..."
-noticeTopUpOrPlan = "اعتبار کافی نیست، لطفاً اعتبار را شارژ کنید یا طرح خود را ارتقا دهید"
-accessInvite = "دعوت"
 
 [account]
 accountSettings = "تنظیمات حساب"
@@ -851,6 +853,14 @@ title = "نقاط پایانی API"
 userDefaults = "پیش‌فرض‌های ترجیحات کاربر"
 userDefaultsDescription = "مقادیر پیش‌فرض برای ترجیحات کاربر را تنظیم کنید. کاربران می‌توانند آن‌ها را در تنظیمات شخصی خود تغییر دهند."
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "گزینه‌های تبدیل غیرفعال را به‌جای نمایش به‌شکل خاکستری، حذف کنید"
+label = "پنهان‌کردن تبدیل‌های غیردردسترس به‌صورت پیش‌فرض"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "ابزارهای غیرفعال را به‌جای نمایش به‌شکل خاکستری، حذف کنید"
+label = "پنهان‌کردن ابزارهای غیردردسترس به‌صورت پیش‌فرض"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "گروه‌های نقاط پایانی را برای غیرفعال‌سازی انتخاب کنید"
 label = "گروه‌های نقاط پایانی غیرفعال"
@@ -858,14 +868,6 @@ label = "گروه‌های نقاط پایانی غیرفعال"
 [admin.settings.endpoints.toRemove]
 description = "نقاط پایانی منفرد را برای غیرفعال‌سازی انتخاب کنید"
 label = "نقاط پایانی غیرفعال"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "ابزارهای غیرفعال را به‌جای نمایش به‌شکل خاکستری، حذف کنید"
-label = "پنهان‌کردن ابزارهای غیردردسترس به‌صورت پیش‌فرض"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "گزینه‌های تبدیل غیرفعال را به‌جای نمایش به‌شکل خاکستری، حذف کنید"
-label = "پنهان‌کردن تبدیل‌های غیردردسترس به‌صورت پیش‌فرض"
 
 [admin.settings.enterpriseRequired]
 message = "برای دسترسی به {{featureName}} به یک مجوز Enterprise نیاز است. شما در حال مشاهده داده‌های نمایشی برای مرجع هستید."
@@ -974,6 +976,10 @@ label = "زبان پیش‌فرض"
 description = "حداکثر اندازه بارگذاری فایل (مثلاً 100MB, 1GB)"
 label = "محدودیت بارگذاری فایل"
 
+[admin.settings.general.frontendUrl]
+description = "آدرس پایه برای فرانت‌اند (مثلاً https://pdf.example.com). برای لینک‌های دعوت ایمیل و آپلودهای کد QR موبایل استفاده می‌شود. برای استفاده از آدرس بک‌اند خالی بگذارید."
+label = "Frontend URL"
+
 [admin.settings.general.hideDisabledTools]
 description = "ابزارهای غیرفعال را از رابط کاربری پنهان کنید"
 label = "پنهان کردن ابزارهای غیرفعال"
@@ -985,10 +991,6 @@ label = "پنهان کردن Google Drive"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "دکمه اسکنر QR موبایل را هنگام غیرفعال بودن پنهان کنید"
 label = "پنهان کردن اسکنر موبایل"
-
-[admin.settings.general.frontendUrl]
-description = "آدرس پایه برای فرانت‌اند (مثلاً https://pdf.example.com). برای لینک‌های دعوت ایمیل و آپلودهای کد QR موبایل استفاده می‌شود. برای استفاده از آدرس بک‌اند خالی بگذارید."
-label = "Frontend URL"
 
 [admin.settings.general.homeDescription]
 description = "متن توضیحی که در صفحه اصلی نمایش داده می‌شود"
@@ -1169,9 +1171,25 @@ description = "پیکربندی احراز هویت، رفتار ورود و س�
 title = "امنیت"
 
 [admin.settings.security.audit]
+hideDetails = "پنهان کردن جزئیات سطح ممیزی"
 label = "گزارش حسابرسی"
 showDetails = "نمایش جزئیات سطح ممیزی"
-hideDetails = "پنهان کردن جزئیات سطح ممیزی"
+
+[admin.settings.security.audit.advancedOptions]
+description = "گزینه‌های زیر زمان پردازش و مصرف حافظه را افزایش می‌دهند. فقط در صورت نیاز واقعی فعال کنید."
+title = "گزینه‌های پیشرفته"
+
+[admin.settings.security.audit.captureFileHash]
+description = "استخراج هش SHA-256 فایل‌های PDF آپلودشده برای راستی‌آزمایی یکپارچگی. مستقل از سطح ممیزی."
+label = "گرفتن هش فایل (SHA-256)"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "ثبت مقادیر بازگشتی متدها. توصیه نمی‌شود: حجم لاگ و مصرف دیسک را به‌طور قابل‌توجهی افزایش می‌دهد."
+label = "گرفتن نتایج عملیات"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "استخراج فیلد نویسنده از اسناد PDF در حین پردازش. نیازمند پردازش PDF است و تأخیر را افزایش می‌دهد. مستقل از سطح ممیزی."
+label = "گرفتن فراداده نویسنده PDF"
 
 [admin.settings.security.audit.enabled]
 description = "رهگیری اقدامات کاربر و رویدادهای سیستم برای انطباق و پایش امنیتی"
@@ -1182,30 +1200,14 @@ description = "0=OFF، 1=BASIC، 2=STANDARD، 3=VERBOSE"
 label = "سطح حسابرسی"
 
 [admin.settings.security.audit.levelDetails]
-off = "بدون ثبت لاگ ممیزی (به‌جز رویدادهای امنیتی بحرانی)"
 basic = "عملیات فایل PDF (فشرده‌سازی، تقسیم، ادغام و غیره) و تغییرات تنظیمات. ثبت می‌شود: وضعیت عملیات (موفق/ناموفق)، پارامترهای متد، زمان‌بندی. حجم لاگ حداقلی."
+off = "بدون ثبت لاگ ممیزی (به‌جز رویدادهای امنیتی بحرانی)"
 standard = "رویدادهای BASIC به‌علاوه: ورود/خروج کاربر، تغییرات حساب، درخواست‌های عمومی GET. برای کاهش نویز لاگ، فراخوانی‌های polling پیوسته (/auth/me، /app-config، /health و غیره) مستثنا می‌شوند. ایده‌آل برای اکثر استقرارها."
 verbose = "رویدادهای STANDARD به‌علاوه: فراخوانی‌های polling پیوسته، همه درخواست‌های GET، زمان‌بندی دقیق. هشدار: حجم لاگ بالا و تأثیر بر عملکرد."
 
 [admin.settings.security.audit.retentionDays]
 description = "تعداد روزهای نگهداری گزارش‌های حسابرسی"
 label = "نگهداری گزارش (روز)"
-
-[admin.settings.security.audit.advancedOptions]
-title = "گزینه‌های پیشرفته"
-description = "گزینه‌های زیر زمان پردازش و مصرف حافظه را افزایش می‌دهند. فقط در صورت نیاز واقعی فعال کنید."
-
-[admin.settings.security.audit.captureFileHash]
-description = "استخراج هش SHA-256 فایل‌های PDF آپلودشده برای راستی‌آزمایی یکپارچگی. مستقل از سطح ممیزی."
-label = "گرفتن هش فایل (SHA-256)"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "استخراج فیلد نویسنده از اسناد PDF در حین پردازش. نیازمند پردازش PDF است و تأخیر را افزایش می‌دهد. مستقل از سطح ممیزی."
-label = "گرفتن فراداده نویسنده PDF"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "ثبت مقادیر بازگشتی متدها. توصیه نمی‌شود: حجم لاگ و مصرف دیسک را به‌طور قابل‌توجهی افزایش می‌دهد."
-label = "گرفتن نتایج عملیات"
 
 [admin.settings.security.csrfDisabled]
 description = "غیرفعال کردن محافظت Cross-Site Request Forgery (توصیه نمی‌شود)"
@@ -1274,6 +1276,14 @@ label = "نام کاربری اولیه"
 [admin.settings.security.jwt]
 label = "پیکربندی JWT"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "میزان تحمل انحراف زمانی کلاینت/سرور هنگام اعتبارسنجی توکن (پیش‌فرض: 60 ثانیه)"
+label = "تحمل اختلاف ساعت (ثانیه)"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "طول عمر توکن دسترسی به دقیقه برای کلاینت‌های دسکتاپ. برنامه‌های دسکتاپ از طریق User-Agent به‌طور خودکار شناسایی می‌شوند و برای تجربهٔ کاربری بهتر نشست‌های طولانی‌تری دریافت می‌کنند (پیش‌فرض: 43200 = 30 روز)"
+label = "انقضای توکن دسکتاپ (دقیقه)"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "حذف خودکار کلیدهای JWT منقضی‌شده"
 label = "فعال‌سازی پاکسازی کلید"
@@ -1282,29 +1292,21 @@ label = "فعال‌سازی پاکسازی کلید"
 description = "چرخش خودکار کلیدهای امضای JWT به‌صورت دوره‌ای"
 label = "فعال‌سازی چرخش کلید"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "طول عمر توکن دسترسی به دقیقه برای کلاینت‌های وب (پیش‌فرض: 1440 = 24 ساعت)"
-label = "انقضای توکن وب (دقیقه)"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "طول عمر توکن دسترسی به دقیقه برای کلاینت‌های دسکتاپ. برنامه‌های دسکتاپ از طریق User-Agent به‌طور خودکار شناسایی می‌شوند و برای تجربهٔ کاربری بهتر نشست‌های طولانی‌تری دریافت می‌کنند (پیش‌فرض: 43200 = 30 روز)"
-label = "انقضای توکن دسکتاپ (دقیقه)"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "میزان تحمل انحراف زمانی کلاینت/سرور هنگام اعتبارسنجی توکن (پیش‌فرض: 60 ثانیه)"
-label = "تحمل اختلاف ساعت (ثانیه)"
+[admin.settings.security.jwt.persistence]
+description = "ذخیره پایدار کلیدهای JWT برای مقاومت در برابر راه‌اندازی مجدد سرور"
+label = "فعال‌سازی ماندگاری کلید"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "اجازهٔ نوسازی توکن تا این تعداد دقیقه پس از انقضا (پیش‌فرض: 15 دقیقه، حداکثر 3 تلاش)"
 label = "دورهٔ مهلت نوسازی (دقیقه)"
 
-[admin.settings.security.jwt.persistence]
-description = "ذخیره پایدار کلیدهای JWT برای مقاومت در برابر راه‌اندازی مجدد سرور"
-label = "فعال‌سازی ماندگاری کلید"
-
 [admin.settings.security.jwt.secureCookie]
 description = "الزام HTTPS برای کوکی‌های JWT (پیشنهاد‌شده برای محیط تولید)"
 label = "کوکی امن"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "طول عمر توکن دسترسی به دقیقه برای کلاینت‌های وب (پیش‌فرض: 1440 = 24 ساعت)"
+label = "انقضای توکن وب (دقیقه)"
 
 [admin.settings.security.loginAttemptCount]
 description = "حداکثر تعداد تلاش ناموفق ورود قبل از قفل شدن حساب"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "کنترل گزینه‌های ذخیره‌سازی سرور و اشتراک‌گذاری."
+title = "ذخیره‌سازی فایل و اشتراک‌گذاری"
+
+[admin.settings.storage.enabled]
+description = "به کاربران اجازه دهید فایل‌ها را روی سرور ذخیره کنند."
+label = "فعال‌سازی ذخیره‌سازی فایل روی سرور"
+
+[admin.settings.storage.sharing.email]
+description = "اجازه اشتراک‌گذاری با نشانی‌های ایمیل."
+label = "فعال‌سازی اشتراک‌گذاری ایمیلی"
+mailLink = "پیکربندی تنظیمات ایمیل"
+mailNote = "نیازمند پیکربندی ایمیل است. "
+
+[admin.settings.storage.sharing.enabled]
+description = "به کاربران اجازه دهید فایل‌های ذخیره‌شده را به اشتراک بگذارند."
+label = "فعال‌سازی اشتراک‌گذاری"
+
+[admin.settings.storage.sharing.links]
+description = "اجازه اشتراک‌گذاری از طریق لینک‌هایی که نیاز به ورود دارند."
+frontendUrlLink = "پیکربندی در تنظیمات سیستم"
+frontendUrlNote = "نیازمند یک Frontend URL است. "
+label = "فعال‌سازی لینک‌های اشتراک"
+
+[admin.settings.storage.signing.enabled]
+description = "به کاربران اجازه دهید نشست‌های امضای چندشرکت‌کننده بسازند. نیازمند فعال بودن ذخیره‌سازی فایل روی سرور است."
+label = "فعال‌سازی امضای گروهی (آلفا)"
 
 [admin.settings.telegram]
 description = "پیکربندی اتصال ربات تلگرام، کنترل‌های دسترسی و رفتار بازخورد."
@@ -1429,34 +1459,6 @@ title = "پردازش"
 description = "حداکثر زمان انتظار برای یک کار پردازش پیش از گزارش خطا."
 label = "مهلت پردازش (ثانیه)"
 
-[admin.settings.storage]
-description = "کنترل گزینه‌های ذخیره‌سازی سرور و اشتراک‌گذاری."
-title = "ذخیره‌سازی فایل و اشتراک‌گذاری"
-
-[admin.settings.storage.enabled]
-description = "به کاربران اجازه دهید فایل‌ها را روی سرور ذخیره کنند."
-label = "فعال‌سازی ذخیره‌سازی فایل روی سرور"
-
-[admin.settings.storage.sharing.email]
-description = "اجازه اشتراک‌گذاری با نشانی‌های ایمیل."
-label = "فعال‌سازی اشتراک‌گذاری ایمیلی"
-mailLink = "پیکربندی تنظیمات ایمیل"
-mailNote = "نیازمند پیکربندی ایمیل است. "
-
-[admin.settings.storage.sharing.enabled]
-description = "به کاربران اجازه دهید فایل‌های ذخیره‌شده را به اشتراک بگذارند."
-label = "فعال‌سازی اشتراک‌گذاری"
-
-[admin.settings.storage.sharing.links]
-description = "اجازه اشتراک‌گذاری از طریق لینک‌هایی که نیاز به ورود دارند."
-frontendUrlLink = "پیکربندی در تنظیمات سیستم"
-frontendUrlNote = "نیازمند یک Frontend URL است. "
-label = "فعال‌سازی لینک‌های اشتراک"
-
-[admin.settings.storage.signing.enabled]
-description = "به کاربران اجازه دهید نشست‌های امضای چندشرکت‌کننده بسازند. نیازمند فعال بودن ذخیره‌سازی فایل روی سرور است."
-label = "فعال‌سازی امضای گروهی (آلفا)"
-
 [admin.settings.unsavedChanges]
 cancel = "ادامه ویرایش"
 discard = "نادیده گرفتن تغییرات"
@@ -1521,6 +1523,7 @@ settings = "می‌توانید تنظیمات مربوط به تحلیل‌ها
 title = "آیا می‌خواهید Stirling PDF را بهتر کنید؟"
 
 [annotation]
+annotationStyle = "سبک حاشیه‌نویسی"
 applyChanges = "اعمال تغییرات"
 backgroundColor = "رنگ پس‌زمینه"
 borderOff = "حاشیه: خاموش"
@@ -1530,6 +1533,8 @@ chooseColor = "انتخاب رنگ"
 circle = "دایره"
 clearBackground = "حذف پس‌زمینه"
 color = "رنگ"
+comment = "نظر"
+comments = "نظرات"
 contents = "متن"
 delete = "حذف"
 desc = "از هایلایت، قلم، متن و یادداشت‌ها استفاده کنید. تغییرات زنده می‌مانند—نیازی به فلت‌کردن نیست."
@@ -1547,7 +1552,6 @@ editStampHint = "برای تغییر تصویر، این مهر را حذف کر
 editSwitchToSelect = "برای ویرایش این حاشیه‌نویسی به حالت انتخاب و ویرایش بروید."
 editText = "ویرایش کادر متن"
 editTextMarkup = "ویرایش نشانه‌گذاری متن"
-annotationStyle = "سبک حاشیه‌نویسی"
 ellipse = "بیضی"
 exit = "خروج از حالت حاشیه‌نویسی"
 fillColor = "رنگ پُرکردن"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "هایلایتر آزاد"
 highlight = "هایلایت"
 imagePreview = "پیش‌نمایش"
 inkHighlighter = "هایلایتر آزاد"
+insertText = "درج متن"
 line = "خط"
 lineArrow = "پیکان"
 noBackground = "بدون پس‌زمینه"
 note = "یادداشت"
-comment = "نظر"
-comments = "نظرات"
-insertText = "درج متن"
-replaceText = "جایگزینی متن"
 noteIcon = "آیکون یادداشت"
 notesStamps = "یادداشت‌ها و مهرها"
 opacity = "شفافیت"
@@ -1574,6 +1575,7 @@ polyline = "چندخطی"
 properties = "ویژگی‌ها"
 rectangle = "مستطیل"
 redo = "انجام مجدد"
+replaceText = "جایگزینی متن"
 saveChanges = "ذخیره تغییرات"
 saveFailed = "امکان ذخیره نسخه وجود ندارد"
 saveReady = "دانلود آماده است"
@@ -1627,68 +1629,6 @@ goToSettings = "رفتن به تنظیمات ممیزی"
 notAvailable = "سیستم ممیزی در دسترس نیست"
 notAvailableMessage = "سیستم ممیزی پیکربندی نشده یا در دسترس نیست."
 
-[audit.error]
-title = "خطا در بارگذاری سیستم ممیزی"
-
-[audit.export]
-clearFilters = "پاک‌سازی"
-description = "رویدادهای ممیزی را به قالب CSV یا JSON برون‌بری کنید. برای محدود کردن داده‌های برون‌بری‌شده از فیلترها استفاده کنید."
-endDate = "تاریخ پایان"
-error = "برون‌بری داده‌ها ناموفق بود"
-exportButton = "برون‌بری داده‌ها"
-fieldAuthor = "نویسنده (از PDF)"
-fieldDate = "تاریخ"
-fieldDocumentName = "نام سند"
-fieldFileHash = "هش فایل (SHA-256)"
-fieldIpAddress = "نشانی IP"
-fieldOperationResults = "نتایج عملیات"
-fieldOutcome = "نتیجه (موفق/ناموفق)"
-fieldTool = "ابزار"
-fieldUsername = "نام کاربری"
-filterByType = "فیلتر بر اساس نوع"
-filterByUser = "فیلتر بر اساس کاربر"
-filters = "فیلترها (اختیاری)"
-format = "قالب برون‌بری"
-selectFields = "انتخاب فیلدهای قابل درج"
-startDate = "تاریخ شروع"
-title = "برون‌بری داده‌های ممیزی"
-verboseRequired = "نیازمند سطح ممیزی VERBOSE"
-
-[audit.systemStatus]
-autoRefresh = "نوسازی خودکار"
-autoRefreshLabel = "نوسازی خودکار هر ۳۰ ثانیه"
-captureBySettings = "در تنظیمات فعال کنید"
-capturedFields = "فیلدهای ثبت‌شده"
-date = "تاریخ"
-days = "روز"
-disabled = "غیرفعال"
-documentName = "نام سند"
-enabled = "فعال"
-fileHash = "هش فایل"
-level = "سطح ممیزی"
-pdfAuthor = "نویسنده PDF"
-retention = "دوره نگهداری"
-status = "ثبت ممیزی"
-title = "وضعیت سیستم"
-tool = "ابزار"
-totalEvents = "کل رویدادها"
-username = "نام کاربری"
-verboseOnly = "فقط در حالت VERBOSE"
-
-[audit.stats]
-activeUsers = "کاربران فعال"
-attention = "نیاز به توجه"
-avgLatency = "میانگین تأخیر"
-error = "خطا در بارگذاری آمار"
-errorLoadingStats = "بارگذاری آمار ناموفق بود"
-excellent = "عالی"
-good = "خوب"
-noData = "ناموجود"
-successRate = "نرخ موفقیت"
-title = "خلاصه"
-totalEvents = "کل رویدادها"
-vsLastPeriod = "نسبت به دوره قبل"
-
 [audit.charts]
 byTool = "پراستفاده‌ترین ابزارها"
 byType = "رویدادها بر اساس نوع"
@@ -1701,6 +1641,27 @@ noData = "برای این بازه داده‌ای وجود ندارد"
 overTime = "رویدادها در گذر زمان"
 title = "داشبورد ممیزی"
 week = "هفته"
+
+[audit.clearData]
+cancel = "لغو"
+codeDoesNotMatch = "کد مطابقت ندارد"
+codePlaceholder = "کد را اینجا وارد کنید"
+confirmationCode = "کد تأیید"
+confirmationRequired = "حذف همه داده‌های ممیزی"
+confirmMessage = "این کار همه لاگ‌های ممیزی را برای همیشه حذف می‌کند. برای ادامه، کد تأیید را در زیر وارد کنید."
+confirmTitle = "لطفاً حذف را تأیید کنید"
+deleteButton = "حذف"
+enterCode = "کد تأیید"
+enterCodeBelow = "کد را دقیقاً مطابق نمایش بالا وارد کنید (حساس به حروف بزرگ/کوچک)"
+initiateDelete = "حذف همه داده‌ها"
+irreversible = "غیرقابل‌بازگشت"
+success = "موفق"
+successMessage = "همه داده‌های ممیزی با موفقیت پاک شد"
+warning1 = "این اقدام قابل بازگشت نیست"
+warning2 = "حذف داده‌های ممیزی، همه لاگ‌های ممیزی تاریخی از جمله رویدادهای امنیتی، فعالیت‌های کاربر و عملیات فایل را برای همیشه از پایگاه داده حذف می‌کند."
+
+[audit.error]
+title = "خطا در بارگذاری سیستم ممیزی"
 
 [audit.events]
 actions = "اقدامات"
@@ -1728,40 +1689,81 @@ type = "نوع"
 user = "کاربر"
 viewDetails = "مشاهده جزئیات"
 
+[audit.export]
+clearFilters = "پاک‌سازی"
+description = "رویدادهای ممیزی را به قالب CSV یا JSON برون‌بری کنید. برای محدود کردن داده‌های برون‌بری‌شده از فیلترها استفاده کنید."
+endDate = "تاریخ پایان"
+error = "برون‌بری داده‌ها ناموفق بود"
+exportButton = "برون‌بری داده‌ها"
+fieldAuthor = "نویسنده (از PDF)"
+fieldDate = "تاریخ"
+fieldDocumentName = "نام سند"
+fieldFileHash = "هش فایل (SHA-256)"
+fieldIpAddress = "نشانی IP"
+fieldOperationResults = "نتایج عملیات"
+fieldOutcome = "نتیجه (موفق/ناموفق)"
+fieldTool = "ابزار"
+fieldUsername = "نام کاربری"
+filterByType = "فیلتر بر اساس نوع"
+filterByUser = "فیلتر بر اساس کاربر"
+filters = "فیلترها (اختیاری)"
+format = "قالب برون‌بری"
+selectFields = "انتخاب فیلدهای قابل درج"
+startDate = "تاریخ شروع"
+title = "برون‌بری داده‌های ممیزی"
+verboseRequired = "نیازمند سطح ممیزی VERBOSE"
+
 [audit.filters]
 allOutcomes = "همه"
 failureOnly = "فقط ناموفق‌ها"
-last7Days = "۷ روز گذشته"
 last30Days = "۳۰ روز گذشته"
+last7Days = "۷ روز گذشته"
 outcomeFilter = "نتیجه"
 quickPresets = "فیلترهای سریع"
 successOnly = "فقط موفق‌ها"
 thisMonth = "این ماه"
 today = "امروز"
 
+[audit.stats]
+activeUsers = "کاربران فعال"
+attention = "نیاز به توجه"
+avgLatency = "میانگین تأخیر"
+error = "خطا در بارگذاری آمار"
+errorLoadingStats = "بارگذاری آمار ناموفق بود"
+excellent = "عالی"
+good = "خوب"
+noData = "ناموجود"
+successRate = "نرخ موفقیت"
+title = "خلاصه"
+totalEvents = "کل رویدادها"
+vsLastPeriod = "نسبت به دوره قبل"
+
+[audit.systemStatus]
+autoRefresh = "نوسازی خودکار"
+autoRefreshLabel = "نوسازی خودکار هر ۳۰ ثانیه"
+captureBySettings = "در تنظیمات فعال کنید"
+capturedFields = "فیلدهای ثبت‌شده"
+date = "تاریخ"
+days = "روز"
+disabled = "غیرفعال"
+documentName = "نام سند"
+enabled = "فعال"
+fileHash = "هش فایل"
+level = "سطح ممیزی"
+pdfAuthor = "نویسنده PDF"
+retention = "دوره نگهداری"
+status = "ثبت ممیزی"
+title = "وضعیت سیستم"
+tool = "ابزار"
+totalEvents = "کل رویدادها"
+username = "نام کاربری"
+verboseOnly = "فقط در حالت VERBOSE"
+
 [audit.tabs]
 clearData = "پاک‌سازی داده‌ها"
 dashboard = "داشبورد"
 events = "رویدادهای ممیزی"
 export = "برون‌بری"
-
-[audit.clearData]
-cancel = "لغو"
-codeDoesNotMatch = "کد مطابقت ندارد"
-codePlaceholder = "کد را اینجا وارد کنید"
-confirmationCode = "کد تأیید"
-confirmationRequired = "حذف همه داده‌های ممیزی"
-confirmMessage = "این کار همه لاگ‌های ممیزی را برای همیشه حذف می‌کند. برای ادامه، کد تأیید را در زیر وارد کنید."
-confirmTitle = "لطفاً حذف را تأیید کنید"
-deleteButton = "حذف"
-enterCode = "کد تأیید"
-enterCodeBelow = "کد را دقیقاً مطابق نمایش بالا وارد کنید (حساس به حروف بزرگ/کوچک)"
-initiateDelete = "حذف همه داده‌ها"
-irreversible = "غیرقابل‌بازگشت"
-success = "موفق"
-successMessage = "همه داده‌های ممیزی با موفقیت پاک شد"
-warning1 = "این اقدام قابل بازگشت نیست"
-warning2 = "حذف داده‌های ممیزی، همه لاگ‌های ممیزی تاریخی از جمله رویدادهای امنیتی، فعالیت‌های کاربر و عملیات فایل را برای همیشه از پایگاه داده حذف می‌کند."
 
 [auth]
 accessDenied = "دسترسی رد شد"
@@ -2088,43 +2090,70 @@ keywords = "کلیدواژه‌ها: odd, even"
 numbers = "اعداد/بازه‌ها: 5, 10-20"
 progressions = "پیشروی‌ها: 3n، 4n+1"
 
+[certificateChoice.tooltip]
+header = "انواع گواهی"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "مدیریت‌شده توسط مدیران سیستم"
+bullet2 = "مشترک بین کاربران مجاز"
+bullet3 = "نمایانگر هویت شرکت، نه فرد"
+bullet4 = "مناسب برای: اسناد رسمی، امضاهای تیمی"
+description = "یک گواهی مشترک که توسط سازمان شما ارائه می‌شود. برای اختیار امضای سراسری شرکت استفاده می‌شود."
+title = "گواهی سازمان"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "در اولین استفاده به‌طور خودکار ایجاد می‌شود"
+bullet2 = "به حساب کاربری شما متصل است"
+bullet3 = "قابل اشتراک با دیگر کاربران نیست"
+bullet4 = "مناسب برای: اسناد شخصی، پاسخ‌گویی فردی"
+description = "یک گواهی منحصربه‌فرد که به‌طور خودکار برای حساب کاربری شما ایجاد می‌شود. مناسب برای امضاهای فردی."
+title = "گواهی شخصی"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "نیازمند فایل و گذرواژه P12/PFX"
+bullet2 = "می‌تواند توسط مراجع صدور گواهی خارجی صادر شود"
+bullet3 = "سطح اعتماد بالاتر برای اسناد حقوقی"
+bullet4 = "مناسب برای: قراردادهای الزام‌آور قانونی، اعتبارسنجی خارجی"
+description = "از فایل گواهی PKCS#12 خود استفاده کنید. کنترل کامل روی ویژگی‌های گواهی را فراهم می‌کند."
+title = "بارگذاری P12 سفارشی"
+
 [certSign]
 allSigned = "همه شرکت‌کنندگان امضا کرده‌اند. آماده نهایی‌سازی."
 awaitingSignatures = "در انتظار امضاها"
-signatureProgress = "{{signedCount}}/{{totalCount}} امضا"
 chooseCertificate = "انتخاب فایل گواهی"
-declined = "رد شده"
-fetchFailed = "بارگذاری داده‌های امضا ناموفق بود"
-finalized = "نهایی شد"
-notified = "در انتظار"
-partialNote = "می‌توانید زودتر با امضاهای فعلی نهایی‌سازی کنید. شرکت‌کنندگان امضانشده کنار گذاشته خواهند شد."
-pending = "در انتظار"
-readyToFinalize = "آماده نهایی‌سازی"
-signed = "امضا شد"
-viewed = "مشاهده شد"
 chooseJksFile = "انتخاب فایل JKS"
 chooseP12File = "انتخاب فایل PKCS12"
 choosePfxFile = "انتخاب فایل PFX"
 choosePrivateKey = "انتخاب فایل کلید خصوصی"
+declined = "رد شده"
+fetchFailed = "بارگذاری داده‌های امضا ناموفق بود"
 filenamePrefix = "امضاشده"
+finalized = "نهایی شد"
 location = "موقعیت"
 logoTitle = "لوگو"
 name = "نام"
 noLogo = "بدون لوگو"
+notified = "در انتظار"
 pageNumber = "شماره صفحه"
+partialNote = "می‌توانید زودتر با امضاهای فعلی نهایی‌سازی کنید. شرکت‌کنندگان امضانشده کنار گذاشته خواهند شد."
 password = "رمز عبور Keystore یا کلید خصوصی خود را وارد کنید (در صورت وجود):"
 passwordOptional = "اگر گذرواژه‌ای ندارید خالی بگذارید"
+pending = "در انتظار"
+readyToFinalize = "آماده نهایی‌سازی"
 reason = "دلیل"
 serverCertMessage = "در حال استفاده از گواهی سرور - نیازی به فایل یا گذرواژه نیست"
 showLogo = "نمایش لوگو"
+signatureProgress = "{{signedCount}}/{{totalCount}} امضا"
+signed = "امضا شد"
 tags = "تایید،PEM،P12،رسمی،رمزگذاری"
 title = "امضای گواهی"
+viewed = "مشاهده شد"
 
 [certSign.appearance]
 invisible = "نامرئی"
 stepTitle = "ظاهر امضا"
-visible = "مرئی"
 visibility = "قابلیت مشاهده"
+visible = "مرئی"
 
 [certSign.appearance.options]
 title = "جزئیات امضا"
@@ -2172,8 +2201,227 @@ title = "کدام گزینه را باید استفاده کنم؟"
 [certSign.certTypeStep]
 stepTitle = "قالب گواهی"
 
+[certSign.collab.addParticipants]
+add = "افزودن {{count}} شرکت‌کننده"
+back = "بازگشت"
+configureSignatures = "پیکربندی تنظیمات امضا"
+continue = "ادامه به تنظیمات امضا"
+reasonHelp = "برای این شرکت‌کنندگان یک دلیل امضا از پیش تعیین کنید (اختیاری؛ هنگام امضا می‌توانند آن را تغییر دهند)"
+reasonPlaceholder = "مثلاً: تأیید، بازبینی..."
+selectUsers = "انتخاب کاربران"
+
+[certSign.collab.finalize]
+button = "نهایی‌سازی و بارگذاری PDF امضاشده"
+early = "نهایی‌سازی با امضاهای فعلی"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "گواهی نامعتبر"
+certNetworkError = "امکان اعتبارسنجی گواهی نبود"
+certValid = "✓ گواهی معتبر است"
+certValidating = "در حال اعتبارسنجی گواهی..."
+certValidUntil = " تا {{date}}"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "افزودن صفحه خلاصه امضا"
+includeSummaryPageHelp = "یک صفحه خلاصه در انتها با تمام فراداده‌های امضا افزوده می‌شود. جعبه‌های امضای گواهی دیجیتال در صفحات جداگانه مخفی خواهند شد (امضاهای دستی بی‌تأثیر هستند)."
+
+[certSign.collab.sessionDetail]
+addButton = "افزودن شرکت‌کنندگان"
+addParticipants = "افزودن شرکت‌کنندگان"
+addParticipantsError = "افزودن شرکت‌کنندگان ناموفق بود"
+backToList = "بازگشت به نشست‌ها"
+deleteConfirm = "مطمئن هستید؟ این کار قابل بازگشت نیست."
+deleted = "نشست حذف شد"
+deleteError = "حذف نشست ناموفق بود"
+deleteSession = "حذف نشست"
+dueDate = "تاریخ سررسید"
+finalizeError = "نهایی‌سازی نشست ناموفق بود"
+loadPdfError = "بارگذاری PDF امضاشده ناموفق بود"
+loadSignedPdf = "بارگذاری PDF امضاشده در فایل‌های فعال"
+messageLabel = "پیام"
+noAdditionalInfo = "اطلاعات اضافی وجود ندارد"
+owner = "مالک"
+participantRemoved = "شرکت‌کننده حذف شد"
+participants = "شرکت‌کنندگان"
+participantsAdded = "شرکت‌کنندگان با موفقیت افزوده شدند"
+removeParticipant = "حذف"
+removeParticipantError = "حذف شرکت‌کننده ناموفق بود"
+selectUsers = "کاربران را انتخاب کنید..."
+sessionInfo = "اطلاعات نشست"
+workbenchTitle = "مدیریت نشست"
+
+[certSign.collab.sessionList]
+active = "فعال"
+finalized = "نهایی‌شده"
+
+[certSign.collab.signatureSettings]
+description = "چگونگی نمایش امضاها برای همه شرکت‌کنندگان را پیکربندی کنید"
+title = "ظاهر امضا"
+
+[certSign.collab.signRequest]
+addedToFiles = "سند به فایل‌های فعال افزوده شد"
+addSignature = "افزودن امضای شما"
+addToFiles = "افزودن به فایل‌های فعال"
+advancedSettings = "تنظیمات پیشرفته"
+backToList = "بازگشت به درخواست‌های امضا"
+certificateChoice = "یک گواهی برای امضا انتخاب کنید"
+changeSignature = "تغییر امضا"
+clearSignature = "پاک کردن امضا"
+completeAndSign = "تکمیل و امضا"
+createNewSignature = "ایجاد امضای جدید"
+decline = "رد درخواست"
+declineButton = "رد"
+deleteSelected = "حذف امضای انتخاب‌شده"
+drawSignature = "امضای خود را در پایین رسم کنید"
+dueDate = "تاریخ سررسید"
+fileTooLarge = "اندازه فایل باید کمتر از 5MB باشد"
+fontFamily = "خانواده فونت"
+fontSize = "اندازه فونت: {{size}}px"
+fontSizePlaceholder = "اندازه"
+from = "از"
+invalidCertFile = "لطفاً یک فایل گواهی P12 یا PFX انتخاب کنید"
+invalidFileType = "لطفاً یک فایل تصویر انتخاب کنید"
+location = "مکان (اختیاری)"
+locationPlaceholder = "از کجا امضا می‌کنید؟"
+message = "پیام"
+noCertificate = "لطفاً یک فایل گواهی انتخاب کنید"
+noSignatures = "لطفاً حداقل یک امضا روی PDF قرار دهید"
+p12File = "فایل گواهی P12/PFX"
+password = "گذرواژه گواهی"
+passwordPlaceholder = "گذرواژه را وارد کنید..."
+penColor = "رنگ قلم"
+penSize = "اندازه قلم: {{size}}px"
+placementActive = "برای قرار دادن روی PDF کلیک کنید"
+placeSignatureButton = "قرار دادن امضا روی PDF"
+reason = "دلیل (اختیاری)"
+reasonPlaceholder = "چرا امضا می‌کنید؟"
+removeCertFile = "حذف فایل"
+removeImage = "حذف تصویر"
+savedSignatures = "امضاهای ذخیره‌شده"
+selectFile = "انتخاب فایل تصویر"
+selectSignatureTitle = "انتخاب یا ایجاد امضا"
+signatureInfo = "این تنظیمات توسط مالک سند پیکربندی شده است"
+signaturePlaced = "امضا روی صفحه قرار گرفت"
+signatureSettings = "تنظیمات امضا"
+signatureText = "متن امضا"
+signatureTextPlaceholder = "نام خود را وارد کنید..."
+signatureTypeLabel = "نوع امضا"
+signButton = "امضای سند"
+signingTitle = "امضا"
+textColor = "رنگ متن"
+typeSignature = "برای ایجاد امضا نام خود را تایپ کنید"
+uploadCert = "گواهی سفارشی"
+uploadCertDesc = "از گواهی P12/PFX خود استفاده کنید"
+uploadSignature = "بارگذاری تصویر امضای خود"
+usePersonalCert = "گواهی شخصی"
+usePersonalCertDesc = "به‌صورت خودکار برای حساب شما ایجاد می‌شود"
+useServerCert = "گواهی سازمان"
+useServerCertDesc = "گواهی مشترک سازمان"
+workbenchTitle = "درخواست امضا"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "انتخاب رنگ قلم"
+continue = "ادامه"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "گواهی نامعتبر است: {{error}}"
+certInvalidFallback = "گواهی نامعتبر"
+certNetworkError = "امکان اعتبارسنجی گواهی نبود"
+certValidating = "در حال اعتبارسنجی گواهی..."
+certValidUntil = "گواهی تا {{date}} معتبر است"
+description = "شما {{count}} امضا قرار داده‌اید. برای تکمیل امضا گواهی خود را انتخاب کنید."
+sign = "امضای سند"
+title = "پیکربندی گواهی"
+
+[certSign.collab.signRequest.image]
+hint = "یک تصویر PNG یا JPG از امضای خود بارگذاری کنید"
+
+[certSign.collab.signRequest.mode]
+move = "جابه‌جایی امضا"
+place = "قرار دادن امضا"
+title = "حالت امضا یا جابه‌جایی"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "رسم"
+image = "بارگذاری"
+text = "تایپ"
+
+[certSign.collab.signRequest.placeSignature]
+message = "برای قرار دادن امضا روی PDF کلیک کنید"
+title = "قرار دادن امضا"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "امضای انتخاب‌شده"
+missing = "بدون پیش‌نمایش"
+textFallback = "امضا"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "امضای ترسیمی"
+defaultImageLabel = "امضای بارگذاری‌شده"
+defaultLabel = "امضا"
+defaultTextLabel = "امضای تایپی"
+delete = "حذف امضا"
+none = "هیچ امضای ذخیره‌شده‌ای نیست"
+
+[certSign.collab.signRequest.signatureType]
+draw = "رسم"
+type = "تایپ"
+upload = "بارگذاری"
+
+[certSign.collab.signRequest.steps]
+back = "بازگشت"
+cancelPlacement = "لغو قراردهی"
+certificate = "گواهی"
+clickMultipleTimes = "برای قرار دادن چند امضا چندبار روی PDF کلیک کنید. برای جابه‌جایی یا تغییر اندازه، هر امضا را بکشید."
+clickToPlace = "روی PDF در جایی که می‌خواهید امضای شما ظاهر شود کلیک کنید."
+continue = "ادامه به انتخاب گواهی"
+continueToPlacement = "ادامه به قراردهی"
+continueToReview = "ادامه به بازبینی"
+createSignature = "ایجاد امضا"
+invisible = "نامرئی"
+location = "مکان:"
+multipleSignatures = "{{count}} امضا به PDF اعمال خواهد شد"
+oneSignature = "۱ امضا به PDF اعمال خواهد شد"
+placeOnPdf = "قرار دادن روی PDF"
+reason = "دلیل:"
+reviewTitle = "بازبینی قبل از امضا"
+signaturePlaced = "امضا در صفحه {{page}} قرار گرفت. می‌توانید با دوباره کلیک کردن موقعیت را تنظیم کنید یا به بازبینی ادامه دهید."
+visibility = "قابلیت مشاهده:"
+visible = "مرئی"
+yourSignatures = "امضاهای شما ({{count}})"
+
+[certSign.collab.signRequest.text]
+colorLabel = "رنگ"
+fontLabel = "فونت"
+fontSizeLabel = "اندازه"
+fontSizePlaceholder = "16"
+label = "متن امضا"
+modalHint = "نام خود را وارد کنید و سپس برای قرار دادن روی PDF روی «ادامه» کلیک کنید."
+placeholder = "نام خود را وارد کنید..."
+
+[certSign.collab.userSelector]
+inviteUsers = "افزودن کاربران"
+loadError = "بارگذاری کاربران ناموفق بود"
+noTeam = "بدون تیم"
+noUsers = "کاربر دیگری یافت نشد."
+placeholder = "کاربران را انتخاب کنید..."
+
 [certSign.error]
 failed = "هنگام پردازش امضاها خطایی رخ داد."
+
+[certSign.mobile]
+panelActions = "اقدامات"
+panelDocument = "سند"
+panelPeople = "افراد"
+
+[certSign.sessions]
+deleted = "نشست حذف شد"
+fetchFailed = "بارگذاری جزئیات نشست ناموفق بود"
+finalized = "نشست نهایی شد"
+loaded = "PDF امضاشده بارگذاری شد"
+pdfNotReady = "PDF آماده نیست"
+pdfNotReadyDesc = "PDF امضاشده در حال تولید است. لطفاً لحظه‌ای دیگر دوباره تلاش کنید."
 
 [certSign.sign]
 results = "PDF امضاشده"
@@ -2230,252 +2478,6 @@ bullet3 = "بررسی اینکه آیا سند پس از امضا ویرایش �
 bullet4 = "امکان استفاده از گواهی‌های سفارشی برای اعتبارسنجی"
 text = "وقتی امضاها را بررسی می‌کنید، ابزار به شما می‌گوید آیا معتبرند، چه کسی سند را امضا کرده، چه زمانی امضا شده و اینکه آیا سند از زمان امضا تغییر کرده است یا نه."
 title = "بررسی امضاها"
-
-[certSign.collab.finalize]
-button = "نهایی‌سازی و بارگذاری PDF امضاشده"
-early = "نهایی‌سازی با امضاهای فعلی"
-
-[certSign.collab.sessionDetail]
-addButton = "افزودن شرکت‌کنندگان"
-addParticipants = "افزودن شرکت‌کنندگان"
-addParticipantsError = "افزودن شرکت‌کنندگان ناموفق بود"
-backToList = "بازگشت به نشست‌ها"
-deleteConfirm = "مطمئن هستید؟ این کار قابل بازگشت نیست."
-deleteError = "حذف نشست ناموفق بود"
-deleted = "نشست حذف شد"
-deleteSession = "حذف نشست"
-dueDate = "تاریخ سررسید"
-finalizeError = "نهایی‌سازی نشست ناموفق بود"
-loadPdfError = "بارگذاری PDF امضاشده ناموفق بود"
-loadSignedPdf = "بارگذاری PDF امضاشده در فایل‌های فعال"
-messageLabel = "پیام"
-noAdditionalInfo = "اطلاعات اضافی وجود ندارد"
-owner = "مالک"
-participantRemoved = "شرکت‌کننده حذف شد"
-participants = "شرکت‌کنندگان"
-participantsAdded = "شرکت‌کنندگان با موفقیت افزوده شدند"
-removeParticipant = "حذف"
-removeParticipantError = "حذف شرکت‌کننده ناموفق بود"
-selectUsers = "کاربران را انتخاب کنید..."
-sessionInfo = "اطلاعات نشست"
-workbenchTitle = "مدیریت نشست"
-
-[certSign.collab.signRequest]
-addedToFiles = "سند به فایل‌های فعال افزوده شد"
-addSignature = "افزودن امضای شما"
-addToFiles = "افزودن به فایل‌های فعال"
-advancedSettings = "تنظیمات پیشرفته"
-backToList = "بازگشت به درخواست‌های امضا"
-certificateChoice = "یک گواهی برای امضا انتخاب کنید"
-changeSignature = "تغییر امضا"
-clearSignature = "پاک کردن امضا"
-completeAndSign = "تکمیل و امضا"
-createNewSignature = "ایجاد امضای جدید"
-declineButton = "رد"
-decline = "رد درخواست"
-deleteSelected = "حذف امضای انتخاب‌شده"
-drawSignature = "امضای خود را در پایین رسم کنید"
-dueDate = "تاریخ سررسید"
-fileTooLarge = "اندازه فایل باید کمتر از 5MB باشد"
-fontFamily = "خانواده فونت"
-fontSize = "اندازه فونت: {{size}}px"
-fontSizePlaceholder = "اندازه"
-from = "از"
-invalidCertFile = "لطفاً یک فایل گواهی P12 یا PFX انتخاب کنید"
-invalidFileType = "لطفاً یک فایل تصویر انتخاب کنید"
-location = "مکان (اختیاری)"
-locationPlaceholder = "از کجا امضا می‌کنید؟"
-message = "پیام"
-noCertificate = "لطفاً یک فایل گواهی انتخاب کنید"
-noSignatures = "لطفاً حداقل یک امضا روی PDF قرار دهید"
-p12File = "فایل گواهی P12/PFX"
-password = "گذرواژه گواهی"
-passwordPlaceholder = "گذرواژه را وارد کنید..."
-penColor = "رنگ قلم"
-penSize = "اندازه قلم: {{size}}px"
-placementActive = "برای قرار دادن روی PDF کلیک کنید"
-placeSignatureButton = "قرار دادن امضا روی PDF"
-reason = "دلیل (اختیاری)"
-reasonPlaceholder = "چرا امضا می‌کنید؟"
-removeImage = "حذف تصویر"
-removeCertFile = "حذف فایل"
-savedSignatures = "امضاهای ذخیره‌شده"
-selectFile = "انتخاب فایل تصویر"
-selectSignatureTitle = "انتخاب یا ایجاد امضا"
-signButton = "امضای سند"
-signatureInfo = "این تنظیمات توسط مالک سند پیکربندی شده است"
-signaturePlaced = "امضا روی صفحه قرار گرفت"
-signatureSettings = "تنظیمات امضا"
-signatureText = "متن امضا"
-signatureTextPlaceholder = "نام خود را وارد کنید..."
-signatureTypeLabel = "نوع امضا"
-signingTitle = "امضا"
-textColor = "رنگ متن"
-typeSignature = "برای ایجاد امضا نام خود را تایپ کنید"
-uploadCert = "گواهی سفارشی"
-uploadCertDesc = "از گواهی P12/PFX خود استفاده کنید"
-uploadSignature = "بارگذاری تصویر امضای خود"
-usePersonalCert = "گواهی شخصی"
-usePersonalCertDesc = "به‌صورت خودکار برای حساب شما ایجاد می‌شود"
-useServerCert = "گواهی سازمان"
-useServerCertDesc = "گواهی مشترک سازمان"
-workbenchTitle = "درخواست امضا"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "انتخاب رنگ قلم"
-continue = "ادامه"
-
-[certSign.collab.signRequest.certModal]
-description = "شما {{count}} امضا قرار داده‌اید. برای تکمیل امضا گواهی خود را انتخاب کنید."
-sign = "امضای سند"
-certValidating = "در حال اعتبارسنجی گواهی..."
-certValidUntil = "گواهی تا {{date}} معتبر است"
-certInvalid = "گواهی نامعتبر است: {{error}}"
-certInvalidFallback = "گواهی نامعتبر"
-certNetworkError = "امکان اعتبارسنجی گواهی نبود"
-title = "پیکربندی گواهی"
-
-[certSign.collab.signRequest.image]
-hint = "یک تصویر PNG یا JPG از امضای خود بارگذاری کنید"
-
-[certSign.collab.signRequest.mode]
-move = "جابه‌جایی امضا"
-place = "قرار دادن امضا"
-title = "حالت امضا یا جابه‌جایی"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "رسم"
-image = "بارگذاری"
-text = "تایپ"
-
-[certSign.collab.signRequest.placeSignature]
-message = "برای قرار دادن امضا روی PDF کلیک کنید"
-title = "قرار دادن امضا"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "امضای انتخاب‌شده"
-missing = "بدون پیش‌نمایش"
-textFallback = "امضا"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "امضای ترسیمی"
-defaultImageLabel = "امضای بارگذاری‌شده"
-defaultLabel = "امضا"
-defaultTextLabel = "امضای تایپی"
-delete = "حذف امضا"
-none = "هیچ امضای ذخیره‌شده‌ای نیست"
-
-[certSign.collab.signRequest.signatureType]
-draw = "رسم"
-type = "تایپ"
-upload = "بارگذاری"
-
-[certSign.collab.signRequest.steps]
-back = "بازگشت"
-cancelPlacement = "لغو قراردهی"
-certificate = "گواهی"
-clickMultipleTimes = "برای قرار دادن چند امضا چندبار روی PDF کلیک کنید. برای جابه‌جایی یا تغییر اندازه، هر امضا را بکشید."
-clickToPlace = "روی PDF در جایی که می‌خواهید امضای شما ظاهر شود کلیک کنید."
-continue = "ادامه به انتخاب گواهی"
-continueToPlacement = "ادامه به قراردهی"
-continueToReview = "ادامه به بازبینی"
-createSignature = "ایجاد امضا"
-invisible = "نامرئی"
-location = "مکان:"
-multipleSignatures = "{{count}} امضا به PDF اعمال خواهد شد"
-oneSignature = "۱ امضا به PDF اعمال خواهد شد"
-placeOnPdf = "قرار دادن روی PDF"
-reason = "دلیل:"
-reviewTitle = "بازبینی قبل از امضا"
-signaturePlaced = "امضا در صفحه {{page}} قرار گرفت. می‌توانید با دوباره کلیک کردن موقعیت را تنظیم کنید یا به بازبینی ادامه دهید."
-visible = "مرئی"
-visibility = "قابلیت مشاهده:"
-yourSignatures = "امضاهای شما ({{count}})"
-
-[certSign.collab.signRequest.text]
-colorLabel = "رنگ"
-fontLabel = "فونت"
-fontSizeLabel = "اندازه"
-fontSizePlaceholder = "16"
-label = "متن امضا"
-modalHint = "نام خود را وارد کنید و سپس برای قرار دادن روی PDF روی «ادامه» کلیک کنید."
-placeholder = "نام خود را وارد کنید..."
-
-[certSign.collab.participant]
-certValidating = "در حال اعتبارسنجی گواهی..."
-certValid = "✓ گواهی معتبر است"
-certValidUntil = " تا {{date}}"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "گواهی نامعتبر"
-certNetworkError = "امکان اعتبارسنجی گواهی نبود"
-
-[certSign.collab.addParticipants]
-add = "افزودن {{count}} شرکت‌کننده"
-back = "بازگشت"
-configureSignatures = "پیکربندی تنظیمات امضا"
-continue = "ادامه به تنظیمات امضا"
-reasonHelp = "برای این شرکت‌کنندگان یک دلیل امضا از پیش تعیین کنید (اختیاری؛ هنگام امضا می‌توانند آن را تغییر دهند)"
-reasonPlaceholder = "مثلاً: تأیید، بازبینی..."
-selectUsers = "انتخاب کاربران"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "افزودن صفحه خلاصه امضا"
-includeSummaryPageHelp = "یک صفحه خلاصه در انتها با تمام فراداده‌های امضا افزوده می‌شود. جعبه‌های امضای گواهی دیجیتال در صفحات جداگانه مخفی خواهند شد (امضاهای دستی بی‌تأثیر هستند)."
-
-[certSign.collab.sessionList]
-active = "فعال"
-finalized = "نهایی‌شده"
-
-[certSign.collab.signatureSettings]
-description = "چگونگی نمایش امضاها برای همه شرکت‌کنندگان را پیکربندی کنید"
-title = "ظاهر امضا"
-
-[certSign.collab.userSelector]
-inviteUsers = "افزودن کاربران"
-loadError = "بارگذاری کاربران ناموفق بود"
-noTeam = "بدون تیم"
-noUsers = "کاربر دیگری یافت نشد."
-placeholder = "کاربران را انتخاب کنید..."
-
-[certSign.mobile]
-panelActions = "اقدامات"
-panelDocument = "سند"
-panelPeople = "افراد"
-
-[certSign.sessions]
-deleted = "نشست حذف شد"
-fetchFailed = "بارگذاری جزئیات نشست ناموفق بود"
-finalized = "نشست نهایی شد"
-loaded = "PDF امضاشده بارگذاری شد"
-pdfNotReady = "PDF آماده نیست"
-pdfNotReadyDesc = "PDF امضاشده در حال تولید است. لطفاً لحظه‌ای دیگر دوباره تلاش کنید."
-
-[certificateChoice.tooltip]
-header = "انواع گواهی"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "مدیریت‌شده توسط مدیران سیستم"
-bullet2 = "مشترک بین کاربران مجاز"
-bullet3 = "نمایانگر هویت شرکت، نه فرد"
-bullet4 = "مناسب برای: اسناد رسمی، امضاهای تیمی"
-description = "یک گواهی مشترک که توسط سازمان شما ارائه می‌شود. برای اختیار امضای سراسری شرکت استفاده می‌شود."
-title = "گواهی سازمان"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "در اولین استفاده به‌طور خودکار ایجاد می‌شود"
-bullet2 = "به حساب کاربری شما متصل است"
-bullet3 = "قابل اشتراک با دیگر کاربران نیست"
-bullet4 = "مناسب برای: اسناد شخصی، پاسخ‌گویی فردی"
-description = "یک گواهی منحصربه‌فرد که به‌طور خودکار برای حساب کاربری شما ایجاد می‌شود. مناسب برای امضاهای فردی."
-title = "گواهی شخصی"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "نیازمند فایل و گذرواژه P12/PFX"
-bullet2 = "می‌تواند توسط مراجع صدور گواهی خارجی صادر شود"
-bullet3 = "سطح اعتماد بالاتر برای اسناد حقوقی"
-bullet4 = "مناسب برای: قراردادهای الزام‌آور قانونی، اعتبارسنجی خارجی"
-description = "از فایل گواهی PKCS#12 خود استفاده کنید. کنترل کامل روی ویژگی‌های گواهی را فراهم می‌کند."
-title = "بارگذاری P12 سفارشی"
 
 [changeCreds]
 changePassword = "شما از مشخصات پیش‌فرض ورود استفاده می‌کنید. لطفاً یک رمز عبور جدید وارد کنید"
@@ -2657,6 +2659,9 @@ title = "تغییر مجوزها"
 
 [changePermissions.tooltip.warning]
 text = "برای غیرقابل‌تغییر کردن این مجوزها، از ابزار افزودن رمز عبور برای تنظیم رمز عبور مالک استفاده کنید."
+
+[cloudBadge]
+tooltip = "این عملیات از اعتبارهای ابری شما استفاده می‌کند"
 
 [colorPicker]
 title = "انتخاب رنگ"
@@ -2998,9 +3003,11 @@ blackwhite = "سیاه و سفید"
 cbrDpi = "DPI برای رندر تصویر"
 cbrOptions = "گزینه‌های CBR"
 cbrOutputOptions = "گزینه‌های PDF به CBR"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "DPI برای رندر تصویر"
 cbzOptions = "گزینه‌های CBZ به PDF"
 cbzOutputOptions = "گزینه‌های PDF به CBZ"
+cbzToPdf = "CBZ → PDF"
 color = "رنگ"
 colorType = "نوع رنگ"
 combineImages = "ترکیب تصاویر"
@@ -3018,13 +3025,16 @@ desc = "تبدیل فایل‌ها بین قالب‌های مختلف"
 downloadConverted = "دانلود فایل تبدیل‌شده"
 downloadHtml = "به‌جای PDF فایل HTML میانی را دانلود کن"
 dpi = "DPI"
+ebookToPdf = "کتاب الکترونیکی → PDF"
 emailOptions = "گزینه‌های Email به PDF"
+emlToPdf = "ایمیل → PDF"
 errorConversion = "هنگام تبدیل فایل خطایی رخ داد."
 errorNoFiles = "لطفاً حداقل یک فایل برای تبدیل انتخاب کنید."
 errorNoFormat = "لطفاً هر دو قالب مبدأ و مقصد را انتخاب کنید."
 errorNotSupported = "تبدیل از {{from}} به {{to}} پشتیبانی نمی‌شود."
 fileFormat = "قالب فایل"
 files = "فایل‌ها"
+fileToPdf = "Office/سند → PDF"
 fillPage = "پر کردن صفحه"
 fitDocumentToPage = "برازش سند به صفحه"
 fitOption = "گزینه برازش"
@@ -3052,6 +3062,9 @@ pdfaFormat = "فرمت PDF/A"
 pdfaNote = "PDF/A-1b سازگارتر است، PDF/A-2b از قابلیت‌های بیشتری پشتیبانی می‌کند."
 pdfaOptions = "گزینه‌های PDF/A"
 pdfOptions = "گزینه‌های PDF"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X زیرمجموعه استاندارد ISO از PDF برای چاپ قابل‌اعتماد و تبادل گرافیک است."
 pdfxDigitalSignatureWarning = "این PDF شامل امضای دیجیتال است. این مورد در مرحله بعد حذف خواهد شد."
 pptExt = "PowerPoint (.pptx)"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "قالب مبدأ"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "قالب مقصد"
 textRtf = "متن/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "گزینه‌های Web به PDF"
 wordDoc = "سند Word"
 wordDocExt = "سند Word (.docx)"
 zoomLevel = "سطح بزرگ‌نمایی"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "کتاب الکترونیکی → PDF"
-emlToPdf = "ایمیل → PDF"
-fileToPdf = "Office/سند → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "گزینه‌های eBook به PDF"
@@ -3147,6 +3152,77 @@ description = "These cookies are essential for the website to function properly.
 [cookieBanner.services]
 posthog = "PostHog Analytics"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "فعال‌سازی صورت‌حساب اضافه‌مصرف"
+maybeLater = "بعداً"
+upgrade = "ارتقا"
+
+[credits.insufficient]
+brief = "اعتبار کافی نیست. شما به {{required}} اعتبار نیاز دارید اما {{current}} اعتبار دارید."
+freeTier = "برای ۱۰ برابر اعتبار بیشتر و صورت‌حساب اضافه‌مصرف نامحدود، به طرح تیم ارتقا دهید."
+managedMember = "لطفاً برای دریافت کمک با رهبر تیم خود تماس بگیرید."
+message = "اعتبار کافی برای اجرای {{tool}} ندارید. در حال حاضر {{current}} اعتبار دارید."
+messageWithAmount = "برای اجرای {{tool}} به {{required}} اعتبار نیاز دارید، اما فقط {{current}} اعتبار دارید."
+teamMember = "صورت‌حساب اضافه‌مصرف را فعال کنید تا هرگز اعتبارتان تمام نشود."
+title = "اعتبار کافی نیست"
+
+[credits.modal]
+advancedMonitoring = "پایش پیشرفته"
+allInOneWorkspace = "فضای کاری یکپارچه PDF (نمایشگر، ابزارها و عامل)"
+apiSandbox = "محیط آزمایشی API"
+contactSales = "تماس با فروش"
+creditsRemaining = "{{current}} از {{total}} باقیمانده"
+creditsThisMonth = "اعتبارهای ماهانه"
+current = "طرح فعلی"
+customPricing = "سفارشی"
+customSmartFolders = "پوشه‌های هوشمند سفارشی"
+dedicatedSupportSlas = "پشتیبانی اختصاصی و SLAها"
+enterpriseSubscription = "سازمانی"
+everythingInCredits = "همه امکانات طرح Credits، به‌علاوه:"
+everythingInFree = "همه امکانات طرح رایگان، به‌علاوه:"
+fasterThroughput = "توان عبوری ۱۰ برابری"
+forRegularWork = "برای کارهای معمول PDF:"
+freeTier = "طرح رایگان"
+fullyPrivateFiles = "فایل‌ها کاملاً خصوصی"
+largeFileProcessing = "پردازش فایل‌های بزرگ"
+managedMemberMessage = "شما از طریق تیم خود به اعتبارها دسترسی نامحدود دارید. در صورت نیاز به کمک، لطفاً با رهبر تیم خود تماس بگیرید."
+managedMemberTitle = "اعتبار نامحدود"
+meteringBillingNote = "اعتبارهای اضافه‌مصرف به‌صورت ماهانه همراه با اشتراک تیم شما صورتحساب می‌شوند. می‌توانید هر زمان در تنظیمات حساب، مصرف خود را پیگیری کنید."
+meteringExplanation = "طرح تیم شما شامل {{credits}} اعتبار در ماه است. وقتی تمام شوند، صورت‌حساب اضافه‌مصرف به‌طور خودکار اعتبارهای بیشتری فراهم می‌کند تا هرگز کارتان متوقف نشود."
+meteringIncluded = "{{credits}} اعتبار/ماه همراه با طرح تیم"
+meteringNeverRunOut = "هرگز اعتبارتان تمام نمی‌شود"
+meteringNoCommitment = "بدون تعهد، هر زمان بخواهید لغو کنید"
+meteringPayAsYouGo = "فقط به‌اندازه استفاده پرداخت کنید"
+meteringPrice = "اعتبارهای اضافی با نرخ {{price}} به‌ازای هر اعتبار"
+meteringTitle = "صورت‌حساب اضافه‌مصرف بر اساس میزان استفاده"
+monthlyCredits = "اعتبارهای ماهانه"
+orgWideAccess = "کنترل‌های دسترسی در سطح سازمان"
+overage = "اضافه‌مصرف"
+perMonth = "/ماه"
+popular = "محبوب"
+premiumAiModels = "مدل‌های هوش مصنوعی پریمیوم"
+prioritySupport = "پشتیبانی اولویت‌دار"
+privateDocCloud = "ابر اسناد خصوصی"
+ragFineTuning = "RAG + fine-tuning"
+secureApiAccess = "دسترسی امن API"
+selfHostLink = "مرور مستندات و طرح‌ها"
+selfHostPrompt = "می‌خواهید خود میزبانی کنید؟"
+standardThroughput = "توان عبوری استاندارد"
+subtitle = "ارتقا به طرح تیم برای ۱۰ برابر اعتبار و پردازش سریع‌تر."
+subtitlePro = "صورت‌حساب اضافه‌مصرف را فعال کنید تا هرگز اعتبارتان تمام نشود."
+teamLeaderOnly = "فقط رهبر تیم می‌تواند صورت‌حساب اضافه‌مصرف را فعال کند"
+teamSubscription = "تیم"
+titleExhausted = "اعتبار رایگان خود را مصرف کرده‌اید"
+titleExhaustedPro = "اعتبار شما تمام شده است"
+unlimitedApiAccess = "دسترسی نامحدود به API"
+unlimitedMonthlyCredits = "مجوز سراسری"
+unlimitedSeats = "کاربران نامحدود"
+
+[credits.modal.features]
+everythingInCredits = "همه امکانات طرح Credits، به‌علاوه:"
+everythingInFree = "همه امکانات طرح رایگان، به‌علاوه:"
+forRegularWork = "برای کارهای معمول PDF:"
 
 [crop]
 autoCrop = "برش خودکار فضاهای خالی"
@@ -3352,6 +3428,9 @@ successBodyWithName = "گذرواژه از {{fileName}} حذف شد"
 successTitle = "گذرواژه حذف شد"
 title = "برای ادامه، گذرواژه را حذف کنید"
 unlock = "باز کردن و ادامه"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "قفل PDF را باز کنید تا ادامه دهید"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "افزودن فایل‌ها"
 [fileManager]
 active = "فعال"
 addToUpload = "افزودن به بارگذاری"
+changesNotUploaded = "تغییرات بارگذاری نشده‌اند"
 clearAll = "پاک‌کردن همه"
 clearSelection = "پاک‌کردن انتخاب"
 clickToUpload = "برای بارگذاری فایل‌ها کلیک کنید"
 closeFile = "بستن فایل"
+cloudFile = "فایل ابری"
+copyCreated = "رونوشت در این دستگاه ذخیره شد."
+copyFailed = "امکان ایجاد رونوشت نبود."
 delete = "حذف"
 deleteAll = "حذف همه"
 deleteSelected = "حذف انتخاب شده‌ها"
@@ -3486,14 +3569,24 @@ fileSize = "حجم"
 filesSelected = "فایل انتخاب‌شده"
 filesStored = "فایل ذخیره‌شده"
 fileVersion = "نسخه"
+filterAll = "همه"
+filterLocal = "محلی"
+filterSharedByMe = "اشتراک‌گذاری‌شده توسط من"
+filterSharedWithMe = "اشتراک‌گذاری‌شده با من"
 googleDrive = "Google Drive"
 googleDriveNotAvailable = "یکپارچگی Google Drive در دسترس نیست"
 googleDriveShort = "Drive"
 hideHistory = "مخفی کردن تاریخچه"
 lastModified = "آخرین تغییر"
+lastSynced = "آخرین همگام‌سازی"
+leaveShare = "حذف از فهرست من"
+leaveShareFailed = "امکان حذف فایل مشترک نبود."
+leaveShareSuccess = "از فهرست اشتراکی شما حذف شد."
 loadingFiles = "در حال بارگذاری فایل‌ها..."
 loadingHistory = "در حال بارگذاری تاریخچه..."
 localFiles = "فایل‌های محلی"
+localOnly = "فقط محلی"
+makeCopy = "ایجاد رونوشت"
 mobileShort = "موبایل"
 mobileUpload = "آپلود از موبایل"
 mobileUploadNotAvailable = "آپلود موبایل فعال نیست"
@@ -3506,36 +3599,10 @@ openFile = "باز کردن فایل"
 openFiles = "باز کردن فایل‌ها"
 openInFileEditor = "باز کردن در ویرایشگر فایل"
 openInPageEditor = "باز کردن در ویرایشگر صفحه"
+owner = "مالک"
+ownerUnknown = "نامشخص"
 recent = "اخیر"
 reloadFiles = "بارگذاری مجدد فایل‌ها"
-restore = "بازگردانی"
-saveSelected = "ذخیره موارد انتخاب‌شده"
-searchFiles = "جستجوی فایل‌ها..."
-selectAll = "انتخاب همه"
-selectedCount = "{{count}} مورد انتخاب‌شده"
-selectedFiles = "فایل‌های انتخاب‌شده"
-showAll = "نمایش همه"
-showHistory = "نمایش تاریخچه"
-sortByDate = "مرتب‌سازی بر اساس تاریخ"
-sortByName = "مرتب‌سازی بر اساس نام"
-sortBySize = "مرتب‌سازی بر اساس حجم"
-storage = "فضای ذخیره"
-storageCleared = "مرورگر فضای ذخیره را پاک کرده است. فایل‌ها حذف شده‌اند. لطفاً دوباره بارگذاری کنید."
-storageError = "خطای فضای ذخیره رخ داد"
-storageLow = "فضای ذخیره رو به اتمام است. حذف فایل‌های قدیمی را در نظر بگیرید."
-subtitle = "فایل‌ها را به فضای ذخیره خود اضافه کنید تا در همه ابزارها به‌سادگی به آن‌ها دسترسی داشته باشید"
-supportMessage = "با پشتیبانی از پایگاه‌داده مرورگر برای ظرفیت نامحدود"
-title = "بارگذاری فایل‌های PDF"
-toolChain = "ابزارهای اعمال‌شده"
-totalSelected = "مجموع انتخاب‌شده"
-unsupported = "پشتیبانی‌نشده"
-unzip = "استخراج"
-uploadError = "بارگذاری برخی فایل‌ها ناموفق بود."
-copyCreated = "رونوشت در این دستگاه ذخیره شد."
-copyFailed = "امکان ایجاد رونوشت نبود."
-leaveShare = "حذف از فهرست من"
-leaveShareFailed = "امکان حذف فایل مشترک نبود."
-leaveShareSuccess = "از فهرست اشتراکی شما حذف شد."
 removeBoth = "حذف از هر دو"
 removeFilePrompt = "این فایل در این دستگاه و روی سرور شما ذخیره شده است. مایلید آن را از کجا حذف کنید؟"
 removeFileTitle = "حذف فایل"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "از سرور حذف شد."
 removeSharedPrompt = "این فایل با شما به اشتراک گذاشته شده است. می‌توانید آن را از این دستگاه یا از فهرست اشتراکی خود حذف کنید."
 removeSharedServerOnlyBlockedPrompt = "این فایل با شما به اشتراک گذاشته شده و فقط روی سرور ذخیره شده است."
 removeSharedServerOnlyPrompt = "این فایل با شما به اشتراک گذاشته شده و فقط روی سرور ذخیره شده است. آن را از فهرست خود حذف می‌کنید؟"
-changesNotUploaded = "تغییرات بارگذاری نشده‌اند"
-cloudFile = "فایل ابری"
-filterAll = "همه"
-filterLocal = "محلی"
-filterSharedByMe = "اشتراک‌گذاری‌شده توسط من"
-filterSharedWithMe = "اشتراک‌گذاری‌شده با من"
-lastSynced = "آخرین همگام‌سازی"
-localOnly = "فقط محلی"
-makeCopy = "ایجاد رونوشت"
-owner = "مالک"
-ownerUnknown = "نامشخص"
+restore = "بازگردانی"
+saveSelected = "ذخیره موارد انتخاب‌شده"
+searchFiles = "جستجوی فایل‌ها..."
+selectAll = "انتخاب همه"
+selectedCount = "{{count}} مورد انتخاب‌شده"
+selectedFiles = "فایل‌های انتخاب‌شده"
 share = "اشتراک‌گذاری"
-shareSelected = "اشتراک‌گذاری موارد انتخاب‌شده"
 sharedByYou = "اشتراک‌گذاری‌شده توسط شما"
 sharedEditNoticeBody = "شما حق ویرایش نسخه سروری این فایل را ندارید. هر ویرایشی انجام دهید به‌صورت یک نسخه محلی ذخیره خواهد شد."
 sharedEditNoticeConfirm = "متوجه شدم"
 sharedEditNoticeTitle = "نسخه فقط‌خواندنی روی سرور"
 sharedWithYou = "با شما به اشتراک گذاشته شده"
+shareSelected = "اشتراک‌گذاری موارد انتخاب‌شده"
 sharing = "اشتراک‌گذاری"
+showAll = "نمایش همه"
+showHistory = "نمایش تاریخچه"
+sortByDate = "مرتب‌سازی بر اساس تاریخ"
+sortByName = "مرتب‌سازی بر اساس نام"
+sortBySize = "مرتب‌سازی بر اساس حجم"
+storage = "فضای ذخیره"
+storageCleared = "مرورگر فضای ذخیره را پاک کرده است. فایل‌ها حذف شده‌اند. لطفاً دوباره بارگذاری کنید."
+storageError = "خطای فضای ذخیره رخ داد"
+storageLow = "فضای ذخیره رو به اتمام است. حذف فایل‌های قدیمی را در نظر بگیرید."
 storageState = "ذخیره‌سازی"
+subtitle = "فایل‌ها را به فضای ذخیره خود اضافه کنید تا در همه ابزارها به‌سادگی به آن‌ها دسترسی داشته باشید"
+supportMessage = "با پشتیبانی از پایگاه‌داده مرورگر برای ظرفیت نامحدود"
 synced = "همگام شد"
+title = "بارگذاری فایل‌های PDF"
+toolChain = "ابزارهای اعمال‌شده"
+totalSelected = "مجموع انتخاب‌شده"
+unsupported = "پشتیبانی‌نشده"
+unzip = "استخراج"
 updateOnServer = "به‌روزرسانی روی سرور"
+uploadError = "بارگذاری برخی فایل‌ها ناموفق بود."
 uploadSelected = "بارگذاری موارد انتخاب‌شده"
 uploadToServer = "بارگذاری روی سرور"
 
@@ -3696,77 +3775,6 @@ title = "درباره تخت‌سازی PDFها"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "درباره امضای گروهی"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "تمام امضاها به‌ترتیبی که مشخص کرده‌اید اعمال می‌شوند"
-bullet2 = "در صورت نیاز می‌توانید با امضاهای ناقص نهایی‌سازی کنید"
-bullet3 = "پس از نهایی‌سازی، نشست قابل تغییر نیست"
-description = "پس از اینکه همه شرکت‌کنندگان امضا کردند (یا اگر تصمیم بگیرید زودتر نهایی‌سازی کنید)، می‌توانید PDF نهایی امضاشده را تولید کنید."
-title = "فرآیند نهایی‌سازی"
-
-[groupSigning.tooltip.roles]
-bullet1 = "مالک (شما): ایجاد نشست، پیکربندی پیش‌فرض‌های امضا، نهایی‌سازی سند"
-bullet2 = "شرکت‌کنندگان: ایجاد امضای خود، انتخاب گواهی، قرار دادن روی PDF"
-bullet3 = "شرکت‌کنندگان نمی‌توانند تنظیمات قابلیت مشاهده، دلیل یا مکان امضا را تغییر دهند"
-description = "شما تنظیمات ظاهر امضا را برای همه شرکت‌کنندگان کنترل می‌کنید."
-title = "نقش‌های شرکت‌کنندگان"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "شرکت‌کننده اول باید امضا کند تا نفر دوم به سند دسترسی یابد"
-bullet2 = "ترتیب صحیح امضا برای انطباق حقوقی را تضمین می‌کند"
-bullet3 = "می‌توانید با کشیدن در فهرست، ترتیب شرکت‌کنندگان را تغییر دهید"
-description = "شرکت‌کنندگان به ترتیبی که مشخص می‌کنید اسناد را امضا می‌کنند. هر امضاکننده هنگامی که نوبتش شود اعلان دریافت می‌کند."
-title = "امضای ترتیبی"
-
-[groupSigning.steps]
-back = "بازگشت"
-completed = "تکمیل شد"
-current = "جاری"
-stepLabel = "گام {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "ادامه به بازبینی"
-invisible = "امضاها نامرئی خواهند بود (فقط فراداده)"
-locationLabel = "مکان:"
-preview = "پیش‌نمایش"
-reasonLabel = "دلیل:"
-title = "پیکربندی تنظیمات امضا"
-visible = "امضاها روی صفحه {{page}} مرئی خواهند بود"
-
-[groupSigning.steps.review]
-document = "سند"
-dueDate = "تاریخ سررسید (اختیاری)"
-dueDatePlaceholder = "تاریخ سررسید را انتخاب کنید..."
-invisible = "نامرئی (فقط فراداده)"
-location = "مکان:"
-logo = "لوگو:"
-logoHidden = "بدون لوگو"
-logoShown = "لوگوی Stirling PDF نمایش داده می‌شود"
-participants = "شرکت‌کنندگان"
-reason = "دلیل:"
-send = "ارسال درخواست‌های امضا"
-signatureSettings = "تنظیمات امضا"
-title = "بازبینی جزئیات نشست"
-titleShort = "بازبینی و ارسال"
-visibility = "قابلیت مشاهده:"
-visible = "روی صفحه {{page}} مرئی"
-participantCount = "{{count}} شرکت‌کننده به ترتیب امضا خواهند کرد"
-
-[groupSigning.steps.selectDocument]
-continue = "ادامه به انتخاب شرکت‌کنندگان"
-noFile = "لطفاً برای ایجاد یک نشست امضا یک فایل PDF واحد از فایل‌های فعال خود انتخاب کنید."
-selectedFile = "سند انتخاب‌شده"
-title = "انتخاب سند"
-
-[groupSigning.steps.selectParticipants]
-continue = "ادامه به تنظیمات امضا"
-count = "{{count}} شرکت‌کننده انتخاب شد"
-label = "انتخاب شرکت‌کنندگان"
-placeholder = "شرکت‌کنندگان را برای امضا انتخاب کنید..."
-title = "انتخاب شرکت‌کنندگان"
-
 [getPdfInfo]
 downloadJson = "دانلود JSON"
 downloads = "دانلودها"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "لایه‌ها"
 multimedia = "چندرسانه‌ای"
 
+[groupSigning.steps]
+back = "بازگشت"
+completed = "تکمیل شد"
+current = "جاری"
+stepLabel = "گام {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "ادامه به بازبینی"
+invisible = "امضاها نامرئی خواهند بود (فقط فراداده)"
+locationLabel = "مکان:"
+preview = "پیش‌نمایش"
+reasonLabel = "دلیل:"
+title = "پیکربندی تنظیمات امضا"
+visible = "امضاها روی صفحه {{page}} مرئی خواهند بود"
+
+[groupSigning.steps.review]
+document = "سند"
+dueDate = "تاریخ سررسید (اختیاری)"
+dueDatePlaceholder = "تاریخ سررسید را انتخاب کنید..."
+invisible = "نامرئی (فقط فراداده)"
+location = "مکان:"
+logo = "لوگو:"
+logoHidden = "بدون لوگو"
+logoShown = "لوگوی Stirling PDF نمایش داده می‌شود"
+participantCount = "{{count}} شرکت‌کننده به ترتیب امضا خواهند کرد"
+participants = "شرکت‌کنندگان"
+reason = "دلیل:"
+send = "ارسال درخواست‌های امضا"
+signatureSettings = "تنظیمات امضا"
+title = "بازبینی جزئیات نشست"
+titleShort = "بازبینی و ارسال"
+visibility = "قابلیت مشاهده:"
+visible = "روی صفحه {{page}} مرئی"
+
+[groupSigning.steps.selectDocument]
+continue = "ادامه به انتخاب شرکت‌کنندگان"
+noFile = "لطفاً برای ایجاد یک نشست امضا یک فایل PDF واحد از فایل‌های فعال خود انتخاب کنید."
+selectedFile = "سند انتخاب‌شده"
+title = "انتخاب سند"
+
+[groupSigning.steps.selectParticipants]
+continue = "ادامه به تنظیمات امضا"
+count = "{{count}} شرکت‌کننده انتخاب شد"
+label = "انتخاب شرکت‌کنندگان"
+placeholder = "شرکت‌کنندگان را برای امضا انتخاب کنید..."
+title = "انتخاب شرکت‌کنندگان"
+
+[groupSigning.tooltip]
+header = "درباره امضای گروهی"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "تمام امضاها به‌ترتیبی که مشخص کرده‌اید اعمال می‌شوند"
+bullet2 = "در صورت نیاز می‌توانید با امضاهای ناقص نهایی‌سازی کنید"
+bullet3 = "پس از نهایی‌سازی، نشست قابل تغییر نیست"
+description = "پس از اینکه همه شرکت‌کنندگان امضا کردند (یا اگر تصمیم بگیرید زودتر نهایی‌سازی کنید)، می‌توانید PDF نهایی امضاشده را تولید کنید."
+title = "فرآیند نهایی‌سازی"
+
+[groupSigning.tooltip.roles]
+bullet1 = "مالک (شما): ایجاد نشست، پیکربندی پیش‌فرض‌های امضا، نهایی‌سازی سند"
+bullet2 = "شرکت‌کنندگان: ایجاد امضای خود، انتخاب گواهی، قرار دادن روی PDF"
+bullet3 = "شرکت‌کنندگان نمی‌توانند تنظیمات قابلیت مشاهده، دلیل یا مکان امضا را تغییر دهند"
+description = "شما تنظیمات ظاهر امضا را برای همه شرکت‌کنندگان کنترل می‌کنید."
+title = "نقش‌های شرکت‌کنندگان"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "شرکت‌کننده اول باید امضا کند تا نفر دوم به سند دسترسی یابد"
+bullet2 = "ترتیب صحیح امضا برای انطباق حقوقی را تضمین می‌کند"
+bullet3 = "می‌توانید با کشیدن در فهرست، ترتیب شرکت‌کنندگان را تغییر دهید"
+description = "شرکت‌کنندگان به ترتیبی که مشخص می‌کنید اسناد را امضا می‌کنند. هر امضاکننده هنگامی که نوبتش شود اعلان دریافت می‌کند."
+title = "امضای ترتیبی"
+
 [guestBanner]
 dismiss = "بستن بنر"
 message = "برای ذخیره کارها، دسترسی به امکانات بیشتر و حمایت از پروژه، یک حساب رایگان بسازید."
@@ -3935,10 +4014,6 @@ title = "حاشیه‌نویسی"
 desc = "ساخت گردش‌کارهای چندمرحله‌ای با زنجیره کردن اقدامات PDF. مناسب برای کارهای تکرارشونده."
 tags = "گردش‌کار,توالی,اتوماسیون"
 title = "اتوماسیون"
-
-[home.formFill]
-desc = "پر کردن فیلدهای فرم PDF به‌صورت تعاملی با ویرایشگر بصری"
-title = "پر کردن فرم"
 
 [home.autoRename]
 desc = "به‌طور خودکار نام فایل PDF را بر اساس سربرگ شناسایی‌شده تغییر می‌دهد"
@@ -4034,6 +4109,10 @@ title = "استخراج صفحات"
 desc = "حذف تمام عناصر تعاملی و فرم‌ها از یک PDF"
 tags = "ساده‌سازی,حذف,تعامل"
 title = "تسطیح"
+
+[home.formFill]
+desc = "پر کردن فیلدهای فرم PDF به‌صورت تعاملی با ویرایشگر بصری"
+title = "پر کردن فرم"
 
 [home.getPdfInfo]
 desc = "گرفتن هر اطلاعات ممکن در مورد PDF"
@@ -4185,11 +4264,6 @@ desc = "افزودن امضا به PDF با کشیدن، متن یا تصویر"
 tags = "امضا,دستخط"
 title = "امضا"
 
-[home.timestampPdf]
-desc = "یک مُهر زمانی RFC 3161 به سند اضافه کنید تا زمان وجود PDF خود را اثبات کنید"
-tags = "مهر زمانی,RFC 3161,TSA,مرجع مهر زمانی,مهر زمانی سند,اثبات وجود,توکن مهر زمانی,مهر زمانی مورد اعتماد,امضای مهر زمانی,ثبت محضری"
-title = "مُهر زمانی PDF"
-
 [home.split]
 desc = "تقسیم فایل‌های PDF به اسناد چندگانه"
 tags = "تقسیم,جداکردن,تفکیک"
@@ -4209,6 +4283,11 @@ title = "تفکیک PDF بر اساس بخش‌ها"
 desc = "مشاهده مستندات API و آزمایش نقاط پایانی"
 tags = "API,مستندات,آزمایش"
 title = "مستندات API"
+
+[home.timestampPdf]
+desc = "یک مُهر زمانی RFC 3161 به سند اضافه کنید تا زمان وجود PDF خود را اثبات کنید"
+tags = "مهر زمانی,RFC 3161,TSA,مرجع مهر زمانی,مهر زمانی سند,اثبات وجود,توکن مهر زمانی,مهر زمانی مورد اعتماد,امضای مهر زمانی,ثبت محضری"
+title = "مُهر زمانی PDF"
 
 [home.unlockPDFForms]
 desc = "حذف ویژگی فقط‌خواندنی از فیلدهای فرم در یک سند PDF."
@@ -4298,6 +4377,8 @@ welcomeTitle = "شما دعوت شده‌اید!"
 
 [landing]
 addFiles = "افزودن فایل‌ها"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "آپلود از موبایل"
 openFromComputer = "باز کردن از رایانه"
 uploadFromComputer = "بارگذاری از رایانه"
@@ -4321,6 +4402,18 @@ module = "ماژول"
 nav = "مجوزها"
 title = "مجوزهای شخص ثالث"
 version = "نسخه"
+
+[localMode]
+toolUnavailable = "این ابزار به حساب کاربری نیاز دارد. برای استفاده، به Stirling Cloud وارد شوید یا به یک سرور خودمیزبان متصل شوید."
+
+[localMode.banner]
+message = "برای دسترسی به همه ابزارها وارد شوید."
+signIn = "ورود"
+title = "در حال اجرا به‌صورت محلی"
+
+[localMode.toolPicker]
+message = "برای دسترسی به همه ابزارها وارد شوید."
+signIn = "ورود"
 
 [login]
 accountCreatedSuccess = "حساب با موفقیت ایجاد شد! اکنون می‌توانید وارد شوید."
@@ -4382,12 +4475,12 @@ sendResetLink = "ارسال پیوند بازنشانی"
 sessionExpired = "نشست شما منقضی شده است. لطفاً دوباره وارد شوید."
 signin = "ورود"
 signInAnonymously = "ثبت‌نام به‌عنوان مهمان"
-subtitle = "دوباره به Stirling PDF وارد شوید"
 signingIn = "در حال ورود..."
 signinTitle = "لطفاً وارد شوید"
 signInWith = "ورود با"
 signOut = "خروج"
 ssoSignIn = "ورود از طریق Single Sign-on"
+subtitle = "دوباره به Stirling PDF وارد شوید"
 title = "ورود"
 toManySessions = "شما تعداد زیادی نشست فعال دارید."
 unexpectedError = "خطای غیرمنتظره: {{message}}"
@@ -4430,9 +4523,11 @@ tags = "مارک‌آپ،محتوای وب،تبدیل،تغییر"
 title = "Markdown به PDF"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "ادغام"
 tags = "ترکیب،عملیات صفحات،بک‌اند،سمت سرور"
 title = "ادغام"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "هنگام ادغام PDFها خطایی رخ داد."
@@ -4701,15 +4796,6 @@ viewSwitcher = "از این کنترل‌ها برای انتخاب نحوه ن�
 workbench = "این <strong>Workbench</strong> است - ناحیه اصلی که در آن PDFهای خود را مشاهده و ویرایش می‌کنید."
 wrapUp = "همه‌چیز آماده است! شما با نواحی اصلی برنامه و نحوه استفاده از آن‌ها آشنا شدید. هر زمان خواستید برای مشاهده دوباره این تور روی دکمه <strong>راهنما</strong> کلیک کنید."
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "پس از پایان دوره آزمایشی، با طرح رایگان ادامه می‌دهید. برای حفظ دسترسی Pro روش پرداخت اضافه کنید."
-afterTrialWithPayment = "اشتراک Pro شما پس از پایان دوره آزمایشی به‌طور خودکار شروع می‌شود."
-body = "در طول دوره آزمایشی به همه قابلیت‌های Stirling PDF Pro دسترسی کامل دارید. از تبدیل نامحدود، اندازه فایل‌های بزرگ‌تر و پردازش اولویتی لذت ببرید."
-daysRemaining = "{{days}} روز باقی‌مانده"
-daysRemainingSingular = "{{days}} روز باقی‌مانده"
-title = "دوره آزمایشی ۳۰روزه Pro شما"
-trialEnds = "پایان دوره آزمایشی: {{date}}"
-
 [onboarding.buttons]
 back = "بازگشت"
 download = "دانلود →"
@@ -4722,6 +4808,15 @@ skipTheTour = "از تور بگذر"
 body = "Stirling به‌صورت برنامه دسکتاپ بهترین عملکرد را دارد. می‌توانید آفلاین از آن استفاده کنید، سریع‌تر به اسناد دسترسی داشته باشید و ویرایش‌ها را به‌صورت محلی روی رایانه انجام دهید."
 title = "دانلود"
 titleWithOs = "دانلود برای {{osLabel}}"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "پس از پایان دوره آزمایشی، با طرح رایگان ادامه می‌دهید. برای حفظ دسترسی Pro روش پرداخت اضافه کنید."
+afterTrialWithPayment = "اشتراک Pro شما پس از پایان دوره آزمایشی به‌طور خودکار شروع می‌شود."
+body = "در طول دوره آزمایشی به همه قابلیت‌های Stirling PDF Pro دسترسی کامل دارید. از تبدیل نامحدود، اندازه فایل‌های بزرگ‌تر و پردازش اولویتی لذت ببرید."
+daysRemaining = "{{days}} روز باقی‌مانده"
+daysRemainingSingular = "{{days}} روز باقی‌مانده"
+title = "دوره آزمایشی ۳۰روزه Pro شما"
+trialEnds = "پایان دوره آزمایشی: {{date}}"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "وقتی حالت لاگین را فعال کنید، می‌توانید کاربران را مدیریت کنید، تنظیمات را پیکربندی کنید و سلامت سرور را پایش کنید. نخستین <strong>{{freeTierLimit}}</strong> نفر روی سرور شما به‌صورت رایگان از Stirling استفاده می‌کنند."
@@ -4858,126 +4953,6 @@ title = "ویرایشگر صفحه"
 zoomIn = "بزرگ‌نمایی"
 zoomOut = "کوچک‌نمایی"
 
-[viewer]
-cannotPreviewFile = "امکان پیش‌نمایش فایل نیست"
-disableColorFilter = "غیرفعال کردن فیلتر رنگ"
-dualPageView = "نمای دوصفحه‌ای"
-enableDarkFilter = "فعال‌سازی فیلتر تیره"
-enableSepiaFilter = "فعال‌سازی فیلتر سپیا"
-firstPage = "صفحه نخست"
-lastPage = "صفحه آخر"
-nextPage = "صفحه بعد"
-onlyPdfSupported = "نمایشگر فقط فایل‌های PDF را پشتیبانی می‌کند. به نظر می‌رسد این فایل قالب متفاوتی دارد."
-previousPage = "صفحه قبل"
-singlePageView = "نمای تک‌صفحه‌ای"
-unknownFile = "فایل ناشناخته"
-zoomIn = "بزرگ‌نمایی"
-zoomOut = "کوچک‌نمایی"
-resetZoom = "بازنشانی زوم"
-
-[viewer.nonPdf]
-fileTypeBadge = "فایل {{type}}"
-convertToPdf = "تبدیل به PDF"
-loading = "در حال بارگذاری..."
-emptyFile = "فایل خالی"
-csvStats = "{{rows}} ردیف · {{columns}} ستون · {{size}}"
-sortedBy = "مرتب‌شده بر اساس: {{column}}"
-columnDefault = "ستون {{index}}"
-htmlPreviewWarning = "پیش‌نمایش HTML — ممکن است منابع خارجی بارگذاری نشوند · {{size}}"
-htmlPreview = "پیش‌نمایش HTML"
-invalidJson = "JSON نامعتبر — محتوای خام نمایش داده می‌شود"
-textStats = "{{lines}} خط · {{size}}"
-lineNumbers = "شماره خطوط"
-renderMarkdown = "رندر Markdown"
-
-[viewer.attachments]
-title = "پیوست‌ها"
-searchPlaceholder = "جستجوی پیوست‌ها"
-noSupport = "پشتیبانی از پیوست در این نمایشگر در دسترس نیست."
-noDocument = "برای مشاهدهٔ پیوست‌های آن، یک PDF باز کنید."
-loading = "در حال بارگذاری پیوست‌ها..."
-empty = "در این سند هیچ پیوستی وجود ندارد"
-noMatch = "هیچ پیوستی با جستجوی شما مطابقت ندارد"
-
-[viewer.comments]
-title = "نظرات"
-hint = "با ابزارهای نظر، درج متن یا جایگزینی متن، نظر بگذارید. نظرات به‌صورت صفحه‌به‌صفحه اینجا نمایش داده می‌شوند."
-placeholder = "نظر خود را بنویسید..."
-pageLabel = "صفحه {{page}}"
-oneComment = "۱ نظر"
-nComments = "{{count}} نظر"
-addCommentPlaceholder = "افزودن نظر..."
-addLink = "افزودن پیوند"
-goToLink = "رفتن به پیوند"
-addComment = "افزودن نظر"
-viewComment = "مشاهده نظر"
-addReplyPlaceholder = "افزودن پاسخ..."
-saveReply = "ذخیره پاسخ"
-send = "ارسال"
-moreActions = "عملیات بیشتر"
-typeComment = "نظر"
-typeInsertText = "درج متن"
-typeReplaceText = "جایگزینی متن"
-locateAnnotation = "یافتن در سند"
-deleteTitle = "حذف حاشیه‌نویسی از نظرات؟"
-deleteDescription = "این حاشیه‌نویسی یک نظر پیوست دارد. می‌توانید فقط نظر را از نوار کناری حذف کنید و حاشیه‌نویسی را نگه دارید، یا همه را حذف کنید."
-removeCommentOnly = "فقط حذف نظر"
-deleteAnnotationAndComment = "حذف حاشیه‌نویسی و نظر"
-
-[viewer.formBar]
-title = "فیلدهای فرم"
-unsavedBadge = "ذخیره‌نشده"
-unsavedDesc = "تغییرات ذخیره‌نشده دارید"
-hasFieldsDesc = "این PDF شامل فیلدهای قابل‌پرکردن است"
-dismiss = "بستن"
-apply = "اعمال تغییرات"
-download = "دانلود PDF"
-
-[rightRail]
-closeSelected = "بستن فایل‌های انتخاب‌شده"
-selectAll = "انتخاب همه"
-deselectAll = "لغو انتخاب همه"
-selectByNumber = "انتخاب بر اساس شماره صفحات"
-deleteSelected = "حذف صفحات انتخاب‌شده"
-closePdf = "بستن PDF"
-exportAll = "برون‌بری PDF"
-downloadSelected = "دانلود فایل‌های انتخاب‌شده"
-annotations = "حاشیه‌نویسی‌ها"
-exportSelected = "برون‌بری صفحات انتخاب‌شده"
-formFill = "پر کردن فرم"
-saveChanges = "ذخیره تغییرات"
-toggleAttachments = "نمایش/پنهان‌کردن پیوست‌ها"
-toggleTheme = "تغییر تم"
-language = "زبان"
-toggleAnnotations = "تغییر وضعیت نمایش حاشیه‌نویسی‌ها"
-toggleLayers = "تغییر وضعیت لایه‌ها"
-search = "جستجوی PDF"
-panMode = "حالت پیمایش"
-applyRedactionsFirst = "ابتدا سانسورها را اعمال کنید"
-rotateLeft = "چرخش به چپ"
-rotateRight = "چرخش به راست"
-toggleSidebar = "تغییر وضعیت نوار کناری"
-toggleBookmarks = "نمایش/پنهان‌کردن نشانک‌ها"
-toggleComments = "نظرات"
-print = "چاپ PDF"
-ruler = "خط‌کش / اندازه‌گیری"
-readAloud = "بلندخوانی"
-readAloudSpeed = "سرعت"
-readAloudLanguage = "زبان"
-selectLanguage = "انتخاب زبان"
-draw = "رسم"
-redact = "سانسور"
-exitRedaction = "خروج از حالت سانسور"
-save = "ذخیره"
-downloadAll = "دانلود همه"
-saveAll = "ذخیره همه"
-saveAs = "ذخیره به‌صورت"
-
-[textAlign]
-left = "چپ"
-center = "وسط"
-right = "راست"
-
 [pageExtracter]
 header = "استخراج صفحات"
 placeholder = "(مثال: 1,2,8 یا 4,7,12-16 یا 2n-1)"
@@ -5000,10 +4975,24 @@ tags = "ادغام،ترکیب،نمای واحد،سازماندهی"
 title = "طرح‌بندی چند صفحه‌ای"
 top = "حاشیه بالا"
 
-[pageLayout.mode]
-default = "پیش‌فرض"
-custom = "سفارشی"
-label = "حالت:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "بر اساس ردیف‌ها: ابتدا هر ردیف را پر می‌کند."
+bullet2 = "بر اساس ستون‌ها: ابتدا هر ستون را پر می‌کند."
+text = "مشخص می‌کند صفحات ردیف‌به‌ردیف یا ستون‌به‌ستون شبکه را پر کنند."
+title = "چیدمان صفحه"
+
+[pageLayout.advanced.tooltip.header]
+title = "گزینه‌های پیشرفته چیدمان"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "جهت نهایی برگ را انتخاب کنید. حالت عمودی برای محتوای بلند بهتر است و حالت افقی برای چیدمان‌های عریض مناسب‌تر."
+title = "جهت"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR: ترتیب چپ به راست."
+bullet2 = "RTL: ترتیب راست به چپ."
+text = "چینش افقی در شبکه را تنظیم می‌کند و برای قراردادهای اسناد چپ‌به‌راست و راست‌به‌چپ مفید است."
+title = "جهت خواندن"
 
 [pageLayout.arrangement]
 byColumns = "بر اساس ستون‌ها"
@@ -5018,100 +5007,86 @@ label = "چیدمان صفحه:"
 
 [pageLayout.error]
 failed = "هنگام ایجاد چیدمان چندصفحه‌ای خطایی رخ داد."
-outerVerticalMarginsTooLarge = "حاشیه‌های بالا/پایین برای این اندازه صفحه بیش از حد بزرگ هستند."
-outerHorizontalMarginsTooLarge = "حاشیه‌های چپ/راست برای این اندازه صفحه بیش از حد بزرگ هستند."
 innerMarginTooLarge = "حاشیه داخلی برای طرح انتخاب‌شده بیش از حد بزرگ است."
+outerHorizontalMarginsTooLarge = "حاشیه‌های چپ/راست برای این اندازه صفحه بیش از حد بزرگ هستند."
+outerVerticalMarginsTooLarge = "حاشیه‌های بالا/پایین برای این اندازه صفحه بیش از حد بزرگ هستند."
 
-[pageLayout.orientation]
-landscape = "افقی"
-portrait = "عمودی"
-label = "جهت:"
-
-[pageLayout.readingDirection]
-ltr = "چپ به راست"
-rtl = "راست به چپ"
-label = "جهت خواندن:"
-
-[pageLayout.tooltip.header]
-title = "راهنمای چیدمان صفحه"
-
-[pageLayout.tooltip.overview]
-title = "چیدمان صفحه چیست؟"
-text = "چندین صفحه را روی یک برگ قرار دهید تا برای جزوه یا صرفه‌جویی در کاغذ."
-
-[pageLayout.tooltip.mode]
-title = "حالت"
-text = "نحوه پیکربندی شبکه را انتخاب کنید:"
-bullet1 = "پیش‌فرض: یک پیش‌تنظیم انتخاب کنید و شبکه به‌صورت خودکار محاسبه می‌شود."
-bullet2 = "سفارشی: ردیف‌ها و ستون‌ها را به‌صورت دستی تنظیم کنید."
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "صفحات در هر برگ (حالت پیش‌فرض)"
-text = "تعداد صفحات در هر برگ را انتخاب کنید (مثلاً 4 → 2×2، 9 → 3×3)."
-
-[pageLayout.tooltip.rowsCols]
-title = "ردیف‌ها و ستون‌ها (حالت سفارشی)"
-text = "ابعاد دقیق شبکه را تنظیم کنید. تعداد کل صفحات در هر برگ = ردیف‌ها × ستون‌ها."
-
-[pageLayout.tooltip.orientation]
-title = "جهت"
-text = "جهت برگ خروجی را تنظیم می‌کند:"
-bullet1 = "عمودی: بلندتر از عریض."
-bullet2 = "افقی: عریض‌تر از بلند."
-
-[pageLayout.tooltip.arrangement]
-title = "چیدمان صفحه"
-text = "ترتیب پر شدن شبکه توسط صفحات را کنترل می‌کند:"
-bullet1 = "بر اساس ردیف‌ها: ردیف‌به‌ردیف (چپ‌به‌راست یا راست‌به‌چپ)."
-bullet2 = "بر اساس ستون‌ها: از بالا به پایین، ستون‌به‌ستون."
-
-[pageLayout.tooltip.readingDirection]
-title = "جهت خواندن"
-text = "ترتیب افقی صفحات را کنترل می‌کند:"
-bullet1 = "LTR: چپ به راست."
-bullet2 = "RTL: راست به چپ."
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "با فعال‌سازی کادر، دور هر صفحه قرارگرفته خط رسم می‌شود. این می‌تواند به جداسازی بصری یا برش کمک کند."
 title = "افزودن کادر"
-text = "دور هر خانه صفحه کادر می‌کشد تا راهنمای برش یا جداسازی بصری باشد."
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "ضخامت کادر تنها زمانی اعمال می‌شود که کادرها فعال باشند. مقادیر بالاتر خطوط ضخیم‌تری ایجاد می‌کنند."
+title = "ضخامت کادر"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "حاشیه‌ها و کادرها"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "حاشیه‌ها"
-text = "با استفاده از حاشیه‌های بالا، پایین، چپ و راست فاصله اطراف خروجی تمام‌برگ را کنترل کنید."
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "حاشیه داخلی"
 text = "حاشیه داخلی فاصله بین خانه‌های شبکه صفحه را برای جداسازی و خوانایی بهتر اضافه می‌کند."
+title = "حاشیه داخلی"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "با استفاده از حاشیه‌های بالا، پایین، چپ و راست فاصله اطراف خروجی تمام‌برگ را کنترل کنید."
+title = "حاشیه‌ها"
+
+[pageLayout.mode]
+custom = "سفارشی"
+default = "پیش‌فرض"
+label = "حالت:"
+
+[pageLayout.orientation]
+label = "جهت:"
+landscape = "افقی"
+portrait = "عمودی"
+
+[pageLayout.readingDirection]
+label = "جهت خواندن:"
+ltr = "چپ به راست"
+rtl = "راست به چپ"
+
+[pageLayout.tooltip.addBorder]
+text = "دور هر خانه صفحه کادر می‌کشد تا راهنمای برش یا جداسازی بصری باشد."
 title = "افزودن کادر"
-text = "با فعال‌سازی کادر، دور هر صفحه قرارگرفته خط رسم می‌شود. این می‌تواند به جداسازی بصری یا برش کمک کند."
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "ضخامت کادر"
-text = "ضخامت کادر تنها زمانی اعمال می‌شود که کادرها فعال باشند. مقادیر بالاتر خطوط ضخیم‌تری ایجاد می‌کنند."
-
-[pageLayout.advanced.tooltip.header]
-title = "گزینه‌های پیشرفته چیدمان"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "جهت"
-text = "جهت نهایی برگ را انتخاب کنید. حالت عمودی برای محتوای بلند بهتر است و حالت افقی برای چیدمان‌های عریض مناسب‌تر."
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "بر اساس ردیف‌ها: ردیف‌به‌ردیف (چپ‌به‌راست یا راست‌به‌چپ)."
+bullet2 = "بر اساس ستون‌ها: از بالا به پایین، ستون‌به‌ستون."
+text = "ترتیب پر شدن شبکه توسط صفحات را کنترل می‌کند:"
 title = "چیدمان صفحه"
-text = "مشخص می‌کند صفحات ردیف‌به‌ردیف یا ستون‌به‌ستون شبکه را پر کنند."
-bullet1 = "بر اساس ردیف‌ها: ابتدا هر ردیف را پر می‌کند."
-bullet2 = "بر اساس ستون‌ها: ابتدا هر ستون را پر می‌کند."
 
-[pageLayout.advanced.tooltip.readingDirection]
+[pageLayout.tooltip.header]
+title = "راهنمای چیدمان صفحه"
+
+[pageLayout.tooltip.mode]
+bullet1 = "پیش‌فرض: یک پیش‌تنظیم انتخاب کنید و شبکه به‌صورت خودکار محاسبه می‌شود."
+bullet2 = "سفارشی: ردیف‌ها و ستون‌ها را به‌صورت دستی تنظیم کنید."
+text = "نحوه پیکربندی شبکه را انتخاب کنید:"
+title = "حالت"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "عمودی: بلندتر از عریض."
+bullet2 = "افقی: عریض‌تر از بلند."
+text = "جهت برگ خروجی را تنظیم می‌کند:"
+title = "جهت"
+
+[pageLayout.tooltip.overview]
+text = "چندین صفحه را روی یک برگ قرار دهید تا برای جزوه یا صرفه‌جویی در کاغذ."
+title = "چیدمان صفحه چیست؟"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "تعداد صفحات در هر برگ را انتخاب کنید (مثلاً 4 → 2×2، 9 → 3×3)."
+title = "صفحات در هر برگ (حالت پیش‌فرض)"
+
+[pageLayout.tooltip.readingDirection]
+bullet1 = "LTR: چپ به راست."
+bullet2 = "RTL: راست به چپ."
+text = "ترتیب افقی صفحات را کنترل می‌کند:"
 title = "جهت خواندن"
-text = "چینش افقی در شبکه را تنظیم می‌کند و برای قراردادهای اسناد چپ‌به‌راست و راست‌به‌چپ مفید است."
-bullet1 = "LTR: ترتیب چپ به راست."
-bullet2 = "RTL: ترتیب راست به چپ."
+
+[pageLayout.tooltip.rowsCols]
+text = "ابعاد دقیق شبکه را تنظیم کنید. تعداد کل صفحات در هر برگ = ردیف‌ها × ستون‌ها."
+title = "ردیف‌ها و ستون‌ها (حالت سفارشی)"
 
 [pageRemover]
 header = "حذف صفحات PDF"
@@ -5197,6 +5172,9 @@ title = "نکات"
 autoClose = "این پنجره به‌صورت خودکار بسته خواهد شد..."
 billingPeriod = "دوره صورتحساب"
 canCloseWindow = "اکنون می‌توانید این پنجره را ببندید."
+checkoutInstructions = "خرید خود را در پنجره مرورگری که همین حالا باز شد تکمیل کنید. پس از اتمام پرداخت، به اینجا برگردید و برای به‌روزرسانی اطلاعات صورتحساب روی دکمه زیر کلیک کنید."
+checkoutOpened = "فرآیند پرداخت در مرورگر باز شد"
+closeLater = "بعداً انجام می‌دهم"
 emailInvalid = "لطفاً یک آدرس ایمیل معتبر وارد کنید"
 enterpriseNote = "تعداد صندلی‌ها در مرحله پرداخت قابل تنظیم است (۱–۱۰۰۰)."
 error = "خطای پرداخت"
@@ -5218,6 +5196,7 @@ perMonth = "/ماه"
 perYear = "/سال"
 preparing = "در حال آماده‌سازی پرداخت شما..."
 redirecting = "در حال انتقال به تسویه‌حساب امن..."
+refreshBilling = "پرداخت را انجام دادم - صورتحساب را به‌روزرسانی کن"
 stripeNotConfigured = "Stripe پیکربندی نشده است"
 stripeNotConfiguredMessage = "یکپارچه‌سازی پرداخت Stripe پیکربندی نشده است. لطفاً با مدیر خود تماس بگیرید."
 success = "پرداخت با موفقیت انجام شد!"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "اشتراک شما با موفقیت ارتقا یا�
 upgradeSuccess = "پرداخت موفق بود! اشتراک شما ارتقا یافت. لایسنس روی سرورتان به‌روزرسانی شد. به‌زودی یک ایمیل تأیید دریافت می‌کنید."
 upgradeTitle = "ارتقا به {{planName}}"
 yearly = "سالانه"
-checkoutOpened = "فرآیند پرداخت در مرورگر باز شد"
-checkoutInstructions = "خرید خود را در پنجره مرورگری که همین حالا باز شد تکمیل کنید. پس از اتمام پرداخت، به اینجا برگردید و برای به‌روزرسانی اطلاعات صورتحساب روی دکمه زیر کلیک کنید."
-refreshBilling = "پرداخت را انجام دادم - صورتحساب را به‌روزرسانی کن"
-closeLater = "بعداً انجام می‌دهم"
 
 [payment.emailStage]
 continue = "ادامه"
@@ -5456,13 +5431,6 @@ prompt = "صفحه‌ای که می‌خواهید جدول استخراج شو�
 submit = "استخراج"
 title = "PDF به CSV"
 
-[PDFToXLSX]
-header = "تبدیل PDF به Excel"
-prompt = "صفحات برای استخراج جدول‌ها را انتخاب کنید"
-submit = "تبدیل"
-title = "تبدیل PDF به Excel (XLSX)"
-tags = "صفحه‌گسترده,excel,xlsx,جدول,استخراج,تبدیل"
-
 [PDFToHTML]
 credit = "این سرویس از pdftohtml برای تبدیل فایل استفاده می‌کند."
 header = "PDF به HTML"
@@ -5561,6 +5529,13 @@ title = "PDF به ورد"
 [PDFToWord.selectText]
 1 = "فرمت فایل خروجی"
 
+[PDFToXLSX]
+header = "تبدیل PDF به Excel"
+prompt = "صفحات برای استخراج جدول‌ها را انتخاب کنید"
+submit = "تبدیل"
+tags = "صفحه‌گسترده,excel,xlsx,جدول,استخراج,تبدیل"
+title = "تبدیل PDF به Excel (XLSX)"
+
 [PDFToXML]
 credit = "این سرویس از LibreOffice برای تبدیل فایل استفاده می‌کند."
 header = "PDF به XML"
@@ -5626,10 +5601,10 @@ manage = "مدیریت"
 perMonth = "/ماه"
 perSeat = "/صندلی"
 popular = "محبوب"
-selectPlan = "انتخاب پلن"
-selectCredits = "انتخاب میزان اعتبار"
-showComparison = "مقایسه همه قابلیت‌ها"
 purchase = "خرید"
+selectCredits = "انتخاب میزان اعتبار"
+selectPlan = "انتخاب پلن"
+showComparison = "مقایسه همه قابلیت‌ها"
 totalCost = "هزینه کل"
 upgrade = "ارتقا"
 withServer = "+ پلن سرور"
@@ -5638,19 +5613,29 @@ withServer = "+ پلن سرور"
 subtitle = "جزئیات اشتراک فعلی شما"
 title = "طرح فعال"
 
+[plan.api]
+large = "5,000 اعتبار"
+medium = "1,000 اعتبار"
+small = "500 اعتبار"
+xsmall = "100 اعتبار"
+
+[plan.apiPackages]
+subtitle = "اعتبار API را برای برنامه‌های خود خریداری کنید"
+title = "بسته‌های اعتبار API"
+
 [plan.availablePlans]
-subtitle = "طرحی را انتخاب کنید که با نیازهای شما سازگار است"
 loadError = "امکان بارگذاری قیمت طرح‌ها نیست. از مقادیر پیش‌فرض استفاده می‌شود."
+subtitle = "طرحی را انتخاب کنید که با نیازهای شما سازگار است"
 title = "طرح‌های موجود"
 
 [plan.enterprise]
-siteLicense = "مجوز سراسری"
 highlight1 = "قیمت‌گذاری سفارشی"
 highlight2 = "پشتیبانی اختصاصی"
 highlight3 = "جدیدترین قابلیت‌ها"
 name = "سازمانی"
 requiresServer = "نیازمند سرور"
 requiresServerMessage = "لطفاً پیش از ارتقا به Enterprise، ابتدا به پلن سرور ارتقا دهید."
+siteLicense = "مجوز سراسری"
 
 [plan.feature]
 api = "دسترسی API"
@@ -5722,16 +5707,6 @@ successMessage = "لایسنس شما با موفقیت فعال شد. اکنو�
 name = "تیم"
 siteLicense = "مجوز سراسری"
 
-[plan.api]
-large = "5,000 اعتبار"
-medium = "1,000 اعتبار"
-small = "500 اعتبار"
-xsmall = "100 اعتبار"
-
-[plan.apiPackages]
-subtitle = "اعتبار API را برای برنامه‌های خود خریداری کنید"
-title = "بسته‌های اعتبار API"
-
 [plan.trial]
 badge = "آزمایشی"
 continueWithFree = "ادامه با نسخه رایگان"
@@ -5746,77 +5721,6 @@ subscribeToPro = "اشتراک Pro تهیه کنید"
 subscriptionScheduled = "اشتراک زمان‌بندی شد - از {{date}} آغاز می‌شود"
 title = "آزمایش رایگان فعال است"
 
-[credits]
-enableOverageBilling = "فعال‌سازی صورت‌حساب اضافه‌مصرف"
-maybeLater = "بعداً"
-upgrade = "ارتقا"
-
-[credits.modal]
-advancedMonitoring = "پایش پیشرفته"
-allInOneWorkspace = "فضای کاری یکپارچه PDF (نمایشگر، ابزارها و عامل)"
-apiSandbox = "محیط آزمایشی API"
-contactSales = "تماس با فروش"
-creditsRemaining = "{{current}} از {{total}} باقیمانده"
-creditsThisMonth = "اعتبارهای ماهانه"
-current = "طرح فعلی"
-customPricing = "سفارشی"
-customSmartFolders = "پوشه‌های هوشمند سفارشی"
-dedicatedSupportSlas = "پشتیبانی اختصاصی و SLAها"
-enterpriseSubscription = "سازمانی"
-everythingInCredits = "همه امکانات طرح Credits، به‌علاوه:"
-everythingInFree = "همه امکانات طرح رایگان، به‌علاوه:"
-fasterThroughput = "توان عبوری ۱۰ برابری"
-forRegularWork = "برای کارهای معمول PDF:"
-freeTier = "طرح رایگان"
-fullyPrivateFiles = "فایل‌ها کاملاً خصوصی"
-largeFileProcessing = "پردازش فایل‌های بزرگ"
-managedMemberMessage = "شما از طریق تیم خود به اعتبارها دسترسی نامحدود دارید. در صورت نیاز به کمک، لطفاً با رهبر تیم خود تماس بگیرید."
-managedMemberTitle = "اعتبار نامحدود"
-meteringBillingNote = "اعتبارهای اضافه‌مصرف به‌صورت ماهانه همراه با اشتراک تیم شما صورتحساب می‌شوند. می‌توانید هر زمان در تنظیمات حساب، مصرف خود را پیگیری کنید."
-meteringExplanation = "طرح تیم شما شامل {{credits}} اعتبار در ماه است. وقتی تمام شوند، صورت‌حساب اضافه‌مصرف به‌طور خودکار اعتبارهای بیشتری فراهم می‌کند تا هرگز کارتان متوقف نشود."
-meteringIncluded = "{{credits}} اعتبار/ماه همراه با طرح تیم"
-meteringNoCommitment = "بدون تعهد، هر زمان بخواهید لغو کنید"
-meteringNeverRunOut = "هرگز اعتبارتان تمام نمی‌شود"
-meteringPayAsYouGo = "فقط به‌اندازه استفاده پرداخت کنید"
-meteringPrice = "اعتبارهای اضافی با نرخ {{price}} به‌ازای هر اعتبار"
-meteringTitle = "صورت‌حساب اضافه‌مصرف بر اساس میزان استفاده"
-monthlyCredits = "اعتبارهای ماهانه"
-orgWideAccess = "کنترل‌های دسترسی در سطح سازمان"
-overage = "اضافه‌مصرف"
-perMonth = "/ماه"
-popular = "محبوب"
-premiumAiModels = "مدل‌های هوش مصنوعی پریمیوم"
-prioritySupport = "پشتیبانی اولویت‌دار"
-privateDocCloud = "ابر اسناد خصوصی"
-ragFineTuning = "RAG + fine-tuning"
-secureApiAccess = "دسترسی امن API"
-selfHostLink = "مرور مستندات و طرح‌ها"
-selfHostPrompt = "می‌خواهید خود میزبانی کنید؟"
-standardThroughput = "توان عبوری استاندارد"
-subtitle = "ارتقا به طرح تیم برای ۱۰ برابر اعتبار و پردازش سریع‌تر."
-subtitlePro = "صورت‌حساب اضافه‌مصرف را فعال کنید تا هرگز اعتبارتان تمام نشود."
-teamLeaderOnly = "فقط رهبر تیم می‌تواند صورت‌حساب اضافه‌مصرف را فعال کند"
-teamSubscription = "تیم"
-titleExhausted = "اعتبار رایگان خود را مصرف کرده‌اید"
-titleExhaustedPro = "اعتبار شما تمام شده است"
-unlimitedApiAccess = "دسترسی نامحدود به API"
-unlimitedMonthlyCredits = "مجوز سراسری"
-unlimitedSeats = "کاربران نامحدود"
-
-[credits.modal.features]
-everythingInCredits = "همه امکانات طرح Credits، به‌علاوه:"
-everythingInFree = "همه امکانات طرح رایگان، به‌علاوه:"
-forRegularWork = "برای کارهای معمول PDF:"
-
-[credits.insufficient]
-brief = "اعتبار کافی نیست. شما به {{required}} اعتبار نیاز دارید اما {{current}} اعتبار دارید."
-freeTier = "برای ۱۰ برابر اعتبار بیشتر و صورت‌حساب اضافه‌مصرف نامحدود، به طرح تیم ارتقا دهید."
-managedMember = "لطفاً برای دریافت کمک با رهبر تیم خود تماس بگیرید."
-message = "اعتبار کافی برای اجرای {{tool}} ندارید. در حال حاضر {{current}} اعتبار دارید."
-messageWithAmount = "برای اجرای {{tool}} به {{required}} اعتبار نیاز دارید، اما فقط {{current}} اعتبار دارید."
-teamMember = "صورت‌حساب اضافه‌مصرف را فعال کنید تا هرگز اعتبارتان تمام نشود."
-title = "اعتبار کافی نیست"
-
 [printFile]
 header = "چاپ فایل به چاپگر"
 submit = "چاپ"
@@ -5825,6 +5729,207 @@ title = "چاپ فایل"
 [printFile.selectText]
 1 = "انتخاب فایل برای چاپ"
 2 = "نام چاپگر را وارد کنید"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "وارد کردن فایل"
+
+[provider.googledrive.apiKey]
+description = "Google API Key برای Google Picker API از Google Cloud Console"
+label = "API Key"
+
+[provider.googledrive.appId]
+description = "Google Drive App ID از Google Cloud Console"
+label = "App ID"
+
+[provider.googledrive.clientId]
+description = "Google OAuth 2.0 Client ID از Google Cloud Console"
+label = "Client ID"
+
+[provider.googledrive.enabled]
+description = "اجازه دهید کاربران مستقیماً از Google Drive فایل وارد کنند"
+label = "فعال‌سازی انتخاب‌گر فایل Google Drive"
+
+[provider.oauth2.generic]
+name = "OAuth2 عمومی"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "ایجاد خودکار حساب کاربری در اولین ورود با OAuth2"
+label = "ایجاد خودکار کاربران"
+
+[provider.oauth2.generic.blockRegistration]
+description = "ممانعت از ثبت‌نام کاربر جدید از طریق OAuth2"
+label = "مسدودسازی ثبت‌نام"
+
+[provider.oauth2.generic.clientId]
+description = "Client ID مربوط به OAuth2 از ارائه‌دهنده شما"
+label = "Client ID"
+
+[provider.oauth2.generic.clientSecret]
+description = "Client Secret مربوط به OAuth2 از ارائه‌دهنده شما"
+label = "Client Secret"
+
+[provider.oauth2.generic.enabled]
+description = "فعال‌سازی احراز هویت با ارائه‌دهنده سفارشی OAuth2"
+label = "فعال‌سازی OAuth2 عمومی"
+
+[provider.oauth2.generic.issuer]
+description = "ارائه‌دهنده‌ای که از OpenID Connect Discovery (/.well-known/openid-configuration) پشتیبانی می‌کند"
+label = "نشانی URL صادرکننده"
+
+[provider.oauth2.generic.provider]
+description = "نام ارائه‌دهنده OAuth2 شما (مثلاً Azure AD، Okta)"
+label = "نام ارائه‌دهنده"
+
+[provider.oauth2.generic.scopes]
+description = "Scopeهای OAuth2 جداشده با ویرگول"
+label = "Scopeها"
+
+[provider.oauth2.generic.useAsUsername]
+description = "فیلدی برای استفاده به‌عنوان نام کاربری"
+label = "استفاده به‌عنوان نام کاربری"
+
+[provider.oauth2.github]
+scope = "احراز هویت ورود"
+
+[provider.oauth2.github.clientId]
+description = "Client ID مربوط به OAuth2 از GitHub Developer Settings"
+label = "Client ID"
+
+[provider.oauth2.github.clientSecret]
+description = "Client Secret مربوط به OAuth2 از GitHub Developer Settings"
+label = "Client Secret"
+
+[provider.oauth2.github.scopes]
+description = "Scopeهای OAuth2 جداشده با ویرگول"
+label = "Scopeها"
+
+[provider.oauth2.github.useAsUsername]
+description = "فیلدی که به‌عنوان نام کاربری استفاده شود (email، login، name)"
+label = "استفاده به‌عنوان نام کاربری"
+
+[provider.oauth2.google]
+scope = "احراز هویت ورود"
+
+[provider.oauth2.google.clientId]
+description = "Client ID مربوط به OAuth2 از Google Cloud Console"
+label = "Client ID"
+
+[provider.oauth2.google.clientSecret]
+description = "Client Secret مربوط به OAuth2 از Google Cloud Console"
+label = "Client Secret"
+
+[provider.oauth2.google.scopes]
+description = "Scopeهای OAuth2 جداشده با ویرگول"
+label = "Scopeها"
+
+[provider.oauth2.google.useAsUsername]
+description = "فیلدی که به‌عنوان نام کاربری استفاده شود (email، name، given_name، family_name)"
+label = "استفاده به‌عنوان نام کاربری"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "Client ID مربوط به OAuth2 از Keycloak"
+label = "Client ID"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "Client Secret مربوط به OAuth2 از Keycloak"
+label = "Client Secret"
+
+[provider.oauth2.keycloak.issuer]
+description = "نشانی URL نقطه OpenID Connect Discovery قلمرو Keycloak"
+label = "نشانی URL صادرکننده"
+
+[provider.oauth2.keycloak.scopes]
+description = "Scopeهای OAuth2 جداشده با ویرگول"
+label = "Scopeها"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "فیلدی که به‌عنوان نام کاربری استفاده شود (email، name، given_name، family_name، preferred_username)"
+label = "استفاده به‌عنوان نام کاربری"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO (SAML)"
+
+[provider.saml2.autoCreateUser]
+description = "ایجاد خودکار حساب‌های کاربری در اولین ورود با SAML2"
+label = "ایجاد خودکار کاربران"
+
+[provider.saml2.blockRegistration]
+description = "ممانعت از ثبت‌نام کاربر جدید از طریق SAML2"
+label = "مسدودسازی ثبت‌نام"
+
+[provider.saml2.enabled]
+description = "فعال‌سازی احراز هویت SAML2 (فقط سازمانی)"
+label = "فعال‌سازی SAML2"
+
+[provider.saml2.idpCert]
+description = "مسیر گواهی (مثلاً classpath:okta.cert)"
+label = "گواهی IDP"
+
+[provider.saml2.idpIssuer]
+description = "شناسه ارائه‌دهنده شما"
+label = "صادرکننده IDP"
+
+[provider.saml2.idpMetadataUri]
+description = "URI فراداده ارائه‌دهنده شما"
+label = "IDP Metadata URI"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "URL برای آغاز SSO"
+label = "نشانی ورود تکی IDP"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "URL برای آغاز SLO"
+label = "نشانی خروج تکی IDP"
+
+[provider.saml2.privateKey]
+description = "مسیر کلید خصوصی شما"
+label = "کلید خصوصی"
+
+[provider.saml2.provider]
+description = "نام ارائه‌دهنده SAML2 شما"
+label = "نام ارائه‌دهنده"
+
+[provider.saml2.registrationId]
+description = "نام اپلیکیشن ارائه‌دهنده سرویس (SP) شما"
+label = "شناسه ثبت‌نام"
+
+[provider.saml2.spCert]
+description = "مسیر گواهی امضای شما"
+label = "گواهی SP"
+
+[provider.smtp]
+name = "ایمیل SMTP"
+scope = "اعلان‌های ایمیلی"
+
+[provider.smtp.enabled]
+description = "فعال‌سازی اعلان‌های ایمیلی و قابلیت SMTP"
+label = "فعال‌سازی ایمیل"
+
+[provider.smtp.from]
+description = "نشانی ایمیلی که به‌عنوان فرستنده استفاده می‌شود"
+label = "نشانی فرستنده"
+
+[provider.smtp.host]
+description = "نام میزبان یا نشانی IP سرور SMTP شما"
+label = "میزبان SMTP"
+
+[provider.smtp.password]
+description = "گذرواژه برای احراز هویت SMTP"
+label = "گذرواژه SMTP"
+
+[provider.smtp.port]
+description = "شماره درگاه برای اتصال SMTP (معمولاً 25، 465 یا 587)"
+label = "درگاه SMTP"
+
+[provider.smtp.username]
+description = "نام کاربری برای احراز هویت SMTP"
+label = "نام کاربری SMTP"
 
 [quickAccess]
 access = "دسترسی"
@@ -5867,7 +5972,12 @@ createNew = "ایجاد درخواست جدید"
 createSession = "ایجاد درخواست امضا"
 dueDate = "تاریخ سررسید (اختیاری)"
 files = "فایل‌ها"
+filterDeclined = "رد شده"
+filterMine = "مال من"
+filterOverdue = "گذشته از موعد"
+filterSigned = "امضاشده"
 help = "راهنما"
+newRequest = "درخواست جدید"
 noActiveSessions = "هیچ درخواست امضای در انتظار یا نشست فعالی نیست"
 noCompletedSessions = "هیچ نشستی تکمیل نشده است"
 noFile = "هیچ فایلی انتخاب نشده است"
@@ -5875,8 +5985,9 @@ read = "خواندن"
 reader = "نمایشگر"
 refresh = "تازه‌سازی"
 requestSignatures = "درخواست امضاها"
-selectSingleFileToRequest = "برای درخواست امضاها یک فایل PDF واحد انتخاب کنید"
+searchDocuments = "جستجوی اسناد…"
 selectedFile = "فایل انتخاب‌شده"
+selectSingleFileToRequest = "برای درخواست امضاها یک فایل PDF واحد انتخاب کنید"
 selectUsers = "کاربران را برای امضا انتخاب کنید"
 selectUsersPlaceholder = "شرکت‌کنندگان را انتخاب کنید..."
 sendingRequest = "در حال ارسال..."
@@ -5885,14 +5996,8 @@ showMeAround = "راهنمایی‌ام کن"
 sign = "امضا"
 signatureRequests = "درخواست‌های امضا"
 signYourself = "خودتان امضا کنید"
-newRequest = "درخواست جدید"
 tours = "تورها"
 wetSign = "افزودن امضای دستی"
-filterMine = "مال من"
-filterOverdue = "گذشته از موعد"
-filterSigned = "امضاشده"
-filterDeclined = "رد شده"
-searchDocuments = "جستجوی اسناد…"
 
 [quickAccess.helpMenu]
 adminTour = "تور مدیریت"
@@ -5933,15 +6038,15 @@ title = "کلمات برای پنهان‌سازی"
 failed = "هنگام پنهان‌سازی PDF خطایی رخ داد."
 
 [redact.manual]
+activate = "فعال‌سازی ابزار پوشاندن"
+active = "حالت پوشاندن فعال است"
 apply = "اعمال"
 applyChanges = "اعمال تغییرات"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ اعمال دائمی، قابل بازگشت نیست و داده‌های زیرین حذف خواهند شد"
 boxRedaction = "پنهان‌سازی با ترسیم کادر"
-colourPicker = "انتخابگر رنگ"
 colorLabel = "رنگ پوشاندن"
-active = "حالت پوشاندن فعال است"
-activate = "فعال‌سازی ابزار پوشاندن"
+colourPicker = "انتخابگر رنگ"
 controlsTitle = "کنترل‌های سانسور دستی"
 convertPDFToImageLabel = "تبدیل PDF به PDF-Image (برای حذف متن پشت کادر استفاده می‌شود)"
 export = "صادر کردن"
@@ -6337,6 +6442,46 @@ title = "کنتراست بالا"
 text = "تمام رنگ‌های PDF را کاملاً وارونه می‌کند و اثری شبیه نگاتیو ایجاد می‌کند. برای ساخت نسخه‌های حالت تاریک اسناد یا کاهش فشار چشم در نور کم مفید است."
 title = "وارونه‌سازی همه رنگ‌ها"
 
+[rightRail]
+annotations = "حاشیه‌نویسی‌ها"
+applyRedactionsFirst = "ابتدا سانسورها را اعمال کنید"
+closePdf = "بستن PDF"
+closeSelected = "بستن فایل‌های انتخاب‌شده"
+deleteSelected = "حذف صفحات انتخاب‌شده"
+deselectAll = "لغو انتخاب همه"
+downloadAll = "دانلود همه"
+downloadSelected = "دانلود فایل‌های انتخاب‌شده"
+draw = "رسم"
+exitRedaction = "خروج از حالت سانسور"
+exportAll = "برون‌بری PDF"
+exportSelected = "برون‌بری صفحات انتخاب‌شده"
+formFill = "پر کردن فرم"
+language = "زبان"
+panMode = "حالت پیمایش"
+print = "چاپ PDF"
+readAloud = "بلندخوانی"
+readAloudLanguage = "زبان"
+readAloudSpeed = "سرعت"
+redact = "سانسور"
+rotateLeft = "چرخش به چپ"
+rotateRight = "چرخش به راست"
+ruler = "خط‌کش / اندازه‌گیری"
+save = "ذخیره"
+saveAll = "ذخیره همه"
+saveAs = "ذخیره به‌صورت"
+saveChanges = "ذخیره تغییرات"
+search = "جستجوی PDF"
+selectAll = "انتخاب همه"
+selectByNumber = "انتخاب بر اساس شماره صفحات"
+selectLanguage = "انتخاب زبان"
+toggleAnnotations = "تغییر وضعیت نمایش حاشیه‌نویسی‌ها"
+toggleAttachments = "نمایش/پنهان‌کردن پیوست‌ها"
+toggleBookmarks = "نمایش/پنهان‌کردن نشانک‌ها"
+toggleComments = "نظرات"
+toggleLayers = "تغییر وضعیت لایه‌ها"
+toggleSidebar = "تغییر وضعیت نوار کناری"
+toggleTheme = "تغییر تم"
+
 [rotate]
 rotateLeft = "چرخش پادساعت‌گرد"
 rotateRight = "چرخش ساعت‌گرد"
@@ -6359,32 +6504,6 @@ text = "صفحات PDF خود را در گام‌های ۹۰ درجه‌ای ب�
 
 [rotate.tooltip.header]
 title = "نمای کلی تنظیمات چرخش"
-
-[timestampPdf]
-completed = "PDF با موفقیت مُهر زمانی شد"
-desc = "با استفاده از یک سرور Time Stamp Authority (TSA) مورد اعتماد، مُهر زمانی RFC 3161 را به PDF خود اضافه کنید."
-filenamePrefix = "timestamped"
-results = "نتایج مُهر زمانی"
-submit = "اعمال مُهر زمانی"
-title = "مُهر زمانی PDF"
-
-[timestampPdf.error]
-failed = "هنگام مُهر زمانی PDF خطایی رخ داد."
-generic = "مهر زمانی ناموفق بود"
-
-[timestampPdf.files]
-placeholder = "برای شروع، یک فایل PDF را در نمای اصلی انتخاب کنید"
-
-[timestampPdf.options]
-note = "فقط هش SHA-256 سند شما به سرور TSA ارسال می‌شود؛ خود فایل PDF هرگز به سرور TSA ارسال نمی‌شود."
-title = "سرور مُهر زمانی (TSA)"
-
-[timestampPdf.options.tsaUrl]
-desc = "یک مرجع مُهر زمانی مورد اعتماد انتخاب کنید"
-label = "انتخاب سرور TSA"
-
-[timestampPdf.steps]
-settings = "تنظیمات"
 
 [sanitize]
 completed = "پاک‌سازی با موفقیت انجام شد"
@@ -6554,37 +6673,6 @@ bullet3 = "برای فرایندهای تأیید و زنجیره‌های حف�
 description = "ترتیبی که هنگام ایجاد نشست مشخص می‌کنید، تعیین می‌کند چه کسی ابتدا امضا کند."
 title = "ترتیب امضا"
 
-[signatureSettings.tooltip]
-header = "تنظیمات ظاهر امضا"
-
-[signatureSettings.tooltip.location]
-bullet1 = "نمونه‌ها: \"New York, USA\"، \"London Office\"، \"Remote\""
-bullet2 = "با موقعیت صفحه یکسان نیست"
-bullet3 = "ممکن است برای برخی حوزه‌های قضایی لازم باشد"
-description = "مکان جغرافیایی اختیاری که امضا در آن اعمال شده است. در فراداده گواهی ذخیره می‌شود."
-title = "مکان امضا"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "در کنار امضا و متن نمایش داده می‌شود"
-bullet2 = "از فرمت‌های PNG، JPG پشتیبانی می‌کند"
-bullet3 = "ظاهر حرفه‌ای را ارتقا می‌دهد"
-description = "برای برندسازی و اصالت، یک لوگوی شرکت به امضاهای مرئی اضافه کنید."
-title = "لوگوی شرکت"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "نمونه‌ها: \"Approval\"، \"Contract Agreement\"، \"Review Complete\""
-bullet2 = "در ویژگی‌های امضای PDF قابل مشاهده است"
-bullet3 = "برای مسیرهای ممیزی و انطباق مفید است"
-description = "متن اختیاری که توضیح می‌دهد چرا سند امضا می‌شود. در فراداده گواهی ذخیره می‌شود."
-title = "دلیل امضا"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>مرئی</b>: امضا با ظاهر سفارشی روی PDF نمایش داده می‌شود"
-bullet2 = "<b>نامرئی</b>: گواهی بدون نشانه بصری جاسازی می‌شود"
-bullet3 = "امضاهای نامرئی همچنان اعتبارسنجی رمزنگاری‌شده فراهم می‌کنند"
-description = "کنترل می‌کند امضا روی سند مرئی باشد یا نامرئی جاسازی شود."
-title = "قابلیت مشاهده امضا"
-
 [settings.configuration]
 advanced = "پیشرفته"
 database = "پایگاه داده"
@@ -6606,6 +6694,102 @@ user = "وارد شده با"
 local = "فقط محلی"
 saas = "Stirling Cloud"
 selfhosted = "خودمیزبان"
+
+[settings.developer]
+apiKeys = "کلیدهای API"
+title = "توسعه‌دهنده"
+
+[settings.general]
+autoUnzip = "استخراج خودکار پاسخ‌های API"
+autoUnzipDescription = "استخراج خودکار فایل‌ها از پاسخ‌های ZIP"
+autoUnzipFileLimit = "حد مجاز استخراج خودکار"
+autoUnzipFileLimitDescription = "حداکثر تعداد فایل برای استخراج از ZIP"
+autoUnzipFileLimitTooltip = "تنها اگر ZIP این تعداد فایل یا کمتر داشته باشد استخراج کن. برای استخراج ZIPهای بزرگ‌تر مقدار بیشتری تعیین کنید."
+autoUnzipTooltip = "فایل‌های ZIP بازگشتی از عملیات API را به‌طور خودکار استخراج می‌کند. برای نگه‌داشتن فایل‌های ZIP غیرفعال کنید. این بر گردش‌کارهای اتوماسیون تأثیر نمی‌گذارد."
+defaultPdfEditor = "ویرایشگر پیش‌فرض PDF"
+defaultPdfEditorActive = "Stirling PDF ویرایشگر پیش‌فرض PDF شماست"
+defaultPdfEditorChecking = "در حال بررسی..."
+defaultPdfEditorInactive = "برنامه دیگری به‌عنوان پیش‌فرض تنظیم شده است"
+defaultPdfEditorSet = "از پیش پیش‌فرض است"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "حالت پیش‌فرض انتخاب‌گر ابزار"
+defaultToolPickerModeDescription = "انتخاب کنید انتخاب‌گر ابزار به‌صورت تمام‌صفحه یا نوار کناری به‌طور پیش‌فرض باز شود"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "پیکربندی ترجیحات عمومی برنامه."
+hideUnavailableConversions = "مخفی‌کردن تبدیل‌های غیردردسترس"
+hideUnavailableConversionsDescription = "به‌جای نمایش خاکستری، گزینه‌های تبدیل غیرفعال در ابزار Convert را حذف می‌کند."
+hideUnavailableTools = "مخفی‌کردن ابزارهای غیردردسترس"
+hideUnavailableToolsDescription = "به‌جای نمایش خاکستری، ابزارهایی را که سرور شما غیرفعال کرده حذف می‌کند."
+logout = "خروج"
+setAsDefault = "تنظیم به‌عنوان پیش‌فرض"
+title = "عمومی"
+user = "کاربر"
+
+[settings.general.enableFeatures]
+action = "پیکربندی"
+and = "و"
+benefit = "نقش‌های کاربری، همکاری تیمی، کنترل‌های مدیر و قابلیت‌های سازمانی را فعال می‌کند."
+dismiss = "رد کردن"
+intro = "احراز هویت کاربر، مدیریت تیم و قابلیت‌های فضای کار را برای سازمان خود فعال کنید."
+learnMore = "بیشتر در مستندات بیاموزید"
+title = "برای مدیران سیستم"
+
+[settings.general.mode]
+fullscreen = "تمام‌صفحه"
+sidebar = "نوار کناری"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "بررسی به‌روزرسانی"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "بررسی به‌روزرسانی و مشاهده اطلاعات نسخه"
+latestVersion = "آخرین نسخه"
+serverNeedsUpdate = "سرور باید توسط مدیر به‌روزرسانی شود"
+title = "به‌روزرسانی نرم‌افزار"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "مشاهده جزئیات"
+
+[settings.general.versionInfo]
+description = "جزئیات نسخه دسکتاپ و سرور"
+desktop = "نسخه دسکتاپ"
+server = "نسخه سرور"
+title = "اطلاعات نسخه"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "کلیدها را فشار دهید… (Esc برای انصراف)"
+change = "تغییر میانبر"
+customBadge = "سفارشی"
+defaultLabel = "پیش‌فرض: {{shortcut}}"
+description = "می‌توانید میانبرهای صفحه‌کلید را برای دسترسی سریع به ابزارها سفارشی کنید. روی «تغییر میانبر» کلیک کنید و ترکیب کلید جدید را فشار دهید. برای لغو، Esc را بزنید."
+errorConflict = "میانبر قبلاً توسط {{tool}} استفاده شده است."
+none = "اختصاص نیافته"
+noShortcut = "هیچ میانبری تنظیم نشده است"
+reset = "بازنشانی"
+searchPlaceholder = "جستجوی ابزارها..."
+shortcut = "میانبر"
+title = "میانبرهای صفحه‌کلید"
+
+[settings.hotkeys.errorModifier]
+mac = "در میانبر خود ⌘ (Command)، ⌥ (Option) یا یک کلید اصلاحی دیگر را بگنجانید."
+windows = "در میانبر خود Ctrl، Alt یا یک کلید اصلاحی دیگر را بگنجانید."
+
+[settings.licensingAnalytics]
+audit = "ممیزی"
+plan = "طرح"
+title = "مجوزها و آنالیتیکس"
+usageAnalytics = "آنالیتیکس استفاده"
 
 [settings.planBilling]
 currentPlan = "طرح فعلی"
@@ -6637,6 +6821,10 @@ canceled = "لغوشده"
 pastDue = "عقب‌افتاده"
 trial = "آزمایشی"
 
+[settings.planBilling.team]
+managedByTeam = "توسط تیم مدیریت می‌شود"
+memberCount = "{{count}} عضو تیم"
+
 [settings.planBilling.tier]
 enterprise = "سازمانی"
 enterpriseDescription = "ویژگی‌ها و پشتیبانی سازمانی سفارشی"
@@ -6648,10 +6836,6 @@ teamDescription = "۵۰۰ اعتبار/ماه شامل، صورت‌حساب خ�
 teamTooltipCredits = "طرح تیم شامل {{credits}} اعتبار/ماه است."
 teamTooltipFineprint = "فقط برای مصرف فراتر از اعتبارهای مشمول پرداخت کنید."
 teamTooltipOverage = "صورت‌حساب خودکار اضافه‌مصرف با نرخ {{price}}/اعتبار، سرویس بی‌وقفه را تضمین می‌کند."
-
-[settings.planBilling.team]
-managedByTeam = "توسط تیم مدیریت می‌شود"
-memberCount = "{{count}} عضو تیم"
 
 [settings.planBilling.trial]
 daysRemaining = "{{days}} روز باقی‌مانده"
@@ -6670,88 +6854,6 @@ featureThroughput = "توان عبوری پردازش سریع‌تر"
 opensInBrowser = "برای تکمیل ارتقا در مرورگر باز می‌شود"
 subtitle = "ارتقا به طرح تیم برای:"
 title = "ارتقا طرح شما"
-
-[settings.developer]
-apiKeys = "کلیدهای API"
-title = "توسعه‌دهنده"
-
-[settings.general]
-autoUnzip = "استخراج خودکار پاسخ‌های API"
-autoUnzipDescription = "استخراج خودکار فایل‌ها از پاسخ‌های ZIP"
-autoUnzipFileLimit = "حد مجاز استخراج خودکار"
-autoUnzipFileLimitDescription = "حداکثر تعداد فایل برای استخراج از ZIP"
-autoUnzipFileLimitTooltip = "تنها اگر ZIP این تعداد فایل یا کمتر داشته باشد استخراج کن. برای استخراج ZIPهای بزرگ‌تر مقدار بیشتری تعیین کنید."
-autoUnzipTooltip = "فایل‌های ZIP بازگشتی از عملیات API را به‌طور خودکار استخراج می‌کند. برای نگه‌داشتن فایل‌های ZIP غیرفعال کنید. این بر گردش‌کارهای اتوماسیون تأثیر نمی‌گذارد."
-defaultPdfEditor = "ویرایشگر پیش‌فرض PDF"
-defaultPdfEditorActive = "Stirling PDF ویرایشگر پیش‌فرض PDF شماست"
-defaultPdfEditorChecking = "در حال بررسی..."
-defaultPdfEditorInactive = "برنامه دیگری به‌عنوان پیش‌فرض تنظیم شده است"
-defaultPdfEditorSet = "از پیش پیش‌فرض است"
-defaultToolPickerMode = "حالت پیش‌فرض انتخاب‌گر ابزار"
-defaultToolPickerModeDescription = "انتخاب کنید انتخاب‌گر ابزار به‌صورت تمام‌صفحه یا نوار کناری به‌طور پیش‌فرض باز شود"
-description = "پیکربندی ترجیحات عمومی برنامه."
-hideUnavailableConversions = "مخفی‌کردن تبدیل‌های غیردردسترس"
-hideUnavailableConversionsDescription = "به‌جای نمایش خاکستری، گزینه‌های تبدیل غیرفعال در ابزار Convert را حذف می‌کند."
-hideUnavailableTools = "مخفی‌کردن ابزارهای غیردردسترس"
-hideUnavailableToolsDescription = "به‌جای نمایش خاکستری، ابزارهایی را که سرور شما غیرفعال کرده حذف می‌کند."
-logout = "خروج"
-setAsDefault = "تنظیم به‌عنوان پیش‌فرض"
-title = "عمومی"
-user = "کاربر"
-
-[settings.general.enableFeatures]
-action = "پیکربندی"
-and = "و"
-benefit = "نقش‌های کاربری، همکاری تیمی، کنترل‌های مدیر و قابلیت‌های سازمانی را فعال می‌کند."
-dismiss = "رد کردن"
-intro = "احراز هویت کاربر، مدیریت تیم و قابلیت‌های فضای کار را برای سازمان خود فعال کنید."
-learnMore = "بیشتر در مستندات بیاموزید"
-title = "برای مدیران سیستم"
-
-[settings.general.mode]
-fullscreen = "تمام‌صفحه"
-sidebar = "نوار کناری"
-
-[settings.general.updates]
-checkForUpdates = "بررسی به‌روزرسانی"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "بررسی به‌روزرسانی و مشاهده اطلاعات نسخه"
-latestVersion = "آخرین نسخه"
-serverNeedsUpdate = "سرور باید توسط مدیر به‌روزرسانی شود"
-title = "به‌روزرسانی نرم‌افزار"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "مشاهده جزئیات"
-
-[settings.general.versionInfo]
-description = "جزئیات نسخه دسکتاپ و سرور"
-desktop = "نسخه دسکتاپ"
-server = "نسخه سرور"
-title = "اطلاعات نسخه"
-
-[settings.hotkeys]
-capturing = "کلیدها را فشار دهید… (Esc برای انصراف)"
-change = "تغییر میانبر"
-customBadge = "سفارشی"
-defaultLabel = "پیش‌فرض: {{shortcut}}"
-description = "می‌توانید میانبرهای صفحه‌کلید را برای دسترسی سریع به ابزارها سفارشی کنید. روی «تغییر میانبر» کلیک کنید و ترکیب کلید جدید را فشار دهید. برای لغو، Esc را بزنید."
-errorConflict = "میانبر قبلاً توسط {{tool}} استفاده شده است."
-none = "اختصاص نیافته"
-noShortcut = "هیچ میانبری تنظیم نشده است"
-reset = "بازنشانی"
-searchPlaceholder = "جستجوی ابزارها..."
-shortcut = "میانبر"
-title = "میانبرهای صفحه‌کلید"
-
-[settings.hotkeys.errorModifier]
-mac = "در میانبر خود ⌘ (Command)، ⌥ (Option) یا یک کلید اصلاحی دیگر را بگنجانید."
-windows = "در میانبر خود Ctrl، Alt یا یک کلید اصلاحی دیگر را بگنجانید."
-
-[settings.licensingAnalytics]
-audit = "ممیزی"
-plan = "طرح"
-title = "مجوزها و آنالیتیکس"
-usageAnalytics = "آنالیتیکس استفاده"
 
 [settings.policiesPrivacy]
 legal = "حقوقی"
@@ -6789,6 +6891,9 @@ security = "امنیت"
 telegram = "Telegram"
 title = "امنیت و احراز هویت"
 
+[settings.team]
+title = "تیم"
+
 [settings.tooltips]
 enableLoginFirst = "ابتدا حالت ورود را فعال کنید"
 requiresEnterprise = "به لایسنس Enterprise نیاز دارد"
@@ -6798,21 +6903,6 @@ people = "افراد"
 teams = "تیم‌ها"
 title = "فضای کاری"
 
-[settings.team]
-title = "تیم"
-
-[localMode]
-toolUnavailable = "این ابزار به حساب کاربری نیاز دارد. برای استفاده، به Stirling Cloud وارد شوید یا به یک سرور خودمیزبان متصل شوید."
-
-[localMode.banner]
-message = "برای دسترسی به همه ابزارها وارد شوید."
-signIn = "ورود"
-title = "در حال اجرا به‌صورت محلی"
-
-[localMode.toolPicker]
-message = "برای دسترسی به همه ابزارها وارد شوید."
-signIn = "ورود"
-
 [setup]
 description = "با انتخاب نحوه استفاده از Stirling PDF شروع کنید"
 welcome = "به Stirling PDF خوش آمدید"
@@ -6820,7 +6910,6 @@ welcome = "به Stirling PDF خوش آمدید"
 [setup.login]
 connectingTo = "در حال اتصال به:"
 hideInstructions = "مخفی کردن دستورالعمل‌ها"
-skipSignIn = "ادامه بدون ورود"
 instructions = "برای فعال‌سازی ورود در سرور Stirling PDF خود:"
 instructionsEnvVar = "متغیر محیطی را تنظیم کنید:"
 instructionsOrYml = "یا در settings.yml:"
@@ -6830,6 +6919,7 @@ orContinueWith = "یا با ایمیل ادامه دهید"
 serverRequirement = "توجه: سرور باید ورود را فعال کرده باشد."
 showInstructions = "نحوه فعال‌سازی؟"
 signInWith = "ورود با"
+skipSignIn = "ادامه بدون ورود"
 sso = "ورود یکپارچه"
 submit = "ورود"
 subtitle = "برای ادامه، اطلاعات کاربری خود را وارد کنید"
@@ -6866,9 +6956,9 @@ subtitle = "با حساب Stirling خود وارد شوید"
 title = "ورود به Stirling"
 
 [setup.selfhosted]
+changeServerLocked = "سازمان شما این برنامه را به یک سرور مشخص محدود کرده است"
 link = "یا به یک حساب خودمیزبان متصل شوید"
 subtitle = "اطلاعات کاربری سرور خود را وارد کنید"
-changeServerLocked = "سازمان شما این برنامه را به یک سرور مشخص محدود کرده است"
 switchToLocal = "استفاده از ابزارهای محلی به‌جای آن"
 title = "ورود به سرور"
 
@@ -7068,14 +7158,45 @@ saved = "ذخیره‌شده"
 text = "متن"
 title = "نوع امضا"
 
+[signatureSettings.tooltip]
+header = "تنظیمات ظاهر امضا"
+
+[signatureSettings.tooltip.location]
+bullet1 = "نمونه‌ها: \"New York, USA\"، \"London Office\"، \"Remote\""
+bullet2 = "با موقعیت صفحه یکسان نیست"
+bullet3 = "ممکن است برای برخی حوزه‌های قضایی لازم باشد"
+description = "مکان جغرافیایی اختیاری که امضا در آن اعمال شده است. در فراداده گواهی ذخیره می‌شود."
+title = "مکان امضا"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "در کنار امضا و متن نمایش داده می‌شود"
+bullet2 = "از فرمت‌های PNG، JPG پشتیبانی می‌کند"
+bullet3 = "ظاهر حرفه‌ای را ارتقا می‌دهد"
+description = "برای برندسازی و اصالت، یک لوگوی شرکت به امضاهای مرئی اضافه کنید."
+title = "لوگوی شرکت"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "نمونه‌ها: \"Approval\"، \"Contract Agreement\"، \"Review Complete\""
+bullet2 = "در ویژگی‌های امضای PDF قابل مشاهده است"
+bullet3 = "برای مسیرهای ممیزی و انطباق مفید است"
+description = "متن اختیاری که توضیح می‌دهد چرا سند امضا می‌شود. در فراداده گواهی ذخیره می‌شود."
+title = "دلیل امضا"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>مرئی</b>: امضا با ظاهر سفارشی روی PDF نمایش داده می‌شود"
+bullet2 = "<b>نامرئی</b>: گواهی بدون نشانه بصری جاسازی می‌شود"
+bullet3 = "امضاهای نامرئی همچنان اعتبارسنجی رمزنگاری‌شده فراهم می‌کنند"
+description = "کنترل می‌کند امضا روی سند مرئی باشد یا نامرئی جاسازی شود."
+title = "قابلیت مشاهده امضا"
+
 [signRequest]
 declined = "درخواست امضا رد شد"
 fetchFailed = "بارگذاری درخواست امضا ناموفق بود"
 signed = "سند با موفقیت امضا شد"
 
 [signSession]
-createFailed = "ایجاد درخواست امضا ناموفق بود"
 created = "درخواست امضا ارسال شد"
+createFailed = "ایجاد درخواست امضا ناموفق بود"
 
 [signup]
 accountCreatedSuccessfully = "حساب با موفقیت ایجاد شد! اکنون می‌توانید وارد شوید."
@@ -7156,15 +7277,15 @@ desc = "تفکیک خودکار با برگه‌های جداکننده"
 name = "جداکننده صفحه"
 tooltip = "از برگه‌های جداکننده QR بین اسناد هنگام اسکن استفاده کنید"
 
-[split.methods.byPoster]
-name = "قطعات قابل چاپ"
-desc = "تقسیم صفحات بزرگ به اندازه‌های قابل چاپ"
-tooltip = "تقسیم صفحات بزرگ به قطعات کوچک‌تر مناسب چاپ روی کاغذ استاندارد (A4، Letter و غیره)"
-
 [split.methods.byPages]
 desc = "استخراج صفحات خاص (1,3,5-10)"
 name = "شماره صفحات"
 tooltip = "شماره صفحات را با کاما جدا کنید یا بازه‌ها را با خط تیره وارد کنید"
+
+[split.methods.byPoster]
+desc = "تقسیم صفحات بزرگ به اندازه‌های قابل چاپ"
+name = "قطعات قابل چاپ"
+tooltip = "تقسیم صفحات بزرگ به قطعات کوچک‌تر مناسب چاپ روی کاغذ استاندارد (A4، Letter و غیره)"
 
 [split.methods.bySections]
 desc = "تقسیم صفحات به بخش‌های شبکه‌ای"
@@ -7192,27 +7313,27 @@ title = "روش تفکیک خود را انتخاب کنید"
 text = "نحوه تفکیک سند PDF خود را انتخاب کنید. هر روش برای موارد استفاده و انواع سند متفاوتی بهینه شده است."
 title = "انتخاب روش تفکیک"
 
+[split.poster]
+rightToLeft = "تقسیم از راست به چپ"
+
+[split.poster.pageSize]
+description = "اندازه صفحات خروجی برای چاپ"
+label = "اندازه صفحه هدف"
+
+[split.poster.xFactor]
+description = "تعداد ستون‌ها برای تقسیم هر صفحه"
+label = "تقسیمات افقی"
+
+[split.poster.yFactor]
+description = "تعداد ردیف‌ها برای تقسیم هر صفحه"
+label = "تقسیمات عمودی"
+
 [split.settings]
 selectMethodFirst = "لطفاً ابتدا یک روش تفکیک انتخاب کنید"
 
 [split.steps]
 chooseMethod = "انتخاب روش"
 settings = "تنظیمات"
-
-[split.poster]
-rightToLeft = "تقسیم از راست به چپ"
-
-[split.poster.pageSize]
-label = "اندازه صفحه هدف"
-description = "اندازه صفحات خروجی برای چاپ"
-
-[split.poster.xFactor]
-label = "تقسیمات افقی"
-description = "تعداد ستون‌ها برای تقسیم هر صفحه"
-
-[split.poster.yFactor]
-label = "تقسیمات عمودی"
-description = "تعداد ردیف‌ها برای تقسیم هر صفحه"
 
 [split.tooltip.byChapters]
 bullet1 = "سطح نشانک: سطحی که باید در آن تفکیک شود (1=سطح بالا)"
@@ -7251,6 +7372,13 @@ bullet5 = "اگر هر دو طرف برگه‌های جداکننده را اس�
 text = "با استفاده از برگه‌های جداکننده فیزیکی دارای QR، اسناد اسکن‌شده را به‌طور خودکار تفکیک کنید. برای پردازش چند سند اسکن‌شده با هم ایده‌آل است."
 title = "تفکیک بر اساس جداکننده صفحه"
 
+[split.tooltip.byPages]
+bullet1 = "نقاط تفکیک تکی: 3,7 (بعد از صفحات 3 و 7 تفکیک می‌کند)"
+bullet2 = "نقاط تفکیک بازه: 3-8 (قبل از صفحه 3 و بعد از صفحه 8 تفکیک می‌کند)"
+bullet3 = "ترکیبی: 2,5-10,15 (بعد از صفحه 2، قبل از صفحه 5، بعد از صفحه 10 و بعد از صفحه 15 تفکیک می‌کند)"
+text = "PDF خود را در شماره صفحات مشخص تفکیک کنید. استفاده از 'n' بعد از صفحه n تفکیک می‌کند. استفاده از 'n-m' قبل از صفحه n و بعد از صفحه m تفکیک می‌کند."
+title = "تفکیک در شماره صفحات"
+
 [split.tooltip.byPoster]
 bullet1 = "اندازه صفحه هدف: اندازه کاغذ خروجی را انتخاب کنید (A4، Letter و غیره)"
 bullet2 = "تقسیمات افقی/عمودی: اندازه شبکه برای تقسیم"
@@ -7258,13 +7386,6 @@ bullet3 = "راست‌به‌چپ: معکوس کردن ترتیب ستون‌ه�
 bullet4 = "قطعات را چاپ و سرهم کنید تا پوستر خود را بسازید"
 text = "صفحات بزرگ PDF را به قطعات کوچک‌ترِ قابل چاپ تقسیم کنید که مناسب اندازه‌های استاندارد کاغذ هستند. ایده‌آل برای ساخت چاپ پوستر از صفحات بزرگ."
 title = "تقسیم برای چاپ پوستر"
-
-[split.tooltip.byPages]
-bullet1 = "نقاط تفکیک تکی: 3,7 (بعد از صفحات 3 و 7 تفکیک می‌کند)"
-bullet2 = "نقاط تفکیک بازه: 3-8 (قبل از صفحه 3 و بعد از صفحه 8 تفکیک می‌کند)"
-bullet3 = "ترکیبی: 2,5-10,15 (بعد از صفحه 2، قبل از صفحه 5، بعد از صفحه 10 و بعد از صفحه 15 تفکیک می‌کند)"
-text = "PDF خود را در شماره صفحات مشخص تفکیک کنید. استفاده از 'n' بعد از صفحه n تفکیک می‌کند. استفاده از 'n-m' قبل از صفحه n و بعد از صفحه m تفکیک می‌کند."
-title = "تفکیک در شماره صفحات"
 
 [split.tooltip.bySections]
 bullet1 = "افقی: تعداد ردیف‌های قابل ایجاد"
@@ -7355,106 +7476,6 @@ title = "تقسیم PDF بر اساس فصل‌ها"
 [splitPdfByChapters]
 tags = "تقسیم، فصل‌ها، نشانه‌گذاری، سازماندهی"
 
-[storageShare]
-accessed = "دسترسی انجام شد"
-accessDenied = "شما به این فایل مشترک دسترسی ندارید. از مالک بخواهید آن را با شما به اشتراک بگذارد."
-accessFailed = "امکان بارگذاری فعالیت نبود."
-accessDeniedBody = "شما به این فایل دسترسی ندارید. از مالک بخواهید آن را با شما به اشتراک بگذارد."
-accessDeniedTitle = "بدون دسترسی"
-accessLimitedCommenter = "دسترسی نظر دادن به‌زودی اضافه می‌شود. اگر نیاز به دانلود دارید از مالک دسترسی ویرایشگر بخواهید."
-accessLimitedTitle = "دسترسی محدود"
-accessLimitedViewer = "این لینک فقط قابل مشاهده است. اگر نیاز به دانلود دارید از مالک دسترسی ویرایشگر بخواهید."
-createdAt = "ایجاد شد"
-download = "دانلود"
-downloadFailed = "امکان دانلود این فایل نبود."
-expiredBody = "این لینک اشتراک نامعتبر است یا منقضی شده."
-expiredTitle = "لینک منقضی شده است"
-goToLogin = "رفتن به ورود"
-loadFailed = "امکان باز کردن فایل مشترک نبود."
-loading = "در حال بارگذاری لینک اشتراک..."
-loginPrompt = "برای دسترسی به این فایل مشترک وارد شوید."
-loginRequired = "ورود لازم است"
-openInApp = "باز کردن در Stirling PDF"
-ownerLabel = "مالک"
-ownerUnknown = "نامشخص"
-requiresLogin = "این فایل مشترک نیاز به ورود دارد."
-roleCommenter = "نظردهنده"
-roleEditor = "ویرایشگر"
-roleViewer = "بیننده"
-shareHeading = "فایل اشتراک‌گذاری‌شده"
-titleDefault = "فایل اشتراک‌گذاری‌شده"
-tryAgain = "لطفاً بعداً دوباره تلاش کنید."
-addUser = "افزودن"
-commenterHint = "امکان نظر دادن به‌زودی فراهم می‌شود."
-copied = "لینک در کلیپ‌بورد کپی شد"
-copy = "کپی"
-copyFailed = "کپی ناموفق بود"
-description = "برای این فایل یک لینک اشتراک بسازید. کاربران واردشده با داشتن لینک می‌توانند به آن دسترسی داشته باشند."
-downloadsCount = "دانلودها: {{count}}"
-emailWarningBody = "به نظر می‌رسد این یک نشانی ایمیل است. اگر این فرد کاربر Stirling PDF نباشد، به فایل دسترسی نخواهد داشت."
-emailWarningConfirm = "با این حال به اشتراک بگذار"
-emailWarningTitle = "نشانی ایمیل"
-errorTitle = "اشتراک ناموفق بود"
-failure = "امکان ایجاد لینک اشتراک نبود. لطفاً دوباره تلاش کنید."
-fileLabel = "فایل"
-generate = "تولید لینک"
-generated = "لینک اشتراک تولید شد"
-hideActivity = "پنهان کردن فعالیت"
-invalidUsername = "یک نام کاربری یا نشانی ایمیل معتبر وارد کنید."
-lastAccessed = "آخرین دسترسی"
-linkAccessTitle = "دسترسی لینک اشتراک"
-linkLabel = "لینک اشتراک"
-linksDisabled = "لینک‌های اشتراک غیرفعال هستند."
-linksDisabledBody = "لینک‌های اشتراک توسط تنظیمات سرور شما غیرفعال شده‌اند."
-manage = "مدیریت اشتراک‌گذاری"
-manageDescription = "ایجاد و مدیریت لینک‌های اشتراک این فایل."
-manageLoadFailed = "امکان بارگذاری لینک‌های اشتراک نبود."
-manageTitle = "مدیریت اشتراک‌گذاری"
-noActivity = "هنوز هیچ فعالیتی نیست."
-noLinks = "هنوز لینک اشتراکی فعالی نیست."
-noSharedUsers = "هنوز هیچ کاربری دسترسی ندارد."
-removeLink = "حذف لینک"
-removeUser = "حذف"
-revokeFailed = "امکان حذف لینک اشتراک نبود."
-revoked = "لینک اشتراک حذف شد"
-roleLabel = "نقش"
-sharingDisabled = "اشتراک‌گذاری غیرفعال است."
-sharingDisabledBody = "اشتراک‌گذاری توسط تنظیمات سرور شما غیرفعال شده است."
-sharedUsersTitle = "کاربرانِ دارای دسترسی"
-title = "اشتراک‌گذاری فایل"
-unknownUser = "کاربر ناشناخته"
-userAddFailed = "اشتراک‌گذاری با آن کاربر ممکن نیست."
-userAdded = "کاربر به فهرست اشتراک افزوده شد."
-usernameLabel = "نام کاربری یا ایمیل"
-usernamePlaceholder = "نام کاربری یا ایمیل را وارد کنید"
-userRemoveFailed = "حذف آن کاربر ممکن نیست."
-userRemoved = "کاربر از فهرست اشتراک حذف شد."
-viewActivity = "مشاهده فعالیت"
-viewed = "مشاهده‌شده"
-viewsCount = "بازدیدها: {{count}}"
-downloaded = "دانلود‌شده"
-bulkDescription = "یک لینک برای اشتراک همه فایل‌های انتخاب‌شده با کاربرانِ واردشده بسازید."
-bulkTitle = "اشتراک‌گذاری فایل‌های انتخاب‌شده"
-copyLink = "کپی لینک اشتراک"
-fileCount = "{{count}} فایل انتخاب‌شده"
-ownerOnly = "فقط مالک می‌تواند اشتراک‌گذاری را مدیریت کند."
-selectSingleFile = "برای مدیریت اشتراک‌گذاری، تنها یک فایل را انتخاب کنید."
-
-[storageUpload]
-description = "این کار فایل فعلی را برای دسترسی خودتان در فضای ذخیره‌سازی سرور بارگذاری می‌کند."
-errorTitle = "بارگذاری ناموفق بود"
-failure = "بارگذاری ناموفق بود. لطفاً ورود و تنظیمات ذخیره‌سازی خود را بررسی کنید."
-fileLabel = "فایل"
-hint = "لینک‌های عمومی و حالت‌های دسترسی توسط تنظیمات سرور شما کنترل می‌شوند."
-success = "روی سرور بارگذاری شد"
-title = "بارگذاری در سرور"
-updateButton = "به‌روزرسانی روی سرور"
-uploadButton = "بارگذاری در سرور"
-bulkDescription = "این کار فایل‌های انتخاب‌شده را در فضای ذخیره‌سازی سرور شما بارگذاری می‌کند."
-bulkTitle = "بارگذاری فایل‌های انتخاب‌شده"
-fileCount = "{{count}} فایل انتخاب‌شده"
-more = " +{{count}} مورد دیگر"
-
 [storage]
 approximateSize = "حجم تقریبی"
 fileTooLarge = "فایل خیلی بزرگ است. حداکثر اندازه هر فایل برابر است با"
@@ -7463,6 +7484,106 @@ storageLimit = "حد ذخیره‌سازی"
 storageQuotaExceeded = "سهمیه فضای ذخیره پر شده است. لطفاً قبل از بارگذاری بیشتر، برخی فایل‌ها را حذف کنید."
 storageUsed = "حافظه موقت استفاده‌شده"
 temporaryNotice = "فایل‌ها به‌صورت موقت در مرورگر شما ذخیره می‌شوند و ممکن است به‌طور خودکار پاک شوند"
+
+[storageShare]
+accessDenied = "شما به این فایل مشترک دسترسی ندارید. از مالک بخواهید آن را با شما به اشتراک بگذارد."
+accessDeniedBody = "شما به این فایل دسترسی ندارید. از مالک بخواهید آن را با شما به اشتراک بگذارد."
+accessDeniedTitle = "بدون دسترسی"
+accessed = "دسترسی انجام شد"
+accessFailed = "امکان بارگذاری فعالیت نبود."
+accessLimitedCommenter = "دسترسی نظر دادن به‌زودی اضافه می‌شود. اگر نیاز به دانلود دارید از مالک دسترسی ویرایشگر بخواهید."
+accessLimitedTitle = "دسترسی محدود"
+accessLimitedViewer = "این لینک فقط قابل مشاهده است. اگر نیاز به دانلود دارید از مالک دسترسی ویرایشگر بخواهید."
+addUser = "افزودن"
+bulkDescription = "یک لینک برای اشتراک همه فایل‌های انتخاب‌شده با کاربرانِ واردشده بسازید."
+bulkTitle = "اشتراک‌گذاری فایل‌های انتخاب‌شده"
+commenterHint = "امکان نظر دادن به‌زودی فراهم می‌شود."
+copied = "لینک در کلیپ‌بورد کپی شد"
+copy = "کپی"
+copyFailed = "کپی ناموفق بود"
+copyLink = "کپی لینک اشتراک"
+createdAt = "ایجاد شد"
+description = "برای این فایل یک لینک اشتراک بسازید. کاربران واردشده با داشتن لینک می‌توانند به آن دسترسی داشته باشند."
+download = "دانلود"
+downloaded = "دانلود‌شده"
+downloadFailed = "امکان دانلود این فایل نبود."
+downloadsCount = "دانلودها: {{count}}"
+emailWarningBody = "به نظر می‌رسد این یک نشانی ایمیل است. اگر این فرد کاربر Stirling PDF نباشد، به فایل دسترسی نخواهد داشت."
+emailWarningConfirm = "با این حال به اشتراک بگذار"
+emailWarningTitle = "نشانی ایمیل"
+errorTitle = "اشتراک ناموفق بود"
+expiredBody = "این لینک اشتراک نامعتبر است یا منقضی شده."
+expiredTitle = "لینک منقضی شده است"
+failure = "امکان ایجاد لینک اشتراک نبود. لطفاً دوباره تلاش کنید."
+fileCount = "{{count}} فایل انتخاب‌شده"
+fileLabel = "فایل"
+generate = "تولید لینک"
+generated = "لینک اشتراک تولید شد"
+goToLogin = "رفتن به ورود"
+hideActivity = "پنهان کردن فعالیت"
+invalidUsername = "یک نام کاربری یا نشانی ایمیل معتبر وارد کنید."
+lastAccessed = "آخرین دسترسی"
+linkAccessTitle = "دسترسی لینک اشتراک"
+linkLabel = "لینک اشتراک"
+linksDisabled = "لینک‌های اشتراک غیرفعال هستند."
+linksDisabledBody = "لینک‌های اشتراک توسط تنظیمات سرور شما غیرفعال شده‌اند."
+loadFailed = "امکان باز کردن فایل مشترک نبود."
+loading = "در حال بارگذاری لینک اشتراک..."
+loginPrompt = "برای دسترسی به این فایل مشترک وارد شوید."
+loginRequired = "ورود لازم است"
+manage = "مدیریت اشتراک‌گذاری"
+manageDescription = "ایجاد و مدیریت لینک‌های اشتراک این فایل."
+manageLoadFailed = "امکان بارگذاری لینک‌های اشتراک نبود."
+manageTitle = "مدیریت اشتراک‌گذاری"
+noActivity = "هنوز هیچ فعالیتی نیست."
+noLinks = "هنوز لینک اشتراکی فعالی نیست."
+noSharedUsers = "هنوز هیچ کاربری دسترسی ندارد."
+openInApp = "باز کردن در Stirling PDF"
+ownerLabel = "مالک"
+ownerOnly = "فقط مالک می‌تواند اشتراک‌گذاری را مدیریت کند."
+ownerUnknown = "نامشخص"
+removeLink = "حذف لینک"
+removeUser = "حذف"
+requiresLogin = "این فایل مشترک نیاز به ورود دارد."
+revoked = "لینک اشتراک حذف شد"
+revokeFailed = "امکان حذف لینک اشتراک نبود."
+roleCommenter = "نظردهنده"
+roleEditor = "ویرایشگر"
+roleLabel = "نقش"
+roleViewer = "بیننده"
+selectSingleFile = "برای مدیریت اشتراک‌گذاری، تنها یک فایل را انتخاب کنید."
+sharedUsersTitle = "کاربرانِ دارای دسترسی"
+shareHeading = "فایل اشتراک‌گذاری‌شده"
+sharingDisabled = "اشتراک‌گذاری غیرفعال است."
+sharingDisabledBody = "اشتراک‌گذاری توسط تنظیمات سرور شما غیرفعال شده است."
+title = "اشتراک‌گذاری فایل"
+titleDefault = "فایل اشتراک‌گذاری‌شده"
+tryAgain = "لطفاً بعداً دوباره تلاش کنید."
+unknownUser = "کاربر ناشناخته"
+userAdded = "کاربر به فهرست اشتراک افزوده شد."
+userAddFailed = "اشتراک‌گذاری با آن کاربر ممکن نیست."
+usernameLabel = "نام کاربری یا ایمیل"
+usernamePlaceholder = "نام کاربری یا ایمیل را وارد کنید"
+userRemoved = "کاربر از فهرست اشتراک حذف شد."
+userRemoveFailed = "حذف آن کاربر ممکن نیست."
+viewActivity = "مشاهده فعالیت"
+viewed = "مشاهده‌شده"
+viewsCount = "بازدیدها: {{count}}"
+
+[storageUpload]
+bulkDescription = "این کار فایل‌های انتخاب‌شده را در فضای ذخیره‌سازی سرور شما بارگذاری می‌کند."
+bulkTitle = "بارگذاری فایل‌های انتخاب‌شده"
+description = "این کار فایل فعلی را برای دسترسی خودتان در فضای ذخیره‌سازی سرور بارگذاری می‌کند."
+errorTitle = "بارگذاری ناموفق بود"
+failure = "بارگذاری ناموفق بود. لطفاً ورود و تنظیمات ذخیره‌سازی خود را بررسی کنید."
+fileCount = "{{count}} فایل انتخاب‌شده"
+fileLabel = "فایل"
+hint = "لینک‌های عمومی و حالت‌های دسترسی توسط تنظیمات سرور شما کنترل می‌شوند."
+more = " +{{count}} مورد دیگر"
+success = "روی سرور بارگذاری شد"
+title = "بارگذاری در سرور"
+updateButton = "به‌روزرسانی روی سرور"
+uploadButton = "بارگذاری در سرور"
 
 [subscription]
 cancelsOn = "لغو در {{date}}"
@@ -7507,8 +7628,121 @@ title = "مستندات API"
 [tableExtraxt]
 tags = "CSV، استخراج جدول، استخراج، تبدیل"
 
+[team]
+cancelInviteError = "لغو دعوت‌نامه ناموفق بود"
+confirmCancelInvite = "آیا از لغو این دعوت‌نامه مطمئن هستید؟"
+confirmLeave = "آیا مطمئن هستید می‌خواهید این تیم را ترک کنید؟"
+confirmLeaveLeader = "به‌عنوان رهبر تیم، با ترک کردن از تیم حذف خواهید شد. مطمئن هستید؟"
+confirmRemove = "آیا از حذف این عضو مطمئن هستید؟"
+editName = "ویرایش نام تیم"
+inviteCancelled = "دعوت‌نامه لغو شد"
+inviteError = "ارسال دعوت‌نامه ناموفق بود"
+inviteSent = "دعوت‌نامه با موفقیت ارسال شد"
+leader = "رهبر تیم"
+leaveButton = "ترک تیم"
+leaveError = "ترک تیم ناموفق بود"
+leaveSuccess = "با موفقیت از تیم خارج شدید"
+loading = "در حال بارگذاری اطلاعات تیم..."
+memberCount = "{{count}} عضو"
+memberRemoved = "عضو با موفقیت حذف شد"
+namePlaceholder = "نام تیم را وارد کنید"
+personal = "شخصی"
+removeError = "حذف عضو ناموفق بود"
+renameError = "تغییر نام تیم ناموفق بود"
+renameSuccess = "نام تیم با موفقیت تغییر کرد"
+
+[team.features]
+badge = "امکانات تیم"
+subtitle = "با تیم خود همکاری کنید"
+title = "همکاری تیمی"
+viewPlans = "مشاهده طرح‌ها"
+
+[team.features.billing]
+description = "مدیریت صورتحساب و اشتراک‌ها"
+title = "مدیریت صورتحساب"
+
+[team.features.credits]
+description = "استخر اعتبار مشترک برای همه اعضا"
+title = "اعتبارهای مشترک"
+
+[team.features.dashboard]
+description = "مشاهده فعالیت و مصرف تیم"
+title = "داشبورد تیم"
+
+[team.features.invite]
+description = "افزودن اعضا به تیم شما"
+title = "دعوت از اعضا"
+
+[team.invitationBanner]
+acceptButton = "پذیرفتن"
+message = "شما را برای پیوستن دعوت کرده است"
+rejectButton = "رد"
+
+[team.invite]
+cancelLabel = "لغو"
+invalidEmail = "آدرس ایمیل نامعتبر است"
+placeholder = "آدرس ایمیل را وارد کنید"
+sendButton = "ارسال دعوت‌نامه"
+title = "دعوت عضو تیم"
+
+[team.members]
+emailColumn = "ایمیل"
+empty = "هنوز عضوی در تیم نیست"
+nameColumn = "نام"
+pending = "در انتظار"
+remove = "حذف"
+roleColumn = "نقش"
+title = "اعضای تیم"
+
+[team.upgrade]
+button = "ارتقا به طرح تیم"
+description = "قابلیت‌های همکاری تیمی را آزاد کنید"
+title = "ارتقا به طرح تیم"
+
+[textAlign]
+center = "وسط"
+left = "چپ"
+right = "راست"
+
 [theme]
 toggle = "تغییر تم"
+
+[timestampPdf]
+completed = "PDF با موفقیت مُهر زمانی شد"
+desc = "با استفاده از یک سرور Time Stamp Authority (TSA) مورد اعتماد، مُهر زمانی RFC 3161 را به PDF خود اضافه کنید."
+filenamePrefix = "timestamped"
+results = "نتایج مُهر زمانی"
+submit = "اعمال مُهر زمانی"
+title = "مُهر زمانی PDF"
+
+[timestampPdf.error]
+failed = "هنگام مُهر زمانی PDF خطایی رخ داد."
+generic = "مهر زمانی ناموفق بود"
+
+[timestampPdf.files]
+placeholder = "برای شروع، یک فایل PDF را در نمای اصلی انتخاب کنید"
+
+[timestampPdf.options]
+note = "فقط هش SHA-256 سند شما به سرور TSA ارسال می‌شود؛ خود فایل PDF هرگز به سرور TSA ارسال نمی‌شود."
+title = "سرور مُهر زمانی (TSA)"
+
+[timestampPdf.options.tsaUrl]
+desc = "یک مرجع مُهر زمانی مورد اعتماد انتخاب کنید"
+label = "انتخاب سرور TSA"
+
+[timestampPdf.steps]
+settings = "تنظیمات"
+
+[tool]
+endpointUnavailable = "این ابزار روی سرور شما در دسترس نیست."
+endpointUnavailableClickable = "در این حالت در دسترس نیست. برای ورود کلیک کنید."
+invalidParams = "تنظیمات لازم را تکمیل کنید."
+noFiles = "برای شروع یک فایل اضافه کنید."
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "آلفا"
@@ -7568,12 +7802,6 @@ pageFormatting = "قالب‌بندی صفحه"
 removal = "حذف"
 signing = "امضا"
 verification = "تأیید"
-
-[tool]
-endpointUnavailable = "این ابزار روی سرور شما در دسترس نیست."
-endpointUnavailableClickable = "در این حالت در دسترس نیست. برای ورود کلیک کنید."
-invalidParams = "تنظیمات لازم را تکمیل کنید."
-noFiles = "برای شروع یک فایل اضافه کنید."
 
 [tools]
 noSearchResults = "هیچ ابزاری یافت نشد"
@@ -7793,6 +8021,81 @@ fileManager = "مدیر فایل"
 pageEditor = "ویرایشگر صفحه"
 viewer = "نمایشگر"
 
+[viewer]
+cannotPreviewFile = "امکان پیش‌نمایش فایل نیست"
+disableColorFilter = "غیرفعال کردن فیلتر رنگ"
+dualPageView = "نمای دوصفحه‌ای"
+enableDarkFilter = "فعال‌سازی فیلتر تیره"
+enableSepiaFilter = "فعال‌سازی فیلتر سپیا"
+firstPage = "صفحه نخست"
+lastPage = "صفحه آخر"
+nextPage = "صفحه بعد"
+onlyPdfSupported = "نمایشگر فقط فایل‌های PDF را پشتیبانی می‌کند. به نظر می‌رسد این فایل قالب متفاوتی دارد."
+previousPage = "صفحه قبل"
+resetZoom = "بازنشانی زوم"
+singlePageView = "نمای تک‌صفحه‌ای"
+unknownFile = "فایل ناشناخته"
+zoomIn = "بزرگ‌نمایی"
+zoomOut = "کوچک‌نمایی"
+
+[viewer.attachments]
+empty = "در این سند هیچ پیوستی وجود ندارد"
+loading = "در حال بارگذاری پیوست‌ها..."
+noDocument = "برای مشاهدهٔ پیوست‌های آن، یک PDF باز کنید."
+noMatch = "هیچ پیوستی با جستجوی شما مطابقت ندارد"
+noSupport = "پشتیبانی از پیوست در این نمایشگر در دسترس نیست."
+searchPlaceholder = "جستجوی پیوست‌ها"
+title = "پیوست‌ها"
+
+[viewer.comments]
+addComment = "افزودن نظر"
+addCommentPlaceholder = "افزودن نظر..."
+addLink = "افزودن پیوند"
+addReplyPlaceholder = "افزودن پاسخ..."
+deleteAnnotationAndComment = "حذف حاشیه‌نویسی و نظر"
+deleteDescription = "این حاشیه‌نویسی یک نظر پیوست دارد. می‌توانید فقط نظر را از نوار کناری حذف کنید و حاشیه‌نویسی را نگه دارید، یا همه را حذف کنید."
+deleteTitle = "حذف حاشیه‌نویسی از نظرات؟"
+goToLink = "رفتن به پیوند"
+hint = "با ابزارهای نظر، درج متن یا جایگزینی متن، نظر بگذارید. نظرات به‌صورت صفحه‌به‌صفحه اینجا نمایش داده می‌شوند."
+locateAnnotation = "یافتن در سند"
+moreActions = "عملیات بیشتر"
+nComments = "{{count}} نظر"
+oneComment = "۱ نظر"
+pageLabel = "صفحه {{page}}"
+placeholder = "نظر خود را بنویسید..."
+removeCommentOnly = "فقط حذف نظر"
+saveReply = "ذخیره پاسخ"
+send = "ارسال"
+title = "نظرات"
+typeComment = "نظر"
+typeInsertText = "درج متن"
+typeReplaceText = "جایگزینی متن"
+viewComment = "مشاهده نظر"
+
+[viewer.formBar]
+apply = "اعمال تغییرات"
+dismiss = "بستن"
+download = "دانلود PDF"
+hasFieldsDesc = "این PDF شامل فیلدهای قابل‌پرکردن است"
+title = "فیلدهای فرم"
+unsavedBadge = "ذخیره‌نشده"
+unsavedDesc = "تغییرات ذخیره‌نشده دارید"
+
+[viewer.nonPdf]
+columnDefault = "ستون {{index}}"
+convertToPdf = "تبدیل به PDF"
+csvStats = "{{rows}} ردیف · {{columns}} ستون · {{size}}"
+emptyFile = "فایل خالی"
+fileTypeBadge = "فایل {{type}}"
+htmlPreview = "پیش‌نمایش HTML"
+htmlPreviewWarning = "پیش‌نمایش HTML — ممکن است منابع خارجی بارگذاری نشوند · {{size}}"
+invalidJson = "JSON نامعتبر — محتوای خام نمایش داده می‌شود"
+lineNumbers = "شماره خطوط"
+loading = "در حال بارگذاری..."
+renderMarkdown = "رندر Markdown"
+sortedBy = "مرتب‌شده بر اساس: {{column}}"
+textStats = "{{lines}} خط · {{size}}"
+
 [viewPdf]
 header = "مشاهده PDF"
 tags = "مشاهده،خواندن،حاشیه‌نویسی،متن،تصویر"
@@ -7800,30 +8103,6 @@ title = "نمایش/ویرایش PDF"
 
 [warning]
 tooltipTitle = "هشدار"
-
-[wetSignature.tooltip]
-header = "روش‌های ایجاد امضا"
-
-[wetSignature.tooltip.draw]
-bullet1 = "سفارشی‌سازی رنگ و ضخامت قلم"
-bullet2 = "پاک کنید و تا رسیدن به نتیجه مطلوب دوباره رسم کنید"
-bullet3 = "روی دستگاه‌های لمسی (تبلت‌ها، گوشی‌ها) کار می‌کند"
-description = "با استفاده از ماوس یا صفحه‌نمایش لمسی یک امضای دست‌نویس بسازید. بهترین گزینه برای امضاهای شخصی و اصیل."
-title = "رسم امضا"
-
-[wetSignature.tooltip.type]
-bullet1 = "انتخاب از میان چندین فونت"
-bullet2 = "سفارشی‌سازی اندازه و رنگ متن"
-bullet3 = "مناسب برای امضاهای استاندارد"
-description = "از متن تایپ‌شده امضا تولید کنید. سریع و یکنواخت، مناسب اسناد تجاری."
-title = "تایپ امضا"
-
-[wetSignature.tooltip.upload]
-bullet1 = "از PNG، JPG و سایر فرمت‌های تصویری پشتیبانی می‌کند"
-bullet2 = "برای بهترین نتیجه پس‌زمینه‌های شفاف توصیه می‌شود"
-bullet3 = "تصویر برای تناسب با ناحیه امضا تغییر اندازه می‌یابد"
-description = "یک تصویر امضای ازپیش‌ساخته را بارگذاری کنید. ایده‌آل اگر امضای اسکن‌شده یا نشان شرکت دارید."
-title = "بارگذاری تصویر امضا"
 
 [watermark]
 completed = "واترمارک افزوده شد"
@@ -7996,6 +8275,30 @@ title = "متن واترمارک"
 image = "تصویر"
 text = "متن"
 
+[wetSignature.tooltip]
+header = "روش‌های ایجاد امضا"
+
+[wetSignature.tooltip.draw]
+bullet1 = "سفارشی‌سازی رنگ و ضخامت قلم"
+bullet2 = "پاک کنید و تا رسیدن به نتیجه مطلوب دوباره رسم کنید"
+bullet3 = "روی دستگاه‌های لمسی (تبلت‌ها، گوشی‌ها) کار می‌کند"
+description = "با استفاده از ماوس یا صفحه‌نمایش لمسی یک امضای دست‌نویس بسازید. بهترین گزینه برای امضاهای شخصی و اصیل."
+title = "رسم امضا"
+
+[wetSignature.tooltip.type]
+bullet1 = "انتخاب از میان چندین فونت"
+bullet2 = "سفارشی‌سازی اندازه و رنگ متن"
+bullet3 = "مناسب برای امضاهای استاندارد"
+description = "از متن تایپ‌شده امضا تولید کنید. سریع و یکنواخت، مناسب اسناد تجاری."
+title = "تایپ امضا"
+
+[wetSignature.tooltip.upload]
+bullet1 = "از PNG، JPG و سایر فرمت‌های تصویری پشتیبانی می‌کند"
+bullet2 = "برای بهترین نتیجه پس‌زمینه‌های شفاف توصیه می‌شود"
+bullet3 = "تصویر برای تناسب با ناحیه امضا تغییر اندازه می‌یابد"
+description = "یک تصویر امضای ازپیش‌ساخته را بارگذاری کنید. ایده‌آل اگر امضای اسکن‌شده یا نشان شرکت دارید."
+title = "بارگذاری تصویر امضا"
+
 [workspace]
 title = "فضای کاری"
 
@@ -8014,9 +8317,9 @@ disable = "غیرفعال‌سازی"
 disabled = "غیرفعال"
 editRole = "ویرایش نقش"
 enable = "فعال‌سازی"
+loading = "در حال بارگذاری افراد..."
 locked = "قفل‌شده"
 lockedBadge = "قفل‌شده"
-loading = "در حال بارگذاری افراد..."
 loginRequired = "ابتدا حالت لاگین را فعال کنید"
 member = "عضو"
 noMembersFound = "عضوی یافت نشد"
@@ -8262,278 +8565,3 @@ cancel = "انصراف"
 confirm = "استخراج"
 message = "این ZIP شامل {{count}} فایل است. با این حال استخراج شود؟"
 title = "فایل ZIP بزرگ"
-
-[cloudBadge]
-tooltip = "این عملیات از اعتبارهای ابری شما استفاده می‌کند"
-
-[team]
-cancelInviteError = "لغو دعوت‌نامه ناموفق بود"
-confirmCancelInvite = "آیا از لغو این دعوت‌نامه مطمئن هستید؟"
-confirmLeave = "آیا مطمئن هستید می‌خواهید این تیم را ترک کنید؟"
-confirmLeaveLeader = "به‌عنوان رهبر تیم، با ترک کردن از تیم حذف خواهید شد. مطمئن هستید؟"
-confirmRemove = "آیا از حذف این عضو مطمئن هستید؟"
-editName = "ویرایش نام تیم"
-inviteCancelled = "دعوت‌نامه لغو شد"
-inviteError = "ارسال دعوت‌نامه ناموفق بود"
-inviteSent = "دعوت‌نامه با موفقیت ارسال شد"
-leader = "رهبر تیم"
-leaveButton = "ترک تیم"
-leaveError = "ترک تیم ناموفق بود"
-leaveSuccess = "با موفقیت از تیم خارج شدید"
-loading = "در حال بارگذاری اطلاعات تیم..."
-memberCount = "{{count}} عضو"
-memberRemoved = "عضو با موفقیت حذف شد"
-namePlaceholder = "نام تیم را وارد کنید"
-personal = "شخصی"
-removeError = "حذف عضو ناموفق بود"
-renameError = "تغییر نام تیم ناموفق بود"
-renameSuccess = "نام تیم با موفقیت تغییر کرد"
-
-[team.invitationBanner]
-message = "شما را برای پیوستن دعوت کرده است"
-acceptButton = "پذیرفتن"
-rejectButton = "رد"
-
-[team.features]
-badge = "امکانات تیم"
-subtitle = "با تیم خود همکاری کنید"
-title = "همکاری تیمی"
-viewPlans = "مشاهده طرح‌ها"
-
-[team.features.billing]
-description = "مدیریت صورتحساب و اشتراک‌ها"
-title = "مدیریت صورتحساب"
-
-[team.features.credits]
-description = "استخر اعتبار مشترک برای همه اعضا"
-title = "اعتبارهای مشترک"
-
-[team.features.dashboard]
-description = "مشاهده فعالیت و مصرف تیم"
-title = "داشبورد تیم"
-
-[team.features.invite]
-description = "افزودن اعضا به تیم شما"
-title = "دعوت از اعضا"
-
-[team.invite]
-cancelLabel = "لغو"
-invalidEmail = "آدرس ایمیل نامعتبر است"
-placeholder = "آدرس ایمیل را وارد کنید"
-sendButton = "ارسال دعوت‌نامه"
-title = "دعوت عضو تیم"
-
-[team.members]
-emailColumn = "ایمیل"
-empty = "هنوز عضوی در تیم نیست"
-nameColumn = "نام"
-pending = "در انتظار"
-remove = "حذف"
-roleColumn = "نقش"
-title = "اعضای تیم"
-
-[team.upgrade]
-button = "ارتقا به طرح تیم"
-description = "قابلیت‌های همکاری تیمی را آزاد کنید"
-title = "ارتقا به طرح تیم"
-
-[provider.oauth2.google]
-scope = "احراز هویت ورود"
-
-[provider.oauth2.google.clientId]
-label = "Client ID"
-description = "Client ID مربوط به OAuth2 از Google Cloud Console"
-
-[provider.oauth2.google.clientSecret]
-label = "Client Secret"
-description = "Client Secret مربوط به OAuth2 از Google Cloud Console"
-
-[provider.oauth2.google.scopes]
-label = "Scopeها"
-description = "Scopeهای OAuth2 جداشده با ویرگول"
-
-[provider.oauth2.google.useAsUsername]
-label = "استفاده به‌عنوان نام کاربری"
-description = "فیلدی که به‌عنوان نام کاربری استفاده شود (email، name، given_name، family_name)"
-
-[provider.oauth2.github]
-scope = "احراز هویت ورود"
-
-[provider.oauth2.github.clientId]
-label = "Client ID"
-description = "Client ID مربوط به OAuth2 از GitHub Developer Settings"
-
-[provider.oauth2.github.clientSecret]
-label = "Client Secret"
-description = "Client Secret مربوط به OAuth2 از GitHub Developer Settings"
-
-[provider.oauth2.github.scopes]
-label = "Scopeها"
-description = "Scopeهای OAuth2 جداشده با ویرگول"
-
-[provider.oauth2.github.useAsUsername]
-label = "استفاده به‌عنوان نام کاربری"
-description = "فیلدی که به‌عنوان نام کاربری استفاده شود (email، login، name)"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "نشانی URL صادرکننده"
-description = "نشانی URL نقطه OpenID Connect Discovery قلمرو Keycloak"
-
-[provider.oauth2.keycloak.clientId]
-label = "Client ID"
-description = "Client ID مربوط به OAuth2 از Keycloak"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "Client Secret"
-description = "Client Secret مربوط به OAuth2 از Keycloak"
-
-[provider.oauth2.keycloak.scopes]
-label = "Scopeها"
-description = "Scopeهای OAuth2 جداشده با ویرگول"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "استفاده به‌عنوان نام کاربری"
-description = "فیلدی که به‌عنوان نام کاربری استفاده شود (email، name، given_name، family_name، preferred_username)"
-
-[provider.oauth2.generic]
-name = "OAuth2 عمومی"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "فعال‌سازی OAuth2 عمومی"
-description = "فعال‌سازی احراز هویت با ارائه‌دهنده سفارشی OAuth2"
-
-[provider.oauth2.generic.provider]
-label = "نام ارائه‌دهنده"
-description = "نام ارائه‌دهنده OAuth2 شما (مثلاً Azure AD، Okta)"
-
-[provider.oauth2.generic.issuer]
-label = "نشانی URL صادرکننده"
-description = "ارائه‌دهنده‌ای که از OpenID Connect Discovery (/.well-known/openid-configuration) پشتیبانی می‌کند"
-
-[provider.oauth2.generic.clientId]
-label = "Client ID"
-description = "Client ID مربوط به OAuth2 از ارائه‌دهنده شما"
-
-[provider.oauth2.generic.clientSecret]
-label = "Client Secret"
-description = "Client Secret مربوط به OAuth2 از ارائه‌دهنده شما"
-
-[provider.oauth2.generic.scopes]
-label = "Scopeها"
-description = "Scopeهای OAuth2 جداشده با ویرگول"
-
-[provider.oauth2.generic.useAsUsername]
-label = "استفاده به‌عنوان نام کاربری"
-description = "فیلدی برای استفاده به‌عنوان نام کاربری"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "ایجاد خودکار کاربران"
-description = "ایجاد خودکار حساب کاربری در اولین ورود با OAuth2"
-
-[provider.oauth2.generic.blockRegistration]
-label = "مسدودسازی ثبت‌نام"
-description = "ممانعت از ثبت‌نام کاربر جدید از طریق OAuth2"
-
-[provider.smtp]
-name = "ایمیل SMTP"
-scope = "اعلان‌های ایمیلی"
-
-[provider.smtp.enabled]
-label = "فعال‌سازی ایمیل"
-description = "فعال‌سازی اعلان‌های ایمیلی و قابلیت SMTP"
-
-[provider.smtp.host]
-label = "میزبان SMTP"
-description = "نام میزبان یا نشانی IP سرور SMTP شما"
-
-[provider.smtp.port]
-label = "درگاه SMTP"
-description = "شماره درگاه برای اتصال SMTP (معمولاً 25، 465 یا 587)"
-
-[provider.smtp.username]
-label = "نام کاربری SMTP"
-description = "نام کاربری برای احراز هویت SMTP"
-
-[provider.smtp.password]
-label = "گذرواژه SMTP"
-description = "گذرواژه برای احراز هویت SMTP"
-
-[provider.smtp.from]
-label = "نشانی فرستنده"
-description = "نشانی ایمیلی که به‌عنوان فرستنده استفاده می‌شود"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO (SAML)"
-
-[provider.saml2.enabled]
-label = "فعال‌سازی SAML2"
-description = "فعال‌سازی احراز هویت SAML2 (فقط سازمانی)"
-
-[provider.saml2.provider]
-label = "نام ارائه‌دهنده"
-description = "نام ارائه‌دهنده SAML2 شما"
-
-[provider.saml2.registrationId]
-label = "شناسه ثبت‌نام"
-description = "نام اپلیکیشن ارائه‌دهنده سرویس (SP) شما"
-
-[provider.saml2.idpMetadataUri]
-label = "IDP Metadata URI"
-description = "URI فراداده ارائه‌دهنده شما"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "نشانی ورود تکی IDP"
-description = "URL برای آغاز SSO"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "نشانی خروج تکی IDP"
-description = "URL برای آغاز SLO"
-
-[provider.saml2.idpIssuer]
-label = "صادرکننده IDP"
-description = "شناسه ارائه‌دهنده شما"
-
-[provider.saml2.idpCert]
-label = "گواهی IDP"
-description = "مسیر گواهی (مثلاً classpath:okta.cert)"
-
-[provider.saml2.privateKey]
-label = "کلید خصوصی"
-description = "مسیر کلید خصوصی شما"
-
-[provider.saml2.spCert]
-label = "گواهی SP"
-description = "مسیر گواهی امضای شما"
-
-[provider.saml2.autoCreateUser]
-label = "ایجاد خودکار کاربران"
-description = "ایجاد خودکار حساب‌های کاربری در اولین ورود با SAML2"
-
-[provider.saml2.blockRegistration]
-label = "مسدودسازی ثبت‌نام"
-description = "ممانعت از ثبت‌نام کاربر جدید از طریق SAML2"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "وارد کردن فایل"
-
-[provider.googledrive.enabled]
-label = "فعال‌سازی انتخاب‌گر فایل Google Drive"
-description = "اجازه دهید کاربران مستقیماً از Google Drive فایل وارد کنند"
-
-[provider.googledrive.clientId]
-label = "Client ID"
-description = "Google OAuth 2.0 Client ID از Google Cloud Console"
-
-[provider.googledrive.apiKey]
-label = "API Key"
-description = "Google API Key برای Google Picker API از Google Cloud Console"
-
-[provider.googledrive.appId]
-label = "App ID"
-description = "Google Drive App ID از Google Cloud Console"

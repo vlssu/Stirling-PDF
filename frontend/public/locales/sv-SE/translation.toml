@@ -1,3 +1,4 @@
+accessInvite = "Bjud in"
 addToDoc = "Lägg till i dokument"
 alphabet = "Alfabet"
 apply = "Verkställ"
@@ -8,22 +9,22 @@ black = "Svart"
 blue = "Blå"
 bored = "Trött på att vänta?"
 cancel = "Avbryt"
-confirm = "Bekräfta"
 changedCredsMessage = "Inloggningsuppgifter ändrade!"
 chooseFile = "Välj fil"
 close = "Stäng"
 color = "Färg"
 comingSoon = "Kommer snart"
+confirm = "Bekräfta"
 confirmClose = "Bekräfta stängning"
 confirmCloseCancel = "Avbryt"
 confirmCloseConfirm = "Stäng fil"
-confirmCloseMessage = "Är du säker på att du vill stänga den här filen?"
 confirmCloseDiscard = "Kasta ändringar och stäng"
+confirmCloseMessage = "Är du säker på att du vill stänga den här filen?"
 confirmCloseSave = "Spara och stäng"
+confirmCloseSaveFailed = "Sparat med fel. {{count}} fil{{plural}} kunde inte sparas."
+confirmCloseSaveFailedTitle = "Sparandet misslyckades"
 confirmCloseUnsaved = "Den här filen har osparade ändringar."
 confirmCloseUnsavedList = "Du har {{count}} fil{{plural}} med osparade ändringar.\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "Sparandet misslyckades"
-confirmCloseSaveFailed = "Sparat med fel. {{count}} fil{{plural}} kunde inte sparas."
 confirmPasswordErrorMessage = "Nytt lösenord och bekräfta nytt lösenord måste matcha."
 custom = "Anpassad..."
 customPosition = "Anpassad position"
@@ -43,11 +44,14 @@ downloadComplete = "Nedladdning klar"
 downloadPdf = "Ladda ner PDF"
 downloadUnavailable = "Nedladdning inte tillgänglig för detta objekt"
 edit = "Redigera"
+editSecret = "Redigera detta värde"
 editYourNewFiles = "Redigera dina nya filer"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "Exportera och fortsätt"
 false = "Falskt"
-fileSavedToDisk = "Fil sparad till disk"
 fileNotSavedToDisk = "Inte sparad till disk"
+fileSavedToDisk = "Fil sparad till disk"
 fileSelected = "Vald: {{filename}}"
 filesSelected = "filer valda"
 font = "Teckensnitt"
@@ -61,12 +65,15 @@ help = "Hjälp"
 imgPrompt = "Välj bild(er)"
 incorrectPasswordMessage = "Nuvarande lösenord är felaktigt."
 info = "Info"
+insufficientCredits = "Otillräckliga krediter. Krävs: {{requiredCredits}}, Tillgängligt: {{currentBalance}}, Underskott: {{shortfall}}"
 invalidPasswordMessage = "Lösenordet får inte vara tomt och får inte ha mellanslag i början eller slutet."
 invalidUndoData = "Kan inte ångra: ogiltiga åtgärdsdata"
 invalidUsernameMessage = "Ogiltigt användarnamn, användarnamn kan endast innehålla bokstäver, siffror och följande specialtecken @._+- eller måste vara en giltig e-postadress."
 joinDiscord = "Gå med i vår Discord-server"
 keepWorking = "Fortsätt arbeta"
 loading = "Laddar..."
+loadingCredits = "Kontrollerar krediter..."
+loadingProStatus = "Kontrollerar prenumerationsstatus..."
 logOut = "Logga ut"
 marginTooltip = "Avstånd mellan sidnumret och sidans kant."
 moreOptions = "Fler alternativ"
@@ -80,6 +87,7 @@ noFilesToUndo = "Kan inte ångra: inga filer bearbetades i den senaste åtgärde
 noOperationToUndo = "Ingen åtgärd att ångra"
 notAuthenticatedMessage = "Användaren är inte autentiserad."
 nothingToUndo = "Inget att ångra"
+noticeTopUpOrPlan = "Inte tillräckligt med krediter, fyll på eller uppgradera till ett abonnemang"
 noValidFiles = "Inga giltiga filer att bearbeta"
 oops = "Hoppsan!"
 openInViewer = "Öppna i visaren"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "Ej tillämpade maskningar"
 pin = "Fäst fil (behåll aktiv efter verktygskörning)"
 poweredBy = "Drivs av"
 pro = "Pro"
-processTimeWarning = "Varning: Denna process kan ta upp till en minut beroende på filstorlek"
 processingComplete = "Din fil är klar."
 processingCompleteMultiple = "{{count}} filer är klara."
+processTimeWarning = "Varning: Denna process kan ta upp till en minut beroende på filstorlek"
 property = "Egenskap"
 quickPosition = "Snabbposition"
 red = "Röd"
@@ -108,7 +116,6 @@ save = "Spara"
 saveToBrowser = "Spara till webbläsare"
 saveUnavailable = "Spara är inte tillgängligt för detta objekt"
 seeDockerHub = "Se Docker Hub"
-editSecret = "Redigera detta värde"
 selectFillter = "-- Välj --"
 size = "Storlek"
 sponsor = "Sponsör"
@@ -143,11 +150,6 @@ welcome = "Välkommen"
 white = "Vit"
 WorkInProgess = "Pågående arbete, kan vara icke fungerande eller buggigt. Rapportera eventuella problem!"
 yes = "Ja"
-insufficientCredits = "Otillräckliga krediter. Krävs: {{requiredCredits}}, Tillgängligt: {{currentBalance}}, Underskott: {{shortfall}}"
-loadingCredits = "Kontrollerar krediter..."
-loadingProStatus = "Kontrollerar prenumerationsstatus..."
-noticeTopUpOrPlan = "Inte tillräckligt med krediter, fyll på eller uppgradera till ett abonnemang"
-accessInvite = "Bjud in"
 
 [account]
 accountSettings = "Kontoinställningar"
@@ -851,6 +853,14 @@ title = "API-slutpunkter"
 userDefaults = "Standardvärden för användarinställningar"
 userDefaultsDescription = "Ange standardvärden för användarinställningar. Användare kan åsidosätta dessa i sina personliga inställningar."
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "Ta bort inaktiverade konverteringsalternativ i stället för att visa dem nedtonade"
+label = "Dölj otillgängliga konverteringar som standard"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "Ta bort inaktiverade verktyg i stället för att visa dem nedtonade"
+label = "Dölj otillgängliga verktyg som standard"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "Välj slutpunktsgrupper att inaktivera"
 label = "Inaktiverade slutpunktsgrupper"
@@ -858,14 +868,6 @@ label = "Inaktiverade slutpunktsgrupper"
 [admin.settings.endpoints.toRemove]
 description = "Välj enskilda slutpunkter att inaktivera"
 label = "Inaktiverade slutpunkter"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "Ta bort inaktiverade verktyg i stället för att visa dem nedtonade"
-label = "Dölj otillgängliga verktyg som standard"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "Ta bort inaktiverade konverteringsalternativ i stället för att visa dem nedtonade"
-label = "Dölj otillgängliga konverteringar som standard"
 
 [admin.settings.enterpriseRequired]
 message = "En företagslicens krävs för att få åtkomst till {{featureName}}. Du ser demodata som referens."
@@ -974,6 +976,10 @@ label = "Standardlocale"
 description = "Maximal filuppladdningsstorlek (t.ex. 100MB, 1GB)"
 label = "Gräns för filuppladdning"
 
+[admin.settings.general.frontendUrl]
+description = "Bas-URL för frontend (t.ex. https://pdf.example.com). Används för e-postinbjudningslänkar och mobila QR-koduppladdningar. Lämna tomt för att använda backend-URL."
+label = "Frontend-URL"
+
 [admin.settings.general.hideDisabledTools]
 description = "Dölj inaktiverade verktyg i gränssnittet"
 label = "Dölj inaktiverade verktyg"
@@ -985,10 +991,6 @@ label = "Dölj Google Drive"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "Dölj knappen för mobil QR-skanner när den inte är aktiverad"
 label = "Dölj mobil QR-skanner"
-
-[admin.settings.general.frontendUrl]
-description = "Bas-URL för frontend (t.ex. https://pdf.example.com). Används för e-postinbjudningslänkar och mobila QR-koduppladdningar. Lämna tomt för att använda backend-URL."
-label = "Frontend-URL"
 
 [admin.settings.general.homeDescription]
 description = "Beskrivningstexten som visas på startsidan"
@@ -1169,9 +1171,25 @@ description = "Konfigurera autentisering, inloggningsbeteende och säkerhetspoli
 title = "Säkerhet"
 
 [admin.settings.security.audit]
+hideDetails = "Dölj granskningsnivåns detaljer"
 label = "Granskningsloggning"
 showDetails = "Visa granskningsnivåns detaljer"
-hideDetails = "Dölj granskningsnivåns detaljer"
+
+[admin.settings.security.audit.advancedOptions]
+description = "Följande alternativ ökar behandlingstid och minnesanvändning. Aktivera endast om det verkligen behövs."
+title = "Avancerade alternativ"
+
+[admin.settings.security.audit.captureFileHash]
+description = "Extrahera SHA-256-hash för uppladdade PDF-filer för integritetsverifiering. Oberoende av granskningsnivå."
+label = "Registrera filhash (SHA-256)"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "Registrera metodernas returvärden. Rekommenderas inte: ökar loggvolym och diskutrymme avsevärt."
+label = "Registrera åtgärdsresultat"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "Extrahera författarfältet från PDF-dokument under bearbetning. Kräver PDF-parsning, ökar svarstiden. Oberoende av granskningsnivå."
+label = "Registrera PDF-författarmetadata"
 
 [admin.settings.security.audit.enabled]
 description = "Spåra användaråtgärder och systemhändelser för regelefterlevnad och säkerhetsövervakning"
@@ -1182,30 +1200,14 @@ description = "0=AV, 1=GRUNDLÄGGANDE, 2=STANDARD, 3=UTFÖRLIG"
 label = "Granskningsnivå"
 
 [admin.settings.security.audit.levelDetails]
-off = "Ingen granskningsloggning (förutom kritiska säkerhetshändelser)"
 basic = "PDF-filåtgärder (komprimera, dela, slå ihop osv.) och ändringar av inställningar. Registrerar: åtgärdsstatus (lyckad/misslyckad), metodparametrar, tidsåtgång. Minimal loggvolym."
+off = "Ingen granskningsloggning (förutom kritiska säkerhetshändelser)"
 standard = "BASIC-händelser plus: inloggning/utloggning, kontoförändringar, allmänna GET-begäranden. Utesluter kontinuerliga pollningsanrop (/auth/me, /app-config, /health osv.) för att minska loggbrus. Idealiskt för de flesta installationer."
 verbose = "STANDARD-händelser plus: kontinuerliga pollningsanrop, alla GET-begäranden, detaljerad tidsmätning. Varning: hög loggvolym och prestandapåverkan."
 
 [admin.settings.security.audit.retentionDays]
 description = "Antal dagar att behålla granskningsloggar"
 label = "Behållningstid (dagar)"
-
-[admin.settings.security.audit.advancedOptions]
-title = "Avancerade alternativ"
-description = "Följande alternativ ökar behandlingstid och minnesanvändning. Aktivera endast om det verkligen behövs."
-
-[admin.settings.security.audit.captureFileHash]
-description = "Extrahera SHA-256-hash för uppladdade PDF-filer för integritetsverifiering. Oberoende av granskningsnivå."
-label = "Registrera filhash (SHA-256)"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "Extrahera författarfältet från PDF-dokument under bearbetning. Kräver PDF-parsning, ökar svarstiden. Oberoende av granskningsnivå."
-label = "Registrera PDF-författarmetadata"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "Registrera metodernas returvärden. Rekommenderas inte: ökar loggvolym och diskutrymme avsevärt."
-label = "Registrera åtgärdsresultat"
 
 [admin.settings.security.csrfDisabled]
 description = "Inaktivera skydd mot Cross-Site Request Forgery (rekommenderas inte)"
@@ -1274,6 +1276,14 @@ label = "Initialt användarnamn"
 [admin.settings.security.jwt]
 label = "JWT-konfiguration"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "Tolerans för klient-/serverklockans avvikelse under tokenvalidering (standard: 60 sekunder)"
+label = "Tolerans för klockavvikelse (sekunder)"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "Giltighetstid för åtkomsttoken i minuter för skrivbordsklienter. Skrivbordsappar identifieras automatiskt via User-Agent och får längre sessioner för bättre UX (standard: 43200 = 30 dagar)"
+label = "Giltighetstid för skrivbordstoken (minuter)"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "Ta automatiskt bort utgångna JWT-nycklar"
 label = "Aktivera rensning av nycklar"
@@ -1282,29 +1292,21 @@ label = "Aktivera rensning av nycklar"
 description = "Rotera automatiskt JWT-signeringsnycklar periodiskt"
 label = "Aktivera nyckelrotation"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "Giltighetstid för åtkomsttoken i minuter för webbklienter (standard: 1440 = 24 timmar)"
-label = "Giltighetstid för webbtoken (minuter)"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "Giltighetstid för åtkomsttoken i minuter för skrivbordsklienter. Skrivbordsappar identifieras automatiskt via User-Agent och får längre sessioner för bättre UX (standard: 43200 = 30 dagar)"
-label = "Giltighetstid för skrivbordstoken (minuter)"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "Tolerans för klient-/serverklockans avvikelse under tokenvalidering (standard: 60 sekunder)"
-label = "Tolerans för klockavvikelse (sekunder)"
+[admin.settings.security.jwt.persistence]
+description = "Lagra JWT-nycklar beständigt för att överleva serveromstarter"
+label = "Aktivera nyckelpersistens"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "Tillåt tokenuppdatering inom så här många minuter efter utgång (standard: 15 minuter, max 3 försök)"
 label = "Uppdateringsfrist (minuter)"
 
-[admin.settings.security.jwt.persistence]
-description = "Lagra JWT-nycklar beständigt för att överleva serveromstarter"
-label = "Aktivera nyckelpersistens"
-
 [admin.settings.security.jwt.secureCookie]
 description = "Kräv HTTPS för JWT-cookies (rekommenderas för produktion)"
 label = "Säker cookie"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "Giltighetstid för åtkomsttoken i minuter för webbklienter (standard: 1440 = 24 timmar)"
+label = "Giltighetstid för webbtoken (minuter)"
 
 [admin.settings.security.loginAttemptCount]
 description = "Maximalt antal misslyckade inloggningsförsök innan kontot låses"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "Styr serverlagring och delningsalternativ."
+title = "Fillagring och delning"
+
+[admin.settings.storage.enabled]
+description = "Tillåt användare att lagra filer på servern."
+label = "Aktivera fillagring på servern"
+
+[admin.settings.storage.sharing.email]
+description = "Tillåt delning med e-postadresser."
+label = "Aktivera delning via e-post"
+mailLink = "Konfigurera e-postinställningar"
+mailNote = "Kräver e-postkonfiguration. "
+
+[admin.settings.storage.sharing.enabled]
+description = "Tillåt användare att dela lagrade filer."
+label = "Aktivera delning"
+
+[admin.settings.storage.sharing.links]
+description = "Tillåt delning via länkar som kräver inloggning."
+frontendUrlLink = "Konfigurera i systeminställningar"
+frontendUrlNote = "Kräver en Frontend URL. "
+label = "Aktivera delningslänkar"
+
+[admin.settings.storage.signing.enabled]
+description = "Tillåt användare att skapa signeringssessioner med flera deltagare. Kräver att fillagring på servern är aktiverad."
+label = "Aktivera gruppsignering (Alpha)"
 
 [admin.settings.telegram]
 description = "Konfigurera anslutning till Telegram-bot, åtkomstkontroller och feedbackbeteende."
@@ -1429,34 +1459,6 @@ title = "Bearbetning"
 description = "Maximal väntetid för ett bearbetningsjobb innan fel rapporteras."
 label = "Tidsgräns för bearbetning (sekunder)"
 
-[admin.settings.storage]
-description = "Styr serverlagring och delningsalternativ."
-title = "Fillagring och delning"
-
-[admin.settings.storage.enabled]
-description = "Tillåt användare att lagra filer på servern."
-label = "Aktivera fillagring på servern"
-
-[admin.settings.storage.sharing.email]
-description = "Tillåt delning med e-postadresser."
-label = "Aktivera delning via e-post"
-mailLink = "Konfigurera e-postinställningar"
-mailNote = "Kräver e-postkonfiguration. "
-
-[admin.settings.storage.sharing.enabled]
-description = "Tillåt användare att dela lagrade filer."
-label = "Aktivera delning"
-
-[admin.settings.storage.sharing.links]
-description = "Tillåt delning via länkar som kräver inloggning."
-frontendUrlLink = "Konfigurera i systeminställningar"
-frontendUrlNote = "Kräver en Frontend URL. "
-label = "Aktivera delningslänkar"
-
-[admin.settings.storage.signing.enabled]
-description = "Tillåt användare att skapa signeringssessioner med flera deltagare. Kräver att fillagring på servern är aktiverad."
-label = "Aktivera gruppsignering (Alpha)"
-
 [admin.settings.unsavedChanges]
 cancel = "Fortsätt redigera"
 discard = "Förkasta ändringar"
@@ -1521,6 +1523,7 @@ settings = "Du kan ändra analysinställningarna i config/settings.yml-filen"
 title = "Vill du göra Stirling PDF bättre?"
 
 [annotation]
+annotationStyle = "Annoteringsstil"
 applyChanges = "Verkställ ändringar"
 backgroundColor = "Bakgrundsfärg"
 borderOff = "Ram: Av"
@@ -1530,6 +1533,8 @@ chooseColor = "Välj färg"
 circle = "Cirkel"
 clearBackground = "Ta bort bakgrund"
 color = "Färg"
+comment = "Kommentar"
+comments = "Kommentarer"
 contents = "Text"
 delete = "Ta bort"
 desc = "Använd överstrykning, penna, text och anteckningar. Ändringar förblir live — ingen utplattning krävs."
@@ -1547,7 +1552,6 @@ editStampHint = "För att byta bild, ta bort denna stämpel och lägg till en ny
 editSwitchToSelect = "Byt till Välj och redigera för att redigera denna annotering."
 editText = "Redigera textruta"
 editTextMarkup = "Redigera textmarkering"
-annotationStyle = "Annoteringsstil"
 ellipse = "Ellips"
 exit = "Avsluta annoteringsläge"
 fillColor = "Fyllnadsfärg"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "Frihandsöverstrykning"
 highlight = "Överstrykning"
 imagePreview = "Förhandsvisning"
 inkHighlighter = "Frihandsöverstrykning"
+insertText = "Infoga text"
 line = "Linje"
 lineArrow = "Pil"
 noBackground = "Ingen bakgrund"
 note = "Anteckning"
-comment = "Kommentar"
-comments = "Kommentarer"
-insertText = "Infoga text"
-replaceText = "Ersätt text"
 noteIcon = "Ikon för anteckning"
 notesStamps = "Anteckningar och stämplar"
 opacity = "Opacitet"
@@ -1574,6 +1575,7 @@ polyline = "Polylinje"
 properties = "Egenskaper"
 rectangle = "Rektangel"
 redo = "Gör om"
+replaceText = "Ersätt text"
 saveChanges = "Spara ändringar"
 saveFailed = "Kunde inte spara kopia"
 saveReady = "Nedladdning klar"
@@ -1627,68 +1629,6 @@ goToSettings = "Gå till granskningsinställningar"
 notAvailable = "Granskningssystemet är inte tillgängligt"
 notAvailableMessage = "Granskningssystemet är inte konfigurerat eller inte tillgängligt."
 
-[audit.error]
-title = "Fel vid inläsning av granskningssystemet"
-
-[audit.export]
-clearFilters = "Rensa"
-description = "Exportera granskningshändelser till CSV- eller JSON-format. Använd filter för att begränsa den exporterade datan."
-endDate = "Slutdatum"
-error = "Det gick inte att exportera data"
-exportButton = "Exportera data"
-fieldAuthor = "Författare (från PDF)"
-fieldDate = "Datum"
-fieldDocumentName = "Dokumentnamn"
-fieldFileHash = "Filhash (SHA-256)"
-fieldIpAddress = "IP-adress"
-fieldOperationResults = "Åtgärdsresultat"
-fieldOutcome = "Utfall (Lyckat/Misslyckat)"
-fieldTool = "Verktyg"
-fieldUsername = "Användarnamn"
-filterByType = "Filtrera efter typ"
-filterByUser = "Filtrera efter användare"
-filters = "Filter (valfritt)"
-format = "Exportformat"
-selectFields = "Välj fält att inkludera"
-startDate = "Startdatum"
-title = "Exportera granskningsdata"
-verboseRequired = "Kräver VERBOSE-granskningsnivå"
-
-[audit.systemStatus]
-autoRefresh = "Automatisk uppdatering"
-autoRefreshLabel = "Uppdatera automatiskt var 30 s"
-captureBySettings = "Aktivera i inställningarna"
-capturedFields = "Registrerade fält"
-date = "Datum"
-days = "dagar"
-disabled = "Inaktiverad"
-documentName = "Dokumentnamn"
-enabled = "Aktiverad"
-fileHash = "Filhash"
-level = "Granskningsnivå"
-pdfAuthor = "PDF-författare"
-retention = "Lagringsperiod"
-status = "Granskningsloggning"
-title = "Systemstatus"
-tool = "Verktyg"
-totalEvents = "Totalt antal händelser"
-username = "Användarnamn"
-verboseOnly = "Endast VERBOSE"
-
-[audit.stats]
-activeUsers = "Aktiva användare"
-attention = "Åtgärd krävs"
-avgLatency = "Genomsnittlig latens"
-error = "Fel vid inläsning av statistik"
-errorLoadingStats = "Det gick inte att läsa in statistik"
-excellent = "Utmärkt"
-good = "Bra"
-noData = "Ej tillämpligt"
-successRate = "Lyckandefrekvens"
-title = "Översikt"
-totalEvents = "Totalt antal händelser"
-vsLastPeriod = "jämfört med föregående period"
-
 [audit.charts]
 byTool = "Mest använda verktyg"
 byType = "Händelser efter typ"
@@ -1701,6 +1641,27 @@ noData = "Inga data för denna period"
 overTime = "Händelser över tid"
 title = "Granskningsinstrumentpanel"
 week = "Vecka"
+
+[audit.clearData]
+cancel = "Avbryt"
+codeDoesNotMatch = "Koden stämmer inte"
+codePlaceholder = "Skriv koden här"
+confirmationCode = "Bekräftelsekod"
+confirmationRequired = "Ta bort all granskningsdata"
+confirmMessage = "Detta tar permanent bort alla granskningsloggar. Ange bekräftelsekoden nedan för att fortsätta."
+confirmTitle = "Bekräfta att du vill ta bort"
+deleteButton = "Ta bort"
+enterCode = "Bekräftelsekod"
+enterCodeBelow = "Ange koden exakt som ovan (skiftlägeskänsligt)"
+initiateDelete = "Ta bort all data"
+irreversible = "OÅTERKALLELIGT"
+success = "Lyckades"
+successMessage = "All granskningsdata har rensats"
+warning1 = "Denna åtgärd kan inte ångras"
+warning2 = "Att ta bort granskningsdata tar permanent bort alla historiska granskningsloggar, inklusive säkerhetshändelser, användaraktiviteter och filåtgärder från databasen."
+
+[audit.error]
+title = "Fel vid inläsning av granskningssystemet"
 
 [audit.events]
 actions = "Åtgärder"
@@ -1728,40 +1689,81 @@ type = "Typ"
 user = "Användare"
 viewDetails = "Visa detaljer"
 
+[audit.export]
+clearFilters = "Rensa"
+description = "Exportera granskningshändelser till CSV- eller JSON-format. Använd filter för att begränsa den exporterade datan."
+endDate = "Slutdatum"
+error = "Det gick inte att exportera data"
+exportButton = "Exportera data"
+fieldAuthor = "Författare (från PDF)"
+fieldDate = "Datum"
+fieldDocumentName = "Dokumentnamn"
+fieldFileHash = "Filhash (SHA-256)"
+fieldIpAddress = "IP-adress"
+fieldOperationResults = "Åtgärdsresultat"
+fieldOutcome = "Utfall (Lyckat/Misslyckat)"
+fieldTool = "Verktyg"
+fieldUsername = "Användarnamn"
+filterByType = "Filtrera efter typ"
+filterByUser = "Filtrera efter användare"
+filters = "Filter (valfritt)"
+format = "Exportformat"
+selectFields = "Välj fält att inkludera"
+startDate = "Startdatum"
+title = "Exportera granskningsdata"
+verboseRequired = "Kräver VERBOSE-granskningsnivå"
+
 [audit.filters]
 allOutcomes = "Alla"
 failureOnly = "Endast misslyckade"
-last7Days = "Senaste 7 dagarna"
 last30Days = "Senaste 30 dagarna"
+last7Days = "Senaste 7 dagarna"
 outcomeFilter = "Utfall"
 quickPresets = "Snabbfilter"
 successOnly = "Endast lyckade"
 thisMonth = "Denna månad"
 today = "Idag"
 
+[audit.stats]
+activeUsers = "Aktiva användare"
+attention = "Åtgärd krävs"
+avgLatency = "Genomsnittlig latens"
+error = "Fel vid inläsning av statistik"
+errorLoadingStats = "Det gick inte att läsa in statistik"
+excellent = "Utmärkt"
+good = "Bra"
+noData = "Ej tillämpligt"
+successRate = "Lyckandefrekvens"
+title = "Översikt"
+totalEvents = "Totalt antal händelser"
+vsLastPeriod = "jämfört med föregående period"
+
+[audit.systemStatus]
+autoRefresh = "Automatisk uppdatering"
+autoRefreshLabel = "Uppdatera automatiskt var 30 s"
+captureBySettings = "Aktivera i inställningarna"
+capturedFields = "Registrerade fält"
+date = "Datum"
+days = "dagar"
+disabled = "Inaktiverad"
+documentName = "Dokumentnamn"
+enabled = "Aktiverad"
+fileHash = "Filhash"
+level = "Granskningsnivå"
+pdfAuthor = "PDF-författare"
+retention = "Lagringsperiod"
+status = "Granskningsloggning"
+title = "Systemstatus"
+tool = "Verktyg"
+totalEvents = "Totalt antal händelser"
+username = "Användarnamn"
+verboseOnly = "Endast VERBOSE"
+
 [audit.tabs]
 clearData = "Rensa data"
 dashboard = "Instrumentpanel"
 events = "Granskningshändelser"
 export = "Exportera"
-
-[audit.clearData]
-cancel = "Avbryt"
-codeDoesNotMatch = "Koden stämmer inte"
-codePlaceholder = "Skriv koden här"
-confirmationCode = "Bekräftelsekod"
-confirmationRequired = "Ta bort all granskningsdata"
-confirmMessage = "Detta tar permanent bort alla granskningsloggar. Ange bekräftelsekoden nedan för att fortsätta."
-confirmTitle = "Bekräfta att du vill ta bort"
-deleteButton = "Ta bort"
-enterCode = "Bekräftelsekod"
-enterCodeBelow = "Ange koden exakt som ovan (skiftlägeskänsligt)"
-initiateDelete = "Ta bort all data"
-irreversible = "OÅTERKALLELIGT"
-success = "Lyckades"
-successMessage = "All granskningsdata har rensats"
-warning1 = "Denna åtgärd kan inte ångras"
-warning2 = "Att ta bort granskningsdata tar permanent bort alla historiska granskningsloggar, inklusive säkerhetshändelser, användaraktiviteter och filåtgärder från databasen."
 
 [auth]
 accessDenied = "Åtkomst nekad"
@@ -2088,43 +2090,70 @@ keywords = "Nyckelord: odd, even"
 numbers = "Tal/intervall: 5, 10-20"
 progressions = "Progressioner: 3n, 4n+1"
 
+[certificateChoice.tooltip]
+header = "Certifikattyper"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "Hanteras av systemadministratörer"
+bullet2 = "Delas mellan auktoriserade användare"
+bullet3 = "Representerar företagets identitet, inte individen"
+bullet4 = "Bäst för: Officiella dokument, teamsignaturer"
+description = "Ett delat certifikat tillhandahållet av din organisation. Används för företagets signeringsbehörighet."
+title = "Organisationscertifikat"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "Genereras automatiskt vid första användning"
+bullet2 = "Kopplat till ditt användarkonto"
+bullet3 = "Kan inte delas med andra användare"
+bullet4 = "Bäst för: Personliga dokument, individuellt ansvar"
+description = "Ett automatiskt genererat certifikat unikt för ditt användarkonto. Lämpligt för individuella signaturer."
+title = "Personligt certifikat"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "Kräver P12/PFX-fil och lösenord"
+bullet2 = "Kan utfärdas av externa certifikatutfärdare"
+bullet3 = "Högre tillitsnivå för juridiska dokument"
+bullet4 = "Bäst för: Juridiskt bindande avtal, extern validering"
+description = "Använd din egen PKCS#12-certifikatfil. Ger full kontroll över certifikategenskaper."
+title = "Ladda upp eget P12"
+
 [certSign]
 allSigned = "Alla deltagare har signerat. Klart att slutföra."
 awaitingSignatures = "Väntar på signaturer"
-signatureProgress = "{{signedCount}}/{{totalCount}} signaturer"
 chooseCertificate = "Välj certifikatfil"
-declined = "Avböjt"
-fetchFailed = "Det gick inte att läsa in signeringsdata"
-finalized = "Slutförd"
-notified = "Väntar"
-partialNote = "Du kan slutföra i förtid med nuvarande signaturer. Osignerade deltagare utesluts."
-pending = "Väntar"
-readyToFinalize = "Klart att slutföra"
-signed = "Signerad"
-viewed = "Visad"
 chooseJksFile = "Välj JKS-fil"
 chooseP12File = "Välj PKCS12-fil"
 choosePfxFile = "Välj PFX-fil"
 choosePrivateKey = "Välj fil med privat nyckel"
+declined = "Avböjt"
+fetchFailed = "Det gick inte att läsa in signeringsdata"
 filenamePrefix = "signerad"
+finalized = "Slutförd"
 location = "Plats"
 logoTitle = "Logotyp"
 name = "Namn"
 noLogo = "Ingen logotyp"
+notified = "Väntar"
 pageNumber = "Sidnummer"
+partialNote = "Du kan slutföra i förtid med nuvarande signaturer. Osignerade deltagare utesluts."
 password = "Ange ditt nyckellagerlösenord eller privata nyckellösenord (om tillämpligt):"
 passwordOptional = "Lämna tomt om inget lösenord"
+pending = "Väntar"
+readyToFinalize = "Klart att slutföra"
 reason = "Anledning"
 serverCertMessage = "Använder servercertifikat – inga filer eller lösenord krävs"
 showLogo = "Visa logo"
+signatureProgress = "{{signedCount}}/{{totalCount}} signaturer"
+signed = "Signerad"
 tags = "autentisera,PEM,P12,officiell,kryptera"
 title = "Certifikatsignering"
+viewed = "Visad"
 
 [certSign.appearance]
 invisible = "Osynlig"
 stepTitle = "Signaturutseende"
-visible = "Synlig"
 visibility = "Synlighet"
+visible = "Synlig"
 
 [certSign.appearance.options]
 title = "Signaturdetaljer"
@@ -2172,8 +2201,227 @@ title = "Vilket alternativ ska jag använda?"
 [certSign.certTypeStep]
 stepTitle = "Certifikatformat"
 
+[certSign.collab.addParticipants]
+add = "Lägg till {{count}} deltagare"
+back = "Tillbaka"
+configureSignatures = "Konfigurera signaturinställningar"
+continue = "Fortsätt till signaturinställningar"
+reasonHelp = "Förinställ en signeringsorsak för dessa deltagare (valfritt, de kan åsidosätta vid signering)"
+reasonPlaceholder = "t.ex. Godkännande, Granskning..."
+selectUsers = "Välj användare"
+
+[certSign.collab.finalize]
+button = "Slutför och ladda signerad PDF"
+early = "Slutför med nuvarande signaturer"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "Ogiltigt certifikat"
+certNetworkError = "Kunde inte validera certifikat"
+certValid = "✓ Giltigt certifikat"
+certValidating = "Validerar certifikat..."
+certValidUntil = " till {{date}}"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "Inkludera sammanfattningssida för signaturer"
+includeSummaryPageHelp = "En sammanfattningssida läggs till sist med all signaturmetadata. De digitala certifikatsignaturrutorna på enskilda sidor undertrycks (handskrivna signaturer påverkas inte)."
+
+[certSign.collab.sessionDetail]
+addButton = "Lägg till deltagare"
+addParticipants = "Lägg till deltagare"
+addParticipantsError = "Det gick inte att lägga till deltagare"
+backToList = "Tillbaka till sessioner"
+deleteConfirm = "Är du säker? Detta kan inte ångras."
+deleted = "Session borttagen"
+deleteError = "Det gick inte att ta bort sessionen"
+deleteSession = "Ta bort session"
+dueDate = "Sista datum"
+finalizeError = "Det gick inte att slutföra sessionen"
+loadPdfError = "Det gick inte att läsa in signerad PDF"
+loadSignedPdf = "Ladda in signerad PDF i aktiva filer"
+messageLabel = "Meddelande"
+noAdditionalInfo = "Ingen ytterligare information"
+owner = "Ägare"
+participantRemoved = "Deltagare borttagen"
+participants = "Deltagare"
+participantsAdded = "Deltagare har lagts till"
+removeParticipant = "Ta bort"
+removeParticipantError = "Det gick inte att ta bort deltagare"
+selectUsers = "Välj användare..."
+sessionInfo = "Sessionsinfo"
+workbenchTitle = "Sessionshantering"
+
+[certSign.collab.sessionList]
+active = "Aktiva"
+finalized = "Slutförda"
+
+[certSign.collab.signatureSettings]
+description = "Konfigurera hur signaturer ska visas för alla deltagare"
+title = "Signaturutseende"
+
+[certSign.collab.signRequest]
+addedToFiles = "Dokument tillagt i aktiva filer"
+addSignature = "Lägg till din signatur"
+addToFiles = "Lägg till i aktiva filer"
+advancedSettings = "Avancerade inställningar"
+backToList = "Tillbaka till signeringsförfrågningar"
+certificateChoice = "Välj ett certifikat att signera med"
+changeSignature = "Ändra signatur"
+clearSignature = "Rensa signatur"
+completeAndSign = "Slutför och signera"
+createNewSignature = "Skapa ny signatur"
+decline = "Avböj förfrågan"
+declineButton = "Avböj"
+deleteSelected = "Ta bort vald signatur"
+drawSignature = "Rita din signatur nedan"
+dueDate = "Sista datum"
+fileTooLarge = "Filstorleken måste vara under 5 MB"
+fontFamily = "Typsnittsfamilj"
+fontSize = "Teckenstorlek: {{size}}px"
+fontSizePlaceholder = "Storlek"
+from = "Från"
+invalidCertFile = "Välj en P12- eller PFX-certifikatfil"
+invalidFileType = "Välj en bildfil"
+location = "Plats (valfritt)"
+locationPlaceholder = "Var signerar du från?"
+message = "Meddelande"
+noCertificate = "Välj en certifikatfil"
+noSignatures = "Placera minst en signatur på PDF:en"
+p12File = "P12/PFX-certifikatfil"
+password = "Certifikatlösenord"
+passwordPlaceholder = "Ange lösenord..."
+penColor = "Pennfärg"
+penSize = "Pennstorlek: {{size}}px"
+placementActive = "Klicka på PDF:en för att placera"
+placeSignatureButton = "Placera signatur på PDF:en"
+reason = "Orsak (valfritt)"
+reasonPlaceholder = "Varför signerar du?"
+removeCertFile = "Ta bort fil"
+removeImage = "Ta bort bild"
+savedSignatures = "Sparade signaturer"
+selectFile = "Välj bildfil"
+selectSignatureTitle = "Välj eller skapa signatur"
+signatureInfo = "Dessa inställningar konfigureras av dokumentägaren"
+signaturePlaced = "Signatur placerad på sidan"
+signatureSettings = "Signaturinställningar"
+signatureText = "Signaturtext"
+signatureTextPlaceholder = "Ange ditt namn..."
+signatureTypeLabel = "Signaturtyp"
+signButton = "Signera dokument"
+signingTitle = "Signering"
+textColor = "Textfärg"
+typeSignature = "Skriv ditt namn för att skapa en signatur"
+uploadCert = "Eget certifikat"
+uploadCertDesc = "Använd ditt eget P12/PFX-certifikat"
+uploadSignature = "Ladda upp din signaturbild"
+usePersonalCert = "Personligt certifikat"
+usePersonalCertDesc = "Skapas automatiskt för ditt konto"
+useServerCert = "Organisationscertifikat"
+useServerCertDesc = "Delat organisationscertifikat"
+workbenchTitle = "Signeringsförfrågan"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "Välj linjefärg"
+continue = "Fortsätt"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "Ogiltigt certifikat: {{error}}"
+certInvalidFallback = "Ogiltigt certifikat"
+certNetworkError = "Kunde inte validera certifikat"
+certValidating = "Validerar certifikat..."
+certValidUntil = "Certifikatet giltigt till {{date}}"
+description = "Du har placerat {{count}} signatur(er). Välj ditt certifikat för att slutföra signeringen."
+sign = "Signera dokument"
+title = "Konfigurera certifikat"
+
+[certSign.collab.signRequest.image]
+hint = "Ladda upp en PNG- eller JPG-bild av din signatur"
+
+[certSign.collab.signRequest.mode]
+move = "Flytta signatur"
+place = "Placera signatur"
+title = "Läge för signering eller flytt"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "Rita"
+image = "Ladda upp"
+text = "Skriv"
+
+[certSign.collab.signRequest.placeSignature]
+message = "Klicka på PDF:en för att placera din signatur"
+title = "Placera signatur"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "Vald signatur"
+missing = "Ingen förhandsvisning"
+textFallback = "Signatur"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "Ritad signatur"
+defaultImageLabel = "Uppladdad signatur"
+defaultLabel = "Signatur"
+defaultTextLabel = "Skriven signatur"
+delete = "Ta bort signatur"
+none = "Inga sparade signaturer"
+
+[certSign.collab.signRequest.signatureType]
+draw = "Rita"
+type = "Skriv"
+upload = "Ladda upp"
+
+[certSign.collab.signRequest.steps]
+back = "Tillbaka"
+cancelPlacement = "Avbryt placering"
+certificate = "Certifikat"
+clickMultipleTimes = "Klicka på PDF:en flera gånger för att placera signaturer. Dra en signatur för att flytta eller ändra storlek."
+clickToPlace = "Klicka på PDF:en där du vill att din signatur ska visas."
+continue = "Fortsätt till certifikatval"
+continueToPlacement = "Fortsätt till placering"
+continueToReview = "Fortsätt till granskning"
+createSignature = "Skapa signatur"
+invisible = "Osynlig"
+location = "Plats:"
+multipleSignatures = "{{count}} signaturer kommer att tillämpas på PDF:en"
+oneSignature = "1 signatur kommer att tillämpas på PDF:en"
+placeOnPdf = "Placera på PDF:en"
+reason = "Orsak:"
+reviewTitle = "Granska före signering"
+signaturePlaced = "Signatur placerad på sidan {{page}}. Du kan justera positionen genom att klicka igen eller fortsätta till granskning."
+visibility = "Synlighet:"
+visible = "Synlig"
+yourSignatures = "Dina signaturer ({{count}})"
+
+[certSign.collab.signRequest.text]
+colorLabel = "Färg"
+fontLabel = "Typsnitt"
+fontSizeLabel = "Storlek"
+fontSizePlaceholder = "16"
+label = "Signaturtext"
+modalHint = "Ange ditt namn och klicka sedan på Fortsätt för att placera det på PDF:en."
+placeholder = "Ange ditt namn..."
+
+[certSign.collab.userSelector]
+inviteUsers = "Lägg till användare"
+loadError = "Det gick inte att läsa in användare"
+noTeam = "Inget team"
+noUsers = "Inga andra användare hittades."
+placeholder = "Välj användare..."
+
 [certSign.error]
 failed = "Ett fel inträffade vid bearbetning av signaturer."
+
+[certSign.mobile]
+panelActions = "Åtgärder"
+panelDocument = "Dokument"
+panelPeople = "Personer"
+
+[certSign.sessions]
+deleted = "Session borttagen"
+fetchFailed = "Det gick inte att läsa in sessionsdetaljer"
+finalized = "Session slutförd"
+loaded = "Signerad PDF inläst"
+pdfNotReady = "PDF inte klar"
+pdfNotReadyDesc = "Den signerade PDF:en genereras. Försök igen om en stund."
 
 [certSign.sign]
 results = "Signerad PDF"
@@ -2230,252 +2478,6 @@ bullet3 = "Kontrollerar om dokumentet ändrats efter signering"
 bullet4 = "Kan använda anpassade certifikat för verifiering"
 text = "När du kontrollerar signaturer berättar verktyget om de är giltiga, vem som undertecknat dokumentet, när det signerades och om dokumentet har ändrats efter signering."
 title = "Kontrollerar signaturer"
-
-[certSign.collab.finalize]
-button = "Slutför och ladda signerad PDF"
-early = "Slutför med nuvarande signaturer"
-
-[certSign.collab.sessionDetail]
-addButton = "Lägg till deltagare"
-addParticipants = "Lägg till deltagare"
-addParticipantsError = "Det gick inte att lägga till deltagare"
-backToList = "Tillbaka till sessioner"
-deleteConfirm = "Är du säker? Detta kan inte ångras."
-deleteError = "Det gick inte att ta bort sessionen"
-deleted = "Session borttagen"
-deleteSession = "Ta bort session"
-dueDate = "Sista datum"
-finalizeError = "Det gick inte att slutföra sessionen"
-loadPdfError = "Det gick inte att läsa in signerad PDF"
-loadSignedPdf = "Ladda in signerad PDF i aktiva filer"
-messageLabel = "Meddelande"
-noAdditionalInfo = "Ingen ytterligare information"
-owner = "Ägare"
-participantRemoved = "Deltagare borttagen"
-participants = "Deltagare"
-participantsAdded = "Deltagare har lagts till"
-removeParticipant = "Ta bort"
-removeParticipantError = "Det gick inte att ta bort deltagare"
-selectUsers = "Välj användare..."
-sessionInfo = "Sessionsinfo"
-workbenchTitle = "Sessionshantering"
-
-[certSign.collab.signRequest]
-addedToFiles = "Dokument tillagt i aktiva filer"
-addSignature = "Lägg till din signatur"
-addToFiles = "Lägg till i aktiva filer"
-advancedSettings = "Avancerade inställningar"
-backToList = "Tillbaka till signeringsförfrågningar"
-certificateChoice = "Välj ett certifikat att signera med"
-changeSignature = "Ändra signatur"
-clearSignature = "Rensa signatur"
-completeAndSign = "Slutför och signera"
-createNewSignature = "Skapa ny signatur"
-declineButton = "Avböj"
-decline = "Avböj förfrågan"
-deleteSelected = "Ta bort vald signatur"
-drawSignature = "Rita din signatur nedan"
-dueDate = "Sista datum"
-fileTooLarge = "Filstorleken måste vara under 5 MB"
-fontFamily = "Typsnittsfamilj"
-fontSize = "Teckenstorlek: {{size}}px"
-fontSizePlaceholder = "Storlek"
-from = "Från"
-invalidCertFile = "Välj en P12- eller PFX-certifikatfil"
-invalidFileType = "Välj en bildfil"
-location = "Plats (valfritt)"
-locationPlaceholder = "Var signerar du från?"
-message = "Meddelande"
-noCertificate = "Välj en certifikatfil"
-noSignatures = "Placera minst en signatur på PDF:en"
-p12File = "P12/PFX-certifikatfil"
-password = "Certifikatlösenord"
-passwordPlaceholder = "Ange lösenord..."
-penColor = "Pennfärg"
-penSize = "Pennstorlek: {{size}}px"
-placementActive = "Klicka på PDF:en för att placera"
-placeSignatureButton = "Placera signatur på PDF:en"
-reason = "Orsak (valfritt)"
-reasonPlaceholder = "Varför signerar du?"
-removeImage = "Ta bort bild"
-removeCertFile = "Ta bort fil"
-savedSignatures = "Sparade signaturer"
-selectFile = "Välj bildfil"
-selectSignatureTitle = "Välj eller skapa signatur"
-signButton = "Signera dokument"
-signatureInfo = "Dessa inställningar konfigureras av dokumentägaren"
-signaturePlaced = "Signatur placerad på sidan"
-signatureSettings = "Signaturinställningar"
-signatureText = "Signaturtext"
-signatureTextPlaceholder = "Ange ditt namn..."
-signatureTypeLabel = "Signaturtyp"
-signingTitle = "Signering"
-textColor = "Textfärg"
-typeSignature = "Skriv ditt namn för att skapa en signatur"
-uploadCert = "Eget certifikat"
-uploadCertDesc = "Använd ditt eget P12/PFX-certifikat"
-uploadSignature = "Ladda upp din signaturbild"
-usePersonalCert = "Personligt certifikat"
-usePersonalCertDesc = "Skapas automatiskt för ditt konto"
-useServerCert = "Organisationscertifikat"
-useServerCertDesc = "Delat organisationscertifikat"
-workbenchTitle = "Signeringsförfrågan"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "Välj linjefärg"
-continue = "Fortsätt"
-
-[certSign.collab.signRequest.certModal]
-description = "Du har placerat {{count}} signatur(er). Välj ditt certifikat för att slutföra signeringen."
-sign = "Signera dokument"
-certValidating = "Validerar certifikat..."
-certValidUntil = "Certifikatet giltigt till {{date}}"
-certInvalid = "Ogiltigt certifikat: {{error}}"
-certInvalidFallback = "Ogiltigt certifikat"
-certNetworkError = "Kunde inte validera certifikat"
-title = "Konfigurera certifikat"
-
-[certSign.collab.signRequest.image]
-hint = "Ladda upp en PNG- eller JPG-bild av din signatur"
-
-[certSign.collab.signRequest.mode]
-move = "Flytta signatur"
-place = "Placera signatur"
-title = "Läge för signering eller flytt"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "Rita"
-image = "Ladda upp"
-text = "Skriv"
-
-[certSign.collab.signRequest.placeSignature]
-message = "Klicka på PDF:en för att placera din signatur"
-title = "Placera signatur"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "Vald signatur"
-missing = "Ingen förhandsvisning"
-textFallback = "Signatur"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "Ritad signatur"
-defaultImageLabel = "Uppladdad signatur"
-defaultLabel = "Signatur"
-defaultTextLabel = "Skriven signatur"
-delete = "Ta bort signatur"
-none = "Inga sparade signaturer"
-
-[certSign.collab.signRequest.signatureType]
-draw = "Rita"
-type = "Skriv"
-upload = "Ladda upp"
-
-[certSign.collab.signRequest.steps]
-back = "Tillbaka"
-cancelPlacement = "Avbryt placering"
-certificate = "Certifikat"
-clickMultipleTimes = "Klicka på PDF:en flera gånger för att placera signaturer. Dra en signatur för att flytta eller ändra storlek."
-clickToPlace = "Klicka på PDF:en där du vill att din signatur ska visas."
-continue = "Fortsätt till certifikatval"
-continueToPlacement = "Fortsätt till placering"
-continueToReview = "Fortsätt till granskning"
-createSignature = "Skapa signatur"
-invisible = "Osynlig"
-location = "Plats:"
-multipleSignatures = "{{count}} signaturer kommer att tillämpas på PDF:en"
-oneSignature = "1 signatur kommer att tillämpas på PDF:en"
-placeOnPdf = "Placera på PDF:en"
-reason = "Orsak:"
-reviewTitle = "Granska före signering"
-signaturePlaced = "Signatur placerad på sidan {{page}}. Du kan justera positionen genom att klicka igen eller fortsätta till granskning."
-visible = "Synlig"
-visibility = "Synlighet:"
-yourSignatures = "Dina signaturer ({{count}})"
-
-[certSign.collab.signRequest.text]
-colorLabel = "Färg"
-fontLabel = "Typsnitt"
-fontSizeLabel = "Storlek"
-fontSizePlaceholder = "16"
-label = "Signaturtext"
-modalHint = "Ange ditt namn och klicka sedan på Fortsätt för att placera det på PDF:en."
-placeholder = "Ange ditt namn..."
-
-[certSign.collab.participant]
-certValidating = "Validerar certifikat..."
-certValid = "✓ Giltigt certifikat"
-certValidUntil = " till {{date}}"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "Ogiltigt certifikat"
-certNetworkError = "Kunde inte validera certifikat"
-
-[certSign.collab.addParticipants]
-add = "Lägg till {{count}} deltagare"
-back = "Tillbaka"
-configureSignatures = "Konfigurera signaturinställningar"
-continue = "Fortsätt till signaturinställningar"
-reasonHelp = "Förinställ en signeringsorsak för dessa deltagare (valfritt, de kan åsidosätta vid signering)"
-reasonPlaceholder = "t.ex. Godkännande, Granskning..."
-selectUsers = "Välj användare"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "Inkludera sammanfattningssida för signaturer"
-includeSummaryPageHelp = "En sammanfattningssida läggs till sist med all signaturmetadata. De digitala certifikatsignaturrutorna på enskilda sidor undertrycks (handskrivna signaturer påverkas inte)."
-
-[certSign.collab.sessionList]
-active = "Aktiva"
-finalized = "Slutförda"
-
-[certSign.collab.signatureSettings]
-description = "Konfigurera hur signaturer ska visas för alla deltagare"
-title = "Signaturutseende"
-
-[certSign.collab.userSelector]
-inviteUsers = "Lägg till användare"
-loadError = "Det gick inte att läsa in användare"
-noTeam = "Inget team"
-noUsers = "Inga andra användare hittades."
-placeholder = "Välj användare..."
-
-[certSign.mobile]
-panelActions = "Åtgärder"
-panelDocument = "Dokument"
-panelPeople = "Personer"
-
-[certSign.sessions]
-deleted = "Session borttagen"
-fetchFailed = "Det gick inte att läsa in sessionsdetaljer"
-finalized = "Session slutförd"
-loaded = "Signerad PDF inläst"
-pdfNotReady = "PDF inte klar"
-pdfNotReadyDesc = "Den signerade PDF:en genereras. Försök igen om en stund."
-
-[certificateChoice.tooltip]
-header = "Certifikattyper"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "Hanteras av systemadministratörer"
-bullet2 = "Delas mellan auktoriserade användare"
-bullet3 = "Representerar företagets identitet, inte individen"
-bullet4 = "Bäst för: Officiella dokument, teamsignaturer"
-description = "Ett delat certifikat tillhandahållet av din organisation. Används för företagets signeringsbehörighet."
-title = "Organisationscertifikat"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "Genereras automatiskt vid första användning"
-bullet2 = "Kopplat till ditt användarkonto"
-bullet3 = "Kan inte delas med andra användare"
-bullet4 = "Bäst för: Personliga dokument, individuellt ansvar"
-description = "Ett automatiskt genererat certifikat unikt för ditt användarkonto. Lämpligt för individuella signaturer."
-title = "Personligt certifikat"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "Kräver P12/PFX-fil och lösenord"
-bullet2 = "Kan utfärdas av externa certifikatutfärdare"
-bullet3 = "Högre tillitsnivå för juridiska dokument"
-bullet4 = "Bäst för: Juridiskt bindande avtal, extern validering"
-description = "Använd din egen PKCS#12-certifikatfil. Ger full kontroll över certifikategenskaper."
-title = "Ladda upp eget P12"
 
 [changeCreds]
 changePassword = "Du använder standardinloggningsuppgifter. Vänligen ange ett nytt lösenord"
@@ -2657,6 +2659,9 @@ title = "Ändra behörigheter"
 
 [changePermissions.tooltip.warning]
 text = "För att göra dessa behörigheter oföränderliga, använd verktyget Lägg till lösenord för att ange ett ägarlösenord."
+
+[cloudBadge]
+tooltip = "Denna åtgärd kommer att använda dina molnkrediter"
 
 [colorPicker]
 title = "Välj färg"
@@ -2998,9 +3003,11 @@ blackwhite = "Svartvitt"
 cbrDpi = "DPI för bildrendering"
 cbrOptions = "CBR-alternativ"
 cbrOutputOptions = "Alternativ för PDF till CBR"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "DPI för bildrendering"
 cbzOptions = "CBZ till PDF‑alternativ"
 cbzOutputOptions = "PDF till CBZ‑alternativ"
+cbzToPdf = "CBZ → PDF"
 color = "Färg"
 colorType = "Färgtyp"
 combineImages = "Kombinera bilder"
@@ -3018,13 +3025,16 @@ desc = "Konvertera filer mellan olika format"
 downloadConverted = "Ladda ner konverterad fil"
 downloadHtml = "Ladda ner HTML‑mellanfil i stället för PDF"
 dpi = "DPI"
+ebookToPdf = "E-bok → PDF"
 emailOptions = "E‑post till PDF‑alternativ"
+emlToPdf = "E-post → PDF"
 errorConversion = "Ett fel inträffade vid konvertering av filen."
 errorNoFiles = "Välj minst en fil att konvertera."
 errorNoFormat = "Välj både käll- och målformat."
 errorNotSupported = "Konvertering från {{from}} till {{to}} stöds inte."
 fileFormat = "Filformat"
 files = "Filer"
+fileToPdf = "Office/dokument → PDF"
 fillPage = "Fyll sida"
 fitDocumentToPage = "Anpassa dokument till sida"
 fitOption = "Anpassningsalternativ"
@@ -3052,6 +3062,9 @@ pdfaFormat = "PDF/A-format"
 pdfaNote = "PDF/A-1b är mer kompatibel, PDF/A-2b stöder fler funktioner."
 pdfaOptions = "PDF/A‑alternativ"
 pdfOptions = "PDF‑alternativ"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X är en ISO-standardiserad PDF-delmängd för tillförlitlig tryckning och grafikutbyte."
 pdfxDigitalSignatureWarning = "PDF-filen innehåller en digital signatur. Detta kommer att tas bort i nästa steg."
 pptExt = "PowerPoint (.pptx)"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "Källformat"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "Målformat"
 textRtf = "Text/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "Webb till PDF‑alternativ"
 wordDoc = "Word‑dokument"
 wordDocExt = "Word‑dokument (.docx)"
 zoomLevel = "Zoomnivå"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "E-bok → PDF"
-emlToPdf = "E-post → PDF"
-fileToPdf = "Office/dokument → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "Alternativ för e-bok till PDF"
@@ -3147,6 +3152,77 @@ description = "These cookies are essential for the website to function properly.
 [cookieBanner.services]
 posthog = "PostHog Analytics"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "Aktivera debitering vid överförbrukning"
+maybeLater = "Kanske senare"
+upgrade = "Uppgradera"
+
+[credits.insufficient]
+brief = "Otillräckliga krediter. Du behöver {{required}} krediter men har {{current}}."
+freeTier = "Uppgradera till Team för 10x fler krediter och obegränsad debitering vid överförbrukning."
+managedMember = "Kontakta din teamledare för hjälp."
+message = "Du har inte tillräckligt med krediter för att köra {{tool}}. Du har för närvarande {{current}} krediter."
+messageWithAmount = "Du behöver {{required}} krediter för att köra {{tool}}, men du har bara {{current}}."
+teamMember = "Aktivera debitering vid överförbrukning för att aldrig få slut på krediter."
+title = "Otillräckliga krediter"
+
+[credits.modal]
+advancedMonitoring = "Avancerad övervakning"
+allInOneWorkspace = "Allt-i-ett PDF-arbetsyta (visare, verktyg och agent)"
+apiSandbox = "API-sandbox"
+contactSales = "Kontakta säljteamet"
+creditsRemaining = "{{current}} av {{total}} kvar"
+creditsThisMonth = "Månatliga krediter"
+current = "Nuvarande plan"
+customPricing = "Anpassad"
+customSmartFolders = "Anpassade smarta mappar"
+dedicatedSupportSlas = "Dedikerad support och SLA:er"
+enterpriseSubscription = "Enterprise"
+everythingInCredits = "Allt i Credits, plus:"
+everythingInFree = "Allt i Free, plus:"
+fasterThroughput = "10x snabbare genomströmning"
+forRegularWork = "För regelbundet PDF-arbete:"
+freeTier = "Gratisnivå"
+fullyPrivateFiles = "Helt privata filer"
+largeFileProcessing = "Hantering av stora filer"
+managedMemberMessage = "Du har obegränsad tillgång till krediter via ditt team. Om du behöver hjälp, kontakta din teamledare."
+managedMemberTitle = "Obegränsade krediter"
+meteringBillingNote = "Krediter för överförbrukning debiteras månadsvis tillsammans med din Team-prenumeration. Följ din användning när som helst i kontoinställningarna."
+meteringExplanation = "Din Team-plan inkluderar {{credits}} krediter per månad. När de tar slut tillhandahåller debitering vid överförbrukning automatiskt extra krediter så att du aldrig behöver sluta arbeta."
+meteringIncluded = "{{credits}} krediter/månad ingår med Team"
+meteringNeverRunOut = "Få aldrig slut på krediter"
+meteringNoCommitment = "Ingen bindningstid, avbryt när som helst"
+meteringPayAsYouGo = "Betala bara för det du använder"
+meteringPrice = "Ytterligare krediter för {{price}}/kredit"
+meteringTitle = "Betala‑för‑användning vid överförbrukning"
+monthlyCredits = "månatliga krediter"
+orgWideAccess = "Organisationstäckande åtkomstkontroller"
+overage = "överförbrukning"
+perMonth = "/månad"
+popular = "Populär"
+premiumAiModels = "Premium AI-modeller"
+prioritySupport = "Prioriterad support"
+privateDocCloud = "Privat dokumentmoln"
+ragFineTuning = "RAG + finjustering"
+secureApiAccess = "Säker API-åtkomst"
+selfHostLink = "Granska dokumentation och planer"
+selfHostPrompt = "Vill du självhosta?"
+standardThroughput = "Standardgenomströmning"
+subtitle = "Uppgradera till Team för 10x fler krediter och snabbare bearbetning."
+subtitlePro = "Aktivera automatisk debitering vid överförbrukning för att aldrig få slut på krediter."
+teamLeaderOnly = "Endast teamledare kan aktivera debitering vid överförbrukning"
+teamSubscription = "Team"
+titleExhausted = "Du har använt dina gratiskrediter"
+titleExhaustedPro = "Du har slut på krediter"
+unlimitedApiAccess = "Obegränsad API-åtkomst"
+unlimitedMonthlyCredits = "Sitelicens"
+unlimitedSeats = "Obegränsat antal platser"
+
+[credits.modal.features]
+everythingInCredits = "Allt i Credits, plus:"
+everythingInFree = "Allt i Free, plus:"
+forRegularWork = "För regelbundet PDF-arbete:"
 
 [crop]
 autoCrop = "Auto-beskär tomrum"
@@ -3352,6 +3428,9 @@ successBodyWithName = "Lösenord borttaget från {{fileName}}"
 successTitle = "Lösenord borttaget"
 title = "Ta bort lösenord för att fortsätta"
 unlock = "Lås upp och fortsätt"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "Lås upp PDF för att fortsätta"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "Lägg till filer"
 [fileManager]
 active = "Aktiv"
 addToUpload = "Lägg till i uppladdning"
+changesNotUploaded = "Ändringar inte uppladdade"
 clearAll = "Rensa allt"
 clearSelection = "Rensa markering"
 clickToUpload = "Klicka för att ladda upp filer"
 closeFile = "Stäng fil"
+cloudFile = "Molnfil"
+copyCreated = "Kopia sparad på den här enheten."
+copyFailed = "Kunde inte skapa en kopia."
 delete = "Radera"
 deleteAll = "Ta bort alla"
 deleteSelected = "Ta bort valda"
@@ -3486,14 +3569,24 @@ fileSize = "Storlek"
 filesSelected = "filer valda"
 filesStored = "filer lagrade"
 fileVersion = "Version"
+filterAll = "Alla"
+filterLocal = "Lokalt"
+filterSharedByMe = "Delad av mig"
+filterSharedWithMe = "Delad med mig"
 googleDrive = "Google Drive"
 googleDriveNotAvailable = "Google Drive-integration är inte tillgänglig"
 googleDriveShort = "Drive"
 hideHistory = "Dölj historik"
 lastModified = "Senast ändrad"
+lastSynced = "Senast synkroniserad"
+leaveShare = "Ta bort från min lista"
+leaveShareFailed = "Kunde inte ta bort den delade filen."
+leaveShareSuccess = "Borttagen från din delningslista."
 loadingFiles = "Läser in filer..."
 loadingHistory = "Läser in historik..."
 localFiles = "Lokala filer"
+localOnly = "Endast lokalt"
+makeCopy = "Skapa en kopia"
 mobileShort = "Mobil"
 mobileUpload = "Mobiluppladdning"
 mobileUploadNotAvailable = "Mobiluppladdning inte aktiverad"
@@ -3506,36 +3599,10 @@ openFile = "Öppna fil"
 openFiles = "Öppna filer"
 openInFileEditor = "Öppna i filredigeraren"
 openInPageEditor = "Öppna i sidredigeraren"
+owner = "Ägare"
+ownerUnknown = "Okänd"
 recent = "Senaste"
 reloadFiles = "Ladda om filer"
-restore = "Återställ"
-saveSelected = "Spara markerade"
-searchFiles = "Sök filer..."
-selectAll = "Välj allt"
-selectedCount = "{{count}} markerade"
-selectedFiles = "Markerade filer"
-showAll = "Visa alla"
-showHistory = "Visa historik"
-sortByDate = "Sortera efter datum"
-sortByName = "Sortera efter namn"
-sortBySize = "Sortera efter storlek"
-storage = "Lagring"
-storageCleared = "Webbläsaren rensade lagringen. Filerna har tagits bort. Ladda upp igen."
-storageError = "Ett lagringsfel inträffade"
-storageLow = "Lagringen håller på att ta slut. Överväg att ta bort gamla filer."
-subtitle = "Lägg till filer i din lagring för enkel åtkomst i verktygen"
-supportMessage = "Drivs av webbläsarens databaslagring för obegränsad kapacitet"
-title = "Ladda upp PDF-filer"
-toolChain = "Tillämpade verktyg"
-totalSelected = "Totalt markerade"
-unsupported = "Stöds inte"
-unzip = "Packa upp"
-uploadError = "Det gick inte att ladda upp vissa filer."
-copyCreated = "Kopia sparad på den här enheten."
-copyFailed = "Kunde inte skapa en kopia."
-leaveShare = "Ta bort från min lista"
-leaveShareFailed = "Kunde inte ta bort den delade filen."
-leaveShareSuccess = "Borttagen från din delningslista."
 removeBoth = "Ta bort från båda"
 removeFilePrompt = "Den här filen är sparad på den här enheten och på din server. Var vill du ta bort den?"
 removeFileTitle = "Ta bort fil"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "Borttagen från servern."
 removeSharedPrompt = "Den här filen är delad med dig. Du kan ta bort den från den här enheten eller din delningslista."
 removeSharedServerOnlyBlockedPrompt = "Den här filen är delad med dig och lagras endast på servern."
 removeSharedServerOnlyPrompt = "Den här filen är delad med dig och lagras endast på servern. Ta bort den från din lista?"
-changesNotUploaded = "Ändringar inte uppladdade"
-cloudFile = "Molnfil"
-filterAll = "Alla"
-filterLocal = "Lokalt"
-filterSharedByMe = "Delad av mig"
-filterSharedWithMe = "Delad med mig"
-lastSynced = "Senast synkroniserad"
-localOnly = "Endast lokalt"
-makeCopy = "Skapa en kopia"
-owner = "Ägare"
-ownerUnknown = "Okänd"
+restore = "Återställ"
+saveSelected = "Spara markerade"
+searchFiles = "Sök filer..."
+selectAll = "Välj allt"
+selectedCount = "{{count}} markerade"
+selectedFiles = "Markerade filer"
 share = "Dela"
-shareSelected = "Dela valda"
 sharedByYou = "Delad av dig"
 sharedEditNoticeBody = "Du har inte redigeringsrättigheter till serverversionen av den här filen. Alla ändringar du gör sparas som en lokal kopia."
 sharedEditNoticeConfirm = "Jag förstår"
 sharedEditNoticeTitle = "Skrivskyddad serverkopia"
 sharedWithYou = "Delad med dig"
+shareSelected = "Dela valda"
 sharing = "Delning"
+showAll = "Visa alla"
+showHistory = "Visa historik"
+sortByDate = "Sortera efter datum"
+sortByName = "Sortera efter namn"
+sortBySize = "Sortera efter storlek"
+storage = "Lagring"
+storageCleared = "Webbläsaren rensade lagringen. Filerna har tagits bort. Ladda upp igen."
+storageError = "Ett lagringsfel inträffade"
+storageLow = "Lagringen håller på att ta slut. Överväg att ta bort gamla filer."
 storageState = "Lagring"
+subtitle = "Lägg till filer i din lagring för enkel åtkomst i verktygen"
+supportMessage = "Drivs av webbläsarens databaslagring för obegränsad kapacitet"
 synced = "Synkroniserad"
+title = "Ladda upp PDF-filer"
+toolChain = "Tillämpade verktyg"
+totalSelected = "Totalt markerade"
+unsupported = "Stöds inte"
+unzip = "Packa upp"
 updateOnServer = "Uppdatera på servern"
+uploadError = "Det gick inte att ladda upp vissa filer."
 uploadSelected = "Ladda upp valda"
 uploadToServer = "Ladda upp till servern"
 
@@ -3696,77 +3775,6 @@ title = "Om att platta ut PDF:er"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "Om gruppsignering"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "Alla signaturer tillämpas i den deltagarordning du angav"
-bullet2 = "Du kan slutföra med ofullständiga signaturer vid behov"
-bullet3 = "När den väl är slutförd kan sessionen inte ändras"
-description = "När alla deltagare har signerat (eller om du väljer att slutföra i förtid) kan du generera den slutliga signerade PDF:en."
-title = "Slutförandeprocess"
-
-[groupSigning.tooltip.roles]
-bullet1 = "Ägare (du): Skapar session, konfigurerar signaturstandarder, slutför dokumentet"
-bullet2 = "Deltagare: Skapar sin signatur, väljer certifikat, placerar på PDF:en"
-bullet3 = "Deltagare kan inte ändra inställningar för signatursynlighet, orsak eller plats"
-description = "Du styr inställningarna för signaturutseende för alla deltagare."
-title = "Deltagarroller"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "Första deltagaren måste signera innan den andra kan få åtkomst till dokumentet"
-bullet2 = "Säkerställer korrekt signeringsordning för regelefterlevnad"
-bullet3 = "Du kan ändra ordningen genom att dra deltagare i listan"
-description = "Deltagarna signerar dokument i den ordning du anger. Varje undertecknare får en avisering när det är deras tur."
-title = "Sekventiell signering"
-
-[groupSigning.steps]
-back = "Tillbaka"
-completed = "Slutfört"
-current = "Aktuell"
-stepLabel = "Steg {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "Fortsätt till granskning"
-invisible = "Signaturer kommer att vara osynliga (endast metadata)"
-locationLabel = "Plats:"
-preview = "Förhandsvisa"
-reasonLabel = "Orsak:"
-title = "Konfigurera signaturinställningar"
-visible = "Signaturer kommer att vara synliga på sidan {{page}}"
-
-[groupSigning.steps.review]
-document = "Dokument"
-dueDate = "Sista datum (valfritt)"
-dueDatePlaceholder = "Välj sista datum..."
-invisible = "Osynlig (endast metadata)"
-location = "Plats:"
-logo = "Logotyp:"
-logoHidden = "Ingen logotyp"
-logoShown = "Stirling PDF-logotyp visas"
-participants = "Deltagare"
-reason = "Orsak:"
-send = "Skicka signeringsförfrågningar"
-signatureSettings = "Signaturinställningar"
-title = "Granska sessionsdetaljer"
-titleShort = "Granska och skicka"
-visibility = "Synlighet:"
-visible = "Synlig på sidan {{page}}"
-participantCount = "{{count}} deltagare kommer att signera i ordning"
-
-[groupSigning.steps.selectDocument]
-continue = "Fortsätt till deltagarval"
-noFile = "Välj en enda PDF-fil från dina aktiva filer för att skapa en signeringssession."
-selectedFile = "Valt dokument"
-title = "Välj dokument"
-
-[groupSigning.steps.selectParticipants]
-continue = "Fortsätt till signaturinställningar"
-count = "{{count}} deltagare valda"
-label = "Välj deltagare"
-placeholder = "Välj deltagare som ska signera..."
-title = "Välj deltagare"
-
 [getPdfInfo]
 downloadJson = "Ladda ner JSON"
 downloads = "Nedladdningar"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "Lager"
 multimedia = "Multimedia"
 
+[groupSigning.steps]
+back = "Tillbaka"
+completed = "Slutfört"
+current = "Aktuell"
+stepLabel = "Steg {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "Fortsätt till granskning"
+invisible = "Signaturer kommer att vara osynliga (endast metadata)"
+locationLabel = "Plats:"
+preview = "Förhandsvisa"
+reasonLabel = "Orsak:"
+title = "Konfigurera signaturinställningar"
+visible = "Signaturer kommer att vara synliga på sidan {{page}}"
+
+[groupSigning.steps.review]
+document = "Dokument"
+dueDate = "Sista datum (valfritt)"
+dueDatePlaceholder = "Välj sista datum..."
+invisible = "Osynlig (endast metadata)"
+location = "Plats:"
+logo = "Logotyp:"
+logoHidden = "Ingen logotyp"
+logoShown = "Stirling PDF-logotyp visas"
+participantCount = "{{count}} deltagare kommer att signera i ordning"
+participants = "Deltagare"
+reason = "Orsak:"
+send = "Skicka signeringsförfrågningar"
+signatureSettings = "Signaturinställningar"
+title = "Granska sessionsdetaljer"
+titleShort = "Granska och skicka"
+visibility = "Synlighet:"
+visible = "Synlig på sidan {{page}}"
+
+[groupSigning.steps.selectDocument]
+continue = "Fortsätt till deltagarval"
+noFile = "Välj en enda PDF-fil från dina aktiva filer för att skapa en signeringssession."
+selectedFile = "Valt dokument"
+title = "Välj dokument"
+
+[groupSigning.steps.selectParticipants]
+continue = "Fortsätt till signaturinställningar"
+count = "{{count}} deltagare valda"
+label = "Välj deltagare"
+placeholder = "Välj deltagare som ska signera..."
+title = "Välj deltagare"
+
+[groupSigning.tooltip]
+header = "Om gruppsignering"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "Alla signaturer tillämpas i den deltagarordning du angav"
+bullet2 = "Du kan slutföra med ofullständiga signaturer vid behov"
+bullet3 = "När den väl är slutförd kan sessionen inte ändras"
+description = "När alla deltagare har signerat (eller om du väljer att slutföra i förtid) kan du generera den slutliga signerade PDF:en."
+title = "Slutförandeprocess"
+
+[groupSigning.tooltip.roles]
+bullet1 = "Ägare (du): Skapar session, konfigurerar signaturstandarder, slutför dokumentet"
+bullet2 = "Deltagare: Skapar sin signatur, väljer certifikat, placerar på PDF:en"
+bullet3 = "Deltagare kan inte ändra inställningar för signatursynlighet, orsak eller plats"
+description = "Du styr inställningarna för signaturutseende för alla deltagare."
+title = "Deltagarroller"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "Första deltagaren måste signera innan den andra kan få åtkomst till dokumentet"
+bullet2 = "Säkerställer korrekt signeringsordning för regelefterlevnad"
+bullet3 = "Du kan ändra ordningen genom att dra deltagare i listan"
+description = "Deltagarna signerar dokument i den ordning du anger. Varje undertecknare får en avisering när det är deras tur."
+title = "Sekventiell signering"
+
 [guestBanner]
 dismiss = "Stäng bannern"
 message = "Skapa ett gratis konto för att spara ditt arbete, få tillgång till fler funktioner och stödja projektet."
@@ -3935,10 +4014,6 @@ title = "Annotera"
 desc = "Skapa flerstegade arbetsflöden genom att kedja ihop PDF‑åtgärder. Perfekt för återkommande uppgifter."
 tags = "arbetsflöde,sekvens,automation"
 title = "Automatisera"
-
-[home.formFill]
-desc = "Fyll i PDF-formulärfält interaktivt med en visuell redigerare"
-title = "Fyll i formulär"
 
 [home.autoRename]
 desc = "Byter automatiskt namn på en PDF baserat på detekterad rubrik"
@@ -4034,6 +4109,10 @@ title = "Extrahera sidor"
 desc = "Ta bort alla interaktiva element och formulär från en PDF"
 tags = "förenkla,ta bort,interaktiv"
 title = "Platta till"
+
+[home.formFill]
+desc = "Fyll i PDF-formulärfält interaktivt med en visuell redigerare"
+title = "Fyll i formulär"
 
 [home.getPdfInfo]
 desc = "Hämtar all möjlig information om PDF:er"
@@ -4185,11 +4264,6 @@ desc = "Lägger till signatur till PDF genom ritning, text eller bild"
 tags = "signatur,autograf"
 title = "Signera"
 
-[home.timestampPdf]
-desc = "Lägg till en RFC 3161-dokumenttidsstämpel för att bevisa när din PDF fanns"
-tags = "tidsstämpel,RFC 3161,TSA,time stamp authority,dokumenttidsstämpel,bevis på existens,tidsstämpeltoken,betrodd tidsstämpel,signera tidsstämpel,notarisera"
-title = "Tidsstämpla PDF"
-
 [home.split]
 desc = "Dela upp PDF-filer i flera dokument"
 tags = "dela,separera,bryta"
@@ -4209,6 +4283,11 @@ title = "Dela PDF efter sektioner"
 desc = "Visa API‑dokumentation och testa slutpunkter"
 tags = "API,dokumentation,test"
 title = "API‑dokumentation"
+
+[home.timestampPdf]
+desc = "Lägg till en RFC 3161-dokumenttidsstämpel för att bevisa när din PDF fanns"
+tags = "tidsstämpel,RFC 3161,TSA,time stamp authority,dokumenttidsstämpel,bevis på existens,tidsstämpeltoken,betrodd tidsstämpel,signera tidsstämpel,notarisera"
+title = "Tidsstämpla PDF"
 
 [home.unlockPDFForms]
 desc = "Ta bort skrivskydd på formulärfält i ett PDF‑dokument."
@@ -4298,6 +4377,8 @@ welcomeTitle = "Du har bjudits in!"
 
 [landing]
 addFiles = "Lägg till filer"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "Ladda upp från mobil"
 openFromComputer = "Öppna från dator"
 uploadFromComputer = "Ladda upp från datorn"
@@ -4321,6 +4402,18 @@ module = "Modul"
 nav = "Licenser"
 title = "Tredjepartslicenser"
 version = "Version"
+
+[localMode]
+toolUnavailable = "Detta verktyg kräver ett konto. Logga in på Stirling Cloud eller anslut till en självhostad server för att använda det."
+
+[localMode.banner]
+message = "Logga in för att låsa upp alla verktyg."
+signIn = "Logga in"
+title = "Körs lokalt"
+
+[localMode.toolPicker]
+message = "Logga in för att låsa upp alla verktyg."
+signIn = "Logga in"
 
 [login]
 accountCreatedSuccess = "Kontot har skapats! Du kan nu logga in."
@@ -4382,12 +4475,12 @@ sendResetLink = "Skicka återställningslänk"
 sessionExpired = "Din session har gått ut. Logga in igen."
 signin = "Logga in"
 signInAnonymously = "Logga in som gäst"
-subtitle = "Logga in igen i Stirling PDF"
 signingIn = "Loggar in..."
 signinTitle = "Vänligen logga in"
 signInWith = "Logga in med"
 signOut = "Logga ut"
 ssoSignIn = "Logga in via enkel inloggning"
+subtitle = "Logga in igen i Stirling PDF"
 title = "Logga in"
 toManySessions = "Du har för många aktiva sessioner"
 unexpectedError = "Oväntat fel: {{message}}"
@@ -4430,9 +4523,11 @@ tags = "markup,webbinnehåll,transformation,konvertera"
 title = "Markdown till PDF"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "Slå samman"
 tags = "sammanfoga,Sidoperationer,Backend,serversida"
 title = "Sammanfoga"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "Ett fel inträffade vid sammanslagning av PDF:erna."
@@ -4701,15 +4796,6 @@ viewSwitcher = "Använd dessa kontroller för att välja hur du vill visa dina P
 workbench = "Detta är <strong>Arbetsbänken</strong> - huvudområdet där du visar och redigerar dina PDF:er."
 wrapUp = "Allt klart! Du har lärt dig om appens huvudområden och hur du använder dem. Klicka på knappen <strong>Hjälp</strong> när du vill för att se denna rundtur igen."
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "När din provperiod slutar fortsätter du med vår gratisnivå. Lägg till en betalningsmetod för att behålla Pro-åtkomst."
-afterTrialWithPayment = "Din Pro-prenumeration startar automatiskt när provperioden slutar."
-body = "Du har full tillgång till Stirling PDF Pro-funktioner under provperioden. Njut av obegränsade konverteringar, större filstorlekar och prioriterad behandling."
-daysRemaining = "{{days}} dagar kvar"
-daysRemainingSingular = "{{days}} dag kvar"
-title = "Din 30-dagars Pro-provperiod"
-trialEnds = "Provperioden slutar {{date}}"
-
 [onboarding.buttons]
 back = "Tillbaka"
 download = "Ladda ner →"
@@ -4722,6 +4808,15 @@ skipTheTour = "Hoppa över rundturen"
 body = "Stirling fungerar bäst som ett skrivbordsprogram. Du kan använda det offline, komma åt dokument snabbare och göra redigeringar lokalt på din dator."
 title = "Ladda ner"
 titleWithOs = "Ladda ner för {{osLabel}}"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "När din provperiod slutar fortsätter du med vår gratisnivå. Lägg till en betalningsmetod för att behålla Pro-åtkomst."
+afterTrialWithPayment = "Din Pro-prenumeration startar automatiskt när provperioden slutar."
+body = "Du har full tillgång till Stirling PDF Pro-funktioner under provperioden. Njut av obegränsade konverteringar, större filstorlekar och prioriterad behandling."
+daysRemaining = "{{days}} dagar kvar"
+daysRemainingSingular = "{{days}} dag kvar"
+title = "Din 30-dagars Pro-provperiod"
+trialEnds = "Provperioden slutar {{date}}"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "När du aktiverar inloggningsläge kan du hantera användare, konfigurera inställningar och övervaka serverhälsa. De första <strong>{{freeTierLimit}}</strong> personerna på din server får använda Stirling gratis."
@@ -4858,126 +4953,6 @@ title = "Sidredigerare"
 zoomIn = "Zooma in"
 zoomOut = "Zooma ut"
 
-[viewer]
-cannotPreviewFile = "Kan inte förhandsgranska filen"
-disableColorFilter = "Inaktivera färgfilter"
-dualPageView = "Dubbelsidig vy"
-enableDarkFilter = "Aktivera mörkt filter"
-enableSepiaFilter = "Aktivera sepiafilter"
-firstPage = "Första sidan"
-lastPage = "Sista sidan"
-nextPage = "Nästa sida"
-onlyPdfSupported = "Visaren stöder endast PDF-filer. Den här filen verkar vara i ett annat format."
-previousPage = "Föregående sida"
-singlePageView = "Ensidig vy"
-unknownFile = "Okänd fil"
-zoomIn = "Zooma in"
-zoomOut = "Zooma ut"
-resetZoom = "Återställ zoom"
-
-[viewer.nonPdf]
-fileTypeBadge = "{{type}}-fil"
-convertToPdf = "Konvertera till PDF"
-loading = "Läser in..."
-emptyFile = "Tom fil"
-csvStats = "{{rows}} rader · {{columns}} kolumner · {{size}}"
-sortedBy = "Sorterad efter: {{column}}"
-columnDefault = "Kolumn {{index}}"
-htmlPreviewWarning = "HTML-förhandsvisning — externa resurser kanske inte läses in · {{size}}"
-htmlPreview = "HTML-förhandsvisning"
-invalidJson = "Ogiltig JSON — visar rått innehåll"
-textStats = "{{lines}} rader · {{size}}"
-lineNumbers = "Radnummer"
-renderMarkdown = "Rendera markdown"
-
-[viewer.attachments]
-title = "Bilagor"
-searchPlaceholder = "Sök bilagor"
-noSupport = "Stöd för bilagor är inte tillgängligt i den här visaren."
-noDocument = "Öppna en PDF för att visa dess bilagor."
-loading = "Läser in bilagor..."
-empty = "Inga bilagor i det här dokumentet"
-noMatch = "Inga bilagor matchar din sökning"
-
-[viewer.comments]
-title = "Kommentarer"
-hint = "Placera kommentarer med verktygen Kommentar, Infoga text eller Ersätt text. De visas här per sida."
-placeholder = "Skriv din kommentar..."
-pageLabel = "Sida {{page}}"
-oneComment = "1 kommentar"
-nComments = "{{count}} kommentarer"
-addCommentPlaceholder = "Lägg till kommentar..."
-addLink = "Lägg till länk"
-goToLink = "Gå till länk"
-addComment = "Lägg till kommentar"
-viewComment = "Visa kommentar"
-addReplyPlaceholder = "Lägg till svar..."
-saveReply = "Spara svar"
-send = "Skicka"
-moreActions = "Fler åtgärder"
-typeComment = "Kommentar"
-typeInsertText = "Infoga text"
-typeReplaceText = "Ersätt text"
-locateAnnotation = "Hitta i dokumentet"
-deleteTitle = "Ta bort annotering från kommentarer?"
-deleteDescription = "Denna annotering har en kommentar kopplad. Du kan ta bort bara kommentaren i sidofältet och behålla annoteringen, eller ta bort allt."
-removeCommentOnly = "Ta bort endast kommentaren"
-deleteAnnotationAndComment = "Ta bort annotering & kommentar"
-
-[viewer.formBar]
-title = "Formulärfält"
-unsavedBadge = "Ej sparat"
-unsavedDesc = "Du har osparade ändringar"
-hasFieldsDesc = "Denna PDF innehåller ifyllbara fält"
-dismiss = "Avfärda"
-apply = "Verkställ ändringar"
-download = "Ladda ned PDF"
-
-[rightRail]
-closeSelected = "Stäng markerade filer"
-selectAll = "Välj allt"
-deselectAll = "Avmarkera alla"
-selectByNumber = "Välj efter sidnummer"
-deleteSelected = "Ta bort markerade sidor"
-closePdf = "Stäng PDF"
-exportAll = "Exportera PDF"
-downloadSelected = "Ladda ner markerade filer"
-annotations = "Annoteringar"
-exportSelected = "Exportera markerade sidor"
-formFill = "Fyll i formulär"
-saveChanges = "Spara ändringar"
-toggleAttachments = "Visa/dölj bilagor"
-toggleTheme = "Växla tema"
-language = "Språk"
-toggleAnnotations = "Växla synlighet för anteckningar"
-toggleLayers = "Växla lager"
-search = "Sök i PDF"
-panMode = "Panoreringsläge"
-applyRedactionsFirst = "Tillämpa maskningar först"
-rotateLeft = "Rotera åt vänster"
-rotateRight = "Rotera åt höger"
-toggleSidebar = "Växla sidofält"
-toggleBookmarks = "Visa/dölj bokmärken"
-toggleComments = "Kommentarer"
-print = "Skriv ut PDF"
-ruler = "Linjal / Mätning"
-readAloud = "Läs upp"
-readAloudSpeed = "Hastighet"
-readAloudLanguage = "Språk"
-selectLanguage = "Välj språk"
-draw = "Rita"
-redact = "Maskera"
-exitRedaction = "Avsluta maskeringsläge"
-save = "Spara"
-downloadAll = "Ladda ner alla"
-saveAll = "Spara alla"
-saveAs = "Spara som"
-
-[textAlign]
-left = "Vänster"
-center = "Centrerat"
-right = "Höger"
-
 [pageExtracter]
 header = "Extrahera sidor"
 placeholder = "(t.ex. 1,2,8 eller 4,7,12-16 eller 2n-1)"
@@ -5000,10 +4975,24 @@ tags = "slå samman,sammansatt,enkel-vy,organisera"
 title = "Flersidigt layout"
 top = "Övre marginal"
 
-[pageLayout.mode]
-default = "Standard"
-custom = "Anpassad"
-label = "Läge:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "Radvis: Fyll varje rad först."
+bullet2 = "Kolumnvis: Fyll varje kolumn först."
+text = "Styr om sidorna fyller rutnätet rad för rad eller kolumn för kolumn."
+title = "Sidordning"
+
+[pageLayout.advanced.tooltip.header]
+title = "Avancerade layoutalternativ"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "Välj det slutliga arkets riktning. Stående fungerar bättre för högt innehåll, medan liggande passar bredare layouter."
+title = "Orientering"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR: Vänster till höger."
+bullet2 = "RTL: Höger till vänster."
+text = "Anger horisontell ordning i rutnätet, användbart för vänster-till-höger- och höger-till-vänster-dokumentkonventioner."
+title = "Läsriktning"
 
 [pageLayout.arrangement]
 byColumns = "Kolumnvis"
@@ -5018,100 +5007,86 @@ label = "Sidordning:"
 
 [pageLayout.error]
 failed = "Ett fel inträffade vid skapandet av layouten med flera sidor."
-outerVerticalMarginsTooLarge = "Övre/nedre marginalerna är för stora för denna pappersstorlek."
-outerHorizontalMarginsTooLarge = "Vänster/högermarginalerna är för stora för denna pappersstorlek."
 innerMarginTooLarge = "Den inre marginalen är för stor för den valda layouten."
+outerHorizontalMarginsTooLarge = "Vänster/högermarginalerna är för stora för denna pappersstorlek."
+outerVerticalMarginsTooLarge = "Övre/nedre marginalerna är för stora för denna pappersstorlek."
 
-[pageLayout.orientation]
-landscape = "Liggande"
-portrait = "Stående"
-label = "Orientering:"
-
-[pageLayout.readingDirection]
-ltr = "Vänster till höger"
-rtl = "Höger till vänster"
-label = "Läsriktning:"
-
-[pageLayout.tooltip.header]
-title = "Guide för sidlayout"
-
-[pageLayout.tooltip.overview]
-title = "Vad är sidlayout?"
-text = "Placera flera sidor på ett enda ark för utdelningar eller för att spara papper."
-
-[pageLayout.tooltip.mode]
-title = "Läge"
-text = "Välj hur rutnätet konfigureras:"
-bullet1 = "Standard: Välj en förinställning så beräknas rutnätet automatiskt."
-bullet2 = "Anpassad: Ställ in rader och kolumner manuellt."
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "Sidor per ark (standardläge)"
-text = "Välj hur många sidor per ark (t.ex. 4 → 2×2, 9 → 3×3)."
-
-[pageLayout.tooltip.rowsCols]
-title = "Rader och kolumner (anpassat läge)"
-text = "Ange exakta rutnätsmått. Totalt antal sidor per ark = rader × kolumner."
-
-[pageLayout.tooltip.orientation]
-title = "Orientering"
-text = "Anger orienteringen för utdataarket:"
-bullet1 = "Stående: Högre än bred."
-bullet2 = "Liggande: Bredare än hög."
-
-[pageLayout.tooltip.arrangement]
-title = "Sidordning"
-text = "Styr i vilken ordning sidorna fyller rutnätet:"
-bullet1 = "Radvis: Fyll rad för rad (vänster till höger eller höger till vänster)."
-bullet2 = "Kolumnvis: Fyll uppifrån och ned, kolumn för kolumn."
-
-[pageLayout.tooltip.readingDirection]
-title = "Läsriktning"
-text = "Styr den horisontella ordningen på sidorna:"
-bullet1 = "LTR: Vänster till höger."
-bullet2 = "RTL: Höger till vänster."
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "Aktivera kantlinjer för att rita linjer runt varje placerad sida. Detta kan hjälpa visuell åtskillnad eller trimning."
 title = "Lägg till kantlinjer"
-text = "Ritar kantlinjer runt varje sidruta för skärlinjer eller visuell åtskillnad."
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "Kantlinjetjocklek används bara när kantlinjer är aktiverade. Högre värden ger tjockare linjer."
+title = "Kantlinjetjocklek"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "Marginaler och kantlinjer"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "Marginaler"
-text = "Använd övre, nedre, vänster och höger marginal för att styra avståndet runt hela arket."
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "Inre marginal"
 text = "Den inre marginalen lägger till mellanrum mellan cellerna i sidrutnätet för bättre åtskillnad och läsbarhet."
+title = "Inre marginal"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "Använd övre, nedre, vänster och höger marginal för att styra avståndet runt hela arket."
+title = "Marginaler"
+
+[pageLayout.mode]
+custom = "Anpassad"
+default = "Standard"
+label = "Läge:"
+
+[pageLayout.orientation]
+label = "Orientering:"
+landscape = "Liggande"
+portrait = "Stående"
+
+[pageLayout.readingDirection]
+label = "Läsriktning:"
+ltr = "Vänster till höger"
+rtl = "Höger till vänster"
+
+[pageLayout.tooltip.addBorder]
+text = "Ritar kantlinjer runt varje sidruta för skärlinjer eller visuell åtskillnad."
 title = "Lägg till kantlinjer"
-text = "Aktivera kantlinjer för att rita linjer runt varje placerad sida. Detta kan hjälpa visuell åtskillnad eller trimning."
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "Kantlinjetjocklek"
-text = "Kantlinjetjocklek används bara när kantlinjer är aktiverade. Högre värden ger tjockare linjer."
-
-[pageLayout.advanced.tooltip.header]
-title = "Avancerade layoutalternativ"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "Orientering"
-text = "Välj det slutliga arkets riktning. Stående fungerar bättre för högt innehåll, medan liggande passar bredare layouter."
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "Radvis: Fyll rad för rad (vänster till höger eller höger till vänster)."
+bullet2 = "Kolumnvis: Fyll uppifrån och ned, kolumn för kolumn."
+text = "Styr i vilken ordning sidorna fyller rutnätet:"
 title = "Sidordning"
-text = "Styr om sidorna fyller rutnätet rad för rad eller kolumn för kolumn."
-bullet1 = "Radvis: Fyll varje rad först."
-bullet2 = "Kolumnvis: Fyll varje kolumn först."
 
-[pageLayout.advanced.tooltip.readingDirection]
-title = "Läsriktning"
-text = "Anger horisontell ordning i rutnätet, användbart för vänster-till-höger- och höger-till-vänster-dokumentkonventioner."
+[pageLayout.tooltip.header]
+title = "Guide för sidlayout"
+
+[pageLayout.tooltip.mode]
+bullet1 = "Standard: Välj en förinställning så beräknas rutnätet automatiskt."
+bullet2 = "Anpassad: Ställ in rader och kolumner manuellt."
+text = "Välj hur rutnätet konfigureras:"
+title = "Läge"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "Stående: Högre än bred."
+bullet2 = "Liggande: Bredare än hög."
+text = "Anger orienteringen för utdataarket:"
+title = "Orientering"
+
+[pageLayout.tooltip.overview]
+text = "Placera flera sidor på ett enda ark för utdelningar eller för att spara papper."
+title = "Vad är sidlayout?"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "Välj hur många sidor per ark (t.ex. 4 → 2×2, 9 → 3×3)."
+title = "Sidor per ark (standardläge)"
+
+[pageLayout.tooltip.readingDirection]
 bullet1 = "LTR: Vänster till höger."
 bullet2 = "RTL: Höger till vänster."
+text = "Styr den horisontella ordningen på sidorna:"
+title = "Läsriktning"
+
+[pageLayout.tooltip.rowsCols]
+text = "Ange exakta rutnätsmått. Totalt antal sidor per ark = rader × kolumner."
+title = "Rader och kolumner (anpassat läge)"
 
 [pageRemover]
 header = "PDF Sidborttagning"
@@ -5197,6 +5172,9 @@ title = "Tips"
 autoClose = "Detta fönster stängs automatiskt..."
 billingPeriod = "Faktureringsperiod"
 canCloseWindow = "Du kan nu stänga detta fönster."
+checkoutInstructions = "Slutför ditt köp i webbläsarfönstret som just öppnades. När betalningen är klar, återvänd hit och klicka på knappen nedan för att uppdatera din faktureringsinformation."
+checkoutOpened = "Kassan öppnades i webbläsaren"
+closeLater = "Jag gör detta senare"
 emailInvalid = "Ange en giltig e-postadress"
 enterpriseNote = "Platser kan justeras i kassan (1–1000)."
 error = "Betalningsfel"
@@ -5218,6 +5196,7 @@ perMonth = "/månad"
 perYear = "/år"
 preparing = "Förbereder din kassa..."
 redirecting = "Omdirigerar till säker kassa..."
+refreshBilling = "Jag har slutfört betalningen – uppdatera fakturering"
 stripeNotConfigured = "Stripe ej konfigurerat"
 stripeNotConfiguredMessage = "Stripe-betalningsintegrationen är inte konfigurerad. Kontakta din administratör."
 success = "Betalning genomförd!"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "Din prenumeration har uppgraderats. Din befintliga lic
 upgradeSuccess = "Betalning lyckades! Din prenumeration har uppgraderats. Licensen har uppdaterats på din server. Du får snart en bekräftelse via e-post."
 upgradeTitle = "Uppgradera till {{planName}}"
 yearly = "Årsvis"
-checkoutOpened = "Kassan öppnades i webbläsaren"
-checkoutInstructions = "Slutför ditt köp i webbläsarfönstret som just öppnades. När betalningen är klar, återvänd hit och klicka på knappen nedan för att uppdatera din faktureringsinformation."
-refreshBilling = "Jag har slutfört betalningen – uppdatera fakturering"
-closeLater = "Jag gör detta senare"
 
 [payment.emailStage]
 continue = "Fortsätt"
@@ -5456,13 +5431,6 @@ prompt = "Välj sida för att extrahera tabell"
 submit = "Extrahera"
 title = "PDF till CSV"
 
-[PDFToXLSX]
-header = "PDF till Excel"
-prompt = "Välj sidor för att extrahera tabeller"
-submit = "Konvertera"
-title = "PDF till Excel (XLSX)"
-tags = "kalkylblad,excel,xlsx,tabell,extrahera,konvertera"
-
 [PDFToHTML]
 credit = "Denna tjänst använder pdftohtml för filkonvertering."
 header = "PDF till HTML"
@@ -5561,6 +5529,13 @@ title = "PDF till Word"
 [PDFToWord.selectText]
 1 = "Utdatafilformat"
 
+[PDFToXLSX]
+header = "PDF till Excel"
+prompt = "Välj sidor för att extrahera tabeller"
+submit = "Konvertera"
+tags = "kalkylblad,excel,xlsx,tabell,extrahera,konvertera"
+title = "PDF till Excel (XLSX)"
+
 [PDFToXML]
 credit = "Denna tjänst använder LibreOffice för filkonvertering."
 header = "PDF till XML"
@@ -5626,10 +5601,10 @@ manage = "Hantera"
 perMonth = "/månad"
 perSeat = "/plats"
 popular = "Populär"
-selectPlan = "Välj plan"
-selectCredits = "Välj kreditbelopp"
-showComparison = "Jämför alla funktioner"
 purchase = "Köp"
+selectCredits = "Välj kreditbelopp"
+selectPlan = "Välj plan"
+showComparison = "Jämför alla funktioner"
 totalCost = "Total kostnad"
 upgrade = "Uppgradera"
 withServer = "+ Serverplan"
@@ -5638,19 +5613,29 @@ withServer = "+ Serverplan"
 subtitle = "Detaljer om din nuvarande prenumeration"
 title = "Aktiv plan"
 
+[plan.api]
+large = "5 000 krediter"
+medium = "1 000 krediter"
+small = "500 krediter"
+xsmall = "100 krediter"
+
+[plan.apiPackages]
+subtitle = "Köp API-krediter för dina applikationer"
+title = "API-kreditpaket"
+
 [plan.availablePlans]
-subtitle = "Välj den plan som passar dina behov"
 loadError = "Det gick inte att läsa in planpriser. Använder standardvärden."
+subtitle = "Välj den plan som passar dina behov"
 title = "Tillgängliga planer"
 
 [plan.enterprise]
-siteLicense = "Sitelicens"
 highlight1 = "Anpassad prissättning"
 highlight2 = "Dedikerad support"
 highlight3 = "Senaste funktionerna"
 name = "Enterprise"
 requiresServer = "Kräver Server"
 requiresServerMessage = "Uppgradera till Server-planen först innan du uppgraderar till Enterprise."
+siteLicense = "Sitelicens"
 
 [plan.feature]
 api = "API-åtkomst"
@@ -5722,16 +5707,6 @@ successMessage = "Din licens har aktiverats. Du kan nu stänga detta fönster."
 name = "Team"
 siteLicense = "Sitelicens"
 
-[plan.api]
-large = "5 000 krediter"
-medium = "1 000 krediter"
-small = "500 krediter"
-xsmall = "100 krediter"
-
-[plan.apiPackages]
-subtitle = "Köp API-krediter för dina applikationer"
-title = "API-kreditpaket"
-
 [plan.trial]
 badge = "Prov"
 continueWithFree = "Fortsätt med gratis"
@@ -5746,77 +5721,6 @@ subscribeToPro = "Prenumerera på Pro"
 subscriptionScheduled = "Prenumeration schemalagd – startar {{date}}"
 title = "Gratis provperiod aktiv"
 
-[credits]
-enableOverageBilling = "Aktivera debitering vid överförbrukning"
-maybeLater = "Kanske senare"
-upgrade = "Uppgradera"
-
-[credits.modal]
-advancedMonitoring = "Avancerad övervakning"
-allInOneWorkspace = "Allt-i-ett PDF-arbetsyta (visare, verktyg och agent)"
-apiSandbox = "API-sandbox"
-contactSales = "Kontakta säljteamet"
-creditsRemaining = "{{current}} av {{total}} kvar"
-creditsThisMonth = "Månatliga krediter"
-current = "Nuvarande plan"
-customPricing = "Anpassad"
-customSmartFolders = "Anpassade smarta mappar"
-dedicatedSupportSlas = "Dedikerad support och SLA:er"
-enterpriseSubscription = "Enterprise"
-everythingInCredits = "Allt i Credits, plus:"
-everythingInFree = "Allt i Free, plus:"
-fasterThroughput = "10x snabbare genomströmning"
-forRegularWork = "För regelbundet PDF-arbete:"
-freeTier = "Gratisnivå"
-fullyPrivateFiles = "Helt privata filer"
-largeFileProcessing = "Hantering av stora filer"
-managedMemberMessage = "Du har obegränsad tillgång till krediter via ditt team. Om du behöver hjälp, kontakta din teamledare."
-managedMemberTitle = "Obegränsade krediter"
-meteringBillingNote = "Krediter för överförbrukning debiteras månadsvis tillsammans med din Team-prenumeration. Följ din användning när som helst i kontoinställningarna."
-meteringExplanation = "Din Team-plan inkluderar {{credits}} krediter per månad. När de tar slut tillhandahåller debitering vid överförbrukning automatiskt extra krediter så att du aldrig behöver sluta arbeta."
-meteringIncluded = "{{credits}} krediter/månad ingår med Team"
-meteringNoCommitment = "Ingen bindningstid, avbryt när som helst"
-meteringNeverRunOut = "Få aldrig slut på krediter"
-meteringPayAsYouGo = "Betala bara för det du använder"
-meteringPrice = "Ytterligare krediter för {{price}}/kredit"
-meteringTitle = "Betala‑för‑användning vid överförbrukning"
-monthlyCredits = "månatliga krediter"
-orgWideAccess = "Organisationstäckande åtkomstkontroller"
-overage = "överförbrukning"
-perMonth = "/månad"
-popular = "Populär"
-premiumAiModels = "Premium AI-modeller"
-prioritySupport = "Prioriterad support"
-privateDocCloud = "Privat dokumentmoln"
-ragFineTuning = "RAG + finjustering"
-secureApiAccess = "Säker API-åtkomst"
-selfHostLink = "Granska dokumentation och planer"
-selfHostPrompt = "Vill du självhosta?"
-standardThroughput = "Standardgenomströmning"
-subtitle = "Uppgradera till Team för 10x fler krediter och snabbare bearbetning."
-subtitlePro = "Aktivera automatisk debitering vid överförbrukning för att aldrig få slut på krediter."
-teamLeaderOnly = "Endast teamledare kan aktivera debitering vid överförbrukning"
-teamSubscription = "Team"
-titleExhausted = "Du har använt dina gratiskrediter"
-titleExhaustedPro = "Du har slut på krediter"
-unlimitedApiAccess = "Obegränsad API-åtkomst"
-unlimitedMonthlyCredits = "Sitelicens"
-unlimitedSeats = "Obegränsat antal platser"
-
-[credits.modal.features]
-everythingInCredits = "Allt i Credits, plus:"
-everythingInFree = "Allt i Free, plus:"
-forRegularWork = "För regelbundet PDF-arbete:"
-
-[credits.insufficient]
-brief = "Otillräckliga krediter. Du behöver {{required}} krediter men har {{current}}."
-freeTier = "Uppgradera till Team för 10x fler krediter och obegränsad debitering vid överförbrukning."
-managedMember = "Kontakta din teamledare för hjälp."
-message = "Du har inte tillräckligt med krediter för att köra {{tool}}. Du har för närvarande {{current}} krediter."
-messageWithAmount = "Du behöver {{required}} krediter för att köra {{tool}}, men du har bara {{current}}."
-teamMember = "Aktivera debitering vid överförbrukning för att aldrig få slut på krediter."
-title = "Otillräckliga krediter"
-
 [printFile]
 header = "Skriv ut fil till skrivare"
 submit = "Skriv ut"
@@ -5825,6 +5729,207 @@ title = "Skriv ut fil"
 [printFile.selectText]
 1 = "Välj fil att skriva ut"
 2 = "Ange skrivarnamn"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "Filimport"
+
+[provider.googledrive.apiKey]
+description = "Google API-nyckel för Google Picker API från Google Cloud Console"
+label = "API-nyckel"
+
+[provider.googledrive.appId]
+description = "Google Drive App ID från Google Cloud Console"
+label = "App-ID"
+
+[provider.googledrive.clientId]
+description = "Google OAuth 2.0 Client ID från Google Cloud Console"
+label = "Client ID"
+
+[provider.googledrive.enabled]
+description = "Tillåt användare att importera filer direkt från Google Drive"
+label = "Aktivera filväljare för Google Drive"
+
+[provider.oauth2.generic]
+name = "Generisk OAuth2"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "Skapa automatiskt användarkonton vid första OAuth2-inloggningen"
+label = "Skapa användare automatiskt"
+
+[provider.oauth2.generic.blockRegistration]
+description = "Förhindra ny användarregistrering via OAuth2"
+label = "Blockera registrering"
+
+[provider.oauth2.generic.clientId]
+description = "OAuth2 Client ID från din leverantör"
+label = "Client ID"
+
+[provider.oauth2.generic.clientSecret]
+description = "OAuth2 Client Secret från din leverantör"
+label = "Client Secret"
+
+[provider.oauth2.generic.enabled]
+description = "Aktivera autentisering via en anpassad OAuth2-leverantör"
+label = "Aktivera generisk OAuth2"
+
+[provider.oauth2.generic.issuer]
+description = "Leverantör som stöder OpenID Connect Discovery (/.well-known/openid-configuration)"
+label = "Utfärdarens URL"
+
+[provider.oauth2.generic.provider]
+description = "Namnet på din OAuth2-leverantör (t.ex. Azure AD, Okta)"
+label = "Leverantörsnamn"
+
+[provider.oauth2.generic.scopes]
+description = "Kommaseparerade OAuth2-scopes"
+label = "Scopes"
+
+[provider.oauth2.generic.useAsUsername]
+description = "Fält att använda som användarnamn"
+label = "Använd som användarnamn"
+
+[provider.oauth2.github]
+scope = "Autentisering för inloggning"
+
+[provider.oauth2.github.clientId]
+description = "OAuth2 Client ID från GitHub Developer Settings"
+label = "Client ID"
+
+[provider.oauth2.github.clientSecret]
+description = "OAuth2 Client Secret från GitHub Developer Settings"
+label = "Client Secret"
+
+[provider.oauth2.github.scopes]
+description = "Kommaseparerade OAuth2-scopes"
+label = "Scopes"
+
+[provider.oauth2.github.useAsUsername]
+description = "Fält att använda som användarnamn (email, login, name)"
+label = "Använd som användarnamn"
+
+[provider.oauth2.google]
+scope = "Autentisering för inloggning"
+
+[provider.oauth2.google.clientId]
+description = "OAuth2 Client ID från Google Cloud Console"
+label = "Client ID"
+
+[provider.oauth2.google.clientSecret]
+description = "OAuth2 Client Secret från Google Cloud Console"
+label = "Client Secret"
+
+[provider.oauth2.google.scopes]
+description = "Kommaseparerade OAuth2-scopes"
+label = "Scopes"
+
+[provider.oauth2.google.useAsUsername]
+description = "Fält att använda som användarnamn (email, name, given_name, family_name)"
+label = "Använd som användarnamn"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "OAuth2 Client ID från Keycloak"
+label = "Client ID"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "OAuth2 Client Secret från Keycloak"
+label = "Client Secret"
+
+[provider.oauth2.keycloak.issuer]
+description = "URL till Keycloak-realmets OpenID Connect Discovery-slutpunkt"
+label = "Utfärdarens URL"
+
+[provider.oauth2.keycloak.scopes]
+description = "Kommaseparerade OAuth2-scopes"
+label = "Scopes"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "Fält att använda som användarnamn (email, name, given_name, family_name, preferred_username)"
+label = "Använd som användarnamn"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO (SAML)"
+
+[provider.saml2.autoCreateUser]
+description = "Skapa automatiskt användarkonton vid första SAML2-inloggningen"
+label = "Skapa användare automatiskt"
+
+[provider.saml2.blockRegistration]
+description = "Förhindra ny användarregistrering via SAML2"
+label = "Blockera registrering"
+
+[provider.saml2.enabled]
+description = "Aktivera SAML2-autentisering (endast Enterprise)"
+label = "Aktivera SAML2"
+
+[provider.saml2.idpCert]
+description = "Certifikatets sökväg (t.ex. classpath:okta.cert)"
+label = "IDP-certifikat"
+
+[provider.saml2.idpIssuer]
+description = "ID för din leverantör"
+label = "IDP Issuer"
+
+[provider.saml2.idpMetadataUri]
+description = "URI till din leverantörs metadata"
+label = "IDP Metadata URI"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "URL för att initiera SSO"
+label = "IDP Single Login URL"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "URL för att initiera SLO"
+label = "IDP Single Logout URL"
+
+[provider.saml2.privateKey]
+description = "Sökväg till din privata nyckel"
+label = "Privat nyckel"
+
+[provider.saml2.provider]
+description = "Namnet på din SAML2-leverantör"
+label = "Leverantörsnamn"
+
+[provider.saml2.registrationId]
+description = "Namnet på din Service Provider (SP)-app"
+label = "Registrerings-ID"
+
+[provider.saml2.spCert]
+description = "Sökväg till ditt signeringscertifikat"
+label = "SP-certifikat"
+
+[provider.smtp]
+name = "SMTP-e-post"
+scope = "E-postaviseringar"
+
+[provider.smtp.enabled]
+description = "Aktivera e-postaviseringar och SMTP-funktionalitet"
+label = "Aktivera e-post"
+
+[provider.smtp.from]
+description = "E-postadressen som ska användas som avsändare"
+label = "Från-adress"
+
+[provider.smtp.host]
+description = "Värdnamn eller IP-adress för din SMTP-server"
+label = "SMTP-värd"
+
+[provider.smtp.password]
+description = "Lösenord för SMTP-autentisering"
+label = "SMTP-lösenord"
+
+[provider.smtp.port]
+description = "Portnummer för SMTP-anslutning (vanligen 25, 465 eller 587)"
+label = "SMTP-port"
+
+[provider.smtp.username]
+description = "Användarnamn för SMTP-autentisering"
+label = "SMTP-användarnamn"
 
 [quickAccess]
 access = "Åtkomst"
@@ -5867,7 +5972,12 @@ createNew = "Skapa ny förfrågan"
 createSession = "Skapa signeringsförfrågan"
 dueDate = "Sista datum (valfritt)"
 files = "Filer"
+filterDeclined = "Avböjda"
+filterMine = "Mina"
+filterOverdue = "Försenade"
+filterSigned = "Signerade"
 help = "Hjälp"
+newRequest = "Ny förfrågan"
 noActiveSessions = "Inga väntande signeringsförfrågningar eller aktiva sessioner"
 noCompletedSessions = "Inga slutförda sessioner"
 noFile = "Ingen fil vald"
@@ -5875,8 +5985,9 @@ read = "Läs"
 reader = "Läsare"
 refresh = "Uppdatera"
 requestSignatures = "Begär signaturer"
-selectSingleFileToRequest = "Välj en enda PDF-fil för att begära signaturer"
+searchDocuments = "Sök dokument…"
 selectedFile = "Vald fil"
+selectSingleFileToRequest = "Välj en enda PDF-fil för att begära signaturer"
 selectUsers = "Välj användare som ska signera"
 selectUsersPlaceholder = "Välj deltagare..."
 sendingRequest = "Skickar..."
@@ -5885,14 +5996,8 @@ showMeAround = "Visa mig runt"
 sign = "Signera"
 signatureRequests = "Signeringsförfrågningar"
 signYourself = "Signera själv"
-newRequest = "Ny förfrågan"
 tours = "Guider"
 wetSign = "Lägg till signatur"
-filterMine = "Mina"
-filterOverdue = "Försenade"
-filterSigned = "Signerade"
-filterDeclined = "Avböjda"
-searchDocuments = "Sök dokument…"
 
 [quickAccess.helpMenu]
 adminTour = "Adminrundtur"
@@ -5933,15 +6038,15 @@ title = "Ord att maskera"
 failed = "Ett fel inträffade vid maskning av PDF:en."
 
 [redact.manual]
+activate = "Aktivera maskningsverktyg"
+active = "Maskningsläge aktivt"
 apply = "Tillämpa"
 applyChanges = "Verkställ ändringar"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ Permanent åtgärd, kan inte ångras och underliggande data raderas"
 boxRedaction = "Rita ruta för maskning"
-colourPicker = "Färgväljare"
 colorLabel = "Maskningsfärg"
-active = "Maskningsläge aktivt"
-activate = "Aktivera maskningsverktyg"
+colourPicker = "Färgväljare"
 controlsTitle = "Manuella maskeringskontroller"
 convertPDFToImageLabel = "Konvertera PDF till PDF-bild (Används för att ta bort text bakom rutan)"
 export = "Exportera"
@@ -6337,6 +6442,46 @@ title = "Hög kontrast"
 text = "Invertera alla färger i PDF:en helt och hållet, vilket skapar en negativliknande effekt. Användbart för att skapa mörkt läge-versioner av dokument eller minska ansträngning för ögonen i svagt ljus."
 title = "Invertera alla färger"
 
+[rightRail]
+annotations = "Annoteringar"
+applyRedactionsFirst = "Tillämpa maskningar först"
+closePdf = "Stäng PDF"
+closeSelected = "Stäng markerade filer"
+deleteSelected = "Ta bort markerade sidor"
+deselectAll = "Avmarkera alla"
+downloadAll = "Ladda ner alla"
+downloadSelected = "Ladda ner markerade filer"
+draw = "Rita"
+exitRedaction = "Avsluta maskeringsläge"
+exportAll = "Exportera PDF"
+exportSelected = "Exportera markerade sidor"
+formFill = "Fyll i formulär"
+language = "Språk"
+panMode = "Panoreringsläge"
+print = "Skriv ut PDF"
+readAloud = "Läs upp"
+readAloudLanguage = "Språk"
+readAloudSpeed = "Hastighet"
+redact = "Maskera"
+rotateLeft = "Rotera åt vänster"
+rotateRight = "Rotera åt höger"
+ruler = "Linjal / Mätning"
+save = "Spara"
+saveAll = "Spara alla"
+saveAs = "Spara som"
+saveChanges = "Spara ändringar"
+search = "Sök i PDF"
+selectAll = "Välj allt"
+selectByNumber = "Välj efter sidnummer"
+selectLanguage = "Välj språk"
+toggleAnnotations = "Växla synlighet för anteckningar"
+toggleAttachments = "Visa/dölj bilagor"
+toggleBookmarks = "Visa/dölj bokmärken"
+toggleComments = "Kommentarer"
+toggleLayers = "Växla lager"
+toggleSidebar = "Växla sidofält"
+toggleTheme = "Växla tema"
+
 [rotate]
 rotateLeft = "Rotera moturs"
 rotateRight = "Rotera medurs"
@@ -6359,32 +6504,6 @@ text = "Rotera dina PDF‑sidor medurs eller moturs i steg om 90 grader. Alla si
 
 [rotate.tooltip.header]
 title = "Översikt över rotationsinställningar"
-
-[timestampPdf]
-completed = "PDF har tidsstämplats"
-desc = "Lägg till en RFC 3161-dokumenttidsstämpel i din PDF med en betrodd Time Stamp Authority (TSA)-server."
-filenamePrefix = "tidsstämplad"
-results = "Tidsstämpelresultat"
-submit = "Använd tidsstämpel"
-title = "Tidsstämpla PDF"
-
-[timestampPdf.error]
-failed = "Ett fel inträffade när PDF:en tidsstämplades."
-generic = "Tidsstämpling misslyckades"
-
-[timestampPdf.files]
-placeholder = "Välj en PDF-fil i huvudvyn för att komma igång"
-
-[timestampPdf.options]
-note = "Endast en SHA-256-hash av ditt dokument skickas till TSA-servern; själva PDF-filen skickas aldrig till TSA-servern."
-title = "Tidsstämpelserver (TSA)"
-
-[timestampPdf.options.tsaUrl]
-desc = "Välj en betrodd Time Stamp Authority"
-label = "Välj en TSA-server"
-
-[timestampPdf.steps]
-settings = "Inställningar"
 
 [sanitize]
 completed = "Saneringen slutfördes"
@@ -6554,37 +6673,6 @@ bullet3 = "Kritiskt för godkännandeprocesser och juridisk spårbarhet"
 description = "Den ordning du anger när du skapar sessionen avgör vem som signerar först."
 title = "Signeringsordning"
 
-[signatureSettings.tooltip]
-header = "Inställningar för signaturutseende"
-
-[signatureSettings.tooltip.location]
-bullet1 = "Exempel: \"New York, USA\", \"London Office\", \"Remote\""
-bullet2 = "Inte samma som sidposition"
-bullet3 = "Kan krävas i vissa rättsliga jurisdiktioner"
-description = "Valfri geografisk plats där signaturen tillämpades. Lagradas i certifikatets metadata."
-title = "Signaturplats"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "Visas tillsammans med signatur och text"
-bullet2 = "Stöder formaten PNG, JPG"
-bullet3 = "Förbättrar professionellt utseende"
-description = "Lägg till en företagslogotyp i synliga signaturer för varumärke och äkthet."
-title = "Företagslogotyp"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "Exempel: \"Godkännande\", \"Kontraktsavtal\", \"Granskning slutförd\""
-bullet2 = "Synlig i PDF:ens signatur-egenskaper"
-bullet3 = "Användbart för granskningsspår och regelefterlevnad"
-description = "Valfri text som förklarar varför dokumentet signeras. Lagradas i certifikatets metadata."
-title = "Signeringsorsak"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>Synlig</b>: Signaturen visas på PDF:en med anpassat utseende"
-bullet2 = "<b>Osynlig</b>: Certifikat bäddas in utan visuellt märke"
-bullet3 = "Osynliga signaturer ger fortfarande kryptografisk validering"
-description = "Styr om signaturen är synlig i dokumentet eller bäddas in osynligt."
-title = "Signaturens synlighet"
-
 [settings.configuration]
 advanced = "Avancerat"
 database = "Databas"
@@ -6606,6 +6694,102 @@ user = "Inloggad som"
 local = "Endast lokalt"
 saas = "Stirling Cloud"
 selfhosted = "Självhostad"
+
+[settings.developer]
+apiKeys = "API-nycklar"
+title = "Utvecklare"
+
+[settings.general]
+autoUnzip = "Packa upp API-svar automatiskt"
+autoUnzipDescription = "Extrahera automatiskt filer från ZIP‑svar"
+autoUnzipFileLimit = "Begränsning för automatisk uppackning"
+autoUnzipFileLimitDescription = "Maximalt antal filer att extrahera från ZIP"
+autoUnzipFileLimitTooltip = "Packa bara upp om ZIP:en innehåller högst så här många filer. Ange högre för att extrahera större ZIP:ar."
+autoUnzipTooltip = "Packa automatiskt upp ZIP‑filer som returneras från API‑operationer. Inaktivera för att behålla ZIP‑filer intakta. Detta påverkar inte automationsarbetsflöden."
+defaultPdfEditor = "Standard-PDF-redigerare"
+defaultPdfEditorActive = "Stirling PDF är din standard-PDF-redigerare"
+defaultPdfEditorChecking = "Kontrollerar..."
+defaultPdfEditorInactive = "En annan app är standard"
+defaultPdfEditorSet = "Redan standard"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "Standardläge för verktygsväljare"
+defaultToolPickerModeDescription = "Välj om verktygsväljaren ska öppnas i helskärm eller sidopanel som standard"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "Konfigurera allmänna programinställningar."
+hideUnavailableConversions = "Dölj otillgängliga konverteringar"
+hideUnavailableConversionsDescription = "Ta bort inaktiverade konverteringsalternativ i verktyget Konvertera istället för att visa dem nedtonade."
+hideUnavailableTools = "Dölj otillgängliga verktyg"
+hideUnavailableToolsDescription = "Ta bort verktyg som har inaktiverats av din server istället för att visa dem nedtonade."
+logout = "Logga ut"
+setAsDefault = "Ange som standard"
+title = "Allmänt"
+user = "Användare"
+
+[settings.general.enableFeatures]
+action = "Konfigurera"
+and = "och"
+benefit = "Aktiverar användarroller, teamsamarbete, adminkontroller och företagsfunktioner."
+dismiss = "Avfärda"
+intro = "Aktivera användarautentisering, teamhantering och arbetsytefunktioner för din organisation."
+learnMore = "Läs mer i dokumentationen"
+title = "För systemadministratörer"
+
+[settings.general.mode]
+fullscreen = "Helskärm"
+sidebar = "Sidopanel"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "Sök efter uppdateringar"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "Sök efter uppdateringar och visa versionsinfo"
+latestVersion = "Senaste version"
+serverNeedsUpdate = "Servern måste uppdateras av administratören"
+title = "Programuppdateringar"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "Visa detaljer"
+
+[settings.general.versionInfo]
+description = "Information om skrivbords- och serverversioner"
+desktop = "Skrivbordsversion"
+server = "Serverversion"
+title = "Versionsinformation"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "Tryck på tangenter… (Esc för att avbryta)"
+change = "Ändra genväg"
+customBadge = "Anpassad"
+defaultLabel = "Standard: {{shortcut}}"
+description = "Anpassa kortkommandon för snabb åtkomst till verktyg. Klicka på \"Ändra genväg\" och tryck en ny tangentkombination. Tryck Esc för att avbryta."
+errorConflict = "Genväg används redan av {{tool}}."
+none = "Inte tilldelad"
+noShortcut = "Ingen genväg angiven"
+reset = "Återställ"
+searchPlaceholder = "Sök bland verktyg..."
+shortcut = "Genväg"
+title = "Kortkommandon"
+
+[settings.hotkeys.errorModifier]
+mac = "Inkludera ⌘ (Command), ⌥ (Option) eller en annan modifierare i ditt kortkommando."
+windows = "Inkludera Ctrl, Alt eller en annan modifierare i ditt kortkommando."
+
+[settings.licensingAnalytics]
+audit = "Granskning"
+plan = "Plan"
+title = "Licensiering och analys"
+usageAnalytics = "Användningsanalys"
 
 [settings.planBilling]
 currentPlan = "Nuvarande plan"
@@ -6637,6 +6821,10 @@ canceled = "Avslutad"
 pastDue = "Försenad"
 trial = "Provperiod"
 
+[settings.planBilling.team]
+managedByTeam = "Hanteras av team"
+memberCount = "{{count}} teammedlemmar"
+
 [settings.planBilling.tier]
 enterprise = "Enterprise"
 enterpriseDescription = "Anpassade företagsfunktioner och support"
@@ -6648,10 +6836,6 @@ teamDescription = "500 krediter/månad ingår, automatisk debitering vid överf�
 teamTooltipCredits = "Team-planen inkluderar {{credits}} krediter/månad."
 teamTooltipFineprint = "Betala bara för det du använder utöver inkluderade krediter."
 teamTooltipOverage = "Automatisk debitering vid överförbrukning med {{price}}/kredit säkerställer oavbruten tjänst."
-
-[settings.planBilling.team]
-managedByTeam = "Hanteras av team"
-memberCount = "{{count}} teammedlemmar"
 
 [settings.planBilling.trial]
 daysRemaining = "{{days}} dagar kvar"
@@ -6670,88 +6854,6 @@ featureThroughput = "Snabbare genomströmning"
 opensInBrowser = "Öppnas i webbläsaren för att slutföra uppgraderingen"
 subtitle = "Uppgradera till Team för:"
 title = "Uppgradera din plan"
-
-[settings.developer]
-apiKeys = "API-nycklar"
-title = "Utvecklare"
-
-[settings.general]
-autoUnzip = "Packa upp API-svar automatiskt"
-autoUnzipDescription = "Extrahera automatiskt filer från ZIP‑svar"
-autoUnzipFileLimit = "Begränsning för automatisk uppackning"
-autoUnzipFileLimitDescription = "Maximalt antal filer att extrahera från ZIP"
-autoUnzipFileLimitTooltip = "Packa bara upp om ZIP:en innehåller högst så här många filer. Ange högre för att extrahera större ZIP:ar."
-autoUnzipTooltip = "Packa automatiskt upp ZIP‑filer som returneras från API‑operationer. Inaktivera för att behålla ZIP‑filer intakta. Detta påverkar inte automationsarbetsflöden."
-defaultPdfEditor = "Standard-PDF-redigerare"
-defaultPdfEditorActive = "Stirling PDF är din standard-PDF-redigerare"
-defaultPdfEditorChecking = "Kontrollerar..."
-defaultPdfEditorInactive = "En annan app är standard"
-defaultPdfEditorSet = "Redan standard"
-defaultToolPickerMode = "Standardläge för verktygsväljare"
-defaultToolPickerModeDescription = "Välj om verktygsväljaren ska öppnas i helskärm eller sidopanel som standard"
-description = "Konfigurera allmänna programinställningar."
-hideUnavailableConversions = "Dölj otillgängliga konverteringar"
-hideUnavailableConversionsDescription = "Ta bort inaktiverade konverteringsalternativ i verktyget Konvertera istället för att visa dem nedtonade."
-hideUnavailableTools = "Dölj otillgängliga verktyg"
-hideUnavailableToolsDescription = "Ta bort verktyg som har inaktiverats av din server istället för att visa dem nedtonade."
-logout = "Logga ut"
-setAsDefault = "Ange som standard"
-title = "Allmänt"
-user = "Användare"
-
-[settings.general.enableFeatures]
-action = "Konfigurera"
-and = "och"
-benefit = "Aktiverar användarroller, teamsamarbete, adminkontroller och företagsfunktioner."
-dismiss = "Avfärda"
-intro = "Aktivera användarautentisering, teamhantering och arbetsytefunktioner för din organisation."
-learnMore = "Läs mer i dokumentationen"
-title = "För systemadministratörer"
-
-[settings.general.mode]
-fullscreen = "Helskärm"
-sidebar = "Sidopanel"
-
-[settings.general.updates]
-checkForUpdates = "Sök efter uppdateringar"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "Sök efter uppdateringar och visa versionsinfo"
-latestVersion = "Senaste version"
-serverNeedsUpdate = "Servern måste uppdateras av administratören"
-title = "Programuppdateringar"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "Visa detaljer"
-
-[settings.general.versionInfo]
-description = "Information om skrivbords- och serverversioner"
-desktop = "Skrivbordsversion"
-server = "Serverversion"
-title = "Versionsinformation"
-
-[settings.hotkeys]
-capturing = "Tryck på tangenter… (Esc för att avbryta)"
-change = "Ändra genväg"
-customBadge = "Anpassad"
-defaultLabel = "Standard: {{shortcut}}"
-description = "Anpassa kortkommandon för snabb åtkomst till verktyg. Klicka på \"Ändra genväg\" och tryck en ny tangentkombination. Tryck Esc för att avbryta."
-errorConflict = "Genväg används redan av {{tool}}."
-none = "Inte tilldelad"
-noShortcut = "Ingen genväg angiven"
-reset = "Återställ"
-searchPlaceholder = "Sök bland verktyg..."
-shortcut = "Genväg"
-title = "Kortkommandon"
-
-[settings.hotkeys.errorModifier]
-mac = "Inkludera ⌘ (Command), ⌥ (Option) eller en annan modifierare i ditt kortkommando."
-windows = "Inkludera Ctrl, Alt eller en annan modifierare i ditt kortkommando."
-
-[settings.licensingAnalytics]
-audit = "Granskning"
-plan = "Plan"
-title = "Licensiering och analys"
-usageAnalytics = "Användningsanalys"
 
 [settings.policiesPrivacy]
 legal = "Juridik"
@@ -6789,6 +6891,9 @@ security = "Säkerhet"
 telegram = "Telegram"
 title = "Säkerhet och autentisering"
 
+[settings.team]
+title = "Team"
+
 [settings.tooltips]
 enableLoginFirst = "Aktivera inloggningsläge först"
 requiresEnterprise = "Kräver Enterprise-licens"
@@ -6798,21 +6903,6 @@ people = "Personer"
 teams = "Team"
 title = "Arbetsyta"
 
-[settings.team]
-title = "Team"
-
-[localMode]
-toolUnavailable = "Detta verktyg kräver ett konto. Logga in på Stirling Cloud eller anslut till en självhostad server för att använda det."
-
-[localMode.banner]
-message = "Logga in för att låsa upp alla verktyg."
-signIn = "Logga in"
-title = "Körs lokalt"
-
-[localMode.toolPicker]
-message = "Logga in för att låsa upp alla verktyg."
-signIn = "Logga in"
-
 [setup]
 description = "Kom igång genom att välja hur du vill använda Stirling PDF"
 welcome = "Välkommen till Stirling PDF"
@@ -6820,7 +6910,6 @@ welcome = "Välkommen till Stirling PDF"
 [setup.login]
 connectingTo = "Ansluter till:"
 hideInstructions = "Dölj instruktioner"
-skipSignIn = "Fortsätt utan att logga in"
 instructions = "För att aktivera inloggning på din Stirling PDF-server:"
 instructionsEnvVar = "Ställ in miljövariabeln:"
 instructionsOrYml = "Eller i settings.yml:"
@@ -6830,6 +6919,7 @@ orContinueWith = "Eller fortsätt med e-post"
 serverRequirement = "Observera: Servern måste ha inloggning aktiverad."
 showInstructions = "Hur aktiverar man?"
 signInWith = "Logga in med"
+skipSignIn = "Fortsätt utan att logga in"
 sso = "Single Sign-On"
 submit = "Logga in"
 subtitle = "Ange dina uppgifter för att fortsätta"
@@ -6866,9 +6956,9 @@ subtitle = "Logga in med ditt Stirling-konto"
 title = "Logga in på Stirling"
 
 [setup.selfhosted]
+changeServerLocked = "Din organisation har begränsat den här appen till en specifik server"
 link = "eller anslut till ett självhostat konto"
 subtitle = "Ange dina serveruppgifter"
-changeServerLocked = "Din organisation har begränsat den här appen till en specifik server"
 switchToLocal = "Använd lokala verktyg i stället"
 title = "Logga in på server"
 
@@ -7068,14 +7158,45 @@ saved = "Sparad"
 text = "Text"
 title = "Signaturtyp"
 
+[signatureSettings.tooltip]
+header = "Inställningar för signaturutseende"
+
+[signatureSettings.tooltip.location]
+bullet1 = "Exempel: \"New York, USA\", \"London Office\", \"Remote\""
+bullet2 = "Inte samma som sidposition"
+bullet3 = "Kan krävas i vissa rättsliga jurisdiktioner"
+description = "Valfri geografisk plats där signaturen tillämpades. Lagradas i certifikatets metadata."
+title = "Signaturplats"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "Visas tillsammans med signatur och text"
+bullet2 = "Stöder formaten PNG, JPG"
+bullet3 = "Förbättrar professionellt utseende"
+description = "Lägg till en företagslogotyp i synliga signaturer för varumärke och äkthet."
+title = "Företagslogotyp"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "Exempel: \"Godkännande\", \"Kontraktsavtal\", \"Granskning slutförd\""
+bullet2 = "Synlig i PDF:ens signatur-egenskaper"
+bullet3 = "Användbart för granskningsspår och regelefterlevnad"
+description = "Valfri text som förklarar varför dokumentet signeras. Lagradas i certifikatets metadata."
+title = "Signeringsorsak"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>Synlig</b>: Signaturen visas på PDF:en med anpassat utseende"
+bullet2 = "<b>Osynlig</b>: Certifikat bäddas in utan visuellt märke"
+bullet3 = "Osynliga signaturer ger fortfarande kryptografisk validering"
+description = "Styr om signaturen är synlig i dokumentet eller bäddas in osynligt."
+title = "Signaturens synlighet"
+
 [signRequest]
 declined = "Signeringsförfrågan avböjdes"
 fetchFailed = "Det gick inte att läsa in signeringsförfrågan"
 signed = "Dokumentet signerades"
 
 [signSession]
-createFailed = "Det gick inte att skapa signeringsförfrågan"
 created = "Signeringsförfrågan skickad"
+createFailed = "Det gick inte att skapa signeringsförfrågan"
 
 [signup]
 accountCreatedSuccessfully = "Kontot har skapats! Du kan nu logga in."
@@ -7156,15 +7277,15 @@ desc = "Auto‑dela med avdelarblad"
 name = "Avdelarsida"
 tooltip = "Använd QR‑kod‑avdelarblad mellan dokument vid skanning"
 
-[split.methods.byPoster]
-name = "Utskrivbara delar"
-desc = "Dela upp stora sidor i utskrivbara storlekar"
-tooltip = "Dela upp överstora sidor i mindre delar som passar utskrift på standardpapper (A4, Letter osv.)"
-
 [split.methods.byPages]
 desc = "Extrahera specifika sidor (1,3,5-10)"
 name = "Sidnummer"
 tooltip = "Ange sidnummer separerade med kommatecken eller intervall med bindestreck"
+
+[split.methods.byPoster]
+desc = "Dela upp stora sidor i utskrivbara storlekar"
+name = "Utskrivbara delar"
+tooltip = "Dela upp överstora sidor i mindre delar som passar utskrift på standardpapper (A4, Letter osv.)"
 
 [split.methods.bySections]
 desc = "Dela sidor i rutnätssektioner"
@@ -7192,27 +7313,27 @@ title = "Välj din delningsmetod"
 text = "Välj hur du vill dela din PDF‑fil. Varje metod är optimerad för olika användningsfall och dokumenttyper."
 title = "Val av delningsmetod"
 
+[split.poster]
+rightToLeft = "Dela från höger till vänster"
+
+[split.poster.pageSize]
+description = "Storlek på utmatade sidor för utskrift"
+label = "Målstorlek för sida"
+
+[split.poster.xFactor]
+description = "Antal kolumner att dela varje sida i"
+label = "Horisontella indelningar"
+
+[split.poster.yFactor]
+description = "Antal rader att dela varje sida i"
+label = "Vertikala indelningar"
+
 [split.settings]
 selectMethodFirst = "Välj först en delningsmetod"
 
 [split.steps]
 chooseMethod = "Välj metod"
 settings = "Inställningar"
-
-[split.poster]
-rightToLeft = "Dela från höger till vänster"
-
-[split.poster.pageSize]
-label = "Målstorlek för sida"
-description = "Storlek på utmatade sidor för utskrift"
-
-[split.poster.xFactor]
-label = "Horisontella indelningar"
-description = "Antal kolumner att dela varje sida i"
-
-[split.poster.yFactor]
-label = "Vertikala indelningar"
-description = "Antal rader att dela varje sida i"
 
 [split.tooltip.byChapters]
 bullet1 = "Bokmärkesnivå: Vilken nivå som ska delas på (1=topnivå)"
@@ -7251,6 +7372,13 @@ bullet5 = "Aktivera duplexläge om du skannar båda sidor av avdelarbladen"
 text = "Dela automatiskt skannade dokument med fysiska avdelarblad med QR‑koder. Perfekt för att bearbeta flera dokument skannade tillsammans."
 title = "Dela med avdelarsidor"
 
+[split.tooltip.byPages]
+bullet1 = "Enstaka delningspunkter: 3,7 (delar efter sidorna 3 och 7)"
+bullet2 = "Intervallpunkter: 3-8 (delar före sida 3 och efter sida 8)"
+bullet3 = "Blandat: 2,5-10,15 (delar efter sida 2, före sida 5, efter sida 10 och efter sida 15)"
+text = "Dela din PDF vid specifika sidnummer. Med 'n' delas efter sida n. Med 'n-m' delas före sida n och efter sida m."
+title = "Dela vid sidnummer"
+
 [split.tooltip.byPoster]
 bullet1 = "Målstorlek för sida: Välj pappersstorlek (A4, Letter osv.)"
 bullet2 = "Horisontella/vertikala indelningar: Rutnätsstorlek för delning"
@@ -7258,13 +7386,6 @@ bullet3 = "Höger‑till‑vänster: Omvänd kolumnordning för RTL‑layouter"
 bullet4 = "Skriv ut och montera delarna för att skapa din affisch"
 text = "Dela upp stora PDF-sidor i mindre utskrivbara delar som passar standardpappersstorlekar. Perfekt för att skapa affischutskrifter från överstora sidor."
 title = "Dela för affischutskrift"
-
-[split.tooltip.byPages]
-bullet1 = "Enstaka delningspunkter: 3,7 (delar efter sidorna 3 och 7)"
-bullet2 = "Intervallpunkter: 3-8 (delar före sida 3 och efter sida 8)"
-bullet3 = "Blandat: 2,5-10,15 (delar efter sida 2, före sida 5, efter sida 10 och efter sida 15)"
-text = "Dela din PDF vid specifika sidnummer. Med 'n' delas efter sida n. Med 'n-m' delas före sida n och efter sida m."
-title = "Dela vid sidnummer"
 
 [split.tooltip.bySections]
 bullet1 = "Horisontellt: Antal rader som ska skapas"
@@ -7355,106 +7476,6 @@ title = "Dela upp PDF efter kapitel"
 [splitPdfByChapters]
 tags = "dela,kapitel,bokmärken,organisera"
 
-[storageShare]
-accessed = "Åtkomst"
-accessDenied = "Du har inte åtkomst till den här delade filen. Be ägaren dela den med dig."
-accessFailed = "Det går inte att läsa in aktivitet."
-accessDeniedBody = "Du har inte åtkomst till den här filen. Be ägaren dela den med dig."
-accessDeniedTitle = "Ingen åtkomst"
-accessLimitedCommenter = "Kommentaråtkomst kommer snart. Be ägaren om redigeraråtkomst om du behöver ladda ned."
-accessLimitedTitle = "Begränsad åtkomst"
-accessLimitedViewer = "Den här länken är endast för visning. Be ägaren om redigeraråtkomst om du behöver ladda ned."
-createdAt = "Skapad"
-download = "Ladda ned"
-downloadFailed = "Det går inte att ladda ned den här filen."
-expiredBody = "Den här delningslänken är ogiltig eller har löpt ut."
-expiredTitle = "Länken har löpt ut"
-goToLogin = "Gå till inloggningen"
-loadFailed = "Det går inte att öppna den delade filen."
-loading = "Läser in delningslänk..."
-loginPrompt = "Logga in för att få åtkomst till den här delade filen."
-loginRequired = "Inloggning krävs"
-openInApp = "Öppna i Stirling PDF"
-ownerLabel = "Ägare"
-ownerUnknown = "Okänd"
-requiresLogin = "Den här delade filen kräver inloggning."
-roleCommenter = "Kommentator"
-roleEditor = "Redigerare"
-roleViewer = "Läsare"
-shareHeading = "Delad fil"
-titleDefault = "Delad fil"
-tryAgain = "Försök igen senare."
-addUser = "Lägg till"
-commenterHint = "Kommentering kommer snart."
-copied = "Länk kopierad till urklipp"
-copy = "Kopiera"
-copyFailed = "Kopiering misslyckades"
-description = "Skapa en delningslänk för den här filen. Inloggade användare med länken kan få åtkomst till den."
-downloadsCount = "Nedladdningar: {{count}}"
-emailWarningBody = "Detta ser ut som en e-postadress. Om den här personen inte redan är Stirling PDF-användare kommer de inte att kunna få åtkomst till filen."
-emailWarningConfirm = "Dela ändå"
-emailWarningTitle = "E-postadress"
-errorTitle = "Delning misslyckades"
-failure = "Det gick inte att skapa en delningslänk. Försök igen."
-fileLabel = "Fil"
-generate = "Generera länk"
-generated = "Delningslänk skapad"
-hideActivity = "Dölj aktivitet"
-invalidUsername = "Ange ett giltigt användarnamn eller e-postadress."
-lastAccessed = "Senast åtkommet"
-linkAccessTitle = "Åtkomst via delningslänk"
-linkLabel = "Delningslänk"
-linksDisabled = "Delningslänkar är inaktiverade."
-linksDisabledBody = "Delningslänkar är inaktiverade i dina serverinställningar."
-manage = "Hantera delning"
-manageDescription = "Skapa och hantera länkar för att dela den här filen."
-manageLoadFailed = "Det går inte att läsa in delningslänkar."
-manageTitle = "Hantera delning"
-noActivity = "Ingen aktivitet ännu."
-noLinks = "Inga aktiva delningslänkar ännu."
-noSharedUsers = "Inga användare har åtkomst ännu."
-removeLink = "Ta bort länk"
-removeUser = "Ta bort"
-revokeFailed = "Det går inte att ta bort delningslänken."
-revoked = "Delningslänk borttagen"
-roleLabel = "Roll"
-sharingDisabled = "Delning är inaktiverad."
-sharingDisabledBody = "Delning har inaktiverats av dina serverinställningar."
-sharedUsersTitle = "Delade användare"
-title = "Dela fil"
-unknownUser = "Okänd användare"
-userAddFailed = "Det går inte att dela med den användaren."
-userAdded = "Användare tillagd i delningslistan."
-usernameLabel = "Användarnamn eller e-post"
-usernamePlaceholder = "Ange ett användarnamn eller e-post"
-userRemoveFailed = "Det går inte att ta bort den användaren."
-userRemoved = "Användare borttagen från delningslistan."
-viewActivity = "Visa aktivitet"
-viewed = "Visad"
-viewsCount = "Visningar: {{count}}"
-downloaded = "Nedladdad"
-bulkDescription = "Skapa en länk för att dela alla markerade filer med inloggade användare."
-bulkTitle = "Dela markerade filer"
-copyLink = "Kopiera delningslänk"
-fileCount = "{{count}} filer markerade"
-ownerOnly = "Endast ägaren kan hantera delning."
-selectSingleFile = "Välj en enskild fil för att hantera delning."
-
-[storageUpload]
-description = "Detta laddar upp den aktuella filen till serverlagring för din egen åtkomst."
-errorTitle = "Uppladdning misslyckades"
-failure = "Uppladdning misslyckades. Kontrollera din inloggning och dina lagringsinställningar."
-fileLabel = "Fil"
-hint = "Offentliga länkar och åtkomstlägen styrs av dina serverinställningar."
-success = "Uppladdad till server"
-title = "Ladda upp till server"
-updateButton = "Uppdatera på servern"
-uploadButton = "Ladda upp till server"
-bulkDescription = "Detta laddar upp de markerade filerna till din serverlagring."
-bulkTitle = "Ladda upp markerade filer"
-fileCount = "{{count}} filer markerade"
-more = " +{{count}} till"
-
 [storage]
 approximateSize = "Ungefärlig storlek"
 fileTooLarge = "Filen är för stor. Maximal storlek per fil är"
@@ -7463,6 +7484,106 @@ storageLimit = "Lagringsgräns"
 storageQuotaExceeded = "Lagringskvoten har överskridits. Ta bort några filer innan du laddar upp fler."
 storageUsed = "Utnyttjad temporär lagring"
 temporaryNotice = "Filer lagras temporärt i din webbläsare och kan rensas automatiskt"
+
+[storageShare]
+accessDenied = "Du har inte åtkomst till den här delade filen. Be ägaren dela den med dig."
+accessDeniedBody = "Du har inte åtkomst till den här filen. Be ägaren dela den med dig."
+accessDeniedTitle = "Ingen åtkomst"
+accessed = "Åtkomst"
+accessFailed = "Det går inte att läsa in aktivitet."
+accessLimitedCommenter = "Kommentaråtkomst kommer snart. Be ägaren om redigeraråtkomst om du behöver ladda ned."
+accessLimitedTitle = "Begränsad åtkomst"
+accessLimitedViewer = "Den här länken är endast för visning. Be ägaren om redigeraråtkomst om du behöver ladda ned."
+addUser = "Lägg till"
+bulkDescription = "Skapa en länk för att dela alla markerade filer med inloggade användare."
+bulkTitle = "Dela markerade filer"
+commenterHint = "Kommentering kommer snart."
+copied = "Länk kopierad till urklipp"
+copy = "Kopiera"
+copyFailed = "Kopiering misslyckades"
+copyLink = "Kopiera delningslänk"
+createdAt = "Skapad"
+description = "Skapa en delningslänk för den här filen. Inloggade användare med länken kan få åtkomst till den."
+download = "Ladda ned"
+downloaded = "Nedladdad"
+downloadFailed = "Det går inte att ladda ned den här filen."
+downloadsCount = "Nedladdningar: {{count}}"
+emailWarningBody = "Detta ser ut som en e-postadress. Om den här personen inte redan är Stirling PDF-användare kommer de inte att kunna få åtkomst till filen."
+emailWarningConfirm = "Dela ändå"
+emailWarningTitle = "E-postadress"
+errorTitle = "Delning misslyckades"
+expiredBody = "Den här delningslänken är ogiltig eller har löpt ut."
+expiredTitle = "Länken har löpt ut"
+failure = "Det gick inte att skapa en delningslänk. Försök igen."
+fileCount = "{{count}} filer markerade"
+fileLabel = "Fil"
+generate = "Generera länk"
+generated = "Delningslänk skapad"
+goToLogin = "Gå till inloggningen"
+hideActivity = "Dölj aktivitet"
+invalidUsername = "Ange ett giltigt användarnamn eller e-postadress."
+lastAccessed = "Senast åtkommet"
+linkAccessTitle = "Åtkomst via delningslänk"
+linkLabel = "Delningslänk"
+linksDisabled = "Delningslänkar är inaktiverade."
+linksDisabledBody = "Delningslänkar är inaktiverade i dina serverinställningar."
+loadFailed = "Det går inte att öppna den delade filen."
+loading = "Läser in delningslänk..."
+loginPrompt = "Logga in för att få åtkomst till den här delade filen."
+loginRequired = "Inloggning krävs"
+manage = "Hantera delning"
+manageDescription = "Skapa och hantera länkar för att dela den här filen."
+manageLoadFailed = "Det går inte att läsa in delningslänkar."
+manageTitle = "Hantera delning"
+noActivity = "Ingen aktivitet ännu."
+noLinks = "Inga aktiva delningslänkar ännu."
+noSharedUsers = "Inga användare har åtkomst ännu."
+openInApp = "Öppna i Stirling PDF"
+ownerLabel = "Ägare"
+ownerOnly = "Endast ägaren kan hantera delning."
+ownerUnknown = "Okänd"
+removeLink = "Ta bort länk"
+removeUser = "Ta bort"
+requiresLogin = "Den här delade filen kräver inloggning."
+revoked = "Delningslänk borttagen"
+revokeFailed = "Det går inte att ta bort delningslänken."
+roleCommenter = "Kommentator"
+roleEditor = "Redigerare"
+roleLabel = "Roll"
+roleViewer = "Läsare"
+selectSingleFile = "Välj en enskild fil för att hantera delning."
+sharedUsersTitle = "Delade användare"
+shareHeading = "Delad fil"
+sharingDisabled = "Delning är inaktiverad."
+sharingDisabledBody = "Delning har inaktiverats av dina serverinställningar."
+title = "Dela fil"
+titleDefault = "Delad fil"
+tryAgain = "Försök igen senare."
+unknownUser = "Okänd användare"
+userAdded = "Användare tillagd i delningslistan."
+userAddFailed = "Det går inte att dela med den användaren."
+usernameLabel = "Användarnamn eller e-post"
+usernamePlaceholder = "Ange ett användarnamn eller e-post"
+userRemoved = "Användare borttagen från delningslistan."
+userRemoveFailed = "Det går inte att ta bort den användaren."
+viewActivity = "Visa aktivitet"
+viewed = "Visad"
+viewsCount = "Visningar: {{count}}"
+
+[storageUpload]
+bulkDescription = "Detta laddar upp de markerade filerna till din serverlagring."
+bulkTitle = "Ladda upp markerade filer"
+description = "Detta laddar upp den aktuella filen till serverlagring för din egen åtkomst."
+errorTitle = "Uppladdning misslyckades"
+failure = "Uppladdning misslyckades. Kontrollera din inloggning och dina lagringsinställningar."
+fileCount = "{{count}} filer markerade"
+fileLabel = "Fil"
+hint = "Offentliga länkar och åtkomstlägen styrs av dina serverinställningar."
+more = " +{{count}} till"
+success = "Uppladdad till server"
+title = "Ladda upp till server"
+updateButton = "Uppdatera på servern"
+uploadButton = "Ladda upp till server"
 
 [subscription]
 cancelsOn = "Avslutas den {{date}}"
@@ -7507,8 +7628,121 @@ title = "API-dokumentation"
 [tableExtraxt]
 tags = "CSV,Tabellextraktion,extrahera,konvertera"
 
+[team]
+cancelInviteError = "Det gick inte att avbryta inbjudan"
+confirmCancelInvite = "Är du säker på att du vill avbryta denna inbjudan?"
+confirmLeave = "Är du säker på att du vill lämna detta team?"
+confirmLeaveLeader = "Som teamledare tas du bort från teamet om du lämnar. Är du säker?"
+confirmRemove = "Är du säker på att du vill ta bort den här medlemmen?"
+editName = "Redigera teamnamn"
+inviteCancelled = "Inbjudan avbruten"
+inviteError = "Det gick inte att skicka inbjudan"
+inviteSent = "Inbjudan skickades"
+leader = "Teamledare"
+leaveButton = "Lämna team"
+leaveError = "Det gick inte att lämna teamet"
+leaveSuccess = "Du har lämnat teamet"
+loading = "Läser in teaminformation..."
+memberCount = "{{count}} medlemmar"
+memberRemoved = "Medlem borttagen"
+namePlaceholder = "Ange teamnamn"
+personal = "Personligt"
+removeError = "Det gick inte att ta bort medlem"
+renameError = "Det gick inte att byta namn på teamet"
+renameSuccess = "Teamets namn har uppdaterats"
+
+[team.features]
+badge = "Teamfunktioner"
+subtitle = "Samarbeta med ditt team"
+title = "Teamsamarbete"
+viewPlans = "Visa planer"
+
+[team.features.billing]
+description = "Hantera fakturering och prenumerationer"
+title = "Faktureringshantering"
+
+[team.features.credits]
+description = "Delad kreditpool för alla medlemmar"
+title = "Delade krediter"
+
+[team.features.dashboard]
+description = "Visa teamaktivitet och användning"
+title = "Teaminstrumentpanel"
+
+[team.features.invite]
+description = "Lägg till medlemmar i ditt team"
+title = "Bjud in medlemmar"
+
+[team.invitationBanner]
+acceptButton = "Acceptera"
+message = "har bjudit in dig att gå med"
+rejectButton = "Avböj"
+
+[team.invite]
+cancelLabel = "Avbryt"
+invalidEmail = "Ogiltig e-postadress"
+placeholder = "Ange e-postadress"
+sendButton = "Skicka inbjudan"
+title = "Bjud in teammedlem"
+
+[team.members]
+emailColumn = "E-post"
+empty = "Inga teammedlemmar än"
+nameColumn = "Namn"
+pending = "Väntande"
+remove = "Ta bort"
+roleColumn = "Roll"
+title = "Teammedlemmar"
+
+[team.upgrade]
+button = "Uppgradera till Team"
+description = "Lås upp funktioner för teamsamarbete"
+title = "Uppgradera till Team-plan"
+
+[textAlign]
+center = "Centrerat"
+left = "Vänster"
+right = "Höger"
+
 [theme]
 toggle = "Växla tema"
+
+[timestampPdf]
+completed = "PDF har tidsstämplats"
+desc = "Lägg till en RFC 3161-dokumenttidsstämpel i din PDF med en betrodd Time Stamp Authority (TSA)-server."
+filenamePrefix = "tidsstämplad"
+results = "Tidsstämpelresultat"
+submit = "Använd tidsstämpel"
+title = "Tidsstämpla PDF"
+
+[timestampPdf.error]
+failed = "Ett fel inträffade när PDF:en tidsstämplades."
+generic = "Tidsstämpling misslyckades"
+
+[timestampPdf.files]
+placeholder = "Välj en PDF-fil i huvudvyn för att komma igång"
+
+[timestampPdf.options]
+note = "Endast en SHA-256-hash av ditt dokument skickas till TSA-servern; själva PDF-filen skickas aldrig till TSA-servern."
+title = "Tidsstämpelserver (TSA)"
+
+[timestampPdf.options.tsaUrl]
+desc = "Välj en betrodd Time Stamp Authority"
+label = "Välj en TSA-server"
+
+[timestampPdf.steps]
+settings = "Inställningar"
+
+[tool]
+endpointUnavailable = "Detta verktyg är inte tillgängligt på din server."
+endpointUnavailableClickable = "Inte tillgängligt i detta läge. Klicka för att logga in."
+invalidParams = "Fyll i de obligatoriska inställningarna."
+noFiles = "Lägg till en fil för att komma igång."
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "Alfa"
@@ -7568,12 +7802,6 @@ pageFormatting = "Sidformatering"
 removal = "Borttagning"
 signing = "Signering"
 verification = "Verifiering"
-
-[tool]
-endpointUnavailable = "Detta verktyg är inte tillgängligt på din server."
-endpointUnavailableClickable = "Inte tillgängligt i detta läge. Klicka för att logga in."
-invalidParams = "Fyll i de obligatoriska inställningarna."
-noFiles = "Lägg till en fil för att komma igång."
 
 [tools]
 noSearchResults = "Inga verktyg hittades"
@@ -7793,6 +8021,81 @@ fileManager = "Filhanterare"
 pageEditor = "Sidredigerare"
 viewer = "Visare"
 
+[viewer]
+cannotPreviewFile = "Kan inte förhandsgranska filen"
+disableColorFilter = "Inaktivera färgfilter"
+dualPageView = "Dubbelsidig vy"
+enableDarkFilter = "Aktivera mörkt filter"
+enableSepiaFilter = "Aktivera sepiafilter"
+firstPage = "Första sidan"
+lastPage = "Sista sidan"
+nextPage = "Nästa sida"
+onlyPdfSupported = "Visaren stöder endast PDF-filer. Den här filen verkar vara i ett annat format."
+previousPage = "Föregående sida"
+resetZoom = "Återställ zoom"
+singlePageView = "Ensidig vy"
+unknownFile = "Okänd fil"
+zoomIn = "Zooma in"
+zoomOut = "Zooma ut"
+
+[viewer.attachments]
+empty = "Inga bilagor i det här dokumentet"
+loading = "Läser in bilagor..."
+noDocument = "Öppna en PDF för att visa dess bilagor."
+noMatch = "Inga bilagor matchar din sökning"
+noSupport = "Stöd för bilagor är inte tillgängligt i den här visaren."
+searchPlaceholder = "Sök bilagor"
+title = "Bilagor"
+
+[viewer.comments]
+addComment = "Lägg till kommentar"
+addCommentPlaceholder = "Lägg till kommentar..."
+addLink = "Lägg till länk"
+addReplyPlaceholder = "Lägg till svar..."
+deleteAnnotationAndComment = "Ta bort annotering & kommentar"
+deleteDescription = "Denna annotering har en kommentar kopplad. Du kan ta bort bara kommentaren i sidofältet och behålla annoteringen, eller ta bort allt."
+deleteTitle = "Ta bort annotering från kommentarer?"
+goToLink = "Gå till länk"
+hint = "Placera kommentarer med verktygen Kommentar, Infoga text eller Ersätt text. De visas här per sida."
+locateAnnotation = "Hitta i dokumentet"
+moreActions = "Fler åtgärder"
+nComments = "{{count}} kommentarer"
+oneComment = "1 kommentar"
+pageLabel = "Sida {{page}}"
+placeholder = "Skriv din kommentar..."
+removeCommentOnly = "Ta bort endast kommentaren"
+saveReply = "Spara svar"
+send = "Skicka"
+title = "Kommentarer"
+typeComment = "Kommentar"
+typeInsertText = "Infoga text"
+typeReplaceText = "Ersätt text"
+viewComment = "Visa kommentar"
+
+[viewer.formBar]
+apply = "Verkställ ändringar"
+dismiss = "Avfärda"
+download = "Ladda ned PDF"
+hasFieldsDesc = "Denna PDF innehåller ifyllbara fält"
+title = "Formulärfält"
+unsavedBadge = "Ej sparat"
+unsavedDesc = "Du har osparade ändringar"
+
+[viewer.nonPdf]
+columnDefault = "Kolumn {{index}}"
+convertToPdf = "Konvertera till PDF"
+csvStats = "{{rows}} rader · {{columns}} kolumner · {{size}}"
+emptyFile = "Tom fil"
+fileTypeBadge = "{{type}}-fil"
+htmlPreview = "HTML-förhandsvisning"
+htmlPreviewWarning = "HTML-förhandsvisning — externa resurser kanske inte läses in · {{size}}"
+invalidJson = "Ogiltig JSON — visar rått innehåll"
+lineNumbers = "Radnummer"
+loading = "Läser in..."
+renderMarkdown = "Rendera markdown"
+sortedBy = "Sorterad efter: {{column}}"
+textStats = "{{lines}} rader · {{size}}"
+
 [viewPdf]
 header = "Visa PDF"
 tags = "visa,läs,kommentera,text,bild"
@@ -7800,30 +8103,6 @@ title = "Visa/redigera PDF"
 
 [warning]
 tooltipTitle = "Varning"
-
-[wetSignature.tooltip]
-header = "Metoder för signaturskapande"
-
-[wetSignature.tooltip.draw]
-bullet1 = "Anpassa pennfärg och tjocklek"
-bullet2 = "Rensa och rita om tills du är nöjd"
-bullet3 = "Fungerar på pekskärmsenheter (surfplattor, telefoner)"
-description = "Skapa en handskriven signatur med musen eller pekskärmen. Bäst för personliga, autentiska signaturer."
-title = "Rita signatur"
-
-[wetSignature.tooltip.type]
-bullet1 = "Välj mellan flera typsnitt"
-bullet2 = "Anpassa textstorlek och färg"
-bullet3 = "Perfekt för standardiserade signaturer"
-description = "Skapa en signatur från skriven text. Snabb och konsekvent, lämplig för affärsdokument."
-title = "Skriv signatur"
-
-[wetSignature.tooltip.upload]
-bullet1 = "Stöder PNG, JPG och andra bildformat"
-bullet2 = "Genomskinliga bakgrunder rekommenderas för bästa resultat"
-bullet3 = "Bilden kommer att skalas för att passa signaturområdet"
-description = "Ladda upp en i förväg skapad signaturbild. Idealiskt om du har en skannad signatur eller företagslogotyp."
-title = "Ladda upp signaturbild"
 
 [watermark]
 completed = "Vattenstämpel tillagd"
@@ -7996,6 +8275,30 @@ title = "Vattenstämpeltext"
 image = "Bild"
 text = "Text"
 
+[wetSignature.tooltip]
+header = "Metoder för signaturskapande"
+
+[wetSignature.tooltip.draw]
+bullet1 = "Anpassa pennfärg och tjocklek"
+bullet2 = "Rensa och rita om tills du är nöjd"
+bullet3 = "Fungerar på pekskärmsenheter (surfplattor, telefoner)"
+description = "Skapa en handskriven signatur med musen eller pekskärmen. Bäst för personliga, autentiska signaturer."
+title = "Rita signatur"
+
+[wetSignature.tooltip.type]
+bullet1 = "Välj mellan flera typsnitt"
+bullet2 = "Anpassa textstorlek och färg"
+bullet3 = "Perfekt för standardiserade signaturer"
+description = "Skapa en signatur från skriven text. Snabb och konsekvent, lämplig för affärsdokument."
+title = "Skriv signatur"
+
+[wetSignature.tooltip.upload]
+bullet1 = "Stöder PNG, JPG och andra bildformat"
+bullet2 = "Genomskinliga bakgrunder rekommenderas för bästa resultat"
+bullet3 = "Bilden kommer att skalas för att passa signaturområdet"
+description = "Ladda upp en i förväg skapad signaturbild. Idealiskt om du har en skannad signatur eller företagslogotyp."
+title = "Ladda upp signaturbild"
+
 [workspace]
 title = "Arbetsyta"
 
@@ -8014,9 +8317,9 @@ disable = "Inaktivera"
 disabled = "Inaktiverad"
 editRole = "Redigera roll"
 enable = "Aktivera"
+loading = "Laddar personer..."
 locked = "låst"
 lockedBadge = "Låst"
-loading = "Laddar personer..."
 loginRequired = "Aktivera inloggningsläge först"
 member = "Medlem"
 noMembersFound = "Inga medlemmar hittades"
@@ -8262,278 +8565,3 @@ cancel = "Avbryt"
 confirm = "Extrahera"
 message = "Denna ZIP innehåller {{count}} filer. Extrahera ändå?"
 title = "Stor ZIP-fil"
-
-[cloudBadge]
-tooltip = "Denna åtgärd kommer att använda dina molnkrediter"
-
-[team]
-cancelInviteError = "Det gick inte att avbryta inbjudan"
-confirmCancelInvite = "Är du säker på att du vill avbryta denna inbjudan?"
-confirmLeave = "Är du säker på att du vill lämna detta team?"
-confirmLeaveLeader = "Som teamledare tas du bort från teamet om du lämnar. Är du säker?"
-confirmRemove = "Är du säker på att du vill ta bort den här medlemmen?"
-editName = "Redigera teamnamn"
-inviteCancelled = "Inbjudan avbruten"
-inviteError = "Det gick inte att skicka inbjudan"
-inviteSent = "Inbjudan skickades"
-leader = "Teamledare"
-leaveButton = "Lämna team"
-leaveError = "Det gick inte att lämna teamet"
-leaveSuccess = "Du har lämnat teamet"
-loading = "Läser in teaminformation..."
-memberCount = "{{count}} medlemmar"
-memberRemoved = "Medlem borttagen"
-namePlaceholder = "Ange teamnamn"
-personal = "Personligt"
-removeError = "Det gick inte att ta bort medlem"
-renameError = "Det gick inte att byta namn på teamet"
-renameSuccess = "Teamets namn har uppdaterats"
-
-[team.invitationBanner]
-message = "har bjudit in dig att gå med"
-acceptButton = "Acceptera"
-rejectButton = "Avböj"
-
-[team.features]
-badge = "Teamfunktioner"
-subtitle = "Samarbeta med ditt team"
-title = "Teamsamarbete"
-viewPlans = "Visa planer"
-
-[team.features.billing]
-description = "Hantera fakturering och prenumerationer"
-title = "Faktureringshantering"
-
-[team.features.credits]
-description = "Delad kreditpool för alla medlemmar"
-title = "Delade krediter"
-
-[team.features.dashboard]
-description = "Visa teamaktivitet och användning"
-title = "Teaminstrumentpanel"
-
-[team.features.invite]
-description = "Lägg till medlemmar i ditt team"
-title = "Bjud in medlemmar"
-
-[team.invite]
-cancelLabel = "Avbryt"
-invalidEmail = "Ogiltig e-postadress"
-placeholder = "Ange e-postadress"
-sendButton = "Skicka inbjudan"
-title = "Bjud in teammedlem"
-
-[team.members]
-emailColumn = "E-post"
-empty = "Inga teammedlemmar än"
-nameColumn = "Namn"
-pending = "Väntande"
-remove = "Ta bort"
-roleColumn = "Roll"
-title = "Teammedlemmar"
-
-[team.upgrade]
-button = "Uppgradera till Team"
-description = "Lås upp funktioner för teamsamarbete"
-title = "Uppgradera till Team-plan"
-
-[provider.oauth2.google]
-scope = "Autentisering för inloggning"
-
-[provider.oauth2.google.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID från Google Cloud Console"
-
-[provider.oauth2.google.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret från Google Cloud Console"
-
-[provider.oauth2.google.scopes]
-label = "Scopes"
-description = "Kommaseparerade OAuth2-scopes"
-
-[provider.oauth2.google.useAsUsername]
-label = "Använd som användarnamn"
-description = "Fält att använda som användarnamn (email, name, given_name, family_name)"
-
-[provider.oauth2.github]
-scope = "Autentisering för inloggning"
-
-[provider.oauth2.github.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID från GitHub Developer Settings"
-
-[provider.oauth2.github.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret från GitHub Developer Settings"
-
-[provider.oauth2.github.scopes]
-label = "Scopes"
-description = "Kommaseparerade OAuth2-scopes"
-
-[provider.oauth2.github.useAsUsername]
-label = "Använd som användarnamn"
-description = "Fält att använda som användarnamn (email, login, name)"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "Utfärdarens URL"
-description = "URL till Keycloak-realmets OpenID Connect Discovery-slutpunkt"
-
-[provider.oauth2.keycloak.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID från Keycloak"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret från Keycloak"
-
-[provider.oauth2.keycloak.scopes]
-label = "Scopes"
-description = "Kommaseparerade OAuth2-scopes"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "Använd som användarnamn"
-description = "Fält att använda som användarnamn (email, name, given_name, family_name, preferred_username)"
-
-[provider.oauth2.generic]
-name = "Generisk OAuth2"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "Aktivera generisk OAuth2"
-description = "Aktivera autentisering via en anpassad OAuth2-leverantör"
-
-[provider.oauth2.generic.provider]
-label = "Leverantörsnamn"
-description = "Namnet på din OAuth2-leverantör (t.ex. Azure AD, Okta)"
-
-[provider.oauth2.generic.issuer]
-label = "Utfärdarens URL"
-description = "Leverantör som stöder OpenID Connect Discovery (/.well-known/openid-configuration)"
-
-[provider.oauth2.generic.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID från din leverantör"
-
-[provider.oauth2.generic.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret från din leverantör"
-
-[provider.oauth2.generic.scopes]
-label = "Scopes"
-description = "Kommaseparerade OAuth2-scopes"
-
-[provider.oauth2.generic.useAsUsername]
-label = "Använd som användarnamn"
-description = "Fält att använda som användarnamn"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "Skapa användare automatiskt"
-description = "Skapa automatiskt användarkonton vid första OAuth2-inloggningen"
-
-[provider.oauth2.generic.blockRegistration]
-label = "Blockera registrering"
-description = "Förhindra ny användarregistrering via OAuth2"
-
-[provider.smtp]
-name = "SMTP-e-post"
-scope = "E-postaviseringar"
-
-[provider.smtp.enabled]
-label = "Aktivera e-post"
-description = "Aktivera e-postaviseringar och SMTP-funktionalitet"
-
-[provider.smtp.host]
-label = "SMTP-värd"
-description = "Värdnamn eller IP-adress för din SMTP-server"
-
-[provider.smtp.port]
-label = "SMTP-port"
-description = "Portnummer för SMTP-anslutning (vanligen 25, 465 eller 587)"
-
-[provider.smtp.username]
-label = "SMTP-användarnamn"
-description = "Användarnamn för SMTP-autentisering"
-
-[provider.smtp.password]
-label = "SMTP-lösenord"
-description = "Lösenord för SMTP-autentisering"
-
-[provider.smtp.from]
-label = "Från-adress"
-description = "E-postadressen som ska användas som avsändare"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO (SAML)"
-
-[provider.saml2.enabled]
-label = "Aktivera SAML2"
-description = "Aktivera SAML2-autentisering (endast Enterprise)"
-
-[provider.saml2.provider]
-label = "Leverantörsnamn"
-description = "Namnet på din SAML2-leverantör"
-
-[provider.saml2.registrationId]
-label = "Registrerings-ID"
-description = "Namnet på din Service Provider (SP)-app"
-
-[provider.saml2.idpMetadataUri]
-label = "IDP Metadata URI"
-description = "URI till din leverantörs metadata"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "IDP Single Login URL"
-description = "URL för att initiera SSO"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "IDP Single Logout URL"
-description = "URL för att initiera SLO"
-
-[provider.saml2.idpIssuer]
-label = "IDP Issuer"
-description = "ID för din leverantör"
-
-[provider.saml2.idpCert]
-label = "IDP-certifikat"
-description = "Certifikatets sökväg (t.ex. classpath:okta.cert)"
-
-[provider.saml2.privateKey]
-label = "Privat nyckel"
-description = "Sökväg till din privata nyckel"
-
-[provider.saml2.spCert]
-label = "SP-certifikat"
-description = "Sökväg till ditt signeringscertifikat"
-
-[provider.saml2.autoCreateUser]
-label = "Skapa användare automatiskt"
-description = "Skapa automatiskt användarkonton vid första SAML2-inloggningen"
-
-[provider.saml2.blockRegistration]
-label = "Blockera registrering"
-description = "Förhindra ny användarregistrering via SAML2"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "Filimport"
-
-[provider.googledrive.enabled]
-label = "Aktivera filväljare för Google Drive"
-description = "Tillåt användare att importera filer direkt från Google Drive"
-
-[provider.googledrive.clientId]
-label = "Client ID"
-description = "Google OAuth 2.0 Client ID från Google Cloud Console"
-
-[provider.googledrive.apiKey]
-label = "API-nyckel"
-description = "Google API-nyckel för Google Picker API från Google Cloud Console"
-
-[provider.googledrive.appId]
-label = "App-ID"
-description = "Google Drive App ID från Google Cloud Console"

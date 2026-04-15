@@ -1,3 +1,4 @@
+accessInvite = "邀请"
 addToDoc = "添加至文件"
 alphabet = "字母表"
 apply = "应用"
@@ -8,22 +9,22 @@ black = "黑色"
 blue = "蓝色"
 bored = "等待时觉得无聊？"
 cancel = "取消"
-confirm = "确认"
 changedCredsMessage = "凭证已更改！"
 chooseFile = "选择文件"
 close = "关闭"
 color = "颜色"
 comingSoon = "即将推出"
+confirm = "确认"
 confirmClose = "确认关闭"
 confirmCloseCancel = "取消"
 confirmCloseConfirm = "关闭文件"
-confirmCloseMessage = "确定要关闭此文件吗？"
 confirmCloseDiscard = "放弃更改并关闭"
+confirmCloseMessage = "确定要关闭此文件吗？"
 confirmCloseSave = "保存并关闭"
+confirmCloseSaveFailed = "保存时出现错误。{{count}} 个文件{{plural}}无法保存。"
+confirmCloseSaveFailedTitle = "保存失败"
 confirmCloseUnsaved = "此文件有未保存的更改。"
 confirmCloseUnsavedList = "您有 {{count}} 个文件{{plural}}存在未保存的更改。\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "保存失败"
-confirmCloseSaveFailed = "保存时出现错误。{{count}} 个文件{{plural}}无法保存。"
 confirmPasswordErrorMessage = "两次密码不一致。"
 custom = "自定义..."
 customPosition = "自定义位置"
@@ -43,11 +44,14 @@ downloadComplete = "下载完成"
 downloadPdf = "下载 PDF"
 downloadUnavailable = "此项不支持下载"
 edit = "编辑"
+editSecret = "编辑此值"
 editYourNewFiles = "编辑您的新文件"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "导出并继续"
 false = "错"
-fileSavedToDisk = "文件已保存到磁盘"
 fileNotSavedToDisk = "未保存到磁盘"
+fileSavedToDisk = "文件已保存到磁盘"
 fileSelected = "已选：{{filename}}"
 filesSelected = "选中的文件"
 font = "字体"
@@ -61,12 +65,15 @@ help = "帮助"
 imgPrompt = "选择图像"
 incorrectPasswordMessage = "当前密码不正确。"
 info = "信息"
+insufficientCredits = "积分不足。所需：{{requiredCredits}}，可用：{{currentBalance}}，缺口：{{shortfall}}"
 invalidPasswordMessage = "密码不能为空且开头和结尾不能有空格。"
 invalidUndoData = "无法撤销：操作数据无效"
 invalidUsernameMessage = "用户名无效，用户名只能包含字母、数字和以下特殊字符@._+- 或必须是有效的电子邮件地址。"
 joinDiscord = "加入我们的 Discord 服务器"
 keepWorking = "继续工作"
 loading = "加载中..."
+loadingCredits = "正在检查积分..."
+loadingProStatus = "正在检查订阅状态..."
 logOut = "退出登录"
 marginTooltip = "页码与页面边缘的距离。"
 moreOptions = "更多选项"
@@ -80,6 +87,7 @@ noFilesToUndo = "无法撤销：上一次操作未处理任何文件"
 noOperationToUndo = "没有可撤销的操作"
 notAuthenticatedMessage = "用户未经过身份验证。"
 nothingToUndo = "没有可撤销的操作"
+noticeTopUpOrPlan = "积分不足，请充值或升级至某个套餐"
 noValidFiles = "没有可处理的有效文件"
 oops = "哎呀！"
 openInViewer = "在查看器中打开"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "未应用的涂黑"
 pin = "固定文件（在工具运行后保持激活）"
 poweredBy = "服务来源："
 pro = "专业版"
-processTimeWarning = "警告：此过程可能需要多达一分钟，具体时间取决于文件大小"
 processingComplete = "您的文件已就绪。"
 processingCompleteMultiple = "{{count}} 个文件已就绪。"
+processTimeWarning = "警告：此过程可能需要多达一分钟，具体时间取决于文件大小"
 property = "资产"
 quickPosition = "快速定位"
 red = "红色"
@@ -108,7 +116,6 @@ save = "保存"
 saveToBrowser = "保存到浏览器"
 saveUnavailable = "此项目无法保存"
 seeDockerHub = "查看 Docker Hub"
-editSecret = "编辑此值"
 selectFillter = "-- 选择--"
 size = "大小"
 sponsor = "赞助"
@@ -143,11 +150,6 @@ welcome = "欢迎"
 white = "白色"
 WorkInProgess = "工作正在进行中，可能无法工作或有错误，请报告任何问题！"
 yes = "是"
-insufficientCredits = "积分不足。所需：{{requiredCredits}}，可用：{{currentBalance}}，缺口：{{shortfall}}"
-loadingCredits = "正在检查积分..."
-loadingProStatus = "正在检查订阅状态..."
-noticeTopUpOrPlan = "积分不足，请充值或升级至某个套餐"
-accessInvite = "邀请"
 
 [account]
 accountSettings = "账号设定"
@@ -851,6 +853,14 @@ title = "API 端点"
 userDefaults = "用户偏好默认值"
 userDefaultsDescription = "为用户偏好设置默认值。用户可在个人设置中覆盖。"
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "将已禁用的转换选项移除，而非以灰显显示"
+label = "默认隐藏不可用的转换"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "将已禁用的工具移除，而非以灰显显示"
+label = "默认隐藏不可用工具"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "选择要禁用的端点组"
 label = "已禁用的端点组"
@@ -858,14 +868,6 @@ label = "已禁用的端点组"
 [admin.settings.endpoints.toRemove]
 description = "选择要禁用的单个端点"
 label = "已禁用的端点"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "将已禁用的工具移除，而非以灰显显示"
-label = "默认隐藏不可用工具"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "将已禁用的转换选项移除，而非以灰显显示"
-label = "默认隐藏不可用的转换"
 
 [admin.settings.enterpriseRequired]
 message = "访问 {{featureName}} 需要企业许可证。您正在查看演示数据以供参考。"
@@ -974,6 +976,10 @@ label = "默认语言区域"
 description = "最大文件上传大小（例如：100MB、1GB）"
 label = "文件上传限制"
 
+[admin.settings.general.frontendUrl]
+description = "前端的基础 URL（例如：https://pdf.example.com）。用于邮件邀请链接和手机二维码上传。留空则使用后端 URL。"
+label = "前端 URL"
+
 [admin.settings.general.hideDisabledTools]
 description = "在界面中隐藏已禁用的工具"
 label = "隐藏已禁用的工具"
@@ -985,10 +991,6 @@ label = "隐藏 Google Drive"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "未启用时隐藏移动端 QR 扫描按钮"
 label = "隐藏移动端扫描器"
-
-[admin.settings.general.frontendUrl]
-description = "前端的基础 URL（例如：https://pdf.example.com）。用于邮件邀请链接和手机二维码上传。留空则使用后端 URL。"
-label = "前端 URL"
 
 [admin.settings.general.homeDescription]
 description = "主页上显示的描述文本"
@@ -1169,9 +1171,25 @@ description = "配置身份验证、登录行为和安全策略。"
 title = "安全"
 
 [admin.settings.security.audit]
+hideDetails = "隐藏审计级别详细信息"
 label = "审计日志"
 showDetails = "显示审计级别详细信息"
-hideDetails = "隐藏审计级别详细信息"
+
+[admin.settings.security.audit.advancedOptions]
+description = "以下选项会增加处理时间和内存占用，仅在确有需要时启用。"
+title = "高级选项"
+
+[admin.settings.security.audit.captureFileHash]
+description = "提取上传 PDF 文件的 SHA-256 哈希用于完整性验证。独立于审计级别。"
+label = "捕获文件哈希（SHA-256）"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "捕获方法返回值。不建议：会显著增加日志量和磁盘占用。"
+label = "捕获操作结果"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "在处理过程中提取 PDF 文档的作者字段。需要解析 PDF，会增加延迟。独立于审计级别。"
+label = "捕获 PDF 作者元数据"
 
 [admin.settings.security.audit.enabled]
 description = "跟踪用户操作和系统事件以满足合规与安全监控"
@@ -1182,30 +1200,14 @@ description = "0=OFF，1=BASIC，2=STANDARD，3=VERBOSE"
 label = "审计级别"
 
 [admin.settings.security.audit.levelDetails]
-off = "不记录审计日志（关键安全事件除外）"
 basic = "PDF 文件操作（压缩、拆分、合并等）和设置更改。捕获：操作状态（成功/失败）、方法参数、时间。最小日志量。"
+off = "不记录审计日志（关键安全事件除外）"
 standard = "在 BASIC 之上：用户登录/登出、账户更改、通用 GET 请求。不包括连续轮询调用（/auth/me、/app-config、/health 等），以减少日志噪声。适合大多数部署。"
 verbose = "在 STANDARD 之上：连续轮询调用、所有 GET 请求、详细时间。警告：日志量大且影响性能。"
 
 [admin.settings.security.audit.retentionDays]
 description = "审计日志的保留天数"
 label = "审计保留（天）"
-
-[admin.settings.security.audit.advancedOptions]
-title = "高级选项"
-description = "以下选项会增加处理时间和内存占用，仅在确有需要时启用。"
-
-[admin.settings.security.audit.captureFileHash]
-description = "提取上传 PDF 文件的 SHA-256 哈希用于完整性验证。独立于审计级别。"
-label = "捕获文件哈希（SHA-256）"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "在处理过程中提取 PDF 文档的作者字段。需要解析 PDF，会增加延迟。独立于审计级别。"
-label = "捕获 PDF 作者元数据"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "捕获方法返回值。不建议：会显著增加日志量和磁盘占用。"
-label = "捕获操作结果"
 
 [admin.settings.security.csrfDisabled]
 description = "禁用跨站请求伪造保护（不建议）"
@@ -1274,6 +1276,14 @@ label = "初始用户名"
 [admin.settings.security.jwt]
 label = "JWT 配置"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "令牌验证期间客户端/服务器时间偏差的容差（默认：60 秒）"
+label = "时钟偏差容差（秒）"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "桌面客户端访问令牌的有效期（分钟）。通过 User-Agent 自动检测桌面应用，并为更佳体验提供更长会话（默认：43200 = 30 天）"
+label = "桌面令牌有效期（分钟）"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "自动移除过期的 JWT 密钥"
 label = "启用密钥清理"
@@ -1282,29 +1292,21 @@ label = "启用密钥清理"
 description = "定期自动轮换 JWT 签名密钥"
 label = "启用密钥轮换"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "Web 客户端访问令牌的有效期（分钟）（默认：1440 = 24 小时）"
-label = "Web 令牌有效期（分钟）"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "桌面客户端访问令牌的有效期（分钟）。通过 User-Agent 自动检测桌面应用，并为更佳体验提供更长会话（默认：43200 = 30 天）"
-label = "桌面令牌有效期（分钟）"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "令牌验证期间客户端/服务器时间偏差的容差（默认：60 秒）"
-label = "时钟偏差容差（秒）"
+[admin.settings.security.jwt.persistence]
+description = "持久化存储 JWT 密钥以跨越服务器重启"
+label = "启用密钥持久化"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "允许在到期后于此分钟数内刷新令牌（默认：15 分钟，最多 3 次尝试）"
 label = "刷新宽限期（分钟）"
 
-[admin.settings.security.jwt.persistence]
-description = "持久化存储 JWT 密钥以跨越服务器重启"
-label = "启用密钥持久化"
-
 [admin.settings.security.jwt.secureCookie]
 description = "对 JWT Cookie 要求 HTTPS（生产环境推荐）"
 label = "安全 Cookie"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "Web 客户端访问令牌的有效期（分钟）（默认：1440 = 24 小时）"
+label = "Web 令牌有效期（分钟）"
 
 [admin.settings.security.loginAttemptCount]
 description = "达到该失败次数后将锁定账户"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "控制服务器存储和共享选项。"
+title = "文件存储与共享"
+
+[admin.settings.storage.enabled]
+description = "允许用户在服务器上存储文件。"
+label = "启用服务器文件存储"
+
+[admin.settings.storage.sharing.email]
+description = "允许通过电子邮件地址进行共享。"
+label = "启用电子邮件共享"
+mailLink = "配置邮件设置"
+mailNote = "需要邮件配置。 "
+
+[admin.settings.storage.sharing.enabled]
+description = "允许用户共享已存储的文件。"
+label = "启用共享"
+
+[admin.settings.storage.sharing.links]
+description = "允许通过需登录的链接进行共享。"
+frontendUrlLink = "在系统设置中配置"
+frontendUrlNote = "需要前端 URL。 "
+label = "启用共享链接"
+
+[admin.settings.storage.signing.enabled]
+description = "允许用户创建多人参与的文档签署会话。需要启用服务器文件存储。"
+label = "启用群组签署（Alpha）"
 
 [admin.settings.telegram]
 description = "配置 Telegram 机器人的连接、访问控制和反馈行为。"
@@ -1429,34 +1459,6 @@ title = "处理"
 description = "等待处理作业的最长时间，超时后报告错误。"
 label = "处理超时（秒）"
 
-[admin.settings.storage]
-description = "控制服务器存储和共享选项。"
-title = "文件存储与共享"
-
-[admin.settings.storage.enabled]
-description = "允许用户在服务器上存储文件。"
-label = "启用服务器文件存储"
-
-[admin.settings.storage.sharing.email]
-description = "允许通过电子邮件地址进行共享。"
-label = "启用电子邮件共享"
-mailLink = "配置邮件设置"
-mailNote = "需要邮件配置。 "
-
-[admin.settings.storage.sharing.enabled]
-description = "允许用户共享已存储的文件。"
-label = "启用共享"
-
-[admin.settings.storage.sharing.links]
-description = "允许通过需登录的链接进行共享。"
-frontendUrlLink = "在系统设置中配置"
-frontendUrlNote = "需要前端 URL。 "
-label = "启用共享链接"
-
-[admin.settings.storage.signing.enabled]
-description = "允许用户创建多人参与的文档签署会话。需要启用服务器文件存储。"
-label = "启用群组签署（Alpha）"
-
 [admin.settings.unsavedChanges]
 cancel = "继续编辑"
 discard = "丢弃更改"
@@ -1521,6 +1523,7 @@ settings = "您可以在 config/settings.yml 文件中变更分析功能的设�
 title = "你想协助改善Stirling PDF吗"
 
 [annotation]
+annotationStyle = "批注样式"
 applyChanges = "应用更改"
 backgroundColor = "背景颜色"
 borderOff = "边框：关"
@@ -1530,6 +1533,8 @@ chooseColor = "选择颜色"
 circle = "圆形"
 clearBackground = "移除背景"
 color = "颜色"
+comment = "评论"
+comments = "评论"
 contents = "文本"
 delete = "删除"
 desc = "使用高亮、画笔、文本和便笺。更改实时生效——无需合并层。"
@@ -1547,7 +1552,6 @@ editStampHint = "要更换图像，请删除此图章并添加新的。"
 editSwitchToSelect = "切换到“选择并编辑”以编辑此注释。"
 editText = "编辑文本框"
 editTextMarkup = "编辑文本标注"
-annotationStyle = "批注样式"
 ellipse = "椭圆"
 exit = "退出注释模式"
 fillColor = "填充颜色"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "手绘高亮"
 highlight = "高亮"
 imagePreview = "预览"
 inkHighlighter = "手绘高亮"
+insertText = "插入文本"
 line = "直线"
 lineArrow = "箭头"
 noBackground = "无背景"
 note = "便笺"
-comment = "评论"
-comments = "评论"
-insertText = "插入文本"
-replaceText = "替换文本"
 noteIcon = "便笺图标"
 notesStamps = "便笺与图章"
 opacity = "不透明度"
@@ -1574,6 +1575,7 @@ polyline = "折线"
 properties = "属性"
 rectangle = "矩形"
 redo = "重做"
+replaceText = "替换文本"
 saveChanges = "保存更改"
 saveFailed = "无法保存副本"
 saveReady = "下载已就绪"
@@ -1627,68 +1629,6 @@ goToSettings = "前往审计设置"
 notAvailable = "审计系统不可用"
 notAvailableMessage = "审计系统未配置或不可用。"
 
-[audit.error]
-title = "加载审计系统时出错"
-
-[audit.export]
-clearFilters = "清除"
-description = "将审计事件导出为 CSV 或 JSON 格式。使用筛选器限定导出数据。"
-endDate = "结束日期"
-error = "导出数据失败"
-exportButton = "导出数据"
-fieldAuthor = "作者（来自 PDF）"
-fieldDate = "日期"
-fieldDocumentName = "文档名称"
-fieldFileHash = "文件哈希（SHA-256）"
-fieldIpAddress = "IP 地址"
-fieldOperationResults = "操作结果"
-fieldOutcome = "结果（成功/失败）"
-fieldTool = "工具"
-fieldUsername = "用户名"
-filterByType = "按类型筛选"
-filterByUser = "按用户筛选"
-filters = "筛选器（可选）"
-format = "导出格式"
-selectFields = "选择要包含的字段"
-startDate = "开始日期"
-title = "导出审计数据"
-verboseRequired = "需要 VERBOSE 审计级别"
-
-[audit.systemStatus]
-autoRefresh = "自动刷新"
-autoRefreshLabel = "每30秒自动刷新"
-captureBySettings = "在设置中启用"
-capturedFields = "已捕获的字段"
-date = "日期"
-days = "天"
-disabled = "已禁用"
-documentName = "文档名称"
-enabled = "已启用"
-fileHash = "文件哈希"
-level = "审计级别"
-pdfAuthor = "PDF 作者"
-retention = "保留期限"
-status = "审计日志"
-title = "系统状态"
-tool = "工具"
-totalEvents = "事件总数"
-username = "用户名"
-verboseOnly = "仅限 VERBOSE"
-
-[audit.stats]
-activeUsers = "活跃用户"
-attention = "需要关注"
-avgLatency = "平均延迟"
-error = "加载统计时出错"
-errorLoadingStats = "无法加载统计"
-excellent = "优秀"
-good = "良好"
-noData = "无"
-successRate = "成功率"
-title = "概览"
-totalEvents = "事件总数"
-vsLastPeriod = "相比上期"
-
 [audit.charts]
 byTool = "最常使用的工具"
 byType = "按类型统计事件"
@@ -1701,6 +1641,27 @@ noData = "此期间无数据"
 overTime = "事件随时间变化"
 title = "审计仪表板"
 week = "周"
+
+[audit.clearData]
+cancel = "取消"
+codeDoesNotMatch = "代码不匹配"
+codePlaceholder = "在此输入代码"
+confirmationCode = "确认代码"
+confirmationRequired = "删除所有审计数据"
+confirmMessage = "这将永久移除所有审计日志。请输入下方确认代码以继续。"
+confirmTitle = "请确认您要删除"
+deleteButton = "删除"
+enterCode = "确认代码"
+enterCodeBelow = "按上方所示精确输入代码（区分大小写）"
+initiateDelete = "删除所有数据"
+irreversible = "不可逆"
+success = "成功"
+successMessage = "已成功清除所有审计数据"
+warning1 = "此操作无法撤销"
+warning2 = "删除审计数据将永久移除数据库中的所有历史审计日志，包括安全事件、用户活动和文件操作。"
+
+[audit.error]
+title = "加载审计系统时出错"
 
 [audit.events]
 actions = "操作"
@@ -1728,40 +1689,81 @@ type = "类型"
 user = "用户"
 viewDetails = "查看详情"
 
+[audit.export]
+clearFilters = "清除"
+description = "将审计事件导出为 CSV 或 JSON 格式。使用筛选器限定导出数据。"
+endDate = "结束日期"
+error = "导出数据失败"
+exportButton = "导出数据"
+fieldAuthor = "作者（来自 PDF）"
+fieldDate = "日期"
+fieldDocumentName = "文档名称"
+fieldFileHash = "文件哈希（SHA-256）"
+fieldIpAddress = "IP 地址"
+fieldOperationResults = "操作结果"
+fieldOutcome = "结果（成功/失败）"
+fieldTool = "工具"
+fieldUsername = "用户名"
+filterByType = "按类型筛选"
+filterByUser = "按用户筛选"
+filters = "筛选器（可选）"
+format = "导出格式"
+selectFields = "选择要包含的字段"
+startDate = "开始日期"
+title = "导出审计数据"
+verboseRequired = "需要 VERBOSE 审计级别"
+
 [audit.filters]
 allOutcomes = "全部"
 failureOnly = "仅失败"
-last7Days = "过去7天"
 last30Days = "过去30天"
+last7Days = "过去7天"
 outcomeFilter = "结果"
 quickPresets = "快速筛选"
 successOnly = "仅成功"
 thisMonth = "本月"
 today = "今天"
 
+[audit.stats]
+activeUsers = "活跃用户"
+attention = "需要关注"
+avgLatency = "平均延迟"
+error = "加载统计时出错"
+errorLoadingStats = "无法加载统计"
+excellent = "优秀"
+good = "良好"
+noData = "无"
+successRate = "成功率"
+title = "概览"
+totalEvents = "事件总数"
+vsLastPeriod = "相比上期"
+
+[audit.systemStatus]
+autoRefresh = "自动刷新"
+autoRefreshLabel = "每30秒自动刷新"
+captureBySettings = "在设置中启用"
+capturedFields = "已捕获的字段"
+date = "日期"
+days = "天"
+disabled = "已禁用"
+documentName = "文档名称"
+enabled = "已启用"
+fileHash = "文件哈希"
+level = "审计级别"
+pdfAuthor = "PDF 作者"
+retention = "保留期限"
+status = "审计日志"
+title = "系统状态"
+tool = "工具"
+totalEvents = "事件总数"
+username = "用户名"
+verboseOnly = "仅限 VERBOSE"
+
 [audit.tabs]
 clearData = "清除数据"
 dashboard = "仪表板"
 events = "审计事件"
 export = "导出"
-
-[audit.clearData]
-cancel = "取消"
-codeDoesNotMatch = "代码不匹配"
-codePlaceholder = "在此输入代码"
-confirmationCode = "确认代码"
-confirmationRequired = "删除所有审计数据"
-confirmMessage = "这将永久移除所有审计日志。请输入下方确认代码以继续。"
-confirmTitle = "请确认您要删除"
-deleteButton = "删除"
-enterCode = "确认代码"
-enterCodeBelow = "按上方所示精确输入代码（区分大小写）"
-initiateDelete = "删除所有数据"
-irreversible = "不可逆"
-success = "成功"
-successMessage = "已成功清除所有审计数据"
-warning1 = "此操作无法撤销"
-warning2 = "删除审计数据将永久移除数据库中的所有历史审计日志，包括安全事件、用户活动和文件操作。"
 
 [auth]
 accessDenied = "拒绝访问"
@@ -2088,43 +2090,70 @@ keywords = "关键字：odd、even"
 numbers = "数字/范围：5，10-20"
 progressions = "等差：3n，4n+1"
 
+[certificateChoice.tooltip]
+header = "证书类型"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "由系统管理员管理"
+bullet2 = "在授权用户间共享"
+bullet3 = "代表公司身份，而非个人"
+bullet4 = "最佳用途：正式文档、团队签署"
+description = "由您的组织提供的共享证书。用于全公司范围的签署授权。"
+title = "组织证书"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "首次使用时自动生成"
+bullet2 = "与您的用户帐户绑定"
+bullet3 = "不可与其他用户共享"
+bullet4 = "最佳用途：个人文档、个人责任"
+description = "为您的用户帐户自动生成的唯一证书。适用于个人签名。"
+title = "个人证书"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "需要 P12/PFX 文件和密码"
+bullet2 = "可由外部证书颁发机构签发"
+bullet3 = "对法律文档具有更高信任级别"
+bullet4 = "最佳用途：具有法律效力的合同、外部验证"
+description = "使用您自己的 PKCS#12 证书文件。可完全控制证书属性。"
+title = "上传自定义 P12"
+
 [certSign]
 allSigned = "所有参与者均已签署。可进行最终确定。"
 awaitingSignatures = "等待签署"
-signatureProgress = "{{signedCount}}/{{totalCount}} 个签名"
 chooseCertificate = "选择证书文件"
-declined = "已拒绝"
-fetchFailed = "加载签署数据失败"
-finalized = "已最终确定"
-notified = "待处理"
-partialNote = "您可以先行以当前签名进行最终确定。未签署的参与者将被排除。"
-pending = "待处理"
-readyToFinalize = "可最终确定"
-signed = "已签署"
-viewed = "已查看"
 chooseJksFile = "选择 JKS 文件"
 chooseP12File = "选择 PKCS12 文件"
 choosePfxFile = "选择 PFX 文件"
 choosePrivateKey = "选择私钥文件"
+declined = "已拒绝"
+fetchFailed = "加载签署数据失败"
 filenamePrefix = "已签名"
+finalized = "已最终确定"
 location = "位置"
 logoTitle = "Logo"
 name = "名称"
 noLogo = "无 Logo"
+notified = "待处理"
 pageNumber = "页码"
+partialNote = "您可以先行以当前签名进行最终确定。未签署的参与者将被排除。"
 password = "证书密码"
 passwordOptional = "如无密码则留空"
+pending = "待处理"
+readyToFinalize = "可最终确定"
 reason = "原因"
 serverCertMessage = "使用服务器证书 - 无需文件或密码"
 showLogo = "显示 Logo"
+signatureProgress = "{{signedCount}}/{{totalCount}} 个签名"
+signed = "已签署"
 tags = "身份验证、PEM、P12、官方、加密"
 title = "证书签名"
+viewed = "已查看"
 
 [certSign.appearance]
 invisible = "不可见"
 stepTitle = "签名外观"
-visible = "可见"
 visibility = "可见性"
+visible = "可见"
 
 [certSign.appearance.options]
 title = "签名详情"
@@ -2172,8 +2201,227 @@ title = "我该选哪种格式？"
 [certSign.certTypeStep]
 stepTitle = "证书格式"
 
+[certSign.collab.addParticipants]
+add = "添加 {{count}} 名参与者"
+back = "返回"
+configureSignatures = "配置签名设置"
+continue = "继续到签名设置"
+reasonHelp = "为这些参与者预设签署原因（可选，签署时可覆盖）"
+reasonPlaceholder = "例如：审批、审阅..."
+selectUsers = "选择用户"
+
+[certSign.collab.finalize]
+button = "最终确定并加载已签署的 PDF"
+early = "以当前签名最终确定"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "证书无效"
+certNetworkError = "无法验证证书"
+certValid = "✓ 证书有效"
+certValidating = "正在验证证书..."
+certValidUntil = " 截至 {{date}}"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "包含签名摘要页"
+includeSummaryPageHelp = "将在末尾添加包含所有签名元数据的摘要页。各页面上的数字证书签名框将被隐藏（手写签名不受影响）。"
+
+[certSign.collab.sessionDetail]
+addButton = "添加参与者"
+addParticipants = "添加参与者"
+addParticipantsError = "添加参与者失败"
+backToList = "返回会话"
+deleteConfirm = "您确定吗？此操作无法撤销。"
+deleted = "会话已删除"
+deleteError = "删除会话失败"
+deleteSession = "删除会话"
+dueDate = "截止日期"
+finalizeError = "最终确定会话失败"
+loadPdfError = "加载已签署的 PDF 失败"
+loadSignedPdf = "将已签署的 PDF 加载到活动文件"
+messageLabel = "消息"
+noAdditionalInfo = "无其他信息"
+owner = "所有者"
+participantRemoved = "已移除参与者"
+participants = "参与者"
+participantsAdded = "已成功添加参与者"
+removeParticipant = "移除"
+removeParticipantError = "移除参与者失败"
+selectUsers = "选择用户..."
+sessionInfo = "会话信息"
+workbenchTitle = "会话管理"
+
+[certSign.collab.sessionList]
+active = "进行中"
+finalized = "已最终确定"
+
+[certSign.collab.signatureSettings]
+description = "为所有参与者配置签名的显示方式"
+title = "签名外观"
+
+[certSign.collab.signRequest]
+addedToFiles = "文档已添加到活动文件"
+addSignature = "添加您的签名"
+addToFiles = "添加到活动文件"
+advancedSettings = "高级设置"
+backToList = "返回签署请求"
+certificateChoice = "选择用于签署的证书"
+changeSignature = "更改签名"
+clearSignature = "清除签名"
+completeAndSign = "完成并签署"
+createNewSignature = "创建新签名"
+decline = "拒绝请求"
+declineButton = "拒绝"
+deleteSelected = "删除所选签名"
+drawSignature = "在下方绘制您的签名"
+dueDate = "截止日期"
+fileTooLarge = "文件大小必须小于 5MB"
+fontFamily = "字体"
+fontSize = "字体大小：{{size}}px"
+fontSizePlaceholder = "大小"
+from = "来自"
+invalidCertFile = "请选择 P12 或 PFX 证书文件"
+invalidFileType = "请选择图像文件"
+location = "位置（可选）"
+locationPlaceholder = "您从哪里进行签署？"
+message = "消息"
+noCertificate = "请选择证书文件"
+noSignatures = "请至少在 PDF 上放置一个签名"
+p12File = "P12/PFX 证书文件"
+password = "证书密码"
+passwordPlaceholder = "请输入密码..."
+penColor = "画笔颜色"
+penSize = "画笔大小：{{size}}px"
+placementActive = "点击 PDF 进行放置"
+placeSignatureButton = "在 PDF 上放置签名"
+reason = "原因（可选）"
+reasonPlaceholder = "为什么进行签署？"
+removeCertFile = "移除文件"
+removeImage = "移除图像"
+savedSignatures = "已保存的签名"
+selectFile = "选择图像文件"
+selectSignatureTitle = "选择或创建签名"
+signatureInfo = "这些设置由文档所有者配置"
+signaturePlaced = "已在页面上放置签名"
+signatureSettings = "签名设置"
+signatureText = "签名文本"
+signatureTextPlaceholder = "输入您的姓名..."
+signatureTypeLabel = "签名类型"
+signButton = "签署文档"
+signingTitle = "签署"
+textColor = "文本颜色"
+typeSignature = "输入您的姓名以创建签名"
+uploadCert = "自定义证书"
+uploadCertDesc = "使用您自己的 P12/PFX 证书"
+uploadSignature = "上传您的签名图像"
+usePersonalCert = "个人证书"
+usePersonalCertDesc = "为您的帐户自动生成"
+useServerCert = "组织证书"
+useServerCertDesc = "共享的组织证书"
+workbenchTitle = "签署请求"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "选择笔画颜色"
+continue = "继续"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "证书无效：{{error}}"
+certInvalidFallback = "证书无效"
+certNetworkError = "无法验证证书"
+certValidating = "正在验证证书..."
+certValidUntil = "证书有效期至 {{date}}"
+description = "您已放置 {{count}} 个签名。选择您的证书以完成签署。"
+sign = "签署文档"
+title = "配置证书"
+
+[certSign.collab.signRequest.image]
+hint = "上传 PNG 或 JPG 格式的签名图像"
+
+[certSign.collab.signRequest.mode]
+move = "移动签名"
+place = "放置签名"
+title = "签署或移动模式"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "绘制"
+image = "上传"
+text = "输入"
+
+[certSign.collab.signRequest.placeSignature]
+message = "点击 PDF 以放置您的签名"
+title = "放置签名"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "已选签名"
+missing = "无预览"
+textFallback = "签名"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "手绘签名"
+defaultImageLabel = "已上传的签名"
+defaultLabel = "签名"
+defaultTextLabel = "输入的签名"
+delete = "删除签名"
+none = "无已保存的签名"
+
+[certSign.collab.signRequest.signatureType]
+draw = "绘制"
+type = "输入"
+upload = "上传"
+
+[certSign.collab.signRequest.steps]
+back = "返回"
+cancelPlacement = "取消放置"
+certificate = "证书"
+clickMultipleTimes = "在 PDF 上点击多次以放置多个签名。拖动任意签名可移动或调整大小。"
+clickToPlace = "点击 PDF 上希望显示签名的位置。"
+continue = "继续到证书选择"
+continueToPlacement = "继续进行放置"
+continueToReview = "继续到审阅"
+createSignature = "创建签名"
+invisible = "不可见"
+location = "位置："
+multipleSignatures = "将对 PDF 应用 {{count}} 个签名"
+oneSignature = "将对 PDF 应用 1 个签名"
+placeOnPdf = "放置到 PDF"
+reason = "原因："
+reviewTitle = "签署前审阅"
+signaturePlaced = "签名已放置在第 {{page}} 页。您可以再次点击以调整位置，或继续审阅。"
+visibility = "可见性："
+visible = "可见"
+yourSignatures = "您的签名（{{count}}）"
+
+[certSign.collab.signRequest.text]
+colorLabel = "颜色"
+fontLabel = "字体"
+fontSizeLabel = "大小"
+fontSizePlaceholder = "16"
+label = "签名文本"
+modalHint = "输入您的姓名，然后点击“继续”将其放置到 PDF。"
+placeholder = "输入您的姓名..."
+
+[certSign.collab.userSelector]
+inviteUsers = "添加用户"
+loadError = "加载用户失败"
+noTeam = "无团队"
+noUsers = "未找到其他用户。"
+placeholder = "选择用户..."
+
 [certSign.error]
 failed = "处理签名时发生错误。"
+
+[certSign.mobile]
+panelActions = "操作"
+panelDocument = "文档"
+panelPeople = "人员"
+
+[certSign.sessions]
+deleted = "会话已删除"
+fetchFailed = "加载会话详情失败"
+finalized = "会话已最终确定"
+loaded = "已加载已签署的 PDF"
+pdfNotReady = "PDF 未就绪"
+pdfNotReadyDesc = "正在生成已签署的 PDF。请稍后重试。"
 
 [certSign.sign]
 results = "已签名 PDF"
@@ -2230,252 +2478,6 @@ bullet3 = "检查文档在签署后是否被修改"
 bullet4 = "可使用自定义证书进行验证"
 text = "检查签名时，工具会告诉您签名是否有效、谁签了名、何时签的，以及自签署后文档是否被更改。"
 title = "检查签名"
-
-[certSign.collab.finalize]
-button = "最终确定并加载已签署的 PDF"
-early = "以当前签名最终确定"
-
-[certSign.collab.sessionDetail]
-addButton = "添加参与者"
-addParticipants = "添加参与者"
-addParticipantsError = "添加参与者失败"
-backToList = "返回会话"
-deleteConfirm = "您确定吗？此操作无法撤销。"
-deleteError = "删除会话失败"
-deleted = "会话已删除"
-deleteSession = "删除会话"
-dueDate = "截止日期"
-finalizeError = "最终确定会话失败"
-loadPdfError = "加载已签署的 PDF 失败"
-loadSignedPdf = "将已签署的 PDF 加载到活动文件"
-messageLabel = "消息"
-noAdditionalInfo = "无其他信息"
-owner = "所有者"
-participantRemoved = "已移除参与者"
-participants = "参与者"
-participantsAdded = "已成功添加参与者"
-removeParticipant = "移除"
-removeParticipantError = "移除参与者失败"
-selectUsers = "选择用户..."
-sessionInfo = "会话信息"
-workbenchTitle = "会话管理"
-
-[certSign.collab.signRequest]
-addedToFiles = "文档已添加到活动文件"
-addSignature = "添加您的签名"
-addToFiles = "添加到活动文件"
-advancedSettings = "高级设置"
-backToList = "返回签署请求"
-certificateChoice = "选择用于签署的证书"
-changeSignature = "更改签名"
-clearSignature = "清除签名"
-completeAndSign = "完成并签署"
-createNewSignature = "创建新签名"
-declineButton = "拒绝"
-decline = "拒绝请求"
-deleteSelected = "删除所选签名"
-drawSignature = "在下方绘制您的签名"
-dueDate = "截止日期"
-fileTooLarge = "文件大小必须小于 5MB"
-fontFamily = "字体"
-fontSize = "字体大小：{{size}}px"
-fontSizePlaceholder = "大小"
-from = "来自"
-invalidCertFile = "请选择 P12 或 PFX 证书文件"
-invalidFileType = "请选择图像文件"
-location = "位置（可选）"
-locationPlaceholder = "您从哪里进行签署？"
-message = "消息"
-noCertificate = "请选择证书文件"
-noSignatures = "请至少在 PDF 上放置一个签名"
-p12File = "P12/PFX 证书文件"
-password = "证书密码"
-passwordPlaceholder = "请输入密码..."
-penColor = "画笔颜色"
-penSize = "画笔大小：{{size}}px"
-placementActive = "点击 PDF 进行放置"
-placeSignatureButton = "在 PDF 上放置签名"
-reason = "原因（可选）"
-reasonPlaceholder = "为什么进行签署？"
-removeImage = "移除图像"
-removeCertFile = "移除文件"
-savedSignatures = "已保存的签名"
-selectFile = "选择图像文件"
-selectSignatureTitle = "选择或创建签名"
-signButton = "签署文档"
-signatureInfo = "这些设置由文档所有者配置"
-signaturePlaced = "已在页面上放置签名"
-signatureSettings = "签名设置"
-signatureText = "签名文本"
-signatureTextPlaceholder = "输入您的姓名..."
-signatureTypeLabel = "签名类型"
-signingTitle = "签署"
-textColor = "文本颜色"
-typeSignature = "输入您的姓名以创建签名"
-uploadCert = "自定义证书"
-uploadCertDesc = "使用您自己的 P12/PFX 证书"
-uploadSignature = "上传您的签名图像"
-usePersonalCert = "个人证书"
-usePersonalCertDesc = "为您的帐户自动生成"
-useServerCert = "组织证书"
-useServerCertDesc = "共享的组织证书"
-workbenchTitle = "签署请求"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "选择笔画颜色"
-continue = "继续"
-
-[certSign.collab.signRequest.certModal]
-description = "您已放置 {{count}} 个签名。选择您的证书以完成签署。"
-sign = "签署文档"
-certValidating = "正在验证证书..."
-certValidUntil = "证书有效期至 {{date}}"
-certInvalid = "证书无效：{{error}}"
-certInvalidFallback = "证书无效"
-certNetworkError = "无法验证证书"
-title = "配置证书"
-
-[certSign.collab.signRequest.image]
-hint = "上传 PNG 或 JPG 格式的签名图像"
-
-[certSign.collab.signRequest.mode]
-move = "移动签名"
-place = "放置签名"
-title = "签署或移动模式"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "绘制"
-image = "上传"
-text = "输入"
-
-[certSign.collab.signRequest.placeSignature]
-message = "点击 PDF 以放置您的签名"
-title = "放置签名"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "已选签名"
-missing = "无预览"
-textFallback = "签名"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "手绘签名"
-defaultImageLabel = "已上传的签名"
-defaultLabel = "签名"
-defaultTextLabel = "输入的签名"
-delete = "删除签名"
-none = "无已保存的签名"
-
-[certSign.collab.signRequest.signatureType]
-draw = "绘制"
-type = "输入"
-upload = "上传"
-
-[certSign.collab.signRequest.steps]
-back = "返回"
-cancelPlacement = "取消放置"
-certificate = "证书"
-clickMultipleTimes = "在 PDF 上点击多次以放置多个签名。拖动任意签名可移动或调整大小。"
-clickToPlace = "点击 PDF 上希望显示签名的位置。"
-continue = "继续到证书选择"
-continueToPlacement = "继续进行放置"
-continueToReview = "继续到审阅"
-createSignature = "创建签名"
-invisible = "不可见"
-location = "位置："
-multipleSignatures = "将对 PDF 应用 {{count}} 个签名"
-oneSignature = "将对 PDF 应用 1 个签名"
-placeOnPdf = "放置到 PDF"
-reason = "原因："
-reviewTitle = "签署前审阅"
-signaturePlaced = "签名已放置在第 {{page}} 页。您可以再次点击以调整位置，或继续审阅。"
-visible = "可见"
-visibility = "可见性："
-yourSignatures = "您的签名（{{count}}）"
-
-[certSign.collab.signRequest.text]
-colorLabel = "颜色"
-fontLabel = "字体"
-fontSizeLabel = "大小"
-fontSizePlaceholder = "16"
-label = "签名文本"
-modalHint = "输入您的姓名，然后点击“继续”将其放置到 PDF。"
-placeholder = "输入您的姓名..."
-
-[certSign.collab.participant]
-certValidating = "正在验证证书..."
-certValid = "✓ 证书有效"
-certValidUntil = " 截至 {{date}}"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "证书无效"
-certNetworkError = "无法验证证书"
-
-[certSign.collab.addParticipants]
-add = "添加 {{count}} 名参与者"
-back = "返回"
-configureSignatures = "配置签名设置"
-continue = "继续到签名设置"
-reasonHelp = "为这些参与者预设签署原因（可选，签署时可覆盖）"
-reasonPlaceholder = "例如：审批、审阅..."
-selectUsers = "选择用户"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "包含签名摘要页"
-includeSummaryPageHelp = "将在末尾添加包含所有签名元数据的摘要页。各页面上的数字证书签名框将被隐藏（手写签名不受影响）。"
-
-[certSign.collab.sessionList]
-active = "进行中"
-finalized = "已最终确定"
-
-[certSign.collab.signatureSettings]
-description = "为所有参与者配置签名的显示方式"
-title = "签名外观"
-
-[certSign.collab.userSelector]
-inviteUsers = "添加用户"
-loadError = "加载用户失败"
-noTeam = "无团队"
-noUsers = "未找到其他用户。"
-placeholder = "选择用户..."
-
-[certSign.mobile]
-panelActions = "操作"
-panelDocument = "文档"
-panelPeople = "人员"
-
-[certSign.sessions]
-deleted = "会话已删除"
-fetchFailed = "加载会话详情失败"
-finalized = "会话已最终确定"
-loaded = "已加载已签署的 PDF"
-pdfNotReady = "PDF 未就绪"
-pdfNotReadyDesc = "正在生成已签署的 PDF。请稍后重试。"
-
-[certificateChoice.tooltip]
-header = "证书类型"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "由系统管理员管理"
-bullet2 = "在授权用户间共享"
-bullet3 = "代表公司身份，而非个人"
-bullet4 = "最佳用途：正式文档、团队签署"
-description = "由您的组织提供的共享证书。用于全公司范围的签署授权。"
-title = "组织证书"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "首次使用时自动生成"
-bullet2 = "与您的用户帐户绑定"
-bullet3 = "不可与其他用户共享"
-bullet4 = "最佳用途：个人文档、个人责任"
-description = "为您的用户帐户自动生成的唯一证书。适用于个人签名。"
-title = "个人证书"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "需要 P12/PFX 文件和密码"
-bullet2 = "可由外部证书颁发机构签发"
-bullet3 = "对法律文档具有更高信任级别"
-bullet4 = "最佳用途：具有法律效力的合同、外部验证"
-description = "使用您自己的 PKCS#12 证书文件。可完全控制证书属性。"
-title = "上传自定义 P12"
 
 [changeCreds]
 changePassword = "您正在使用默认登录凭证，请输入新密码"
@@ -2657,6 +2659,9 @@ title = "更改权限"
 
 [changePermissions.tooltip.warning]
 text = "要使这些权限不可更改，请使用“添加密码”工具设置所有者密码。"
+
+[cloudBadge]
+tooltip = "此操作将使用您的云额度"
 
 [colorPicker]
 title = "选择颜色"
@@ -2998,9 +3003,11 @@ blackwhite = "黑白"
 cbrDpi = "用于图像渲染的 DPI"
 cbrOptions = "CBR 选项"
 cbrOutputOptions = "PDF 转 CBR 选项"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "图像渲染的 DPI"
 cbzOptions = "CBZ 转 PDF 选项"
 cbzOutputOptions = "PDF 转 CBZ 选项"
+cbzToPdf = "CBZ → PDF"
 color = "颜色"
 colorType = "颜色类型"
 combineImages = "合并图像"
@@ -3018,13 +3025,16 @@ desc = "在不同格式之间转换文件"
 downloadConverted = "下载转换后的文件"
 downloadHtml = "下载 HTML 中间文件（而非 PDF）"
 dpi = "DPI"
+ebookToPdf = "电子书 → PDF"
 emailOptions = "邮件转 PDF 选项"
+emlToPdf = "电子邮件 → PDF"
 errorConversion = "转换文件时发生错误。"
 errorNoFiles = "请至少选择一个要转换的文件。"
 errorNoFormat = "请选择源格式和目标格式。"
 errorNotSupported = "不支持从 {{from}} 转换为 {{to}}。"
 fileFormat = "文件格式"
 files = "文件"
+fileToPdf = "Office/文档 → PDF"
 fillPage = "填充页面"
 fitDocumentToPage = "适配页面"
 fitOption = "适配选项"
@@ -3052,6 +3062,9 @@ pdfaFormat = "PDF/A 格式"
 pdfaNote = "PDF/A-1b 兼容性更好，PDF/A-2b 支持的功能更多。"
 pdfaOptions = "PDF/A 选项"
 pdfOptions = "PDF 选项"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X 是用于可靠打印和图形交换的 ISO 标准 PDF 子集。"
 pdfxDigitalSignatureWarning = "该 PDF 包含数字签名。此签名将在下一步移除。"
 pptExt = "PowerPoint（.pptx）"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "源格式"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "目标格式"
 textRtf = "文本/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "网页转 PDF 选项"
 wordDoc = "Word 文档"
 wordDocExt = "Word 文档（.docx）"
 zoomLevel = "缩放级别"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "电子书 → PDF"
-emlToPdf = "电子邮件 → PDF"
-fileToPdf = "Office/文档 → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "电子书转 PDF 选项"
@@ -3147,6 +3152,77 @@ description = "These cookies are essential for the website to function properly.
 [cookieBanner.services]
 posthog = "PostHog 分析"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "启用超额计费"
+maybeLater = "稍后再说"
+upgrade = "升级"
+
+[credits.insufficient]
+brief = "额度不足。您需要 {{required}}，但只有 {{current}}。"
+freeTier = "升级到 Team，额度提升 10 倍并享受无限超额计费。"
+managedMember = "请联系您的团队负责人以获取帮助。"
+message = "您没有足够的额度来运行 {{tool}}。当前拥有 {{current}} 额度。"
+messageWithAmount = "运行 {{tool}} 需要 {{required}} 额度，但您只有 {{current}}。"
+teamMember = "启用超额计费，确保额度永不断供。"
+title = "额度不足"
+
+[credits.modal]
+advancedMonitoring = "高级监控"
+allInOneWorkspace = "一体化 PDF 工作空间（查看器、工具与代理）"
+apiSandbox = "API 沙盒"
+contactSales = "联系销售"
+creditsRemaining = "剩余 {{current}} / {{total}}"
+creditsThisMonth = "每月额度"
+current = "当前方案"
+customPricing = "自定义"
+customSmartFolders = "自定义智能文件夹"
+dedicatedSupportSlas = "专属支持与 SLA"
+enterpriseSubscription = "企业版"
+everythingInCredits = "包含“额度”中的所有内容，另外："
+everythingInFree = "包含“免费版”中的所有内容，另外："
+fasterThroughput = "吞吐量提升 10 倍"
+forRegularWork = "适用于常规 PDF 工作："
+freeTier = "免费版"
+fullyPrivateFiles = "完全私密的文件"
+largeFileProcessing = "大文件处理"
+managedMemberMessage = "您可通过团队无限使用额度。如需帮助，请联系您的团队负责人。"
+managedMemberTitle = "无限额度"
+meteringBillingNote = "超额额度按月与您的 Team 订阅一并结算。可在账户设置中随时查看用量。"
+meteringExplanation = "您的 Team 方案每月包含 {{credits}} 额度。用完后，超额计费会自动提供额外额度，确保不中断工作。"
+meteringIncluded = "Team 每月包含 {{credits}} 额度"
+meteringNeverRunOut = "额度永不断供"
+meteringNoCommitment = "无绑定，随时可取消"
+meteringPayAsYouGo = "按量付费"
+meteringPrice = "额外额度 {{price}}/额度"
+meteringTitle = "按使用量计费的超额结算"
+monthlyCredits = "每月额度"
+orgWideAccess = "组织范围的访问控制"
+overage = "超额"
+perMonth = "/月"
+popular = "热门"
+premiumAiModels = "高级 AI 模型"
+prioritySupport = "优先支持"
+privateDocCloud = "私有文档云"
+ragFineTuning = "RAG + 微调"
+secureApiAccess = "安全 API 访问"
+selfHostLink = "查看文档与方案"
+selfHostPrompt = "想要自托管？"
+standardThroughput = "标准吞吐量"
+subtitle = "升级到 Team，可获得 10 倍额度与更快的处理速度。"
+subtitlePro = "启用自动超额计费，确保额度永不断供。"
+teamLeaderOnly = "仅团队负责人可启用超额计费"
+teamSubscription = "Team"
+titleExhausted = "您已用完免费额度"
+titleExhaustedPro = "您的额度已用尽"
+unlimitedApiAccess = "无限 API 访问"
+unlimitedMonthlyCredits = "站点许可"
+unlimitedSeats = "无限席位"
+
+[credits.modal.features]
+everythingInCredits = "包含“额度”中的所有内容，另外："
+everythingInFree = "包含“免费版”中的所有内容，另外："
+forRegularWork = "适用于常规 PDF 工作："
 
 [crop]
 autoCrop = "自动裁剪空白"
@@ -3352,6 +3428,9 @@ successBodyWithName = "已从 {{fileName}} 移除密码"
 successTitle = "已移除密码"
 title = "移除密码以继续"
 unlock = "解锁并继续"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "解锁 PDF 以继续"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "添加文件"
 [fileManager]
 active = "活跃"
 addToUpload = "添加至上传"
+changesNotUploaded = "更改未上传"
 clearAll = "全部清除"
 clearSelection = "清除所选"
 clickToUpload = "点击以上传文件"
 closeFile = "关闭文件"
+cloudFile = "云端文件"
+copyCreated = "副本已保存到此设备。"
+copyFailed = "无法创建副本。"
 delete = "删除"
 deleteAll = "删除全部"
 deleteSelected = "删除已选"
@@ -3486,14 +3569,24 @@ fileSize = "大小"
 filesSelected = "个文件已选"
 filesStored = "个文件已存储"
 fileVersion = "版本"
+filterAll = "全部"
+filterLocal = "本地"
+filterSharedByMe = "我共享的"
+filterSharedWithMe = "与我共享的"
 googleDrive = "Google 云端硬盘"
 googleDriveNotAvailable = "不可使用 Google 云端硬盘集成"
 googleDriveShort = "Drive"
 hideHistory = "隐藏历史"
 lastModified = "上次修改"
+lastSynced = "上次同步"
+leaveShare = "从我的列表中移除"
+leaveShareFailed = "无法移除该共享文件。"
+leaveShareSuccess = "已从您的共享列表中移除。"
 loadingFiles = "正在加载文件..."
 loadingHistory = "正在加载历史…"
 localFiles = "本地文件"
+localOnly = "仅本地"
+makeCopy = "创建副本"
 mobileShort = "手机"
 mobileUpload = "手机上传"
 mobileUploadNotAvailable = "未启用手机上传"
@@ -3506,36 +3599,10 @@ openFile = "打开文件"
 openFiles = "打开文件"
 openInFileEditor = "在文件编辑器中打开"
 openInPageEditor = "在页面编辑器中打开"
+owner = "所有者"
+ownerUnknown = "未知"
 recent = "最近"
 reloadFiles = "重新加载文件"
-restore = "恢复"
-saveSelected = "保存已选"
-searchFiles = "搜索文件…"
-selectAll = "选择所有"
-selectedCount = "已选 {{count}}"
-selectedFiles = "已选文件"
-showAll = "显示全部"
-showHistory = "显示历史"
-sortByDate = "按日期排序"
-sortByName = "按名称排序"
-sortBySize = "按大小排序"
-storage = "存储"
-storageCleared = "浏览器已清空存储。文件已被移除。请重新上传。"
-storageError = "发生存储错误"
-storageLow = "存储空间不足。请考虑移除旧文件。"
-subtitle = "将文件添加到您的存储，以便在各工具之间轻松访问"
-supportMessage = "由浏览器数据库存储提供支持，容量无限"
-title = "上传 PDF 文件"
-toolChain = "已应用工具"
-totalSelected = "合计已选"
-unsupported = "不支持"
-unzip = "解压"
-uploadError = "部分文件上传失败。"
-copyCreated = "副本已保存到此设备。"
-copyFailed = "无法创建副本。"
-leaveShare = "从我的列表中移除"
-leaveShareFailed = "无法移除该共享文件。"
-leaveShareSuccess = "已从您的共享列表中移除。"
 removeBoth = "同时从两处移除"
 removeFilePrompt = "此文件已保存在此设备和您的服务器上。您希望从哪里移除？"
 removeFileTitle = "移除文件"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "已从服务器移除。"
 removeSharedPrompt = "此文件与您共享。您可以将其从此设备或您的共享列表中移除。"
 removeSharedServerOnlyBlockedPrompt = "此文件与您共享且仅存储在服务器上。"
 removeSharedServerOnlyPrompt = "此文件与您共享且仅存储在服务器上。是否将其从您的列表中移除？"
-changesNotUploaded = "更改未上传"
-cloudFile = "云端文件"
-filterAll = "全部"
-filterLocal = "本地"
-filterSharedByMe = "我共享的"
-filterSharedWithMe = "与我共享的"
-lastSynced = "上次同步"
-localOnly = "仅本地"
-makeCopy = "创建副本"
-owner = "所有者"
-ownerUnknown = "未知"
+restore = "恢复"
+saveSelected = "保存已选"
+searchFiles = "搜索文件…"
+selectAll = "选择所有"
+selectedCount = "已选 {{count}}"
+selectedFiles = "已选文件"
 share = "共享"
-shareSelected = "共享所选"
 sharedByYou = "您共享的"
 sharedEditNoticeBody = "您对该文件的服务器版本没有编辑权限。您进行的任何编辑将保存为本地副本。"
 sharedEditNoticeConfirm = "知道了"
 sharedEditNoticeTitle = "服务器副本为只读"
 sharedWithYou = "与您共享的"
+shareSelected = "共享所选"
 sharing = "共享"
+showAll = "显示全部"
+showHistory = "显示历史"
+sortByDate = "按日期排序"
+sortByName = "按名称排序"
+sortBySize = "按大小排序"
+storage = "存储"
+storageCleared = "浏览器已清空存储。文件已被移除。请重新上传。"
+storageError = "发生存储错误"
+storageLow = "存储空间不足。请考虑移除旧文件。"
 storageState = "存储"
+subtitle = "将文件添加到您的存储，以便在各工具之间轻松访问"
+supportMessage = "由浏览器数据库存储提供支持，容量无限"
 synced = "已同步"
+title = "上传 PDF 文件"
+toolChain = "已应用工具"
+totalSelected = "合计已选"
+unsupported = "不支持"
+unzip = "解压"
 updateOnServer = "在服务器上更新"
+uploadError = "部分文件上传失败。"
 uploadSelected = "上传所选"
 uploadToServer = "上传到服务器"
 
@@ -3696,77 +3775,6 @@ title = "关于 PDF 扁平化"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "关于群组签署"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "所有签名将按照您指定的参与者顺序应用"
-bullet2 = "如有需要，您可以在部分签名的情况下进行最终确定"
-bullet3 = "一旦最终确定，会话将无法修改"
-description = "当所有参与者都已签署（或您选择提前最终确定）后，您可以生成最终的已签署 PDF。"
-title = "最终确定流程"
-
-[groupSigning.tooltip.roles]
-bullet1 = "所有者（您）：创建会话、配置签名默认值、最终确定文档"
-bullet2 = "参与者：创建其签名、选择证书、在 PDF 上放置"
-bullet3 = "参与者无法修改签名的可见性、原因或位置信息设置"
-description = "您可为所有参与者控制签名外观设置。"
-title = "参与者角色"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "第一位参与者签署后，第二位才能访问文档"
-bullet2 = "确保符合法律合规所需的签署顺序"
-bullet3 = "您可以通过在列表中拖动来重新排序参与者"
-description = "参与者按您指定的顺序签署文档。轮到每位签署者时，他们都会收到通知。"
-title = "顺序签署"
-
-[groupSigning.steps]
-back = "返回"
-completed = "已完成"
-current = "当前"
-stepLabel = "步骤 {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "继续到审阅"
-invisible = "签名将不可见（仅元数据）"
-locationLabel = "位置："
-preview = "预览"
-reasonLabel = "原因："
-title = "配置签名设置"
-visible = "签名将在第 {{page}} 页可见"
-
-[groupSigning.steps.review]
-document = "文档"
-dueDate = "截止日期（可选）"
-dueDatePlaceholder = "选择截止日期..."
-invisible = "不可见（仅元数据）"
-location = "位置："
-logo = "Logo："
-logoHidden = "无 Logo"
-logoShown = "显示 Stirling PDF Logo"
-participants = "参与者"
-reason = "原因："
-send = "发送签署请求"
-signatureSettings = "签名设置"
-title = "审阅会话详情"
-titleShort = "审阅并发送"
-visibility = "可见性："
-visible = "在第 {{page}} 页可见"
-participantCount = "将有 {{count}} 名参与者按顺序签署"
-
-[groupSigning.steps.selectDocument]
-continue = "继续选择参与者"
-noFile = "请从您的活动文件中选择一个 PDF 文件以创建签署会话。"
-selectedFile = "已选择的文档"
-title = "选择文档"
-
-[groupSigning.steps.selectParticipants]
-continue = "继续到签名设置"
-count = "已选择 {{count}} 名参与者"
-label = "选择参与者"
-placeholder = "选择签署的参与者..."
-title = "选择参与者"
-
 [getPdfInfo]
 downloadJson = "下载 JSON"
 downloads = "下载"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "图层"
 multimedia = "多媒体"
 
+[groupSigning.steps]
+back = "返回"
+completed = "已完成"
+current = "当前"
+stepLabel = "步骤 {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "继续到审阅"
+invisible = "签名将不可见（仅元数据）"
+locationLabel = "位置："
+preview = "预览"
+reasonLabel = "原因："
+title = "配置签名设置"
+visible = "签名将在第 {{page}} 页可见"
+
+[groupSigning.steps.review]
+document = "文档"
+dueDate = "截止日期（可选）"
+dueDatePlaceholder = "选择截止日期..."
+invisible = "不可见（仅元数据）"
+location = "位置："
+logo = "Logo："
+logoHidden = "无 Logo"
+logoShown = "显示 Stirling PDF Logo"
+participantCount = "将有 {{count}} 名参与者按顺序签署"
+participants = "参与者"
+reason = "原因："
+send = "发送签署请求"
+signatureSettings = "签名设置"
+title = "审阅会话详情"
+titleShort = "审阅并发送"
+visibility = "可见性："
+visible = "在第 {{page}} 页可见"
+
+[groupSigning.steps.selectDocument]
+continue = "继续选择参与者"
+noFile = "请从您的活动文件中选择一个 PDF 文件以创建签署会话。"
+selectedFile = "已选择的文档"
+title = "选择文档"
+
+[groupSigning.steps.selectParticipants]
+continue = "继续到签名设置"
+count = "已选择 {{count}} 名参与者"
+label = "选择参与者"
+placeholder = "选择签署的参与者..."
+title = "选择参与者"
+
+[groupSigning.tooltip]
+header = "关于群组签署"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "所有签名将按照您指定的参与者顺序应用"
+bullet2 = "如有需要，您可以在部分签名的情况下进行最终确定"
+bullet3 = "一旦最终确定，会话将无法修改"
+description = "当所有参与者都已签署（或您选择提前最终确定）后，您可以生成最终的已签署 PDF。"
+title = "最终确定流程"
+
+[groupSigning.tooltip.roles]
+bullet1 = "所有者（您）：创建会话、配置签名默认值、最终确定文档"
+bullet2 = "参与者：创建其签名、选择证书、在 PDF 上放置"
+bullet3 = "参与者无法修改签名的可见性、原因或位置信息设置"
+description = "您可为所有参与者控制签名外观设置。"
+title = "参与者角色"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "第一位参与者签署后，第二位才能访问文档"
+bullet2 = "确保符合法律合规所需的签署顺序"
+bullet3 = "您可以通过在列表中拖动来重新排序参与者"
+description = "参与者按您指定的顺序签署文档。轮到每位签署者时，他们都会收到通知。"
+title = "顺序签署"
+
 [guestBanner]
 dismiss = "关闭横幅"
 message = "创建免费账户以保存您的工作、获取更多功能并支持项目。"
@@ -3935,10 +4014,6 @@ title = "注释"
 desc = "通过串联 PDF 操作构建多步工作流。适合重复性任务。"
 tags = "工作流,序列,自动化"
 title = "自动化"
-
-[home.formFill]
-desc = "使用可视化编辑器交互式填写 PDF 表单字段"
-title = "填写表单"
 
 [home.autoRename]
 desc = "基于检测到的页眉自动重命名 PDF 文件"
@@ -4034,6 +4109,10 @@ title = "提取页面"
 desc = "从 PDF 中删除所有互动元素和表单"
 tags = "简化,删除,交互式"
 title = "展平"
+
+[home.formFill]
+desc = "使用可视化编辑器交互式填写 PDF 表单字段"
+title = "填写表单"
 
 [home.getPdfInfo]
 desc = "获取 PDF 的所有可能的信息"
@@ -4185,11 +4264,6 @@ desc = "通过绘图、文字或图像向 PDF 添加签名"
 tags = "签名,亲笔签名"
 title = "签名"
 
-[home.timestampPdf]
-desc = "添加 RFC 3161 文档时间戳，以证明您的 PDF 存在的时间"
-tags = "时间戳,RFC 3161,TSA,时间戳机构,文档时间戳,存在性证明,时间戳令牌,可信时间戳,签名时间戳,公证"
-title = "为 PDF 添加时间戳"
-
 [home.split]
 desc = "将 PDF 拆分为多个文档。"
 tags = "分割,分离,拆分"
@@ -4209,6 +4283,11 @@ title = "按区块拆分 PDF"
 desc = "查看 API 文档并测试端点"
 tags = "API,文档,测试"
 title = "API 文档"
+
+[home.timestampPdf]
+desc = "添加 RFC 3161 文档时间戳，以证明您的 PDF 存在的时间"
+tags = "时间戳,RFC 3161,TSA,时间戳机构,文档时间戳,存在性证明,时间戳令牌,可信时间戳,签名时间戳,公证"
+title = "为 PDF 添加时间戳"
 
 [home.unlockPDFForms]
 desc = "移除表单字段只读属性"
@@ -4298,6 +4377,8 @@ welcomeTitle = "您已被邀请！"
 
 [landing]
 addFiles = "添加文件"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "从手机上传"
 openFromComputer = "从电脑打开"
 uploadFromComputer = "从电脑上传"
@@ -4321,6 +4402,18 @@ module = "模块"
 nav = "许可证"
 title = "第三方许可证"
 version = "版本"
+
+[localMode]
+toolUnavailable = "此工具需要账户。登录到 Stirling Cloud 或连接到自托管服务器以使用。"
+
+[localMode.banner]
+message = "登录以解锁全部工具。"
+signIn = "登录"
+title = "本地运行"
+
+[localMode.toolPicker]
+message = "登录以解锁全部工具。"
+signIn = "登录"
 
 [login]
 accountCreatedSuccess = "账户创建成功！现在可以登录。"
@@ -4382,12 +4475,12 @@ sendResetLink = "发送重置链接"
 sessionExpired = "您的会话已过期。请重新登录。"
 signin = "登录"
 signInAnonymously = "以访客身份注册"
-subtitle = "重新登录 Stirling PDF"
 signingIn = "正在登录…"
 signinTitle = "请登录"
 signInWith = "使用以下方式登录"
 signOut = "退出登录"
 ssoSignIn = "通过单点登录登录"
+subtitle = "重新登录 Stirling PDF"
 title = "登录"
 toManySessions = "你已经有太多的会话了。请注销一些设备后重试。"
 unexpectedError = "意外错误：{{message}}"
@@ -4430,9 +4523,11 @@ tags = "标记、网页内容、转换、转换"
 title = "Markdown 转 PDF"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "合并"
 tags = "合并，页面操作，后端，服务器端"
 title = "合并"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "合并 PDF 时发生错误。"
@@ -4701,15 +4796,6 @@ viewSwitcher = "使用这些控件选择您希望如何查看 PDF。"
 workbench = "这是 <strong>工作台</strong> - 用于查看和编辑 PDF 的主要区域。"
 wrapUp = "一切就绪！您已了解应用的主要区域及其用法。随时点击 <strong>帮助</strong> 按钮重新查看本导览。"
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "试用结束后，您将继续使用我们的免费层。添加付款方式以保持 Pro 访问权限。"
-afterTrialWithPayment = "试用结束后将自动开始您的 Pro 订阅。"
-body = "在试用期内，您可完整使用 Stirling PDF Pro 功能。享受不限次数转换、更大文件大小与优先处理。"
-daysRemaining = "剩余 {{days}} 天"
-daysRemainingSingular = "剩余 {{days}} 天"
-title = "您的 30 天 Pro 试用"
-trialEnds = "试用将于 {{date}} 结束"
-
 [onboarding.buttons]
 back = "返回"
 download = "下载 →"
@@ -4722,6 +4808,15 @@ skipTheTour = "跳过导览"
 body = "Stirling 作为桌面应用效果最佳。可离线使用、更快访问文档，并在电脑本地进行编辑。"
 title = "下载"
 titleWithOs = "为 {{osLabel}} 下载"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "试用结束后，您将继续使用我们的免费层。添加付款方式以保持 Pro 访问权限。"
+afterTrialWithPayment = "试用结束后将自动开始您的 Pro 订阅。"
+body = "在试用期内，您可完整使用 Stirling PDF Pro 功能。享受不限次数转换、更大文件大小与优先处理。"
+daysRemaining = "剩余 {{days}} 天"
+daysRemainingSingular = "剩余 {{days}} 天"
+title = "您的 30 天 Pro 试用"
+trialEnds = "试用将于 {{date}} 结束"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "启用登录模式后，您可以管理用户、配置设置并监控服务器健康。服务器上的前 <strong>{{freeTierLimit}}</strong> 位用户可免费使用 Stirling。"
@@ -4858,126 +4953,6 @@ title = "页面编辑器"
 zoomIn = "放大"
 zoomOut = "缩小"
 
-[viewer]
-cannotPreviewFile = "无法预览文件"
-disableColorFilter = "禁用颜色滤镜"
-dualPageView = "双页视图"
-enableDarkFilter = "启用深色滤镜"
-enableSepiaFilter = "启用褐色滤镜"
-firstPage = "第一页"
-lastPage = "最后一页"
-nextPage = "下一页"
-onlyPdfSupported = "该查看器仅支持 PDF 文件。此文件似乎是其他格式。"
-previousPage = "上一页"
-singlePageView = "单页视图"
-unknownFile = "未知文件"
-zoomIn = "放大"
-zoomOut = "缩小"
-resetZoom = "重置缩放"
-
-[viewer.nonPdf]
-fileTypeBadge = "{{type}} 文件"
-convertToPdf = "转换为 PDF"
-loading = "正在加载..."
-emptyFile = "空文件"
-csvStats = "{{rows}} 行 · {{columns}} 列 · {{size}}"
-sortedBy = "排序依据：{{column}}"
-columnDefault = "列 {{index}}"
-htmlPreviewWarning = "HTML 预览 — 外部资源可能无法加载 · {{size}}"
-htmlPreview = "HTML 预览"
-invalidJson = "无效的 JSON — 显示原始内容"
-textStats = "{{lines}} 行 · {{size}}"
-lineNumbers = "行号"
-renderMarkdown = "渲染 markdown"
-
-[viewer.attachments]
-title = "附件"
-searchPlaceholder = "搜索附件"
-noSupport = "此查看器不支持附件。"
-noDocument = "打开 PDF 以查看其附件。"
-loading = "正在加载附件..."
-empty = "此文档没有附件"
-noMatch = "没有与您的搜索匹配的附件"
-
-[viewer.comments]
-title = "评论"
-hint = "使用“评论”“插入文本”或“替换文本”工具放置评论。它们将按页面显示在此处。"
-placeholder = "输入您的评论..."
-pageLabel = "第 {{page}} 页"
-oneComment = "1 条评论"
-nComments = "{{count}} 条评论"
-addCommentPlaceholder = "添加评论..."
-addLink = "添加链接"
-goToLink = "前往链接"
-addComment = "添加评论"
-viewComment = "查看评论"
-addReplyPlaceholder = "添加回复..."
-saveReply = "保存回复"
-send = "发送"
-moreActions = "更多操作"
-typeComment = "评论"
-typeInsertText = "插入文本"
-typeReplaceText = "替换文本"
-locateAnnotation = "在文档中定位"
-deleteTitle = "从评论中移除批注？"
-deleteDescription = "此批注附带了一个评论。您可以仅从侧边栏移除评论而保留批注，或删除全部内容。"
-removeCommentOnly = "仅移除评论"
-deleteAnnotationAndComment = "删除批注与评论"
-
-[viewer.formBar]
-title = "表单字段"
-unsavedBadge = "未保存"
-unsavedDesc = "您有未保存的更改"
-hasFieldsDesc = "此 PDF 包含可填写的字段"
-dismiss = "关闭"
-apply = "应用更改"
-download = "下载 PDF"
-
-[rightRail]
-closeSelected = "关闭所选文件"
-selectAll = "选择所有"
-deselectAll = "取消选择所有"
-selectByNumber = "按页码选择"
-deleteSelected = "删除所选页面"
-closePdf = "关闭 PDF"
-exportAll = "导出 PDF"
-downloadSelected = "下载所选文件"
-annotations = "注释"
-exportSelected = "导出所选页面"
-formFill = "填写表单"
-saveChanges = "保存更改"
-toggleAttachments = "切换附件"
-toggleTheme = "切换主题"
-language = "语言"
-toggleAnnotations = "切换注释可见性"
-toggleLayers = "切换图层"
-search = "搜索 PDF"
-panMode = "平移模式"
-applyRedactionsFirst = "请先应用涂黑"
-rotateLeft = "向左旋转"
-rotateRight = "向右旋转"
-toggleSidebar = "切换侧边栏"
-toggleBookmarks = "切换书签"
-toggleComments = "评论"
-print = "打印 PDF"
-ruler = "标尺/测量"
-readAloud = "朗读"
-readAloudSpeed = "速度"
-readAloudLanguage = "语言"
-selectLanguage = "选择语言"
-draw = "绘制"
-redact = "涂黑"
-exitRedaction = "退出涂黑模式"
-save = "保存"
-downloadAll = "全部下载"
-saveAll = "全部保存"
-saveAs = "另存为"
-
-[textAlign]
-left = "左对齐"
-center = "居中"
-right = "右对齐"
-
 [pageExtracter]
 header = "提取页面"
 placeholder = "（例如：1,2,8 或 4,7,12-16 或 2n-1）"
@@ -5000,10 +4975,24 @@ tags = "合并、组合、单视图、整理"
 title = "多页布局"
 top = "上边距"
 
-[pageLayout.mode]
-default = "默认"
-custom = "自定义"
-label = "模式:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "按行：先填满每一行。"
+bullet2 = "按列：先填满每一列。"
+text = "控制页面是按行还是按列填充网格。"
+title = "页面排列"
+
+[pageLayout.advanced.tooltip.header]
+title = "高级布局选项"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "选择最终纸张方向。纵向更适合较高的内容，横向更适合较宽的布局。"
+title = "方向"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR：从左到右顺序。"
+bullet2 = "RTL：从右到左顺序。"
+text = "设置网格中的水平方向排序，适用于从左到右和从右到左的文档惯例。"
+title = "阅读方向"
 
 [pageLayout.arrangement]
 byColumns = "按列"
@@ -5018,100 +5007,86 @@ label = "页面排列:"
 
 [pageLayout.error]
 failed = "创建多页布局时发生错误。"
-outerVerticalMarginsTooLarge = "上下边距对于此纸张尺寸过大。"
-outerHorizontalMarginsTooLarge = "左右边距对于此纸张尺寸过大。"
 innerMarginTooLarge = "所选布局的内间距过大。"
+outerHorizontalMarginsTooLarge = "左右边距对于此纸张尺寸过大。"
+outerVerticalMarginsTooLarge = "上下边距对于此纸张尺寸过大。"
 
-[pageLayout.orientation]
-landscape = "横向"
-portrait = "纵向"
-label = "方向:"
-
-[pageLayout.readingDirection]
-ltr = "从左到右"
-rtl = "从右到左"
-label = "阅读方向:"
-
-[pageLayout.tooltip.header]
-title = "页面布局指南"
-
-[pageLayout.tooltip.overview]
-title = "什么是页面布局？"
-text = "将多个页面排到一张纸上，用于讲义或节省纸张。"
-
-[pageLayout.tooltip.mode]
-title = "模式"
-text = "选择如何配置网格："
-bullet1 = "默认：选择预设，系统将自动计算网格。"
-bullet2 = "自定义：手动设置行与列。"
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "每张纸的页面数（默认模式）"
-text = "选择每张纸包含的页面数（例如：4 → 2×2，9 → 3×3）。"
-
-[pageLayout.tooltip.rowsCols]
-title = "行与列（自定义模式）"
-text = "设置精确的网格尺寸。每张纸的总页面数 = 行 × 列。"
-
-[pageLayout.tooltip.orientation]
-title = "方向"
-text = "设置输出纸张方向："
-bullet1 = "纵向：高于宽。"
-bullet2 = "横向：宽于高。"
-
-[pageLayout.tooltip.arrangement]
-title = "页面排列"
-text = "控制页面填充网格的顺序："
-bullet1 = "按行：逐行填充（从左到右或从右到左）。"
-bullet2 = "按列：自上而下，逐列填充。"
-
-[pageLayout.tooltip.readingDirection]
-title = "阅读方向"
-text = "控制页面的水平方向顺序："
-bullet1 = "LTR：从左到右。"
-bullet2 = "RTL：从右到左。"
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "启用边框以在每个放置的页面周围绘制线条，有助于视觉分隔或裁切。"
 title = "添加边框"
-text = "在每个页面单元周围绘制边框线，用于裁切参考或视觉分隔。"
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "仅在启用边框时才应用厚度。数值越大，线条越粗。"
+title = "边框厚度"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "边距与边框"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "边距"
-text = "使用上、下、左、右边距来控制整张纸输出周围的留白。"
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "内间距"
 text = "内间距在页面网格的单元之间增加空隙，提升分隔与可读性。"
+title = "内间距"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "使用上、下、左、右边距来控制整张纸输出周围的留白。"
+title = "边距"
+
+[pageLayout.mode]
+custom = "自定义"
+default = "默认"
+label = "模式:"
+
+[pageLayout.orientation]
+label = "方向:"
+landscape = "横向"
+portrait = "纵向"
+
+[pageLayout.readingDirection]
+label = "阅读方向:"
+ltr = "从左到右"
+rtl = "从右到左"
+
+[pageLayout.tooltip.addBorder]
+text = "在每个页面单元周围绘制边框线，用于裁切参考或视觉分隔。"
 title = "添加边框"
-text = "启用边框以在每个放置的页面周围绘制线条，有助于视觉分隔或裁切。"
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "边框厚度"
-text = "仅在启用边框时才应用厚度。数值越大，线条越粗。"
-
-[pageLayout.advanced.tooltip.header]
-title = "高级布局选项"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "方向"
-text = "选择最终纸张方向。纵向更适合较高的内容，横向更适合较宽的布局。"
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "按行：逐行填充（从左到右或从右到左）。"
+bullet2 = "按列：自上而下，逐列填充。"
+text = "控制页面填充网格的顺序："
 title = "页面排列"
-text = "控制页面是按行还是按列填充网格。"
-bullet1 = "按行：先填满每一行。"
-bullet2 = "按列：先填满每一列。"
 
-[pageLayout.advanced.tooltip.readingDirection]
+[pageLayout.tooltip.header]
+title = "页面布局指南"
+
+[pageLayout.tooltip.mode]
+bullet1 = "默认：选择预设，系统将自动计算网格。"
+bullet2 = "自定义：手动设置行与列。"
+text = "选择如何配置网格："
+title = "模式"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "纵向：高于宽。"
+bullet2 = "横向：宽于高。"
+text = "设置输出纸张方向："
+title = "方向"
+
+[pageLayout.tooltip.overview]
+text = "将多个页面排到一张纸上，用于讲义或节省纸张。"
+title = "什么是页面布局？"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "选择每张纸包含的页面数（例如：4 → 2×2，9 → 3×3）。"
+title = "每张纸的页面数（默认模式）"
+
+[pageLayout.tooltip.readingDirection]
+bullet1 = "LTR：从左到右。"
+bullet2 = "RTL：从右到左。"
+text = "控制页面的水平方向顺序："
 title = "阅读方向"
-text = "设置网格中的水平方向排序，适用于从左到右和从右到左的文档惯例。"
-bullet1 = "LTR：从左到右顺序。"
-bullet2 = "RTL：从右到左顺序。"
+
+[pageLayout.tooltip.rowsCols]
+text = "设置精确的网格尺寸。每张纸的总页面数 = 行 × 列。"
+title = "行与列（自定义模式）"
 
 [pageRemover]
 header = "PDF 页面移除器"
@@ -5197,6 +5172,9 @@ title = "提示"
 autoClose = "此窗口将自动关闭..."
 billingPeriod = "计费周期"
 canCloseWindow = "您现在可以关闭此窗口。"
+checkoutInstructions = "请在刚刚打开的浏览器窗口中完成购买。付款完成后，返回此处并点击下方按钮以刷新您的账单信息。"
+checkoutOpened = "已在浏览器中打开结账页面"
+closeLater = "稍后再说"
 emailInvalid = "请输入有效的 Email 地址"
 enterpriseNote = "可在结账时调整席位数（1-1000）。"
 error = "支付错误"
@@ -5218,6 +5196,7 @@ perMonth = "/月"
 perYear = "/年"
 preparing = "正在准备结账..."
 redirecting = "正在跳转到安全结账..."
+refreshBilling = "我已完成付款 - 刷新账单"
 stripeNotConfigured = "未配置 Stripe"
 stripeNotConfiguredMessage = "未配置 Stripe 支付集成。请联系您的管理员。"
 success = "支付成功！"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "您的订阅已成功升级。现有许可证密钥已
 upgradeSuccess = "支付成功！您的订阅已升级。服务器上的许可证已更新。您将很快收到确认 Email。"
 upgradeTitle = "升级到 {{planName}}"
 yearly = "按年"
-checkoutOpened = "已在浏览器中打开结账页面"
-checkoutInstructions = "请在刚刚打开的浏览器窗口中完成购买。付款完成后，返回此处并点击下方按钮以刷新您的账单信息。"
-refreshBilling = "我已完成付款 - 刷新账单"
-closeLater = "稍后再说"
 
 [payment.emailStage]
 continue = "继续"
@@ -5456,13 +5431,6 @@ prompt = "选择需要提取表格的页面"
 submit = "提取"
 title = "PDF 转 CSV"
 
-[PDFToXLSX]
-header = "PDF 转 Excel"
-prompt = "选择要提取表格的页面"
-submit = "转换"
-title = "PDF 转 Excel（XLSX）"
-tags = "电子表格,excel,xlsx,表格,提取,转换"
-
 [PDFToHTML]
 credit = "此服务使用 pdftohtml 进行文件转换。"
 header = "将 PDF 转换为 HTML"
@@ -5561,6 +5529,13 @@ title = "PDF 转 Word"
 [PDFToWord.selectText]
 1 = "输出文件格式"
 
+[PDFToXLSX]
+header = "PDF 转 Excel"
+prompt = "选择要提取表格的页面"
+submit = "转换"
+tags = "电子表格,excel,xlsx,表格,提取,转换"
+title = "PDF 转 Excel（XLSX）"
+
 [PDFToXML]
 credit = "此服务使用 LibreOffice 进行文件转换。"
 header = "将 PDF 转换为 XML"
@@ -5626,10 +5601,10 @@ manage = "管理"
 perMonth = "/月"
 perSeat = "/席位"
 popular = "热门"
-selectPlan = "选择方案"
-selectCredits = "选择积分数量"
-showComparison = "比较全部功能"
 purchase = "购买"
+selectCredits = "选择积分数量"
+selectPlan = "选择方案"
+showComparison = "比较全部功能"
 totalCost = "总费用"
 upgrade = "升级"
 withServer = "+ 服务器方案"
@@ -5638,19 +5613,29 @@ withServer = "+ 服务器方案"
 subtitle = "您当前的订阅详情"
 title = "当前套餐"
 
+[plan.api]
+large = "5,000 积分"
+medium = "1,000 积分"
+small = "500 积分"
+xsmall = "100 积分"
+
+[plan.apiPackages]
+subtitle = "为您的应用程序购买 API 积分"
+title = "API 积分套餐"
+
 [plan.availablePlans]
-subtitle = "选择符合您需求的套餐"
 loadError = "无法加载方案定价。使用默认值。"
+subtitle = "选择符合您需求的套餐"
 title = "可用套餐"
 
 [plan.enterprise]
-siteLicense = "站点许可"
 highlight1 = "自定义定价"
 highlight2 = "专属支持"
 highlight3 = "最新功能"
 name = "企业版"
 requiresServer = "需服务器"
 requiresServerMessage = "请先升级到服务器方案，再升级到企业版。"
+siteLicense = "站点许可"
 
 [plan.feature]
 api = "API 访问"
@@ -5722,16 +5707,6 @@ successMessage = "您的许可证已成功激活。现在可以关闭此窗口�
 name = "团队"
 siteLicense = "站点许可"
 
-[plan.api]
-large = "5,000 积分"
-medium = "1,000 积分"
-small = "500 积分"
-xsmall = "100 积分"
-
-[plan.apiPackages]
-subtitle = "为您的应用程序购买 API 积分"
-title = "API 积分套餐"
-
 [plan.trial]
 badge = "试用"
 continueWithFree = "继续使用免费版"
@@ -5746,77 +5721,6 @@ subscribeToPro = "订阅 Pro"
 subscriptionScheduled = "订阅已安排 - 将于 {{date}} 开始"
 title = "免费试用中"
 
-[credits]
-enableOverageBilling = "启用超额计费"
-maybeLater = "稍后再说"
-upgrade = "升级"
-
-[credits.modal]
-advancedMonitoring = "高级监控"
-allInOneWorkspace = "一体化 PDF 工作空间（查看器、工具与代理）"
-apiSandbox = "API 沙盒"
-contactSales = "联系销售"
-creditsRemaining = "剩余 {{current}} / {{total}}"
-creditsThisMonth = "每月额度"
-current = "当前方案"
-customPricing = "自定义"
-customSmartFolders = "自定义智能文件夹"
-dedicatedSupportSlas = "专属支持与 SLA"
-enterpriseSubscription = "企业版"
-everythingInCredits = "包含“额度”中的所有内容，另外："
-everythingInFree = "包含“免费版”中的所有内容，另外："
-fasterThroughput = "吞吐量提升 10 倍"
-forRegularWork = "适用于常规 PDF 工作："
-freeTier = "免费版"
-fullyPrivateFiles = "完全私密的文件"
-largeFileProcessing = "大文件处理"
-managedMemberMessage = "您可通过团队无限使用额度。如需帮助，请联系您的团队负责人。"
-managedMemberTitle = "无限额度"
-meteringBillingNote = "超额额度按月与您的 Team 订阅一并结算。可在账户设置中随时查看用量。"
-meteringExplanation = "您的 Team 方案每月包含 {{credits}} 额度。用完后，超额计费会自动提供额外额度，确保不中断工作。"
-meteringIncluded = "Team 每月包含 {{credits}} 额度"
-meteringNoCommitment = "无绑定，随时可取消"
-meteringNeverRunOut = "额度永不断供"
-meteringPayAsYouGo = "按量付费"
-meteringPrice = "额外额度 {{price}}/额度"
-meteringTitle = "按使用量计费的超额结算"
-monthlyCredits = "每月额度"
-orgWideAccess = "组织范围的访问控制"
-overage = "超额"
-perMonth = "/月"
-popular = "热门"
-premiumAiModels = "高级 AI 模型"
-prioritySupport = "优先支持"
-privateDocCloud = "私有文档云"
-ragFineTuning = "RAG + 微调"
-secureApiAccess = "安全 API 访问"
-selfHostLink = "查看文档与方案"
-selfHostPrompt = "想要自托管？"
-standardThroughput = "标准吞吐量"
-subtitle = "升级到 Team，可获得 10 倍额度与更快的处理速度。"
-subtitlePro = "启用自动超额计费，确保额度永不断供。"
-teamLeaderOnly = "仅团队负责人可启用超额计费"
-teamSubscription = "Team"
-titleExhausted = "您已用完免费额度"
-titleExhaustedPro = "您的额度已用尽"
-unlimitedApiAccess = "无限 API 访问"
-unlimitedMonthlyCredits = "站点许可"
-unlimitedSeats = "无限席位"
-
-[credits.modal.features]
-everythingInCredits = "包含“额度”中的所有内容，另外："
-everythingInFree = "包含“免费版”中的所有内容，另外："
-forRegularWork = "适用于常规 PDF 工作："
-
-[credits.insufficient]
-brief = "额度不足。您需要 {{required}}，但只有 {{current}}。"
-freeTier = "升级到 Team，额度提升 10 倍并享受无限超额计费。"
-managedMember = "请联系您的团队负责人以获取帮助。"
-message = "您没有足够的额度来运行 {{tool}}。当前拥有 {{current}} 额度。"
-messageWithAmount = "运行 {{tool}} 需要 {{required}} 额度，但您只有 {{current}}。"
-teamMember = "启用超额计费，确保额度永不断供。"
-title = "额度不足"
-
 [printFile]
 header = "使用打印机打印文件"
 submit = "打印"
@@ -5825,6 +5729,207 @@ title = "打印文件"
 [printFile.selectText]
 1 = "选择要打印的文件"
 2 = "输入打印机名称"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "文件导入"
+
+[provider.googledrive.apiKey]
+description = "来自 Google Cloud Console 的用于 Google Picker API 的 Google API Key"
+label = "API Key"
+
+[provider.googledrive.appId]
+description = "来自 Google Cloud Console 的 Google Drive App ID"
+label = "App ID"
+
+[provider.googledrive.clientId]
+description = "来自 Google Cloud Console 的 Google OAuth 2.0 Client ID"
+label = "客户端 ID"
+
+[provider.googledrive.enabled]
+description = "允许用户直接从 Google Drive 导入文件"
+label = "启用 Google Drive 文件选择器"
+
+[provider.oauth2.generic]
+name = "通用 OAuth2"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "首次通过 OAuth2 登录时自动创建用户账户"
+label = "自动创建用户"
+
+[provider.oauth2.generic.blockRegistration]
+description = "禁止通过 OAuth2 注册新用户"
+label = "阻止注册"
+
+[provider.oauth2.generic.clientId]
+description = "来自您的提供商的 OAuth2 客户端 ID"
+label = "客户端 ID"
+
+[provider.oauth2.generic.clientSecret]
+description = "来自您的提供商的 OAuth2 客户端密钥"
+label = "客户端密钥"
+
+[provider.oauth2.generic.enabled]
+description = "使用自定义 OAuth2 提供商启用认证"
+label = "启用通用 OAuth2"
+
+[provider.oauth2.generic.issuer]
+description = "支持 OpenID Connect Discovery（/.well-known/openid-configuration）的提供商"
+label = "发行者 URL"
+
+[provider.oauth2.generic.provider]
+description = "您的 OAuth2 提供商名称（例如 Azure AD、Okta）"
+label = "提供商名称"
+
+[provider.oauth2.generic.scopes]
+description = "以逗号分隔的 OAuth2 范围"
+label = "范围"
+
+[provider.oauth2.generic.useAsUsername]
+description = "用作用户名的字段"
+label = "用作用户名"
+
+[provider.oauth2.github]
+scope = "登录认证"
+
+[provider.oauth2.github.clientId]
+description = "来自 GitHub Developer Settings 的 OAuth2 客户端 ID"
+label = "客户端 ID"
+
+[provider.oauth2.github.clientSecret]
+description = "来自 GitHub Developer Settings 的 OAuth2 客户端密钥"
+label = "客户端密钥"
+
+[provider.oauth2.github.scopes]
+description = "以逗号分隔的 OAuth2 范围"
+label = "范围"
+
+[provider.oauth2.github.useAsUsername]
+description = "用作用户名的字段（email、login、name）"
+label = "用作用户名"
+
+[provider.oauth2.google]
+scope = "登录认证"
+
+[provider.oauth2.google.clientId]
+description = "来自 Google Cloud Console 的 OAuth2 客户端 ID"
+label = "客户端 ID"
+
+[provider.oauth2.google.clientSecret]
+description = "来自 Google Cloud Console 的 OAuth2 客户端密钥"
+label = "客户端密钥"
+
+[provider.oauth2.google.scopes]
+description = "以逗号分隔的 OAuth2 范围"
+label = "范围"
+
+[provider.oauth2.google.useAsUsername]
+description = "用作用户名的字段（email、name、given_name、family_name）"
+label = "用作用户名"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "来自 Keycloak 的 OAuth2 客户端 ID"
+label = "客户端 ID"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "来自 Keycloak 的 OAuth2 客户端密钥"
+label = "客户端密钥"
+
+[provider.oauth2.keycloak.issuer]
+description = "Keycloak Realm 的 OpenID Connect Discovery 端点的 URL"
+label = "发行者 URL"
+
+[provider.oauth2.keycloak.scopes]
+description = "以逗号分隔的 OAuth2 范围"
+label = "范围"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "用作用户名的字段（email、name、given_name、family_name、preferred_username）"
+label = "用作用户名"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO（SAML）"
+
+[provider.saml2.autoCreateUser]
+description = "首次通过 SAML2 登录时自动创建用户账户"
+label = "自动创建用户"
+
+[provider.saml2.blockRegistration]
+description = "禁止通过 SAML2 注册新用户"
+label = "阻止注册"
+
+[provider.saml2.enabled]
+description = "启用 SAML2 认证（仅限企业版）"
+label = "启用 SAML2"
+
+[provider.saml2.idpCert]
+description = "证书路径（例如：classpath:okta.cert）"
+label = "IDP 证书"
+
+[provider.saml2.idpIssuer]
+description = "您的提供商的 ID"
+label = "IDP Issuer"
+
+[provider.saml2.idpMetadataUri]
+description = "您的提供商的元数据 URI"
+label = "IDP Metadata URI"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "用于发起 SSO 的 URL"
+label = "IDP 单点登录 URL"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "用于发起 SLO 的 URL"
+label = "IDP 单点登出 URL"
+
+[provider.saml2.privateKey]
+description = "您的私钥路径"
+label = "私钥"
+
+[provider.saml2.provider]
+description = "您的 SAML2 提供商名称"
+label = "提供商名称"
+
+[provider.saml2.registrationId]
+description = "您的服务提供商（SP）应用名称"
+label = "注册 ID"
+
+[provider.saml2.spCert]
+description = "您的签名证书路径"
+label = "SP 证书"
+
+[provider.smtp]
+name = "SMTP 邮件"
+scope = "邮件通知"
+
+[provider.smtp.enabled]
+description = "启用邮件通知与 SMTP 功能"
+label = "启用邮件"
+
+[provider.smtp.from]
+description = "用作发件人的电子邮箱地址"
+label = "发件地址"
+
+[provider.smtp.host]
+description = "您的 SMTP 服务器的主机名或 IP 地址"
+label = "SMTP 主机"
+
+[provider.smtp.password]
+description = "用于 SMTP 认证的密码"
+label = "SMTP 密码"
+
+[provider.smtp.port]
+description = "SMTP 连接端口（通常为 25、465 或 587）"
+label = "SMTP 端口"
+
+[provider.smtp.username]
+description = "用于 SMTP 认证的用户名"
+label = "SMTP 用户名"
 
 [quickAccess]
 access = "访问"
@@ -5867,7 +5972,12 @@ createNew = "创建新请求"
 createSession = "创建签署请求"
 dueDate = "截止日期（可选）"
 files = "文件"
+filterDeclined = "已拒绝"
+filterMine = "我的"
+filterOverdue = "已逾期"
+filterSigned = "已签署"
 help = "帮助"
+newRequest = "新请求"
 noActiveSessions = "没有待处理的签署请求或进行中的会话"
 noCompletedSessions = "没有已完成的会话"
 noFile = "未选择文件"
@@ -5875,8 +5985,9 @@ read = "阅读"
 reader = "阅读器"
 refresh = "刷新"
 requestSignatures = "请求签署"
-selectSingleFileToRequest = "选择一个 PDF 文件以请求签署"
+searchDocuments = "搜索文档…"
 selectedFile = "已选择的文件"
+selectSingleFileToRequest = "选择一个 PDF 文件以请求签署"
 selectUsers = "选择要签署的用户"
 selectUsersPlaceholder = "选择参与者..."
 sendingRequest = "正在发送..."
@@ -5885,14 +5996,8 @@ showMeAround = "带我看看"
 sign = "签名"
 signatureRequests = "签署请求"
 signYourself = "自行签署"
-newRequest = "新请求"
 tours = "导览"
 wetSign = "添加签名"
-filterMine = "我的"
-filterOverdue = "已逾期"
-filterSigned = "已签署"
-filterDeclined = "已拒绝"
-searchDocuments = "搜索文档…"
 
 [quickAccess.helpMenu]
 adminTour = "管理导览"
@@ -5933,15 +6038,15 @@ title = "要涂黑的词语"
 failed = "涂黑 PDF 时发生错误。"
 
 [redact.manual]
+activate = "启用遮盖工具"
+active = "遮盖模式已激活"
 apply = "应用"
 applyChanges = "应用更改"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ 永久应用，无法撤销，且底层数据将被删除"
 boxRedaction = "框选涂黑"
-colourPicker = "取色器"
 colorLabel = "遮盖颜色"
-active = "遮盖模式已激活"
-activate = "启用遮盖工具"
+colourPicker = "取色器"
 controlsTitle = "手动涂黑控制"
 convertPDFToImageLabel = "将 PDF 转为图像 PDF（用于移除框后面的文字）"
 export = "导出全部"
@@ -6337,6 +6442,46 @@ title = "高对比度"
 text = "完全反转 PDF 中的所有颜色，形成类似底片的效果。用于创建文档的深色模式版本，或在弱光环境下减轻眼疲劳。"
 title = "反转所有颜色"
 
+[rightRail]
+annotations = "注释"
+applyRedactionsFirst = "请先应用涂黑"
+closePdf = "关闭 PDF"
+closeSelected = "关闭所选文件"
+deleteSelected = "删除所选页面"
+deselectAll = "取消选择所有"
+downloadAll = "全部下载"
+downloadSelected = "下载所选文件"
+draw = "绘制"
+exitRedaction = "退出涂黑模式"
+exportAll = "导出 PDF"
+exportSelected = "导出所选页面"
+formFill = "填写表单"
+language = "语言"
+panMode = "平移模式"
+print = "打印 PDF"
+readAloud = "朗读"
+readAloudLanguage = "语言"
+readAloudSpeed = "速度"
+redact = "涂黑"
+rotateLeft = "向左旋转"
+rotateRight = "向右旋转"
+ruler = "标尺/测量"
+save = "保存"
+saveAll = "全部保存"
+saveAs = "另存为"
+saveChanges = "保存更改"
+search = "搜索 PDF"
+selectAll = "选择所有"
+selectByNumber = "按页码选择"
+selectLanguage = "选择语言"
+toggleAnnotations = "切换注释可见性"
+toggleAttachments = "切换附件"
+toggleBookmarks = "切换书签"
+toggleComments = "评论"
+toggleLayers = "切换图层"
+toggleSidebar = "切换侧边栏"
+toggleTheme = "切换主题"
+
 [rotate]
 rotateLeft = "逆时针旋转"
 rotateRight = "顺时针旋转"
@@ -6359,32 +6504,6 @@ text = "以 90° 为增量顺时针或逆时针旋转 PDF 页面。PDF 中所有
 
 [rotate.tooltip.header]
 title = "旋转设置概览"
-
-[timestampPdf]
-completed = "已成功为 PDF 添加时间戳"
-desc = "使用可信的时间戳机构（TSA）服务器向您的 PDF 添加 RFC 3161 文档时间戳。"
-filenamePrefix = "timestamped"
-results = "时间戳结果"
-submit = "应用时间戳"
-title = "为 PDF 添加时间戳"
-
-[timestampPdf.error]
-failed = "为 PDF 添加时间戳时发生错误。"
-generic = "时间戳失败"
-
-[timestampPdf.files]
-placeholder = "在主视图中选择一个 PDF 文件以开始"
-
-[timestampPdf.options]
-note = "只有您文档的 SHA-256 哈希会被发送到 TSA 服务器；PDF 文件本身不会被发送到 TSA 服务器。"
-title = "时间戳服务器（TSA）"
-
-[timestampPdf.options.tsaUrl]
-desc = "选择可信的时间戳机构"
-label = "选择 TSA 服务器"
-
-[timestampPdf.steps]
-settings = "设置"
 
 [sanitize]
 completed = "安全清理成功完成"
@@ -6554,37 +6673,6 @@ bullet3 = "对审批流程和法律保全至关重要"
 description = "您在创建会话时指定的顺序决定谁先签署。"
 title = "签署顺序"
 
-[signatureSettings.tooltip]
-header = "签名外观设置"
-
-[signatureSettings.tooltip.location]
-bullet1 = "示例：“New York, USA”、“London Office”、“Remote”"
-bullet2 = "与页面位置不同"
-bullet3 = "某些法域可能要求填写"
-description = "可选的签名应用地理位置。存储于证书元数据中。"
-title = "签名位置"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "与签名及文字一同显示"
-bullet2 = "支持 PNG、JPG 格式"
-bullet3 = "提升专业外观"
-description = "为可见签名添加公司 Logo，以增强品牌和真实性。"
-title = "公司 Logo"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "示例：“Approval”、“Contract Agreement”、“Review Complete”"
-bullet2 = "在 PDF 签名属性中可见"
-bullet3 = "有助于审计跟踪和合规"
-description = "说明为何签署文档的可选文本。存储于证书元数据中。"
-title = "签名原因"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>可见</b>：签名以自定义外观显示在 PDF 上"
-bullet2 = "<b>不可见</b>：嵌入证书但不显示视觉标记"
-bullet3 = "不可见签名仍提供加密验证"
-description = "控制签名是在文档中可见，还是以不可见方式嵌入。"
-title = "签名可见性"
-
 [settings.configuration]
 advanced = "高级"
 database = "数据库"
@@ -6606,6 +6694,102 @@ user = "登录身份"
 local = "仅本地"
 saas = "Stirling Cloud"
 selfhosted = "自托管"
+
+[settings.developer]
+apiKeys = "API 密钥"
+title = "开发者"
+
+[settings.general]
+autoUnzip = "自动解压 API 响应"
+autoUnzipDescription = "自动从 ZIP 响应中提取文件"
+autoUnzipFileLimit = "自动解压文件数量上限"
+autoUnzipFileLimitDescription = "从 ZIP 中提取的最大文件数"
+autoUnzipFileLimitTooltip = "仅当 ZIP 包含不超过此数量的文件时才解压。调高以提取更大的 ZIP。"
+autoUnzipTooltip = "自动解压 API 操作返回的 ZIP 文件。禁用以保持 ZIP 文件不变。这不会影响自动化工作流。"
+defaultPdfEditor = "默认 PDF 编辑器"
+defaultPdfEditorActive = "Stirling PDF 是您的默认 PDF 编辑器"
+defaultPdfEditorChecking = "正在检查..."
+defaultPdfEditorInactive = "其他应用被设为默认"
+defaultPdfEditorSet = "已为默认"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "默认工具选择器模式"
+defaultToolPickerModeDescription = "选择工具选择器默认以全屏或侧边栏打开"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "配置通用应用偏好。"
+hideUnavailableConversions = "隐藏不可用转换"
+hideUnavailableConversionsDescription = "在“转换”工具中移除已禁用的转换选项，而非灰显显示。"
+hideUnavailableTools = "隐藏不可用工具"
+hideUnavailableToolsDescription = "将服务器禁用的工具从列表中移除，而非灰显显示。"
+logout = "退出登录"
+setAsDefault = "设为默认"
+title = "通用"
+user = "用户"
+
+[settings.general.enableFeatures]
+action = "配置"
+and = "和"
+benefit = "启用用户角色、团队协作、管理员控制和企业功能。"
+dismiss = "关闭"
+intro = "为您的组织启用用户认证、团队管理和工作区功能。"
+learnMore = "在文档中了解更多"
+title = "面向系统管理员"
+
+[settings.general.mode]
+fullscreen = "全屏"
+sidebar = "侧边栏"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "检查更新"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "检查更新并查看版本信息"
+latestVersion = "最新版本"
+serverNeedsUpdate = "需要管理员更新服务器"
+title = "软件更新"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "查看详情"
+
+[settings.general.versionInfo]
+description = "桌面端与服务器版本详情"
+desktop = "桌面版本"
+server = "服务器版本"
+title = "版本信息"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "按下按键…（按 Esc 取消）"
+change = "更改快捷键"
+customBadge = "自定义"
+defaultLabel = "默认：{{shortcut}}"
+description = "自定义键盘快捷键以快速访问工具。点击 \"更改快捷键\"，然后按下新的按键组合。按 Esc 取消。"
+errorConflict = "快捷键已被 {{tool}} 使用。"
+none = "未分配"
+noShortcut = "未设置快捷键"
+reset = "重置"
+searchPlaceholder = "搜索工具..."
+shortcut = "快捷键"
+title = "键盘快捷键"
+
+[settings.hotkeys.errorModifier]
+mac = "请在快捷键中包含 ⌘（Command）、⌥（Option）或其他修饰键。"
+windows = "请在快捷键中包含 Ctrl、Alt 或其他修饰键。"
+
+[settings.licensingAnalytics]
+audit = "审计"
+plan = "套餐"
+title = "许可与分析"
+usageAnalytics = "使用分析"
 
 [settings.planBilling]
 currentPlan = "当前方案"
@@ -6637,6 +6821,10 @@ canceled = "已取消"
 pastDue = "逾期未付"
 trial = "试用"
 
+[settings.planBilling.team]
+managedByTeam = "由团队管理"
+memberCount = "{{count}} 名团队成员"
+
 [settings.planBilling.tier]
 enterprise = "企业版"
 enterpriseDescription = "自定义企业功能与支持"
@@ -6648,10 +6836,6 @@ teamDescription = "每月包含 500 额度，自动超额计费，服务不中�
 teamTooltipCredits = "Team 方案每月包含 {{credits}} 额度。"
 teamTooltipFineprint = "仅为超出包含额度的部分付费。"
 teamTooltipOverage = "自动超额计费 {{price}}/额度，确保服务不中断。"
-
-[settings.planBilling.team]
-managedByTeam = "由团队管理"
-memberCount = "{{count}} 名团队成员"
 
 [settings.planBilling.trial]
 daysRemaining = "剩余 {{days}} 天"
@@ -6670,88 +6854,6 @@ featureThroughput = "更快的处理吞吐量"
 opensInBrowser = "在浏览器中打开以完成升级"
 subtitle = "升级到 Team 可获得："
 title = "升级您的方案"
-
-[settings.developer]
-apiKeys = "API 密钥"
-title = "开发者"
-
-[settings.general]
-autoUnzip = "自动解压 API 响应"
-autoUnzipDescription = "自动从 ZIP 响应中提取文件"
-autoUnzipFileLimit = "自动解压文件数量上限"
-autoUnzipFileLimitDescription = "从 ZIP 中提取的最大文件数"
-autoUnzipFileLimitTooltip = "仅当 ZIP 包含不超过此数量的文件时才解压。调高以提取更大的 ZIP。"
-autoUnzipTooltip = "自动解压 API 操作返回的 ZIP 文件。禁用以保持 ZIP 文件不变。这不会影响自动化工作流。"
-defaultPdfEditor = "默认 PDF 编辑器"
-defaultPdfEditorActive = "Stirling PDF 是您的默认 PDF 编辑器"
-defaultPdfEditorChecking = "正在检查..."
-defaultPdfEditorInactive = "其他应用被设为默认"
-defaultPdfEditorSet = "已为默认"
-defaultToolPickerMode = "默认工具选择器模式"
-defaultToolPickerModeDescription = "选择工具选择器默认以全屏或侧边栏打开"
-description = "配置通用应用偏好。"
-hideUnavailableConversions = "隐藏不可用转换"
-hideUnavailableConversionsDescription = "在“转换”工具中移除已禁用的转换选项，而非灰显显示。"
-hideUnavailableTools = "隐藏不可用工具"
-hideUnavailableToolsDescription = "将服务器禁用的工具从列表中移除，而非灰显显示。"
-logout = "退出登录"
-setAsDefault = "设为默认"
-title = "通用"
-user = "用户"
-
-[settings.general.enableFeatures]
-action = "配置"
-and = "和"
-benefit = "启用用户角色、团队协作、管理员控制和企业功能。"
-dismiss = "关闭"
-intro = "为您的组织启用用户认证、团队管理和工作区功能。"
-learnMore = "在文档中了解更多"
-title = "面向系统管理员"
-
-[settings.general.mode]
-fullscreen = "全屏"
-sidebar = "侧边栏"
-
-[settings.general.updates]
-checkForUpdates = "检查更新"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "检查更新并查看版本信息"
-latestVersion = "最新版本"
-serverNeedsUpdate = "需要管理员更新服务器"
-title = "软件更新"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "查看详情"
-
-[settings.general.versionInfo]
-description = "桌面端与服务器版本详情"
-desktop = "桌面版本"
-server = "服务器版本"
-title = "版本信息"
-
-[settings.hotkeys]
-capturing = "按下按键…（按 Esc 取消）"
-change = "更改快捷键"
-customBadge = "自定义"
-defaultLabel = "默认：{{shortcut}}"
-description = "自定义键盘快捷键以快速访问工具。点击 \"更改快捷键\"，然后按下新的按键组合。按 Esc 取消。"
-errorConflict = "快捷键已被 {{tool}} 使用。"
-none = "未分配"
-noShortcut = "未设置快捷键"
-reset = "重置"
-searchPlaceholder = "搜索工具..."
-shortcut = "快捷键"
-title = "键盘快捷键"
-
-[settings.hotkeys.errorModifier]
-mac = "请在快捷键中包含 ⌘（Command）、⌥（Option）或其他修饰键。"
-windows = "请在快捷键中包含 Ctrl、Alt 或其他修饰键。"
-
-[settings.licensingAnalytics]
-audit = "审计"
-plan = "套餐"
-title = "许可与分析"
-usageAnalytics = "使用分析"
 
 [settings.policiesPrivacy]
 legal = "法律"
@@ -6789,6 +6891,9 @@ security = "安全"
 telegram = "Telegram"
 title = "安全与认证"
 
+[settings.team]
+title = "团队"
+
 [settings.tooltips]
 enableLoginFirst = "请先启用登录模式"
 requiresEnterprise = "需要企业版许可证"
@@ -6798,21 +6903,6 @@ people = "成员"
 teams = "团队"
 title = "工作区"
 
-[settings.team]
-title = "团队"
-
-[localMode]
-toolUnavailable = "此工具需要账户。登录到 Stirling Cloud 或连接到自托管服务器以使用。"
-
-[localMode.banner]
-message = "登录以解锁全部工具。"
-signIn = "登录"
-title = "本地运行"
-
-[localMode.toolPicker]
-message = "登录以解锁全部工具。"
-signIn = "登录"
-
 [setup]
 description = "选择您希望使用 Stirling PDF 的方式开始"
 welcome = "欢迎使用 Stirling PDF"
@@ -6820,7 +6910,6 @@ welcome = "欢迎使用 Stirling PDF"
 [setup.login]
 connectingTo = "正在连接到："
 hideInstructions = "隐藏说明"
-skipSignIn = "不登录继续"
 instructions = "要在您的 Stirling PDF 服务器上启用登录："
 instructionsEnvVar = "设置环境变量："
 instructionsOrYml = "或在 settings.yml 中："
@@ -6830,6 +6919,7 @@ orContinueWith = "或使用 Email 继续"
 serverRequirement = "注意：服务器必须启用登录功能。"
 showInstructions = "如何启用？"
 signInWith = "使用以下方式登录"
+skipSignIn = "不登录继续"
 sso = "单点登录"
 submit = "登录"
 subtitle = "输入凭据以继续"
@@ -6866,9 +6956,9 @@ subtitle = "使用您的 Stirling 账户登录"
 title = "登录 Stirling"
 
 [setup.selfhosted]
+changeServerLocked = "您的组织已将此应用限制为连接到特定服务器"
 link = "或连接到自托管账户"
 subtitle = "输入您的服务器凭据"
-changeServerLocked = "您的组织已将此应用限制为连接到特定服务器"
 switchToLocal = "改用本地工具"
 title = "登录到服务器"
 
@@ -7068,14 +7158,45 @@ saved = "已保存"
 text = "文本"
 title = "签名类型"
 
+[signatureSettings.tooltip]
+header = "签名外观设置"
+
+[signatureSettings.tooltip.location]
+bullet1 = "示例：“New York, USA”、“London Office”、“Remote”"
+bullet2 = "与页面位置不同"
+bullet3 = "某些法域可能要求填写"
+description = "可选的签名应用地理位置。存储于证书元数据中。"
+title = "签名位置"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "与签名及文字一同显示"
+bullet2 = "支持 PNG、JPG 格式"
+bullet3 = "提升专业外观"
+description = "为可见签名添加公司 Logo，以增强品牌和真实性。"
+title = "公司 Logo"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "示例：“Approval”、“Contract Agreement”、“Review Complete”"
+bullet2 = "在 PDF 签名属性中可见"
+bullet3 = "有助于审计跟踪和合规"
+description = "说明为何签署文档的可选文本。存储于证书元数据中。"
+title = "签名原因"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>可见</b>：签名以自定义外观显示在 PDF 上"
+bullet2 = "<b>不可见</b>：嵌入证书但不显示视觉标记"
+bullet3 = "不可见签名仍提供加密验证"
+description = "控制签名是在文档中可见，还是以不可见方式嵌入。"
+title = "签名可见性"
+
 [signRequest]
 declined = "签署请求已被拒绝"
 fetchFailed = "加载签署请求失败"
 signed = "文档签署成功"
 
 [signSession]
-createFailed = "创建签署请求失败"
 created = "签署请求已发送"
+createFailed = "创建签署请求失败"
 
 [signup]
 accountCreatedSuccessfully = "账户创建成功！您现在可以登录。"
@@ -7156,15 +7277,15 @@ desc = "使用分隔页自动拆分"
 name = "分隔页"
 tooltip = "扫描时在文档间放置带二维码的分隔页"
 
-[split.methods.byPoster]
-name = "可打印分块"
-desc = "将大页拆分为可打印尺寸"
-tooltip = "将超大页面按标准纸张（A4、Letter 等）分割为更小块，便于打印"
-
 [split.methods.byPages]
 desc = "提取特定页面（1,3,5-10）"
 name = "页码"
 tooltip = "输入用逗号分隔的页码或带连字符的范围"
+
+[split.methods.byPoster]
+desc = "将大页拆分为可打印尺寸"
+name = "可打印分块"
+tooltip = "将超大页面按标准纸张（A4、Letter 等）分割为更小块，便于打印"
 
 [split.methods.bySections]
 desc = "将页面划分为网格区块"
@@ -7192,27 +7313,27 @@ title = "选择您的拆分方法"
 text = "选择您希望如何拆分 PDF 文档。每种方法都针对不同用例和文档类型进行了优化。"
 title = "拆分方法选择"
 
+[split.poster]
+rightToLeft = "从右到左拆分"
+
+[split.poster.pageSize]
+description = "用于打印的输出页面尺寸"
+label = "目标页面尺寸"
+
+[split.poster.xFactor]
+description = "每页拆分成的列数"
+label = "水平分割数"
+
+[split.poster.yFactor]
+description = "每页拆分成的行数"
+label = "垂直分割数"
+
 [split.settings]
 selectMethodFirst = "请先选择一种拆分方式"
 
 [split.steps]
 chooseMethod = "选择方式"
 settings = "设置"
-
-[split.poster]
-rightToLeft = "从右到左拆分"
-
-[split.poster.pageSize]
-label = "目标页面尺寸"
-description = "用于打印的输出页面尺寸"
-
-[split.poster.xFactor]
-label = "水平分割数"
-description = "每页拆分成的列数"
-
-[split.poster.yFactor]
-label = "垂直分割数"
-description = "每页拆分成的行数"
 
 [split.tooltip.byChapters]
 bullet1 = "书签层级：在第几级书签处拆分（1=顶级）"
@@ -7251,6 +7372,13 @@ bullet5 = "如果扫描分隔页的双面，请启用双工模式"
 text = "使用带有 QR 码的实体分隔页自动拆分扫描文档。非常适合处理合并扫描的多份文档。"
 title = "按分隔页拆分"
 
+[split.tooltip.byPages]
+bullet1 = "单一拆分点：3,7（在第 3 与第 7 页后拆分）"
+bullet2 = "范围拆分点：3-8（在第 3 页前与第 8 页后拆分）"
+bullet3 = "混合：2,5-10,15（在第 2 页后、第 5 页前、第 10 页后与第 15 页后拆分）"
+text = "在指定页码处拆分 PDF。使用“n”表示在第 n 页之后拆分；使用“n-m”表示在第 n 页之前与第 m 页之后拆分。"
+title = "按页码拆分"
+
 [split.tooltip.byPoster]
 bullet1 = "目标页面尺寸：选择输出纸张尺寸（A4、Letter 等）"
 bullet2 = "水平/垂直分割数：拆分网格大小"
@@ -7258,13 +7386,6 @@ bullet3 = "从右到左：为 RTL 布局反转列顺序"
 bullet4 = "打印并拼接各部分以制作海报"
 text = "将大型 PDF 页面拆分为适合标准纸张尺寸打印的更小分块。非常适合把超大页面制作成海报打印。"
 title = "用于海报打印的拆分"
-
-[split.tooltip.byPages]
-bullet1 = "单一拆分点：3,7（在第 3 与第 7 页后拆分）"
-bullet2 = "范围拆分点：3-8（在第 3 页前与第 8 页后拆分）"
-bullet3 = "混合：2,5-10,15（在第 2 页后、第 5 页前、第 10 页后与第 15 页后拆分）"
-text = "在指定页码处拆分 PDF。使用“n”表示在第 n 页之后拆分；使用“n-m”表示在第 n 页之前与第 m 页之后拆分。"
-title = "按页码拆分"
 
 [split.tooltip.bySections]
 bullet1 = "水平：要创建的行数"
@@ -7355,106 +7476,6 @@ title = "按章节拆分 PDF"
 [splitPdfByChapters]
 tags = "分割,章节,书签,组织"
 
-[storageShare]
-accessed = "已访问"
-accessDenied = "您无权访问此共享文件。请请求所有者与您共享。"
-accessFailed = "无法加载活动。"
-accessDeniedBody = "您无权访问此文件。请请求所有者与您共享。"
-accessDeniedTitle = "无权限"
-accessLimitedCommenter = "评论权限即将上线。如需下载，请向所有者请求编辑者权限。"
-accessLimitedTitle = "受限访问"
-accessLimitedViewer = "此链接仅可查看。如需下载，请向所有者请求编辑者权限。"
-createdAt = "创建时间"
-download = "下载"
-downloadFailed = "无法下载此文件。"
-expiredBody = "此共享链接无效或已过期。"
-expiredTitle = "链接已过期"
-goToLogin = "前往登录"
-loadFailed = "无法打开共享文件。"
-loading = "正在加载共享链接..."
-loginPrompt = "登录以访问此共享文件。"
-loginRequired = "需要登录"
-openInApp = "在 Stirling PDF 中打开"
-ownerLabel = "所有者"
-ownerUnknown = "未知"
-requiresLogin = "此共享文件需要登录。"
-roleCommenter = "评论者"
-roleEditor = "编辑者"
-roleViewer = "查看者"
-shareHeading = "共享文件"
-titleDefault = "共享文件"
-tryAgain = "请稍后再试。"
-addUser = "添加"
-commenterHint = "评论功能即将上线。"
-copied = "链接已复制到剪贴板"
-copy = "复制"
-copyFailed = "复制失败"
-description = "为此文件创建共享链接。持有链接并已登录的用户可以访问。"
-downloadsCount = "下载次数：{{count}}"
-emailWarningBody = "这看起来像是一个电子邮件地址。若此人尚未成为 Stirling PDF 用户，则无法访问该文件。"
-emailWarningConfirm = "仍要共享"
-emailWarningTitle = "电子邮件地址"
-errorTitle = "共享失败"
-failure = "无法生成共享链接。请重试。"
-fileLabel = "文件"
-generate = "生成链接"
-generated = "已生成共享链接"
-hideActivity = "隐藏活动"
-invalidUsername = "请输入有效的用户名或电子邮件地址。"
-lastAccessed = "上次访问时间"
-linkAccessTitle = "共享链接访问"
-linkLabel = "共享链接"
-linksDisabled = "共享链接已被禁用。"
-linksDisabledBody = "共享链接已在服务器设置中被禁用。"
-manage = "管理共享"
-manageDescription = "创建并管理用于共享此文件的链接。"
-manageLoadFailed = "无法加载共享链接。"
-manageTitle = "管理共享"
-noActivity = "尚无活动。"
-noLinks = "尚无活动的共享链接。"
-noSharedUsers = "尚无用户具有访问权限。"
-removeLink = "移除链接"
-removeUser = "移除"
-revokeFailed = "无法移除共享链接。"
-revoked = "已移除共享链接"
-roleLabel = "角色"
-sharingDisabled = "已禁用共享。"
-sharingDisabledBody = "服务器设置已禁用共享。"
-sharedUsersTitle = "共享用户"
-title = "共享文件"
-unknownUser = "未知用户"
-userAddFailed = "无法与该用户共享。"
-userAdded = "已将用户添加到共享列表。"
-usernameLabel = "用户名或邮箱"
-usernamePlaceholder = "输入用户名或邮箱"
-userRemoveFailed = "无法移除该用户。"
-userRemoved = "已从共享列表中移除用户。"
-viewActivity = "查看活动"
-viewed = "已查看"
-viewsCount = "查看次数: {{count}}"
-downloaded = "已下载"
-bulkDescription = "为所有选中的文件创建一个链接，与已登录用户共享。"
-bulkTitle = "共享所选文件"
-copyLink = "复制共享链接"
-fileCount = "已选择 {{count}} 个文件"
-ownerOnly = "只有所有者可以管理共享。"
-selectSingleFile = "选择单个文件以管理共享。"
-
-[storageUpload]
-description = "这会将当前文件上传到服务器存储，供您自己访问。"
-errorTitle = "上传失败"
-failure = "上传失败。请检查您的登录和存储设置。"
-fileLabel = "文件"
-hint = "公共链接和访问模式由您的服务器设置控制。"
-success = "已上传到服务器"
-title = "上传到服务器"
-updateButton = "在服务器上更新"
-uploadButton = "上传到服务器"
-bulkDescription = "这会将所选文件上传到您的服务器存储。"
-bulkTitle = "上传所选文件"
-fileCount = "已选择 {{count}} 个文件"
-more = " +{{count}} 更多"
-
 [storage]
 approximateSize = "大约大小"
 fileTooLarge = "文件过大。单个文件的最大大小为"
@@ -7463,6 +7484,106 @@ storageLimit = "存储限制"
 storageQuotaExceeded = "超出存储配额。请移除部分文件后再上传。"
 storageUsed = "已用临时存储"
 temporaryNotice = "文件临时存储在您的浏览器中，可能会被自动清除"
+
+[storageShare]
+accessDenied = "您无权访问此共享文件。请请求所有者与您共享。"
+accessDeniedBody = "您无权访问此文件。请请求所有者与您共享。"
+accessDeniedTitle = "无权限"
+accessed = "已访问"
+accessFailed = "无法加载活动。"
+accessLimitedCommenter = "评论权限即将上线。如需下载，请向所有者请求编辑者权限。"
+accessLimitedTitle = "受限访问"
+accessLimitedViewer = "此链接仅可查看。如需下载，请向所有者请求编辑者权限。"
+addUser = "添加"
+bulkDescription = "为所有选中的文件创建一个链接，与已登录用户共享。"
+bulkTitle = "共享所选文件"
+commenterHint = "评论功能即将上线。"
+copied = "链接已复制到剪贴板"
+copy = "复制"
+copyFailed = "复制失败"
+copyLink = "复制共享链接"
+createdAt = "创建时间"
+description = "为此文件创建共享链接。持有链接并已登录的用户可以访问。"
+download = "下载"
+downloaded = "已下载"
+downloadFailed = "无法下载此文件。"
+downloadsCount = "下载次数：{{count}}"
+emailWarningBody = "这看起来像是一个电子邮件地址。若此人尚未成为 Stirling PDF 用户，则无法访问该文件。"
+emailWarningConfirm = "仍要共享"
+emailWarningTitle = "电子邮件地址"
+errorTitle = "共享失败"
+expiredBody = "此共享链接无效或已过期。"
+expiredTitle = "链接已过期"
+failure = "无法生成共享链接。请重试。"
+fileCount = "已选择 {{count}} 个文件"
+fileLabel = "文件"
+generate = "生成链接"
+generated = "已生成共享链接"
+goToLogin = "前往登录"
+hideActivity = "隐藏活动"
+invalidUsername = "请输入有效的用户名或电子邮件地址。"
+lastAccessed = "上次访问时间"
+linkAccessTitle = "共享链接访问"
+linkLabel = "共享链接"
+linksDisabled = "共享链接已被禁用。"
+linksDisabledBody = "共享链接已在服务器设置中被禁用。"
+loadFailed = "无法打开共享文件。"
+loading = "正在加载共享链接..."
+loginPrompt = "登录以访问此共享文件。"
+loginRequired = "需要登录"
+manage = "管理共享"
+manageDescription = "创建并管理用于共享此文件的链接。"
+manageLoadFailed = "无法加载共享链接。"
+manageTitle = "管理共享"
+noActivity = "尚无活动。"
+noLinks = "尚无活动的共享链接。"
+noSharedUsers = "尚无用户具有访问权限。"
+openInApp = "在 Stirling PDF 中打开"
+ownerLabel = "所有者"
+ownerOnly = "只有所有者可以管理共享。"
+ownerUnknown = "未知"
+removeLink = "移除链接"
+removeUser = "移除"
+requiresLogin = "此共享文件需要登录。"
+revoked = "已移除共享链接"
+revokeFailed = "无法移除共享链接。"
+roleCommenter = "评论者"
+roleEditor = "编辑者"
+roleLabel = "角色"
+roleViewer = "查看者"
+selectSingleFile = "选择单个文件以管理共享。"
+sharedUsersTitle = "共享用户"
+shareHeading = "共享文件"
+sharingDisabled = "已禁用共享。"
+sharingDisabledBody = "服务器设置已禁用共享。"
+title = "共享文件"
+titleDefault = "共享文件"
+tryAgain = "请稍后再试。"
+unknownUser = "未知用户"
+userAdded = "已将用户添加到共享列表。"
+userAddFailed = "无法与该用户共享。"
+usernameLabel = "用户名或邮箱"
+usernamePlaceholder = "输入用户名或邮箱"
+userRemoved = "已从共享列表中移除用户。"
+userRemoveFailed = "无法移除该用户。"
+viewActivity = "查看活动"
+viewed = "已查看"
+viewsCount = "查看次数: {{count}}"
+
+[storageUpload]
+bulkDescription = "这会将所选文件上传到您的服务器存储。"
+bulkTitle = "上传所选文件"
+description = "这会将当前文件上传到服务器存储，供您自己访问。"
+errorTitle = "上传失败"
+failure = "上传失败。请检查您的登录和存储设置。"
+fileCount = "已选择 {{count}} 个文件"
+fileLabel = "文件"
+hint = "公共链接和访问模式由您的服务器设置控制。"
+more = " +{{count}} 更多"
+success = "已上传到服务器"
+title = "上传到服务器"
+updateButton = "在服务器上更新"
+uploadButton = "上传到服务器"
 
 [subscription]
 cancelsOn = "于 {{date}} 取消"
@@ -7507,8 +7628,121 @@ title = "API 文档"
 [tableExtraxt]
 tags = "CSV、表格提取、提取、转换"
 
+[team]
+cancelInviteError = "取消邀请失败"
+confirmCancelInvite = "确定要取消此邀请吗？"
+confirmLeave = "确定要离开此团队吗？"
+confirmLeaveLeader = "作为团队负责人，离开将把您从团队中移除。确定继续吗？"
+confirmRemove = "确定要移除此成员吗？"
+editName = "编辑团队名称"
+inviteCancelled = "已取消邀请"
+inviteError = "发送邀请失败"
+inviteSent = "邀请已发送"
+leader = "负责人"
+leaveButton = "离开团队"
+leaveError = "离开团队失败"
+leaveSuccess = "已成功离开团队"
+loading = "正在加载团队信息..."
+memberCount = "{{count}} 名成员"
+memberRemoved = "成员已成功移除"
+namePlaceholder = "输入团队名称"
+personal = "个人"
+removeError = "移除成员失败"
+renameError = "重命名团队失败"
+renameSuccess = "团队重命名成功"
+
+[team.features]
+badge = "团队功能"
+subtitle = "与团队协作"
+title = "团队协作"
+viewPlans = "查看方案"
+
+[team.features.billing]
+description = "管理账单与订阅"
+title = "账单管理"
+
+[team.features.credits]
+description = "所有成员共享的额度池"
+title = "共享额度"
+
+[team.features.dashboard]
+description = "查看团队活动与使用情况"
+title = "团队仪表盘"
+
+[team.features.invite]
+description = "向团队添加成员"
+title = "邀请成员"
+
+[team.invitationBanner]
+acceptButton = "接受"
+message = "已邀请您加入"
+rejectButton = "拒绝"
+
+[team.invite]
+cancelLabel = "取消"
+invalidEmail = "无效的电子邮箱地址"
+placeholder = "输入电子邮箱地址"
+sendButton = "发送邀请"
+title = "邀请团队成员"
+
+[team.members]
+emailColumn = "邮箱"
+empty = "尚无团队成员"
+nameColumn = "姓名"
+pending = "待接受"
+remove = "移除"
+roleColumn = "角色"
+title = "团队成员"
+
+[team.upgrade]
+button = "升级到 Team"
+description = "解锁团队协作功能"
+title = "升级到 Team 方案"
+
+[textAlign]
+center = "居中"
+left = "左对齐"
+right = "右对齐"
+
 [theme]
 toggle = "切换主题"
+
+[timestampPdf]
+completed = "已成功为 PDF 添加时间戳"
+desc = "使用可信的时间戳机构（TSA）服务器向您的 PDF 添加 RFC 3161 文档时间戳。"
+filenamePrefix = "timestamped"
+results = "时间戳结果"
+submit = "应用时间戳"
+title = "为 PDF 添加时间戳"
+
+[timestampPdf.error]
+failed = "为 PDF 添加时间戳时发生错误。"
+generic = "时间戳失败"
+
+[timestampPdf.files]
+placeholder = "在主视图中选择一个 PDF 文件以开始"
+
+[timestampPdf.options]
+note = "只有您文档的 SHA-256 哈希会被发送到 TSA 服务器；PDF 文件本身不会被发送到 TSA 服务器。"
+title = "时间戳服务器（TSA）"
+
+[timestampPdf.options.tsaUrl]
+desc = "选择可信的时间戳机构"
+label = "选择 TSA 服务器"
+
+[timestampPdf.steps]
+settings = "设置"
+
+[tool]
+endpointUnavailable = "此工具在您的服务器上不可用。"
+endpointUnavailableClickable = "此模式下不可用。点击以登录。"
+invalidParams = "请填写必填设置。"
+noFiles = "添加文件以开始。"
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "Alpha"
@@ -7568,12 +7802,6 @@ pageFormatting = "页面格式"
 removal = "移除"
 signing = "签署"
 verification = "验证"
-
-[tool]
-endpointUnavailable = "此工具在您的服务器上不可用。"
-endpointUnavailableClickable = "此模式下不可用。点击以登录。"
-invalidParams = "请填写必填设置。"
-noFiles = "添加文件以开始。"
 
 [tools]
 noSearchResults = "未找到工具"
@@ -7793,6 +8021,81 @@ fileManager = "文件管理器"
 pageEditor = "页面编辑器"
 viewer = "查看器"
 
+[viewer]
+cannotPreviewFile = "无法预览文件"
+disableColorFilter = "禁用颜色滤镜"
+dualPageView = "双页视图"
+enableDarkFilter = "启用深色滤镜"
+enableSepiaFilter = "启用褐色滤镜"
+firstPage = "第一页"
+lastPage = "最后一页"
+nextPage = "下一页"
+onlyPdfSupported = "该查看器仅支持 PDF 文件。此文件似乎是其他格式。"
+previousPage = "上一页"
+resetZoom = "重置缩放"
+singlePageView = "单页视图"
+unknownFile = "未知文件"
+zoomIn = "放大"
+zoomOut = "缩小"
+
+[viewer.attachments]
+empty = "此文档没有附件"
+loading = "正在加载附件..."
+noDocument = "打开 PDF 以查看其附件。"
+noMatch = "没有与您的搜索匹配的附件"
+noSupport = "此查看器不支持附件。"
+searchPlaceholder = "搜索附件"
+title = "附件"
+
+[viewer.comments]
+addComment = "添加评论"
+addCommentPlaceholder = "添加评论..."
+addLink = "添加链接"
+addReplyPlaceholder = "添加回复..."
+deleteAnnotationAndComment = "删除批注与评论"
+deleteDescription = "此批注附带了一个评论。您可以仅从侧边栏移除评论而保留批注，或删除全部内容。"
+deleteTitle = "从评论中移除批注？"
+goToLink = "前往链接"
+hint = "使用“评论”“插入文本”或“替换文本”工具放置评论。它们将按页面显示在此处。"
+locateAnnotation = "在文档中定位"
+moreActions = "更多操作"
+nComments = "{{count}} 条评论"
+oneComment = "1 条评论"
+pageLabel = "第 {{page}} 页"
+placeholder = "输入您的评论..."
+removeCommentOnly = "仅移除评论"
+saveReply = "保存回复"
+send = "发送"
+title = "评论"
+typeComment = "评论"
+typeInsertText = "插入文本"
+typeReplaceText = "替换文本"
+viewComment = "查看评论"
+
+[viewer.formBar]
+apply = "应用更改"
+dismiss = "关闭"
+download = "下载 PDF"
+hasFieldsDesc = "此 PDF 包含可填写的字段"
+title = "表单字段"
+unsavedBadge = "未保存"
+unsavedDesc = "您有未保存的更改"
+
+[viewer.nonPdf]
+columnDefault = "列 {{index}}"
+convertToPdf = "转换为 PDF"
+csvStats = "{{rows}} 行 · {{columns}} 列 · {{size}}"
+emptyFile = "空文件"
+fileTypeBadge = "{{type}} 文件"
+htmlPreview = "HTML 预览"
+htmlPreviewWarning = "HTML 预览 — 外部资源可能无法加载 · {{size}}"
+invalidJson = "无效的 JSON — 显示原始内容"
+lineNumbers = "行号"
+loading = "正在加载..."
+renderMarkdown = "渲染 markdown"
+sortedBy = "排序依据：{{column}}"
+textStats = "{{lines}} 行 · {{size}}"
+
 [viewPdf]
 header = "浏览 PDF"
 tags = "浏览、阅读、注释、文本、图像"
@@ -7800,30 +8103,6 @@ title = "浏览/编辑 PDF"
 
 [warning]
 tooltipTitle = "警告"
-
-[wetSignature.tooltip]
-header = "签名创建方式"
-
-[wetSignature.tooltip.draw]
-bullet1 = "自定义笔颜色和粗细"
-bullet2 = "清除并重新绘制直至满意"
-bullet3 = "适用于触控设备（平板、手机）"
-description = "使用鼠标或触摸屏创建手写签名。最适合个人、真实的签名。"
-title = "手写签名"
-
-[wetSignature.tooltip.type]
-bullet1 = "从多种字体中选择"
-bullet2 = "自定义文字大小和颜色"
-bullet3 = "适用于标准化签名"
-description = "从输入文本生成签名。快速一致，适用于商务文档。"
-title = "文字签名"
-
-[wetSignature.tooltip.upload]
-bullet1 = "支持 PNG、JPG 等图像格式"
-bullet2 = "建议使用透明背景以获得最佳效果"
-bullet3 = "图像将调整大小以适配签名区域"
-description = "上传预先制作的签名图像。如果您有扫描的签名或公司徽标，理想之选。"
-title = "上传签名图像"
 
 [watermark]
 completed = "已添加水印"
@@ -7996,6 +8275,30 @@ title = "水印文本"
 image = "图像"
 text = "文本"
 
+[wetSignature.tooltip]
+header = "签名创建方式"
+
+[wetSignature.tooltip.draw]
+bullet1 = "自定义笔颜色和粗细"
+bullet2 = "清除并重新绘制直至满意"
+bullet3 = "适用于触控设备（平板、手机）"
+description = "使用鼠标或触摸屏创建手写签名。最适合个人、真实的签名。"
+title = "手写签名"
+
+[wetSignature.tooltip.type]
+bullet1 = "从多种字体中选择"
+bullet2 = "自定义文字大小和颜色"
+bullet3 = "适用于标准化签名"
+description = "从输入文本生成签名。快速一致，适用于商务文档。"
+title = "文字签名"
+
+[wetSignature.tooltip.upload]
+bullet1 = "支持 PNG、JPG 等图像格式"
+bullet2 = "建议使用透明背景以获得最佳效果"
+bullet3 = "图像将调整大小以适配签名区域"
+description = "上传预先制作的签名图像。如果您有扫描的签名或公司徽标，理想之选。"
+title = "上传签名图像"
+
 [workspace]
 title = "工作区"
 
@@ -8014,9 +8317,9 @@ disable = "禁用"
 disabled = "已禁用"
 editRole = "编辑角色"
 enable = "启用"
+loading = "正在加载成员..."
 locked = "已锁定"
 lockedBadge = "已锁定"
-loading = "正在加载成员..."
 loginRequired = "请先启用登录模式"
 member = "成员"
 noMembersFound = "未找到成员"
@@ -8262,278 +8565,3 @@ cancel = "取消"
 confirm = "解压"
 message = "此 ZIP 包含 {{count}} 个文件。仍要解压？"
 title = "大型 ZIP 文件"
-
-[cloudBadge]
-tooltip = "此操作将使用您的云额度"
-
-[team]
-cancelInviteError = "取消邀请失败"
-confirmCancelInvite = "确定要取消此邀请吗？"
-confirmLeave = "确定要离开此团队吗？"
-confirmLeaveLeader = "作为团队负责人，离开将把您从团队中移除。确定继续吗？"
-confirmRemove = "确定要移除此成员吗？"
-editName = "编辑团队名称"
-inviteCancelled = "已取消邀请"
-inviteError = "发送邀请失败"
-inviteSent = "邀请已发送"
-leader = "负责人"
-leaveButton = "离开团队"
-leaveError = "离开团队失败"
-leaveSuccess = "已成功离开团队"
-loading = "正在加载团队信息..."
-memberCount = "{{count}} 名成员"
-memberRemoved = "成员已成功移除"
-namePlaceholder = "输入团队名称"
-personal = "个人"
-removeError = "移除成员失败"
-renameError = "重命名团队失败"
-renameSuccess = "团队重命名成功"
-
-[team.invitationBanner]
-message = "已邀请您加入"
-acceptButton = "接受"
-rejectButton = "拒绝"
-
-[team.features]
-badge = "团队功能"
-subtitle = "与团队协作"
-title = "团队协作"
-viewPlans = "查看方案"
-
-[team.features.billing]
-description = "管理账单与订阅"
-title = "账单管理"
-
-[team.features.credits]
-description = "所有成员共享的额度池"
-title = "共享额度"
-
-[team.features.dashboard]
-description = "查看团队活动与使用情况"
-title = "团队仪表盘"
-
-[team.features.invite]
-description = "向团队添加成员"
-title = "邀请成员"
-
-[team.invite]
-cancelLabel = "取消"
-invalidEmail = "无效的电子邮箱地址"
-placeholder = "输入电子邮箱地址"
-sendButton = "发送邀请"
-title = "邀请团队成员"
-
-[team.members]
-emailColumn = "邮箱"
-empty = "尚无团队成员"
-nameColumn = "姓名"
-pending = "待接受"
-remove = "移除"
-roleColumn = "角色"
-title = "团队成员"
-
-[team.upgrade]
-button = "升级到 Team"
-description = "解锁团队协作功能"
-title = "升级到 Team 方案"
-
-[provider.oauth2.google]
-scope = "登录认证"
-
-[provider.oauth2.google.clientId]
-label = "客户端 ID"
-description = "来自 Google Cloud Console 的 OAuth2 客户端 ID"
-
-[provider.oauth2.google.clientSecret]
-label = "客户端密钥"
-description = "来自 Google Cloud Console 的 OAuth2 客户端密钥"
-
-[provider.oauth2.google.scopes]
-label = "范围"
-description = "以逗号分隔的 OAuth2 范围"
-
-[provider.oauth2.google.useAsUsername]
-label = "用作用户名"
-description = "用作用户名的字段（email、name、given_name、family_name）"
-
-[provider.oauth2.github]
-scope = "登录认证"
-
-[provider.oauth2.github.clientId]
-label = "客户端 ID"
-description = "来自 GitHub Developer Settings 的 OAuth2 客户端 ID"
-
-[provider.oauth2.github.clientSecret]
-label = "客户端密钥"
-description = "来自 GitHub Developer Settings 的 OAuth2 客户端密钥"
-
-[provider.oauth2.github.scopes]
-label = "范围"
-description = "以逗号分隔的 OAuth2 范围"
-
-[provider.oauth2.github.useAsUsername]
-label = "用作用户名"
-description = "用作用户名的字段（email、login、name）"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "发行者 URL"
-description = "Keycloak Realm 的 OpenID Connect Discovery 端点的 URL"
-
-[provider.oauth2.keycloak.clientId]
-label = "客户端 ID"
-description = "来自 Keycloak 的 OAuth2 客户端 ID"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "客户端密钥"
-description = "来自 Keycloak 的 OAuth2 客户端密钥"
-
-[provider.oauth2.keycloak.scopes]
-label = "范围"
-description = "以逗号分隔的 OAuth2 范围"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "用作用户名"
-description = "用作用户名的字段（email、name、given_name、family_name、preferred_username）"
-
-[provider.oauth2.generic]
-name = "通用 OAuth2"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "启用通用 OAuth2"
-description = "使用自定义 OAuth2 提供商启用认证"
-
-[provider.oauth2.generic.provider]
-label = "提供商名称"
-description = "您的 OAuth2 提供商名称（例如 Azure AD、Okta）"
-
-[provider.oauth2.generic.issuer]
-label = "发行者 URL"
-description = "支持 OpenID Connect Discovery（/.well-known/openid-configuration）的提供商"
-
-[provider.oauth2.generic.clientId]
-label = "客户端 ID"
-description = "来自您的提供商的 OAuth2 客户端 ID"
-
-[provider.oauth2.generic.clientSecret]
-label = "客户端密钥"
-description = "来自您的提供商的 OAuth2 客户端密钥"
-
-[provider.oauth2.generic.scopes]
-label = "范围"
-description = "以逗号分隔的 OAuth2 范围"
-
-[provider.oauth2.generic.useAsUsername]
-label = "用作用户名"
-description = "用作用户名的字段"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "自动创建用户"
-description = "首次通过 OAuth2 登录时自动创建用户账户"
-
-[provider.oauth2.generic.blockRegistration]
-label = "阻止注册"
-description = "禁止通过 OAuth2 注册新用户"
-
-[provider.smtp]
-name = "SMTP 邮件"
-scope = "邮件通知"
-
-[provider.smtp.enabled]
-label = "启用邮件"
-description = "启用邮件通知与 SMTP 功能"
-
-[provider.smtp.host]
-label = "SMTP 主机"
-description = "您的 SMTP 服务器的主机名或 IP 地址"
-
-[provider.smtp.port]
-label = "SMTP 端口"
-description = "SMTP 连接端口（通常为 25、465 或 587）"
-
-[provider.smtp.username]
-label = "SMTP 用户名"
-description = "用于 SMTP 认证的用户名"
-
-[provider.smtp.password]
-label = "SMTP 密码"
-description = "用于 SMTP 认证的密码"
-
-[provider.smtp.from]
-label = "发件地址"
-description = "用作发件人的电子邮箱地址"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO（SAML）"
-
-[provider.saml2.enabled]
-label = "启用 SAML2"
-description = "启用 SAML2 认证（仅限企业版）"
-
-[provider.saml2.provider]
-label = "提供商名称"
-description = "您的 SAML2 提供商名称"
-
-[provider.saml2.registrationId]
-label = "注册 ID"
-description = "您的服务提供商（SP）应用名称"
-
-[provider.saml2.idpMetadataUri]
-label = "IDP Metadata URI"
-description = "您的提供商的元数据 URI"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "IDP 单点登录 URL"
-description = "用于发起 SSO 的 URL"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "IDP 单点登出 URL"
-description = "用于发起 SLO 的 URL"
-
-[provider.saml2.idpIssuer]
-label = "IDP Issuer"
-description = "您的提供商的 ID"
-
-[provider.saml2.idpCert]
-label = "IDP 证书"
-description = "证书路径（例如：classpath:okta.cert）"
-
-[provider.saml2.privateKey]
-label = "私钥"
-description = "您的私钥路径"
-
-[provider.saml2.spCert]
-label = "SP 证书"
-description = "您的签名证书路径"
-
-[provider.saml2.autoCreateUser]
-label = "自动创建用户"
-description = "首次通过 SAML2 登录时自动创建用户账户"
-
-[provider.saml2.blockRegistration]
-label = "阻止注册"
-description = "禁止通过 SAML2 注册新用户"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "文件导入"
-
-[provider.googledrive.enabled]
-label = "启用 Google Drive 文件选择器"
-description = "允许用户直接从 Google Drive 导入文件"
-
-[provider.googledrive.clientId]
-label = "客户端 ID"
-description = "来自 Google Cloud Console 的 Google OAuth 2.0 Client ID"
-
-[provider.googledrive.apiKey]
-label = "API Key"
-description = "来自 Google Cloud Console 的用于 Google Picker API 的 Google API Key"
-
-[provider.googledrive.appId]
-label = "App ID"
-description = "来自 Google Cloud Console 的 Google Drive App ID"

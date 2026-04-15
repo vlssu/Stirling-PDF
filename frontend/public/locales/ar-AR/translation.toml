@@ -1,3 +1,4 @@
+accessInvite = "دعوة"
 addToDoc = "إضافة إلى المستند"
 alphabet = "الأبجدية"
 apply = "تطبيق"
@@ -8,22 +9,22 @@ black = "أسود"
 blue = "أزرق"
 bored = "الانتظار بالملل؟"
 cancel = "إلغاء"
-confirm = "تأكيد"
 changedCredsMessage = "تم تغيير بيانات الاعتماد!"
 chooseFile = "اختر ملفًا"
 close = "إغلاق"
 color = "لون"
 comingSoon = "قريبًا"
+confirm = "تأكيد"
 confirmClose = "تأكيد الإغلاق"
 confirmCloseCancel = "إلغاء"
 confirmCloseConfirm = "إغلاق الملف"
-confirmCloseMessage = "هل أنت متأكد أنك تريد إغلاق هذا الملف؟"
 confirmCloseDiscard = "تجاهل التغييرات والإغلاق"
+confirmCloseMessage = "هل أنت متأكد أنك تريد إغلاق هذا الملف؟"
 confirmCloseSave = "حفظ وإغلاق"
+confirmCloseSaveFailed = "تم الحفظ مع أخطاء. تعذّر حفظ {{count}} ملف{{plural}}."
+confirmCloseSaveFailedTitle = "فشل الحفظ"
 confirmCloseUnsaved = "يحتوي هذا الملف على تغييرات غير محفوظة."
 confirmCloseUnsavedList = "لديك {{count}} ملف{{plural}} بتغييرات غير محفوظة.\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "فشل الحفظ"
-confirmCloseSaveFailed = "تم الحفظ مع أخطاء. تعذّر حفظ {{count}} ملف{{plural}}."
 confirmPasswordErrorMessage = "كلمة المرور الجديدة وتأكيد كلمة المرور الجديدة يجب أن تتطابقا."
 custom = "مخصص..."
 customPosition = "موضع مخصص"
@@ -43,11 +44,14 @@ downloadComplete = "إكتمل التحميل"
 downloadPdf = "تنزيل PDF"
 downloadUnavailable = "التنزيل غير متاح لهذا العنصر"
 edit = "تحرير"
+editSecret = "تحرير هذه القيمة"
 editYourNewFiles = "حرّر ملفاتك الجديدة"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "تصدير ومتابعة"
 false = "خطأ"
-fileSavedToDisk = "تم حفظ الملف على القرص"
 fileNotSavedToDisk = "لم يُحفَظ على القرص"
+fileSavedToDisk = "تم حفظ الملف على القرص"
 fileSelected = "المحدد: {{filename}}"
 filesSelected = "الملفات المحددة"
 font = "الخط"
@@ -61,12 +65,15 @@ help = "مساعدة"
 imgPrompt = "اختر صورة"
 incorrectPasswordMessage = "كلمة المرور الحالية غير صحيحة."
 info = "معلومات"
+insufficientCredits = "الأرصدة غير كافية. المطلوب: {{requiredCredits}}، المتاح: {{currentBalance}}، العجز: {{shortfall}}"
 invalidPasswordMessage = "كلمة المرور يجب ألا تكون فارغة ويجب ألا تحتوي على مسافات في البداية أو النهاية."
 invalidUndoData = "لا يمكن التراجع: بيانات العملية غير صالحة"
 invalidUsernameMessage = "اسم المستخدم غير صالح، يمكن أن يحتوي فقط على أحرف وأرقام والرموز الخاصة التالية @._+- أو يجب أن يكون عنوان بريد إلكتروني صالح."
 joinDiscord = "انضم إلى خادم Discord الخاص بنا"
 keepWorking = "واصل العمل"
 loading = "جارٍ التحميل..."
+loadingCredits = "جارٍ التحقق من الأرصدة..."
+loadingProStatus = "جارٍ التحقق من حالة الاشتراك..."
 logOut = "تسجيل الخروج"
 marginTooltip = "المسافة بين رقم الصفحة وحافة الصفحة."
 moreOptions = "خيارات إضافية"
@@ -80,6 +87,7 @@ noFilesToUndo = "لا يمكن التراجع: لم تتم معالجة أي م�
 noOperationToUndo = "لا توجد عملية للتراجع عنها"
 notAuthenticatedMessage = "المستخدم غير مصادق عليه."
 nothingToUndo = "لا شيء للتراجع عنه"
+noticeTopUpOrPlan = "لا توجد أرصدة كافية، يرجى إعادة الشحن أو الترقية إلى خطة"
 noValidFiles = "لا توجد ملفات صالحة للمعالجة"
 oops = "عذرًا!"
 openInViewer = "فتح في العارض"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "تنقيحات غير مطبّقة"
 pin = "تثبيت الملف (إبقاؤه نشطًا بعد تشغيل الأداة)"
 poweredBy = "مدعوم بواسطة"
 pro = "محترف"
-processTimeWarning = "تحذير: يمكن أن تستغرق هذه العملية ما يصل إلى دقيقة حسب حجم الملف"
 processingComplete = "ملفك جاهز."
 processingCompleteMultiple = "تم تجهيز {{count}} ملفًا."
+processTimeWarning = "تحذير: يمكن أن تستغرق هذه العملية ما يصل إلى دقيقة حسب حجم الملف"
 property = "الخاصية"
 quickPosition = "موضع سريع"
 red = "أحمر"
@@ -108,7 +116,6 @@ save = "حفظ"
 saveToBrowser = "حفظ في المتصفح"
 saveUnavailable = "الحفظ غير متاح لهذا العنصر"
 seeDockerHub = "انظر Docker Hub"
-editSecret = "تحرير هذه القيمة"
 selectFillter = "- حدد -"
 size = "الحجم"
 sponsor = "راعٍ"
@@ -143,11 +150,6 @@ welcome = "مرحبا"
 white = "أبيض"
 WorkInProgess = "العمل قيد التقدم، قد لا يعمل أو يحتوي على أخطاء، يرجى الإبلاغ عن أي مشاكل!"
 yes = "نعم"
-insufficientCredits = "الأرصدة غير كافية. المطلوب: {{requiredCredits}}، المتاح: {{currentBalance}}، العجز: {{shortfall}}"
-loadingCredits = "جارٍ التحقق من الأرصدة..."
-loadingProStatus = "جارٍ التحقق من حالة الاشتراك..."
-noticeTopUpOrPlan = "لا توجد أرصدة كافية، يرجى إعادة الشحن أو الترقية إلى خطة"
-accessInvite = "دعوة"
 
 [account]
 accountSettings = "إعدادات الحساب"
@@ -851,6 +853,14 @@ title = "نقاط نهاية API"
 userDefaults = "القيم الافتراضية لتفضيلات المستخدم"
 userDefaultsDescription = "تعيين القيم الافتراضية لتفضيلات المستخدم. يمكن للمستخدمين تجاوزها في إعداداتهم الشخصية."
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "إزالة خيارات التحويل المعطّلة بدلاً من عرضها باللون الرمادي"
+label = "إخفاء خيارات التحويل غير المتاحة افتراضيًا"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "إزالة الأدوات المعطّلة بدلاً من عرضها باللون الرمادي"
+label = "إخفاء الأدوات غير المتاحة افتراضيًا"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "اختر مجموعات نقاط النهاية لتعطيلها"
 label = "مجموعات نقاط النهاية المعطّلة"
@@ -858,14 +868,6 @@ label = "مجموعات نقاط النهاية المعطّلة"
 [admin.settings.endpoints.toRemove]
 description = "اختر نقاط النهاية الفردية لتعطيلها"
 label = "نقاط النهاية المعطّلة"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "إزالة الأدوات المعطّلة بدلاً من عرضها باللون الرمادي"
-label = "إخفاء الأدوات غير المتاحة افتراضيًا"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "إزالة خيارات التحويل المعطّلة بدلاً من عرضها باللون الرمادي"
-label = "إخفاء خيارات التحويل غير المتاحة افتراضيًا"
 
 [admin.settings.enterpriseRequired]
 message = "يلزم توفر ترخيص Enterprise للوصول إلى {{featureName}}. أنت تشاهد بيانات تجريبية للمرجع."
@@ -974,6 +976,10 @@ label = "اللغة الافتراضية"
 description = "الحد الأقصى لحجم رفع الملف (مثل: 100MB، 1GB)"
 label = "حد رفع الملفات"
 
+[admin.settings.general.frontendUrl]
+description = "عنوان URL الأساسي للواجهة الأمامية (مثل https://pdf.example.com). يُستخدم لروابط دعوات البريد الإلكتروني وعمليات الرفع عبر رمز QR على الهاتف المحمول. اتركه فارغًا لاستخدام عنوان URL للواجهة الخلفية."
+label = "عنوان URL للواجهة الأمامية"
+
 [admin.settings.general.hideDisabledTools]
 description = "إخفاء الأدوات المعطّلة من الواجهة"
 label = "إخفاء الأدوات المعطّلة"
@@ -985,10 +991,6 @@ label = "إخفاء Google Drive"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "إخفاء زر ماسح QR على الهاتف المحمول عند عدم تمكينه"
 label = "إخفاء الماسح المحمول"
-
-[admin.settings.general.frontendUrl]
-description = "عنوان URL الأساسي للواجهة الأمامية (مثل https://pdf.example.com). يُستخدم لروابط دعوات البريد الإلكتروني وعمليات الرفع عبر رمز QR على الهاتف المحمول. اتركه فارغًا لاستخدام عنوان URL للواجهة الخلفية."
-label = "عنوان URL للواجهة الأمامية"
 
 [admin.settings.general.homeDescription]
 description = "نص الوصف الظاهر في الصفحة الرئيسية"
@@ -1169,9 +1171,25 @@ description = "تهيئة المصادقة، وسلوك تسجيل الدخول�
 title = "الأمان"
 
 [admin.settings.security.audit]
+hideDetails = "إخفاء تفاصيل مستوى التدقيق"
 label = "سجل التدقيق"
 showDetails = "إظهار تفاصيل مستوى التدقيق"
-hideDetails = "إخفاء تفاصيل مستوى التدقيق"
+
+[admin.settings.security.audit.advancedOptions]
+description = "الخيارات التالية تزيد وقت المعالجة واستخدام الذاكرة. فعّلها فقط عند الحاجة فعلًا."
+title = "خيارات متقدمة"
+
+[admin.settings.security.audit.captureFileHash]
+description = "استخراج بصمة SHA-256 لملفات PDF المرفوعة للتحقق من السلامة. مستقل عن مستوى التدقيق."
+label = "التقاط بصمة الملف (SHA-256)"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "التقاط قيم إرجاع الطريقة. غير مُوصى به: يزيد بشكل ملحوظ من حجم السجلات واستخدام القرص."
+label = "التقاط نتائج العملية"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "استخراج حقل المؤلف من مستندات PDF أثناء المعالجة. يتطلب تحليل PDF ويزيد زمن الاستجابة. مستقل عن مستوى التدقيق."
+label = "التقاط بيانات مؤلف PDF"
 
 [admin.settings.security.audit.enabled]
 description = "تتبع إجراءات المستخدمين وأحداث النظام للامتثال ومراقبة الأمان"
@@ -1182,30 +1200,14 @@ description = "0=إيقاف، 1=أساسي، 2=قياسي، 3=مفصل"
 label = "مستوى التدقيق"
 
 [admin.settings.security.audit.levelDetails]
-off = "بدون تسجيل تدقيق (باستثناء أحداث الأمان الحرجة)"
 basic = "عمليات ملفات PDF (ضغط، تقسيم، دمج، إلخ) وتغييرات الإعدادات. يلتقط: حالة العملية (نجاح/فشل)، معاملات الطريقة، التوقيت. حجم سجلات منخفض."
+off = "بدون تسجيل تدقيق (باستثناء أحداث الأمان الحرجة)"
 standard = "أحداث BASIC بالإضافة إلى: تسجيل دخول/خروج المستخدم، تغييرات الحساب، طلبات GET العامة. يستثني مكالمات الاستطلاع المستمرة (/auth/me، /app-config، /health، إلخ) لتقليل ضوضاء السجلات. مثالي لمعظم عمليات النشر."
 verbose = "أحداث STANDARD بالإضافة إلى: مكالمات الاستطلاع المستمرة، جميع طلبات GET، تفاصيل التوقيت. تحذير: حجم سجلات عالٍ وتأثير على الأداء."
 
 [admin.settings.security.audit.retentionDays]
 description = "عدد الأيام للاحتفاظ بسجلات التدقيق"
 label = "الاحتفاظ بسجلات التدقيق (أيام)"
-
-[admin.settings.security.audit.advancedOptions]
-title = "خيارات متقدمة"
-description = "الخيارات التالية تزيد وقت المعالجة واستخدام الذاكرة. فعّلها فقط عند الحاجة فعلًا."
-
-[admin.settings.security.audit.captureFileHash]
-description = "استخراج بصمة SHA-256 لملفات PDF المرفوعة للتحقق من السلامة. مستقل عن مستوى التدقيق."
-label = "التقاط بصمة الملف (SHA-256)"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "استخراج حقل المؤلف من مستندات PDF أثناء المعالجة. يتطلب تحليل PDF ويزيد زمن الاستجابة. مستقل عن مستوى التدقيق."
-label = "التقاط بيانات مؤلف PDF"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "التقاط قيم إرجاع الطريقة. غير مُوصى به: يزيد بشكل ملحوظ من حجم السجلات واستخدام القرص."
-label = "التقاط نتائج العملية"
 
 [admin.settings.security.csrfDisabled]
 description = "تعطيل حماية تزوير طلبات المواقع (غير مستحسن)"
@@ -1274,6 +1276,14 @@ label = "اسم المستخدم الأولي"
 [admin.settings.security.jwt]
 label = "تهيئة JWT"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "هامش السماح لانحراف الوقت بين العميل/الخادم أثناء التحقق من الرمز (الافتراضي: 60 ثانية)"
+label = "هامش انحراف الساعة (بالثواني)"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "مدة صلاحية رمز الوصول بالدقائق لعملاء سطح المكتب. يتم كشف تطبيقات سطح المكتب تلقائيًا عبر User-Agent وتتلقى جلسات أطول لتحسين تجربة الاستخدام (الافتراضي: 43200 = 30 يومًا)"
+label = "انتهاء صلاحية رمز سطح المكتب (بالدقائق)"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "إزالة مفاتيح JWT المنتهية تلقائيًا"
 label = "تمكين تنظيف المفاتيح"
@@ -1282,29 +1292,21 @@ label = "تمكين تنظيف المفاتيح"
 description = "تدوير مفاتيح توقيع JWT تلقائيًا بشكل دوري"
 label = "تمكين تدوير المفاتيح"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "مدة صلاحية رمز الوصول بالدقائق لعملاء الويب (الافتراضي: 1440 = 24 ساعة)"
-label = "انتهاء صلاحية رمز الويب (بالدقائق)"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "مدة صلاحية رمز الوصول بالدقائق لعملاء سطح المكتب. يتم كشف تطبيقات سطح المكتب تلقائيًا عبر User-Agent وتتلقى جلسات أطول لتحسين تجربة الاستخدام (الافتراضي: 43200 = 30 يومًا)"
-label = "انتهاء صلاحية رمز سطح المكتب (بالدقائق)"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "هامش السماح لانحراف الوقت بين العميل/الخادم أثناء التحقق من الرمز (الافتراضي: 60 ثانية)"
-label = "هامش انحراف الساعة (بالثواني)"
+[admin.settings.security.jwt.persistence]
+description = "تخزين مفاتيح JWT بشكل دائم لتجاوز عمليات إعادة تشغيل الخادم"
+label = "تمكين استمرارية المفاتيح"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "السماح بتحديث الرمز خلال هذا العدد من الدقائق بعد انتهاء الصلاحية (الافتراضي: 15 دقيقة، بحد أقصى 3 محاولات)"
 label = "فترة سماح للتحديث (بالدقائق)"
 
-[admin.settings.security.jwt.persistence]
-description = "تخزين مفاتيح JWT بشكل دائم لتجاوز عمليات إعادة تشغيل الخادم"
-label = "تمكين استمرارية المفاتيح"
-
 [admin.settings.security.jwt.secureCookie]
 description = "طلب HTTPS لملفات تعريف الارتباط الخاصة بـ JWT (موصى به للإنتاج)"
 label = "ملف تعريف ارتباط آمن"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "مدة صلاحية رمز الوصول بالدقائق لعملاء الويب (الافتراضي: 1440 = 24 ساعة)"
+label = "انتهاء صلاحية رمز الويب (بالدقائق)"
 
 [admin.settings.security.loginAttemptCount]
 description = "الحد الأقصى لعدد محاولات تسجيل الدخول الفاشلة قبل قفل الحساب"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "التحكم في تخزين الخادم وخيارات المشاركة."
+title = "تخزين الملفات والمشاركة"
+
+[admin.settings.storage.enabled]
+description = "السماح للمستخدمين بتخزين الملفات على الخادم."
+label = "تمكين تخزين ملفات الخادم"
+
+[admin.settings.storage.sharing.email]
+description = "السماح بالمشاركة عبر عناوين البريد الإلكتروني."
+label = "تمكين المشاركة عبر البريد الإلكتروني"
+mailLink = "ضبط إعدادات البريد"
+mailNote = "يتطلب إعداد البريد. "
+
+[admin.settings.storage.sharing.enabled]
+description = "السماح للمستخدمين بمشاركة الملفات المخزنة."
+label = "تمكين المشاركة"
+
+[admin.settings.storage.sharing.links]
+description = "السماح بالمشاركة عبر روابط تتطلب تسجيل الدخول."
+frontendUrlLink = "الضبط في إعدادات النظام"
+frontendUrlNote = "يتطلب عنوان URL للواجهة الأمامية. "
+label = "تمكين روابط المشاركة"
+
+[admin.settings.storage.signing.enabled]
+description = "السماح للمستخدمين بإنشاء جلسات توقيع بمشاركة عدة أطراف. يتطلب تمكين تخزين ملفات الخادم."
+label = "تمكين التوقيع الجماعي (ألفا)"
 
 [admin.settings.telegram]
 description = "اضبط اتصال روبوت Telegram، ضوابط الوصول، وسلوك التغذية الراجعة."
@@ -1429,34 +1459,6 @@ title = "المعالجة"
 description = "المدة القصوى لانتظار مهمة معالجة قبل الإبلاغ عن خطأ."
 label = "مهلة المعالجة (ثوانٍ)"
 
-[admin.settings.storage]
-description = "التحكم في تخزين الخادم وخيارات المشاركة."
-title = "تخزين الملفات والمشاركة"
-
-[admin.settings.storage.enabled]
-description = "السماح للمستخدمين بتخزين الملفات على الخادم."
-label = "تمكين تخزين ملفات الخادم"
-
-[admin.settings.storage.sharing.email]
-description = "السماح بالمشاركة عبر عناوين البريد الإلكتروني."
-label = "تمكين المشاركة عبر البريد الإلكتروني"
-mailLink = "ضبط إعدادات البريد"
-mailNote = "يتطلب إعداد البريد. "
-
-[admin.settings.storage.sharing.enabled]
-description = "السماح للمستخدمين بمشاركة الملفات المخزنة."
-label = "تمكين المشاركة"
-
-[admin.settings.storage.sharing.links]
-description = "السماح بالمشاركة عبر روابط تتطلب تسجيل الدخول."
-frontendUrlLink = "الضبط في إعدادات النظام"
-frontendUrlNote = "يتطلب عنوان URL للواجهة الأمامية. "
-label = "تمكين روابط المشاركة"
-
-[admin.settings.storage.signing.enabled]
-description = "السماح للمستخدمين بإنشاء جلسات توقيع بمشاركة عدة أطراف. يتطلب تمكين تخزين ملفات الخادم."
-label = "تمكين التوقيع الجماعي (ألفا)"
-
 [admin.settings.unsavedChanges]
 cancel = "متابعة التحرير"
 discard = "تجاهل التغييرات"
@@ -1521,6 +1523,7 @@ settings = "يمكنك تغيير إعدادات الإحصائيات في مل�
 title = "هل تريد تحسين Stirling PDF؟"
 
 [annotation]
+annotationStyle = "نمط التعليق التوضيحي"
 applyChanges = "تطبيق التغييرات"
 backgroundColor = "لون الخلفية"
 borderOff = "الحد: معطّل"
@@ -1530,6 +1533,8 @@ chooseColor = "اختر اللون"
 circle = "دائرة"
 clearBackground = "إزالة الخلفية"
 color = "اللون"
+comment = "تعليق"
+comments = "التعليقات"
 contents = "المحتوى"
 delete = "حذف"
 desc = "استخدم التمييز والقلم والنص والملاحظات. تبقى التغييرات مباشرة—لا حاجة للتسطيح."
@@ -1547,7 +1552,6 @@ editStampHint = "لتغيير الصورة، احذف هذا الختم وأضف
 editSwitchToSelect = "بدّل إلى «تحديد وتحرير» لتحرير هذا التعليق."
 editText = "تحرير مربع النص"
 editTextMarkup = "تحرير وسم النص"
-annotationStyle = "نمط التعليق التوضيحي"
 ellipse = "بيضاوي"
 exit = "الخروج من وضع التعليق"
 fillColor = "لون التعبئة"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "أداة تمييز بخط اليد"
 highlight = "تمييز"
 imagePreview = "معاينة"
 inkHighlighter = "أداة تمييز بخط اليد"
+insertText = "إدراج نص"
 line = "خط"
 lineArrow = "سهم"
 noBackground = "بدون خلفية"
 note = "ملاحظة"
-comment = "تعليق"
-comments = "التعليقات"
-insertText = "إدراج نص"
-replaceText = "استبدال نص"
 noteIcon = "أيقونة الملاحظة"
 notesStamps = "ملاحظات وأختام"
 opacity = "العتامة"
@@ -1574,6 +1575,7 @@ polyline = "متعدد الخطوط"
 properties = "خصائص"
 rectangle = "مستطيل"
 redo = "إعادة"
+replaceText = "استبدال نص"
 saveChanges = "حفظ التغييرات"
 saveFailed = "تعذّر حفظ النسخة"
 saveReady = "التنزيل جاهز"
@@ -1627,68 +1629,6 @@ goToSettings = "الانتقال إلى إعدادات التدقيق"
 notAvailable = "نظام التدقيق غير متاح"
 notAvailableMessage = "لم يتم تهيئة نظام التدقيق أو أنه غير متاح."
 
-[audit.error]
-title = "خطأ في تحميل نظام التدقيق"
-
-[audit.export]
-clearFilters = "مسح"
-description = "تصدير أحداث التدقيق إلى تنسيق CSV أو JSON. استخدم عوامل التصفية لتقييد البيانات المصدّرة."
-endDate = "تاريخ الانتهاء"
-error = "فشل تصدير البيانات"
-exportButton = "تصدير البيانات"
-fieldAuthor = "المؤلف (من PDF)"
-fieldDate = "التاريخ"
-fieldDocumentName = "اسم المستند"
-fieldFileHash = "بصمة الملف (SHA-256)"
-fieldIpAddress = "عنوان IP"
-fieldOperationResults = "نتائج العملية"
-fieldOutcome = "النتيجة (نجاح/فشل)"
-fieldTool = "الأداة"
-fieldUsername = "اسم المستخدم"
-filterByType = "تصفية حسب النوع"
-filterByUser = "تصفية حسب المستخدم"
-filters = "عوامل التصفية (اختياري)"
-format = "صيغة التصدير"
-selectFields = "حدد الحقول المطلوب تضمينها"
-startDate = "تاريخ البدء"
-title = "تصدير بيانات التدقيق"
-verboseRequired = "يتطلب مستوى تدقيق VERBOSE"
-
-[audit.systemStatus]
-autoRefresh = "تحديث تلقائي"
-autoRefreshLabel = "تحديث تلقائي كل 30 ثانية"
-captureBySettings = "فعِّل من الإعدادات"
-capturedFields = "الحقول الملتقطة"
-date = "التاريخ"
-days = "أيام"
-disabled = "معطّل"
-documentName = "اسم المستند"
-enabled = "مُمكّن"
-fileHash = "بصمة الملف"
-level = "مستوى التدقيق"
-pdfAuthor = "مؤلف PDF"
-retention = "فترة الاحتفاظ"
-status = "تسجيل التدقيق"
-title = "حالة النظام"
-tool = "الأداة"
-totalEvents = "إجمالي الأحداث"
-username = "اسم المستخدم"
-verboseOnly = "VERBOSE فقط"
-
-[audit.stats]
-activeUsers = "المستخدمون النشطون"
-attention = "بحاجة إلى انتباه"
-avgLatency = "متوسط زمن الاستجابة"
-error = "خطأ في تحميل الإحصائيات"
-errorLoadingStats = "فشل تحميل الإحصائيات"
-excellent = "ممتاز"
-good = "جيد"
-noData = "غير متاح"
-successRate = "معدل النجاح"
-title = "الملخّص"
-totalEvents = "إجمالي الأحداث"
-vsLastPeriod = "مقارنة بالفترة السابقة"
-
 [audit.charts]
 byTool = "أكثر الأدوات استخدامًا"
 byType = "الأحداث حسب النوع"
@@ -1701,6 +1641,27 @@ noData = "لا توجد بيانات لهذه الفترة"
 overTime = "الأحداث مع مرور الوقت"
 title = "لوحة معلومات التدقيق"
 week = "الأسبوع"
+
+[audit.clearData]
+cancel = "إلغاء"
+codeDoesNotMatch = "الرمز غير متطابق"
+codePlaceholder = "اكتب الرمز هنا"
+confirmationCode = "رمز التأكيد"
+confirmationRequired = "حذف كل بيانات التدقيق"
+confirmMessage = "سيؤدي هذا إلى إزالة جميع سجلات التدقيق نهائيًا. أدخل رمز التأكيد أدناه للمتابعة."
+confirmTitle = "يرجى تأكيد رغبتك في الحذف"
+deleteButton = "حذف"
+enterCode = "رمز التأكيد"
+enterCodeBelow = "أدخل الرمز تمامًا كما هو موضح أعلاه (مع مراعاة حالة الأحرف)"
+initiateDelete = "حذف جميع البيانات"
+irreversible = "غير قابل للتراجع"
+success = "تم بنجاح"
+successMessage = "تم مسح جميع بيانات التدقيق بنجاح"
+warning1 = "لا يمكن التراجع عن هذا الإجراء"
+warning2 = "سيؤدي حذف بيانات التدقيق إلى إزالة جميع سجلات التدقيق التاريخية نهائيًا، بما في ذلك أحداث الأمان، وأنشطة المستخدمين، وعمليات الملفات من قاعدة البيانات."
+
+[audit.error]
+title = "خطأ في تحميل نظام التدقيق"
 
 [audit.events]
 actions = "إجراءات"
@@ -1728,40 +1689,81 @@ type = "النوع"
 user = "المستخدم"
 viewDetails = "عرض التفاصيل"
 
+[audit.export]
+clearFilters = "مسح"
+description = "تصدير أحداث التدقيق إلى تنسيق CSV أو JSON. استخدم عوامل التصفية لتقييد البيانات المصدّرة."
+endDate = "تاريخ الانتهاء"
+error = "فشل تصدير البيانات"
+exportButton = "تصدير البيانات"
+fieldAuthor = "المؤلف (من PDF)"
+fieldDate = "التاريخ"
+fieldDocumentName = "اسم المستند"
+fieldFileHash = "بصمة الملف (SHA-256)"
+fieldIpAddress = "عنوان IP"
+fieldOperationResults = "نتائج العملية"
+fieldOutcome = "النتيجة (نجاح/فشل)"
+fieldTool = "الأداة"
+fieldUsername = "اسم المستخدم"
+filterByType = "تصفية حسب النوع"
+filterByUser = "تصفية حسب المستخدم"
+filters = "عوامل التصفية (اختياري)"
+format = "صيغة التصدير"
+selectFields = "حدد الحقول المطلوب تضمينها"
+startDate = "تاريخ البدء"
+title = "تصدير بيانات التدقيق"
+verboseRequired = "يتطلب مستوى تدقيق VERBOSE"
+
 [audit.filters]
 allOutcomes = "الكل"
 failureOnly = "الفشل فقط"
-last7Days = "آخر 7 أيام"
 last30Days = "آخر 30 يومًا"
+last7Days = "آخر 7 أيام"
 outcomeFilter = "النتيجة"
 quickPresets = "عوامل تصفية سريعة"
 successOnly = "النجاح فقط"
 thisMonth = "هذا الشهر"
 today = "اليوم"
 
+[audit.stats]
+activeUsers = "المستخدمون النشطون"
+attention = "بحاجة إلى انتباه"
+avgLatency = "متوسط زمن الاستجابة"
+error = "خطأ في تحميل الإحصائيات"
+errorLoadingStats = "فشل تحميل الإحصائيات"
+excellent = "ممتاز"
+good = "جيد"
+noData = "غير متاح"
+successRate = "معدل النجاح"
+title = "الملخّص"
+totalEvents = "إجمالي الأحداث"
+vsLastPeriod = "مقارنة بالفترة السابقة"
+
+[audit.systemStatus]
+autoRefresh = "تحديث تلقائي"
+autoRefreshLabel = "تحديث تلقائي كل 30 ثانية"
+captureBySettings = "فعِّل من الإعدادات"
+capturedFields = "الحقول الملتقطة"
+date = "التاريخ"
+days = "أيام"
+disabled = "معطّل"
+documentName = "اسم المستند"
+enabled = "مُمكّن"
+fileHash = "بصمة الملف"
+level = "مستوى التدقيق"
+pdfAuthor = "مؤلف PDF"
+retention = "فترة الاحتفاظ"
+status = "تسجيل التدقيق"
+title = "حالة النظام"
+tool = "الأداة"
+totalEvents = "إجمالي الأحداث"
+username = "اسم المستخدم"
+verboseOnly = "VERBOSE فقط"
+
 [audit.tabs]
 clearData = "مسح البيانات"
 dashboard = "لوحة المعلومات"
 events = "أحداث التدقيق"
 export = "تصدير"
-
-[audit.clearData]
-cancel = "إلغاء"
-codeDoesNotMatch = "الرمز غير متطابق"
-codePlaceholder = "اكتب الرمز هنا"
-confirmationCode = "رمز التأكيد"
-confirmationRequired = "حذف كل بيانات التدقيق"
-confirmMessage = "سيؤدي هذا إلى إزالة جميع سجلات التدقيق نهائيًا. أدخل رمز التأكيد أدناه للمتابعة."
-confirmTitle = "يرجى تأكيد رغبتك في الحذف"
-deleteButton = "حذف"
-enterCode = "رمز التأكيد"
-enterCodeBelow = "أدخل الرمز تمامًا كما هو موضح أعلاه (مع مراعاة حالة الأحرف)"
-initiateDelete = "حذف جميع البيانات"
-irreversible = "غير قابل للتراجع"
-success = "تم بنجاح"
-successMessage = "تم مسح جميع بيانات التدقيق بنجاح"
-warning1 = "لا يمكن التراجع عن هذا الإجراء"
-warning2 = "سيؤدي حذف بيانات التدقيق إلى إزالة جميع سجلات التدقيق التاريخية نهائيًا، بما في ذلك أحداث الأمان، وأنشطة المستخدمين، وعمليات الملفات من قاعدة البيانات."
 
 [auth]
 accessDenied = "تم رفض الوصول"
@@ -2088,43 +2090,70 @@ keywords = "الكلمات: odd, even"
 numbers = "الأرقام/النطاقات: 5, 10-20"
 progressions = "التقدّم: 3n, 4n+1"
 
+[certificateChoice.tooltip]
+header = "أنواع الشهادات"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "تدار بواسطة مسؤولي النظام"
+bullet2 = "مشتركة عبر المستخدمين المخوّلين"
+bullet3 = "تمثل هوية الشركة وليس الفرد"
+bullet4 = "أفضل للاستخدام: المستندات الرسمية، تواقيع الفريق"
+description = "شهادة مشتركة توفرها مؤسستك. تُستخدم للتفويض بالتوقيع على مستوى الشركة."
+title = "شهادة المؤسسة"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "تُنشأ تلقائيًا عند أول استخدام"
+bullet2 = "مرتبطة بحساب المستخدم الخاص بك"
+bullet3 = "لا يمكن مشاركتها مع مستخدمين آخرين"
+bullet4 = "أفضل للاستخدام: المستندات الشخصية، المساءلة الفردية"
+description = "شهادة مُنشأة تلقائيًا فريدة لحساب المستخدم الخاص بك. مناسبة للتواقيع الفردية."
+title = "شهادة شخصية"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "يتطلب ملف P12/PFX وكلمة مرور"
+bullet2 = "يمكن إصدارها من جهات إصدار شهادات خارجية"
+bullet3 = "مستوى ثقة أعلى للمستندات القانونية"
+bullet4 = "أفضل للاستخدام: العقود الملزمة قانونيًا، التحقق الخارجي"
+description = "استخدم ملف شهادة PKCS#12 الخاص بك. يوفّر تحكمًا كاملاً بخصائص الشهادة."
+title = "رفع ملف P12 مخصص"
+
 [certSign]
 allSigned = "وقّع جميع المشاركين. جاهز للإنهاء."
 awaitingSignatures = "بانتظار التواقيع"
-signatureProgress = "{{signedCount}}/{{totalCount}} توقيعات"
 chooseCertificate = "اختر ملف الشهادة"
-declined = "مرفوض"
-fetchFailed = "فشل في تحميل بيانات التوقيع"
-finalized = "تم الإنهاء"
-notified = "قيد الانتظار"
-partialNote = "يمكنك الإنهاء مبكرًا بالتواقيع الحالية. سيتم استبعاد المشاركين غير الموقّعين."
-pending = "قيد الانتظار"
-readyToFinalize = "جاهز للإنهاء"
-signed = "موقّع"
-viewed = "تمت المشاهدة"
 chooseJksFile = "اختر ملف JKS"
 chooseP12File = "اختر ملف PKCS12"
 choosePfxFile = "اختر ملف PFX"
 choosePrivateKey = "اختر ملف المفتاح الخاص"
+declined = "مرفوض"
+fetchFailed = "فشل في تحميل بيانات التوقيع"
 filenamePrefix = "موقّع"
+finalized = "تم الإنهاء"
 location = "الموقع"
 logoTitle = "الشعار"
 name = "الاسم"
 noLogo = "لا يوجد شعار"
+notified = "قيد الانتظار"
 pageNumber = "رقم الصفحة"
+partialNote = "يمكنك الإنهاء مبكرًا بالتواقيع الحالية. سيتم استبعاد المشاركين غير الموقّعين."
 password = "كلمة مرور الشهادة"
 passwordOptional = "اتركه فارغًا إذا لم تكن هناك كلمة مرور"
+pending = "قيد الانتظار"
+readyToFinalize = "جاهز للإنهاء"
 reason = "السبب"
 serverCertMessage = "باستخدام شهادة الخادم - لا حاجة إلى ملفات أو كلمة مرور"
 showLogo = "إظهار الشعار"
+signatureProgress = "{{signedCount}}/{{totalCount}} توقيعات"
+signed = "موقّع"
 tags = "مصادقة,PEM,P12,رسمي,تشفير"
 title = "توقيع الشهادة"
+viewed = "تمت المشاهدة"
 
 [certSign.appearance]
 invisible = "غير مرئي"
 stepTitle = "مظهر التوقيع"
-visible = "مرئي"
 visibility = "الظهور"
+visible = "مرئي"
 
 [certSign.appearance.options]
 title = "تفاصيل التوقيع"
@@ -2172,8 +2201,227 @@ title = "أي خيار أستخدم؟"
 [certSign.certTypeStep]
 stepTitle = "تنسيق الشهادة"
 
+[certSign.collab.addParticipants]
+add = "إضافة {{count}} مشارك"
+back = "رجوع"
+configureSignatures = "تهيئة إعدادات التوقيع"
+continue = "المتابعة إلى إعدادات التوقيع"
+reasonHelp = "تحديد سبب توقيع مسبق لهؤلاء المشاركين (اختياري، يمكنهم تغييره عند التوقيع)"
+reasonPlaceholder = "مثال: موافقة، مراجعة..."
+selectUsers = "اختيار المستخدمين"
+
+[certSign.collab.finalize]
+button = "إنهاء وتحميل ملف PDF الموقّع"
+early = "إنهاء بالتواقيع الحالية"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "شهادة غير صالحة"
+certNetworkError = "تعذّر التحقق من الشهادة"
+certValid = "✓ الشهادة صالحة"
+certValidating = "جارٍ التحقق من الشهادة..."
+certValidUntil = " حتى {{date}}"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "تضمين صفحة ملخص التواقيع"
+includeSummaryPageHelp = "ستُضاف صفحة ملخص في النهاية تضم جميع بيانات التوقيع الوصفية. سيتم إخفاء مربعات توقيع الشهادة الرقمية على الصفحات الفردية (لا تتأثر التواقيع اليدوية)."
+
+[certSign.collab.sessionDetail]
+addButton = "إضافة مشاركين"
+addParticipants = "إضافة مشاركين"
+addParticipantsError = "تعذّر إضافة المشاركين"
+backToList = "العودة إلى الجلسات"
+deleteConfirm = "هل أنت متأكد؟ لا يمكن التراجع عن ذلك."
+deleted = "تم حذف الجلسة"
+deleteError = "فشل حذف الجلسة"
+deleteSession = "حذف الجلسة"
+dueDate = "تاريخ الاستحقاق"
+finalizeError = "تعذّر إنهاء الجلسة"
+loadPdfError = "تعذّر تحميل ملف PDF الموقّع"
+loadSignedPdf = "تحميل ملف PDF الموقّع إلى الملفات النشطة"
+messageLabel = "رسالة"
+noAdditionalInfo = "لا توجد معلومات إضافية"
+owner = "المالك"
+participantRemoved = "تمت إزالة المشارك"
+participants = "المشاركون"
+participantsAdded = "تمت إضافة المشاركين بنجاح"
+removeParticipant = "إزالة"
+removeParticipantError = "تعذّر إزالة المشارك"
+selectUsers = "اختر المستخدمين..."
+sessionInfo = "معلومات الجلسة"
+workbenchTitle = "إدارة الجلسة"
+
+[certSign.collab.sessionList]
+active = "نشطة"
+finalized = "تم الإنهاء"
+
+[certSign.collab.signatureSettings]
+description = "تهيئة كيفية ظهور التواقيع لجميع المشاركين"
+title = "مظهر التوقيع"
+
+[certSign.collab.signRequest]
+addedToFiles = "تمت إضافة المستند إلى الملفات النشطة"
+addSignature = "أضف توقيعك"
+addToFiles = "إضافة إلى الملفات النشطة"
+advancedSettings = "إعدادات متقدمة"
+backToList = "العودة إلى طلبات التوقيع"
+certificateChoice = "اختر شهادة للتوقيع بها"
+changeSignature = "تغيير التوقيع"
+clearSignature = "مسح التوقيع"
+completeAndSign = "إكمال والتوقيع"
+createNewSignature = "إنشاء توقيع جديد"
+decline = "رفض الطلب"
+declineButton = "رفض"
+deleteSelected = "حذف التوقيع المحدد"
+drawSignature = "ارسم توقيعك أدناه"
+dueDate = "تاريخ الاستحقاق"
+fileTooLarge = "يجب أن يكون حجم الملف أقل من 5MB"
+fontFamily = "عائلة الخط"
+fontSize = "حجم الخط: {{size}}px"
+fontSizePlaceholder = "الحجم"
+from = "من"
+invalidCertFile = "يرجى اختيار ملف شهادة P12 أو PFX"
+invalidFileType = "يرجى اختيار ملف صورة"
+location = "الموقع (اختياري)"
+locationPlaceholder = "من أين توقّع؟"
+message = "رسالة"
+noCertificate = "يرجى اختيار ملف شهادة"
+noSignatures = "يرجى وضع توقيع واحد على الأقل على ملف PDF"
+p12File = "ملف شهادة P12/PFX"
+password = "كلمة مرور الشهادة"
+passwordPlaceholder = "أدخل كلمة المرور..."
+penColor = "لون القلم"
+penSize = "حجم القلم: {{size}}px"
+placementActive = "انقر على ملف PDF للوضع"
+placeSignatureButton = "وضع التوقيع على ملف PDF"
+reason = "السبب (اختياري)"
+reasonPlaceholder = "لماذا توقّع؟"
+removeCertFile = "إزالة الملف"
+removeImage = "إزالة الصورة"
+savedSignatures = "التواقيع المحفوظة"
+selectFile = "اختر ملف صورة"
+selectSignatureTitle = "اختر أو أنشئ توقيعًا"
+signatureInfo = "يتم ضبط هذه الإعدادات بواسطة مالك المستند"
+signaturePlaced = "تم وضع التوقيع على الصفحة"
+signatureSettings = "إعدادات التوقيع"
+signatureText = "نص التوقيع"
+signatureTextPlaceholder = "أدخل اسمك..."
+signatureTypeLabel = "نوع التوقيع"
+signButton = "توقيع المستند"
+signingTitle = "التوقيع"
+textColor = "لون النص"
+typeSignature = "اكتب اسمك لإنشاء توقيع"
+uploadCert = "شهادة مخصصة"
+uploadCertDesc = "استخدم شهادة P12/PFX الخاصة بك"
+uploadSignature = "ارفع صورة توقيعك"
+usePersonalCert = "شهادة شخصية"
+usePersonalCertDesc = "تُنشأ تلقائيًا لحسابك"
+useServerCert = "شهادة المؤسسة"
+useServerCertDesc = "شهادة مؤسسة مشتركة"
+workbenchTitle = "طلب توقيع"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "اختر لون القلم"
+continue = "متابعة"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "الشهادة غير صالحة: {{error}}"
+certInvalidFallback = "شهادة غير صالحة"
+certNetworkError = "تعذّر التحقق من الشهادة"
+certValidating = "جارٍ التحقق من الشهادة..."
+certValidUntil = "الشهادة صالحة حتى {{date}}"
+description = "لقد وضعت {{count}} توقيع(ات). اختر شهادتك لإكمال التوقيع."
+sign = "توقيع المستند"
+title = "تهيئة الشهادة"
+
+[certSign.collab.signRequest.image]
+hint = "حمّل صورة توقيعك بصيغة PNG أو JPG"
+
+[certSign.collab.signRequest.mode]
+move = "نقل التوقيع"
+place = "وضع التوقيع"
+title = "وضع التوقيع أو النقل"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "رسم"
+image = "رفع"
+text = "كتابة"
+
+[certSign.collab.signRequest.placeSignature]
+message = "انقر على ملف PDF لوضع توقيعك"
+title = "وضع التوقيع"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "التوقيع المحدد"
+missing = "لا معاينة"
+textFallback = "توقيع"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "توقيع مرسوم"
+defaultImageLabel = "توقيع مرفوع"
+defaultLabel = "توقيع"
+defaultTextLabel = "توقيع مكتوب"
+delete = "حذف التوقيع"
+none = "لا توجد تواقيع محفوظة"
+
+[certSign.collab.signRequest.signatureType]
+draw = "رسم"
+type = "كتابة"
+upload = "رفع"
+
+[certSign.collab.signRequest.steps]
+back = "رجوع"
+cancelPlacement = "إلغاء الوضع"
+certificate = "الشهادة"
+clickMultipleTimes = "انقر على ملف PDF عدة مرات لوضع التواقيع. اسحب أي توقيع لتحريكه أو تغيير حجمه."
+clickToPlace = "انقر على ملف PDF حيث ترغب أن يظهر توقيعك."
+continue = "المتابعة لاختيار الشهادة"
+continueToPlacement = "المتابعة إلى الوضع"
+continueToReview = "المتابعة إلى المراجعة"
+createSignature = "إنشاء توقيع"
+invisible = "غير مرئي"
+location = "الموقع:"
+multipleSignatures = "{{count}} توقيعات سيتم تطبيقها على ملف PDF"
+oneSignature = "سيتم تطبيق توقيع واحد على ملف PDF"
+placeOnPdf = "وضع على ملف PDF"
+reason = "السبب:"
+reviewTitle = "مراجعة قبل التوقيع"
+signaturePlaced = "تم وضع التوقيع على الصفحة {{page}}. يمكنك ضبط الموضع بالنقر مرة أخرى أو المتابعة إلى المراجعة."
+visibility = "الظهور:"
+visible = "مرئي"
+yourSignatures = "تواقيعك ({{count}})"
+
+[certSign.collab.signRequest.text]
+colorLabel = "اللون"
+fontLabel = "الخط"
+fontSizeLabel = "الحجم"
+fontSizePlaceholder = "16"
+label = "نص التوقيع"
+modalHint = "أدخل اسمك، ثم انقر متابعة لوضعه على ملف PDF."
+placeholder = "أدخل اسمك..."
+
+[certSign.collab.userSelector]
+inviteUsers = "إضافة مستخدمين"
+loadError = "فشل في تحميل المستخدمين"
+noTeam = "لا يوجد فريق"
+noUsers = "لم يتم العثور على مستخدمين آخرين."
+placeholder = "اختر المستخدمين..."
+
 [certSign.error]
 failed = "حدث خطأ أثناء معالجة التواقيع."
+
+[certSign.mobile]
+panelActions = "إجراءات"
+panelDocument = "مستند"
+panelPeople = "أشخاص"
+
+[certSign.sessions]
+deleted = "تم حذف الجلسة"
+fetchFailed = "فشل تحميل تفاصيل الجلسة"
+finalized = "تم إنهاء الجلسة"
+loaded = "تم تحميل ملف PDF الموقّع"
+pdfNotReady = "ملف PDF غير جاهز"
+pdfNotReadyDesc = "يجري إنشاء ملف PDF الموقّع. يرجى المحاولة بعد قليل."
 
 [certSign.sign]
 results = "PDF الموقَّع"
@@ -2230,252 +2478,6 @@ bullet3 = "يتحقق مما إذا تم تعديل المستند بعد الت
 bullet4 = "يمكن استخدام شهادات مخصّصة للتحقق"
 text = "عند التحقق من التواقيع، تُظهر الأداة صلاحيتها، ومن وقّع ومتى، وما إذا تم تعديل المستند بعد التوقيع."
 title = "التحقق من التواقيع"
-
-[certSign.collab.finalize]
-button = "إنهاء وتحميل ملف PDF الموقّع"
-early = "إنهاء بالتواقيع الحالية"
-
-[certSign.collab.sessionDetail]
-addButton = "إضافة مشاركين"
-addParticipants = "إضافة مشاركين"
-addParticipantsError = "تعذّر إضافة المشاركين"
-backToList = "العودة إلى الجلسات"
-deleteConfirm = "هل أنت متأكد؟ لا يمكن التراجع عن ذلك."
-deleteError = "فشل حذف الجلسة"
-deleted = "تم حذف الجلسة"
-deleteSession = "حذف الجلسة"
-dueDate = "تاريخ الاستحقاق"
-finalizeError = "تعذّر إنهاء الجلسة"
-loadPdfError = "تعذّر تحميل ملف PDF الموقّع"
-loadSignedPdf = "تحميل ملف PDF الموقّع إلى الملفات النشطة"
-messageLabel = "رسالة"
-noAdditionalInfo = "لا توجد معلومات إضافية"
-owner = "المالك"
-participantRemoved = "تمت إزالة المشارك"
-participants = "المشاركون"
-participantsAdded = "تمت إضافة المشاركين بنجاح"
-removeParticipant = "إزالة"
-removeParticipantError = "تعذّر إزالة المشارك"
-selectUsers = "اختر المستخدمين..."
-sessionInfo = "معلومات الجلسة"
-workbenchTitle = "إدارة الجلسة"
-
-[certSign.collab.signRequest]
-addedToFiles = "تمت إضافة المستند إلى الملفات النشطة"
-addSignature = "أضف توقيعك"
-addToFiles = "إضافة إلى الملفات النشطة"
-advancedSettings = "إعدادات متقدمة"
-backToList = "العودة إلى طلبات التوقيع"
-certificateChoice = "اختر شهادة للتوقيع بها"
-changeSignature = "تغيير التوقيع"
-clearSignature = "مسح التوقيع"
-completeAndSign = "إكمال والتوقيع"
-createNewSignature = "إنشاء توقيع جديد"
-declineButton = "رفض"
-decline = "رفض الطلب"
-deleteSelected = "حذف التوقيع المحدد"
-drawSignature = "ارسم توقيعك أدناه"
-dueDate = "تاريخ الاستحقاق"
-fileTooLarge = "يجب أن يكون حجم الملف أقل من 5MB"
-fontFamily = "عائلة الخط"
-fontSize = "حجم الخط: {{size}}px"
-fontSizePlaceholder = "الحجم"
-from = "من"
-invalidCertFile = "يرجى اختيار ملف شهادة P12 أو PFX"
-invalidFileType = "يرجى اختيار ملف صورة"
-location = "الموقع (اختياري)"
-locationPlaceholder = "من أين توقّع؟"
-message = "رسالة"
-noCertificate = "يرجى اختيار ملف شهادة"
-noSignatures = "يرجى وضع توقيع واحد على الأقل على ملف PDF"
-p12File = "ملف شهادة P12/PFX"
-password = "كلمة مرور الشهادة"
-passwordPlaceholder = "أدخل كلمة المرور..."
-penColor = "لون القلم"
-penSize = "حجم القلم: {{size}}px"
-placementActive = "انقر على ملف PDF للوضع"
-placeSignatureButton = "وضع التوقيع على ملف PDF"
-reason = "السبب (اختياري)"
-reasonPlaceholder = "لماذا توقّع؟"
-removeImage = "إزالة الصورة"
-removeCertFile = "إزالة الملف"
-savedSignatures = "التواقيع المحفوظة"
-selectFile = "اختر ملف صورة"
-selectSignatureTitle = "اختر أو أنشئ توقيعًا"
-signButton = "توقيع المستند"
-signatureInfo = "يتم ضبط هذه الإعدادات بواسطة مالك المستند"
-signaturePlaced = "تم وضع التوقيع على الصفحة"
-signatureSettings = "إعدادات التوقيع"
-signatureText = "نص التوقيع"
-signatureTextPlaceholder = "أدخل اسمك..."
-signatureTypeLabel = "نوع التوقيع"
-signingTitle = "التوقيع"
-textColor = "لون النص"
-typeSignature = "اكتب اسمك لإنشاء توقيع"
-uploadCert = "شهادة مخصصة"
-uploadCertDesc = "استخدم شهادة P12/PFX الخاصة بك"
-uploadSignature = "ارفع صورة توقيعك"
-usePersonalCert = "شهادة شخصية"
-usePersonalCertDesc = "تُنشأ تلقائيًا لحسابك"
-useServerCert = "شهادة المؤسسة"
-useServerCertDesc = "شهادة مؤسسة مشتركة"
-workbenchTitle = "طلب توقيع"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "اختر لون القلم"
-continue = "متابعة"
-
-[certSign.collab.signRequest.certModal]
-description = "لقد وضعت {{count}} توقيع(ات). اختر شهادتك لإكمال التوقيع."
-sign = "توقيع المستند"
-certValidating = "جارٍ التحقق من الشهادة..."
-certValidUntil = "الشهادة صالحة حتى {{date}}"
-certInvalid = "الشهادة غير صالحة: {{error}}"
-certInvalidFallback = "شهادة غير صالحة"
-certNetworkError = "تعذّر التحقق من الشهادة"
-title = "تهيئة الشهادة"
-
-[certSign.collab.signRequest.image]
-hint = "حمّل صورة توقيعك بصيغة PNG أو JPG"
-
-[certSign.collab.signRequest.mode]
-move = "نقل التوقيع"
-place = "وضع التوقيع"
-title = "وضع التوقيع أو النقل"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "رسم"
-image = "رفع"
-text = "كتابة"
-
-[certSign.collab.signRequest.placeSignature]
-message = "انقر على ملف PDF لوضع توقيعك"
-title = "وضع التوقيع"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "التوقيع المحدد"
-missing = "لا معاينة"
-textFallback = "توقيع"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "توقيع مرسوم"
-defaultImageLabel = "توقيع مرفوع"
-defaultLabel = "توقيع"
-defaultTextLabel = "توقيع مكتوب"
-delete = "حذف التوقيع"
-none = "لا توجد تواقيع محفوظة"
-
-[certSign.collab.signRequest.signatureType]
-draw = "رسم"
-type = "كتابة"
-upload = "رفع"
-
-[certSign.collab.signRequest.steps]
-back = "رجوع"
-cancelPlacement = "إلغاء الوضع"
-certificate = "الشهادة"
-clickMultipleTimes = "انقر على ملف PDF عدة مرات لوضع التواقيع. اسحب أي توقيع لتحريكه أو تغيير حجمه."
-clickToPlace = "انقر على ملف PDF حيث ترغب أن يظهر توقيعك."
-continue = "المتابعة لاختيار الشهادة"
-continueToPlacement = "المتابعة إلى الوضع"
-continueToReview = "المتابعة إلى المراجعة"
-createSignature = "إنشاء توقيع"
-invisible = "غير مرئي"
-location = "الموقع:"
-multipleSignatures = "{{count}} توقيعات سيتم تطبيقها على ملف PDF"
-oneSignature = "سيتم تطبيق توقيع واحد على ملف PDF"
-placeOnPdf = "وضع على ملف PDF"
-reason = "السبب:"
-reviewTitle = "مراجعة قبل التوقيع"
-signaturePlaced = "تم وضع التوقيع على الصفحة {{page}}. يمكنك ضبط الموضع بالنقر مرة أخرى أو المتابعة إلى المراجعة."
-visible = "مرئي"
-visibility = "الظهور:"
-yourSignatures = "تواقيعك ({{count}})"
-
-[certSign.collab.signRequest.text]
-colorLabel = "اللون"
-fontLabel = "الخط"
-fontSizeLabel = "الحجم"
-fontSizePlaceholder = "16"
-label = "نص التوقيع"
-modalHint = "أدخل اسمك، ثم انقر متابعة لوضعه على ملف PDF."
-placeholder = "أدخل اسمك..."
-
-[certSign.collab.participant]
-certValidating = "جارٍ التحقق من الشهادة..."
-certValid = "✓ الشهادة صالحة"
-certValidUntil = " حتى {{date}}"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "شهادة غير صالحة"
-certNetworkError = "تعذّر التحقق من الشهادة"
-
-[certSign.collab.addParticipants]
-add = "إضافة {{count}} مشارك"
-back = "رجوع"
-configureSignatures = "تهيئة إعدادات التوقيع"
-continue = "المتابعة إلى إعدادات التوقيع"
-reasonHelp = "تحديد سبب توقيع مسبق لهؤلاء المشاركين (اختياري، يمكنهم تغييره عند التوقيع)"
-reasonPlaceholder = "مثال: موافقة، مراجعة..."
-selectUsers = "اختيار المستخدمين"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "تضمين صفحة ملخص التواقيع"
-includeSummaryPageHelp = "ستُضاف صفحة ملخص في النهاية تضم جميع بيانات التوقيع الوصفية. سيتم إخفاء مربعات توقيع الشهادة الرقمية على الصفحات الفردية (لا تتأثر التواقيع اليدوية)."
-
-[certSign.collab.sessionList]
-active = "نشطة"
-finalized = "تم الإنهاء"
-
-[certSign.collab.signatureSettings]
-description = "تهيئة كيفية ظهور التواقيع لجميع المشاركين"
-title = "مظهر التوقيع"
-
-[certSign.collab.userSelector]
-inviteUsers = "إضافة مستخدمين"
-loadError = "فشل في تحميل المستخدمين"
-noTeam = "لا يوجد فريق"
-noUsers = "لم يتم العثور على مستخدمين آخرين."
-placeholder = "اختر المستخدمين..."
-
-[certSign.mobile]
-panelActions = "إجراءات"
-panelDocument = "مستند"
-panelPeople = "أشخاص"
-
-[certSign.sessions]
-deleted = "تم حذف الجلسة"
-fetchFailed = "فشل تحميل تفاصيل الجلسة"
-finalized = "تم إنهاء الجلسة"
-loaded = "تم تحميل ملف PDF الموقّع"
-pdfNotReady = "ملف PDF غير جاهز"
-pdfNotReadyDesc = "يجري إنشاء ملف PDF الموقّع. يرجى المحاولة بعد قليل."
-
-[certificateChoice.tooltip]
-header = "أنواع الشهادات"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "تدار بواسطة مسؤولي النظام"
-bullet2 = "مشتركة عبر المستخدمين المخوّلين"
-bullet3 = "تمثل هوية الشركة وليس الفرد"
-bullet4 = "أفضل للاستخدام: المستندات الرسمية، تواقيع الفريق"
-description = "شهادة مشتركة توفرها مؤسستك. تُستخدم للتفويض بالتوقيع على مستوى الشركة."
-title = "شهادة المؤسسة"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "تُنشأ تلقائيًا عند أول استخدام"
-bullet2 = "مرتبطة بحساب المستخدم الخاص بك"
-bullet3 = "لا يمكن مشاركتها مع مستخدمين آخرين"
-bullet4 = "أفضل للاستخدام: المستندات الشخصية، المساءلة الفردية"
-description = "شهادة مُنشأة تلقائيًا فريدة لحساب المستخدم الخاص بك. مناسبة للتواقيع الفردية."
-title = "شهادة شخصية"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "يتطلب ملف P12/PFX وكلمة مرور"
-bullet2 = "يمكن إصدارها من جهات إصدار شهادات خارجية"
-bullet3 = "مستوى ثقة أعلى للمستندات القانونية"
-bullet4 = "أفضل للاستخدام: العقود الملزمة قانونيًا، التحقق الخارجي"
-description = "استخدم ملف شهادة PKCS#12 الخاص بك. يوفّر تحكمًا كاملاً بخصائص الشهادة."
-title = "رفع ملف P12 مخصص"
 
 [changeCreds]
 changePassword = "أنت تستخدم بيانات تسجيل الدخول الافتراضية. يرجى إدخال كلمة مرور جديدة"
@@ -2657,6 +2659,9 @@ title = "تغيير الأذونات"
 
 [changePermissions.tooltip.warning]
 text = "لجعل هذه الأذونات غير قابلة للتغيير، استخدم أداة إضافة كلمة مرور لتعيين كلمة مرور للمالك."
+
+[cloudBadge]
+tooltip = "ستستخدم هذه العملية أرصدة السحابة الخاصة بك"
 
 [colorPicker]
 title = "اختر اللون"
@@ -2998,9 +3003,11 @@ blackwhite = "أبيض وأسود"
 cbrDpi = "DPI لعرض الصور"
 cbrOptions = "خيارات CBR"
 cbrOutputOptions = "خيارات تحويل PDF إلى CBR"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "DPI لعرض الصور"
 cbzOptions = "خيارات التحويل من CBZ إلى PDF"
 cbzOutputOptions = "خيارات التحويل من PDF إلى CBZ"
+cbzToPdf = "CBZ → PDF"
 color = "لون"
 colorType = "نوع اللون"
 combineImages = "دمج الصور"
@@ -3018,13 +3025,16 @@ desc = "حوّل الملفات بين صيغ مختلفة"
 downloadConverted = "تنزيل الملف المحوّل"
 downloadHtml = "تنزيل ملف HTML الوسيط بدلًا من PDF"
 dpi = "DPI"
+ebookToPdf = "eBook → PDF"
 emailOptions = "خيارات البريد إلى PDF"
+emlToPdf = "Email → PDF"
 errorConversion = "حدث خطأ أثناء تحويل الملف."
 errorNoFiles = "يرجى اختيار ملف واحد على الأقل للتحويل."
 errorNoFormat = "يرجى اختيار صيغتَي المصدر والهدف."
 errorNotSupported = "التحويل من {{from}} إلى {{to}} غير مدعوم."
 fileFormat = "صيغة الملف"
 files = "الملفات"
+fileToPdf = "Office/Document → PDF"
 fillPage = "ملء الصفحة"
 fitDocumentToPage = "ملاءمة المستند للصفحة"
 fitOption = "خيار الملاءمة"
@@ -3052,6 +3062,9 @@ pdfaFormat = "تنسيق PDF/A"
 pdfaNote = "‏PDF/A-1b أكثر توافقًا، وPDF/A-2b يدعم مزيدًا من الميزات."
 pdfaOptions = "خيارات PDF/A"
 pdfOptions = "خيارات PDF"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X هو مجموعة فرعية قياسية من PDF وفق ISO يوفّر طباعة موثوقة وتبادُل الرسومات."
 pdfxDigitalSignatureWarning = "يحتوي ملف PDF على توقيع رقمي. سيتم إزالة ذلك في الخطوة التالية."
 pptExt = "PowerPoint (.pptx)"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "صيغة المصدر"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "صيغة الهدف"
 textRtf = "نص/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "خيارات الويب إلى PDF"
 wordDoc = "مستند Word"
 wordDocExt = "مستند Word (.docx)"
 zoomLevel = "مستوى التكبير"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "eBook → PDF"
-emlToPdf = "Email → PDF"
-fileToPdf = "Office/Document → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "خيارات تحويل الكتب الإلكترونية إلى PDF"
@@ -3147,6 +3152,77 @@ description = "These cookies are essential for the website to function properly.
 [cookieBanner.services]
 posthog = "PostHog Analytics"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "تمكين فوترة التجاوز"
+maybeLater = "ربما لاحقًا"
+upgrade = "ترقية"
+
+[credits.insufficient]
+brief = "أرصدة غير كافية. تحتاج إلى {{required}} رصيدًا ولكن لديك {{current}}."
+freeTier = "رقِّ إلى خطة الفريق لتحصل على أرصدة أكثر بـ 10 مرات وفوترة تجاوز غير محدودة."
+managedMember = "يرجى التواصل مع قائد فريقك للمساعدة."
+message = "ليس لديك ما يكفي من الأرصدة لتشغيل {{tool}}. لديك حاليًا {{current}} رصيدًا."
+messageWithAmount = "تحتاج إلى {{required}} رصيدًا لتشغيل {{tool}}، ولكن لديك فقط {{current}}."
+teamMember = "فعِّل فوترة التجاوز كي لا تنفد الأرصدة."
+title = "أرصدة غير كافية"
+
+[credits.modal]
+advancedMonitoring = "مراقبة متقدمة"
+allInOneWorkspace = "مساحة عمل PDF شاملة (عارض، أدوات ووكيل)"
+apiSandbox = "بيئة Sandbox لـ API"
+contactSales = "تواصل مع المبيعات"
+creditsRemaining = "متبقٍ {{current}} من {{total}}"
+creditsThisMonth = "أرصدة شهرية"
+current = "الخطة الحالية"
+customPricing = "مُخصص"
+customSmartFolders = "مجلدات ذكية مخصصة"
+dedicatedSupportSlas = "دعم مخصص واتفاقيات مستوى الخدمة (SLA)"
+enterpriseSubscription = "المؤسسات"
+everythingInCredits = "كل ما في الأرصدة، بالإضافة إلى:"
+everythingInFree = "كل ما في المجاني، بالإضافة إلى:"
+fasterThroughput = "إنتاجية أسرع 10 مرات"
+forRegularWork = "لأعمال PDF الاعتيادية:"
+freeTier = "المستوى المجاني"
+fullyPrivateFiles = "ملفات خاصة بالكامل"
+largeFileProcessing = "معالجة الملفات الكبيرة"
+managedMemberMessage = "لديك وصول غير محدود إلى الأرصدة عبر فريقك. إذا كنت بحاجة إلى مساعدة، يرجى التواصل مع قائد فريقك."
+managedMemberTitle = "أرصدة غير محدودة"
+meteringBillingNote = "تُفوتر أرصدة التجاوز شهريًا مع اشتراك خطة الفريق الخاصة بك. تتبع استخدامك في أي وقت من إعدادات حسابك."
+meteringExplanation = "تتضمن خطة الفريق لديك {{credits}} رصيدًا شهريًا. عند نفادها، توفّر فوترة التجاوز تلقائيًا أرصدة إضافية لكي لا تتوقف عن العمل."
+meteringIncluded = "{{credits}} رصيدًا/شهر مشمول مع خطة الفريق"
+meteringNeverRunOut = "لا تنفد الأرصدة مطلقًا"
+meteringNoCommitment = "بدون التزام، يمكنك الإلغاء في أي وقت"
+meteringPayAsYouGo = "ادفع فقط مقابل ما تستخدمه"
+meteringPrice = "أرصدة إضافية بسعر {{price}}/رصيد"
+meteringTitle = "فوترة التجاوز حسب الاستهلاك"
+monthlyCredits = "أرصدة شهرية"
+orgWideAccess = "ضوابط وصول على مستوى المؤسسة"
+overage = "تجاوز"
+perMonth = "/شهر"
+popular = "شائع"
+premiumAiModels = "نماذج ذكاء اصطناعي متميزة"
+prioritySupport = "دعم أولوية"
+privateDocCloud = "سحابة مستندات خاصة"
+ragFineTuning = "RAG + ضبط دقيق"
+secureApiAccess = "وصول API آمن"
+selfHostLink = "راجع المستندات والخطط"
+selfHostPrompt = "هل تريد الاستضافة الذاتية؟"
+standardThroughput = "إنتاجية قياسية"
+subtitle = "رقِّ إلى خطة الفريق لتحصل على أرصدة أكثر بـ 10 مرات ومعالجة أسرع."
+subtitlePro = "فعِّل الفوترة التلقائية عند التجاوز كي لا تنفد أرصدتك أبدًا."
+teamLeaderOnly = "فقط قادة الفريق يمكنهم تمكين فوترة التجاوز"
+teamSubscription = "الفريق"
+titleExhausted = "لقد استخدمت أرصدتك المجانية"
+titleExhaustedPro = "لقد نفدت أرصدتك"
+unlimitedApiAccess = "وصول API غير محدود"
+unlimitedMonthlyCredits = "ترخيص موقع"
+unlimitedSeats = "مقاعد غير محدودة"
+
+[credits.modal.features]
+everythingInCredits = "كل ما في الأرصدة، بالإضافة إلى:"
+everythingInFree = "كل ما في المجاني، بالإضافة إلى:"
+forRegularWork = "لأعمال PDF الاعتيادية:"
 
 [crop]
 autoCrop = "اقتصاص تلقائي للمساحات البيضاء"
@@ -3352,6 +3428,9 @@ successBodyWithName = "تمت إزالة كلمة المرور من {{fileName}}
 successTitle = "تمت إزالة كلمة المرور"
 title = "أزل كلمة المرور للمتابعة"
 unlock = "فتح القفل والمتابعة"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "افتح قفل PDF للمتابعة"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "إضافة ملفات"
 [fileManager]
 active = "نشط"
 addToUpload = "إضافة إلى الرفع"
+changesNotUploaded = "لم تُرفع التغييرات"
 clearAll = "مسح الكل"
 clearSelection = "مسح التحديد"
 clickToUpload = "انقر لتحميل الملفات"
 closeFile = "إغلاق الملف"
+cloudFile = "ملف سحابي"
+copyCreated = "تم حفظ نسخة على هذا الجهاز."
+copyFailed = "تعذّر إنشاء نسخة."
 delete = "حذف"
 deleteAll = "حذف الكل"
 deleteSelected = "حذف المحدد"
@@ -3486,14 +3569,24 @@ fileSize = "الحجم"
 filesSelected = "ملفات محددة"
 filesStored = "ملفات مخزّنة"
 fileVersion = "الإصدار"
+filterAll = "الكل"
+filterLocal = "محلي"
+filterSharedByMe = "مشترك بواسطتي"
+filterSharedWithMe = "مشترك معي"
 googleDrive = "Google Drive"
 googleDriveNotAvailable = "تكامل Google Drive غير متاح"
 googleDriveShort = "Drive"
 hideHistory = "إخفاء السجلّ"
 lastModified = "آخر تعديل"
+lastSynced = "آخر مزامنة"
+leaveShare = "إزالة من قائمتي"
+leaveShareFailed = "تعذّر إزالة الملف المشترك."
+leaveShareSuccess = "تمت الإزالة من قائمتك المشتركة."
 loadingFiles = "جارٍ تحميل الملفات..."
 loadingHistory = "جارٍ تحميل السجلّ..."
 localFiles = "الملفات المحلية"
+localOnly = "محلي فقط"
+makeCopy = "إنشاء نسخة"
 mobileShort = "الهاتف"
 mobileUpload = "رفع من الهاتف المحمول"
 mobileUploadNotAvailable = "الرفع من الهاتف غير مُمكّن"
@@ -3506,36 +3599,10 @@ openFile = "فتح ملف"
 openFiles = "فتح ملفات"
 openInFileEditor = "فتح في محرر الملفات"
 openInPageEditor = "فتح في محرّر الصفحات"
+owner = "المالك"
+ownerUnknown = "غير معروف"
 recent = "الأخيرة"
 reloadFiles = "إعادة تحميل الملفات"
-restore = "استعادة"
-saveSelected = "حفظ المحدد"
-searchFiles = "ابحث في الملفات..."
-selectAll = "تحديد الكل"
-selectedCount = "{{count}} محدد"
-selectedFiles = "الملفات المحددة"
-showAll = "عرض الكل"
-showHistory = "عرض السجلّ"
-sortByDate = "فرز حسب التاريخ"
-sortByName = "فرز حسب الاسم"
-sortBySize = "فرز حسب الحجم"
-storage = "التخزين"
-storageCleared = "مسح المتصفح التخزين. تمت إزالة الملفات. يرجى إعادة الرفع."
-storageError = "حدث خطأ في التخزين"
-storageLow = "سعة التخزين توشك على النفاد. فكّر في إزالة الملفات القديمة."
-subtitle = "أضف ملفاتك إلى التخزين للوصول إليها بسهولة عبر الأدوات"
-supportMessage = "مدعوم بتخزين قاعدة بيانات المتصفح لسعة غير محدودة"
-title = "تحميل ملفات PDF"
-toolChain = "الأدوات المطبّقة"
-totalSelected = "الإجمالي المحدد"
-unsupported = "غير مدعوم"
-unzip = "فك الضغط"
-uploadError = "فشل تحميل بعض الملفات."
-copyCreated = "تم حفظ نسخة على هذا الجهاز."
-copyFailed = "تعذّر إنشاء نسخة."
-leaveShare = "إزالة من قائمتي"
-leaveShareFailed = "تعذّر إزالة الملف المشترك."
-leaveShareSuccess = "تمت الإزالة من قائمتك المشتركة."
 removeBoth = "إزالة من كليهما"
 removeFilePrompt = "هذا الملف محفوظ على هذا الجهاز وعلى خادمك. من أين ترغب في إزالته؟"
 removeFileTitle = "إزالة الملف"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "تمت الإزالة من الخادم."
 removeSharedPrompt = "هذا الملف مشترك معك. يمكنك إزالته من هذا الجهاز أو من قائمتك المشتركة."
 removeSharedServerOnlyBlockedPrompt = "هذا الملف مشترك معك ومخزّن فقط على الخادم."
 removeSharedServerOnlyPrompt = "هذا الملف مشترك معك ومخزّن فقط على الخادم. هل تود إزالته من قائمتك؟"
-changesNotUploaded = "لم تُرفع التغييرات"
-cloudFile = "ملف سحابي"
-filterAll = "الكل"
-filterLocal = "محلي"
-filterSharedByMe = "مشترك بواسطتي"
-filterSharedWithMe = "مشترك معي"
-lastSynced = "آخر مزامنة"
-localOnly = "محلي فقط"
-makeCopy = "إنشاء نسخة"
-owner = "المالك"
-ownerUnknown = "غير معروف"
+restore = "استعادة"
+saveSelected = "حفظ المحدد"
+searchFiles = "ابحث في الملفات..."
+selectAll = "تحديد الكل"
+selectedCount = "{{count}} محدد"
+selectedFiles = "الملفات المحددة"
 share = "مشاركة"
-shareSelected = "مشاركة المحدد"
 sharedByYou = "مشترك بواسطتك"
 sharedEditNoticeBody = "ليس لديك حقوق تحرير لنسخة الخادم من هذا الملف. سيتم حفظ أي تعديلات تجريها كنسخة محلية."
 sharedEditNoticeConfirm = "حسنًا"
 sharedEditNoticeTitle = "نسخة خادم للعرض فقط"
 sharedWithYou = "مشترك معك"
+shareSelected = "مشاركة المحدد"
 sharing = "مشاركة"
+showAll = "عرض الكل"
+showHistory = "عرض السجلّ"
+sortByDate = "فرز حسب التاريخ"
+sortByName = "فرز حسب الاسم"
+sortBySize = "فرز حسب الحجم"
+storage = "التخزين"
+storageCleared = "مسح المتصفح التخزين. تمت إزالة الملفات. يرجى إعادة الرفع."
+storageError = "حدث خطأ في التخزين"
+storageLow = "سعة التخزين توشك على النفاد. فكّر في إزالة الملفات القديمة."
 storageState = "التخزين"
+subtitle = "أضف ملفاتك إلى التخزين للوصول إليها بسهولة عبر الأدوات"
+supportMessage = "مدعوم بتخزين قاعدة بيانات المتصفح لسعة غير محدودة"
 synced = "تمت المزامنة"
+title = "تحميل ملفات PDF"
+toolChain = "الأدوات المطبّقة"
+totalSelected = "الإجمالي المحدد"
+unsupported = "غير مدعوم"
+unzip = "فك الضغط"
 updateOnServer = "تحديث على الخادم"
+uploadError = "فشل تحميل بعض الملفات."
 uploadSelected = "رفع المحدد"
 uploadToServer = "رفع إلى الخادم"
 
@@ -3696,77 +3775,6 @@ title = "حول تسطيح ملفات PDF"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "نبذة عن التوقيع الجماعي"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "تُطبَّق جميع التواقيع حسب ترتيب المشاركين الذي حددته"
-bullet2 = "يمكنك الإنهاء بتواقيع جزئية عند الحاجة"
-bullet3 = "بعد الإنهاء، لا يمكن تعديل الجلسة"
-description = "عند توقيع جميع المشاركين (أو إذا اخترت الإنهاء مبكرًا)، يمكنك إنشاء ملف PDF النهائي الموقّع."
-title = "عملية الإنهاء"
-
-[groupSigning.tooltip.roles]
-bullet1 = "المالك (أنت): ينشئ الجلسة، يضبط افتراضات التوقيع، ينهي المستند"
-bullet2 = "المشاركون: ينشئون توقيعهم، يختارون الشهادة، يضعونها على ملف PDF"
-bullet3 = "لا يمكن للمشاركين تعديل إعدادات الظهور أو السبب أو الموقع للتوقيع"
-description = "أنت تتحكم في إعدادات مظهر التوقيع لجميع المشاركين."
-title = "أدوار المشاركين"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "يجب أن يوقّع المشارك الأول قبل أن يتمكن الثاني من الوصول إلى المستند"
-bullet2 = "يضمن ترتيب توقيع مناسبًا للامتثال القانوني"
-bullet3 = "يمكنك إعادة ترتيب المشاركين بسحبهم في القائمة"
-description = "يوقّع المشاركون المستندات بالترتيب الذي تحدده. يتلقى كل موقّع إشعارًا عندما يحين دوره."
-title = "التوقيع المتسلسل"
-
-[groupSigning.steps]
-back = "رجوع"
-completed = "مكتمل"
-current = "حالي"
-stepLabel = "الخطوة {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "المتابعة إلى المراجعة"
-invisible = "ستكون التواقيع غير مرئية (بيانات وصفية فقط)"
-locationLabel = "الموقع:"
-preview = "معاينة"
-reasonLabel = "السبب:"
-title = "تهيئة إعدادات التوقيع"
-visible = "ستكون التواقيع مرئية على الصفحة {{page}}"
-
-[groupSigning.steps.review]
-document = "المستند"
-dueDate = "تاريخ الاستحقاق (اختياري)"
-dueDatePlaceholder = "اختر تاريخ الاستحقاق..."
-invisible = "غير مرئي (بيانات وصفية فقط)"
-location = "الموقع:"
-logo = "الشعار:"
-logoHidden = "بدون شعار"
-logoShown = "يظهر شعار Stirling PDF"
-participants = "المشاركون"
-reason = "السبب:"
-send = "إرسال طلبات التوقيع"
-signatureSettings = "إعدادات التوقيع"
-title = "مراجعة تفاصيل الجلسة"
-titleShort = "مراجعة وإرسال"
-visibility = "الظهور:"
-visible = "مرئي على الصفحة {{page}}"
-participantCount = "{{count}} مشارك سيوقّعون بالترتيب"
-
-[groupSigning.steps.selectDocument]
-continue = "المتابعة لاختيار المشاركين"
-noFile = "يرجى اختيار ملف PDF واحد من ملفاتك النشطة لإنشاء جلسة توقيع."
-selectedFile = "المستند المحدد"
-title = "اختيار مستند"
-
-[groupSigning.steps.selectParticipants]
-continue = "المتابعة إلى إعدادات التوقيع"
-count = "تم اختيار {{count}} مشارك"
-label = "اختر المشاركين"
-placeholder = "اختر المشاركين للتوقيع..."
-title = "اختيار المشاركين"
-
 [getPdfInfo]
 downloadJson = "تحميل JSON"
 downloads = "التنزيلات"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "الطبقات"
 multimedia = "وسائط متعددة"
 
+[groupSigning.steps]
+back = "رجوع"
+completed = "مكتمل"
+current = "حالي"
+stepLabel = "الخطوة {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "المتابعة إلى المراجعة"
+invisible = "ستكون التواقيع غير مرئية (بيانات وصفية فقط)"
+locationLabel = "الموقع:"
+preview = "معاينة"
+reasonLabel = "السبب:"
+title = "تهيئة إعدادات التوقيع"
+visible = "ستكون التواقيع مرئية على الصفحة {{page}}"
+
+[groupSigning.steps.review]
+document = "المستند"
+dueDate = "تاريخ الاستحقاق (اختياري)"
+dueDatePlaceholder = "اختر تاريخ الاستحقاق..."
+invisible = "غير مرئي (بيانات وصفية فقط)"
+location = "الموقع:"
+logo = "الشعار:"
+logoHidden = "بدون شعار"
+logoShown = "يظهر شعار Stirling PDF"
+participantCount = "{{count}} مشارك سيوقّعون بالترتيب"
+participants = "المشاركون"
+reason = "السبب:"
+send = "إرسال طلبات التوقيع"
+signatureSettings = "إعدادات التوقيع"
+title = "مراجعة تفاصيل الجلسة"
+titleShort = "مراجعة وإرسال"
+visibility = "الظهور:"
+visible = "مرئي على الصفحة {{page}}"
+
+[groupSigning.steps.selectDocument]
+continue = "المتابعة لاختيار المشاركين"
+noFile = "يرجى اختيار ملف PDF واحد من ملفاتك النشطة لإنشاء جلسة توقيع."
+selectedFile = "المستند المحدد"
+title = "اختيار مستند"
+
+[groupSigning.steps.selectParticipants]
+continue = "المتابعة إلى إعدادات التوقيع"
+count = "تم اختيار {{count}} مشارك"
+label = "اختر المشاركين"
+placeholder = "اختر المشاركين للتوقيع..."
+title = "اختيار المشاركين"
+
+[groupSigning.tooltip]
+header = "نبذة عن التوقيع الجماعي"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "تُطبَّق جميع التواقيع حسب ترتيب المشاركين الذي حددته"
+bullet2 = "يمكنك الإنهاء بتواقيع جزئية عند الحاجة"
+bullet3 = "بعد الإنهاء، لا يمكن تعديل الجلسة"
+description = "عند توقيع جميع المشاركين (أو إذا اخترت الإنهاء مبكرًا)، يمكنك إنشاء ملف PDF النهائي الموقّع."
+title = "عملية الإنهاء"
+
+[groupSigning.tooltip.roles]
+bullet1 = "المالك (أنت): ينشئ الجلسة، يضبط افتراضات التوقيع، ينهي المستند"
+bullet2 = "المشاركون: ينشئون توقيعهم، يختارون الشهادة، يضعونها على ملف PDF"
+bullet3 = "لا يمكن للمشاركين تعديل إعدادات الظهور أو السبب أو الموقع للتوقيع"
+description = "أنت تتحكم في إعدادات مظهر التوقيع لجميع المشاركين."
+title = "أدوار المشاركين"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "يجب أن يوقّع المشارك الأول قبل أن يتمكن الثاني من الوصول إلى المستند"
+bullet2 = "يضمن ترتيب توقيع مناسبًا للامتثال القانوني"
+bullet3 = "يمكنك إعادة ترتيب المشاركين بسحبهم في القائمة"
+description = "يوقّع المشاركون المستندات بالترتيب الذي تحدده. يتلقى كل موقّع إشعارًا عندما يحين دوره."
+title = "التوقيع المتسلسل"
+
 [guestBanner]
 dismiss = "إخفاء الشريط"
 message = "أنشئ حسابًا مجانيًا لحفظ عملك، والوصول إلى مزيد من الميزات، ودعم المشروع."
@@ -3935,10 +4014,6 @@ title = "تعليق"
 desc = "ابنِ تدفّقات عمل متعددة الخطوات بسلسلة إجراءات PDF. مثالي للمهام المتكررة."
 tags = "سير عمل،تسلسل،أتمتة"
 title = "أتمتة"
-
-[home.formFill]
-desc = "املأ حقول نموذج PDF بشكل تفاعلي باستخدام محرر مرئي"
-title = "تعبئة نموذج"
 
 [home.autoRename]
 desc = "إعادة تسمية ملف PDF تلقائيًا استنادًا إلى العنوان المكتشف"
@@ -4034,6 +4109,10 @@ title = "استخراج الصفحات"
 desc = "قم بإزالة كافة العناصر والنماذج التفاعلية من ملف PDF"
 tags = "تبسيط،إزالة،تفاعلي"
 title = "تسطيح"
+
+[home.formFill]
+desc = "املأ حقول نموذج PDF بشكل تفاعلي باستخدام محرر مرئي"
+title = "تعبئة نموذج"
 
 [home.getPdfInfo]
 desc = "يجمع أي وكل المعلومات الممكنة عن ملفات PDF"
@@ -4185,11 +4264,6 @@ desc = "إضافة التوقيع إلى PDF عن طريق الرسم أو ال�
 tags = "توقيع،إمضاء"
 title = "توقيع"
 
-[home.timestampPdf]
-desc = "أضف طابعًا زمنيًا للمستند وفق RFC 3161 لإثبات وقت وجود ملف PDF الخاص بك"
-tags = "طابع زمني,RFC 3161,TSA,سلطة ختم الوقت,طابع زمني للمستند,إثبات الوجود,رمز الطابع الزمني,طابع زمني موثوق,توقيع الطابع الزمني,توثيق"
-title = "إضافة طابع زمني لـ PDF"
-
 [home.split]
 desc = "تقسيم ملفات PDF إلى مستندات متعددة"
 tags = "تقسيم،فصل،تجزئة"
@@ -4209,6 +4283,11 @@ title = "تقسيم PDF حسب الأقسام"
 desc = "عرض توثيق API واختبار المسارات النهائية"
 tags = "API،توثيق،اختبار"
 title = "توثيق API"
+
+[home.timestampPdf]
+desc = "أضف طابعًا زمنيًا للمستند وفق RFC 3161 لإثبات وقت وجود ملف PDF الخاص بك"
+tags = "طابع زمني,RFC 3161,TSA,سلطة ختم الوقت,طابع زمني للمستند,إثبات الوجود,رمز الطابع الزمني,طابع زمني موثوق,توقيع الطابع الزمني,توثيق"
+title = "إضافة طابع زمني لـ PDF"
 
 [home.unlockPDFForms]
 desc = "إزالة خاصية القراءة فقط لحقول النماذج في مستند PDF."
@@ -4298,6 +4377,8 @@ welcomeTitle = "لقد تمت دعوتك!"
 
 [landing]
 addFiles = "إضافة ملفات"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "رفع من الهاتف المحمول"
 openFromComputer = "فتح من الكمبيوتر"
 uploadFromComputer = "الرفع من الكمبيوتر"
@@ -4321,6 +4402,18 @@ module = "الوحدة"
 nav = "التراخيص"
 title = "تراخيص الطرف الثالث"
 version = "الإصدار"
+
+[localMode]
+toolUnavailable = "هذه الأداة تتطلب حسابًا. سجّل الدخول إلى Stirling Cloud أو اتصل بخادم مُستضاف ذاتيًا لاستخدامها."
+
+[localMode.banner]
+message = "سجّل الدخول لإلغاء قفل جميع الأدوات."
+signIn = "تسجيل الدخول"
+title = "يعمل محليًا"
+
+[localMode.toolPicker]
+message = "سجّل الدخول لإلغاء قفل جميع الأدوات."
+signIn = "تسجيل الدخول"
 
 [login]
 accountCreatedSuccess = "تم إنشاء الحساب بنجاح! يمكنك الآن تسجيل الدخول."
@@ -4382,12 +4475,12 @@ sendResetLink = "إرسال رابط إعادة التعيين"
 sessionExpired = "انتهت صلاحية جلستك. يرجى تسجيل الدخول مجددًا."
 signin = "تسجيل الدخول"
 signInAnonymously = "التسجيل كضيف"
-subtitle = "سجّل الدخول مجددًا إلى Stirling PDF"
 signingIn = "جارٍ تسجيل الدخول..."
 signinTitle = "الرجاء تسجيل الدخول"
 signInWith = "تسجيل الدخول بواسطة"
 signOut = "تسجيل الخروج"
 ssoSignIn = "تسجيل الدخول عبر تسجيل الدخول الأحادي"
+subtitle = "سجّل الدخول مجددًا إلى Stirling PDF"
 title = "تسجيل الدخول"
 toManySessions = "لديك عدة جلسات نشطة"
 unexpectedError = "خطأ غير متوقع: {{message}}"
@@ -4430,9 +4523,11 @@ tags = "لغة الترميز,محتوى الويب,تحويل,تحويل"
 title = "Markdown إلى PDF"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "دمج"
 tags = "دمج,عمليات الصفحة,الخلفية,جانب الخادم"
 title = "دمج"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "حدث خطأ أثناء دمج ملفات PDF."
@@ -4701,15 +4796,6 @@ viewSwitcher = "استخدم هذه الضوابط لاختيار طريقة ع�
 workbench = "هذه هي <strong>منضدة العمل</strong> — المنطقة الرئيسية لعرض ملفات PDF وتحريرها."
 wrapUp = "أنت جاهز! تعرّفت على المناطق الرئيسية في التطبيق وكيفية استخدامها. انقر زر <strong>المساعدة</strong> متى شئت لعرض هذه الجولة مرة أخرى."
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "بعد انتهاء تجربتك، ستستمر على المستوى المجاني. أضف طريقة دفع للاحتفاظ بوصول Pro."
-afterTrialWithPayment = "سيبدأ اشتراك Pro تلقائيًا عند انتهاء التجربة."
-body = "لديك وصول كامل إلى ميزات Stirling PDF Pro أثناء التجربة. استمتع بتحويلات غير محدودة، وأحجام ملفات أكبر، ومعالجة ذات أولوية."
-daysRemaining = "{{days}} يومًا متبقيًا"
-daysRemainingSingular = "{{days}} يوم متبقٍ"
-title = "تجربة Pro لمدة 30 يومًا"
-trialEnds = "تنتهي التجربة في {{date}}"
-
 [onboarding.buttons]
 back = "رجوع"
 download = "تنزيل →"
@@ -4722,6 +4808,15 @@ skipTheTour = "تخطي الجولة"
 body = "يعمل Stirling بشكل أفضل كتطبيق سطح مكتب. يمكنك استخدامه دون اتصال، والوصول إلى المستندات بسرعة أكبر، وإجراء التعديلات محلياً على جهازك."
 title = "تنزيل"
 titleWithOs = "تنزيل لـ {{osLabel}}"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "بعد انتهاء تجربتك، ستستمر على المستوى المجاني. أضف طريقة دفع للاحتفاظ بوصول Pro."
+afterTrialWithPayment = "سيبدأ اشتراك Pro تلقائيًا عند انتهاء التجربة."
+body = "لديك وصول كامل إلى ميزات Stirling PDF Pro أثناء التجربة. استمتع بتحويلات غير محدودة، وأحجام ملفات أكبر، ومعالجة ذات أولوية."
+daysRemaining = "{{days}} يومًا متبقيًا"
+daysRemainingSingular = "{{days}} يوم متبقٍ"
+title = "تجربة Pro لمدة 30 يومًا"
+trialEnds = "تنتهي التجربة في {{date}}"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "بمجرد تمكين وضع تسجيل الدخول، يمكنك إدارة المستخدمين، وضبط الإعدادات، ومراقبة حالة الخادم. أول <strong>{{freeTierLimit}}</strong> شخصاً على خادمك يستخدمون Stirling مجاناً."
@@ -4858,126 +4953,6 @@ title = "محرر الصفحات"
 zoomIn = "تكبير"
 zoomOut = "تصغير"
 
-[viewer]
-cannotPreviewFile = "لا يمكن معاينة الملف"
-disableColorFilter = "تعطيل مرشح الألوان"
-dualPageView = "عرض صفحتين"
-enableDarkFilter = "تمكين المرشح الداكن"
-enableSepiaFilter = "تمكين مرشح سيبيا"
-firstPage = "الصفحة الأولى"
-lastPage = "الصفحة الأخيرة"
-nextPage = "الصفحة التالية"
-onlyPdfSupported = "عارض الملفات يدعم ملفات PDF فقط. يبدو أن هذا الملف بتنسيق مختلف."
-previousPage = "الصفحة السابقة"
-singlePageView = "عرض صفحة واحدة"
-unknownFile = "ملف غير معروف"
-zoomIn = "تكبير"
-zoomOut = "تصغير"
-resetZoom = "إعادة ضبط التكبير"
-
-[viewer.nonPdf]
-fileTypeBadge = "ملف {{type}}"
-convertToPdf = "التحويل إلى PDF"
-loading = "جارٍ التحميل..."
-emptyFile = "ملف فارغ"
-csvStats = "{{rows}} صفوف · {{columns}} أعمدة · {{size}}"
-sortedBy = "مرتّب حسب: {{column}}"
-columnDefault = "العمود {{index}}"
-htmlPreviewWarning = "معاينة HTML — قد لا يتم تحميل الموارد الخارجية · {{size}}"
-htmlPreview = "معاينة HTML"
-invalidJson = "JSON غير صالح — عرض المحتوى الخام"
-textStats = "{{lines}} أسطر · {{size}}"
-lineNumbers = "أرقام الأسطر"
-renderMarkdown = "عرض Markdown"
-
-[viewer.attachments]
-title = "المرفقات"
-searchPlaceholder = "ابحث في المرفقات"
-noSupport = "دعم المرفقات غير متاح في هذا العارض."
-noDocument = "افتح ملف PDF لعرض مرفقاته."
-loading = "جارٍ تحميل المرفقات..."
-empty = "لا توجد مرفقات في هذا المستند"
-noMatch = "لا توجد مرفقات تطابق بحثك"
-
-[viewer.comments]
-title = "التعليقات"
-hint = "ضع التعليقات باستخدام أدوات تعليق، إدراج نص، أو استبدال نص. ستظهر هنا بحسب الصفحة."
-placeholder = "اكتب تعليقك..."
-pageLabel = "الصفحة {{page}}"
-oneComment = "تعليق واحد"
-nComments = "{{count}} تعليقات"
-addCommentPlaceholder = "إضافة تعليق..."
-addLink = "إضافة رابط"
-goToLink = "الانتقال إلى الرابط"
-addComment = "إضافة تعليق"
-viewComment = "عرض التعليق"
-addReplyPlaceholder = "إضافة رد..."
-saveReply = "حفظ الرد"
-send = "إرسال"
-moreActions = "إجراءات أخرى"
-typeComment = "تعليق"
-typeInsertText = "إدراج نص"
-typeReplaceText = "استبدال نص"
-locateAnnotation = "تحديد الموقع في المستند"
-deleteTitle = "إزالة التعليق التوضيحي من التعليقات؟"
-deleteDescription = "يحتوي هذا التعليق التوضيحي على تعليق مرفق. يمكنك إزالة التعليق فقط من الشريط الجانبي مع إبقاء التعليق التوضيحي، أو حذف كل شيء."
-removeCommentOnly = "إزالة التعليق فقط"
-deleteAnnotationAndComment = "حذف التعليق التوضيحي والتعليق"
-
-[viewer.formBar]
-title = "حقول النموذج"
-unsavedBadge = "غير محفوظ"
-unsavedDesc = "لديك تغييرات غير محفوظة"
-hasFieldsDesc = "يحتوي ملف PDF هذا على حقول قابلة للتعبئة"
-dismiss = "تجاهل"
-apply = "تطبيق التغييرات"
-download = "تنزيل PDF"
-
-[rightRail]
-closeSelected = "إغلاق الصفحات المحددة"
-selectAll = "تحديد الكل"
-deselectAll = "إلغاء تحديد الكل"
-selectByNumber = "تحديد حسب أرقام الصفحات"
-deleteSelected = "حذف الصفحات المحددة"
-closePdf = "إغلاق PDF"
-exportAll = "تصدير PDF"
-downloadSelected = "تنزيل الملفات المحددة"
-annotations = "تعليقات"
-exportSelected = "تصدير الصفحات المحددة"
-formFill = "تعبئة نموذج"
-saveChanges = "حفظ التغييرات"
-toggleAttachments = "إظهار/إخفاء المرفقات"
-toggleTheme = "تبديل السِمة"
-language = "اللغة"
-toggleAnnotations = "تبديل ظهور التعليقات التوضيحية"
-toggleLayers = "تبديل الطبقات"
-search = "بحث في PDF"
-panMode = "وضع السحب"
-applyRedactionsFirst = "طبّق التنقيحات أولًا"
-rotateLeft = "تدوير لليسار"
-rotateRight = "تدوير لليمين"
-toggleSidebar = "تبديل الشريط الجانبي"
-toggleBookmarks = "تبديل الإشارات المرجعية"
-toggleComments = "التعليقات"
-print = "طباعة PDF"
-ruler = "مسطرة/قياس"
-readAloud = "القراءة بصوت عالٍ"
-readAloudSpeed = "السرعة"
-readAloudLanguage = "اللغة"
-selectLanguage = "اختر اللغة"
-draw = "رسم"
-redact = "تنقيح"
-exitRedaction = "الخروج من وضع التنقيح"
-save = "حفظ"
-downloadAll = "تنزيل الكل"
-saveAll = "حفظ الكل"
-saveAs = "حفظ باسم"
-
-[textAlign]
-left = "يسار"
-center = "وسط"
-right = "يمين"
-
 [pageExtracter]
 header = "استخراج الصفحات"
 placeholder = "(مثال: 1,2,8 أو 4,7,12-16 أو 2n-1)"
@@ -5000,10 +4975,24 @@ tags = "دمج,مركب,عرض واحد,تنظيم"
 title = "تخطيط متعدد الصفحات"
 top = "الهامش العلوي"
 
-[pageLayout.mode]
-default = "افتراضي"
-custom = "مخصص"
-label = "الوضع:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "حسب الصفوف: إكمال كل صف أولًا."
+bullet2 = "حسب الأعمدة: إكمال كل عمود أولًا."
+text = "يحدّد ما إذا كانت الصفحات تملأ الشبكة صفًا بصف أو عمودًا بعمود."
+title = "ترتيب الصفحات"
+
+[pageLayout.advanced.tooltip.header]
+title = "خيارات التخطيط المتقدمة"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "اختر اتجاه الورقة النهائي. يعمل العمودي أفضل للمحتوى الطويل، بينما يناسب الأفقي التخطيطات الأعرض."
+title = "الاتجاه"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR: ترتيب من اليسار إلى اليمين."
+bullet2 = "RTL: ترتيب من اليمين إلى اليسار."
+text = "يضبط الترتيب الأفقي في الشبكة، مفيدًا لأعراف المستندات من اليسار لليمين ومن اليمين لليسار."
+title = "اتجاه القراءة"
 
 [pageLayout.arrangement]
 byColumns = "حسب الأعمدة"
@@ -5018,100 +5007,86 @@ label = "ترتيب الصفحات:"
 
 [pageLayout.error]
 failed = "حدث خطأ أثناء إنشاء تخطيط الصفحات المتعددة."
-outerVerticalMarginsTooLarge = "الهوامش العلوية/السفلية كبيرة جدًا لهذا المقاس من الصفحات."
-outerHorizontalMarginsTooLarge = "الهوامش اليسرى/اليمنى كبيرة جدًا لهذا المقاس من الصفحات."
 innerMarginTooLarge = "الهامش الداخلي كبير جدًا بالنسبة للتخطيط المحدد."
+outerHorizontalMarginsTooLarge = "الهوامش اليسرى/اليمنى كبيرة جدًا لهذا المقاس من الصفحات."
+outerVerticalMarginsTooLarge = "الهوامش العلوية/السفلية كبيرة جدًا لهذا المقاس من الصفحات."
 
-[pageLayout.orientation]
-landscape = "أفقي"
-portrait = "عمودي"
-label = "الاتجاه:"
-
-[pageLayout.readingDirection]
-ltr = "من اليسار إلى اليمين"
-rtl = "من اليمين إلى اليسار"
-label = "اتجاه القراءة:"
-
-[pageLayout.tooltip.header]
-title = "دليل تخطيط الصفحة"
-
-[pageLayout.tooltip.overview]
-title = "ما هو تخطيط الصفحة؟"
-text = "ضع عدة صفحات على ورقة واحدة للنشرات أو لتوفير الورق."
-
-[pageLayout.tooltip.mode]
-title = "الوضع"
-text = "اختر كيفية تهيئة الشبكة:"
-bullet1 = "افتراضي: اختر إعدادًا مسبقًا وسيُحسب التخطيط تلقائيًا."
-bullet2 = "مخصص: عيّن الصفوف والأعمدة يدويًا."
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "صفحات لكل ورقة (الوضع الافتراضي)"
-text = "اختر عدد الصفحات لكل ورقة (مثال: 4 → 2×2، 9 → 3×3)."
-
-[pageLayout.tooltip.rowsCols]
-title = "الصفوف والأعمدة (الوضع المخصص)"
-text = "عيّن أبعاد الشبكة بدقة. إجمالي الصفحات لكل ورقة = الصفوف × الأعمدة."
-
-[pageLayout.tooltip.orientation]
-title = "الاتجاه"
-text = "يضبط اتجاه الورقة الناتجة:"
-bullet1 = "عمودي: أطول من عرضه."
-bullet2 = "أفقي: أعرض من طوله."
-
-[pageLayout.tooltip.arrangement]
-title = "ترتيب الصفحات"
-text = "يتحكم بترتيب ملء الصفحات للشبكة:"
-bullet1 = "حسب الصفوف: تعبئة صفًا تلو الآخر (من اليسار إلى اليمين أو من اليمين إلى اليسار)."
-bullet2 = "حسب الأعمدة: تعبئة من الأعلى إلى الأسفل، عمودًا تلو الآخر."
-
-[pageLayout.tooltip.readingDirection]
-title = "اتجاه القراءة"
-text = "يتحكم بالترتيب الأفقي للصفحات:"
-bullet1 = "LTR: من اليسار إلى اليمين."
-bullet2 = "RTL: من اليمين إلى اليسار."
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "فعّل الحدود لرسم خطوط حول كل صفحة موضوعة. يساعد ذلك على الفصل البصري أو القص."
 title = "إضافة حدود"
-text = "يرسم خطوط حدود حول كل خلية صفحة للدلالة على القص أو للفصل البصري."
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "يُطبَّق سُمك الحدود فقط عند تفعيل الحدود. القيم الأعلى تنتج خطوطًا أكثر سُمكًا."
+title = "سماكة الحدود"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "الهوامش والحدود"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "الهوامش"
-text = "استخدم الهوامش العلوية والسفلية واليسرى واليمنى للتحكم في التباعد حول ورقة الإخراج كاملة."
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "الهامش الداخلي"
 text = "الهامش الداخلي يضيف تباعدًا بين خلايا شبكة الصفحات لتحسين الفصل والقراءة."
+title = "الهامش الداخلي"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "استخدم الهوامش العلوية والسفلية واليسرى واليمنى للتحكم في التباعد حول ورقة الإخراج كاملة."
+title = "الهوامش"
+
+[pageLayout.mode]
+custom = "مخصص"
+default = "افتراضي"
+label = "الوضع:"
+
+[pageLayout.orientation]
+label = "الاتجاه:"
+landscape = "أفقي"
+portrait = "عمودي"
+
+[pageLayout.readingDirection]
+label = "اتجاه القراءة:"
+ltr = "من اليسار إلى اليمين"
+rtl = "من اليمين إلى اليسار"
+
+[pageLayout.tooltip.addBorder]
+text = "يرسم خطوط حدود حول كل خلية صفحة للدلالة على القص أو للفصل البصري."
 title = "إضافة حدود"
-text = "فعّل الحدود لرسم خطوط حول كل صفحة موضوعة. يساعد ذلك على الفصل البصري أو القص."
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "سماكة الحدود"
-text = "يُطبَّق سُمك الحدود فقط عند تفعيل الحدود. القيم الأعلى تنتج خطوطًا أكثر سُمكًا."
-
-[pageLayout.advanced.tooltip.header]
-title = "خيارات التخطيط المتقدمة"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "الاتجاه"
-text = "اختر اتجاه الورقة النهائي. يعمل العمودي أفضل للمحتوى الطويل، بينما يناسب الأفقي التخطيطات الأعرض."
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "حسب الصفوف: تعبئة صفًا تلو الآخر (من اليسار إلى اليمين أو من اليمين إلى اليسار)."
+bullet2 = "حسب الأعمدة: تعبئة من الأعلى إلى الأسفل، عمودًا تلو الآخر."
+text = "يتحكم بترتيب ملء الصفحات للشبكة:"
 title = "ترتيب الصفحات"
-text = "يحدّد ما إذا كانت الصفحات تملأ الشبكة صفًا بصف أو عمودًا بعمود."
-bullet1 = "حسب الصفوف: إكمال كل صف أولًا."
-bullet2 = "حسب الأعمدة: إكمال كل عمود أولًا."
 
-[pageLayout.advanced.tooltip.readingDirection]
+[pageLayout.tooltip.header]
+title = "دليل تخطيط الصفحة"
+
+[pageLayout.tooltip.mode]
+bullet1 = "افتراضي: اختر إعدادًا مسبقًا وسيُحسب التخطيط تلقائيًا."
+bullet2 = "مخصص: عيّن الصفوف والأعمدة يدويًا."
+text = "اختر كيفية تهيئة الشبكة:"
+title = "الوضع"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "عمودي: أطول من عرضه."
+bullet2 = "أفقي: أعرض من طوله."
+text = "يضبط اتجاه الورقة الناتجة:"
+title = "الاتجاه"
+
+[pageLayout.tooltip.overview]
+text = "ضع عدة صفحات على ورقة واحدة للنشرات أو لتوفير الورق."
+title = "ما هو تخطيط الصفحة؟"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "اختر عدد الصفحات لكل ورقة (مثال: 4 → 2×2، 9 → 3×3)."
+title = "صفحات لكل ورقة (الوضع الافتراضي)"
+
+[pageLayout.tooltip.readingDirection]
+bullet1 = "LTR: من اليسار إلى اليمين."
+bullet2 = "RTL: من اليمين إلى اليسار."
+text = "يتحكم بالترتيب الأفقي للصفحات:"
 title = "اتجاه القراءة"
-text = "يضبط الترتيب الأفقي في الشبكة، مفيدًا لأعراف المستندات من اليسار لليمين ومن اليمين لليسار."
-bullet1 = "LTR: ترتيب من اليسار إلى اليمين."
-bullet2 = "RTL: ترتيب من اليمين إلى اليسار."
+
+[pageLayout.tooltip.rowsCols]
+text = "عيّن أبعاد الشبكة بدقة. إجمالي الصفحات لكل ورقة = الصفوف × الأعمدة."
+title = "الصفوف والأعمدة (الوضع المخصص)"
 
 [pageRemover]
 header = "مزيل صفحة PDF"
@@ -5197,6 +5172,9 @@ title = "نصائح"
 autoClose = "سيتم إغلاق هذه النافذة تلقائيًا..."
 billingPeriod = "فترة الفوترة"
 canCloseWindow = "يمكنك الآن إغلاق هذه النافذة."
+checkoutInstructions = "أكمل عملية الشراء في نافذة المتصفح التي فُتحت للتو. بعد اكتمال الدفع، عُد إلى هنا وانقر الزر أدناه لتحديث معلومات الفوترة."
+checkoutOpened = "تم فتح صفحة الدفع في المتصفح"
+closeLater = "سأفعل ذلك لاحقًا"
 emailInvalid = "يرجى إدخال عنوان بريد إلكتروني صالح"
 enterpriseNote = "يمكن تعديل المقاعد عند الدفع (1-1000)."
 error = "خطأ في الدفع"
@@ -5218,6 +5196,7 @@ perMonth = "/شهر"
 perYear = "/سنة"
 preparing = "جارٍ تجهيز عملية الدفع..."
 redirecting = "جارٍ التحويل إلى الدفع الآمن..."
+refreshBilling = "أتممتُ الدفع - تحديث الفوترة"
 stripeNotConfigured = "Stripe غير مُهيأ"
 stripeNotConfiguredMessage = "تكامل دفع Stripe غير مُعد. يرجى التواصل مع المسؤول."
 success = "تم الدفع بنجاح!"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "تمت ترقية اشتراكك بنجاح. تم تح
 upgradeSuccess = "تم الدفع بنجاح! تم ترقية اشتراكك. تم تحديث الترخيص على خادمك. ستتلقى رسالة تأكيد عبر البريد الإلكتروني قريباً."
 upgradeTitle = "الترقية إلى {{planName}}"
 yearly = "سنوي"
-checkoutOpened = "تم فتح صفحة الدفع في المتصفح"
-checkoutInstructions = "أكمل عملية الشراء في نافذة المتصفح التي فُتحت للتو. بعد اكتمال الدفع، عُد إلى هنا وانقر الزر أدناه لتحديث معلومات الفوترة."
-refreshBilling = "أتممتُ الدفع - تحديث الفوترة"
-closeLater = "سأفعل ذلك لاحقًا"
 
 [payment.emailStage]
 continue = "متابعة"
@@ -5456,13 +5431,6 @@ prompt = "اختر الصفحة لاستخراج الجدول"
 submit = "تحويل"
 title = "PDF إلى CSV"
 
-[PDFToXLSX]
-header = "PDF إلى Excel"
-prompt = "اختر الصفحات لاستخراج الجداول"
-submit = "تحويل"
-title = "PDF إلى Excel (XLSX)"
-tags = "جدول بيانات,excel,xlsx,جدول,استخراج,تحويل"
-
 [PDFToHTML]
 credit = "تستخدم هذه الخدمة pdftohtml لتحويل الملفات."
 header = "PDF إلى HTML"
@@ -5561,6 +5529,13 @@ title = "تحويل PDF إلى Word"
 [PDFToWord.selectText]
 1 = "تنسيق ملف الإخراج"
 
+[PDFToXLSX]
+header = "PDF إلى Excel"
+prompt = "اختر الصفحات لاستخراج الجداول"
+submit = "تحويل"
+tags = "جدول بيانات,excel,xlsx,جدول,استخراج,تحويل"
+title = "PDF إلى Excel (XLSX)"
+
 [PDFToXML]
 credit = "تستخدم هذه الخدمة LibreOffice لتحويل الملفات."
 header = "تحويل PDF إلى XML"
@@ -5626,10 +5601,10 @@ manage = "إدارة"
 perMonth = "/شهر"
 perSeat = "/مقعد"
 popular = "شائع"
-selectPlan = "اختيار الخطة"
-selectCredits = "اختر مقدار الأرصدة"
-showComparison = "قارن جميع الميزات"
 purchase = "شراء"
+selectCredits = "اختر مقدار الأرصدة"
+selectPlan = "اختيار الخطة"
+showComparison = "قارن جميع الميزات"
 totalCost = "التكلفة الإجمالية"
 upgrade = "ترقية"
 withServer = "+ خطة الخادم"
@@ -5638,19 +5613,29 @@ withServer = "+ خطة الخادم"
 subtitle = "تفاصيل اشتراكك الحالي"
 title = "الخطة النشطة"
 
+[plan.api]
+large = "5,000 رصيد"
+medium = "1,000 رصيد"
+small = "500 رصيد"
+xsmall = "100 رصيد"
+
+[plan.apiPackages]
+subtitle = "اشترِ أرصدة API لتطبيقاتك"
+title = "باقات أرصدة API"
+
 [plan.availablePlans]
-subtitle = "اختر الخطة التي تناسب احتياجاتك"
 loadError = "تعذّر تحميل أسعار الخطط. سيتم استخدام القيم الافتراضية."
+subtitle = "اختر الخطة التي تناسب احتياجاتك"
 title = "الخطط المتاحة"
 
 [plan.enterprise]
-siteLicense = "ترخيص موقع"
 highlight1 = "تسعير مخصص"
 highlight2 = "دعم مخصص"
 highlight3 = "أحدث الميزات"
 name = "مؤسسات"
 requiresServer = "يتطلب خادماً"
 requiresServerMessage = "يرجى الترقية إلى خطة الخادم أولاً قبل الترقية إلى Enterprise."
+siteLicense = "ترخيص موقع"
 
 [plan.feature]
 api = "وصول API"
@@ -5722,16 +5707,6 @@ successMessage = "تم تفعيل ترخيصك بنجاح. يمكنك الآن �
 name = "الفريق"
 siteLicense = "ترخيص موقع"
 
-[plan.api]
-large = "5,000 رصيد"
-medium = "1,000 رصيد"
-small = "500 رصيد"
-xsmall = "100 رصيد"
-
-[plan.apiPackages]
-subtitle = "اشترِ أرصدة API لتطبيقاتك"
-title = "باقات أرصدة API"
-
 [plan.trial]
 badge = "شارة"
 continueWithFree = "المتابعة بالمستوى المجاني"
@@ -5746,77 +5721,6 @@ subscribeToPro = "اشترك في Pro"
 subscriptionScheduled = "تم جدولة الاشتراك - يبدأ في {{date}}"
 title = "التجربة المجانية نشطة"
 
-[credits]
-enableOverageBilling = "تمكين فوترة التجاوز"
-maybeLater = "ربما لاحقًا"
-upgrade = "ترقية"
-
-[credits.modal]
-advancedMonitoring = "مراقبة متقدمة"
-allInOneWorkspace = "مساحة عمل PDF شاملة (عارض، أدوات ووكيل)"
-apiSandbox = "بيئة Sandbox لـ API"
-contactSales = "تواصل مع المبيعات"
-creditsRemaining = "متبقٍ {{current}} من {{total}}"
-creditsThisMonth = "أرصدة شهرية"
-current = "الخطة الحالية"
-customPricing = "مُخصص"
-customSmartFolders = "مجلدات ذكية مخصصة"
-dedicatedSupportSlas = "دعم مخصص واتفاقيات مستوى الخدمة (SLA)"
-enterpriseSubscription = "المؤسسات"
-everythingInCredits = "كل ما في الأرصدة، بالإضافة إلى:"
-everythingInFree = "كل ما في المجاني، بالإضافة إلى:"
-fasterThroughput = "إنتاجية أسرع 10 مرات"
-forRegularWork = "لأعمال PDF الاعتيادية:"
-freeTier = "المستوى المجاني"
-fullyPrivateFiles = "ملفات خاصة بالكامل"
-largeFileProcessing = "معالجة الملفات الكبيرة"
-managedMemberMessage = "لديك وصول غير محدود إلى الأرصدة عبر فريقك. إذا كنت بحاجة إلى مساعدة، يرجى التواصل مع قائد فريقك."
-managedMemberTitle = "أرصدة غير محدودة"
-meteringBillingNote = "تُفوتر أرصدة التجاوز شهريًا مع اشتراك خطة الفريق الخاصة بك. تتبع استخدامك في أي وقت من إعدادات حسابك."
-meteringExplanation = "تتضمن خطة الفريق لديك {{credits}} رصيدًا شهريًا. عند نفادها، توفّر فوترة التجاوز تلقائيًا أرصدة إضافية لكي لا تتوقف عن العمل."
-meteringIncluded = "{{credits}} رصيدًا/شهر مشمول مع خطة الفريق"
-meteringNoCommitment = "بدون التزام، يمكنك الإلغاء في أي وقت"
-meteringNeverRunOut = "لا تنفد الأرصدة مطلقًا"
-meteringPayAsYouGo = "ادفع فقط مقابل ما تستخدمه"
-meteringPrice = "أرصدة إضافية بسعر {{price}}/رصيد"
-meteringTitle = "فوترة التجاوز حسب الاستهلاك"
-monthlyCredits = "أرصدة شهرية"
-orgWideAccess = "ضوابط وصول على مستوى المؤسسة"
-overage = "تجاوز"
-perMonth = "/شهر"
-popular = "شائع"
-premiumAiModels = "نماذج ذكاء اصطناعي متميزة"
-prioritySupport = "دعم أولوية"
-privateDocCloud = "سحابة مستندات خاصة"
-ragFineTuning = "RAG + ضبط دقيق"
-secureApiAccess = "وصول API آمن"
-selfHostLink = "راجع المستندات والخطط"
-selfHostPrompt = "هل تريد الاستضافة الذاتية؟"
-standardThroughput = "إنتاجية قياسية"
-subtitle = "رقِّ إلى خطة الفريق لتحصل على أرصدة أكثر بـ 10 مرات ومعالجة أسرع."
-subtitlePro = "فعِّل الفوترة التلقائية عند التجاوز كي لا تنفد أرصدتك أبدًا."
-teamLeaderOnly = "فقط قادة الفريق يمكنهم تمكين فوترة التجاوز"
-teamSubscription = "الفريق"
-titleExhausted = "لقد استخدمت أرصدتك المجانية"
-titleExhaustedPro = "لقد نفدت أرصدتك"
-unlimitedApiAccess = "وصول API غير محدود"
-unlimitedMonthlyCredits = "ترخيص موقع"
-unlimitedSeats = "مقاعد غير محدودة"
-
-[credits.modal.features]
-everythingInCredits = "كل ما في الأرصدة، بالإضافة إلى:"
-everythingInFree = "كل ما في المجاني، بالإضافة إلى:"
-forRegularWork = "لأعمال PDF الاعتيادية:"
-
-[credits.insufficient]
-brief = "أرصدة غير كافية. تحتاج إلى {{required}} رصيدًا ولكن لديك {{current}}."
-freeTier = "رقِّ إلى خطة الفريق لتحصل على أرصدة أكثر بـ 10 مرات وفوترة تجاوز غير محدودة."
-managedMember = "يرجى التواصل مع قائد فريقك للمساعدة."
-message = "ليس لديك ما يكفي من الأرصدة لتشغيل {{tool}}. لديك حاليًا {{current}} رصيدًا."
-messageWithAmount = "تحتاج إلى {{required}} رصيدًا لتشغيل {{tool}}، ولكن لديك فقط {{current}}."
-teamMember = "فعِّل فوترة التجاوز كي لا تنفد الأرصدة."
-title = "أرصدة غير كافية"
-
 [printFile]
 header = "طباعة ملف بالطابعة"
 submit = "طباعة"
@@ -5825,6 +5729,207 @@ title = "طباعة ملف"
 [printFile.selectText]
 1 = "تحديد ملف للطباعة"
 2 = "ادخل اسم الطابعة"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "استيراد ملفات"
+
+[provider.googledrive.apiKey]
+description = "Google API Key لواجهة Google Picker API من Google Cloud Console"
+label = "API Key"
+
+[provider.googledrive.appId]
+description = "Google Drive App ID من Google Cloud Console"
+label = "App ID"
+
+[provider.googledrive.clientId]
+description = "Google OAuth 2.0 Client ID من Google Cloud Console"
+label = "Client ID"
+
+[provider.googledrive.enabled]
+description = "السماح للمستخدمين باستيراد الملفات مباشرةً من Google Drive"
+label = "تمكين منتقي ملفات Google Drive"
+
+[provider.oauth2.generic]
+name = "OAuth2 عام"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "إنشاء حسابات المستخدمين تلقائيًا عند أول تسجيل دخول عبر OAuth2"
+label = "إنشاء المستخدمين تلقائيًا"
+
+[provider.oauth2.generic.blockRegistration]
+description = "منع تسجيل المستخدمين الجدد عبر OAuth2"
+label = "حظر التسجيل"
+
+[provider.oauth2.generic.clientId]
+description = "OAuth2 Client ID من مزوّدك"
+label = "Client ID"
+
+[provider.oauth2.generic.clientSecret]
+description = "OAuth2 Client Secret من مزوّدك"
+label = "Client Secret"
+
+[provider.oauth2.generic.enabled]
+description = "تمكين المصادقة باستخدام مزوّد OAuth2 مخصص"
+label = "تمكين OAuth2 عام"
+
+[provider.oauth2.generic.issuer]
+description = "مزوّد يدعم OpenID Connect Discovery (/.well-known/openid-configuration)"
+label = "Issuer URL"
+
+[provider.oauth2.generic.provider]
+description = "اسم مزوّد OAuth2 لديك (مثل Azure AD، Okta)"
+label = "اسم المزوّد"
+
+[provider.oauth2.generic.scopes]
+description = "نطاقات OAuth2 مفصولة بفواصل"
+label = "النطاقات"
+
+[provider.oauth2.generic.useAsUsername]
+description = "الحقل المستخدم كاسم مستخدم"
+label = "استخدام كاسم مستخدم"
+
+[provider.oauth2.github]
+scope = "مصادقة تسجيل الدخول"
+
+[provider.oauth2.github.clientId]
+description = "OAuth2 Client ID من إعدادات مطوري GitHub"
+label = "Client ID"
+
+[provider.oauth2.github.clientSecret]
+description = "OAuth2 Client Secret من إعدادات مطوري GitHub"
+label = "Client Secret"
+
+[provider.oauth2.github.scopes]
+description = "نطاقات OAuth2 مفصولة بفواصل"
+label = "النطاقات"
+
+[provider.oauth2.github.useAsUsername]
+description = "الحقل المستخدم كاسم مستخدم (email، login، name)"
+label = "استخدام كاسم مستخدم"
+
+[provider.oauth2.google]
+scope = "مصادقة تسجيل الدخول"
+
+[provider.oauth2.google.clientId]
+description = "OAuth2 Client ID من Google Cloud Console"
+label = "Client ID"
+
+[provider.oauth2.google.clientSecret]
+description = "OAuth2 Client Secret من Google Cloud Console"
+label = "Client Secret"
+
+[provider.oauth2.google.scopes]
+description = "نطاقات OAuth2 مفصولة بفواصل"
+label = "النطاقات"
+
+[provider.oauth2.google.useAsUsername]
+description = "الحقل المستخدم كاسم مستخدم (email، name، given_name، family_name)"
+label = "استخدام كاسم مستخدم"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "OAuth2 Client ID من Keycloak"
+label = "Client ID"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "OAuth2 Client Secret من Keycloak"
+label = "Client Secret"
+
+[provider.oauth2.keycloak.issuer]
+description = "عنوان URL لنقطة اكتشاف OpenID Connect الخاصة بـ realm في Keycloak"
+label = "Issuer URL"
+
+[provider.oauth2.keycloak.scopes]
+description = "نطاقات OAuth2 مفصولة بفواصل"
+label = "النطاقات"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "الحقل المستخدم كاسم مستخدم (email، name، given_name، family_name، preferred_username)"
+label = "استخدام كاسم مستخدم"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO (SAML)"
+
+[provider.saml2.autoCreateUser]
+description = "إنشاء حسابات المستخدمين تلقائيًا عند أول تسجيل دخول عبر SAML2"
+label = "إنشاء المستخدمين تلقائيًا"
+
+[provider.saml2.blockRegistration]
+description = "منع تسجيل المستخدمين الجدد عبر SAML2"
+label = "حظر التسجيل"
+
+[provider.saml2.enabled]
+description = "تمكين مصادقة SAML2 (للمؤسسات فقط)"
+label = "تمكين SAML2"
+
+[provider.saml2.idpCert]
+description = "مسار الشهادة (مثل: classpath:okta.cert)"
+label = "شهادة IDP"
+
+[provider.saml2.idpIssuer]
+description = "معرّف مزوّدك"
+label = "مُصدِر IDP"
+
+[provider.saml2.idpMetadataUri]
+description = "URI لبيانات التعريف الخاصة بمزوّدك"
+label = "IDP Metadata URI"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "عنوان URL لبدء SSO"
+label = "IDP Single Login URL"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "عنوان URL لبدء SLO"
+label = "IDP Single Logout URL"
+
+[provider.saml2.privateKey]
+description = "مسار مفتاحك الخاص"
+label = "المفتاح الخاص"
+
+[provider.saml2.provider]
+description = "اسم مزوّد SAML2 الخاص بك"
+label = "اسم المزوّد"
+
+[provider.saml2.registrationId]
+description = "اسم تطبيق موفر الخدمة (SP) لديك"
+label = "معرّف التسجيل"
+
+[provider.saml2.spCert]
+description = "مسار شهادة التوقيع الخاصة بك"
+label = "شهادة SP"
+
+[provider.smtp]
+name = "بريد SMTP"
+scope = "إشعارات البريد الإلكتروني"
+
+[provider.smtp.enabled]
+description = "تمكين إشعارات البريد الإلكتروني ووظائف SMTP"
+label = "تمكين البريد"
+
+[provider.smtp.from]
+description = "عنوان البريد الإلكتروني المستخدم كمرسِل"
+label = "عنوان المرسِل"
+
+[provider.smtp.host]
+description = "اسم المضيف أو عنوان IP لخادم SMTP الخاص بك"
+label = "مضيف SMTP"
+
+[provider.smtp.password]
+description = "كلمة المرور لمصادقة SMTP"
+label = "كلمة مرور SMTP"
+
+[provider.smtp.port]
+description = "رقم المنفذ لاتصال SMTP (عادة 25 أو 465 أو 587)"
+label = "منفذ SMTP"
+
+[provider.smtp.username]
+description = "اسم المستخدم لمصادقة SMTP"
+label = "اسم مستخدم SMTP"
 
 [quickAccess]
 access = "وصول"
@@ -5867,7 +5972,12 @@ createNew = "إنشاء طلب جديد"
 createSession = "إنشاء طلب توقيع"
 dueDate = "تاريخ الاستحقاق (اختياري)"
 files = "الملفات"
+filterDeclined = "مرفوض"
+filterMine = "الخاصة بي"
+filterOverdue = "متأخرة"
+filterSigned = "موقّع"
 help = "مساعدة"
+newRequest = "طلب جديد"
 noActiveSessions = "لا توجد طلبات توقيع معلّقة أو جلسات نشطة"
 noCompletedSessions = "لا توجد جلسات مكتملة"
 noFile = "لم يتم اختيار ملف"
@@ -5875,8 +5985,9 @@ read = "قراءة"
 reader = "القارئ"
 refresh = "تحديث"
 requestSignatures = "طلب تواقيع"
-selectSingleFileToRequest = "اختر ملف PDF واحدًا لطلب التواقيع"
+searchDocuments = "ابحث في المستندات…"
 selectedFile = "الملف المحدد"
+selectSingleFileToRequest = "اختر ملف PDF واحدًا لطلب التواقيع"
 selectUsers = "اختر مستخدمين للتوقيع"
 selectUsersPlaceholder = "اختر المشاركين..."
 sendingRequest = "جارٍ الإرسال..."
@@ -5885,14 +5996,8 @@ showMeAround = "أرني جولة"
 sign = "توقيع"
 signatureRequests = "طلبات التوقيع"
 signYourself = "وقّع بنفسك"
-newRequest = "طلب جديد"
 tours = "جولات"
 wetSign = "إضافة توقيع"
-filterMine = "الخاصة بي"
-filterOverdue = "متأخرة"
-filterSigned = "موقّع"
-filterDeclined = "مرفوض"
-searchDocuments = "ابحث في المستندات…"
 
 [quickAccess.helpMenu]
 adminTour = "جولة المسؤول"
@@ -5933,15 +6038,15 @@ title = "كلمات للتنقيح"
 failed = "حدث خطأ أثناء توقيع PDF."
 
 [redact.manual]
+activate = "تفعيل أداة التنقيح"
+active = "وضع التنقيح نشط"
 apply = "تطبيق"
 applyChanges = "تطبيق التغييرات"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ تطبيق دائم، لا يمكن التراجع عنه وسيُحذف البيانات الموجودة تحته"
 boxRedaction = "تنقيح بالرسم بصندوق"
-colourPicker = "منتقي الألوان"
 colorLabel = "لون التنقيح"
-active = "وضع التنقيح نشط"
-activate = "تفعيل أداة التنقيح"
+colourPicker = "منتقي الألوان"
 controlsTitle = "عناصر التحكم في التنقيح اليدوي"
 convertPDFToImageLabel = "تحويل PDF إلى PDF-Image (لإزالة النص خلف الصندوق)"
 export = "تصدير"
@@ -6337,6 +6442,46 @@ title = "تباين عالٍ"
 text = "اعكس كل الألوان في ملف PDF بالكامل، مما يخلق تأثيرًا مشابهًا للسالب. مفيد لإنشاء نسخ وضع داكن للمستندات أو تقليل إجهاد العين في الإضاءة المنخفضة."
 title = "عكس كل الألوان"
 
+[rightRail]
+annotations = "تعليقات"
+applyRedactionsFirst = "طبّق التنقيحات أولًا"
+closePdf = "إغلاق PDF"
+closeSelected = "إغلاق الصفحات المحددة"
+deleteSelected = "حذف الصفحات المحددة"
+deselectAll = "إلغاء تحديد الكل"
+downloadAll = "تنزيل الكل"
+downloadSelected = "تنزيل الملفات المحددة"
+draw = "رسم"
+exitRedaction = "الخروج من وضع التنقيح"
+exportAll = "تصدير PDF"
+exportSelected = "تصدير الصفحات المحددة"
+formFill = "تعبئة نموذج"
+language = "اللغة"
+panMode = "وضع السحب"
+print = "طباعة PDF"
+readAloud = "القراءة بصوت عالٍ"
+readAloudLanguage = "اللغة"
+readAloudSpeed = "السرعة"
+redact = "تنقيح"
+rotateLeft = "تدوير لليسار"
+rotateRight = "تدوير لليمين"
+ruler = "مسطرة/قياس"
+save = "حفظ"
+saveAll = "حفظ الكل"
+saveAs = "حفظ باسم"
+saveChanges = "حفظ التغييرات"
+search = "بحث في PDF"
+selectAll = "تحديد الكل"
+selectByNumber = "تحديد حسب أرقام الصفحات"
+selectLanguage = "اختر اللغة"
+toggleAnnotations = "تبديل ظهور التعليقات التوضيحية"
+toggleAttachments = "إظهار/إخفاء المرفقات"
+toggleBookmarks = "تبديل الإشارات المرجعية"
+toggleComments = "التعليقات"
+toggleLayers = "تبديل الطبقات"
+toggleSidebar = "تبديل الشريط الجانبي"
+toggleTheme = "تبديل السِمة"
+
 [rotate]
 rotateLeft = "تدوير عكس عقارب الساعة"
 rotateRight = "تدوير مع عقارب الساعة"
@@ -6359,32 +6504,6 @@ text = "دوّر صفحات PDF بزيادات 90 درجة مع أو عكس عق
 
 [rotate.tooltip.header]
 title = "نظرة عامة على إعدادات التدوير"
-
-[timestampPdf]
-completed = "تمت إضافة الطابع الزمني إلى PDF بنجاح"
-desc = "أضف طابعًا زمنيًا للمستند وفق RFC 3161 إلى ملف PDF الخاص بك باستخدام خادم سلطة طابع زمني (TSA) موثوق."
-filenamePrefix = "مختوم-زمنيا"
-results = "نتائج الطابع الزمني"
-submit = "تطبيق الطابع الزمني"
-title = "إضافة طابع زمني لـ PDF"
-
-[timestampPdf.error]
-failed = "حدث خطأ أثناء إضافة الطابع الزمني إلى PDF."
-generic = "فشل تطبيق الطابع الزمني"
-
-[timestampPdf.files]
-placeholder = "حدّد ملف PDF في العرض الرئيسي للبدء"
-
-[timestampPdf.options]
-note = "يتم إرسال تجزئة SHA-256 فقط من مستندك إلى خادم TSA؛ ولا يتم إرسال ملف PDF نفسه إلى خادم TSA مطلقًا."
-title = "خادم الطابع الزمني (TSA)"
-
-[timestampPdf.options.tsaUrl]
-desc = "اختر سلطة طابع زمني موثوقة"
-label = "اختر خادم TSA"
-
-[timestampPdf.steps]
-settings = "الإعدادات"
 
 [sanitize]
 completed = "اكتملت عملية التنقية بنجاح"
@@ -6554,37 +6673,6 @@ bullet3 = "أمر حاسم لتدفقات الموافقات والسلاسل ا
 description = "الترتيب الذي تحدده عند إنشاء الجلسة يحدد من يوقّع أولًا."
 title = "ترتيب التوقيع"
 
-[signatureSettings.tooltip]
-header = "إعدادات مظهر التوقيع"
-
-[signatureSettings.tooltip.location]
-bullet1 = "أمثلة: \"New York, USA\"، \"London Office\"، \"Remote\""
-bullet2 = "ليست نفس موضع الصفحة"
-bullet3 = "قد يكون مطلوبًا في بعض الولايات القضائية القانونية"
-description = "موقع جغرافي اختياري حيث تم تطبيق التوقيع. يُخزّن في بيانات الشهادة الوصفية."
-title = "موقع التوقيع"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "يُعرض بجانب التوقيع والنص"
-bullet2 = "يدعم صيغ PNG وJPG"
-bullet3 = "يعزّز المظهر الاحترافي"
-description = "أضف شعار الشركة إلى التواقيع المرئية للعلامة التجارية والمصداقية."
-title = "شعار الشركة"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "أمثلة: \"Approval\"، \"Contract Agreement\"، \"Review Complete\""
-bullet2 = "يظهر في خصائص توقيع PDF"
-bullet3 = "مفيد لسجلات التدقيق والامتثال"
-description = "نص اختياري يشرح سبب توقيع المستند. يُخزّن في بيانات الشهادة الوصفية."
-title = "سبب التوقيع"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>مرئي</b>: يظهر التوقيع على ملف PDF بمظهر مخصص"
-bullet2 = "<b>غير مرئي</b>: تُضمَّن الشهادة دون علامة مرئية"
-bullet3 = "لا تزال التواقيع غير المرئية توفّر تحققًا تشفيريًا"
-description = "يتحكم فيما إذا كان التوقيع مرئيًا على المستند أو مُضمّنًا بشكل غير مرئي."
-title = "ظهور التوقيع"
-
 [settings.configuration]
 advanced = "متقدم"
 database = "قاعدة البيانات"
@@ -6606,6 +6694,102 @@ user = "تم تسجيل الدخول باسم"
 local = "محلي فقط"
 saas = "Stirling Cloud"
 selfhosted = "مستضاف ذاتياً"
+
+[settings.developer]
+apiKeys = "مفاتيح API"
+title = "المطور"
+
+[settings.general]
+autoUnzip = "فك ضغط استجابات API تلقائيًا"
+autoUnzipDescription = "استخراج الملفات تلقائيًا من استجابات ZIP"
+autoUnzipFileLimit = "حد فك الضغط التلقائي للملفات"
+autoUnzipFileLimitDescription = "الحد الأقصى لعدد الملفات المطلوب استخراجها من ZIP"
+autoUnzipFileLimitTooltip = "لا يتم فك الضغط إلا إذا احتوى ملف ZIP على هذا العدد من الملفات أو أقل. ارفع القيمة لاستخراج ملفات ZIP الأكبر."
+autoUnzipTooltip = "فك ضغط ملفات ZIP التي تُعاد من عمليات API تلقائيًا. عطّل للحفاظ على ملفات ZIP كما هي. هذا لا يؤثر على سير عمل الأتمتة."
+defaultPdfEditor = "محرر PDF الافتراضي"
+defaultPdfEditorActive = "Stirling PDF هو محرر PDF الافتراضي لديك"
+defaultPdfEditorChecking = "جارٍ الفحص..."
+defaultPdfEditorInactive = "تطبيق آخر معيّن كافتراضي"
+defaultPdfEditorSet = "افتراضي بالفعل"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "وضع منتقي الأدوات الافتراضي"
+defaultToolPickerModeDescription = "اختر ما إذا كان منتقي الأدوات يفتح افتراضيًا بملء الشاشة أو في الشريط الجانبي"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "تهيئة تفضيلات التطبيق العامة."
+hideUnavailableConversions = "إخفاء التحويلات غير المتاحة"
+hideUnavailableConversionsDescription = "إزالة خيارات التحويل المعطّلة في أداة التحويل بدلاً من عرضها باللون الرمادي."
+hideUnavailableTools = "إخفاء الأدوات غير المتاحة"
+hideUnavailableToolsDescription = "إزالة الأدوات التي عطّلها خادمك بدلاً من عرضها باللون الرمادي."
+logout = "تسجيل الخروج"
+setAsDefault = "تعيين كافتراضي"
+title = "عام"
+user = "المستخدم"
+
+[settings.general.enableFeatures]
+action = "تكوين"
+and = "و"
+benefit = "يُفعّل أدوار المستخدمين، والتعاون عبر الفرق، وضوابط المشرف، وميزات المؤسسات."
+dismiss = "تجاهل"
+intro = "فعّل مصادقة المستخدمين وإدارة الفرق وميزات مساحة العمل لمؤسستك."
+learnMore = "تعرّف أكثر في التوثيق"
+title = "لمدراء النظام"
+
+[settings.general.mode]
+fullscreen = "ملء الشاشة"
+sidebar = "الشريط الجانبي"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "التحقق من التحديثات"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "التحقق من التحديثات وعرض معلومات الإصدار"
+latestVersion = "أحدث إصدار"
+serverNeedsUpdate = "يحتاج الخادم إلى التحديث من قِبل المسؤول"
+title = "تحديثات البرنامج"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "عرض التفاصيل"
+
+[settings.general.versionInfo]
+description = "تفاصيل إصدار سطح المكتب والخادم"
+desktop = "إصدار سطح المكتب"
+server = "إصدار الخادم"
+title = "معلومات الإصدار"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "اضغط المفاتيح… (Esc للإلغاء)"
+change = "تغيير الاختصار"
+customBadge = "مخصص"
+defaultLabel = "الافتراضي: {{shortcut}}"
+description = "خصّص اختصارات لوحة المفاتيح للوصول السريع إلى الأدوات. انقر \"تغيير الاختصار\" واضغط مجموعة مفاتيح جديدة. اضغط Esc للإلغاء."
+errorConflict = "الاختصار مستخدم بالفعل بواسطة {{tool}}."
+none = "غير معيّن"
+noShortcut = "لا يوجد اختصار معيّن"
+reset = "إعادة ضبط"
+searchPlaceholder = "ابحث في الأدوات..."
+shortcut = "اختصار"
+title = "اختصارات لوحة المفاتيح"
+
+[settings.hotkeys.errorModifier]
+mac = "ضمّن ⌘ (Command) أو ⌥ (Option) أو معدِّلاً آخر في اختصارك."
+windows = "ضمّن Ctrl أو Alt أو معدِّلاً آخر في اختصارك."
+
+[settings.licensingAnalytics]
+audit = "التدقيق"
+plan = "الخطة"
+title = "الترخيص والتحليلات"
+usageAnalytics = "تحليلات الاستخدام"
 
 [settings.planBilling]
 currentPlan = "الخطة الحالية"
@@ -6637,6 +6821,10 @@ canceled = "ملغاة"
 pastDue = "متأخر السداد"
 trial = "تجريبي"
 
+[settings.planBilling.team]
+managedByTeam = "يُدار بواسطة الفريق"
+memberCount = "{{count}} عضوًا في الفريق"
+
 [settings.planBilling.tier]
 enterprise = "المؤسسات"
 enterpriseDescription = "ميزات ودعم مؤسسي مخصص"
@@ -6648,10 +6836,6 @@ teamDescription = "500 رصيد/شهر مشمول، فوترة تجاوز تلق
 teamTooltipCredits = "تتضمن خطة الفريق {{credits}} رصيدًا/شهر."
 teamTooltipFineprint = "لا تدفع إلا مقابل ما تستخدمه بعد الأرصدة المشمولة."
 teamTooltipOverage = "فوترة تجاوز تلقائية بسعر {{price}}/رصيد تضمن خدمة دون انقطاع."
-
-[settings.planBilling.team]
-managedByTeam = "يُدار بواسطة الفريق"
-memberCount = "{{count}} عضوًا في الفريق"
 
 [settings.planBilling.trial]
 daysRemaining = "{{days}} يومًا متبقيًا"
@@ -6670,88 +6854,6 @@ featureThroughput = "إنتاجية معالجة أسرع"
 opensInBrowser = "يفتح في المتصفح لإكمال الترقية"
 subtitle = "رقِّ إلى خطة الفريق لتحصل على:"
 title = "رقِّ خطتك"
-
-[settings.developer]
-apiKeys = "مفاتيح API"
-title = "المطور"
-
-[settings.general]
-autoUnzip = "فك ضغط استجابات API تلقائيًا"
-autoUnzipDescription = "استخراج الملفات تلقائيًا من استجابات ZIP"
-autoUnzipFileLimit = "حد فك الضغط التلقائي للملفات"
-autoUnzipFileLimitDescription = "الحد الأقصى لعدد الملفات المطلوب استخراجها من ZIP"
-autoUnzipFileLimitTooltip = "لا يتم فك الضغط إلا إذا احتوى ملف ZIP على هذا العدد من الملفات أو أقل. ارفع القيمة لاستخراج ملفات ZIP الأكبر."
-autoUnzipTooltip = "فك ضغط ملفات ZIP التي تُعاد من عمليات API تلقائيًا. عطّل للحفاظ على ملفات ZIP كما هي. هذا لا يؤثر على سير عمل الأتمتة."
-defaultPdfEditor = "محرر PDF الافتراضي"
-defaultPdfEditorActive = "Stirling PDF هو محرر PDF الافتراضي لديك"
-defaultPdfEditorChecking = "جارٍ الفحص..."
-defaultPdfEditorInactive = "تطبيق آخر معيّن كافتراضي"
-defaultPdfEditorSet = "افتراضي بالفعل"
-defaultToolPickerMode = "وضع منتقي الأدوات الافتراضي"
-defaultToolPickerModeDescription = "اختر ما إذا كان منتقي الأدوات يفتح افتراضيًا بملء الشاشة أو في الشريط الجانبي"
-description = "تهيئة تفضيلات التطبيق العامة."
-hideUnavailableConversions = "إخفاء التحويلات غير المتاحة"
-hideUnavailableConversionsDescription = "إزالة خيارات التحويل المعطّلة في أداة التحويل بدلاً من عرضها باللون الرمادي."
-hideUnavailableTools = "إخفاء الأدوات غير المتاحة"
-hideUnavailableToolsDescription = "إزالة الأدوات التي عطّلها خادمك بدلاً من عرضها باللون الرمادي."
-logout = "تسجيل الخروج"
-setAsDefault = "تعيين كافتراضي"
-title = "عام"
-user = "المستخدم"
-
-[settings.general.enableFeatures]
-action = "تكوين"
-and = "و"
-benefit = "يُفعّل أدوار المستخدمين، والتعاون عبر الفرق، وضوابط المشرف، وميزات المؤسسات."
-dismiss = "تجاهل"
-intro = "فعّل مصادقة المستخدمين وإدارة الفرق وميزات مساحة العمل لمؤسستك."
-learnMore = "تعرّف أكثر في التوثيق"
-title = "لمدراء النظام"
-
-[settings.general.mode]
-fullscreen = "ملء الشاشة"
-sidebar = "الشريط الجانبي"
-
-[settings.general.updates]
-checkForUpdates = "التحقق من التحديثات"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "التحقق من التحديثات وعرض معلومات الإصدار"
-latestVersion = "أحدث إصدار"
-serverNeedsUpdate = "يحتاج الخادم إلى التحديث من قِبل المسؤول"
-title = "تحديثات البرنامج"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "عرض التفاصيل"
-
-[settings.general.versionInfo]
-description = "تفاصيل إصدار سطح المكتب والخادم"
-desktop = "إصدار سطح المكتب"
-server = "إصدار الخادم"
-title = "معلومات الإصدار"
-
-[settings.hotkeys]
-capturing = "اضغط المفاتيح… (Esc للإلغاء)"
-change = "تغيير الاختصار"
-customBadge = "مخصص"
-defaultLabel = "الافتراضي: {{shortcut}}"
-description = "خصّص اختصارات لوحة المفاتيح للوصول السريع إلى الأدوات. انقر \"تغيير الاختصار\" واضغط مجموعة مفاتيح جديدة. اضغط Esc للإلغاء."
-errorConflict = "الاختصار مستخدم بالفعل بواسطة {{tool}}."
-none = "غير معيّن"
-noShortcut = "لا يوجد اختصار معيّن"
-reset = "إعادة ضبط"
-searchPlaceholder = "ابحث في الأدوات..."
-shortcut = "اختصار"
-title = "اختصارات لوحة المفاتيح"
-
-[settings.hotkeys.errorModifier]
-mac = "ضمّن ⌘ (Command) أو ⌥ (Option) أو معدِّلاً آخر في اختصارك."
-windows = "ضمّن Ctrl أو Alt أو معدِّلاً آخر في اختصارك."
-
-[settings.licensingAnalytics]
-audit = "التدقيق"
-plan = "الخطة"
-title = "الترخيص والتحليلات"
-usageAnalytics = "تحليلات الاستخدام"
 
 [settings.policiesPrivacy]
 legal = "قانوني"
@@ -6789,6 +6891,9 @@ security = "الأمان"
 telegram = "Telegram"
 title = "الأمان والمصادقة"
 
+[settings.team]
+title = "الفريق"
+
 [settings.tooltips]
 enableLoginFirst = "فعّل وضع تسجيل الدخول أولاً"
 requiresEnterprise = "يتطلّب ترخيص Enterprise"
@@ -6798,21 +6903,6 @@ people = "الأشخاص"
 teams = "الفرق"
 title = "مساحة العمل"
 
-[settings.team]
-title = "الفريق"
-
-[localMode]
-toolUnavailable = "هذه الأداة تتطلب حسابًا. سجّل الدخول إلى Stirling Cloud أو اتصل بخادم مُستضاف ذاتيًا لاستخدامها."
-
-[localMode.banner]
-message = "سجّل الدخول لإلغاء قفل جميع الأدوات."
-signIn = "تسجيل الدخول"
-title = "يعمل محليًا"
-
-[localMode.toolPicker]
-message = "سجّل الدخول لإلغاء قفل جميع الأدوات."
-signIn = "تسجيل الدخول"
-
 [setup]
 description = "ابدأ باختيار كيفية استخدام Stirling PDF"
 welcome = "مرحباً بك في Stirling PDF"
@@ -6820,7 +6910,6 @@ welcome = "مرحباً بك في Stirling PDF"
 [setup.login]
 connectingTo = "جارٍ الاتصال بـ:"
 hideInstructions = "إخفاء الإرشادات"
-skipSignIn = "المتابعة بدون تسجيل الدخول"
 instructions = "لتمكين تسجيل الدخول على خادم Stirling PDF الخاص بك:"
 instructionsEnvVar = "عيّن متغيّر البيئة:"
 instructionsOrYml = "أو في settings.yml:"
@@ -6830,6 +6919,7 @@ orContinueWith = "أو المتابعة بالبريد الإلكتروني"
 serverRequirement = "ملاحظة: يجب أن يكون تسجيل الدخول مفعّلاً على الخادم."
 showInstructions = "كيفية التمكين؟"
 signInWith = "تسجيل الدخول باستخدام"
+skipSignIn = "المتابعة بدون تسجيل الدخول"
 sso = "تسجيل الدخول الموحد"
 submit = "تسجيل الدخول"
 subtitle = "أدخل بيانات الاعتماد للمتابعة"
@@ -6866,9 +6956,9 @@ subtitle = "سجّل الدخول بحساب Stirling الخاص بك"
 title = "سجّل الدخول إلى Stirling"
 
 [setup.selfhosted]
+changeServerLocked = "لقد قيّدت مؤسستك هذا التطبيق بخادم محدد"
 link = "أو الاتصال بحساب مُستضاف ذاتيًا"
 subtitle = "أدخل بيانات اعتماد الخادم"
-changeServerLocked = "لقد قيّدت مؤسستك هذا التطبيق بخادم محدد"
 switchToLocal = "استخدام الأدوات المحلية بدلًا من ذلك"
 title = "سجّل الدخول إلى الخادم"
 
@@ -7068,14 +7158,45 @@ saved = "محفوظ"
 text = "نص"
 title = "نوع التوقيع"
 
+[signatureSettings.tooltip]
+header = "إعدادات مظهر التوقيع"
+
+[signatureSettings.tooltip.location]
+bullet1 = "أمثلة: \"New York, USA\"، \"London Office\"، \"Remote\""
+bullet2 = "ليست نفس موضع الصفحة"
+bullet3 = "قد يكون مطلوبًا في بعض الولايات القضائية القانونية"
+description = "موقع جغرافي اختياري حيث تم تطبيق التوقيع. يُخزّن في بيانات الشهادة الوصفية."
+title = "موقع التوقيع"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "يُعرض بجانب التوقيع والنص"
+bullet2 = "يدعم صيغ PNG وJPG"
+bullet3 = "يعزّز المظهر الاحترافي"
+description = "أضف شعار الشركة إلى التواقيع المرئية للعلامة التجارية والمصداقية."
+title = "شعار الشركة"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "أمثلة: \"Approval\"، \"Contract Agreement\"، \"Review Complete\""
+bullet2 = "يظهر في خصائص توقيع PDF"
+bullet3 = "مفيد لسجلات التدقيق والامتثال"
+description = "نص اختياري يشرح سبب توقيع المستند. يُخزّن في بيانات الشهادة الوصفية."
+title = "سبب التوقيع"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>مرئي</b>: يظهر التوقيع على ملف PDF بمظهر مخصص"
+bullet2 = "<b>غير مرئي</b>: تُضمَّن الشهادة دون علامة مرئية"
+bullet3 = "لا تزال التواقيع غير المرئية توفّر تحققًا تشفيريًا"
+description = "يتحكم فيما إذا كان التوقيع مرئيًا على المستند أو مُضمّنًا بشكل غير مرئي."
+title = "ظهور التوقيع"
+
 [signRequest]
 declined = "تم رفض طلب التوقيع"
 fetchFailed = "تعذّر تحميل طلب التوقيع"
 signed = "تم توقيع المستند بنجاح"
 
 [signSession]
-createFailed = "تعذّر إنشاء طلب التوقيع"
 created = "تم إرسال طلب التوقيع"
+createFailed = "تعذّر إنشاء طلب التوقيع"
 
 [signup]
 accountCreatedSuccessfully = "تم إنشاء الحساب بنجاح! يمكنك الآن تسجيل الدخول."
@@ -7156,15 +7277,15 @@ desc = "تقسيم تلقائي باستخدام أوراق فاصلة"
 name = "فاصل الصفحات"
 tooltip = "استخدم أوراق فواصل برمز QR بين المستندات عند المسح"
 
-[split.methods.byPoster]
-name = "أجزاء قابلة للطباعة"
-desc = "قسّم الصفحات الكبيرة إلى أحجام قابلة للطباعة"
-tooltip = "قسّم الصفحات كبيرة الحجم إلى أجزاء أصغر مناسبة للطباعة على ورق قياسي (A4، Letter، إلخ)"
-
 [split.methods.byPages]
 desc = "استخراج صفحات محددة (1,3,5-10)"
 name = "أرقام الصفحات"
 tooltip = "أدخل أرقام الصفحات مفصولة بفواصل أو نطاقات بشرطة"
+
+[split.methods.byPoster]
+desc = "قسّم الصفحات الكبيرة إلى أحجام قابلة للطباعة"
+name = "أجزاء قابلة للطباعة"
+tooltip = "قسّم الصفحات كبيرة الحجم إلى أجزاء أصغر مناسبة للطباعة على ورق قياسي (A4، Letter، إلخ)"
 
 [split.methods.bySections]
 desc = "تقسيم الصفحات إلى أقسام شبكية"
@@ -7192,27 +7313,27 @@ title = "اختر طريقة التقسيم"
 text = "اختر كيف تريد تقسيم مستند PDF. كل طريقة مُحسَّنة لحالات استخدام وأنواع مستندات مختلفة."
 title = "اختيار طريقة التقسيم"
 
+[split.poster]
+rightToLeft = "قسّم من اليمين إلى اليسار"
+
+[split.poster.pageSize]
+description = "حجم صفحات الإخراج للطباعة"
+label = "حجم الصفحة المستهدف"
+
+[split.poster.xFactor]
+description = "عدد الأعمدة التي تُقسَّم إليها كل صفحة"
+label = "تقسيمات أفقية"
+
+[split.poster.yFactor]
+description = "عدد الصفوف التي تُقسَّم إليها كل صفحة"
+label = "تقسيمات عمودية"
+
 [split.settings]
 selectMethodFirst = "يرجى اختيار طريقة التقسيم أولًا"
 
 [split.steps]
 chooseMethod = "اختر الطريقة"
 settings = "إعدادات"
-
-[split.poster]
-rightToLeft = "قسّم من اليمين إلى اليسار"
-
-[split.poster.pageSize]
-label = "حجم الصفحة المستهدف"
-description = "حجم صفحات الإخراج للطباعة"
-
-[split.poster.xFactor]
-label = "تقسيمات أفقية"
-description = "عدد الأعمدة التي تُقسَّم إليها كل صفحة"
-
-[split.poster.yFactor]
-label = "تقسيمات عمودية"
-description = "عدد الصفوف التي تُقسَّم إليها كل صفحة"
 
 [split.tooltip.byChapters]
 bullet1 = "مستوى الإشارة المرجعية: المستوى الذي سيتم التقسيم عنده (1 = المستوى الأعلى)"
@@ -7251,6 +7372,13 @@ bullet5 = "فعّل Duplex Mode إذا كنت تمسح وجهي أوراق ال�
 text = "قسّم المستندات الممسوحة تلقائيًا باستخدام أوراق فواصل فيزيائية مع رموز QR. مثالي لمعالجة عدة مستندات ممسوحة معًا."
 title = "تقسيم بواسطة صفحة فاصل"
 
+[split.tooltip.byPages]
+bullet1 = "نقاط تقسيم مفردة: 3,7 (يقسم بعد الصفحتين 3 و7)"
+bullet2 = "نقاط تقسيم بالنطاق: 3-8 (يقسم قبل الصفحة 3 وبعد الصفحة 8)"
+bullet3 = "مختلط: 2,5-10,15 (يقسم بعد 2، قبل 5، بعد 10، وبعد 15)"
+text = "قسّم ملفك عند أرقام صفحات محددة. استخدام 'n' يقسم بعد الصفحة n. استخدام 'n-m' يقسم قبل n وبعد m."
+title = "التقسيم عند أرقام الصفحات"
+
 [split.tooltip.byPoster]
 bullet1 = "حجم الصفحة المستهدف: اختر حجم ورق الإخراج (A4، Letter، إلخ)"
 bullet2 = "التقسيمات الأفقية/العمودية: حجم الشبكة للتقسيم"
@@ -7258,13 +7386,6 @@ bullet3 = "من اليمين إلى اليسار: عكس ترتيب الأعمد
 bullet4 = "اطبع واسمِ القطع معًا لإنشاء ملصقك"
 text = "قسّم صفحات PDF الكبيرة إلى أجزاء صغيرة قابلة للطباعة مناسبة لأحجام الورق القياسية. مثالي لإنشاء مطبوعات ملصقات من الصفحات كبيرة الحجم."
 title = "تقسيم للطباعة كملصق"
-
-[split.tooltip.byPages]
-bullet1 = "نقاط تقسيم مفردة: 3,7 (يقسم بعد الصفحتين 3 و7)"
-bullet2 = "نقاط تقسيم بالنطاق: 3-8 (يقسم قبل الصفحة 3 وبعد الصفحة 8)"
-bullet3 = "مختلط: 2,5-10,15 (يقسم بعد 2، قبل 5، بعد 10، وبعد 15)"
-text = "قسّم ملفك عند أرقام صفحات محددة. استخدام 'n' يقسم بعد الصفحة n. استخدام 'n-m' يقسم قبل n وبعد m."
-title = "التقسيم عند أرقام الصفحات"
 
 [split.tooltip.bySections]
 bullet1 = "أفقي: عدد الصفوف المطلوب إنشاؤها"
@@ -7355,106 +7476,6 @@ title = "تجزئة المستند حسب الفصول"
 [splitPdfByChapters]
 tags = "تجزئة، فصول، علامات تبويب، تنظيم"
 
-[storageShare]
-accessed = "تم الوصول"
-accessDenied = "ليس لديك حق الوصول إلى هذا الملف المشترك. اطلب من المالك مشاركته معك."
-accessFailed = "تعذّر تحميل النشاط."
-accessDeniedBody = "ليس لديك حق الوصول إلى هذا الملف. اطلب من المالك مشاركته معك."
-accessDeniedTitle = "لا وصول"
-accessLimitedCommenter = "وصول التعليق قادم قريبًا. اطلب من المالك صلاحية المحرر إذا كنت بحاجة إلى التنزيل."
-accessLimitedTitle = "وصول محدود"
-accessLimitedViewer = "هذا الرابط للعرض فقط. اطلب من المالك صلاحية المحرر إذا كنت بحاجة إلى التنزيل."
-createdAt = "تم الإنشاء"
-download = "تنزيل"
-downloadFailed = "تعذّر تنزيل هذا الملف."
-expiredBody = "رابط المشاركة هذا غير صالح أو انتهت صلاحيته."
-expiredTitle = "انتهت صلاحية الرابط"
-goToLogin = "الانتقال إلى تسجيل الدخول"
-loadFailed = "تعذّر فتح الملف المشترك."
-loading = "جارٍ تحميل رابط المشاركة..."
-loginPrompt = "سجّل الدخول للوصول إلى هذا الملف المشترك."
-loginRequired = "مطلوب تسجيل الدخول"
-openInApp = "فتح في Stirling PDF"
-ownerLabel = "المالك"
-ownerUnknown = "غير معروف"
-requiresLogin = "هذا الملف المشترك يتطلب تسجيل الدخول."
-roleCommenter = "معلّق"
-roleEditor = "محرر"
-roleViewer = "عارض"
-shareHeading = "ملف مشترك"
-titleDefault = "ملف مشترك"
-tryAgain = "يرجى المحاولة لاحقًا."
-addUser = "إضافة"
-commenterHint = "التعليق قادم قريبًا."
-copied = "تم نسخ الرابط إلى الحافظة"
-copy = "نسخ"
-copyFailed = "فشل النسخ"
-description = "أنشئ رابط مشاركة لهذا الملف. يمكن للمستخدمين المسجّلين الدخول والذين لديهم الرابط الوصول إليه."
-downloadsCount = "عمليات التنزيل: {{count}}"
-emailWarningBody = "يبدو هذا عنوان بريد إلكتروني. إذا لم يكن هذا الشخص مستخدم Stirling PDF بالفعل، فلن يتمكن من الوصول إلى الملف."
-emailWarningConfirm = "المشاركة على أي حال"
-emailWarningTitle = "عنوان بريد إلكتروني"
-errorTitle = "فشلت المشاركة"
-failure = "تعذّر إنشاء رابط مشاركة. يرجى المحاولة مرة أخرى."
-fileLabel = "الملف"
-generate = "إنشاء رابط"
-generated = "تم إنشاء رابط المشاركة"
-hideActivity = "إخفاء النشاط"
-invalidUsername = "أدخل اسم مستخدم أو عنوان بريد إلكتروني صالحًا."
-lastAccessed = "آخر وصول"
-linkAccessTitle = "وصول رابط المشاركة"
-linkLabel = "رابط المشاركة"
-linksDisabled = "روابط المشاركة معطّلة."
-linksDisabledBody = "روابط المشاركة معطّلة بواسطة إعدادات الخادم."
-manage = "إدارة المشاركة"
-manageDescription = "إنشاء وإدارة روابط لمشاركة هذا الملف."
-manageLoadFailed = "تعذّر تحميل روابط المشاركة."
-manageTitle = "إدارة المشاركة"
-noActivity = "لا يوجد نشاط بعد."
-noLinks = "لا توجد روابط مشاركة نشطة بعد."
-noSharedUsers = "لا يملك أي مستخدم وصولًا بعد."
-removeLink = "إزالة الرابط"
-removeUser = "إزالة"
-revokeFailed = "تعذّر إزالة رابط المشاركة."
-revoked = "تمت إزالة رابط المشاركة"
-roleLabel = "الدور"
-sharingDisabled = "المشاركة معطّلة."
-sharingDisabledBody = "تم تعطيل المشاركة بواسطة إعدادات الخادم."
-sharedUsersTitle = "المستخدمون الذين تمت المشاركة معهم"
-title = "مشاركة الملف"
-unknownUser = "مستخدم غير معروف"
-userAddFailed = "يتعذر المشاركة مع هذا المستخدم."
-userAdded = "تمت إضافة المستخدم إلى قائمة المشاركة."
-usernameLabel = "اسم المستخدم أو البريد الإلكتروني"
-usernamePlaceholder = "أدخل اسم مستخدم أو بريدًا إلكترونيًا"
-userRemoveFailed = "يتعذر إزالة هذا المستخدم."
-userRemoved = "تمت إزالة المستخدم من قائمة المشاركة."
-viewActivity = "عرض النشاط"
-viewed = "تمت المشاهدة"
-viewsCount = "المشاهدات: {{count}}"
-downloaded = "تم التنزيل"
-bulkDescription = "أنشئ رابطًا واحدًا لمشاركة جميع الملفات المحددة مع المستخدمين المسجّلين الدخول."
-bulkTitle = "مشاركة الملفات المحددة"
-copyLink = "نسخ رابط المشاركة"
-fileCount = "تم تحديد {{count}} ملفًا"
-ownerOnly = "يمكن للمالك فقط إدارة المشاركة."
-selectSingleFile = "حدّد ملفًا واحدًا لإدارة المشاركة."
-
-[storageUpload]
-description = "يقوم هذا بتحميل الملف الحالي إلى تخزين الخادم لاستخدامك الخاص."
-errorTitle = "فشل التحميل"
-failure = "فشل التحميل. يرجى التحقق من تسجيل الدخول وإعدادات التخزين."
-fileLabel = "الملف"
-hint = "تتحكم إعدادات الخادم في الروابط العامة وأوضاع الوصول."
-success = "تم التحميل إلى الخادم"
-title = "التحميل إلى الخادم"
-updateButton = "تحديث على الخادم"
-uploadButton = "تحميل إلى الخادم"
-bulkDescription = "يقوم هذا بتحميل الملفات المحددة إلى تخزين الخادم."
-bulkTitle = "تحميل الملفات المحددة"
-fileCount = "تم تحديد {{count}} ملفًا"
-more = " +{{count}} أخرى"
-
 [storage]
 approximateSize = "الحجم التقريبي"
 fileTooLarge = "الملف كبير جدًا. الحد الأقصى للحجم لكل ملف هو"
@@ -7463,6 +7484,106 @@ storageLimit = "حدّ التخزين"
 storageQuotaExceeded = "تم تجاوز حصة التخزين. يرجى إزالة بعض الملفات قبل رفع المزيد."
 storageUsed = "التخزين المؤقت المستخدم"
 temporaryNotice = "تُخزَّن الملفات مؤقتًا في متصفحك وقد تُمسح تلقائيًا"
+
+[storageShare]
+accessDenied = "ليس لديك حق الوصول إلى هذا الملف المشترك. اطلب من المالك مشاركته معك."
+accessDeniedBody = "ليس لديك حق الوصول إلى هذا الملف. اطلب من المالك مشاركته معك."
+accessDeniedTitle = "لا وصول"
+accessed = "تم الوصول"
+accessFailed = "تعذّر تحميل النشاط."
+accessLimitedCommenter = "وصول التعليق قادم قريبًا. اطلب من المالك صلاحية المحرر إذا كنت بحاجة إلى التنزيل."
+accessLimitedTitle = "وصول محدود"
+accessLimitedViewer = "هذا الرابط للعرض فقط. اطلب من المالك صلاحية المحرر إذا كنت بحاجة إلى التنزيل."
+addUser = "إضافة"
+bulkDescription = "أنشئ رابطًا واحدًا لمشاركة جميع الملفات المحددة مع المستخدمين المسجّلين الدخول."
+bulkTitle = "مشاركة الملفات المحددة"
+commenterHint = "التعليق قادم قريبًا."
+copied = "تم نسخ الرابط إلى الحافظة"
+copy = "نسخ"
+copyFailed = "فشل النسخ"
+copyLink = "نسخ رابط المشاركة"
+createdAt = "تم الإنشاء"
+description = "أنشئ رابط مشاركة لهذا الملف. يمكن للمستخدمين المسجّلين الدخول والذين لديهم الرابط الوصول إليه."
+download = "تنزيل"
+downloaded = "تم التنزيل"
+downloadFailed = "تعذّر تنزيل هذا الملف."
+downloadsCount = "عمليات التنزيل: {{count}}"
+emailWarningBody = "يبدو هذا عنوان بريد إلكتروني. إذا لم يكن هذا الشخص مستخدم Stirling PDF بالفعل، فلن يتمكن من الوصول إلى الملف."
+emailWarningConfirm = "المشاركة على أي حال"
+emailWarningTitle = "عنوان بريد إلكتروني"
+errorTitle = "فشلت المشاركة"
+expiredBody = "رابط المشاركة هذا غير صالح أو انتهت صلاحيته."
+expiredTitle = "انتهت صلاحية الرابط"
+failure = "تعذّر إنشاء رابط مشاركة. يرجى المحاولة مرة أخرى."
+fileCount = "تم تحديد {{count}} ملفًا"
+fileLabel = "الملف"
+generate = "إنشاء رابط"
+generated = "تم إنشاء رابط المشاركة"
+goToLogin = "الانتقال إلى تسجيل الدخول"
+hideActivity = "إخفاء النشاط"
+invalidUsername = "أدخل اسم مستخدم أو عنوان بريد إلكتروني صالحًا."
+lastAccessed = "آخر وصول"
+linkAccessTitle = "وصول رابط المشاركة"
+linkLabel = "رابط المشاركة"
+linksDisabled = "روابط المشاركة معطّلة."
+linksDisabledBody = "روابط المشاركة معطّلة بواسطة إعدادات الخادم."
+loadFailed = "تعذّر فتح الملف المشترك."
+loading = "جارٍ تحميل رابط المشاركة..."
+loginPrompt = "سجّل الدخول للوصول إلى هذا الملف المشترك."
+loginRequired = "مطلوب تسجيل الدخول"
+manage = "إدارة المشاركة"
+manageDescription = "إنشاء وإدارة روابط لمشاركة هذا الملف."
+manageLoadFailed = "تعذّر تحميل روابط المشاركة."
+manageTitle = "إدارة المشاركة"
+noActivity = "لا يوجد نشاط بعد."
+noLinks = "لا توجد روابط مشاركة نشطة بعد."
+noSharedUsers = "لا يملك أي مستخدم وصولًا بعد."
+openInApp = "فتح في Stirling PDF"
+ownerLabel = "المالك"
+ownerOnly = "يمكن للمالك فقط إدارة المشاركة."
+ownerUnknown = "غير معروف"
+removeLink = "إزالة الرابط"
+removeUser = "إزالة"
+requiresLogin = "هذا الملف المشترك يتطلب تسجيل الدخول."
+revoked = "تمت إزالة رابط المشاركة"
+revokeFailed = "تعذّر إزالة رابط المشاركة."
+roleCommenter = "معلّق"
+roleEditor = "محرر"
+roleLabel = "الدور"
+roleViewer = "عارض"
+selectSingleFile = "حدّد ملفًا واحدًا لإدارة المشاركة."
+sharedUsersTitle = "المستخدمون الذين تمت المشاركة معهم"
+shareHeading = "ملف مشترك"
+sharingDisabled = "المشاركة معطّلة."
+sharingDisabledBody = "تم تعطيل المشاركة بواسطة إعدادات الخادم."
+title = "مشاركة الملف"
+titleDefault = "ملف مشترك"
+tryAgain = "يرجى المحاولة لاحقًا."
+unknownUser = "مستخدم غير معروف"
+userAdded = "تمت إضافة المستخدم إلى قائمة المشاركة."
+userAddFailed = "يتعذر المشاركة مع هذا المستخدم."
+usernameLabel = "اسم المستخدم أو البريد الإلكتروني"
+usernamePlaceholder = "أدخل اسم مستخدم أو بريدًا إلكترونيًا"
+userRemoved = "تمت إزالة المستخدم من قائمة المشاركة."
+userRemoveFailed = "يتعذر إزالة هذا المستخدم."
+viewActivity = "عرض النشاط"
+viewed = "تمت المشاهدة"
+viewsCount = "المشاهدات: {{count}}"
+
+[storageUpload]
+bulkDescription = "يقوم هذا بتحميل الملفات المحددة إلى تخزين الخادم."
+bulkTitle = "تحميل الملفات المحددة"
+description = "يقوم هذا بتحميل الملف الحالي إلى تخزين الخادم لاستخدامك الخاص."
+errorTitle = "فشل التحميل"
+failure = "فشل التحميل. يرجى التحقق من تسجيل الدخول وإعدادات التخزين."
+fileCount = "تم تحديد {{count}} ملفًا"
+fileLabel = "الملف"
+hint = "تتحكم إعدادات الخادم في الروابط العامة وأوضاع الوصول."
+more = " +{{count}} أخرى"
+success = "تم التحميل إلى الخادم"
+title = "التحميل إلى الخادم"
+updateButton = "تحديث على الخادم"
+uploadButton = "تحميل إلى الخادم"
 
 [subscription]
 cancelsOn = "يلغى في {{date}}"
@@ -7507,8 +7628,121 @@ title = "توثيق API"
 [tableExtraxt]
 tags = "CSV,استخراج الجدول,استخراج,تحويل"
 
+[team]
+cancelInviteError = "تعذّر إلغاء الدعوة"
+confirmCancelInvite = "هل أنت متأكد أنك تريد إلغاء هذه الدعوة؟"
+confirmLeave = "هل أنت متأكد أنك تريد مغادرة هذا الفريق؟"
+confirmLeaveLeader = "بصفتك قائد فريق، ستتم إزالتك من الفريق عند المغادرة. هل أنت متأكد؟"
+confirmRemove = "هل أنت متأكد أنك تريد إزالة هذا العضو؟"
+editName = "تحرير اسم الفريق"
+inviteCancelled = "تم إلغاء الدعوة"
+inviteError = "تعذّر إرسال الدعوة"
+inviteSent = "تم إرسال الدعوة بنجاح"
+leader = "القائد"
+leaveButton = "مغادرة الفريق"
+leaveError = "تعذّرت مغادرة الفريق"
+leaveSuccess = "تمت مغادرة الفريق بنجاح"
+loading = "جارٍ تحميل معلومات الفريق..."
+memberCount = "{{count}} عضوًا"
+memberRemoved = "تمت إزالة العضو بنجاح"
+namePlaceholder = "أدخل اسم الفريق"
+personal = "شخصي"
+removeError = "تعذّرت إزالة العضو"
+renameError = "تعذّرت إعادة تسمية الفريق"
+renameSuccess = "تمت إعادة تسمية الفريق بنجاح"
+
+[team.features]
+badge = "ميزات الفريق"
+subtitle = "تعاون مع فريقك"
+title = "التعاون داخل الفريق"
+viewPlans = "عرض الخطط"
+
+[team.features.billing]
+description = "إدارة الفوترة والاشتراكات"
+title = "إدارة الفوترة"
+
+[team.features.credits]
+description = "مجموعة أرصدة مشتركة لكل الأعضاء"
+title = "أرصدة مشتركة"
+
+[team.features.dashboard]
+description = "عرض نشاط الفريق والاستخدام"
+title = "لوحة تحكم الفريق"
+
+[team.features.invite]
+description = "أضف أعضاءً إلى فريقك"
+title = "دعوة الأعضاء"
+
+[team.invitationBanner]
+acceptButton = "قبول"
+message = "قد دعاك للانضمام"
+rejectButton = "رفض"
+
+[team.invite]
+cancelLabel = "إلغاء"
+invalidEmail = "عنوان بريد إلكتروني غير صالح"
+placeholder = "أدخل عنوان البريد الإلكتروني"
+sendButton = "إرسال الدعوة"
+title = "دعوة عضو فريق"
+
+[team.members]
+emailColumn = "البريد الإلكتروني"
+empty = "لا يوجد أعضاء فريق بعد"
+nameColumn = "الاسم"
+pending = "قيد الانتظار"
+remove = "إزالة"
+roleColumn = "الدور"
+title = "أعضاء الفريق"
+
+[team.upgrade]
+button = "الترقية إلى خطة الفريق"
+description = "فعّل ميزات التعاون داخل الفريق"
+title = "الترقية إلى خطة الفريق"
+
+[textAlign]
+center = "وسط"
+left = "يسار"
+right = "يمين"
+
 [theme]
 toggle = "تبديل السِمة"
+
+[timestampPdf]
+completed = "تمت إضافة الطابع الزمني إلى PDF بنجاح"
+desc = "أضف طابعًا زمنيًا للمستند وفق RFC 3161 إلى ملف PDF الخاص بك باستخدام خادم سلطة طابع زمني (TSA) موثوق."
+filenamePrefix = "مختوم-زمنيا"
+results = "نتائج الطابع الزمني"
+submit = "تطبيق الطابع الزمني"
+title = "إضافة طابع زمني لـ PDF"
+
+[timestampPdf.error]
+failed = "حدث خطأ أثناء إضافة الطابع الزمني إلى PDF."
+generic = "فشل تطبيق الطابع الزمني"
+
+[timestampPdf.files]
+placeholder = "حدّد ملف PDF في العرض الرئيسي للبدء"
+
+[timestampPdf.options]
+note = "يتم إرسال تجزئة SHA-256 فقط من مستندك إلى خادم TSA؛ ولا يتم إرسال ملف PDF نفسه إلى خادم TSA مطلقًا."
+title = "خادم الطابع الزمني (TSA)"
+
+[timestampPdf.options.tsaUrl]
+desc = "اختر سلطة طابع زمني موثوقة"
+label = "اختر خادم TSA"
+
+[timestampPdf.steps]
+settings = "الإعدادات"
+
+[tool]
+endpointUnavailable = "هذه الأداة غير متاحة على خادمك."
+endpointUnavailableClickable = "غير متاح في هذا الوضع. انقر لتسجيل الدخول."
+invalidParams = "املأ الإعدادات المطلوبة."
+noFiles = "أضف ملفًا للبدء."
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "ألفا"
@@ -7568,12 +7802,6 @@ pageFormatting = "تنسيق الصفحات"
 removal = "إزالة"
 signing = "توقيع"
 verification = "تحقق"
-
-[tool]
-endpointUnavailable = "هذه الأداة غير متاحة على خادمك."
-endpointUnavailableClickable = "غير متاح في هذا الوضع. انقر لتسجيل الدخول."
-invalidParams = "املأ الإعدادات المطلوبة."
-noFiles = "أضف ملفًا للبدء."
 
 [tools]
 noSearchResults = "لم يتم العثور على أدوات"
@@ -7793,6 +8021,81 @@ fileManager = "مدير الملفات"
 pageEditor = "محرر الصفحات"
 viewer = "عارض"
 
+[viewer]
+cannotPreviewFile = "لا يمكن معاينة الملف"
+disableColorFilter = "تعطيل مرشح الألوان"
+dualPageView = "عرض صفحتين"
+enableDarkFilter = "تمكين المرشح الداكن"
+enableSepiaFilter = "تمكين مرشح سيبيا"
+firstPage = "الصفحة الأولى"
+lastPage = "الصفحة الأخيرة"
+nextPage = "الصفحة التالية"
+onlyPdfSupported = "عارض الملفات يدعم ملفات PDF فقط. يبدو أن هذا الملف بتنسيق مختلف."
+previousPage = "الصفحة السابقة"
+resetZoom = "إعادة ضبط التكبير"
+singlePageView = "عرض صفحة واحدة"
+unknownFile = "ملف غير معروف"
+zoomIn = "تكبير"
+zoomOut = "تصغير"
+
+[viewer.attachments]
+empty = "لا توجد مرفقات في هذا المستند"
+loading = "جارٍ تحميل المرفقات..."
+noDocument = "افتح ملف PDF لعرض مرفقاته."
+noMatch = "لا توجد مرفقات تطابق بحثك"
+noSupport = "دعم المرفقات غير متاح في هذا العارض."
+searchPlaceholder = "ابحث في المرفقات"
+title = "المرفقات"
+
+[viewer.comments]
+addComment = "إضافة تعليق"
+addCommentPlaceholder = "إضافة تعليق..."
+addLink = "إضافة رابط"
+addReplyPlaceholder = "إضافة رد..."
+deleteAnnotationAndComment = "حذف التعليق التوضيحي والتعليق"
+deleteDescription = "يحتوي هذا التعليق التوضيحي على تعليق مرفق. يمكنك إزالة التعليق فقط من الشريط الجانبي مع إبقاء التعليق التوضيحي، أو حذف كل شيء."
+deleteTitle = "إزالة التعليق التوضيحي من التعليقات؟"
+goToLink = "الانتقال إلى الرابط"
+hint = "ضع التعليقات باستخدام أدوات تعليق، إدراج نص، أو استبدال نص. ستظهر هنا بحسب الصفحة."
+locateAnnotation = "تحديد الموقع في المستند"
+moreActions = "إجراءات أخرى"
+nComments = "{{count}} تعليقات"
+oneComment = "تعليق واحد"
+pageLabel = "الصفحة {{page}}"
+placeholder = "اكتب تعليقك..."
+removeCommentOnly = "إزالة التعليق فقط"
+saveReply = "حفظ الرد"
+send = "إرسال"
+title = "التعليقات"
+typeComment = "تعليق"
+typeInsertText = "إدراج نص"
+typeReplaceText = "استبدال نص"
+viewComment = "عرض التعليق"
+
+[viewer.formBar]
+apply = "تطبيق التغييرات"
+dismiss = "تجاهل"
+download = "تنزيل PDF"
+hasFieldsDesc = "يحتوي ملف PDF هذا على حقول قابلة للتعبئة"
+title = "حقول النموذج"
+unsavedBadge = "غير محفوظ"
+unsavedDesc = "لديك تغييرات غير محفوظة"
+
+[viewer.nonPdf]
+columnDefault = "العمود {{index}}"
+convertToPdf = "التحويل إلى PDF"
+csvStats = "{{rows}} صفوف · {{columns}} أعمدة · {{size}}"
+emptyFile = "ملف فارغ"
+fileTypeBadge = "ملف {{type}}"
+htmlPreview = "معاينة HTML"
+htmlPreviewWarning = "معاينة HTML — قد لا يتم تحميل الموارد الخارجية · {{size}}"
+invalidJson = "JSON غير صالح — عرض المحتوى الخام"
+lineNumbers = "أرقام الأسطر"
+loading = "جارٍ التحميل..."
+renderMarkdown = "عرض Markdown"
+sortedBy = "مرتّب حسب: {{column}}"
+textStats = "{{lines}} أسطر · {{size}}"
+
 [viewPdf]
 header = "عرض PDF"
 tags = "عرض,قراءة,تعليق,نص,صورة"
@@ -7800,30 +8103,6 @@ title = "عرض/تحرير PDF"
 
 [warning]
 tooltipTitle = "تحذير"
-
-[wetSignature.tooltip]
-header = "طرق إنشاء التوقيع"
-
-[wetSignature.tooltip.draw]
-bullet1 = "تخصيص لون القلم وسماكته"
-bullet2 = "امسح وأعد الرسم حتى ترضى"
-bullet3 = "يعمل على أجهزة اللمس (الأجهزة اللوحية، الهواتف)"
-description = "أنشئ توقيعًا بخط اليد باستخدام الماوس أو شاشة اللمس. الأفضل للتوقيعات الشخصية الأصيلة."
-title = "رسم التوقيع"
-
-[wetSignature.tooltip.type]
-bullet1 = "اختر من عدة خطوط"
-bullet2 = "خصص حجم النص ولونه"
-bullet3 = "مثالي للتوقيعات الموحّدة"
-description = "أنشئ توقيعًا من نص مكتوب. سريع ومتّسق، ومناسب للمستندات التجارية."
-title = "كتابة التوقيع"
-
-[wetSignature.tooltip.upload]
-bullet1 = "يدعم PNG وJPG وغيرها من صيغ الصور"
-bullet2 = "يُوصى بالخلفيات الشفافة للحصول على أفضل النتائج"
-bullet3 = "سيتم تغيير حجم الصورة لتناسب مساحة التوقيع"
-description = "حمّل صورة توقيع مُنشأة مسبقًا. مثالي إذا كان لديك توقيع ممسوح ضوئيًا أو شعار شركة."
-title = "تحميل صورة التوقيع"
 
 [watermark]
 completed = "تمت إضافة العلامة المائية"
@@ -7996,6 +8275,30 @@ title = "نص العلامة المائية"
 image = "صورة"
 text = "نص"
 
+[wetSignature.tooltip]
+header = "طرق إنشاء التوقيع"
+
+[wetSignature.tooltip.draw]
+bullet1 = "تخصيص لون القلم وسماكته"
+bullet2 = "امسح وأعد الرسم حتى ترضى"
+bullet3 = "يعمل على أجهزة اللمس (الأجهزة اللوحية، الهواتف)"
+description = "أنشئ توقيعًا بخط اليد باستخدام الماوس أو شاشة اللمس. الأفضل للتوقيعات الشخصية الأصيلة."
+title = "رسم التوقيع"
+
+[wetSignature.tooltip.type]
+bullet1 = "اختر من عدة خطوط"
+bullet2 = "خصص حجم النص ولونه"
+bullet3 = "مثالي للتوقيعات الموحّدة"
+description = "أنشئ توقيعًا من نص مكتوب. سريع ومتّسق، ومناسب للمستندات التجارية."
+title = "كتابة التوقيع"
+
+[wetSignature.tooltip.upload]
+bullet1 = "يدعم PNG وJPG وغيرها من صيغ الصور"
+bullet2 = "يُوصى بالخلفيات الشفافة للحصول على أفضل النتائج"
+bullet3 = "سيتم تغيير حجم الصورة لتناسب مساحة التوقيع"
+description = "حمّل صورة توقيع مُنشأة مسبقًا. مثالي إذا كان لديك توقيع ممسوح ضوئيًا أو شعار شركة."
+title = "تحميل صورة التوقيع"
+
 [workspace]
 title = "مساحة العمل"
 
@@ -8014,9 +8317,9 @@ disable = "تعطيل"
 disabled = "معطّل"
 editRole = "تحرير الدور"
 enable = "تمكين"
+loading = "جارٍ تحميل الأشخاص..."
 locked = "مقفل"
 lockedBadge = "مقفل"
-loading = "جارٍ تحميل الأشخاص..."
 loginRequired = "فعّل وضع تسجيل الدخول أولاً"
 member = "عضو"
 noMembersFound = "لم يتم العثور على أعضاء"
@@ -8262,278 +8565,3 @@ cancel = "إلغاء"
 confirm = "استخراج"
 message = "هذا الملف ZIP يحتوي على {{count}} ملفات. هل تريد الاستخراج على أي حال؟"
 title = "ملف ZIP كبير"
-
-[cloudBadge]
-tooltip = "ستستخدم هذه العملية أرصدة السحابة الخاصة بك"
-
-[team]
-cancelInviteError = "تعذّر إلغاء الدعوة"
-confirmCancelInvite = "هل أنت متأكد أنك تريد إلغاء هذه الدعوة؟"
-confirmLeave = "هل أنت متأكد أنك تريد مغادرة هذا الفريق؟"
-confirmLeaveLeader = "بصفتك قائد فريق، ستتم إزالتك من الفريق عند المغادرة. هل أنت متأكد؟"
-confirmRemove = "هل أنت متأكد أنك تريد إزالة هذا العضو؟"
-editName = "تحرير اسم الفريق"
-inviteCancelled = "تم إلغاء الدعوة"
-inviteError = "تعذّر إرسال الدعوة"
-inviteSent = "تم إرسال الدعوة بنجاح"
-leader = "القائد"
-leaveButton = "مغادرة الفريق"
-leaveError = "تعذّرت مغادرة الفريق"
-leaveSuccess = "تمت مغادرة الفريق بنجاح"
-loading = "جارٍ تحميل معلومات الفريق..."
-memberCount = "{{count}} عضوًا"
-memberRemoved = "تمت إزالة العضو بنجاح"
-namePlaceholder = "أدخل اسم الفريق"
-personal = "شخصي"
-removeError = "تعذّرت إزالة العضو"
-renameError = "تعذّرت إعادة تسمية الفريق"
-renameSuccess = "تمت إعادة تسمية الفريق بنجاح"
-
-[team.invitationBanner]
-message = "قد دعاك للانضمام"
-acceptButton = "قبول"
-rejectButton = "رفض"
-
-[team.features]
-badge = "ميزات الفريق"
-subtitle = "تعاون مع فريقك"
-title = "التعاون داخل الفريق"
-viewPlans = "عرض الخطط"
-
-[team.features.billing]
-description = "إدارة الفوترة والاشتراكات"
-title = "إدارة الفوترة"
-
-[team.features.credits]
-description = "مجموعة أرصدة مشتركة لكل الأعضاء"
-title = "أرصدة مشتركة"
-
-[team.features.dashboard]
-description = "عرض نشاط الفريق والاستخدام"
-title = "لوحة تحكم الفريق"
-
-[team.features.invite]
-description = "أضف أعضاءً إلى فريقك"
-title = "دعوة الأعضاء"
-
-[team.invite]
-cancelLabel = "إلغاء"
-invalidEmail = "عنوان بريد إلكتروني غير صالح"
-placeholder = "أدخل عنوان البريد الإلكتروني"
-sendButton = "إرسال الدعوة"
-title = "دعوة عضو فريق"
-
-[team.members]
-emailColumn = "البريد الإلكتروني"
-empty = "لا يوجد أعضاء فريق بعد"
-nameColumn = "الاسم"
-pending = "قيد الانتظار"
-remove = "إزالة"
-roleColumn = "الدور"
-title = "أعضاء الفريق"
-
-[team.upgrade]
-button = "الترقية إلى خطة الفريق"
-description = "فعّل ميزات التعاون داخل الفريق"
-title = "الترقية إلى خطة الفريق"
-
-[provider.oauth2.google]
-scope = "مصادقة تسجيل الدخول"
-
-[provider.oauth2.google.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID من Google Cloud Console"
-
-[provider.oauth2.google.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret من Google Cloud Console"
-
-[provider.oauth2.google.scopes]
-label = "النطاقات"
-description = "نطاقات OAuth2 مفصولة بفواصل"
-
-[provider.oauth2.google.useAsUsername]
-label = "استخدام كاسم مستخدم"
-description = "الحقل المستخدم كاسم مستخدم (email، name، given_name، family_name)"
-
-[provider.oauth2.github]
-scope = "مصادقة تسجيل الدخول"
-
-[provider.oauth2.github.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID من إعدادات مطوري GitHub"
-
-[provider.oauth2.github.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret من إعدادات مطوري GitHub"
-
-[provider.oauth2.github.scopes]
-label = "النطاقات"
-description = "نطاقات OAuth2 مفصولة بفواصل"
-
-[provider.oauth2.github.useAsUsername]
-label = "استخدام كاسم مستخدم"
-description = "الحقل المستخدم كاسم مستخدم (email، login، name)"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "Issuer URL"
-description = "عنوان URL لنقطة اكتشاف OpenID Connect الخاصة بـ realm في Keycloak"
-
-[provider.oauth2.keycloak.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID من Keycloak"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret من Keycloak"
-
-[provider.oauth2.keycloak.scopes]
-label = "النطاقات"
-description = "نطاقات OAuth2 مفصولة بفواصل"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "استخدام كاسم مستخدم"
-description = "الحقل المستخدم كاسم مستخدم (email، name، given_name، family_name، preferred_username)"
-
-[provider.oauth2.generic]
-name = "OAuth2 عام"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "تمكين OAuth2 عام"
-description = "تمكين المصادقة باستخدام مزوّد OAuth2 مخصص"
-
-[provider.oauth2.generic.provider]
-label = "اسم المزوّد"
-description = "اسم مزوّد OAuth2 لديك (مثل Azure AD، Okta)"
-
-[provider.oauth2.generic.issuer]
-label = "Issuer URL"
-description = "مزوّد يدعم OpenID Connect Discovery (/.well-known/openid-configuration)"
-
-[provider.oauth2.generic.clientId]
-label = "Client ID"
-description = "OAuth2 Client ID من مزوّدك"
-
-[provider.oauth2.generic.clientSecret]
-label = "Client Secret"
-description = "OAuth2 Client Secret من مزوّدك"
-
-[provider.oauth2.generic.scopes]
-label = "النطاقات"
-description = "نطاقات OAuth2 مفصولة بفواصل"
-
-[provider.oauth2.generic.useAsUsername]
-label = "استخدام كاسم مستخدم"
-description = "الحقل المستخدم كاسم مستخدم"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "إنشاء المستخدمين تلقائيًا"
-description = "إنشاء حسابات المستخدمين تلقائيًا عند أول تسجيل دخول عبر OAuth2"
-
-[provider.oauth2.generic.blockRegistration]
-label = "حظر التسجيل"
-description = "منع تسجيل المستخدمين الجدد عبر OAuth2"
-
-[provider.smtp]
-name = "بريد SMTP"
-scope = "إشعارات البريد الإلكتروني"
-
-[provider.smtp.enabled]
-label = "تمكين البريد"
-description = "تمكين إشعارات البريد الإلكتروني ووظائف SMTP"
-
-[provider.smtp.host]
-label = "مضيف SMTP"
-description = "اسم المضيف أو عنوان IP لخادم SMTP الخاص بك"
-
-[provider.smtp.port]
-label = "منفذ SMTP"
-description = "رقم المنفذ لاتصال SMTP (عادة 25 أو 465 أو 587)"
-
-[provider.smtp.username]
-label = "اسم مستخدم SMTP"
-description = "اسم المستخدم لمصادقة SMTP"
-
-[provider.smtp.password]
-label = "كلمة مرور SMTP"
-description = "كلمة المرور لمصادقة SMTP"
-
-[provider.smtp.from]
-label = "عنوان المرسِل"
-description = "عنوان البريد الإلكتروني المستخدم كمرسِل"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO (SAML)"
-
-[provider.saml2.enabled]
-label = "تمكين SAML2"
-description = "تمكين مصادقة SAML2 (للمؤسسات فقط)"
-
-[provider.saml2.provider]
-label = "اسم المزوّد"
-description = "اسم مزوّد SAML2 الخاص بك"
-
-[provider.saml2.registrationId]
-label = "معرّف التسجيل"
-description = "اسم تطبيق موفر الخدمة (SP) لديك"
-
-[provider.saml2.idpMetadataUri]
-label = "IDP Metadata URI"
-description = "URI لبيانات التعريف الخاصة بمزوّدك"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "IDP Single Login URL"
-description = "عنوان URL لبدء SSO"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "IDP Single Logout URL"
-description = "عنوان URL لبدء SLO"
-
-[provider.saml2.idpIssuer]
-label = "مُصدِر IDP"
-description = "معرّف مزوّدك"
-
-[provider.saml2.idpCert]
-label = "شهادة IDP"
-description = "مسار الشهادة (مثل: classpath:okta.cert)"
-
-[provider.saml2.privateKey]
-label = "المفتاح الخاص"
-description = "مسار مفتاحك الخاص"
-
-[provider.saml2.spCert]
-label = "شهادة SP"
-description = "مسار شهادة التوقيع الخاصة بك"
-
-[provider.saml2.autoCreateUser]
-label = "إنشاء المستخدمين تلقائيًا"
-description = "إنشاء حسابات المستخدمين تلقائيًا عند أول تسجيل دخول عبر SAML2"
-
-[provider.saml2.blockRegistration]
-label = "حظر التسجيل"
-description = "منع تسجيل المستخدمين الجدد عبر SAML2"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "استيراد ملفات"
-
-[provider.googledrive.enabled]
-label = "تمكين منتقي ملفات Google Drive"
-description = "السماح للمستخدمين باستيراد الملفات مباشرةً من Google Drive"
-
-[provider.googledrive.clientId]
-label = "Client ID"
-description = "Google OAuth 2.0 Client ID من Google Cloud Console"
-
-[provider.googledrive.apiKey]
-label = "API Key"
-description = "Google API Key لواجهة Google Picker API من Google Cloud Console"
-
-[provider.googledrive.appId]
-label = "App ID"
-description = "Google Drive App ID من Google Cloud Console"

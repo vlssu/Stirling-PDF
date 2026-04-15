@@ -1,3 +1,4 @@
+accessInvite = "招待"
 addToDoc = "ドキュメントに追加"
 alphabet = "アルファベット"
 apply = "適用"
@@ -8,22 +9,22 @@ black = "黒"
 blue = "青"
 bored = "待ち時間が退屈"
 cancel = "キャンセル"
-confirm = "確認"
 changedCredsMessage = "資格情報が変更されました！"
 chooseFile = "ファイルを選択"
 close = "閉じる"
 color = "色"
 comingSoon = "近日公開"
+confirm = "確認"
 confirmClose = "閉じる確認"
 confirmCloseCancel = "キャンセル"
 confirmCloseConfirm = "ファイルを閉じる"
-confirmCloseMessage = "このファイルを閉じてもよろしいですか？"
 confirmCloseDiscard = "変更を破棄して閉じる"
+confirmCloseMessage = "このファイルを閉じてもよろしいですか？"
 confirmCloseSave = "保存して閉じる"
+confirmCloseSaveFailed = "エラーがあります。{{count}} file{{plural}} を保存できませんでした。"
+confirmCloseSaveFailedTitle = "保存に失敗しました"
 confirmCloseUnsaved = "このファイルには未保存の変更があります。"
 confirmCloseUnsavedList = "未保存の変更がある {{count}} file{{plural}} があります。\n\n{{fileList}}"
-confirmCloseSaveFailedTitle = "保存に失敗しました"
-confirmCloseSaveFailed = "エラーがあります。{{count}} file{{plural}} を保存できませんでした。"
 confirmPasswordErrorMessage = "新しいパスワードと新しいパスワードの確認は一致する必要があります。"
 custom = "カスタム..."
 customPosition = "カスタム位置"
@@ -43,11 +44,14 @@ downloadComplete = "ダウンロード完了"
 downloadPdf = "PDFをダウンロード"
 downloadUnavailable = "この項目はダウンロードできません"
 edit = "編集"
+editSecret = "この値を編集"
 editYourNewFiles = "新しいファイルを編集"
+encryptedFileBlocked = "File is password-protected. Unlock it first."
+encryptedFilesBlocked = "{{count}} files are password-protected. Unlock them first."
 exportAndContinue = "エクスポートして続行"
 false = "偽"
-fileSavedToDisk = "ファイルをディスクに保存しました"
 fileNotSavedToDisk = "ディスクに保存されていません"
+fileSavedToDisk = "ファイルをディスクに保存しました"
 fileSelected = "選択中：{{filename}}"
 filesSelected = "選択されたファイル"
 font = "フォント"
@@ -61,12 +65,15 @@ help = "ヘルプ"
 imgPrompt = "画像を選択"
 incorrectPasswordMessage = "現在のパスワードが正しくありません。"
 info = "情報"
+insufficientCredits = "クレジットが不足しています。必要: {{requiredCredits}}、保有: {{currentBalance}}、不足: {{shortfall}}"
 invalidPasswordMessage = "パスワードは空にすることはできません。また、先頭・末尾にスペースを含めることもできません。"
 invalidUndoData = "元に戻せません: 無効な操作データです"
 invalidUsernameMessage = "ユーザー名が無効です。ユーザー名には文字、数字、およびそれに続く特殊文字 @._+- のみを含めることができます。または、有効な電子メール アドレスである必要があります。"
 joinDiscord = "Discordサーバーに参加する"
 keepWorking = "作業を続ける"
 loading = "読込中..."
+loadingCredits = "クレジットを確認しています..."
+loadingProStatus = "サブスクリプションの状態を確認しています..."
 logOut = "ログアウト"
 marginTooltip = "ページ番号とページ端との距離。"
 moreOptions = "その他のオプション"
@@ -80,6 +87,7 @@ noFilesToUndo = "元に戻せません: 直前の操作で処理されたファ�
 noOperationToUndo = "元に戻す操作がありません"
 notAuthenticatedMessage = "ユーザーが認証されていません。"
 nothingToUndo = "元に戻す項目はありません"
+noticeTopUpOrPlan = "クレジットが不足しています。チャージするかプランをアップグレードしてください"
 noValidFiles = "処理対象の有効なファイルがありません"
 oops = "おっと！"
 openInViewer = "ビューアで開く"
@@ -96,9 +104,9 @@ pendingRedactionsTitle = "未適用の墨消し"
 pin = "ファイルをピン留め（ツール実行後も保持）"
 poweredBy = "提供元"
 pro = "Pro"
-processTimeWarning = "警告:この処理はファイルサイズによって1分程度かかることがあります"
 processingComplete = "ファイルの準備ができました。"
 processingCompleteMultiple = "{{count}} 件のファイルの準備ができました。"
+processTimeWarning = "警告:この処理はファイルサイズによって1分程度かかることがあります"
 property = "プロパティ"
 quickPosition = "クイック位置"
 red = "赤"
@@ -108,7 +116,6 @@ save = "保存"
 saveToBrowser = "ブラウザへ保存"
 saveUnavailable = "この項目は保存できません"
 seeDockerHub = "Docker Hubを見る"
-editSecret = "この値を編集"
 selectFillter = "-- 選択 --"
 size = "サイズ"
 sponsor = "スポンサー"
@@ -143,11 +150,6 @@ welcome = "ようこそ"
 white = "白"
 WorkInProgess = "作業中です。動作しないまたはバグがある可能性があります。問題があれば報告してください！"
 yes = "はい"
-insufficientCredits = "クレジットが不足しています。必要: {{requiredCredits}}、保有: {{currentBalance}}、不足: {{shortfall}}"
-loadingCredits = "クレジットを確認しています..."
-loadingProStatus = "サブスクリプションの状態を確認しています..."
-noticeTopUpOrPlan = "クレジットが不足しています。チャージするかプランをアップグレードしてください"
-accessInvite = "招待"
 
 [account]
 accountSettings = "アカウント設定"
@@ -851,6 +853,14 @@ title = "API エンドポイント"
 userDefaults = "ユーザー設定の既定値"
 userDefaultsDescription = "ユーザー設定の既定値を設定します。ユーザーは個人設定で上書きできます。"
 
+[admin.settings.endpoints.defaultHideUnavailableConversions]
+description = "無効な変換オプションをグレー表示ではなく一覧から非表示にする"
+label = "利用できない変換をデフォルトで非表示にする"
+
+[admin.settings.endpoints.defaultHideUnavailableTools]
+description = "無効なツールをグレー表示ではなく一覧から非表示にする"
+label = "利用できないツールをデフォルトで非表示にする"
+
 [admin.settings.endpoints.groupsToRemove]
 description = "無効化するエンドポイントグループを選択"
 label = "無効化するエンドポイントグループ"
@@ -858,14 +868,6 @@ label = "無効化するエンドポイントグループ"
 [admin.settings.endpoints.toRemove]
 description = "無効化する個別エンドポイントを選択"
 label = "無効化するエンドポイント"
-
-[admin.settings.endpoints.defaultHideUnavailableTools]
-description = "無効なツールをグレー表示ではなく一覧から非表示にする"
-label = "利用できないツールをデフォルトで非表示にする"
-
-[admin.settings.endpoints.defaultHideUnavailableConversions]
-description = "無効な変換オプションをグレー表示ではなく一覧から非表示にする"
-label = "利用できない変換をデフォルトで非表示にする"
 
 [admin.settings.enterpriseRequired]
 message = "{{featureName}} にアクセスするには Enterprise ライセンスが必要です。現在は参照用のデモデータを表示しています。"
@@ -974,6 +976,10 @@ label = "既定のロケール"
 description = "最大ファイルアップロードサイズ（例: 100MB, 1GB）"
 label = "ファイルアップロード制限"
 
+[admin.settings.general.frontendUrl]
+description = "フロントエンドのベース URL（例: https://pdf.example.com）。メール招待リンクとモバイルの QR コードアップロードで使用します。空欄の場合はバックエンドの URL を使用します。"
+label = "フロントエンド URL"
+
 [admin.settings.general.hideDisabledTools]
 description = "無効なツールをインターフェースから非表示にする"
 label = "無効なツールを非表示"
@@ -985,10 +991,6 @@ label = "Google Drive を非表示"
 [admin.settings.general.hideDisabledTools.mobileScanner]
 description = "有効でない場合はモバイル QR スキャナーのボタンを非表示にする"
 label = "モバイルスキャナーを非表示"
-
-[admin.settings.general.frontendUrl]
-description = "フロントエンドのベース URL（例: https://pdf.example.com）。メール招待リンクとモバイルの QR コードアップロードで使用します。空欄の場合はバックエンドの URL を使用します。"
-label = "フロントエンド URL"
 
 [admin.settings.general.homeDescription]
 description = "ホームページに表示される説明文"
@@ -1169,9 +1171,25 @@ description = "認証、ログイン動作、セキュリティポリシーを�
 title = "セキュリティ"
 
 [admin.settings.security.audit]
+hideDetails = "監査レベルの詳細を非表示"
 label = "監査ログ"
 showDetails = "監査レベルの詳細を表示"
-hideDetails = "監査レベルの詳細を非表示"
+
+[admin.settings.security.audit.advancedOptions]
+description = "以下のオプションは処理時間とメモリ使用量を増加させます。本当に必要な場合のみ有効にしてください。"
+title = "詳細オプション"
+
+[admin.settings.security.audit.captureFileHash]
+description = "アップロードされた PDF ファイルの整合性確認のために SHA-256 ハッシュを抽出します。監査レベルに依存しません。"
+label = "ファイルハッシュを取得（SHA-256）"
+
+[admin.settings.security.audit.captureOperationResults]
+description = "メソッドの戻り値を記録します。非推奨：ログ量とディスク使用量が大幅に増加します。"
+label = "処理結果を取得"
+
+[admin.settings.security.audit.capturePdfAuthor]
+description = "処理中に PDF ドキュメントの作者フィールドを抽出します。PDF の解析が必要で、待ち時間が増加します。監査レベルに依存しません。"
+label = "PDF の作者メタデータを取得"
 
 [admin.settings.security.audit.enabled]
 description = "コンプライアンスとセキュリティ監視のためにユーザー操作とシステムイベントを追跡"
@@ -1182,30 +1200,14 @@ description = "0=OFF, 1=BASIC, 2=STANDARD, 3=VERBOSE"
 label = "監査レベル"
 
 [admin.settings.security.audit.levelDetails]
-off = "監査ログなし（重大なセキュリティイベントを除く）"
 basic = "PDF ファイル操作（圧縮、分割、結合など）と設定変更。記録内容：操作ステータス（成功/失敗）、メソッドのパラメータ、処理時間。最小限のログ量。"
+off = "監査ログなし（重大なセキュリティイベントを除く）"
 standard = "BASIC のイベントに加えて、ユーザーのログイン/ログアウト、アカウント変更、一般的な GET リクエスト。ログノイズを抑えるため、継続的なポーリング呼び出し（/auth/me、/app-config、/health など）は除外。多くの環境で最適。"
 verbose = "STANDARD のイベントに加えて、継続的なポーリング呼び出し、すべての GET リクエスト、詳細なタイミング。注意：ログ量が多く、パフォーマンスに影響。"
 
 [admin.settings.security.audit.retentionDays]
 description = "監査ログを保持する日数"
 label = "監査保管期間（日）"
-
-[admin.settings.security.audit.advancedOptions]
-title = "詳細オプション"
-description = "以下のオプションは処理時間とメモリ使用量を増加させます。本当に必要な場合のみ有効にしてください。"
-
-[admin.settings.security.audit.captureFileHash]
-description = "アップロードされた PDF ファイルの整合性確認のために SHA-256 ハッシュを抽出します。監査レベルに依存しません。"
-label = "ファイルハッシュを取得（SHA-256）"
-
-[admin.settings.security.audit.capturePdfAuthor]
-description = "処理中に PDF ドキュメントの作者フィールドを抽出します。PDF の解析が必要で、待ち時間が増加します。監査レベルに依存しません。"
-label = "PDF の作者メタデータを取得"
-
-[admin.settings.security.audit.captureOperationResults]
-description = "メソッドの戻り値を記録します。非推奨：ログ量とディスク使用量が大幅に増加します。"
-label = "処理結果を取得"
 
 [admin.settings.security.csrfDisabled]
 description = "クロスサイトリクエストフォージェリ保護を無効化（非推奨）"
@@ -1274,6 +1276,14 @@ label = "初期ユーザー名"
 [admin.settings.security.jwt]
 label = "JWT 設定"
 
+[admin.settings.security.jwt.allowedClockSkewSeconds]
+description = "トークン検証時のクライアント/サーバー間の時刻ずれ許容値（既定: 60 秒）"
+label = "時刻ずれ許容値（秒）"
+
+[admin.settings.security.jwt.desktopTokenExpiryMinutes]
+description = "デスクトップ クライアント用のアクセストークン有効期間（分）。デスクトップ アプリは User-Agent により自動判別され、UX 向上のためより長いセッションが付与されます（既定: 43200 = 30 日）"
+label = "デスクトップ トークン有効期限（分）"
+
 [admin.settings.security.jwt.enableKeyCleanup]
 description = "期限切れの JWT キーを自動的に削除"
 label = "キークリーンアップを有効化"
@@ -1282,29 +1292,21 @@ label = "キークリーンアップを有効化"
 description = "JWT 署名キーを定期的に自動ローテーション"
 label = "キーローテーションを有効化"
 
-[admin.settings.security.jwt.tokenExpiryMinutes]
-description = "Web クライアント用のアクセストークン有効期間（分）（既定: 1440 = 24 時間）"
-label = "Web トークン有効期限（分）"
-
-[admin.settings.security.jwt.desktopTokenExpiryMinutes]
-description = "デスクトップ クライアント用のアクセストークン有効期間（分）。デスクトップ アプリは User-Agent により自動判別され、UX 向上のためより長いセッションが付与されます（既定: 43200 = 30 日）"
-label = "デスクトップ トークン有効期限（分）"
-
-[admin.settings.security.jwt.allowedClockSkewSeconds]
-description = "トークン検証時のクライアント/サーバー間の時刻ずれ許容値（既定: 60 秒）"
-label = "時刻ずれ許容値（秒）"
+[admin.settings.security.jwt.persistence]
+description = "サーバー再起動後も維持するよう JWT キーを永続保存"
+label = "キー永続化を有効化"
 
 [admin.settings.security.jwt.refreshGraceMinutes]
 description = "有効期限切れ後、この分数以内のトークン更新を許可します（既定: 15 分、最大 3 回試行）"
 label = "更新猶予期間（分）"
 
-[admin.settings.security.jwt.persistence]
-description = "サーバー再起動後も維持するよう JWT キーを永続保存"
-label = "キー永続化を有効化"
-
 [admin.settings.security.jwt.secureCookie]
 description = "JWT クッキーに HTTPS を必須（本番環境推奨）"
 label = "セキュアクッキー"
+
+[admin.settings.security.jwt.tokenExpiryMinutes]
+description = "Web クライアント用のアクセストークン有効期間（分）（既定: 1440 = 24 時間）"
+label = "Web トークン有効期限（分）"
 
 [admin.settings.security.loginAttemptCount]
 description = "アカウントロックまでの最大失敗回数"
@@ -1332,6 +1334,34 @@ description = "Controls whether the application can be embedded in iframes"
 disabled = "Disabled (No X-Frame-Options header)"
 label = "X-Frame-Options"
 sameorigin = "Same Origin (Allow framing from same domain)"
+
+[admin.settings.storage]
+description = "サーバーストレージと共有オプションを管理します。"
+title = "ファイルストレージと共有"
+
+[admin.settings.storage.enabled]
+description = "ユーザーがサーバーにファイルを保存できるようにします。"
+label = "サーバーファイルストレージを有効化"
+
+[admin.settings.storage.sharing.email]
+description = "メールアドレスによる共有を許可します。"
+label = "メール共有を有効化"
+mailLink = "メール設定を設定"
+mailNote = "メール設定が必要です。 "
+
+[admin.settings.storage.sharing.enabled]
+description = "保存済みファイルの共有を許可します。"
+label = "共有を有効化"
+
+[admin.settings.storage.sharing.links]
+description = "サインインが必要なリンクによる共有を許可します。"
+frontendUrlLink = "システム設定で設定"
+frontendUrlNote = "フロントエンドURLが必要です。 "
+label = "共有リンクを有効化"
+
+[admin.settings.storage.signing.enabled]
+description = "複数参加者のドキュメント署名セッションの作成を許可します。サーバーファイルストレージの有効化が必要です。"
+label = "グループ署名（アルファ）を有効化"
 
 [admin.settings.telegram]
 description = "Telegram ボットの接続、アクセス制御、フィードバック動作を構成します。"
@@ -1429,34 +1459,6 @@ title = "処理"
 description = "エラーを報告する前に処理ジョブを待機する最大時間。"
 label = "処理タイムアウト（秒）"
 
-[admin.settings.storage]
-description = "サーバーストレージと共有オプションを管理します。"
-title = "ファイルストレージと共有"
-
-[admin.settings.storage.enabled]
-description = "ユーザーがサーバーにファイルを保存できるようにします。"
-label = "サーバーファイルストレージを有効化"
-
-[admin.settings.storage.sharing.email]
-description = "メールアドレスによる共有を許可します。"
-label = "メール共有を有効化"
-mailLink = "メール設定を設定"
-mailNote = "メール設定が必要です。 "
-
-[admin.settings.storage.sharing.enabled]
-description = "保存済みファイルの共有を許可します。"
-label = "共有を有効化"
-
-[admin.settings.storage.sharing.links]
-description = "サインインが必要なリンクによる共有を許可します。"
-frontendUrlLink = "システム設定で設定"
-frontendUrlNote = "フロントエンドURLが必要です。 "
-label = "共有リンクを有効化"
-
-[admin.settings.storage.signing.enabled]
-description = "複数参加者のドキュメント署名セッションの作成を許可します。サーバーファイルストレージの有効化が必要です。"
-label = "グループ署名（アルファ）を有効化"
-
 [admin.settings.unsavedChanges]
 cancel = "編集を続ける"
 discard = "変更を破棄"
@@ -1521,6 +1523,7 @@ settings = "config/settings.ymlファイルでアナリティクスの設定を�
 title = "Stirling PDFをもっと良くしたいですか？"
 
 [annotation]
+annotationStyle = "注釈スタイル"
 applyChanges = "変更を適用"
 backgroundColor = "背景色"
 borderOff = "枠線: オフ"
@@ -1530,6 +1533,8 @@ chooseColor = "色を選択"
 circle = "円"
 clearBackground = "背景を削除"
 color = "色"
+comment = "コメント"
+comments = "コメント"
 contents = "テキスト"
 delete = "削除"
 desc = "ハイライト、ペン、テキスト、ノートを使用できます。変更はそのまま保持され、フラット化は不要です。"
@@ -1547,7 +1552,6 @@ editStampHint = "画像を変更するには、このスタンプを削除して
 editSwitchToSelect = "この注釈を編集するには、選択して編集に切り替えてください。"
 editText = "テキストボックスを編集"
 editTextMarkup = "テキストマークアップを編集"
-annotationStyle = "注釈スタイル"
 ellipse = "楕円"
 exit = "注釈モードを終了"
 fillColor = "塗りの色"
@@ -1557,14 +1561,11 @@ freehandHighlighter = "フリーハンドハイライト"
 highlight = "ハイライト"
 imagePreview = "プレビュー"
 inkHighlighter = "フリーハンドハイライト"
+insertText = "テキストを挿入"
 line = "直線"
 lineArrow = "矢印"
 noBackground = "背景なし"
 note = "ノート"
-comment = "コメント"
-comments = "コメント"
-insertText = "テキストを挿入"
-replaceText = "テキストを置換"
 noteIcon = "ノートアイコン"
 notesStamps = "ノートとスタンプ"
 opacity = "不透明度"
@@ -1574,6 +1575,7 @@ polyline = "ポリライン"
 properties = "プロパティ"
 rectangle = "長方形"
 redo = "やり直し"
+replaceText = "テキストを置換"
 saveChanges = "変更を保存"
 saveFailed = "コピーを保存できません"
 saveReady = "ダウンロードの準備ができました"
@@ -1627,68 +1629,6 @@ goToSettings = "監査設定へ移動"
 notAvailable = "監査システムは利用できません"
 notAvailableMessage = "監査システムが未設定または利用できません。"
 
-[audit.error]
-title = "監査システムの読み込みエラー"
-
-[audit.export]
-clearFilters = "クリア"
-description = "監査イベントを CSV または JSON 形式でエクスポートします。フィルターを使用してエクスポート対象を絞り込めます。"
-endDate = "終了日"
-error = "データのエクスポートに失敗しました"
-exportButton = "データをエクスポート"
-fieldAuthor = "作者（PDF から）"
-fieldDate = "日付"
-fieldDocumentName = "ドキュメント名"
-fieldFileHash = "ファイルハッシュ（SHA-256）"
-fieldIpAddress = "IP アドレス"
-fieldOperationResults = "処理結果"
-fieldOutcome = "結果（成功/失敗）"
-fieldTool = "ツール"
-fieldUsername = "ユーザー名"
-filterByType = "タイプでフィルタ"
-filterByUser = "ユーザーでフィルタ"
-filters = "フィルター（任意）"
-format = "エクスポート形式"
-selectFields = "含める項目を選択"
-startDate = "開始日"
-title = "監査データのエクスポート"
-verboseRequired = "VERBOSE 監査レベルが必要です"
-
-[audit.systemStatus]
-autoRefresh = "自動更新"
-autoRefreshLabel = "30 秒ごとに自動更新"
-captureBySettings = "設定で有効化"
-capturedFields = "取得項目"
-date = "日付"
-days = "日"
-disabled = "無効"
-documentName = "ドキュメント名"
-enabled = "有効"
-fileHash = "ファイルハッシュ"
-level = "監査レベル"
-pdfAuthor = "PDF の作者"
-retention = "保持期間"
-status = "監査ログ"
-title = "システムステータス"
-tool = "ツール"
-totalEvents = "イベント総数"
-username = "ユーザー名"
-verboseOnly = "VERBOSE のみ"
-
-[audit.stats]
-activeUsers = "アクティブユーザー"
-attention = "要対応"
-avgLatency = "平均レイテンシ"
-error = "統計の読み込みエラー"
-errorLoadingStats = "統計の読み込みに失敗しました"
-excellent = "非常に良い"
-good = "良好"
-noData = "N/A"
-successRate = "成功率"
-title = "サマリー"
-totalEvents = "イベント合計"
-vsLastPeriod = "前期間比"
-
 [audit.charts]
 byTool = "よく使われるツール"
 byType = "タイプ別イベント"
@@ -1701,6 +1641,27 @@ noData = "この期間のデータはありません"
 overTime = "時系列イベント"
 title = "監査ダッシュボード"
 week = "週"
+
+[audit.clearData]
+cancel = "キャンセル"
+codeDoesNotMatch = "コードが一致しません"
+codePlaceholder = "ここにコードを入力"
+confirmationCode = "確認コード"
+confirmationRequired = "すべての監査データを削除"
+confirmMessage = "すべての監査ログが完全に削除されます。続行するには下の確認コードを入力してください。"
+confirmTitle = "削除の実行を確認してください"
+deleteButton = "削除"
+enterCode = "確認コード"
+enterCodeBelow = "上に表示されたとおりに正確にコードを入力してください（大文字・小文字を区別）"
+initiateDelete = "すべてのデータを削除"
+irreversible = "取り消し不可"
+success = "成功"
+successMessage = "すべての監査データを正常に削除しました"
+warning1 = "この操作は元に戻せません"
+warning2 = "監査データを削除すると、セキュリティイベント、ユーザーアクティビティ、ファイル操作を含むすべての過去の監査ログがデータベースから完全に削除されます。"
+
+[audit.error]
+title = "監査システムの読み込みエラー"
 
 [audit.events]
 actions = "操作"
@@ -1728,40 +1689,81 @@ type = "タイプ"
 user = "ユーザー"
 viewDetails = "詳細を表示"
 
+[audit.export]
+clearFilters = "クリア"
+description = "監査イベントを CSV または JSON 形式でエクスポートします。フィルターを使用してエクスポート対象を絞り込めます。"
+endDate = "終了日"
+error = "データのエクスポートに失敗しました"
+exportButton = "データをエクスポート"
+fieldAuthor = "作者（PDF から）"
+fieldDate = "日付"
+fieldDocumentName = "ドキュメント名"
+fieldFileHash = "ファイルハッシュ（SHA-256）"
+fieldIpAddress = "IP アドレス"
+fieldOperationResults = "処理結果"
+fieldOutcome = "結果（成功/失敗）"
+fieldTool = "ツール"
+fieldUsername = "ユーザー名"
+filterByType = "タイプでフィルタ"
+filterByUser = "ユーザーでフィルタ"
+filters = "フィルター（任意）"
+format = "エクスポート形式"
+selectFields = "含める項目を選択"
+startDate = "開始日"
+title = "監査データのエクスポート"
+verboseRequired = "VERBOSE 監査レベルが必要です"
+
 [audit.filters]
 allOutcomes = "すべて"
 failureOnly = "失敗のみ"
-last7Days = "過去 7 日間"
 last30Days = "過去 30 日間"
+last7Days = "過去 7 日間"
 outcomeFilter = "結果"
 quickPresets = "クイックフィルター"
 successOnly = "成功のみ"
 thisMonth = "今月"
 today = "今日"
 
+[audit.stats]
+activeUsers = "アクティブユーザー"
+attention = "要対応"
+avgLatency = "平均レイテンシ"
+error = "統計の読み込みエラー"
+errorLoadingStats = "統計の読み込みに失敗しました"
+excellent = "非常に良い"
+good = "良好"
+noData = "N/A"
+successRate = "成功率"
+title = "サマリー"
+totalEvents = "イベント合計"
+vsLastPeriod = "前期間比"
+
+[audit.systemStatus]
+autoRefresh = "自動更新"
+autoRefreshLabel = "30 秒ごとに自動更新"
+captureBySettings = "設定で有効化"
+capturedFields = "取得項目"
+date = "日付"
+days = "日"
+disabled = "無効"
+documentName = "ドキュメント名"
+enabled = "有効"
+fileHash = "ファイルハッシュ"
+level = "監査レベル"
+pdfAuthor = "PDF の作者"
+retention = "保持期間"
+status = "監査ログ"
+title = "システムステータス"
+tool = "ツール"
+totalEvents = "イベント総数"
+username = "ユーザー名"
+verboseOnly = "VERBOSE のみ"
+
 [audit.tabs]
 clearData = "データを削除"
 dashboard = "ダッシュボード"
 events = "監査イベント"
 export = "エクスポート"
-
-[audit.clearData]
-cancel = "キャンセル"
-codeDoesNotMatch = "コードが一致しません"
-codePlaceholder = "ここにコードを入力"
-confirmationCode = "確認コード"
-confirmationRequired = "すべての監査データを削除"
-confirmMessage = "すべての監査ログが完全に削除されます。続行するには下の確認コードを入力してください。"
-confirmTitle = "削除の実行を確認してください"
-deleteButton = "削除"
-enterCode = "確認コード"
-enterCodeBelow = "上に表示されたとおりに正確にコードを入力してください（大文字・小文字を区別）"
-initiateDelete = "すべてのデータを削除"
-irreversible = "取り消し不可"
-success = "成功"
-successMessage = "すべての監査データを正常に削除しました"
-warning1 = "この操作は元に戻せません"
-warning2 = "監査データを削除すると、セキュリティイベント、ユーザーアクティビティ、ファイル操作を含むすべての過去の監査ログがデータベースから完全に削除されます。"
 
 [auth]
 accessDenied = "アクセス拒否"
@@ -2088,43 +2090,70 @@ keywords = "キーワード：odd, even"
 numbers = "数値/範囲：5、10-20"
 progressions = "等差列：3n、4n+1"
 
+[certificateChoice.tooltip]
+header = "証明書の種類"
+
+[certificateChoice.tooltip.organization]
+bullet1 = "システム管理者が管理"
+bullet2 = "権限のあるユーザー間で共有"
+bullet3 = "個人ではなく会社の身元を表す"
+bullet4 = "用途: 公式文書、チームの署名"
+description = "組織が提供する共有証明書。全社的な署名権限に使用されます。"
+title = "組織証明書"
+
+[certificateChoice.tooltip.personal]
+bullet1 = "初回使用時に自動生成"
+bullet2 = "あなたのユーザーアカウントに紐づく"
+bullet3 = "他のユーザーと共有不可"
+bullet4 = "用途: 個人文書、個人の責任追跡"
+description = "あなたのユーザーアカウント専用に自動生成される証明書。個人の署名に適しています。"
+title = "個人証明書"
+
+[certificateChoice.tooltip.upload]
+bullet1 = "P12/PFX ファイルとパスワードが必要"
+bullet2 = "外部の認証局で発行可能"
+bullet3 = "法的文書向けの高い信頼レベル"
+bullet4 = "用途: 法的拘束力のある契約、外部検証"
+description = "自分の PKCS#12 証明書ファイルを使用します。証明書プロパティを完全に制御できます。"
+title = "カスタム P12 をアップロード"
+
 [certSign]
 allSigned = "すべての参加者が署名しました。最終化の準備ができました。"
 awaitingSignatures = "署名待ち"
-signatureProgress = "{{signedCount}}/{{totalCount}} 件の署名"
 chooseCertificate = "証明書ファイルを選択"
-declined = "辞退"
-fetchFailed = "署名データの読み込みに失敗しました"
-finalized = "最終化済み"
-notified = "保留中"
-partialNote = "現在の署名で早期に最終化できます。未署名の参加者は除外されます。"
-pending = "保留中"
-readyToFinalize = "最終化の準備完了"
-signed = "署名済み"
-viewed = "閲覧済み"
 chooseJksFile = "JKS ファイルを選択"
 chooseP12File = "PKCS12 ファイルを選択"
 choosePfxFile = "PFX ファイルを選択"
 choosePrivateKey = "秘密鍵ファイルを選択"
+declined = "辞退"
+fetchFailed = "署名データの読み込みに失敗しました"
 filenamePrefix = "signed"
+finalized = "最終化済み"
 location = "場所"
 logoTitle = "ロゴ"
 name = "名前"
 noLogo = "ロゴなし"
+notified = "保留中"
 pageNumber = "ページ番号"
+partialNote = "現在の署名で早期に最終化できます。未署名の参加者は除外されます。"
 password = "証明書パスワード"
 passwordOptional = "パスワードがない場合は空欄のまま"
+pending = "保留中"
+readyToFinalize = "最終化の準備完了"
 reason = "理由"
 serverCertMessage = "サーバー証明書を使用 - ファイルやパスワードは不要です"
 showLogo = "ロゴを表示"
+signatureProgress = "{{signedCount}}/{{totalCount}} 件の署名"
+signed = "署名済み"
 tags = "authenticate,PEM,P12,official,encrypt"
 title = "証明書による署名"
+viewed = "閲覧済み"
 
 [certSign.appearance]
 invisible = "非表示"
 stepTitle = "署名の表示"
-visible = "表示"
 visibility = "表示状態"
+visible = "表示"
 
 [certSign.appearance.options]
 title = "署名詳細"
@@ -2172,8 +2201,227 @@ title = "どのオプションを使うべき？"
 [certSign.certTypeStep]
 stepTitle = "証明書形式"
 
+[certSign.collab.addParticipants]
+add = "参加者を{{count}}人追加"
+back = "戻る"
+configureSignatures = "署名設定を設定"
+continue = "署名設定に進む"
+reasonHelp = "これらの参加者の署名理由を事前設定します（任意、署名時に上書き可能）"
+reasonPlaceholder = "例）承認、レビュー..."
+selectUsers = "ユーザーを選択"
+
+[certSign.collab.finalize]
+button = "最終化して署名済みPDFを読み込む"
+early = "現在の署名で最終化"
+
+[certSign.collab.participant]
+certInvalid = "✗ {{error}}"
+certInvalidFallback = "無効な証明書"
+certNetworkError = "証明書を検証できませんでした"
+certValid = "✓ 証明書は有効です"
+certValidating = "証明書を検証しています..."
+certValidUntil = " （{{date}}まで）"
+
+[certSign.collab.sessionCreation]
+includeSummaryPage = "署名サマリーページを含める"
+includeSummaryPageHelp = "末尾にすべての署名メタデータを含む要約ページが追加されます。各ページのデジタル証明書の署名ボックスは表示されません（手書き署名には影響しません）。"
+
+[certSign.collab.sessionDetail]
+addButton = "参加者を追加"
+addParticipants = "参加者を追加"
+addParticipantsError = "参加者の追加に失敗しました"
+backToList = "セッション一覧に戻る"
+deleteConfirm = "実行しますか？元に戻せません。"
+deleted = "セッションを削除しました"
+deleteError = "セッションの削除に失敗しました"
+deleteSession = "セッションを削除"
+dueDate = "期限"
+finalizeError = "セッションの最終化に失敗しました"
+loadPdfError = "署名済みPDFの読み込みに失敗しました"
+loadSignedPdf = "署名済みPDFをアクティブファイルに読み込む"
+messageLabel = "メッセージ"
+noAdditionalInfo = "追加情報はありません"
+owner = "所有者"
+participantRemoved = "参加者を削除しました"
+participants = "参加者"
+participantsAdded = "参加者を追加しました"
+removeParticipant = "削除"
+removeParticipantError = "参加者の削除に失敗しました"
+selectUsers = "ユーザーを選択..."
+sessionInfo = "セッション情報"
+workbenchTitle = "セッション管理"
+
+[certSign.collab.sessionList]
+active = "アクティブ"
+finalized = "最終化済み"
+
+[certSign.collab.signatureSettings]
+description = "すべての参加者の署名の表示方法を設定します"
+title = "署名の外観"
+
+[certSign.collab.signRequest]
+addedToFiles = "ドキュメントをアクティブファイルに追加しました"
+addSignature = "あなたの署名を追加"
+addToFiles = "アクティブファイルに追加"
+advancedSettings = "詳細設定"
+backToList = "署名リクエストに戻る"
+certificateChoice = "署名に使用する証明書を選択"
+changeSignature = "署名を変更"
+clearSignature = "署名をクリア"
+completeAndSign = "完了して署名"
+createNewSignature = "新しい署名を作成"
+decline = "リクエストを辞退"
+declineButton = "辞退"
+deleteSelected = "選択した署名を削除"
+drawSignature = "下に署名を手書きしてください"
+dueDate = "期限"
+fileTooLarge = "ファイルサイズは5MB未満である必要があります"
+fontFamily = "フォントファミリー"
+fontSize = "フォントサイズ: {{size}}px"
+fontSizePlaceholder = "サイズ"
+from = "送信者"
+invalidCertFile = "P12 または PFX の証明書ファイルを選択してください"
+invalidFileType = "画像ファイルを選択してください"
+location = "場所（任意）"
+locationPlaceholder = "どこで署名していますか？"
+message = "メッセージ"
+noCertificate = "証明書ファイルを選択してください"
+noSignatures = "少なくとも1つの署名をPDFに配置してください"
+p12File = "P12/PFX 証明書ファイル"
+password = "証明書のパスワード"
+passwordPlaceholder = "パスワードを入力..."
+penColor = "ペンの色"
+penSize = "ペンサイズ: {{size}}px"
+placementActive = "PDFをクリックして配置"
+placeSignatureButton = "PDFに署名を配置"
+reason = "理由（任意）"
+reasonPlaceholder = "なぜ署名しますか？"
+removeCertFile = "ファイルを削除"
+removeImage = "画像を削除"
+savedSignatures = "保存済みの署名"
+selectFile = "画像ファイルを選択"
+selectSignatureTitle = "署名を選択または作成"
+signatureInfo = "これらの設定はドキュメントの所有者によって設定されています"
+signaturePlaced = "ページに署名を配置しました"
+signatureSettings = "署名設定"
+signatureText = "署名テキスト"
+signatureTextPlaceholder = "名前を入力..."
+signatureTypeLabel = "署名タイプ"
+signButton = "ドキュメントに署名"
+signingTitle = "署名"
+textColor = "テキストの色"
+typeSignature = "名前を入力して署名を作成"
+uploadCert = "カスタム証明書"
+uploadCertDesc = "自分の P12/PFX 証明書を使用"
+uploadSignature = "署名画像をアップロード"
+usePersonalCert = "個人証明書"
+usePersonalCertDesc = "あなたのアカウント用に自動生成されます"
+useServerCert = "組織証明書"
+useServerCertDesc = "共有の組織証明書"
+workbenchTitle = "署名リクエスト"
+
+[certSign.collab.signRequest.canvas]
+colorPickerTitle = "線の色を選択"
+continue = "続行"
+
+[certSign.collab.signRequest.certModal]
+certInvalid = "証明書が無効です: {{error}}"
+certInvalidFallback = "無効な証明書"
+certNetworkError = "証明書を検証できませんでした"
+certValidating = "証明書を検証しています..."
+certValidUntil = "証明書は{{date}}まで有効"
+description = "{{count}} 個の署名を配置しました。署名を完了する証明書を選択してください。"
+sign = "ドキュメントに署名"
+title = "証明書を設定"
+
+[certSign.collab.signRequest.image]
+hint = "署名の PNG または JPG 画像をアップロード"
+
+[certSign.collab.signRequest.mode]
+move = "署名を移動"
+place = "署名を配置"
+title = "署名/移動モード"
+
+[certSign.collab.signRequest.modeTabs]
+draw = "手書き"
+image = "アップロード"
+text = "入力"
+
+[certSign.collab.signRequest.placeSignature]
+message = "PDFをクリックして署名を配置してください"
+title = "署名を配置"
+
+[certSign.collab.signRequest.preview]
+imageAlt = "選択した署名"
+missing = "プレビューなし"
+textFallback = "署名"
+
+[certSign.collab.signRequest.saved]
+defaultCanvasLabel = "手書きの署名"
+defaultImageLabel = "アップロードした署名"
+defaultLabel = "署名"
+defaultTextLabel = "入力した署名"
+delete = "署名を削除"
+none = "保存済みの署名はありません"
+
+[certSign.collab.signRequest.signatureType]
+draw = "手書き"
+type = "入力"
+upload = "アップロード"
+
+[certSign.collab.signRequest.steps]
+back = "戻る"
+cancelPlacement = "配置をキャンセル"
+certificate = "証明書"
+clickMultipleTimes = "PDFを複数回クリックして署名を配置します。署名をドラッグして移動やサイズ変更ができます。"
+clickToPlace = "署名を表示したい場所をPDF上でクリックしてください。"
+continue = "証明書の選択に進む"
+continueToPlacement = "配置に進む"
+continueToReview = "確認に進む"
+createSignature = "署名を作成"
+invisible = "非表示"
+location = "場所:"
+multipleSignatures = "{{count}} 個の署名がPDFに適用されます"
+oneSignature = "1 個の署名がPDFに適用されます"
+placeOnPdf = "PDFに配置"
+reason = "理由:"
+reviewTitle = "署名前の確認"
+signaturePlaced = "ページ {{page}} に署名を配置しました。もう一度クリックして位置を調整するか、確認に進んでください。"
+visibility = "表示状態:"
+visible = "表示"
+yourSignatures = "あなたの署名（{{count}}）"
+
+[certSign.collab.signRequest.text]
+colorLabel = "色"
+fontLabel = "フォント"
+fontSizeLabel = "サイズ"
+fontSizePlaceholder = "16"
+label = "署名テキスト"
+modalHint = "名前を入力し、続行をクリックしてPDFに配置します。"
+placeholder = "名前を入力..."
+
+[certSign.collab.userSelector]
+inviteUsers = "ユーザーを追加"
+loadError = "ユーザーの読み込みに失敗しました"
+noTeam = "チームなし"
+noUsers = "他のユーザーが見つかりません。"
+placeholder = "ユーザーを選択..."
+
 [certSign.error]
 failed = "署名の処理中にエラーが発生しました。"
+
+[certSign.mobile]
+panelActions = "アクション"
+panelDocument = "ドキュメント"
+panelPeople = "ユーザー"
+
+[certSign.sessions]
+deleted = "セッションを削除しました"
+fetchFailed = "セッション詳細の読み込みに失敗しました"
+finalized = "セッションを最終化しました"
+loaded = "署名済みPDFを読み込みました"
+pdfNotReady = "PDFは未準備です"
+pdfNotReadyDesc = "署名済みPDFを生成中です。少し待ってから再試行してください。"
 
 [certSign.sign]
 results = "署名済み PDF"
@@ -2230,252 +2478,6 @@ bullet3 = "署名後に文書が変更されたかを確認"
 bullet4 = "検証にカスタム証明書を使用可能"
 text = "署名の確認では、署名が有効か、誰がいつ署名したか、署名後に文書が変更されたかを知らせます。"
 title = "署名の検証"
-
-[certSign.collab.finalize]
-button = "最終化して署名済みPDFを読み込む"
-early = "現在の署名で最終化"
-
-[certSign.collab.sessionDetail]
-addButton = "参加者を追加"
-addParticipants = "参加者を追加"
-addParticipantsError = "参加者の追加に失敗しました"
-backToList = "セッション一覧に戻る"
-deleteConfirm = "実行しますか？元に戻せません。"
-deleteError = "セッションの削除に失敗しました"
-deleted = "セッションを削除しました"
-deleteSession = "セッションを削除"
-dueDate = "期限"
-finalizeError = "セッションの最終化に失敗しました"
-loadPdfError = "署名済みPDFの読み込みに失敗しました"
-loadSignedPdf = "署名済みPDFをアクティブファイルに読み込む"
-messageLabel = "メッセージ"
-noAdditionalInfo = "追加情報はありません"
-owner = "所有者"
-participantRemoved = "参加者を削除しました"
-participants = "参加者"
-participantsAdded = "参加者を追加しました"
-removeParticipant = "削除"
-removeParticipantError = "参加者の削除に失敗しました"
-selectUsers = "ユーザーを選択..."
-sessionInfo = "セッション情報"
-workbenchTitle = "セッション管理"
-
-[certSign.collab.signRequest]
-addedToFiles = "ドキュメントをアクティブファイルに追加しました"
-addSignature = "あなたの署名を追加"
-addToFiles = "アクティブファイルに追加"
-advancedSettings = "詳細設定"
-backToList = "署名リクエストに戻る"
-certificateChoice = "署名に使用する証明書を選択"
-changeSignature = "署名を変更"
-clearSignature = "署名をクリア"
-completeAndSign = "完了して署名"
-createNewSignature = "新しい署名を作成"
-declineButton = "辞退"
-decline = "リクエストを辞退"
-deleteSelected = "選択した署名を削除"
-drawSignature = "下に署名を手書きしてください"
-dueDate = "期限"
-fileTooLarge = "ファイルサイズは5MB未満である必要があります"
-fontFamily = "フォントファミリー"
-fontSize = "フォントサイズ: {{size}}px"
-fontSizePlaceholder = "サイズ"
-from = "送信者"
-invalidCertFile = "P12 または PFX の証明書ファイルを選択してください"
-invalidFileType = "画像ファイルを選択してください"
-location = "場所（任意）"
-locationPlaceholder = "どこで署名していますか？"
-message = "メッセージ"
-noCertificate = "証明書ファイルを選択してください"
-noSignatures = "少なくとも1つの署名をPDFに配置してください"
-p12File = "P12/PFX 証明書ファイル"
-password = "証明書のパスワード"
-passwordPlaceholder = "パスワードを入力..."
-penColor = "ペンの色"
-penSize = "ペンサイズ: {{size}}px"
-placementActive = "PDFをクリックして配置"
-placeSignatureButton = "PDFに署名を配置"
-reason = "理由（任意）"
-reasonPlaceholder = "なぜ署名しますか？"
-removeImage = "画像を削除"
-removeCertFile = "ファイルを削除"
-savedSignatures = "保存済みの署名"
-selectFile = "画像ファイルを選択"
-selectSignatureTitle = "署名を選択または作成"
-signButton = "ドキュメントに署名"
-signatureInfo = "これらの設定はドキュメントの所有者によって設定されています"
-signaturePlaced = "ページに署名を配置しました"
-signatureSettings = "署名設定"
-signatureText = "署名テキスト"
-signatureTextPlaceholder = "名前を入力..."
-signatureTypeLabel = "署名タイプ"
-signingTitle = "署名"
-textColor = "テキストの色"
-typeSignature = "名前を入力して署名を作成"
-uploadCert = "カスタム証明書"
-uploadCertDesc = "自分の P12/PFX 証明書を使用"
-uploadSignature = "署名画像をアップロード"
-usePersonalCert = "個人証明書"
-usePersonalCertDesc = "あなたのアカウント用に自動生成されます"
-useServerCert = "組織証明書"
-useServerCertDesc = "共有の組織証明書"
-workbenchTitle = "署名リクエスト"
-
-[certSign.collab.signRequest.canvas]
-colorPickerTitle = "線の色を選択"
-continue = "続行"
-
-[certSign.collab.signRequest.certModal]
-description = "{{count}} 個の署名を配置しました。署名を完了する証明書を選択してください。"
-sign = "ドキュメントに署名"
-certValidating = "証明書を検証しています..."
-certValidUntil = "証明書は{{date}}まで有効"
-certInvalid = "証明書が無効です: {{error}}"
-certInvalidFallback = "無効な証明書"
-certNetworkError = "証明書を検証できませんでした"
-title = "証明書を設定"
-
-[certSign.collab.signRequest.image]
-hint = "署名の PNG または JPG 画像をアップロード"
-
-[certSign.collab.signRequest.mode]
-move = "署名を移動"
-place = "署名を配置"
-title = "署名/移動モード"
-
-[certSign.collab.signRequest.modeTabs]
-draw = "手書き"
-image = "アップロード"
-text = "入力"
-
-[certSign.collab.signRequest.placeSignature]
-message = "PDFをクリックして署名を配置してください"
-title = "署名を配置"
-
-[certSign.collab.signRequest.preview]
-imageAlt = "選択した署名"
-missing = "プレビューなし"
-textFallback = "署名"
-
-[certSign.collab.signRequest.saved]
-defaultCanvasLabel = "手書きの署名"
-defaultImageLabel = "アップロードした署名"
-defaultLabel = "署名"
-defaultTextLabel = "入力した署名"
-delete = "署名を削除"
-none = "保存済みの署名はありません"
-
-[certSign.collab.signRequest.signatureType]
-draw = "手書き"
-type = "入力"
-upload = "アップロード"
-
-[certSign.collab.signRequest.steps]
-back = "戻る"
-cancelPlacement = "配置をキャンセル"
-certificate = "証明書"
-clickMultipleTimes = "PDFを複数回クリックして署名を配置します。署名をドラッグして移動やサイズ変更ができます。"
-clickToPlace = "署名を表示したい場所をPDF上でクリックしてください。"
-continue = "証明書の選択に進む"
-continueToPlacement = "配置に進む"
-continueToReview = "確認に進む"
-createSignature = "署名を作成"
-invisible = "非表示"
-location = "場所:"
-multipleSignatures = "{{count}} 個の署名がPDFに適用されます"
-oneSignature = "1 個の署名がPDFに適用されます"
-placeOnPdf = "PDFに配置"
-reason = "理由:"
-reviewTitle = "署名前の確認"
-signaturePlaced = "ページ {{page}} に署名を配置しました。もう一度クリックして位置を調整するか、確認に進んでください。"
-visible = "表示"
-visibility = "表示状態:"
-yourSignatures = "あなたの署名（{{count}}）"
-
-[certSign.collab.signRequest.text]
-colorLabel = "色"
-fontLabel = "フォント"
-fontSizeLabel = "サイズ"
-fontSizePlaceholder = "16"
-label = "署名テキスト"
-modalHint = "名前を入力し、続行をクリックしてPDFに配置します。"
-placeholder = "名前を入力..."
-
-[certSign.collab.participant]
-certValidating = "証明書を検証しています..."
-certValid = "✓ 証明書は有効です"
-certValidUntil = " （{{date}}まで）"
-certInvalid = "✗ {{error}}"
-certInvalidFallback = "無効な証明書"
-certNetworkError = "証明書を検証できませんでした"
-
-[certSign.collab.addParticipants]
-add = "参加者を{{count}}人追加"
-back = "戻る"
-configureSignatures = "署名設定を設定"
-continue = "署名設定に進む"
-reasonHelp = "これらの参加者の署名理由を事前設定します（任意、署名時に上書き可能）"
-reasonPlaceholder = "例）承認、レビュー..."
-selectUsers = "ユーザーを選択"
-
-[certSign.collab.sessionCreation]
-includeSummaryPage = "署名サマリーページを含める"
-includeSummaryPageHelp = "末尾にすべての署名メタデータを含む要約ページが追加されます。各ページのデジタル証明書の署名ボックスは表示されません（手書き署名には影響しません）。"
-
-[certSign.collab.sessionList]
-active = "アクティブ"
-finalized = "最終化済み"
-
-[certSign.collab.signatureSettings]
-description = "すべての参加者の署名の表示方法を設定します"
-title = "署名の外観"
-
-[certSign.collab.userSelector]
-inviteUsers = "ユーザーを追加"
-loadError = "ユーザーの読み込みに失敗しました"
-noTeam = "チームなし"
-noUsers = "他のユーザーが見つかりません。"
-placeholder = "ユーザーを選択..."
-
-[certSign.mobile]
-panelActions = "アクション"
-panelDocument = "ドキュメント"
-panelPeople = "ユーザー"
-
-[certSign.sessions]
-deleted = "セッションを削除しました"
-fetchFailed = "セッション詳細の読み込みに失敗しました"
-finalized = "セッションを最終化しました"
-loaded = "署名済みPDFを読み込みました"
-pdfNotReady = "PDFは未準備です"
-pdfNotReadyDesc = "署名済みPDFを生成中です。少し待ってから再試行してください。"
-
-[certificateChoice.tooltip]
-header = "証明書の種類"
-
-[certificateChoice.tooltip.organization]
-bullet1 = "システム管理者が管理"
-bullet2 = "権限のあるユーザー間で共有"
-bullet3 = "個人ではなく会社の身元を表す"
-bullet4 = "用途: 公式文書、チームの署名"
-description = "組織が提供する共有証明書。全社的な署名権限に使用されます。"
-title = "組織証明書"
-
-[certificateChoice.tooltip.personal]
-bullet1 = "初回使用時に自動生成"
-bullet2 = "あなたのユーザーアカウントに紐づく"
-bullet3 = "他のユーザーと共有不可"
-bullet4 = "用途: 個人文書、個人の責任追跡"
-description = "あなたのユーザーアカウント専用に自動生成される証明書。個人の署名に適しています。"
-title = "個人証明書"
-
-[certificateChoice.tooltip.upload]
-bullet1 = "P12/PFX ファイルとパスワードが必要"
-bullet2 = "外部の認証局で発行可能"
-bullet3 = "法的文書向けの高い信頼レベル"
-bullet4 = "用途: 法的拘束力のある契約、外部検証"
-description = "自分の PKCS#12 証明書ファイルを使用します。証明書プロパティを完全に制御できます。"
-title = "カスタム P12 をアップロード"
 
 [changeCreds]
 changePassword = "デフォルトのログイン認証情報を使用しています。新しいパスワードを入力してください"
@@ -2657,6 +2659,9 @@ title = "権限の変更"
 
 [changePermissions.tooltip.warning]
 text = "これらの権限を変更不可にするには、パスワード追加ツールでオーナーパスワードを設定してください。"
+
+[cloudBadge]
+tooltip = "この操作はクラウドクレジットを消費します"
 
 [colorPicker]
 title = "色を選択"
@@ -2998,9 +3003,11 @@ blackwhite = "白黒"
 cbrDpi = "画像レンダリング用 DPI"
 cbrOptions = "CBR オプション"
 cbrOutputOptions = "PDF から CBR へのオプション"
+cbrToPdf = "CBR → PDF"
 cbzDpi = "画像レンダリングの DPI"
 cbzOptions = "CBZ から PDF へのオプション"
 cbzOutputOptions = "PDF から CBZ へのオプション"
+cbzToPdf = "CBZ → PDF"
 color = "色"
 colorType = "色の種類"
 combineImages = "画像を結合"
@@ -3018,13 +3025,16 @@ desc = "異なる形式間でファイルを変換します"
 downloadConverted = "変換後のファイルをダウンロード"
 downloadHtml = "PDF の代わりに中間ファイル（HTML）をダウンロード"
 dpi = "DPI"
+ebookToPdf = "eBook → PDF"
 emailOptions = "メール → PDF オプション"
+emlToPdf = "メール → PDF"
 errorConversion = "ファイルの変換中にエラーが発生しました。"
 errorNoFiles = "変換するファイルを少なくとも 1 つ選択してください。"
 errorNoFormat = "変換元と変換先の両方の形式を選択してください。"
 errorNotSupported = "{{from}} から {{to}} への変換はサポートされていません。"
 fileFormat = "ファイル形式"
 files = "ファイル"
+fileToPdf = "Office/ドキュメント → PDF"
 fillPage = "フルページ"
 fitDocumentToPage = "ページに合わせて文書をフィット"
 fitOption = "フィットオプション"
@@ -3052,6 +3062,9 @@ pdfaFormat = "PDF/A 形式"
 pdfaNote = "PDF/A-1b は互換性が高く、PDF/A-2b はより多くの機能をサポートします。"
 pdfaOptions = "PDF/A オプション"
 pdfOptions = "PDF オプション"
+pdfToCbr = "PDF → CBR"
+pdfToCbz = "PDF → CBZ"
+pdfToEpub = "PDF → EPUB"
 pdfxDescription = "PDF/X は、信頼性の高い印刷とグラフィック交換のための ISO 規格の PDF サブセットです。"
 pdfxDigitalSignatureWarning = "PDF にはデジタル署名が含まれています。これは次のステップで削除されます。"
 pptExt = "PowerPoint（.pptx）"
@@ -3066,6 +3079,7 @@ sourceFormatPlaceholder = "変換元形式"
 strictMode = "Strict Mode"
 strictModeDesc = "Error if conversion is not perfect (uses VeraPDF verification)"
 svgPdfOptions = "SVG to PDF Options"
+svgToPdf = "SVG → PDF"
 svgVectorNote = "SVG files are rendered as vector graphics for crisp output at any resolution. Dimensions from the SVG determine the PDF page size."
 targetFormatPlaceholder = "変換先形式"
 textRtf = "テキスト/RTF"
@@ -3075,15 +3089,6 @@ webOptions = "Web → PDF オプション"
 wordDoc = "Word 文書"
 wordDocExt = "Word 文書（.docx）"
 zoomLevel = "ズームレベル"
-cbrToPdf = "CBR → PDF"
-cbzToPdf = "CBZ → PDF"
-ebookToPdf = "eBook → PDF"
-emlToPdf = "メール → PDF"
-fileToPdf = "Office/ドキュメント → PDF"
-pdfToCbr = "PDF → CBR"
-pdfToCbz = "PDF → CBZ"
-pdfToEpub = "PDF → EPUB"
-svgToPdf = "SVG → PDF"
 
 [convert.ebookOptions]
 ebookOptions = "eBook から PDF へのオプション"
@@ -3147,6 +3152,77 @@ description = "これらのCookieはウェブサイトが正常に機能する�
 [cookieBanner.services]
 posthog = "PostHog Analytics"
 scarf = "Scarf Pixel"
+
+[credits]
+enableOverageBilling = "超過課金を有効にする"
+maybeLater = "後で"
+upgrade = "アップグレード"
+
+[credits.insufficient]
+brief = "クレジットが不足しています。必要数は {{required}} ですが、保有数は {{current}} です。"
+freeTier = "Team にアップグレードして、クレジット 10 倍と無制限の超過課金を。"
+managedMember = "サポートが必要な場合はチームリーダーに連絡してください。"
+message = "{{tool}} を実行するのに十分なクレジットがありません。現在の保有数は {{current}} クレジットです。"
+messageWithAmount = "{{tool}} を実行するには {{required}} クレジットが必要ですが、保有数は {{current}} のみです。"
+teamMember = "超過課金を有効にして、クレジット切れを防ぎましょう。"
+title = "クレジット不足"
+
+[credits.modal]
+advancedMonitoring = "高度なモニタリング"
+allInOneWorkspace = "オールインワンの PDF ワークスペース（ビューア、ツール、エージェント）"
+apiSandbox = "API サンドボックス"
+contactSales = "営業に問い合わせ"
+creditsRemaining = "残り {{current}} / {{total}}"
+creditsThisMonth = "今月のクレジット"
+current = "現在のプラン"
+customPricing = "カスタム"
+customSmartFolders = "カスタムスマートフォルダー"
+dedicatedSupportSlas = "専用サポートと SLA"
+enterpriseSubscription = "Enterprise"
+everythingInCredits = "Credits の内容に加えて："
+everythingInFree = "Free の内容に加えて："
+fasterThroughput = "スループット 10 倍"
+forRegularWork = "通常の PDF 作業向け："
+freeTier = "Free ティア"
+fullyPrivateFiles = "完全にプライベートなファイル"
+largeFileProcessing = "大容量ファイルの処理"
+managedMemberMessage = "チームを通じてクレジットに無制限にアクセスできます。サポートが必要な場合はチームリーダーに連絡してください。"
+managedMemberTitle = "無制限のクレジット"
+meteringBillingNote = "超過クレジットは Team サブスクリプションと併せて毎月請求されます。アカウント設定でいつでも利用状況を確認できます。"
+meteringExplanation = "ご利用の Team プランには毎月 {{credits}} クレジットが含まれます。使い切った場合は、超過課金により自動的にクレジットが追加され、作業が中断されることはありません。"
+meteringIncluded = "Team には月 {{credits}} クレジットが含まれます"
+meteringNeverRunOut = "クレジット切れの心配なし"
+meteringNoCommitment = "契約の縛りなし、いつでも解約可能"
+meteringPayAsYouGo = "使った分だけお支払い"
+meteringPrice = "追加クレジットは {{price}}/クレジット"
+meteringTitle = "使った分だけの超過課金"
+monthlyCredits = "月次クレジット"
+orgWideAccess = "組織全体のアクセス制御"
+overage = "超過"
+perMonth = "/月"
+popular = "人気"
+premiumAiModels = "プレミアム AI モデル"
+prioritySupport = "優先サポート"
+privateDocCloud = "プライベートドキュメントクラウド"
+ragFineTuning = "RAG + ファインチューニング"
+secureApiAccess = "セキュアな API アクセス"
+selfHostLink = "ドキュメントとプランを確認"
+selfHostPrompt = "セルフホストしますか？"
+standardThroughput = "標準スループット"
+subtitle = "Team にアップグレードして、クレジット 10 倍と高速処理を。"
+subtitlePro = "自動超過課金を有効にして、クレジット切れを防ぎましょう。"
+teamLeaderOnly = "超過課金を有効にできるのはチームリーダーのみです"
+teamSubscription = "Team"
+titleExhausted = "無料クレジットを使い切りました"
+titleExhaustedPro = "クレジットが不足しています"
+unlimitedApiAccess = "API アクセス無制限"
+unlimitedMonthlyCredits = "サイトライセンス"
+unlimitedSeats = "ユーザー数無制限"
+
+[credits.modal.features]
+everythingInCredits = "Credits の内容に加えて："
+everythingInFree = "Free の内容に加えて："
+forRegularWork = "通常の PDF 作業向け："
 
 [crop]
 autoCrop = "余白を自動トリミング"
@@ -3352,6 +3428,9 @@ successBodyWithName = "{{fileName}} からパスワードを削除しました"
 successTitle = "パスワードを削除しました"
 title = "続行するにはパスワードを削除"
 unlock = "解除して続行"
+unlockAll = "Use for all ({{count}})"
+unlockAllPartialFail = "Wrong password for: {{names}}"
+unlockAllSuccess = "Unlocked {{count}} file(s)."
 unlockPrompt = "続行するにはPDFを解除"
 
 [encryptedPdfUnlock.password]
@@ -3464,10 +3543,14 @@ addFiles = "ファイルを追加"
 [fileManager]
 active = "アクティブ"
 addToUpload = "アップロードに追加"
+changesNotUploaded = "変更はアップロードされていません"
 clearAll = "すべてクリア"
 clearSelection = "選択をクリア"
 clickToUpload = "クリックしてファイルをアップロード"
 closeFile = "ファイルを閉じる"
+cloudFile = "クラウドファイル"
+copyCreated = "このデバイスにコピーを保存しました。"
+copyFailed = "コピーを作成できませんでした。"
 delete = "削除"
 deleteAll = "すべて削除"
 deleteSelected = "選択項目を削除"
@@ -3486,14 +3569,24 @@ fileSize = "サイズ"
 filesSelected = "件選択"
 filesStored = "件保存済み"
 fileVersion = "バージョン"
+filterAll = "すべて"
+filterLocal = "ローカル"
+filterSharedByMe = "自分が共有"
+filterSharedWithMe = "自分と共有"
 googleDrive = "Google ドライブ"
 googleDriveNotAvailable = "Google ドライブ連携は利用できません"
 googleDriveShort = "ドライブ"
 hideHistory = "履歴を非表示"
 lastModified = "最終更新"
+lastSynced = "最終同期"
+leaveShare = "自分の一覧から削除"
+leaveShareFailed = "共有ファイルを削除できませんでした。"
+leaveShareSuccess = "共有リストから削除しました。"
 loadingFiles = "ファイルを読み込み中..."
 loadingHistory = "履歴を読み込み中..."
 localFiles = "ローカルファイル"
+localOnly = "ローカルのみ"
+makeCopy = "コピーを作成"
 mobileShort = "モバイル"
 mobileUpload = "モバイルアップロード"
 mobileUploadNotAvailable = "モバイルアップロードは有効になっていません"
@@ -3506,36 +3599,10 @@ openFile = "ファイルを開く"
 openFiles = "複数ファイルを開く"
 openInFileEditor = "ファイルエディタで開く"
 openInPageEditor = "ページエディターで開く"
+owner = "所有者"
+ownerUnknown = "不明"
 recent = "最近使用"
 reloadFiles = "ファイルを再読み込み"
-restore = "復元"
-saveSelected = "選択項目を保存"
-searchFiles = "ファイルを検索..."
-selectAll = "すべて選択"
-selectedCount = "{{count}} 件選択"
-selectedFiles = "選択したファイル"
-showAll = "すべて表示"
-showHistory = "履歴を表示"
-sortByDate = "日付で並べ替え"
-sortByName = "名前で並べ替え"
-sortBySize = "サイズで並べ替え"
-storage = "ストレージ"
-storageCleared = "ブラウザのストレージがクリアされました。ファイルは削除されました。再アップロードしてください。"
-storageError = "ストレージエラーが発生しました"
-storageLow = "ストレージの空き容量が少なくなっています。古いファイルの削除をご検討ください。"
-subtitle = "ツール間で簡単にアクセスできるよう、ファイルをストレージに追加"
-supportMessage = "ブラウザ内データベース ストレージにより無制限の容量を実現"
-title = "PDF ファイルをアップロード"
-toolChain = "適用ツール"
-totalSelected = "合計選択数"
-unsupported = "未対応"
-unzip = "解凍"
-uploadError = "一部のファイルのアップロードに失敗しました。"
-copyCreated = "このデバイスにコピーを保存しました。"
-copyFailed = "コピーを作成できませんでした。"
-leaveShare = "自分の一覧から削除"
-leaveShareFailed = "共有ファイルを削除できませんでした。"
-leaveShareSuccess = "共有リストから削除しました。"
 removeBoth = "両方から削除"
 removeFilePrompt = "このファイルはこのデバイスとサーバーの両方に保存されています。どちらから削除しますか？"
 removeFileTitle = "ファイルを削除"
@@ -3547,28 +3614,40 @@ removeServerSuccess = "サーバーから削除しました。"
 removeSharedPrompt = "このファイルはあなたと共有されています。このデバイスから削除するか、共有リストから削除できます。"
 removeSharedServerOnlyBlockedPrompt = "このファイルはあなたと共有されており、サーバーのみに保存されています。"
 removeSharedServerOnlyPrompt = "このファイルはあなたと共有され、サーバーのみに保存されています。リストから削除しますか？"
-changesNotUploaded = "変更はアップロードされていません"
-cloudFile = "クラウドファイル"
-filterAll = "すべて"
-filterLocal = "ローカル"
-filterSharedByMe = "自分が共有"
-filterSharedWithMe = "自分と共有"
-lastSynced = "最終同期"
-localOnly = "ローカルのみ"
-makeCopy = "コピーを作成"
-owner = "所有者"
-ownerUnknown = "不明"
+restore = "復元"
+saveSelected = "選択項目を保存"
+searchFiles = "ファイルを検索..."
+selectAll = "すべて選択"
+selectedCount = "{{count}} 件選択"
+selectedFiles = "選択したファイル"
 share = "共有"
-shareSelected = "選択項目を共有"
 sharedByYou = "あなたが共有"
 sharedEditNoticeBody = "このファイルのサーバー上のバージョンに編集権限はありません。行った編集はローカルコピーとして保存されます。"
 sharedEditNoticeConfirm = "了解"
 sharedEditNoticeTitle = "サーバー上の閲覧専用コピー"
 sharedWithYou = "あなたと共有"
+shareSelected = "選択項目を共有"
 sharing = "共有"
+showAll = "すべて表示"
+showHistory = "履歴を表示"
+sortByDate = "日付で並べ替え"
+sortByName = "名前で並べ替え"
+sortBySize = "サイズで並べ替え"
+storage = "ストレージ"
+storageCleared = "ブラウザのストレージがクリアされました。ファイルは削除されました。再アップロードしてください。"
+storageError = "ストレージエラーが発生しました"
+storageLow = "ストレージの空き容量が少なくなっています。古いファイルの削除をご検討ください。"
 storageState = "ストレージ"
+subtitle = "ツール間で簡単にアクセスできるよう、ファイルをストレージに追加"
+supportMessage = "ブラウザ内データベース ストレージにより無制限の容量を実現"
 synced = "同期済み"
+title = "PDF ファイルをアップロード"
+toolChain = "適用ツール"
+totalSelected = "合計選択数"
+unsupported = "未対応"
+unzip = "解凍"
 updateOnServer = "サーバー上で更新"
+uploadError = "一部のファイルのアップロードに失敗しました。"
 uploadSelected = "選択項目をアップロード"
 uploadToServer = "サーバーにアップロード"
 
@@ -3696,77 +3775,6 @@ title = "PDF のフラット化について"
 discord = "Discord"
 issues = "GitHub"
 
-[groupSigning.tooltip]
-header = "グループ署名について"
-
-[groupSigning.tooltip.finalization]
-bullet1 = "すべての署名は指定した参加者の順序で適用されます"
-bullet2 = "必要に応じて一部の署名だけで最終化できます"
-bullet3 = "最終化後はセッションを変更できません"
-description = "全参加者の署名完了後（または早期最終化を選択した場合）、最終的な署名済みPDFを生成できます。"
-title = "最終化プロセス"
-
-[groupSigning.tooltip.roles]
-bullet1 = "所有者（あなた）: セッションを作成し、署名の既定値を設定し、ドキュメントを最終化"
-bullet2 = "参加者: 署名を作成し、証明書を選択してPDFに配置"
-bullet3 = "参加者は署名の表示、理由、場所の設定を変更できません"
-description = "すべての参加者の署名の外観設定をあなたが管理します。"
-title = "参加者の役割"
-
-[groupSigning.tooltip.sequential]
-bullet1 = "2人目がドキュメントにアクセスする前に、最初の参加者が署名する必要があります"
-bullet2 = "法令順守のため適切な署名順序を確保"
-bullet3 = "リスト内でドラッグして参加者の順序を変更できます"
-description = "参加者は指定した順序でドキュメントに署名します。各署名者は自分の順番になると通知を受け取ります。"
-title = "順次署名"
-
-[groupSigning.steps]
-back = "戻る"
-completed = "完了"
-current = "現在"
-stepLabel = "ステップ {{number}}"
-
-[groupSigning.steps.configureDefaults]
-continue = "確認に進む"
-invisible = "署名は非表示になります（メタデータのみ）"
-locationLabel = "場所:"
-preview = "プレビュー"
-reasonLabel = "理由:"
-title = "署名設定を設定"
-visible = "署名はページ {{page}} に表示されます"
-
-[groupSigning.steps.review]
-document = "ドキュメント"
-dueDate = "期限（任意）"
-dueDatePlaceholder = "期限を選択..."
-invisible = "非表示（メタデータのみ）"
-location = "場所:"
-logo = "ロゴ:"
-logoHidden = "ロゴなし"
-logoShown = "Stirling PDF ロゴを表示"
-participants = "参加者"
-reason = "理由:"
-send = "署名リクエストを送信"
-signatureSettings = "署名設定"
-title = "セッション詳細の確認"
-titleShort = "確認して送信"
-visibility = "表示状態:"
-visible = "ページ {{page}} に表示"
-participantCount = "{{count}} 人が順番に署名します"
-
-[groupSigning.steps.selectDocument]
-continue = "参加者の選択に進む"
-noFile = "署名セッションを作成するには、アクティブファイルから1つのPDFファイルを選択してください。"
-selectedFile = "選択したドキュメント"
-title = "ドキュメントを選択"
-
-[groupSigning.steps.selectParticipants]
-continue = "署名設定に進む"
-count = "{{count}} 人を選択"
-label = "参加者を選択"
-placeholder = "参加者を選択..."
-title = "参加者を選択"
-
 [getPdfInfo]
 downloadJson = "JSONでダウンロード"
 downloads = "ダウンロード"
@@ -3873,6 +3881,77 @@ javaScript = "JavaScript"
 layers = "レイヤー"
 multimedia = "マルチメディア"
 
+[groupSigning.steps]
+back = "戻る"
+completed = "完了"
+current = "現在"
+stepLabel = "ステップ {{number}}"
+
+[groupSigning.steps.configureDefaults]
+continue = "確認に進む"
+invisible = "署名は非表示になります（メタデータのみ）"
+locationLabel = "場所:"
+preview = "プレビュー"
+reasonLabel = "理由:"
+title = "署名設定を設定"
+visible = "署名はページ {{page}} に表示されます"
+
+[groupSigning.steps.review]
+document = "ドキュメント"
+dueDate = "期限（任意）"
+dueDatePlaceholder = "期限を選択..."
+invisible = "非表示（メタデータのみ）"
+location = "場所:"
+logo = "ロゴ:"
+logoHidden = "ロゴなし"
+logoShown = "Stirling PDF ロゴを表示"
+participantCount = "{{count}} 人が順番に署名します"
+participants = "参加者"
+reason = "理由:"
+send = "署名リクエストを送信"
+signatureSettings = "署名設定"
+title = "セッション詳細の確認"
+titleShort = "確認して送信"
+visibility = "表示状態:"
+visible = "ページ {{page}} に表示"
+
+[groupSigning.steps.selectDocument]
+continue = "参加者の選択に進む"
+noFile = "署名セッションを作成するには、アクティブファイルから1つのPDFファイルを選択してください。"
+selectedFile = "選択したドキュメント"
+title = "ドキュメントを選択"
+
+[groupSigning.steps.selectParticipants]
+continue = "署名設定に進む"
+count = "{{count}} 人を選択"
+label = "参加者を選択"
+placeholder = "参加者を選択..."
+title = "参加者を選択"
+
+[groupSigning.tooltip]
+header = "グループ署名について"
+
+[groupSigning.tooltip.finalization]
+bullet1 = "すべての署名は指定した参加者の順序で適用されます"
+bullet2 = "必要に応じて一部の署名だけで最終化できます"
+bullet3 = "最終化後はセッションを変更できません"
+description = "全参加者の署名完了後（または早期最終化を選択した場合）、最終的な署名済みPDFを生成できます。"
+title = "最終化プロセス"
+
+[groupSigning.tooltip.roles]
+bullet1 = "所有者（あなた）: セッションを作成し、署名の既定値を設定し、ドキュメントを最終化"
+bullet2 = "参加者: 署名を作成し、証明書を選択してPDFに配置"
+bullet3 = "参加者は署名の表示、理由、場所の設定を変更できません"
+description = "すべての参加者の署名の外観設定をあなたが管理します。"
+title = "参加者の役割"
+
+[groupSigning.tooltip.sequential]
+bullet1 = "2人目がドキュメントにアクセスする前に、最初の参加者が署名する必要があります"
+bullet2 = "法令順守のため適切な署名順序を確保"
+bullet3 = "リスト内でドラッグして参加者の順序を変更できます"
+description = "参加者は指定した順序でドキュメントに署名します。各署名者は自分の順番になると通知を受け取ります。"
+title = "順次署名"
+
 [guestBanner]
 dismiss = "バナーを閉じる"
 message = "無料アカウントを作成して作業を保存し、より多くの機能にアクセスしてプロジェクトをサポートしましょう。"
@@ -3935,10 +4014,6 @@ title = "注釈"
 desc = "PDF アクションを連結して複数ステップのワークフローを構築。繰り返し作業に最適です。"
 tags = "ワークフロー,シーケンス,自動化"
 title = "自動化"
-
-[home.formFill]
-desc = "ビジュアルエディターで PDF のフォームフィールドを対話的に入力"
-title = "フォーム入力"
 
 [home.autoRename]
 desc = "検出されたヘッダーに基づいて PDF ファイル名を自動変更"
@@ -4034,6 +4109,10 @@ title = "ページの抽出"
 desc = "PDFからインタラクティブな要素とフォームをすべて削除します。"
 tags = "平坦化,削除,インタラクティブ除去"
 title = "平坦化"
+
+[home.formFill]
+desc = "ビジュアルエディターで PDF のフォームフィールドを対話的に入力"
+title = "フォーム入力"
 
 [home.getPdfInfo]
 desc = "PDFのあらゆる情報を取得します。"
@@ -4185,11 +4264,6 @@ desc = "手書き、テキストまたは画像によってPDFに署名を追加
 tags = "署名,サイン"
 title = "署名"
 
-[home.timestampPdf]
-desc = "PDF がいつ存在したかを証明するために、RFC 3161 のドキュメントタイムスタンプを追加"
-tags = "タイムスタンプ,RFC 3161,TSA,time stamp authority,ドキュメントのタイムスタンプ,存在証明,タイムスタンプトークン,信頼できるタイムスタンプ,署名のタイムスタンプ,公証"
-title = "PDF にタイムスタンプ"
-
 [home.split]
 desc = "PDFを複数のドキュメントに分割します。"
 tags = "分割,分離,分解"
@@ -4209,6 +4283,11 @@ title = "セクションで PDF を分割"
 desc = "API ドキュメントを表示し、エンドポイントをテスト"
 tags = "API,ドキュメント,テスト"
 title = "API ドキュメント"
+
+[home.timestampPdf]
+desc = "PDF がいつ存在したかを証明するために、RFC 3161 のドキュメントタイムスタンプを追加"
+tags = "タイムスタンプ,RFC 3161,TSA,time stamp authority,ドキュメントのタイムスタンプ,存在証明,タイムスタンプトークン,信頼できるタイムスタンプ,署名のタイムスタンプ,公証"
+title = "PDF にタイムスタンプ"
 
 [home.unlockPDFForms]
 desc = "PDFドキュメント内のフォームフィールドの読み取り専用プロパティを削除します。"
@@ -4298,6 +4377,8 @@ welcomeTitle = "招待されています！"
 
 [landing]
 addFiles = "ファイルを追加"
+heroSubtitle = "Drop in or add an existing PDF to get started."
+heroTitle = "Stirling PDF"
 mobileUpload = "モバイルからアップロード"
 openFromComputer = "コンピューターから開く"
 uploadFromComputer = "コンピュータからアップロード"
@@ -4321,6 +4402,18 @@ module = "モジュール"
 nav = "ライセンス"
 title = "サードパーティライセンス"
 version = "バージョン"
+
+[localMode]
+toolUnavailable = "このツールにはアカウントが必要です。Stirling Cloud にサインインするか、セルフホストサーバーに接続して使用してください。"
+
+[localMode.banner]
+message = "サインインしてすべてのツールを利用可能にします。"
+signIn = "サインイン"
+title = "ローカルで実行中"
+
+[localMode.toolPicker]
+message = "サインインしてすべてのツールを利用可能にします。"
+signIn = "サインイン"
 
 [login]
 accountCreatedSuccess = "アカウントが作成されました。今すぐサインインできます。"
@@ -4382,12 +4475,12 @@ sendResetLink = "リセット用リンクを送信"
 sessionExpired = "セッションの有効期限が切れました。もう一度サインインしてください。"
 signin = "サインイン"
 signInAnonymously = "ゲストとして登録"
-subtitle = "Stirling PDF に再度サインイン"
 signingIn = "サインイン中..."
 signinTitle = "サインインしてください"
 signInWith = "次でサインイン"
 signOut = "サインアウト"
 ssoSignIn = "シングルサインオンでログイン"
+subtitle = "Stirling PDF に再度サインイン"
 title = "サインイン"
 toManySessions = "アクティブなセッションが多すぎます"
 unexpectedError = "予期しないエラー：{{message}}"
@@ -4430,9 +4523,11 @@ tags = "markup,web-content,transformation,convert"
 title = "MarkdownをPDFに変換"
 
 [merge]
+goToFileEditor = "Go to file editor"
 submit = "結合"
 tags = "結合,ページ操作,バックエンド,サーバーサイド"
 title = "結合"
+viewerModeHint = "Merge needs 2 or more files. Head to the file editor to select them."
 
 [merge.error]
 failed = "PDF の結合中にエラーが発生しました。"
@@ -4701,15 +4796,6 @@ viewSwitcher = "これらのコントロールで PDF の表示方法を切り�
 workbench = "ここが <strong>ワークベンチ</strong> です。PDF を表示・編集するメインエリアです。"
 wrapUp = "準備完了です！アプリの主要エリアとその使い方を学びました。<strong>ヘルプ</strong> ボタンを押せば、いつでもこのツアーを再表示できます。"
 
-[onboarding.freeTrial]
-afterTrialWithoutPayment = "トライアル終了後は無料プランが継続されます。Pro へのアクセスを維持するには支払い方法を追加してください。"
-afterTrialWithPayment = "トライアル終了時に Pro のサブスクリプションが自動的に開始します。"
-body = "トライアル期間中は Stirling PDF Pro の機能をすべてご利用いただけます。無制限の変換、より大きなファイルサイズ、優先処理をお楽しみください。"
-daysRemaining = "残り {{days}} 日"
-daysRemainingSingular = "残り {{days}} 日"
-title = "30 日間の Pro トライアル"
-trialEnds = "トライアル終了: {{date}}"
-
 [onboarding.buttons]
 back = "戻る"
 download = "ダウンロード →"
@@ -4722,6 +4808,15 @@ skipTheTour = "ツアーをスキップ"
 body = "Stirling はデスクトップアプリとして最適に動作します。オフラインでも使えて、文書に素早くアクセスし、PC上でローカル編集できます。"
 title = "ダウンロード"
 titleWithOs = "{{osLabel}} 用をダウンロード"
+
+[onboarding.freeTrial]
+afterTrialWithoutPayment = "トライアル終了後は無料プランが継続されます。Pro へのアクセスを維持するには支払い方法を追加してください。"
+afterTrialWithPayment = "トライアル終了時に Pro のサブスクリプションが自動的に開始します。"
+body = "トライアル期間中は Stirling PDF Pro の機能をすべてご利用いただけます。無制限の変換、より大きなファイルサイズ、優先処理をお楽しみください。"
+daysRemaining = "残り {{days}} 日"
+daysRemainingSingular = "残り {{days}} 日"
+title = "30 日間の Pro トライアル"
+trialEnds = "トライアル終了: {{date}}"
 
 [onboarding.planOverview]
 adminBodyLoginDisabled = "ログインモードを有効にすると、ユーザー管理、設定の構成、サーバーの健全性監視が可能です。サーバー上の最初の <strong>{{freeTierLimit}}</strong> 人は無料で Stirling を利用できます。"
@@ -4858,126 +4953,6 @@ title = "ページエディタ"
 zoomIn = "拡大"
 zoomOut = "縮小"
 
-[viewer]
-cannotPreviewFile = "ファイルをプレビューできません"
-disableColorFilter = "カラーフィルターを無効化"
-dualPageView = "見開き表示"
-enableDarkFilter = "ダークフィルターを有効化"
-enableSepiaFilter = "セピアフィルターを有効化"
-firstPage = "最初のページ"
-lastPage = "最後のページ"
-nextPage = "次のページ"
-onlyPdfSupported = "このビューアは PDF ファイルのみをサポートしています。このファイルは別の形式のようです。"
-previousPage = "前のページ"
-singlePageView = "単一ページ表示"
-unknownFile = "不明なファイル"
-zoomIn = "拡大"
-zoomOut = "縮小"
-resetZoom = "ズームをリセット"
-
-[viewer.nonPdf]
-fileTypeBadge = "{{type}} ファイル"
-convertToPdf = "PDF に変換"
-loading = "読み込み中..."
-emptyFile = "空のファイル"
-csvStats = "{{rows}} 行 · {{columns}} 列 · {{size}}"
-sortedBy = "並び替え基準: {{column}}"
-columnDefault = "列 {{index}}"
-htmlPreviewWarning = "HTMLプレビュー — 外部リソースは読み込まれない場合があります · {{size}}"
-htmlPreview = "HTMLプレビュー"
-invalidJson = "無効な JSON — 生の内容を表示しています"
-textStats = "{{lines}} 行 · {{size}}"
-lineNumbers = "行番号"
-renderMarkdown = "Markdown をレンダリング"
-
-[viewer.attachments]
-title = "添付ファイル"
-searchPlaceholder = "添付ファイルを検索"
-noSupport = "このビューアでは添付ファイルはサポートされていません。"
-noDocument = "添付ファイルを表示するには PDF を開いてください。"
-loading = "添付ファイルを読み込み中..."
-empty = "このドキュメントには添付ファイルがありません"
-noMatch = "検索条件に一致する添付ファイルはありません"
-
-[viewer.comments]
-title = "コメント"
-hint = "「コメント」「テキストを挿入」「テキストを置換」ツールでコメントを配置できます。ページごとにここに表示されます。"
-placeholder = "コメントを入力..."
-pageLabel = "ページ {{page}}"
-oneComment = "1 件のコメント"
-nComments = "{{count}} 件のコメント"
-addCommentPlaceholder = "コメントを追加..."
-addLink = "リンクを追加"
-goToLink = "リンクへ移動"
-addComment = "コメントを追加"
-viewComment = "コメントを表示"
-addReplyPlaceholder = "返信を追加..."
-saveReply = "返信を保存"
-send = "送信"
-moreActions = "その他の操作"
-typeComment = "コメント"
-typeInsertText = "テキストを挿入"
-typeReplaceText = "テキストを置換"
-locateAnnotation = "ドキュメント内で表示"
-deleteTitle = "コメントから注釈を削除しますか？"
-deleteDescription = "この注釈にはコメントが付いています。サイドバーからコメントのみを削除して注釈を残すか、すべて削除できます。"
-removeCommentOnly = "コメントのみ削除"
-deleteAnnotationAndComment = "注釈とコメントを削除"
-
-[viewer.formBar]
-title = "フォームフィールド"
-unsavedBadge = "未保存"
-unsavedDesc = "未保存の変更があります"
-hasFieldsDesc = "この PDF には入力可能なフィールドがあります"
-dismiss = "閉じる"
-apply = "変更を適用"
-download = "PDF をダウンロード"
-
-[rightRail]
-closeSelected = "選択したファイルを閉じる"
-selectAll = "すべて選択"
-deselectAll = "選択を解除"
-selectByNumber = "ページ番号で選択"
-deleteSelected = "選択したページを削除"
-closePdf = "PDF を閉じる"
-exportAll = "PDF を書き出し"
-downloadSelected = "選択したファイルをダウンロード"
-annotations = "注釈"
-exportSelected = "選択したページを書き出し"
-formFill = "フォーム入力"
-saveChanges = "変更を保存"
-toggleAttachments = "添付ファイルの表示切替"
-toggleTheme = "テーマを切り替え"
-language = "言語"
-toggleAnnotations = "注釈の表示を切り替え"
-toggleLayers = "レイヤーの切り替え"
-search = "PDF を検索"
-panMode = "パンモード"
-applyRedactionsFirst = "先に墨消しを適用"
-rotateLeft = "左に回転"
-rotateRight = "右に回転"
-toggleSidebar = "サイドバーを切り替え"
-toggleBookmarks = "ブックマークを切り替え"
-toggleComments = "コメント"
-print = "PDFを印刷"
-ruler = "定規 / 測定"
-readAloud = "読み上げ"
-readAloudSpeed = "速度"
-readAloudLanguage = "言語"
-selectLanguage = "言語を選択"
-draw = "描画"
-redact = "墨消し"
-exitRedaction = "墨消しモードを終了"
-save = "保存"
-downloadAll = "すべてをダウンロード"
-saveAll = "すべて保存"
-saveAs = "名前を付けて保存"
-
-[textAlign]
-left = "左揃え"
-center = "中央揃え"
-right = "右揃え"
-
 [pageExtracter]
 header = "ページの抽出"
 placeholder = "(例:1,2,8、4,7,12-16、2n-1)"
@@ -5000,10 +4975,24 @@ tags = "結合,合成,単一表示,整理"
 title = "マルチページレイアウト"
 top = "上余白"
 
-[pageLayout.mode]
-default = "デフォルト"
-custom = "カスタム"
-label = "モード:"
+[pageLayout.advanced.tooltip.arrangement]
+bullet1 = "行単位: 各行を先に埋めます。"
+bullet2 = "列単位: 各列を先に埋めます。"
+text = "ページを行単位で埋めるか列単位で埋めるかを制御します。"
+title = "ページ配置"
+
+[pageLayout.advanced.tooltip.header]
+title = "詳細レイアウトオプション"
+
+[pageLayout.advanced.tooltip.orientation]
+text = "最終的なシートの向きを選びます。縦向きは縦長のコンテンツに、横向きは横に広いレイアウトに適しています。"
+title = "向き"
+
+[pageLayout.advanced.tooltip.readingDirection]
+bullet1 = "LTR: 左から右の順序。"
+bullet2 = "RTL: 右から左の順序。"
+text = "グリッド内の水平方向の順序を設定します。左から右、右から左のドキュメント規則に役立ちます。"
+title = "読み方向"
 
 [pageLayout.arrangement]
 byColumns = "列単位"
@@ -5018,100 +5007,86 @@ label = "ページ配置:"
 
 [pageLayout.error]
 failed = "複数ページレイアウトの作成中にエラーが発生しました。"
-outerVerticalMarginsTooLarge = "上/下余白がこの用紙サイズに対して大きすぎます。"
-outerHorizontalMarginsTooLarge = "左/右余白がこの用紙サイズに対して大きすぎます。"
 innerMarginTooLarge = "選択したレイアウトでは内側の余白が大きすぎます。"
+outerHorizontalMarginsTooLarge = "左/右余白がこの用紙サイズに対して大きすぎます。"
+outerVerticalMarginsTooLarge = "上/下余白がこの用紙サイズに対して大きすぎます。"
 
-[pageLayout.orientation]
-landscape = "横向き"
-portrait = "縦向き"
-label = "向き:"
-
-[pageLayout.readingDirection]
-ltr = "左から右"
-rtl = "右から左"
-label = "読み方向:"
-
-[pageLayout.tooltip.header]
-title = "ページレイアウトガイド"
-
-[pageLayout.tooltip.overview]
-title = "ページレイアウトとは？"
-text = "複数ページを1枚に収め、配布資料や用紙節約に役立てます。"
-
-[pageLayout.tooltip.mode]
-title = "モード"
-text = "グリッドの設定方法を選択:"
-bullet1 = "デフォルト: プリセットを選択するとグリッドは自動計算されます。"
-bullet2 = "カスタム: 行と列を手動で設定します。"
-
-[pageLayout.tooltip.pagesPerSheet]
-title = "1 枚あたりのページ数（デフォルトモード）"
-text = "1 枚あたりのページ数を選択（例: 4 → 2×2、9 → 3×3）。"
-
-[pageLayout.tooltip.rowsCols]
-title = "行と列（カスタムモード）"
-text = "正確なグリッド寸法を設定します。1 枚あたりの総ページ数 = 行 × 列。"
-
-[pageLayout.tooltip.orientation]
-title = "向き"
-text = "出力シートの向きを設定:"
-bullet1 = "縦向き: 高さが幅より大きい。"
-bullet2 = "横向き: 幅が高さより大きい。"
-
-[pageLayout.tooltip.arrangement]
-title = "ページ配置"
-text = "グリッドへのページの埋め方の順序を制御します:"
-bullet1 = "行単位: 行ごとに埋めます（左から右または右から左）。"
-bullet2 = "列単位: 列ごとに上から下へ埋めます。"
-
-[pageLayout.tooltip.readingDirection]
-title = "読み方向"
-text = "ページの水平方向の順序を制御します:"
-bullet1 = "LTR: 左から右。"
-bullet2 = "RTL: 右から左。"
-
-[pageLayout.tooltip.addBorder]
+[pageLayout.marginsBorders.tooltip.borders]
+text = "枠線を有効にすると、配置した各ページの周囲に線を描画します。視覚的な区切りやトリミングに役立ちます。"
 title = "枠線を追加"
-text = "各ページセルの周囲に枠線を描画し、トリミングの目安や視覚的な区切りにします。"
+
+[pageLayout.marginsBorders.tooltip.borderWidth]
+text = "枠線の太さは枠線が有効な場合にのみ適用されます。値が大きいほど線が太くなります。"
+title = "枠線の太さ"
 
 [pageLayout.marginsBorders.tooltip.header]
 title = "余白と枠線"
 
-[pageLayout.marginsBorders.tooltip.margins]
-title = "余白"
-text = "上・下・左・右の余白で、出力シート全体の周囲の間隔を調整します。"
-
 [pageLayout.marginsBorders.tooltip.innerMargin]
-title = "内側の余白"
 text = "ページグリッド内のセル間に間隔を追加し、区切りと可読性を高めます。"
+title = "内側の余白"
 
-[pageLayout.marginsBorders.tooltip.borders]
+[pageLayout.marginsBorders.tooltip.margins]
+text = "上・下・左・右の余白で、出力シート全体の周囲の間隔を調整します。"
+title = "余白"
+
+[pageLayout.mode]
+custom = "カスタム"
+default = "デフォルト"
+label = "モード:"
+
+[pageLayout.orientation]
+label = "向き:"
+landscape = "横向き"
+portrait = "縦向き"
+
+[pageLayout.readingDirection]
+label = "読み方向:"
+ltr = "左から右"
+rtl = "右から左"
+
+[pageLayout.tooltip.addBorder]
+text = "各ページセルの周囲に枠線を描画し、トリミングの目安や視覚的な区切りにします。"
 title = "枠線を追加"
-text = "枠線を有効にすると、配置した各ページの周囲に線を描画します。視覚的な区切りやトリミングに役立ちます。"
 
-[pageLayout.marginsBorders.tooltip.borderWidth]
-title = "枠線の太さ"
-text = "枠線の太さは枠線が有効な場合にのみ適用されます。値が大きいほど線が太くなります。"
-
-[pageLayout.advanced.tooltip.header]
-title = "詳細レイアウトオプション"
-
-[pageLayout.advanced.tooltip.orientation]
-title = "向き"
-text = "最終的なシートの向きを選びます。縦向きは縦長のコンテンツに、横向きは横に広いレイアウトに適しています。"
-
-[pageLayout.advanced.tooltip.arrangement]
+[pageLayout.tooltip.arrangement]
+bullet1 = "行単位: 行ごとに埋めます（左から右または右から左）。"
+bullet2 = "列単位: 列ごとに上から下へ埋めます。"
+text = "グリッドへのページの埋め方の順序を制御します:"
 title = "ページ配置"
-text = "ページを行単位で埋めるか列単位で埋めるかを制御します。"
-bullet1 = "行単位: 各行を先に埋めます。"
-bullet2 = "列単位: 各列を先に埋めます。"
 
-[pageLayout.advanced.tooltip.readingDirection]
+[pageLayout.tooltip.header]
+title = "ページレイアウトガイド"
+
+[pageLayout.tooltip.mode]
+bullet1 = "デフォルト: プリセットを選択するとグリッドは自動計算されます。"
+bullet2 = "カスタム: 行と列を手動で設定します。"
+text = "グリッドの設定方法を選択:"
+title = "モード"
+
+[pageLayout.tooltip.orientation]
+bullet1 = "縦向き: 高さが幅より大きい。"
+bullet2 = "横向き: 幅が高さより大きい。"
+text = "出力シートの向きを設定:"
+title = "向き"
+
+[pageLayout.tooltip.overview]
+text = "複数ページを1枚に収め、配布資料や用紙節約に役立てます。"
+title = "ページレイアウトとは？"
+
+[pageLayout.tooltip.pagesPerSheet]
+text = "1 枚あたりのページ数を選択（例: 4 → 2×2、9 → 3×3）。"
+title = "1 枚あたりのページ数（デフォルトモード）"
+
+[pageLayout.tooltip.readingDirection]
+bullet1 = "LTR: 左から右。"
+bullet2 = "RTL: 右から左。"
+text = "ページの水平方向の順序を制御します:"
 title = "読み方向"
-text = "グリッド内の水平方向の順序を設定します。左から右、右から左のドキュメント規則に役立ちます。"
-bullet1 = "LTR: 左から右の順序。"
-bullet2 = "RTL: 右から左の順序。"
+
+[pageLayout.tooltip.rowsCols]
+text = "正確なグリッド寸法を設定します。1 枚あたりの総ページ数 = 行 × 列。"
+title = "行と列（カスタムモード）"
 
 [pageRemover]
 header = "PDFページ削除"
@@ -5197,6 +5172,9 @@ title = "ヒント"
 autoClose = "このウィンドウは自動的に閉じます..."
 billingPeriod = "請求期間"
 canCloseWindow = "このウィンドウは閉じても構いません。"
+checkoutInstructions = "開いたブラウザーウィンドウで購入手続きを完了してください。支払い完了後、ここに戻り、下のボタンをクリックして請求情報を更新してください。"
+checkoutOpened = "ブラウザーでチェックアウトを開きました"
+closeLater = "後で行う"
 emailInvalid = "有効なメールアドレスを入力してください"
 enterpriseNote = "席数はチェックアウトで調整できます（1〜1000）。"
 error = "支払いエラー"
@@ -5218,6 +5196,7 @@ perMonth = "/月"
 perYear = "/年"
 preparing = "チェックアウトを準備しています..."
 redirecting = "安全なチェックアウトにリダイレクトしています..."
+refreshBilling = "支払いが完了しました - 請求情報を更新"
 stripeNotConfigured = "Stripe が未設定"
 stripeNotConfiguredMessage = "Stripe の決済連携が設定されていません。管理者に連絡してください。"
 success = "支払いが完了しました"
@@ -5229,10 +5208,6 @@ upgradeCompleteMessage = "サブスクリプションは正常にアップグレ
 upgradeSuccess = "支払いに成功しました！ サブスクリプションがアップグレードされ、ライセンスがサーバーに更新されました。確認メールをまもなくお送りします。"
 upgradeTitle = "{{planName}} にアップグレード"
 yearly = "年額"
-checkoutOpened = "ブラウザーでチェックアウトを開きました"
-checkoutInstructions = "開いたブラウザーウィンドウで購入手続きを完了してください。支払い完了後、ここに戻り、下のボタンをクリックして請求情報を更新してください。"
-refreshBilling = "支払いが完了しました - 請求情報を更新"
-closeLater = "後で行う"
 
 [payment.emailStage]
 continue = "続行"
@@ -5456,13 +5431,6 @@ prompt = "表を抽出するページを選択"
 submit = "変換"
 title = "PDFをCSVに変換"
 
-[PDFToXLSX]
-header = "PDF から Excel へ"
-prompt = "表を抽出するページを選択"
-submit = "変換"
-title = "PDF から Excel（XLSX）へ"
-tags = "spreadsheet,excel,xlsx,table,extract,convert"
-
 [PDFToHTML]
 credit = "本サービスはファイル変換にpdftohtmlを使用しています。"
 header = "PDFをHTMLに変換"
@@ -5561,6 +5529,13 @@ title = "PDFをWordに変換"
 [PDFToWord.selectText]
 1 = "出力ファイル形式"
 
+[PDFToXLSX]
+header = "PDF から Excel へ"
+prompt = "表を抽出するページを選択"
+submit = "変換"
+tags = "spreadsheet,excel,xlsx,table,extract,convert"
+title = "PDF から Excel（XLSX）へ"
+
 [PDFToXML]
 credit = "本サービスはファイル変換にLibreOfficeを使用しています。"
 header = "PDFをXMLに変換"
@@ -5626,10 +5601,10 @@ manage = "管理"
 perMonth = "/月"
 perSeat = "/席"
 popular = "人気"
-selectPlan = "プランを選択"
-selectCredits = "クレジット数を選択"
-showComparison = "すべての機能を比較"
 purchase = "購入"
+selectCredits = "クレジット数を選択"
+selectPlan = "プランを選択"
+showComparison = "すべての機能を比較"
 totalCost = "合計金額"
 upgrade = "アップグレード"
 withServer = "+ Server プラン"
@@ -5638,19 +5613,29 @@ withServer = "+ Server プラン"
 subtitle = "現在のサブスクリプションの詳細"
 title = "アクティブなプラン"
 
+[plan.api]
+large = "5,000 クレジット"
+medium = "1,000 クレジット"
+small = "500 クレジット"
+xsmall = "100 クレジット"
+
+[plan.apiPackages]
+subtitle = "アプリケーション向けに API クレジットを購入"
+title = "API クレジットパッケージ"
+
 [plan.availablePlans]
-subtitle = "ニーズに合ったプランを選択"
 loadError = "プランの価格を読み込めません。既定値を使用します。"
+subtitle = "ニーズに合ったプランを選択"
 title = "利用可能なプラン"
 
 [plan.enterprise]
-siteLicense = "サイトライセンス"
 highlight1 = "カスタム価格"
 highlight2 = "専用サポート"
 highlight3 = "最新機能"
 name = "エンタープライズ"
 requiresServer = "Server が必要"
 requiresServerMessage = "Enterprise にアップグレードする前に、先に Server プランへアップグレードしてください。"
+siteLicense = "サイトライセンス"
 
 [plan.feature]
 api = "API アクセス"
@@ -5722,16 +5707,6 @@ successMessage = "ライセンスは正常に有効化されました。この�
 name = "Team"
 siteLicense = "サイトライセンス"
 
-[plan.api]
-large = "5,000 クレジット"
-medium = "1,000 クレジット"
-small = "500 クレジット"
-xsmall = "100 クレジット"
-
-[plan.apiPackages]
-subtitle = "アプリケーション向けに API クレジットを購入"
-title = "API クレジットパッケージ"
-
 [plan.trial]
 badge = "トライアル"
 continueWithFree = "無料で続行"
@@ -5746,77 +5721,6 @@ subscribeToPro = "Pro を購読"
 subscriptionScheduled = "サブスクリプションを予約しました - {{date}} 開始"
 title = "無料トライアル中"
 
-[credits]
-enableOverageBilling = "超過課金を有効にする"
-maybeLater = "後で"
-upgrade = "アップグレード"
-
-[credits.modal]
-advancedMonitoring = "高度なモニタリング"
-allInOneWorkspace = "オールインワンの PDF ワークスペース（ビューア、ツール、エージェント）"
-apiSandbox = "API サンドボックス"
-contactSales = "営業に問い合わせ"
-creditsRemaining = "残り {{current}} / {{total}}"
-creditsThisMonth = "今月のクレジット"
-current = "現在のプラン"
-customPricing = "カスタム"
-customSmartFolders = "カスタムスマートフォルダー"
-dedicatedSupportSlas = "専用サポートと SLA"
-enterpriseSubscription = "Enterprise"
-everythingInCredits = "Credits の内容に加えて："
-everythingInFree = "Free の内容に加えて："
-fasterThroughput = "スループット 10 倍"
-forRegularWork = "通常の PDF 作業向け："
-freeTier = "Free ティア"
-fullyPrivateFiles = "完全にプライベートなファイル"
-largeFileProcessing = "大容量ファイルの処理"
-managedMemberMessage = "チームを通じてクレジットに無制限にアクセスできます。サポートが必要な場合はチームリーダーに連絡してください。"
-managedMemberTitle = "無制限のクレジット"
-meteringBillingNote = "超過クレジットは Team サブスクリプションと併せて毎月請求されます。アカウント設定でいつでも利用状況を確認できます。"
-meteringExplanation = "ご利用の Team プランには毎月 {{credits}} クレジットが含まれます。使い切った場合は、超過課金により自動的にクレジットが追加され、作業が中断されることはありません。"
-meteringIncluded = "Team には月 {{credits}} クレジットが含まれます"
-meteringNoCommitment = "契約の縛りなし、いつでも解約可能"
-meteringNeverRunOut = "クレジット切れの心配なし"
-meteringPayAsYouGo = "使った分だけお支払い"
-meteringPrice = "追加クレジットは {{price}}/クレジット"
-meteringTitle = "使った分だけの超過課金"
-monthlyCredits = "月次クレジット"
-orgWideAccess = "組織全体のアクセス制御"
-overage = "超過"
-perMonth = "/月"
-popular = "人気"
-premiumAiModels = "プレミアム AI モデル"
-prioritySupport = "優先サポート"
-privateDocCloud = "プライベートドキュメントクラウド"
-ragFineTuning = "RAG + ファインチューニング"
-secureApiAccess = "セキュアな API アクセス"
-selfHostLink = "ドキュメントとプランを確認"
-selfHostPrompt = "セルフホストしますか？"
-standardThroughput = "標準スループット"
-subtitle = "Team にアップグレードして、クレジット 10 倍と高速処理を。"
-subtitlePro = "自動超過課金を有効にして、クレジット切れを防ぎましょう。"
-teamLeaderOnly = "超過課金を有効にできるのはチームリーダーのみです"
-teamSubscription = "Team"
-titleExhausted = "無料クレジットを使い切りました"
-titleExhaustedPro = "クレジットが不足しています"
-unlimitedApiAccess = "API アクセス無制限"
-unlimitedMonthlyCredits = "サイトライセンス"
-unlimitedSeats = "ユーザー数無制限"
-
-[credits.modal.features]
-everythingInCredits = "Credits の内容に加えて："
-everythingInFree = "Free の内容に加えて："
-forRegularWork = "通常の PDF 作業向け："
-
-[credits.insufficient]
-brief = "クレジットが不足しています。必要数は {{required}} ですが、保有数は {{current}} です。"
-freeTier = "Team にアップグレードして、クレジット 10 倍と無制限の超過課金を。"
-managedMember = "サポートが必要な場合はチームリーダーに連絡してください。"
-message = "{{tool}} を実行するのに十分なクレジットがありません。現在の保有数は {{current}} クレジットです。"
-messageWithAmount = "{{tool}} を実行するには {{required}} クレジットが必要ですが、保有数は {{current}} のみです。"
-teamMember = "超過課金を有効にして、クレジット切れを防ぎましょう。"
-title = "クレジット不足"
-
 [printFile]
 header = "ファイルをプリンタで印刷"
 submit = "プリント"
@@ -5825,6 +5729,207 @@ title = "ファイルの印刷"
 [printFile.selectText]
 1 = "印刷するファイルを選択"
 2 = "プリンタ名を入力"
+
+[provider.googledrive]
+name = "Google Drive"
+scope = "ファイルのインポート"
+
+[provider.googledrive.apiKey]
+description = "Google Cloud Console の Google Picker API 用 Google API キー"
+label = "API キー"
+
+[provider.googledrive.appId]
+description = "Google Cloud Console の Google Drive アプリ ID"
+label = "アプリ ID"
+
+[provider.googledrive.clientId]
+description = "Google Cloud Console の Google OAuth 2.0 クライアント ID"
+label = "クライアント ID"
+
+[provider.googledrive.enabled]
+description = "ユーザーが Google Drive から直接ファイルをインポートできるようにする"
+label = "Google Drive ファイルピッカーを有効化"
+
+[provider.oauth2.generic]
+name = "汎用 OAuth2"
+scope = "SSO"
+
+[provider.oauth2.generic.autoCreateUser]
+description = "初回の OAuth2 ログイン時にユーザーアカウントを自動作成"
+label = "ユーザーを自動作成"
+
+[provider.oauth2.generic.blockRegistration]
+description = "OAuth2 経由での新規ユーザー登録を禁止"
+label = "登録をブロック"
+
+[provider.oauth2.generic.clientId]
+description = "プロバイダーの OAuth2 クライアント ID"
+label = "クライアント ID"
+
+[provider.oauth2.generic.clientSecret]
+description = "プロバイダーの OAuth2 クライアントシークレット"
+label = "クライアントシークレット"
+
+[provider.oauth2.generic.enabled]
+description = "カスタム OAuth2 プロバイダーを使用した認証を有効化"
+label = "汎用 OAuth2 を有効化"
+
+[provider.oauth2.generic.issuer]
+description = "OpenID Connect Discovery（/.well-known/openid-configuration）対応のプロバイダー"
+label = "Issuer URL"
+
+[provider.oauth2.generic.provider]
+description = "OAuth2 プロバイダー名（例：Azure AD、Okta）"
+label = "プロバイダー名"
+
+[provider.oauth2.generic.scopes]
+description = "カンマ区切りの OAuth2 スコープ"
+label = "スコープ"
+
+[provider.oauth2.generic.useAsUsername]
+description = "ユーザー名として使用するフィールド"
+label = "ユーザー名として使用"
+
+[provider.oauth2.github]
+scope = "サインイン認証"
+
+[provider.oauth2.github.clientId]
+description = "GitHub Developer Settings の OAuth2 クライアント ID"
+label = "クライアント ID"
+
+[provider.oauth2.github.clientSecret]
+description = "GitHub Developer Settings の OAuth2 クライアントシークレット"
+label = "クライアントシークレット"
+
+[provider.oauth2.github.scopes]
+description = "カンマ区切りの OAuth2 スコープ"
+label = "スコープ"
+
+[provider.oauth2.github.useAsUsername]
+description = "ユーザー名として使用するフィールド（email、login、name）"
+label = "ユーザー名として使用"
+
+[provider.oauth2.google]
+scope = "サインイン認証"
+
+[provider.oauth2.google.clientId]
+description = "Google Cloud Console の OAuth2 クライアント ID"
+label = "クライアント ID"
+
+[provider.oauth2.google.clientSecret]
+description = "Google Cloud Console の OAuth2 クライアントシークレット"
+label = "クライアントシークレット"
+
+[provider.oauth2.google.scopes]
+description = "カンマ区切りの OAuth2 スコープ"
+label = "スコープ"
+
+[provider.oauth2.google.useAsUsername]
+description = "ユーザー名として使用するフィールド（email、name、given_name、family_name）"
+label = "ユーザー名として使用"
+
+[provider.oauth2.keycloak]
+scope = "SSO"
+
+[provider.oauth2.keycloak.clientId]
+description = "Keycloak の OAuth2 クライアント ID"
+label = "クライアント ID"
+
+[provider.oauth2.keycloak.clientSecret]
+description = "Keycloak の OAuth2 クライアントシークレット"
+label = "クライアントシークレット"
+
+[provider.oauth2.keycloak.issuer]
+description = "Keycloak レルムの OpenID Connect Discovery エンドポイントの URL"
+label = "Issuer URL"
+
+[provider.oauth2.keycloak.scopes]
+description = "カンマ区切りの OAuth2 スコープ"
+label = "スコープ"
+
+[provider.oauth2.keycloak.useAsUsername]
+description = "ユーザー名として使用するフィールド（email、name、given_name、family_name、preferred_username）"
+label = "ユーザー名として使用"
+
+[provider.saml2]
+name = "SAML2"
+scope = "SSO（SAML）"
+
+[provider.saml2.autoCreateUser]
+description = "初回の SAML2 ログイン時にユーザーアカウントを自動作成"
+label = "ユーザーを自動作成"
+
+[provider.saml2.blockRegistration]
+description = "SAML2 経由での新規ユーザー登録を禁止"
+label = "登録をブロック"
+
+[provider.saml2.enabled]
+description = "SAML2 認証を有効化（Enterprise のみ）"
+label = "SAML2 を有効化"
+
+[provider.saml2.idpCert]
+description = "証明書のパス（例：classpath:okta.cert）"
+label = "IDP 証明書"
+
+[provider.saml2.idpIssuer]
+description = "プロバイダーの ID"
+label = "IDP Issuer"
+
+[provider.saml2.idpMetadataUri]
+description = "プロバイダーのメタデータ用 URI"
+label = "IDP メタデータ URI"
+
+[provider.saml2.idpSingleLoginUrl]
+description = "SSO を開始するための URL"
+label = "IDP シングルログイン URL"
+
+[provider.saml2.idpSingleLogoutUrl]
+description = "SLO を開始するための URL"
+label = "IDP シングルログアウト URL"
+
+[provider.saml2.privateKey]
+description = "秘密鍵のパス"
+label = "秘密鍵"
+
+[provider.saml2.provider]
+description = "SAML2 プロバイダー名"
+label = "プロバイダー名"
+
+[provider.saml2.registrationId]
+description = "Service Provider（SP）アプリ名"
+label = "登録 ID"
+
+[provider.saml2.spCert]
+description = "署名証明書のパス"
+label = "SP 証明書"
+
+[provider.smtp]
+name = "SMTP メール"
+scope = "メール通知"
+
+[provider.smtp.enabled]
+description = "メール通知と SMTP 機能を有効化"
+label = "メールを有効化"
+
+[provider.smtp.from]
+description = "送信者として使用するメールアドレス"
+label = "送信元アドレス"
+
+[provider.smtp.host]
+description = "SMTP サーバーのホスト名または IP アドレス"
+label = "SMTP ホスト"
+
+[provider.smtp.password]
+description = "SMTP 認証のパスワード"
+label = "SMTP パスワード"
+
+[provider.smtp.port]
+description = "SMTP 接続のポート番号（通常 25、465、587）"
+label = "SMTP ポート"
+
+[provider.smtp.username]
+description = "SMTP 認証のユーザー名"
+label = "SMTP ユーザー名"
 
 [quickAccess]
 access = "アクセス"
@@ -5867,7 +5972,12 @@ createNew = "新しいリクエストを作成"
 createSession = "署名リクエストを作成"
 dueDate = "期限（任意）"
 files = "ファイル"
+filterDeclined = "辞退"
+filterMine = "自分"
+filterOverdue = "期限超過"
+filterSigned = "署名済み"
 help = "ヘルプ"
+newRequest = "新規リクエスト"
 noActiveSessions = "保留中の署名リクエストやアクティブなセッションはありません"
 noCompletedSessions = "完了したセッションはありません"
 noFile = "ファイルが選択されていません"
@@ -5875,8 +5985,9 @@ read = "読む"
 reader = "リーダー"
 refresh = "更新"
 requestSignatures = "署名を依頼"
-selectSingleFileToRequest = "署名を依頼するPDFファイルを1つ選択してください"
+searchDocuments = "ドキュメントを検索…"
 selectedFile = "選択したファイル"
+selectSingleFileToRequest = "署名を依頼するPDFファイルを1つ選択してください"
 selectUsers = "署名するユーザーを選択"
 selectUsersPlaceholder = "参加者を選択..."
 sendingRequest = "送信中..."
@@ -5885,14 +5996,8 @@ showMeAround = "案内して"
 sign = "署名"
 signatureRequests = "署名リクエスト"
 signYourself = "自分で署名"
-newRequest = "新規リクエスト"
 tours = "ツアー"
 wetSign = "署名を追加"
-filterMine = "自分"
-filterOverdue = "期限超過"
-filterSigned = "署名済み"
-filterDeclined = "辞退"
-searchDocuments = "ドキュメントを検索…"
 
 [quickAccess.helpMenu]
 adminTour = "管理ツアー"
@@ -5933,15 +6038,15 @@ title = "墨消し語句"
 failed = "PDF の墨消し中にエラーが発生しました。"
 
 [redact.manual]
+activate = "墨消しツールを有効化"
+active = "墨消しモードが有効"
 apply = "適用"
 applyChanges = "変更を適用"
 applyRedactions = "Apply Redactions"
 applyWarning = "⚠️ 永久適用で元に戻せず、下のデータは削除されます"
 boxRedaction = "ボックス描画による墨消し"
-colourPicker = "カラーピッカー"
 colorLabel = "墨消しの色"
-active = "墨消しモードが有効"
-activate = "墨消しツールを有効化"
+colourPicker = "カラーピッカー"
 controlsTitle = "手動墨消しコントロール"
 convertPDFToImageLabel = "PDF を PDF-Image に変換（ボックス背後のテキスト除去用）"
 export = "エクスポート"
@@ -6337,6 +6442,46 @@ title = "高コントラスト"
 text = "PDF 内のすべての色を完全に反転し、ネガのような効果を作ります。ダークモード版の作成や暗所での眼精疲労の軽減に有用です。"
 title = "全色反転"
 
+[rightRail]
+annotations = "注釈"
+applyRedactionsFirst = "先に墨消しを適用"
+closePdf = "PDF を閉じる"
+closeSelected = "選択したファイルを閉じる"
+deleteSelected = "選択したページを削除"
+deselectAll = "選択を解除"
+downloadAll = "すべてをダウンロード"
+downloadSelected = "選択したファイルをダウンロード"
+draw = "描画"
+exitRedaction = "墨消しモードを終了"
+exportAll = "PDF を書き出し"
+exportSelected = "選択したページを書き出し"
+formFill = "フォーム入力"
+language = "言語"
+panMode = "パンモード"
+print = "PDFを印刷"
+readAloud = "読み上げ"
+readAloudLanguage = "言語"
+readAloudSpeed = "速度"
+redact = "墨消し"
+rotateLeft = "左に回転"
+rotateRight = "右に回転"
+ruler = "定規 / 測定"
+save = "保存"
+saveAll = "すべて保存"
+saveAs = "名前を付けて保存"
+saveChanges = "変更を保存"
+search = "PDF を検索"
+selectAll = "すべて選択"
+selectByNumber = "ページ番号で選択"
+selectLanguage = "言語を選択"
+toggleAnnotations = "注釈の表示を切り替え"
+toggleAttachments = "添付ファイルの表示切替"
+toggleBookmarks = "ブックマークを切り替え"
+toggleComments = "コメント"
+toggleLayers = "レイヤーの切り替え"
+toggleSidebar = "サイドバーを切り替え"
+toggleTheme = "テーマを切り替え"
+
 [rotate]
 rotateLeft = "反時計回りに回転"
 rotateRight = "時計回りに回転"
@@ -6359,32 +6504,6 @@ text = "PDF のページを90度単位で時計回りまたは反時計回りに
 
 [rotate.tooltip.header]
 title = "回転設定の概要"
-
-[timestampPdf]
-completed = "PDF のタイムスタンプに成功しました"
-desc = "信頼できる Time Stamp Authority (TSA) サーバーを使用して、PDF に RFC 3161 のドキュメントタイムスタンプを追加します。"
-filenamePrefix = "timestamped"
-results = "タイムスタンプ結果"
-submit = "タイムスタンプを適用"
-title = "PDF にタイムスタンプ"
-
-[timestampPdf.error]
-failed = "PDF のタイムスタンプ中にエラーが発生しました。"
-generic = "タイムスタンプに失敗しました"
-
-[timestampPdf.files]
-placeholder = "開始するにはメイン画面で PDF ファイルを選択してください"
-
-[timestampPdf.options]
-note = "ドキュメントの SHA-256 ハッシュのみが TSA サーバーに送信され、PDF ファイル自体が TSA サーバーに送信されることはありません。"
-title = "タイムスタンプサーバー (TSA)"
-
-[timestampPdf.options.tsaUrl]
-desc = "信頼できる Time Stamp Authority を選択"
-label = "TSA サーバーを選択"
-
-[timestampPdf.steps]
-settings = "設定"
 
 [sanitize]
 completed = "サニタイズが正常に完了しました"
@@ -6554,37 +6673,6 @@ bullet3 = "承認ワークフローや法的な証跡に不可欠です"
 description = "セッション作成時に指定する順序が、誰が最初に署名するかを決定します。"
 title = "署名の順序"
 
-[signatureSettings.tooltip]
-header = "署名の外観設定"
-
-[signatureSettings.tooltip.location]
-bullet1 = "例: \"New York, USA\"、\"London Office\"、\"Remote\""
-bullet2 = "ページ上の位置とは異なります"
-bullet3 = "法域によっては必須となる場合があります"
-description = "署名が行われた地理的な場所（任意）。証明書のメタデータに保存されます。"
-title = "署名の場所"
-
-[signatureSettings.tooltip.logo]
-bullet1 = "署名とテキストの横に表示されます"
-bullet2 = "PNG、JPG 形式に対応"
-bullet3 = "プロフェッショナルな印象を高めます"
-description = "ブランドと真正性のために、表示される署名に会社のロゴを追加します。"
-title = "会社ロゴ"
-
-[signatureSettings.tooltip.reason]
-bullet1 = "例: \"Approval\"、\"Contract Agreement\"、\"Review Complete\""
-bullet2 = "PDFの署名プロパティに表示されます"
-bullet3 = "監査証跡やコンプライアンスに有用です"
-description = "ドキュメントに署名する理由（任意）。証明書のメタデータに保存されます。"
-title = "署名理由"
-
-[signatureSettings.tooltip.visibility]
-bullet1 = "<b>表示</b>: カスタム外観でPDFに署名が表示されます"
-bullet2 = "<b>非表示</b>: 視覚的なマークなしで証明書のみを埋め込みます"
-bullet3 = "非表示の署名でも暗号学的な検証が提供されます"
-description = "署名をドキュメント上に表示するか、非表示で埋め込むかを制御します。"
-title = "署名の表示"
-
 [settings.configuration]
 advanced = "詳細設定"
 database = "データベース"
@@ -6606,6 +6694,102 @@ user = "ログイン中:"
 local = "ローカルのみ"
 saas = "Stirling Cloud"
 selfhosted = "セルフホスト"
+
+[settings.developer]
+apiKeys = "APIキー"
+title = "開発者"
+
+[settings.general]
+autoUnzip = "API 応答を自動解凍"
+autoUnzipDescription = "ZIP 応答からファイルを自動的に抽出"
+autoUnzipFileLimit = "自動解凍のファイル数上限"
+autoUnzipFileLimitDescription = "ZIP から抽出する最大ファイル数"
+autoUnzipFileLimitTooltip = "ZIP に含まれるファイル数がこの数以下の場合のみ解凍します。大きな ZIP を展開するには上限を上げてください。"
+autoUnzipTooltip = "API 操作で返された ZIP ファイルを自動的に展開します。ZIP をそのまま保持するには無効にします。自動化ワークフローには影響しません。"
+defaultPdfEditor = "既定のPDFエディター"
+defaultPdfEditorActive = "Stirling PDF は既定のPDFエディターです"
+defaultPdfEditorChecking = "確認中..."
+defaultPdfEditorInactive = "別のアプリが既定に設定されています"
+defaultPdfEditorSet = "既に既定です"
+defaultStartupView = "Default view on launch"
+defaultStartupViewDescription = "Choose which tab is active in the left column when the app starts"
+defaultToolPickerMode = "デフォルトのツールピッカー表示モード"
+defaultToolPickerModeDescription = "ツールピッカーをデフォルトでフルスクリーンまたはサイドバーのどちらで開くか選択します"
+defaultViewerZoom = "Default reader zoom"
+defaultViewerZoomDescription = "Set the default zoom level when opening PDFs in the reader"
+description = "アプリの一般設定を構成します。"
+hideUnavailableConversions = "利用不可の変換を非表示"
+hideUnavailableConversionsDescription = "グレー表示の代わりに、Convert ツールで無効な変換オプションを非表示にします。"
+hideUnavailableTools = "利用不可のツールを非表示"
+hideUnavailableToolsDescription = "グレー表示の代わりに、サーバーで無効化されたツールを非表示にします。"
+logout = "ログアウト"
+setAsDefault = "既定に設定"
+title = "一般"
+user = "ユーザー"
+
+[settings.general.enableFeatures]
+action = "設定"
+and = "と"
+benefit = "ユーザーロール、チームコラボレーション、管理機能、エンタープライズ機能を有効化します。"
+dismiss = "閉じる"
+intro = "組織向けにユーザー認証、チーム管理、ワークスペース機能を有効化します。"
+learnMore = "ドキュメントで詳しく見る"
+title = "システム管理者向け"
+
+[settings.general.mode]
+fullscreen = "フルスクリーン"
+sidebar = "サイドバー"
+
+[settings.general.startupView]
+automate = "Automate"
+read = "Reader"
+tools = "Tools"
+
+[settings.general.updates]
+checkForUpdates = "更新を確認"
+currentBackendVersion = "Current Backend Version"
+currentFrontendVersion = "Current Frontend Version"
+description = "更新の確認とバージョン情報の表示"
+latestVersion = "最新バージョン"
+serverNeedsUpdate = "サーバーは管理者による更新が必要です"
+title = "ソフトウェア更新"
+versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
+viewDetails = "詳細を表示"
+
+[settings.general.versionInfo]
+description = "デスクトップ版とサーバー版の詳細"
+desktop = "デスクトップ版"
+server = "サーバー版"
+title = "バージョン情報"
+
+[settings.general.zoomLevel]
+auto = "Auto"
+fitPage = "Fit page"
+fitWidth = "Fit width"
+
+[settings.hotkeys]
+capturing = "キーを押してください…（Escでキャンセル）"
+change = "ショートカットを変更"
+customBadge = "カスタム"
+defaultLabel = "デフォルト: {{shortcut}}"
+description = "ツールにすばやくアクセスできるようキーボードショートカットをカスタマイズします。「Change shortcut」をクリックし、新しいキーの組み合わせを押してください。Escでキャンセルします。"
+errorConflict = "ショートカットはすでに{{tool}}で使用されています。"
+none = "未割り当て"
+noShortcut = "ショートカット未設定"
+reset = "リセット"
+searchPlaceholder = "ツールを検索..."
+shortcut = "ショートカット"
+title = "キーボードショートカット"
+
+[settings.hotkeys.errorModifier]
+mac = "ショートカットに⌘（Command）、⌥（Option）などの修飾キーを含めてください。"
+windows = "ショートカットにCtrl、Altなどの修飾キーを含めてください。"
+
+[settings.licensingAnalytics]
+audit = "監査"
+plan = "プラン"
+title = "ライセンスと分析"
+usageAnalytics = "利用分析"
 
 [settings.planBilling]
 currentPlan = "現在のプラン"
@@ -6637,6 +6821,10 @@ canceled = "キャンセル済み"
 pastDue = "延滞"
 trial = "トライアル"
 
+[settings.planBilling.team]
+managedByTeam = "チームによって管理"
+memberCount = "チームメンバー {{count}} 名"
+
 [settings.planBilling.tier]
 enterprise = "Enterprise"
 enterpriseDescription = "エンタープライズ向けのカスタム機能とサポート"
@@ -6648,10 +6836,6 @@ teamDescription = "月 500 クレジットを含み、サービスが途切れ�
 teamTooltipCredits = "Team プランには月 {{credits}} クレジットが含まれます。"
 teamTooltipFineprint = "含まれるクレジットを超えた分だけお支払いください。"
 teamTooltipOverage = "自動超過課金（{{price}}/クレジット）でサービスの継続性を確保します。"
-
-[settings.planBilling.team]
-managedByTeam = "チームによって管理"
-memberCount = "チームメンバー {{count}} 名"
 
 [settings.planBilling.trial]
 daysRemaining = "残り {{days}} 日"
@@ -6670,88 +6854,6 @@ featureThroughput = "より高速な処理スループット"
 opensInBrowser = "ブラウザーで開いてアップグレードを完了します"
 subtitle = "Team にアップグレードすると："
 title = "プランをアップグレード"
-
-[settings.developer]
-apiKeys = "APIキー"
-title = "開発者"
-
-[settings.general]
-autoUnzip = "API 応答を自動解凍"
-autoUnzipDescription = "ZIP 応答からファイルを自動的に抽出"
-autoUnzipFileLimit = "自動解凍のファイル数上限"
-autoUnzipFileLimitDescription = "ZIP から抽出する最大ファイル数"
-autoUnzipFileLimitTooltip = "ZIP に含まれるファイル数がこの数以下の場合のみ解凍します。大きな ZIP を展開するには上限を上げてください。"
-autoUnzipTooltip = "API 操作で返された ZIP ファイルを自動的に展開します。ZIP をそのまま保持するには無効にします。自動化ワークフローには影響しません。"
-defaultPdfEditor = "既定のPDFエディター"
-defaultPdfEditorActive = "Stirling PDF は既定のPDFエディターです"
-defaultPdfEditorChecking = "確認中..."
-defaultPdfEditorInactive = "別のアプリが既定に設定されています"
-defaultPdfEditorSet = "既に既定です"
-defaultToolPickerMode = "デフォルトのツールピッカー表示モード"
-defaultToolPickerModeDescription = "ツールピッカーをデフォルトでフルスクリーンまたはサイドバーのどちらで開くか選択します"
-description = "アプリの一般設定を構成します。"
-hideUnavailableConversions = "利用不可の変換を非表示"
-hideUnavailableConversionsDescription = "グレー表示の代わりに、Convert ツールで無効な変換オプションを非表示にします。"
-hideUnavailableTools = "利用不可のツールを非表示"
-hideUnavailableToolsDescription = "グレー表示の代わりに、サーバーで無効化されたツールを非表示にします。"
-logout = "ログアウト"
-setAsDefault = "既定に設定"
-title = "一般"
-user = "ユーザー"
-
-[settings.general.enableFeatures]
-action = "設定"
-and = "と"
-benefit = "ユーザーロール、チームコラボレーション、管理機能、エンタープライズ機能を有効化します。"
-dismiss = "閉じる"
-intro = "組織向けにユーザー認証、チーム管理、ワークスペース機能を有効化します。"
-learnMore = "ドキュメントで詳しく見る"
-title = "システム管理者向け"
-
-[settings.general.mode]
-fullscreen = "フルスクリーン"
-sidebar = "サイドバー"
-
-[settings.general.updates]
-checkForUpdates = "更新を確認"
-currentBackendVersion = "Current Backend Version"
-currentFrontendVersion = "Current Frontend Version"
-description = "更新の確認とバージョン情報の表示"
-latestVersion = "最新バージョン"
-serverNeedsUpdate = "サーバーは管理者による更新が必要です"
-title = "ソフトウェア更新"
-versionMismatch = "Warning: A mismatch has been detected between the client version and the AppConfig version. Using different versions can lead to compatibility issues, errors, and security risks. Please ensure that server and client are using the same version."
-viewDetails = "詳細を表示"
-
-[settings.general.versionInfo]
-description = "デスクトップ版とサーバー版の詳細"
-desktop = "デスクトップ版"
-server = "サーバー版"
-title = "バージョン情報"
-
-[settings.hotkeys]
-capturing = "キーを押してください…（Escでキャンセル）"
-change = "ショートカットを変更"
-customBadge = "カスタム"
-defaultLabel = "デフォルト: {{shortcut}}"
-description = "ツールにすばやくアクセスできるようキーボードショートカットをカスタマイズします。「Change shortcut」をクリックし、新しいキーの組み合わせを押してください。Escでキャンセルします。"
-errorConflict = "ショートカットはすでに{{tool}}で使用されています。"
-none = "未割り当て"
-noShortcut = "ショートカット未設定"
-reset = "リセット"
-searchPlaceholder = "ツールを検索..."
-shortcut = "ショートカット"
-title = "キーボードショートカット"
-
-[settings.hotkeys.errorModifier]
-mac = "ショートカットに⌘（Command）、⌥（Option）などの修飾キーを含めてください。"
-windows = "ショートカットにCtrl、Altなどの修飾キーを含めてください。"
-
-[settings.licensingAnalytics]
-audit = "監査"
-plan = "プラン"
-title = "ライセンスと分析"
-usageAnalytics = "利用分析"
 
 [settings.policiesPrivacy]
 legal = "法務"
@@ -6789,6 +6891,9 @@ security = "セキュリティ"
 telegram = "Telegram"
 title = "セキュリティと認証"
 
+[settings.team]
+title = "Team"
+
 [settings.tooltips]
 enableLoginFirst = "先にログインモードを有効にしてください"
 requiresEnterprise = "Enterpriseライセンスが必要です"
@@ -6798,21 +6903,6 @@ people = "メンバー"
 teams = "チーム"
 title = "ワークスペース"
 
-[settings.team]
-title = "Team"
-
-[localMode]
-toolUnavailable = "このツールにはアカウントが必要です。Stirling Cloud にサインインするか、セルフホストサーバーに接続して使用してください。"
-
-[localMode.banner]
-message = "サインインしてすべてのツールを利用可能にします。"
-signIn = "サインイン"
-title = "ローカルで実行中"
-
-[localMode.toolPicker]
-message = "サインインしてすべてのツールを利用可能にします。"
-signIn = "サインイン"
-
 [setup]
 description = "Stirling PDF の使い方を選んで開始しましょう"
 welcome = "Stirling PDF へようこそ"
@@ -6820,7 +6910,6 @@ welcome = "Stirling PDF へようこそ"
 [setup.login]
 connectingTo = "接続先:"
 hideInstructions = "手順を非表示"
-skipSignIn = "サインインせずに続行"
 instructions = "Stirling PDF サーバーでログインを有効にするには:"
 instructionsEnvVar = "環境変数を設定:"
 instructionsOrYml = "または settings.yml で:"
@@ -6830,6 +6919,7 @@ orContinueWith = "またはメールで続行"
 serverRequirement = "注: サーバーでログインを有効にする必要があります。"
 showInstructions = "有効化するには？"
 signInWith = "でサインイン"
+skipSignIn = "サインインせずに続行"
 sso = "シングルサインオン"
 submit = "ログイン"
 subtitle = "続行するには認証情報を入力"
@@ -6866,9 +6956,9 @@ subtitle = "Stirling アカウントでサインイン"
 title = "Stirling にサインイン"
 
 [setup.selfhosted]
+changeServerLocked = "あなたの組織はこのアプリを特定のサーバーに制限しています"
 link = "またはセルフホスト型アカウントに接続"
 subtitle = "サーバーの認証情報を入力"
-changeServerLocked = "あなたの組織はこのアプリを特定のサーバーに制限しています"
 switchToLocal = "代わりにローカルツールを使用"
 title = "サーバーにサインイン"
 
@@ -7068,14 +7158,45 @@ saved = "保存済み"
 text = "テキスト"
 title = "署名タイプ"
 
+[signatureSettings.tooltip]
+header = "署名の外観設定"
+
+[signatureSettings.tooltip.location]
+bullet1 = "例: \"New York, USA\"、\"London Office\"、\"Remote\""
+bullet2 = "ページ上の位置とは異なります"
+bullet3 = "法域によっては必須となる場合があります"
+description = "署名が行われた地理的な場所（任意）。証明書のメタデータに保存されます。"
+title = "署名の場所"
+
+[signatureSettings.tooltip.logo]
+bullet1 = "署名とテキストの横に表示されます"
+bullet2 = "PNG、JPG 形式に対応"
+bullet3 = "プロフェッショナルな印象を高めます"
+description = "ブランドと真正性のために、表示される署名に会社のロゴを追加します。"
+title = "会社ロゴ"
+
+[signatureSettings.tooltip.reason]
+bullet1 = "例: \"Approval\"、\"Contract Agreement\"、\"Review Complete\""
+bullet2 = "PDFの署名プロパティに表示されます"
+bullet3 = "監査証跡やコンプライアンスに有用です"
+description = "ドキュメントに署名する理由（任意）。証明書のメタデータに保存されます。"
+title = "署名理由"
+
+[signatureSettings.tooltip.visibility]
+bullet1 = "<b>表示</b>: カスタム外観でPDFに署名が表示されます"
+bullet2 = "<b>非表示</b>: 視覚的なマークなしで証明書のみを埋め込みます"
+bullet3 = "非表示の署名でも暗号学的な検証が提供されます"
+description = "署名をドキュメント上に表示するか、非表示で埋め込むかを制御します。"
+title = "署名の表示"
+
 [signRequest]
 declined = "署名リクエストを辞退しました"
 fetchFailed = "署名リクエストの読み込みに失敗しました"
 signed = "ドキュメントの署名に成功しました"
 
 [signSession]
-createFailed = "署名リクエストの作成に失敗しました"
 created = "署名リクエストを送信しました"
+createFailed = "署名リクエストの作成に失敗しました"
 
 [signup]
 accountCreatedSuccessfully = "アカウントが作成されました。今すぐサインインできます。"
@@ -7156,15 +7277,15 @@ desc = "仕切りシートで自動分割"
 name = "仕切りページ"
 tooltip = "スキャン時に文書間に QR コードの仕切りシートを使用"
 
-[split.methods.byPoster]
-name = "印刷用の分割"
-desc = "大きなページを印刷可能なサイズに分割"
-tooltip = "大型ページを標準用紙（A4、Letter など）での印刷に適した小さなチャンクに分割します"
-
 [split.methods.byPages]
 desc = "特定のページを抽出（1,3,5-10）"
 name = "ページ番号"
 tooltip = "カンマで区切ったページ番号、またはハイフンで範囲を入力"
+
+[split.methods.byPoster]
+desc = "大きなページを印刷可能なサイズに分割"
+name = "印刷用の分割"
+tooltip = "大型ページを標準用紙（A4、Letter など）での印刷に適した小さなチャンクに分割します"
 
 [split.methods.bySections]
 desc = "ページをグリッド状のセクションに分割"
@@ -7192,27 +7313,27 @@ title = "分割方法を選択"
 text = "PDF をどのように分割するか選択してください。各方法はユースケースや文書タイプに最適化されています。"
 title = "分割方法の選択"
 
+[split.poster]
+rightToLeft = "右から左へ分割"
+
+[split.poster.pageSize]
+description = "印刷用の出力ページサイズ"
+label = "対象の用紙サイズ"
+
+[split.poster.xFactor]
+description = "各ページを分割する列数"
+label = "水平方向の分割数"
+
+[split.poster.yFactor]
+description = "各ページを分割する行数"
+label = "垂直方向の分割数"
+
 [split.settings]
 selectMethodFirst = "先に分割方法を選択してください"
 
 [split.steps]
 chooseMethod = "方法を選択"
 settings = "設定"
-
-[split.poster]
-rightToLeft = "右から左へ分割"
-
-[split.poster.pageSize]
-label = "対象の用紙サイズ"
-description = "印刷用の出力ページサイズ"
-
-[split.poster.xFactor]
-label = "水平方向の分割数"
-description = "各ページを分割する列数"
-
-[split.poster.yFactor]
-label = "垂直方向の分割数"
-description = "各ページを分割する行数"
 
 [split.tooltip.byChapters]
 bullet1 = "ブックマークレベル: どのレベルで分割するか（1=最上位）"
@@ -7251,6 +7372,13 @@ bullet5 = "仕切りシートの両面をスキャンする場合は両面モー
 text = "QR コード付きの物理的な仕切りシートを使って、まとめてスキャンした文書を自動分割します。複数文書の同時処理に最適。"
 title = "仕切りページで分割"
 
+[split.tooltip.byPages]
+bullet1 = "単一の分割点: 3,7（3ページ目と7ページ目の後で分割）"
+bullet2 = "範囲の分割点: 3-8（3ページ目の前と8ページ目の後で分割）"
+bullet3 = "混在: 2,5-10,15（2の後、5の前、10の後、15の後で分割）"
+text = "PDF を特定のページ番号で分割します。'n' はページ n の後で分割。'n-m' はページ n の前とページ m の後で分割します。"
+title = "ページ番号で分割"
+
 [split.tooltip.byPoster]
 bullet1 = "対象の用紙サイズ：出力する用紙サイズ（A4、Letter など）を選択"
 bullet2 = "水平/垂直の分割数：分割用のグリッドサイズ"
@@ -7258,13 +7386,6 @@ bullet3 = "右から左：RTL レイアウト用に列順を反転"
 bullet4 = "印刷して組み合わせればポスターが作成できます"
 text = "大きな PDF ページを標準的な用紙サイズで印刷可能な小さなチャンクに分割します。大型ページからポスター印刷を作成するのに最適です。"
 title = "ポスター印刷用に分割"
-
-[split.tooltip.byPages]
-bullet1 = "単一の分割点: 3,7（3ページ目と7ページ目の後で分割）"
-bullet2 = "範囲の分割点: 3-8（3ページ目の前と8ページ目の後で分割）"
-bullet3 = "混在: 2,5-10,15（2の後、5の前、10の後、15の後で分割）"
-text = "PDF を特定のページ番号で分割します。'n' はページ n の後で分割。'n-m' はページ n の前とページ m の後で分割します。"
-title = "ページ番号で分割"
 
 [split.tooltip.bySections]
 bullet1 = "水平: 作成する行数"
@@ -7355,106 +7476,6 @@ title = "PDFをチャプターごとに分割"
 [splitPdfByChapters]
 tags = "分割,章,しおり,整理"
 
-[storageShare]
-accessed = "アクセス済み"
-accessDenied = "この共有ファイルへのアクセス権がありません。所有者に共有を依頼してください。"
-accessFailed = "アクティビティを読み込めません。"
-accessDeniedBody = "このファイルへのアクセス権がありません。所有者に共有を依頼してください。"
-accessDeniedTitle = "アクセス権がありません"
-accessLimitedCommenter = "コメント権限は近日対応予定です。ダウンロードが必要な場合は、所有者に編集権限を依頼してください。"
-accessLimitedTitle = "制限付きアクセス"
-accessLimitedViewer = "このリンクは閲覧のみです。ダウンロードが必要な場合は、所有者に編集権限を依頼してください。"
-createdAt = "作成日時"
-download = "ダウンロード"
-downloadFailed = "このファイルをダウンロードできません。"
-expiredBody = "この共有リンクは無効か、有効期限が切れています。"
-expiredTitle = "リンクの有効期限切れ"
-goToLogin = "ログインへ"
-loadFailed = "共有ファイルを開けません。"
-loading = "共有リンクを読み込み中..."
-loginPrompt = "この共有ファイルにアクセスするにはサインインしてください。"
-loginRequired = "ログインが必要です"
-openInApp = "Stirling PDF で開く"
-ownerLabel = "所有者"
-ownerUnknown = "不明"
-requiresLogin = "この共有ファイルはログインが必要です。"
-roleCommenter = "コメント投稿者"
-roleEditor = "編集者"
-roleViewer = "閲覧者"
-shareHeading = "共有ファイル"
-titleDefault = "共有ファイル"
-tryAgain = "後でもう一度お試しください。"
-addUser = "追加"
-commenterHint = "コメント機能は近日対応予定です。"
-copied = "リンクをクリップボードにコピーしました"
-copy = "コピー"
-copyFailed = "コピーに失敗しました"
-description = "このファイルの共有リンクを作成します。リンクを持つサインイン済みユーザーがアクセスできます。"
-downloadsCount = "ダウンロード数: {{count}}"
-emailWarningBody = "これはメールアドレスのようです。この相手が既に Stirling PDF のユーザーでない場合、ファイルにアクセスできません。"
-emailWarningConfirm = "それでも共有する"
-emailWarningTitle = "メールアドレス"
-errorTitle = "共有に失敗しました"
-failure = "共有リンクを生成できません。もう一度お試しください。"
-fileLabel = "ファイル"
-generate = "リンクを生成"
-generated = "共有リンクを生成しました"
-hideActivity = "アクティビティを非表示"
-invalidUsername = "有効なユーザー名またはメールアドレスを入力してください。"
-lastAccessed = "最終アクセス"
-linkAccessTitle = "共有リンクのアクセス"
-linkLabel = "共有リンク"
-linksDisabled = "共有リンクは無効化されています。"
-linksDisabledBody = "サーバー設定により共有リンクは無効化されています。"
-manage = "共有を管理"
-manageDescription = "このファイルを共有するためのリンクを作成・管理します。"
-manageLoadFailed = "共有リンクを読み込めません。"
-manageTitle = "共有の管理"
-noActivity = "まだアクティビティはありません。"
-noLinks = "アクティブな共有リンクはまだありません。"
-noSharedUsers = "まだアクセス権を持つユーザーはいません。"
-removeLink = "リンクを削除"
-removeUser = "削除"
-revokeFailed = "共有リンクを削除できませんでした。"
-revoked = "共有リンクを削除しました"
-roleLabel = "権限"
-sharingDisabled = "共有は無効です。"
-sharingDisabledBody = "サーバー設定により共有が無効化されています。"
-sharedUsersTitle = "共有ユーザー"
-title = "ファイルを共有"
-unknownUser = "不明なユーザー"
-userAddFailed = "そのユーザーと共有できません。"
-userAdded = "共有リストにユーザーを追加しました。"
-usernameLabel = "ユーザー名またはメールアドレス"
-usernamePlaceholder = "ユーザー名またはメールアドレスを入力"
-userRemoveFailed = "そのユーザーを削除できません。"
-userRemoved = "共有リストからユーザーを削除しました。"
-viewActivity = "アクティビティを表示"
-viewed = "閲覧"
-viewsCount = "閲覧数: {{count}}"
-downloaded = "ダウンロード"
-bulkDescription = "選択したすべてのファイルをサインイン済みユーザーと共有する1つのリンクを作成します。"
-bulkTitle = "選択したファイルを共有"
-copyLink = "共有リンクをコピー"
-fileCount = "{{count}} 件のファイルを選択中"
-ownerOnly = "共有の管理は所有者のみが行えます。"
-selectSingleFile = "共有を管理するにはファイルを1件選択してください。"
-
-[storageUpload]
-description = "現在のファイルをサーバーストレージにアップロードし、自分でアクセスできるようにします。"
-errorTitle = "アップロードに失敗しました"
-failure = "アップロードに失敗しました。ログイン情報とストレージ設定を確認してください。"
-fileLabel = "ファイル"
-hint = "公開リンクとアクセスモードはサーバー設定で制御されます。"
-success = "サーバーにアップロードしました"
-title = "サーバーにアップロード"
-updateButton = "サーバー上で更新"
-uploadButton = "サーバーにアップロード"
-bulkDescription = "選択したファイルをサーバーストレージにアップロードします。"
-bulkTitle = "選択したファイルをアップロード"
-fileCount = "{{count}} 件のファイルを選択中"
-more = " +{{count}} 件 ほか"
-
 [storage]
 approximateSize = "概算サイズ"
 fileTooLarge = "ファイルが大きすぎます。ファイルごとの最大サイズは"
@@ -7463,6 +7484,106 @@ storageLimit = "記憶域の上限"
 storageQuotaExceeded = "記憶域のクォータを超えました。アップロード前に一部のファイルを削除してください。"
 storageUsed = "一時記憶域の使用量"
 temporaryNotice = "ファイルはブラウザに一時的に保存され、自動的に消去される場合があります"
+
+[storageShare]
+accessDenied = "この共有ファイルへのアクセス権がありません。所有者に共有を依頼してください。"
+accessDeniedBody = "このファイルへのアクセス権がありません。所有者に共有を依頼してください。"
+accessDeniedTitle = "アクセス権がありません"
+accessed = "アクセス済み"
+accessFailed = "アクティビティを読み込めません。"
+accessLimitedCommenter = "コメント権限は近日対応予定です。ダウンロードが必要な場合は、所有者に編集権限を依頼してください。"
+accessLimitedTitle = "制限付きアクセス"
+accessLimitedViewer = "このリンクは閲覧のみです。ダウンロードが必要な場合は、所有者に編集権限を依頼してください。"
+addUser = "追加"
+bulkDescription = "選択したすべてのファイルをサインイン済みユーザーと共有する1つのリンクを作成します。"
+bulkTitle = "選択したファイルを共有"
+commenterHint = "コメント機能は近日対応予定です。"
+copied = "リンクをクリップボードにコピーしました"
+copy = "コピー"
+copyFailed = "コピーに失敗しました"
+copyLink = "共有リンクをコピー"
+createdAt = "作成日時"
+description = "このファイルの共有リンクを作成します。リンクを持つサインイン済みユーザーがアクセスできます。"
+download = "ダウンロード"
+downloaded = "ダウンロード"
+downloadFailed = "このファイルをダウンロードできません。"
+downloadsCount = "ダウンロード数: {{count}}"
+emailWarningBody = "これはメールアドレスのようです。この相手が既に Stirling PDF のユーザーでない場合、ファイルにアクセスできません。"
+emailWarningConfirm = "それでも共有する"
+emailWarningTitle = "メールアドレス"
+errorTitle = "共有に失敗しました"
+expiredBody = "この共有リンクは無効か、有効期限が切れています。"
+expiredTitle = "リンクの有効期限切れ"
+failure = "共有リンクを生成できません。もう一度お試しください。"
+fileCount = "{{count}} 件のファイルを選択中"
+fileLabel = "ファイル"
+generate = "リンクを生成"
+generated = "共有リンクを生成しました"
+goToLogin = "ログインへ"
+hideActivity = "アクティビティを非表示"
+invalidUsername = "有効なユーザー名またはメールアドレスを入力してください。"
+lastAccessed = "最終アクセス"
+linkAccessTitle = "共有リンクのアクセス"
+linkLabel = "共有リンク"
+linksDisabled = "共有リンクは無効化されています。"
+linksDisabledBody = "サーバー設定により共有リンクは無効化されています。"
+loadFailed = "共有ファイルを開けません。"
+loading = "共有リンクを読み込み中..."
+loginPrompt = "この共有ファイルにアクセスするにはサインインしてください。"
+loginRequired = "ログインが必要です"
+manage = "共有を管理"
+manageDescription = "このファイルを共有するためのリンクを作成・管理します。"
+manageLoadFailed = "共有リンクを読み込めません。"
+manageTitle = "共有の管理"
+noActivity = "まだアクティビティはありません。"
+noLinks = "アクティブな共有リンクはまだありません。"
+noSharedUsers = "まだアクセス権を持つユーザーはいません。"
+openInApp = "Stirling PDF で開く"
+ownerLabel = "所有者"
+ownerOnly = "共有の管理は所有者のみが行えます。"
+ownerUnknown = "不明"
+removeLink = "リンクを削除"
+removeUser = "削除"
+requiresLogin = "この共有ファイルはログインが必要です。"
+revoked = "共有リンクを削除しました"
+revokeFailed = "共有リンクを削除できませんでした。"
+roleCommenter = "コメント投稿者"
+roleEditor = "編集者"
+roleLabel = "権限"
+roleViewer = "閲覧者"
+selectSingleFile = "共有を管理するにはファイルを1件選択してください。"
+sharedUsersTitle = "共有ユーザー"
+shareHeading = "共有ファイル"
+sharingDisabled = "共有は無効です。"
+sharingDisabledBody = "サーバー設定により共有が無効化されています。"
+title = "ファイルを共有"
+titleDefault = "共有ファイル"
+tryAgain = "後でもう一度お試しください。"
+unknownUser = "不明なユーザー"
+userAdded = "共有リストにユーザーを追加しました。"
+userAddFailed = "そのユーザーと共有できません。"
+usernameLabel = "ユーザー名またはメールアドレス"
+usernamePlaceholder = "ユーザー名またはメールアドレスを入力"
+userRemoved = "共有リストからユーザーを削除しました。"
+userRemoveFailed = "そのユーザーを削除できません。"
+viewActivity = "アクティビティを表示"
+viewed = "閲覧"
+viewsCount = "閲覧数: {{count}}"
+
+[storageUpload]
+bulkDescription = "選択したファイルをサーバーストレージにアップロードします。"
+bulkTitle = "選択したファイルをアップロード"
+description = "現在のファイルをサーバーストレージにアップロードし、自分でアクセスできるようにします。"
+errorTitle = "アップロードに失敗しました"
+failure = "アップロードに失敗しました。ログイン情報とストレージ設定を確認してください。"
+fileCount = "{{count}} 件のファイルを選択中"
+fileLabel = "ファイル"
+hint = "公開リンクとアクセスモードはサーバー設定で制御されます。"
+more = " +{{count}} 件 ほか"
+success = "サーバーにアップロードしました"
+title = "サーバーにアップロード"
+updateButton = "サーバー上で更新"
+uploadButton = "サーバーにアップロード"
 
 [subscription]
 cancelsOn = "{{date}} に解約"
@@ -7507,8 +7628,121 @@ title = "API ドキュメント"
 [tableExtraxt]
 tags = "CSV,表抽出,抽出,変換"
 
+[team]
+cancelInviteError = "招待の取り消しに失敗しました"
+confirmCancelInvite = "この招待を取り消してもよろしいですか？"
+confirmLeave = "このチームから退出してもよろしいですか？"
+confirmLeaveLeader = "あなたはチームリーダーです。退出するとチームから削除されます。よろしいですか？"
+confirmRemove = "このメンバーを削除してもよろしいですか？"
+editName = "チーム名を編集"
+inviteCancelled = "招待を取り消しました"
+inviteError = "招待の送信に失敗しました"
+inviteSent = "招待を送信しました"
+leader = "リーダー"
+leaveButton = "チームを退出"
+leaveError = "チームの退出に失敗しました"
+leaveSuccess = "チームを退出しました"
+loading = "チーム情報を読み込み中..."
+memberCount = "{{count}} 名のメンバー"
+memberRemoved = "メンバーを削除しました"
+namePlaceholder = "チーム名を入力"
+personal = "個人"
+removeError = "メンバーの削除に失敗しました"
+renameError = "チーム名の変更に失敗しました"
+renameSuccess = "チーム名を変更しました"
+
+[team.features]
+badge = "Team の機能"
+subtitle = "チームでコラボレーション"
+title = "チームコラボレーション"
+viewPlans = "プランを見る"
+
+[team.features.billing]
+description = "請求とサブスクリプションを管理"
+title = "請求管理"
+
+[team.features.credits]
+description = "メンバー全員で共有するクレジットプール"
+title = "共有クレジット"
+
+[team.features.dashboard]
+description = "チームのアクティビティと利用状況を表示"
+title = "チームダッシュボード"
+
+[team.features.invite]
+description = "チームにメンバーを追加"
+title = "メンバーを招待"
+
+[team.invitationBanner]
+acceptButton = "承認"
+message = "があなたを招待しました"
+rejectButton = "辞退"
+
+[team.invite]
+cancelLabel = "キャンセル"
+invalidEmail = "無効なメールアドレスです"
+placeholder = "メールアドレスを入力"
+sendButton = "招待を送信"
+title = "チームメンバーを招待"
+
+[team.members]
+emailColumn = "メールアドレス"
+empty = "まだチームメンバーがいません"
+nameColumn = "名前"
+pending = "保留"
+remove = "削除"
+roleColumn = "役割"
+title = "チームメンバー"
+
+[team.upgrade]
+button = "Team にアップグレード"
+description = "チームコラボレーション機能を利用可能に"
+title = "Team プランにアップグレード"
+
+[textAlign]
+center = "中央揃え"
+left = "左揃え"
+right = "右揃え"
+
 [theme]
 toggle = "テーマを切り替え"
+
+[timestampPdf]
+completed = "PDF のタイムスタンプに成功しました"
+desc = "信頼できる Time Stamp Authority (TSA) サーバーを使用して、PDF に RFC 3161 のドキュメントタイムスタンプを追加します。"
+filenamePrefix = "timestamped"
+results = "タイムスタンプ結果"
+submit = "タイムスタンプを適用"
+title = "PDF にタイムスタンプ"
+
+[timestampPdf.error]
+failed = "PDF のタイムスタンプ中にエラーが発生しました。"
+generic = "タイムスタンプに失敗しました"
+
+[timestampPdf.files]
+placeholder = "開始するにはメイン画面で PDF ファイルを選択してください"
+
+[timestampPdf.options]
+note = "ドキュメントの SHA-256 ハッシュのみが TSA サーバーに送信され、PDF ファイル自体が TSA サーバーに送信されることはありません。"
+title = "タイムスタンプサーバー (TSA)"
+
+[timestampPdf.options.tsaUrl]
+desc = "信頼できる Time Stamp Authority を選択"
+label = "TSA サーバーを選択"
+
+[timestampPdf.steps]
+settings = "設定"
+
+[tool]
+endpointUnavailable = "このツールはサーバーで利用できません。"
+endpointUnavailableClickable = "このモードでは利用できません。クリックしてサインイン。"
+invalidParams = "必須の設定を入力してください。"
+noFiles = "開始するにはファイルを追加してください。"
+scopeFiles = "files"
+scopeThisFile = "this file"
+selectFilesHint = "Select files in Active Files to run this tool"
+singleFileScope = "Only applying to: {{fileName}}"
+viewerMode = "Switch to the file editor to select multiple files."
 
 [toolPanel]
 alpha = "アルファ"
@@ -7568,12 +7802,6 @@ pageFormatting = "ページ整形"
 removal = "削除"
 signing = "署名"
 verification = "検証"
-
-[tool]
-endpointUnavailable = "このツールはサーバーで利用できません。"
-endpointUnavailableClickable = "このモードでは利用できません。クリックしてサインイン。"
-invalidParams = "必須の設定を入力してください。"
-noFiles = "開始するにはファイルを追加してください。"
 
 [tools]
 noSearchResults = "ツールが見つかりません"
@@ -7793,6 +8021,81 @@ fileManager = "ファイルマネージャー"
 pageEditor = "ページエディタ"
 viewer = "ビューア"
 
+[viewer]
+cannotPreviewFile = "ファイルをプレビューできません"
+disableColorFilter = "カラーフィルターを無効化"
+dualPageView = "見開き表示"
+enableDarkFilter = "ダークフィルターを有効化"
+enableSepiaFilter = "セピアフィルターを有効化"
+firstPage = "最初のページ"
+lastPage = "最後のページ"
+nextPage = "次のページ"
+onlyPdfSupported = "このビューアは PDF ファイルのみをサポートしています。このファイルは別の形式のようです。"
+previousPage = "前のページ"
+resetZoom = "ズームをリセット"
+singlePageView = "単一ページ表示"
+unknownFile = "不明なファイル"
+zoomIn = "拡大"
+zoomOut = "縮小"
+
+[viewer.attachments]
+empty = "このドキュメントには添付ファイルがありません"
+loading = "添付ファイルを読み込み中..."
+noDocument = "添付ファイルを表示するには PDF を開いてください。"
+noMatch = "検索条件に一致する添付ファイルはありません"
+noSupport = "このビューアでは添付ファイルはサポートされていません。"
+searchPlaceholder = "添付ファイルを検索"
+title = "添付ファイル"
+
+[viewer.comments]
+addComment = "コメントを追加"
+addCommentPlaceholder = "コメントを追加..."
+addLink = "リンクを追加"
+addReplyPlaceholder = "返信を追加..."
+deleteAnnotationAndComment = "注釈とコメントを削除"
+deleteDescription = "この注釈にはコメントが付いています。サイドバーからコメントのみを削除して注釈を残すか、すべて削除できます。"
+deleteTitle = "コメントから注釈を削除しますか？"
+goToLink = "リンクへ移動"
+hint = "「コメント」「テキストを挿入」「テキストを置換」ツールでコメントを配置できます。ページごとにここに表示されます。"
+locateAnnotation = "ドキュメント内で表示"
+moreActions = "その他の操作"
+nComments = "{{count}} 件のコメント"
+oneComment = "1 件のコメント"
+pageLabel = "ページ {{page}}"
+placeholder = "コメントを入力..."
+removeCommentOnly = "コメントのみ削除"
+saveReply = "返信を保存"
+send = "送信"
+title = "コメント"
+typeComment = "コメント"
+typeInsertText = "テキストを挿入"
+typeReplaceText = "テキストを置換"
+viewComment = "コメントを表示"
+
+[viewer.formBar]
+apply = "変更を適用"
+dismiss = "閉じる"
+download = "PDF をダウンロード"
+hasFieldsDesc = "この PDF には入力可能なフィールドがあります"
+title = "フォームフィールド"
+unsavedBadge = "未保存"
+unsavedDesc = "未保存の変更があります"
+
+[viewer.nonPdf]
+columnDefault = "列 {{index}}"
+convertToPdf = "PDF に変換"
+csvStats = "{{rows}} 行 · {{columns}} 列 · {{size}}"
+emptyFile = "空のファイル"
+fileTypeBadge = "{{type}} ファイル"
+htmlPreview = "HTMLプレビュー"
+htmlPreviewWarning = "HTMLプレビュー — 外部リソースは読み込まれない場合があります · {{size}}"
+invalidJson = "無効な JSON — 生の内容を表示しています"
+lineNumbers = "行番号"
+loading = "読み込み中..."
+renderMarkdown = "Markdown をレンダリング"
+sortedBy = "並び替え基準: {{column}}"
+textStats = "{{lines}} 行 · {{size}}"
+
 [viewPdf]
 header = "PDFを表示"
 tags = "view,read,annotate,text,image"
@@ -7800,30 +8103,6 @@ title = "PDFの表示/編集"
 
 [warning]
 tooltipTitle = "警告"
-
-[wetSignature.tooltip]
-header = "署名の作成方法"
-
-[wetSignature.tooltip.draw]
-bullet1 = "ペンの色と太さをカスタマイズ"
-bullet2 = "納得いくまでクリアして描き直し"
-bullet3 = "タッチデバイス（タブレット・スマートフォン）に対応"
-description = "マウスやタッチスクリーンで手書きの署名を作成します。個人的で本物らしい署名に最適です。"
-title = "手書きで署名"
-
-[wetSignature.tooltip.type]
-bullet1 = "複数のフォントから選択"
-bullet2 = "文字サイズと色をカスタマイズ"
-bullet3 = "定型的な署名に最適"
-description = "入力したテキストから署名を生成します。高速で一貫性があり、ビジネス文書に適しています。"
-title = "テキストで署名"
-
-[wetSignature.tooltip.upload]
-bullet1 = "PNG、JPG などの画像形式に対応"
-bullet2 = "最良の結果のため透明背景を推奨"
-bullet3 = "署名領域に合わせて画像をリサイズ"
-description = "作成済みの署名画像をアップロードします。スキャンした署名や会社ロゴがある場合に最適です。"
-title = "署名画像をアップロード"
 
 [watermark]
 completed = "透かしを追加しました"
@@ -7996,6 +8275,30 @@ title = "透かしテキスト"
 image = "画像"
 text = "テキスト"
 
+[wetSignature.tooltip]
+header = "署名の作成方法"
+
+[wetSignature.tooltip.draw]
+bullet1 = "ペンの色と太さをカスタマイズ"
+bullet2 = "納得いくまでクリアして描き直し"
+bullet3 = "タッチデバイス（タブレット・スマートフォン）に対応"
+description = "マウスやタッチスクリーンで手書きの署名を作成します。個人的で本物らしい署名に最適です。"
+title = "手書きで署名"
+
+[wetSignature.tooltip.type]
+bullet1 = "複数のフォントから選択"
+bullet2 = "文字サイズと色をカスタマイズ"
+bullet3 = "定型的な署名に最適"
+description = "入力したテキストから署名を生成します。高速で一貫性があり、ビジネス文書に適しています。"
+title = "テキストで署名"
+
+[wetSignature.tooltip.upload]
+bullet1 = "PNG、JPG などの画像形式に対応"
+bullet2 = "最良の結果のため透明背景を推奨"
+bullet3 = "署名領域に合わせて画像をリサイズ"
+description = "作成済みの署名画像をアップロードします。スキャンした署名や会社ロゴがある場合に最適です。"
+title = "署名画像をアップロード"
+
 [workspace]
 title = "ワークスペース"
 
@@ -8014,9 +8317,9 @@ disable = "無効化"
 disabled = "無効"
 editRole = "ロールを編集"
 enable = "有効化"
+loading = "メンバーを読み込み中..."
 locked = "ロック中"
 lockedBadge = "ロック中"
-loading = "メンバーを読み込み中..."
 loginRequired = "先にログインモードを有効にしてください"
 member = "メンバー"
 noMembersFound = "メンバーが見つかりません"
@@ -8262,278 +8565,3 @@ cancel = "キャンセル"
 confirm = "展開"
 message = "このZIPには{{count}}個のファイルが含まれています。展開しますか？"
 title = "大きな ZIP ファイル"
-
-[cloudBadge]
-tooltip = "この操作はクラウドクレジットを消費します"
-
-[team]
-cancelInviteError = "招待の取り消しに失敗しました"
-confirmCancelInvite = "この招待を取り消してもよろしいですか？"
-confirmLeave = "このチームから退出してもよろしいですか？"
-confirmLeaveLeader = "あなたはチームリーダーです。退出するとチームから削除されます。よろしいですか？"
-confirmRemove = "このメンバーを削除してもよろしいですか？"
-editName = "チーム名を編集"
-inviteCancelled = "招待を取り消しました"
-inviteError = "招待の送信に失敗しました"
-inviteSent = "招待を送信しました"
-leader = "リーダー"
-leaveButton = "チームを退出"
-leaveError = "チームの退出に失敗しました"
-leaveSuccess = "チームを退出しました"
-loading = "チーム情報を読み込み中..."
-memberCount = "{{count}} 名のメンバー"
-memberRemoved = "メンバーを削除しました"
-namePlaceholder = "チーム名を入力"
-personal = "個人"
-removeError = "メンバーの削除に失敗しました"
-renameError = "チーム名の変更に失敗しました"
-renameSuccess = "チーム名を変更しました"
-
-[team.invitationBanner]
-message = "があなたを招待しました"
-acceptButton = "承認"
-rejectButton = "辞退"
-
-[team.features]
-badge = "Team の機能"
-subtitle = "チームでコラボレーション"
-title = "チームコラボレーション"
-viewPlans = "プランを見る"
-
-[team.features.billing]
-description = "請求とサブスクリプションを管理"
-title = "請求管理"
-
-[team.features.credits]
-description = "メンバー全員で共有するクレジットプール"
-title = "共有クレジット"
-
-[team.features.dashboard]
-description = "チームのアクティビティと利用状況を表示"
-title = "チームダッシュボード"
-
-[team.features.invite]
-description = "チームにメンバーを追加"
-title = "メンバーを招待"
-
-[team.invite]
-cancelLabel = "キャンセル"
-invalidEmail = "無効なメールアドレスです"
-placeholder = "メールアドレスを入力"
-sendButton = "招待を送信"
-title = "チームメンバーを招待"
-
-[team.members]
-emailColumn = "メールアドレス"
-empty = "まだチームメンバーがいません"
-nameColumn = "名前"
-pending = "保留"
-remove = "削除"
-roleColumn = "役割"
-title = "チームメンバー"
-
-[team.upgrade]
-button = "Team にアップグレード"
-description = "チームコラボレーション機能を利用可能に"
-title = "Team プランにアップグレード"
-
-[provider.oauth2.google]
-scope = "サインイン認証"
-
-[provider.oauth2.google.clientId]
-label = "クライアント ID"
-description = "Google Cloud Console の OAuth2 クライアント ID"
-
-[provider.oauth2.google.clientSecret]
-label = "クライアントシークレット"
-description = "Google Cloud Console の OAuth2 クライアントシークレット"
-
-[provider.oauth2.google.scopes]
-label = "スコープ"
-description = "カンマ区切りの OAuth2 スコープ"
-
-[provider.oauth2.google.useAsUsername]
-label = "ユーザー名として使用"
-description = "ユーザー名として使用するフィールド（email、name、given_name、family_name）"
-
-[provider.oauth2.github]
-scope = "サインイン認証"
-
-[provider.oauth2.github.clientId]
-label = "クライアント ID"
-description = "GitHub Developer Settings の OAuth2 クライアント ID"
-
-[provider.oauth2.github.clientSecret]
-label = "クライアントシークレット"
-description = "GitHub Developer Settings の OAuth2 クライアントシークレット"
-
-[provider.oauth2.github.scopes]
-label = "スコープ"
-description = "カンマ区切りの OAuth2 スコープ"
-
-[provider.oauth2.github.useAsUsername]
-label = "ユーザー名として使用"
-description = "ユーザー名として使用するフィールド（email、login、name）"
-
-[provider.oauth2.keycloak]
-scope = "SSO"
-
-[provider.oauth2.keycloak.issuer]
-label = "Issuer URL"
-description = "Keycloak レルムの OpenID Connect Discovery エンドポイントの URL"
-
-[provider.oauth2.keycloak.clientId]
-label = "クライアント ID"
-description = "Keycloak の OAuth2 クライアント ID"
-
-[provider.oauth2.keycloak.clientSecret]
-label = "クライアントシークレット"
-description = "Keycloak の OAuth2 クライアントシークレット"
-
-[provider.oauth2.keycloak.scopes]
-label = "スコープ"
-description = "カンマ区切りの OAuth2 スコープ"
-
-[provider.oauth2.keycloak.useAsUsername]
-label = "ユーザー名として使用"
-description = "ユーザー名として使用するフィールド（email、name、given_name、family_name、preferred_username）"
-
-[provider.oauth2.generic]
-name = "汎用 OAuth2"
-scope = "SSO"
-
-[provider.oauth2.generic.enabled]
-label = "汎用 OAuth2 を有効化"
-description = "カスタム OAuth2 プロバイダーを使用した認証を有効化"
-
-[provider.oauth2.generic.provider]
-label = "プロバイダー名"
-description = "OAuth2 プロバイダー名（例：Azure AD、Okta）"
-
-[provider.oauth2.generic.issuer]
-label = "Issuer URL"
-description = "OpenID Connect Discovery（/.well-known/openid-configuration）対応のプロバイダー"
-
-[provider.oauth2.generic.clientId]
-label = "クライアント ID"
-description = "プロバイダーの OAuth2 クライアント ID"
-
-[provider.oauth2.generic.clientSecret]
-label = "クライアントシークレット"
-description = "プロバイダーの OAuth2 クライアントシークレット"
-
-[provider.oauth2.generic.scopes]
-label = "スコープ"
-description = "カンマ区切りの OAuth2 スコープ"
-
-[provider.oauth2.generic.useAsUsername]
-label = "ユーザー名として使用"
-description = "ユーザー名として使用するフィールド"
-
-[provider.oauth2.generic.autoCreateUser]
-label = "ユーザーを自動作成"
-description = "初回の OAuth2 ログイン時にユーザーアカウントを自動作成"
-
-[provider.oauth2.generic.blockRegistration]
-label = "登録をブロック"
-description = "OAuth2 経由での新規ユーザー登録を禁止"
-
-[provider.smtp]
-name = "SMTP メール"
-scope = "メール通知"
-
-[provider.smtp.enabled]
-label = "メールを有効化"
-description = "メール通知と SMTP 機能を有効化"
-
-[provider.smtp.host]
-label = "SMTP ホスト"
-description = "SMTP サーバーのホスト名または IP アドレス"
-
-[provider.smtp.port]
-label = "SMTP ポート"
-description = "SMTP 接続のポート番号（通常 25、465、587）"
-
-[provider.smtp.username]
-label = "SMTP ユーザー名"
-description = "SMTP 認証のユーザー名"
-
-[provider.smtp.password]
-label = "SMTP パスワード"
-description = "SMTP 認証のパスワード"
-
-[provider.smtp.from]
-label = "送信元アドレス"
-description = "送信者として使用するメールアドレス"
-
-[provider.saml2]
-name = "SAML2"
-scope = "SSO（SAML）"
-
-[provider.saml2.enabled]
-label = "SAML2 を有効化"
-description = "SAML2 認証を有効化（Enterprise のみ）"
-
-[provider.saml2.provider]
-label = "プロバイダー名"
-description = "SAML2 プロバイダー名"
-
-[provider.saml2.registrationId]
-label = "登録 ID"
-description = "Service Provider（SP）アプリ名"
-
-[provider.saml2.idpMetadataUri]
-label = "IDP メタデータ URI"
-description = "プロバイダーのメタデータ用 URI"
-
-[provider.saml2.idpSingleLoginUrl]
-label = "IDP シングルログイン URL"
-description = "SSO を開始するための URL"
-
-[provider.saml2.idpSingleLogoutUrl]
-label = "IDP シングルログアウト URL"
-description = "SLO を開始するための URL"
-
-[provider.saml2.idpIssuer]
-label = "IDP Issuer"
-description = "プロバイダーの ID"
-
-[provider.saml2.idpCert]
-label = "IDP 証明書"
-description = "証明書のパス（例：classpath:okta.cert）"
-
-[provider.saml2.privateKey]
-label = "秘密鍵"
-description = "秘密鍵のパス"
-
-[provider.saml2.spCert]
-label = "SP 証明書"
-description = "署名証明書のパス"
-
-[provider.saml2.autoCreateUser]
-label = "ユーザーを自動作成"
-description = "初回の SAML2 ログイン時にユーザーアカウントを自動作成"
-
-[provider.saml2.blockRegistration]
-label = "登録をブロック"
-description = "SAML2 経由での新規ユーザー登録を禁止"
-
-[provider.googledrive]
-name = "Google Drive"
-scope = "ファイルのインポート"
-
-[provider.googledrive.enabled]
-label = "Google Drive ファイルピッカーを有効化"
-description = "ユーザーが Google Drive から直接ファイルをインポートできるようにする"
-
-[provider.googledrive.clientId]
-label = "クライアント ID"
-description = "Google Cloud Console の Google OAuth 2.0 クライアント ID"
-
-[provider.googledrive.apiKey]
-label = "API キー"
-description = "Google Cloud Console の Google Picker API 用 Google API キー"
-
-[provider.googledrive.appId]
-label = "アプリ ID"
-description = "Google Cloud Console の Google Drive アプリ ID"
