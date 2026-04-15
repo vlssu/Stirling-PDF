@@ -1,12 +1,27 @@
 import { useRef, useEffect, useState, type KeyboardEvent } from "react";
-import { ActionIcon, ScrollArea, TextInput, Stack, Text, Paper, Box, Transition } from "@mantine/core";
+import {
+  ActionIcon,
+  ScrollArea,
+  TextInput,
+  Stack,
+  Text,
+  Paper,
+  Box,
+  Transition,
+} from "@mantine/core";
 import SendIcon from "@mui/icons-material/Send";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import CloseIcon from "@mui/icons-material/Close";
 import { useChat } from "@app/components/chat/ChatContext";
 import "@app/components/chat/ChatPanel.css";
 
-function ChatMessageBubble({ role, content }: { role: "user" | "assistant"; content: string }) {
+function ChatMessageBubble({
+  role,
+  content,
+}: {
+  role: "user" | "assistant";
+  content: string;
+}) {
   return (
     <div className={`chat-message chat-message-${role}`}>
       <Paper className={`chat-bubble chat-bubble-${role}`} p="xs" radius="md">
@@ -26,7 +41,10 @@ export function ChatPanel() {
 
   useEffect(() => {
     if (scrollRef.current) {
-      scrollRef.current.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
+      scrollRef.current.scrollTo({
+        top: scrollRef.current.scrollHeight,
+        behavior: "smooth",
+      });
     }
   }, [messages]);
 
@@ -76,7 +94,12 @@ export function ChatPanel() {
               <Text fw={600} size="sm">
                 AI Assistant
               </Text>
-              <ActionIcon variant="subtle" size="sm" onClick={toggleOpen} aria-label="Close chat">
+              <ActionIcon
+                variant="subtle"
+                size="sm"
+                onClick={toggleOpen}
+                aria-label="Close chat"
+              >
                 <CloseIcon sx={{ fontSize: 16 }} />
               </ActionIcon>
             </div>
@@ -86,15 +109,24 @@ export function ChatPanel() {
               <Stack gap="sm" p="sm">
                 {messages.length === 0 && (
                   <Text size="sm" c="dimmed" ta="center" py="xl">
-                    Ask a question about your documents or get help with PDF tools.
+                    Ask a question about your documents or get help with PDF
+                    tools.
                   </Text>
                 )}
                 {messages.map((msg) => (
-                  <ChatMessageBubble key={msg.id} role={msg.role} content={msg.content} />
+                  <ChatMessageBubble
+                    key={msg.id}
+                    role={msg.role}
+                    content={msg.content}
+                  />
                 ))}
                 {isLoading && (
                   <div className="chat-message chat-message-assistant">
-                    <Paper className="chat-bubble chat-bubble-assistant" p="xs" radius="md">
+                    <Paper
+                      className="chat-bubble chat-bubble-assistant"
+                      p="xs"
+                      radius="md"
+                    >
                       <Text size="sm" c="dimmed">
                         Thinking...
                       </Text>

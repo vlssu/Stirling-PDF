@@ -10,9 +10,19 @@ const frontendDir = process.cwd();
 const tauriDir = resolve(frontendDir, "src-tauri");
 const provisionerManifest = join(tauriDir, "provisioner", "Cargo.toml");
 
-execFileSync("cargo", ["build", "--release", "--manifest-path", provisionerManifest], { stdio: "inherit" });
+execFileSync(
+  "cargo",
+  ["build", "--release", "--manifest-path", provisionerManifest],
+  { stdio: "inherit" },
+);
 
-const provisionerExe = join(tauriDir, "provisioner", "target", "release", "stirling-provisioner.exe");
+const provisionerExe = join(
+  tauriDir,
+  "provisioner",
+  "target",
+  "release",
+  "stirling-provisioner.exe",
+);
 if (!existsSync(provisionerExe)) {
   throw new Error(`Provisioner binary not found at ${provisionerExe}`);
 }

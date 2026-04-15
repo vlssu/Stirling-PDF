@@ -1,4 +1,10 @@
-import { createContext, useContext, useReducer, useCallback, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useReducer,
+  useCallback,
+  type ReactNode,
+} from "react";
 import { useAllFiles } from "@app/contexts/FileContext";
 
 export interface ChatMessage {
@@ -70,7 +76,10 @@ function formatWorkflowResponse(data: AiWorkflowResponse): string {
     case "not_found":
       return data.reason ?? "I couldn't find the requested information.";
     case "unsupported_capability":
-      return data.message ?? `Unsupported capability: ${data.capability ?? "unknown"}`;
+      return (
+        data.message ??
+        `Unsupported capability: ${data.capability ?? "unknown"}`
+      );
     case "cannot_continue":
       return data.reason ?? "Something went wrong and I can't continue.";
     case "plan":
@@ -79,9 +88,13 @@ function formatWorkflowResponse(data: AiWorkflowResponse): string {
         : JSON.stringify(data.steps, null, 2);
     case "need_content":
     case "tool_call":
-      return data.rationale ?? data.summary ?? `Processing (${data.outcome})...`;
+      return (
+        data.rationale ?? data.summary ?? `Processing (${data.outcome})...`
+      );
     default:
-      return data.answer ?? data.summary ?? data.message ?? JSON.stringify(data);
+      return (
+        data.answer ?? data.summary ?? data.message ?? JSON.stringify(data)
+      );
   }
 }
 
@@ -107,7 +120,10 @@ export function ChatProvider({ children }: { children: ReactNode }) {
   const { files: activeFiles } = useAllFiles();
 
   const toggleOpen = useCallback(() => dispatch({ type: "TOGGLE_OPEN" }), []);
-  const setOpen = useCallback((open: boolean) => dispatch({ type: "SET_OPEN", open }), []);
+  const setOpen = useCallback(
+    (open: boolean) => dispatch({ type: "SET_OPEN", open }),
+    [],
+  );
 
   const sendMessage = useCallback(
     async (content: string) => {
@@ -149,7 +165,8 @@ export function ChatProvider({ children }: { children: ReactNode }) {
         const errorMessage: ChatMessage = {
           id: crypto.randomUUID(),
           role: "assistant",
-          content: "Failed to get a response. The AI engine may not be available yet.",
+          content:
+            "Failed to get a response. The AI engine may not be available yet.",
           timestamp: Date.now(),
         };
         dispatch({ type: "ADD_MESSAGE", message: errorMessage });
