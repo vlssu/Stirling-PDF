@@ -58,7 +58,7 @@ app.get("/api/health", (_req, res) => {
 const frontendDist = path.resolve(__dirname, "../../frontend/dist");
 
 app.use(express.static(frontendDist));
-app.get("*", (_req, res) => {
+app.get("/{*path}", (_req, res) => {
   res.sendFile(path.join(frontendDist, "index.html"));
 });
 

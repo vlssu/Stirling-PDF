@@ -89,32 +89,62 @@ stirling-pdf-node/
 
 ## Prerequisites
 
-| Dependency | Required for |
-|-----------|-------------|
-| **Node.js ≥ 18** | All features |
-| **Ghostscript (`gs`)** | Compress PDF |
-| **qpdf** | Add / Remove password |
-| **LibreOffice** | Office → PDF conversion |
-| **poppler-utils (`pdftoppm`)** | PDF → Image conversion |
+| Dependency | Version | Required for |
+|-----------|---------|-------------|
+| **Node.js** | ≥ 18.0.0 | All features |
+| **npm** | ≥ 7.0.0 | Workspace support (or use pnpm / yarn v1) |
+| **Ghostscript (`gs`)** | any | Compress PDF |
+| **qpdf** | any | Add / Remove password |
+| **LibreOffice** | any | Office → PDF conversion |
+| **poppler-utils (`pdftoppm`)** | any | PDF → Image conversion |
 
 ---
 
 ## Quick Start
 
-### Development
+### Installation
 
 ```bash
-# Install dependencies
 cd stirling-pdf-node
-npm install --workspaces
 
-# Start backend (port 3001)
-cd backend
-npm run dev
+# npm (v7 or later required for workspace support)
+npm install
 
-# Start frontend (port 5173, proxies /api/* → 3001)
-cd ../frontend
-npm run dev
+# pnpm
+pnpm install
+
+# yarn (v1)
+yarn install
+```
+
+### Development
+
+Run each workspace in a separate terminal:
+
+```bash
+# Terminal 1 — Backend (port 3001)
+# npm
+cd backend && npm run dev
+# pnpm
+cd backend && pnpm run dev
+# yarn
+cd backend && yarn dev
+
+# Terminal 2 — Frontend (port 5173, proxies /api/* → 3001)
+# npm
+cd frontend && npm run dev
+# pnpm
+cd frontend && pnpm run dev
+# yarn
+cd frontend && yarn dev
+```
+
+Or use the workspace-level shortcuts from the monorepo root:
+
+```bash
+# npm workspace shortcuts
+npm run dev:backend   # start backend
+npm run dev:frontend  # start frontend
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
@@ -122,17 +152,17 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 ### Production Build
 
 ```bash
-# Build the Vue SPA
-cd frontend && npm run build
+# Build the Vue SPA (from frontend/)
+npm run build         # or: pnpm build / yarn build
 
-# Compile backend TypeScript
-cd ../backend && npm run build
+# Compile backend TypeScript (from backend/)
+npm run build         # or: pnpm build / yarn build
 
-# Start the production server (serves the built Vue SPA)
+# Start the production server — serves the Vue SPA + API
 node dist/app.js
 ```
 
-The backend will serve the Vue SPA at `/` and expose all API routes at `/api/v1/...`.
+The backend serves the Vue SPA at `/` and exposes all API routes at `/api/v1/...`.
 
 ---
 
