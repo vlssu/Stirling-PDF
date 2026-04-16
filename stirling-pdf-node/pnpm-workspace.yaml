@@ -1,0 +1,4 @@
+# 已合并为单一项目，不再需要工作区子包
+# packages:
+#   - "backend"
+#   - "frontend"
