@@ -1,19 +1,19 @@
 <template>
-  <ToolShell title="Split PDF" description="Split a PDF into separate pages or page ranges">
+  <ToolShell title="拆分 PDF" description="将 PDF 拆分为独立页面或指定页面范围">
     <FileUploader
       v-model:files="files"
       accept=".pdf"
-      hint="Select a PDF file (up to 500 MB)"
+      hint="选择一个 PDF 文件（最大 500 MB）"
     />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="Pages to split at (optional)">
+      <el-form-item label="拆分页面（可选）">
         <el-input
           v-model="pageNumbers"
-          placeholder='e.g. "1,3,5-7" or leave empty for all pages'
+          placeholder='例如 "1,3,5-7"，留空则拆分所有页面'
         />
         <el-text type="info" size="small">
-          Specify page numbers (1-based) or ranges to split at. Leave blank to split every page.
+          使用基于 1 的页码或页码范围指定拆分点，留空则逐页拆分。
         </el-text>
       </el-form-item>
     </el-form>
@@ -26,7 +26,7 @@
         :disabled="files.length === 0"
         @click="handleSplit"
       >
-        Split PDF
+        拆分 PDF
       </el-button>
     </div>
 

@@ -1,21 +1,21 @@
 <template>
-  <ToolShell title="Add Password" description="Protect a PDF with a user password">
-    <FileUploader v-model:files="files" accept=".pdf" hint="Select a PDF file" />
+  <ToolShell title="添加密码" description="为 PDF 设置用户访问密码">
+    <FileUploader v-model:files="files" accept=".pdf" hint="选择一个 PDF 文件" />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="User password (required to open the file)">
-        <el-input v-model="password" type="password" show-password placeholder="Enter password" />
+      <el-form-item label="用户密码（打开文件时需要输入）">
+        <el-input v-model="password" type="password" show-password placeholder="请输入密码" />
       </el-form-item>
-      <el-form-item label="Owner password (optional, defaults to user password)">
-        <el-input v-model="ownerPassword" type="password" show-password placeholder="Enter owner password" />
+      <el-form-item label="所有者密码（可选，默认与用户密码相同）">
+        <el-input v-model="ownerPassword" type="password" show-password placeholder="请输入所有者密码" />
       </el-form-item>
-      <el-form-item label="Encryption strength">
+      <el-form-item label="加密强度">
         <el-radio-group v-model="keyLength">
-          <el-radio-button :value="256">256-bit AES</el-radio-button>
-          <el-radio-button :value="128">128-bit RC4</el-radio-button>
-          <el-radio-button :value="40">40-bit RC4</el-radio-button>
+          <el-radio-button :value="256">256 位 AES</el-radio-button>
+          <el-radio-button :value="128">128 位 RC4</el-radio-button>
+          <el-radio-button :value="40">40 位 RC4</el-radio-button>
         </el-radio-group>
-        <el-text type="info" size="small">Requires qpdf to be installed on the server.</el-text>
+        <el-text type="info" size="small">需要在服务器上安装 qpdf。</el-text>
       </el-form-item>
     </el-form>
 
@@ -27,7 +27,7 @@
         :disabled="files.length === 0 || !password"
         @click="handleAddPassword"
       >
-        Add Password
+        添加密码
       </el-button>
     </div>
 

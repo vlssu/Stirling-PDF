@@ -7,7 +7,7 @@
     >
       <el-menu-item index="/">
         <el-icon><House /></el-icon>
-        <span>Home</span>
+        <span>首页</span>
       </el-menu-item>
 
       <el-menu-item-group

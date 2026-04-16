@@ -1,17 +1,17 @@
 <template>
-  <ToolShell title="Rotate PDF" description="Rotate all pages in a PDF by a chosen angle">
+  <ToolShell title="旋转 PDF" description="将 PDF 中所有页面按指定角度旋转">
     <FileUploader
       v-model:files="files"
       accept=".pdf"
-      hint="Select a PDF file"
+      hint="选择一个 PDF 文件"
     />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="Rotation angle">
+      <el-form-item label="旋转角度">
         <el-radio-group v-model="angle">
-          <el-radio-button :value="90">90°</el-radio-button>
+          <el-radio-button :value="90">顺时针 90°</el-radio-button>
           <el-radio-button :value="180">180°</el-radio-button>
-          <el-radio-button :value="270">270°</el-radio-button>
+          <el-radio-button :value="270">逆时针 90°</el-radio-button>
         </el-radio-group>
       </el-form-item>
     </el-form>
@@ -24,7 +24,7 @@
         :disabled="files.length === 0"
         @click="handleRotate"
       >
-        Rotate PDF
+        旋转 PDF
       </el-button>
     </div>
 

@@ -1,10 +1,10 @@
 <template>
-  <ToolShell title="Images to PDF" description="Convert JPEG/PNG images into a single PDF document">
+  <ToolShell title="图片转 PDF" description="将 JPEG/PNG 等图片转换为 PDF 文档">
     <FileUploader
       v-model:files="files"
       multiple
       accept="image/jpeg,image/png,image/gif,image/bmp,image/webp"
-      hint="Select one or more image files"
+      hint="选择一张或多张图片文件"
     />
 
     <div class="actions">
@@ -15,7 +15,7 @@
         :disabled="files.length === 0"
         @click="handleConvert"
       >
-        Convert to PDF
+        转换为 PDF
       </el-button>
     </div>
 

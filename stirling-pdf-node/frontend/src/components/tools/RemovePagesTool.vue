@@ -1,15 +1,15 @@
 <template>
-  <ToolShell title="Remove Pages" description="Remove specific pages from a PDF">
-    <FileUploader v-model:files="files" accept=".pdf" hint="Select a PDF file" />
+  <ToolShell title="删除页面" description="从 PDF 中删除指定页面">
+    <FileUploader v-model:files="files" accept=".pdf" hint="选择一个 PDF 文件" />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="Pages to remove">
+      <el-form-item label="要删除的页面">
         <el-input
           v-model="pageNumbers"
-          placeholder='e.g. "1,3,5-7"'
+          placeholder='例如 "1,3,5-7"'
         />
         <el-text type="info" size="small">
-          Use 1-based page numbers. Examples: "1", "2,4", "3-6"
+          使用基于 1 的页码，示例：「1」「2,4」「3-6」
         </el-text>
       </el-form-item>
     </el-form>
@@ -22,7 +22,7 @@
         :disabled="files.length === 0 || !pageNumbers"
         @click="handleRemove"
       >
-        Remove Pages
+        删除页面
       </el-button>
     </div>
 

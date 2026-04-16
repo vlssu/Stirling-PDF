@@ -1,12 +1,12 @@
 <template>
-  <ToolShell title="Office to PDF" description="Convert Word, Excel, or PowerPoint to PDF (requires LibreOffice)">
+  <ToolShell title="Office 转 PDF" description="将 Word、Excel 或 PowerPoint 转换为 PDF（需要安装 LibreOffice）">
     <FileUploader
       v-model:files="files"
       accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,.odt,.ods,.odp,.rtf,.txt,.csv"
-      hint="Select an Office document"
+      hint="选择一个 Office 文档"
     />
     <el-text type="info" size="small">
-      Requires <code>libreoffice</code> to be installed on the server.
+      需要在服务器上安装 <code>libreoffice</code>。
     </el-text>
 
     <div class="actions">
@@ -17,7 +17,7 @@
         :disabled="files.length === 0"
         @click="handleConvert"
       >
-        Convert to PDF
+        转换为 PDF
       </el-button>
     </div>
 

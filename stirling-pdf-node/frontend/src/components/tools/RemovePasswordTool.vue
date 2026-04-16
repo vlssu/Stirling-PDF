@@ -1,11 +1,11 @@
 <template>
-  <ToolShell title="Remove Password" description="Remove password protection from a PDF">
-    <FileUploader v-model:files="files" accept=".pdf" hint="Select a password-protected PDF" />
+  <ToolShell title="移除密码" description="解除 PDF 的密码保护">
+    <FileUploader v-model:files="files" accept=".pdf" hint="选择一个受密码保护的 PDF 文件" />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="Current password">
-        <el-input v-model="password" type="password" show-password placeholder="Enter the current password" />
-        <el-text type="info" size="small">Requires qpdf to be installed on the server.</el-text>
+      <el-form-item label="当前密码">
+        <el-input v-model="password" type="password" show-password placeholder="请输入当前密码" />
+        <el-text type="info" size="small">需要在服务器上安装 qpdf。</el-text>
       </el-form-item>
     </el-form>
 
@@ -17,7 +17,7 @@
         :disabled="files.length === 0"
         @click="handleRemovePassword"
       >
-        Remove Password
+        移除密码
       </el-button>
     </div>
 

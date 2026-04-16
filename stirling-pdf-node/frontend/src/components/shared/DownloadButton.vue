@@ -4,10 +4,10 @@
       <template #title>
         <div class="success-content">
           <el-icon><CircleCheckFilled /></el-icon>
-          <span>Processing complete!</span>
+          <span>处理完成！</span>
         </div>
       </template>
-      <p>Your file is ready to download.</p>
+      <p>文件已准备就绪，可以下载。</p>
     </el-alert>
     <el-button
       type="primary"
@@ -16,7 +16,7 @@
       class="download-btn"
     >
       <el-icon><Download /></el-icon>
-      Download {{ filename }}
+      下载 {{ filename }}
     </el-button>
   </div>
 </template>

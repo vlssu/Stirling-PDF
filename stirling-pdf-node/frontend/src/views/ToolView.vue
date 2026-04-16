@@ -3,10 +3,10 @@
     <component :is="toolComponent" v-if="toolComponent" />
     <el-empty
       v-else
-      description="Tool not found"
+      description="工具未找到"
       :image-size="120"
     >
-      <el-button @click="$router.push('/')">Back to Home</el-button>
+      <el-button @click="$router.push('/')">返回首页</el-button>
     </el-empty>
   </div>
 </template>

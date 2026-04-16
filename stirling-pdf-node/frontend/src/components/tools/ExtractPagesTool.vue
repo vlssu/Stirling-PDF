@@ -1,15 +1,15 @@
 <template>
-  <ToolShell title="Extract Pages" description="Extract specific pages from a PDF into a new file">
-    <FileUploader v-model:files="files" accept=".pdf" hint="Select a PDF file" />
+  <ToolShell title="提取页面" description="从 PDF 中提取指定页面并保存为新文件">
+    <FileUploader v-model:files="files" accept=".pdf" hint="选择一个 PDF 文件" />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="Pages to extract">
+      <el-form-item label="要提取的页面">
         <el-input
           v-model="pageNumbers"
-          placeholder='e.g. "1,3,5-7" or "all"'
+          placeholder='例如 "1,3,5-7" 或 "all"'
         />
         <el-text type="info" size="small">
-          Use 1-based page numbers. Examples: "1,3", "2-5", "1,3,5-8", "all"
+          使用基于 1 的页码，示例：「1,3」「2-5」「1,3,5-8」「all」
         </el-text>
       </el-form-item>
     </el-form>
@@ -22,7 +22,7 @@
         :disabled="files.length === 0"
         @click="handleExtract"
       >
-        Extract Pages
+        提取页面
       </el-button>
     </div>
 

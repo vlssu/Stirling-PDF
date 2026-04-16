@@ -1,10 +1,10 @@
 <template>
-  <ToolShell title="Merge PDF" description="Combine multiple PDF files into one document">
+  <ToolShell title="合并 PDF" description="将多个 PDF 文件合并为一个文档">
     <FileUploader
       v-model:files="files"
       multiple
       accept=".pdf"
-      hint="Select two or more PDF files (up to 500 MB each)"
+      hint="选择两个或更多 PDF 文件（每个最大 500 MB）"
     />
 
     <div class="actions">
@@ -15,7 +15,7 @@
         :disabled="files.length < 2"
         @click="handleMerge"
       >
-        Merge PDFs
+        合并 PDF
       </el-button>
     </div>
 

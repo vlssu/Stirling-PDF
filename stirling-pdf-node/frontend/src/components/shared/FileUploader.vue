@@ -19,7 +19,7 @@
     <div class="upload-placeholder" v-if="!files.length">
       <el-icon class="upload-icon" size="48"><UploadFilled /></el-icon>
       <p class="upload-text">
-        <strong>Click to upload</strong> or drag and drop
+        <strong>点击上传</strong> 或拖拽文件至此处
       </p>
       <p class="upload-hint">{{ hint }}</p>
     </div>
@@ -46,7 +46,7 @@
 
       <div class="add-more" @click.stop="triggerFileInput" v-if="multiple">
         <el-icon><Plus /></el-icon>
-        <span>Add more files</span>
+        <span>继续添加文件</span>
       </div>
     </div>
   </div>
@@ -65,7 +65,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   multiple: false,
   accept: ".pdf",
-  hint: "PDF files up to 500 MB",
+  hint: "PDF 文件，最大 500 MB",
 });
 
 const emit = defineEmits<{

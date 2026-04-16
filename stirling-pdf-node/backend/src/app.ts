@@ -55,7 +55,7 @@ app.get("/api/health", (_req, res) => {
 // ---------------------------------------------------------------------------
 // Serve built Vue SPA in production
 // ---------------------------------------------------------------------------
-const frontendDist = path.resolve(__dirname, "../../frontend/dist");
+const frontendDist = path.resolve(__dirname, "..", "public");
 
 app.use(express.static(frontendDist));
 app.get("/{*path}", (_req, res) => {

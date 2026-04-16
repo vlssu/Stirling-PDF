@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./frontend/src"),
     },
   },
   server: {
@@ -19,7 +19,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: "dist",
+    outDir: "public",
     emptyOutDir: true,
   },
+  root: ".",
 });

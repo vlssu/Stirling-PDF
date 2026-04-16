@@ -1,24 +1,24 @@
 <template>
-  <ToolShell title="Add Watermark" description="Add a text watermark to all pages of a PDF">
-    <FileUploader v-model:files="files" accept=".pdf" hint="Select a PDF file" />
+  <ToolShell title="添加水印" description="在 PDF 所有页面上添加文字水印">
+    <FileUploader v-model:files="files" accept=".pdf" hint="选择一个 PDF 文件" />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="Watermark text">
-        <el-input v-model="text" placeholder="e.g. CONFIDENTIAL" />
+      <el-form-item label="水印文字">
+        <el-input v-model="text" placeholder="例如：机密文件" />
       </el-form-item>
       <el-row :gutter="16">
         <el-col :span="8">
-          <el-form-item label="Font size">
+          <el-form-item label="字体大小">
             <el-input-number v-model="fontSize" :min="10" :max="200" :step="5" style="width:100%" />
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="Opacity (0–1)">
+          <el-form-item label="不透明度（0–1）">
             <el-slider v-model="opacity" :min="0" :max="1" :step="0.05" show-input />
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="Rotation (°)">
+          <el-form-item label="旋转角度（°）">
             <el-input-number v-model="rotation" :min="-180" :max="180" :step="15" style="width:100%" />
           </el-form-item>
         </el-col>
@@ -33,7 +33,7 @@
         :disabled="files.length === 0 || !text"
         @click="handleWatermark"
       >
-        Add Watermark
+        添加水印
       </el-button>
     </div>
 

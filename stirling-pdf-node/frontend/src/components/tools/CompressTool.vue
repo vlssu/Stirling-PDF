@@ -1,18 +1,18 @@
 <template>
-  <ToolShell title="Compress PDF" description="Reduce file size using Ghostscript (must be installed)">
-    <FileUploader v-model:files="files" accept=".pdf" hint="Select a PDF file" />
+  <ToolShell title="压缩 PDF" description="使用 Ghostscript 减小 PDF 文件体积（需要服务器已安装 Ghostscript）">
+    <FileUploader v-model:files="files" accept=".pdf" hint="选择一个 PDF 文件" />
 
     <el-form label-position="top" class="params-form" v-if="files.length > 0">
-      <el-form-item label="Quality / Compression level">
+      <el-form-item label="质量 / 压缩级别">
         <el-select v-model="quality" style="width: 100%">
-          <el-option value="screen" label="Screen (smallest, 72 DPI)" />
-          <el-option value="ebook" label="eBook (medium, 150 DPI)" />
-          <el-option value="printer" label="Printer (high, 300 DPI)" />
-          <el-option value="prepress" label="Prepress (highest, colour managed)" />
-          <el-option value="default" label="Default" />
+          <el-option value="screen" label="屏幕（最小，72 DPI）" />
+          <el-option value="ebook" label="电子书（中等，150 DPI）" />
+          <el-option value="printer" label="打印（高质量，300 DPI）" />
+          <el-option value="prepress" label="印前（最高，色彩管理）" />
+          <el-option value="default" label="默认" />
         </el-select>
         <el-text type="info" size="small">
-          Requires Ghostscript (<code>gs</code>) to be installed on the server.
+          需要在服务器上安装 Ghostscript（<code>gs</code>）。
         </el-text>
       </el-form-item>
     </el-form>
@@ -25,7 +25,7 @@
         :disabled="files.length === 0"
         @click="handleCompress"
       >
-        Compress PDF
+        压缩 PDF
       </el-button>
     </div>
 

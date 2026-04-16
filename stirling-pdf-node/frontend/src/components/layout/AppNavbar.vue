@@ -8,7 +8,7 @@
     </div>
     <div class="navbar-actions">
       <el-text type="info" size="small">
-        Node.js Edition — Vue + Express + TypeScript
+        Node.js 版 — Vue + Express + TypeScript
       </el-text>
     </div>
   </el-header>

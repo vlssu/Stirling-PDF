@@ -1,8 +1,8 @@
 <template>
   <div class="home-view">
     <div class="hero">
-      <h1>Stirling PDF <span class="badge">Node.js Edition</span></h1>
-      <p>A powerful, open-source PDF editor — built with Vue 3 + Express + TypeScript</p>
+      <h1>Stirling PDF <span class="badge">Node.js 版</span></h1>
+      <p>强大的开源 PDF 处理工具 — 基于 Vue 3 + Express + TypeScript 构建</p>
     </div>
 
     <div v-for="category in categoriesWithTools" :key="category.id" class="category-section">

@@ -1,290 +1,230 @@
-# Stirling PDF — Node.js Edition
+# Stirling PDF — Node.js 版
 
-A **Node.js port** of [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF), built with:
+[Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) 的 Node.js 移植版，**前后端一体化**单项目结构：
 
-| Layer | Technology |
-|-------|-----------|
-| **Backend** | [Express 5](https://expressjs.com/) + TypeScript |
-| **Frontend** | [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/) + TypeScript |
-| **HTTP client** | Native `fetch` (no axios) |
-| **UI library** | [Element Plus](https://element-plus.org/) |
-| **State management** | [Pinia](https://pinia.vuejs.org/) |
-| **PDF processing** | [pdf-lib](https://pdf-lib.js.org/) |
-| **File uploads** | [multer](https://github.com/expressjs/multer) |
-
----
-
-## Features
-
-| Tool | API Endpoint |
-|------|-------------|
-| Merge PDFs | `POST /api/v1/general/merge-pdfs` |
-| Split PDF | `POST /api/v1/general/split-pages` |
-| Rotate PDF | `POST /api/v1/general/rotate-pdf` |
-| Extract Pages | `POST /api/v1/general/extract-pages` |
-| Remove Pages | `POST /api/v1/general/remove-pages` |
-| Add Password | `POST /api/v1/security/add-password` |
-| Remove Password | `POST /api/v1/security/remove-password` |
-| Add Watermark | `POST /api/v1/security/add-watermark` |
-| Compress PDF | `POST /api/v1/misc/compress-pdf` |
-| Get / Update Metadata | `POST /api/v1/misc/get-metadata`, `POST /api/v1/misc/update-metadata` |
-| Images → PDF | `POST /api/v1/convert/img/pdf` |
-| PDF → Images | `POST /api/v1/convert/pdf/img` |
-| Office → PDF | `POST /api/v1/convert/office/pdf` |
-| Blank-page analysis | `POST /api/v1/filter/blank-pages` |
+| 层级 | 技术 |
+|------|------|
+| **后端** | [Express 5](https://expressjs.com/) + TypeScript |
+| **前端** | [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/) + TypeScript |
+| **UI 库** | [Element Plus](https://element-plus.org/)（中文） |
+| **状态管理** | [Pinia](https://pinia.vuejs.org/) |
+| **PDF 处理** | [pdf-lib](https://pdf-lib.js.org/) |
+| **文件上传** | [multer](https://github.com/expressjs/multer) |
 
 ---
 
-## Directory Structure
+## 支持的功能
+
+| 工具 | API 端点 |
+|------|----------|
+| 合并 PDF | `POST /api/v1/general/merge-pdfs` |
+| 拆分 PDF | `POST /api/v1/general/split-pages` |
+| 旋转 PDF | `POST /api/v1/general/rotate-pdf` |
+| 提取页面 | `POST /api/v1/general/extract-pages` |
+| 删除页面 | `POST /api/v1/general/remove-pages` |
+| 添加密码 | `POST /api/v1/security/add-password` |
+| 移除密码 | `POST /api/v1/security/remove-password` |
+| 添加水印 | `POST /api/v1/security/add-watermark` |
+| 压缩 PDF | `POST /api/v1/misc/compress-pdf` |
+| 获取/更新元数据 | `POST /api/v1/misc/get-metadata`、`POST /api/v1/misc/update-metadata` |
+| 图片转 PDF | `POST /api/v1/convert/img/pdf` |
+| PDF 转图片 | `POST /api/v1/convert/pdf/img` |
+| Office 转 PDF | `POST /api/v1/convert/office/pdf` |
+| 空白页检测 | `POST /api/v1/filter/blank-pages` |
+
+---
+
+## 项目结构
 
 ```
 stirling-pdf-node/
-├── backend/                   # Express + TypeScript
-│   ├── src/
-│   │   ├── app.ts             # Entry point
-│   │   ├── controllers/
-│   │   │   ├── general/       # merge, split, rotate, extract, remove pages
-│   │   │   ├── security/      # password, watermark
-│   │   │   ├── misc/          # metadata, compress
-│   │   │   ├── converters/    # image↔PDF, office→PDF
-│   │   │   └── filters/       # blank-page analysis
-│   │   ├── services/
-│   │   │   └── pdfService.ts  # Core PDF operations (pdf-lib + CLI)
-│   │   ├── middleware/
-│   │   │   ├── upload.ts      # multer configuration
-│   │   │   └── errorHandler.ts
-│   │   └── utils/
-│   │       └── fileUtils.ts   # filename helpers, page-number parser
-│   ├── tsconfig.json
-│   └── package.json
+├── package.json          # 统一依赖（前后端合并）
+├── tsconfig.json         # 前端 TypeScript 配置（vue-tsc）
+├── tsconfig.server.json  # 后端 TypeScript 配置（tsc 编译）
+├── tsconfig.node.json    # vite.config.ts 配置
+├── vite.config.ts        # Vite 配置（前端入口）
+├── index.html            # 前端 HTML 入口
 │
-└── frontend/                  # Vue 3 + TypeScript
-    ├── src/
-    │   ├── main.ts
-    │   ├── App.vue
-    │   ├── api/
-    │   │   └── client.ts      # fetch-only API layer
-    │   ├── composables/
-    │   │   └── useToolOperation.ts  # Unified hook for all tools
-    │   ├── stores/
-    │   │   └── files.ts       # Pinia file store
-    │   ├── router/
-    │   │   └── index.ts
-    │   ├── data/
-    │   │   └── tools.ts       # Tool registry
-    │   ├── types/
-    │   │   └── tool.ts
-    │   ├── components/
-    │   │   ├── layout/        # AppLayout, AppNavbar, AppSidebar
-    │   │   ├── shared/        # FileUploader, DownloadButton, ToolShell
-    │   │   └── tools/         # One component per PDF tool
-    │   └── views/
-    │       ├── HomeView.vue   # Tool picker grid
-    │       └── ToolView.vue   # Dynamic tool renderer
-    ├── vite.config.ts
-    └── package.json
+├── backend/              # Express + TypeScript 后端源码
+│   └── src/
+│       ├── app.ts                # 应用入口
+│       ├── controllers/          # API 控制器
+│       ├── services/pdfService.ts
+│       ├── middleware/
+│       └── utils/
+│
+└── frontend/             # Vue 3 + TypeScript 前端源码
+    └── src/
+        ├── main.ts
+        ├── App.vue
+        ├── api/client.ts
+        ├── composables/
+        ├── components/
+        ├── views/
+        └── ...
 ```
 
 ---
 
-## Prerequisites
+## 系统依赖
 
-| Dependency | Version | Required for |
-|-----------|---------|-------------|
-| **Node.js** | ≥ 18.0.0 | All features |
-| **npm** | ≥ 7.0.0 | Workspace support (or use pnpm / yarn v1) |
-| **Ghostscript (`gs`)** | any | Compress PDF |
-| **qpdf** | any | Add / Remove password |
-| **LibreOffice** | any | Office → PDF conversion |
-| **poppler-utils (`pdftoppm`)** | any | PDF → Image conversion |
+| 依赖 | 版本要求 | 用途 |
+|------|----------|------|
+| **Node.js** | ≥ 18.0.0 | 所有功能 |
+| **Ghostscript (`gs`)** | 任意 | 压缩 PDF |
+| **qpdf** | 任意 | 添加 / 移除密码 |
+| **LibreOffice** | 任意 | Office 转 PDF |
+| **poppler-utils (`pdftoppm`)** | 任意 | PDF 转图片 |
 
 ---
 
-## Quick Start
+## 快速开始
 
-### Installation
+### 安装依赖
 
 ```bash
 cd stirling-pdf-node
-
-# npm (v7 or later required for workspace support)
 npm install
-
-# pnpm
-pnpm install
-
-# yarn (v1)
-yarn install
 ```
 
-### Development
-
-Run each workspace in a separate terminal:
+### 开发模式（一键启动前后端）
 
 ```bash
-# Terminal 1 — Backend (port 3001)
-# npm
-cd backend && npm run dev
-# pnpm
-cd backend && pnpm run dev
-# yarn
-cd backend && yarn dev
-
-# Terminal 2 — Frontend (port 5173, proxies /api/* → 3001)
-# npm
-cd frontend && npm run dev
-# pnpm
-cd frontend && pnpm run dev
-# yarn
-cd frontend && yarn dev
+npm run dev
+# 后端监听 http://localhost:3001
+# 前端开发服务器 http://localhost:5173（自动代理 /api/* 至后端）
 ```
 
-Or use the workspace-level shortcuts from the monorepo root:
+打开浏览器访问 [http://localhost:5173](http://localhost:5173)。
+
+### 单独启动
 
 ```bash
-# npm workspace shortcuts
-npm run dev:backend   # start backend
-npm run dev:frontend  # start frontend
+# 仅后端
+npm run dev:server
+
+# 仅前端
+npm run dev:client
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Production Build
+### 生产构建
 
 ```bash
-# Build the Vue SPA (from frontend/)
-npm run build         # or: pnpm build / yarn build
+# 1. 构建前端 SPA（输出到 public/）
+# 2. 编译后端 TypeScript（输出到 dist/）
+npm run build
 
-# Compile backend TypeScript (from backend/)
-npm run build         # or: pnpm build / yarn build
-
-# Start the production server — serves the Vue SPA + API
-node dist/app.js
+# 启动生产服务（同时提供前端静态文件和 API）
+npm start
+# 访问 http://localhost:3001
 ```
-
-The backend serves the Vue SPA at `/` and exposes all API routes at `/api/v1/...`.
 
 ---
 
-## API Reference
+## API 参考
 
-All endpoints accept `multipart/form-data` with `fileInput` as the file field name.
+所有端点接受 `multipart/form-data`，文件字段名为 `fileInput`。
 
-### Merge PDFs
+### 合并 PDF
 ```
 POST /api/v1/general/merge-pdfs
-Fields: fileInput[] (2+ PDF files)
-Returns: application/pdf
+字段: fileInput[]（2 个或更多 PDF 文件）
+返回: application/pdf
 ```
 
-### Split PDF
+### 拆分 PDF
 ```
 POST /api/v1/general/split-pages
-Fields: fileInput (PDF), pageNumbers (optional, e.g. "1,3,5-7")
-Returns: application/zip
+字段: fileInput（PDF），pageNumbers（可选，例如 "1,3,5-7"）
+返回: application/zip
 ```
 
-### Rotate PDF
+### 旋转 PDF
 ```
 POST /api/v1/general/rotate-pdf
-Fields: fileInput (PDF), angle (90 | 180 | 270)
-Returns: application/pdf
+字段: fileInput（PDF），angle（90 | 180 | 270）
+返回: application/pdf
 ```
 
-### Add Password
+### 添加密码
 ```
 POST /api/v1/security/add-password
-Fields: fileInput (PDF), password, ownerPassword (optional), keyLength (40|128|256)
-Returns: application/pdf
-Requires: qpdf
+字段: fileInput（PDF），password，ownerPassword（可选），keyLength（40|128|256）
+返回: application/pdf
+依赖: qpdf
 ```
 
-### Remove Password
+### 移除密码
 ```
 POST /api/v1/security/remove-password
-Fields: fileInput (PDF), password
-Returns: application/pdf
-Requires: qpdf
+字段: fileInput（PDF），password
+返回: application/pdf
+依赖: qpdf
 ```
 
-### Add Watermark
+### 添加水印
 ```
 POST /api/v1/security/add-watermark
-Fields: fileInput (PDF), text, fontSize (default 50), opacity (default 0.3), rotation (default 45)
-Returns: application/pdf
+字段: fileInput（PDF），text，fontSize（默认 50），opacity（默认 0.3），rotation（默认 45）
+返回: application/pdf
 ```
 
-### Compress PDF
+### 压缩 PDF
 ```
 POST /api/v1/misc/compress-pdf
-Fields: fileInput (PDF), quality (screen|ebook|printer|prepress|default)
-Returns: application/pdf
-Requires: Ghostscript (gs)
+字段: fileInput（PDF），quality（screen|ebook|printer|prepress|default）
+返回: application/pdf
+依赖: Ghostscript（gs）
 ```
 
-### Get Metadata
+### 获取元数据
 ```
 POST /api/v1/misc/get-metadata
-Fields: fileInput (PDF)
-Returns: application/json { title, author, subject, keywords, producer, creator }
+字段: fileInput（PDF）
+返回: application/json { title, author, subject, keywords, producer, creator }
 ```
 
-### Update Metadata
+### 更新元数据
 ```
 POST /api/v1/misc/update-metadata
-Fields: fileInput (PDF), title, author, subject, keywords, producer, creator
-Returns: application/pdf
+字段: fileInput（PDF），title，author，subject，keywords，producer，creator
+返回: application/pdf
 ```
 
-### Images → PDF
+### 图片转 PDF
 ```
 POST /api/v1/convert/img/pdf
-Fields: fileInput[] (JPEG/PNG images)
-Returns: application/pdf
+字段: fileInput[]（JPEG/PNG 图片）
+返回: application/pdf
 ```
 
-### PDF → Images
+### PDF 转图片
 ```
 POST /api/v1/convert/pdf/img
-Fields: fileInput (PDF), dpi (72|150|300, default 150)
-Returns: image/png (single page) | application/zip (multiple pages)
-Requires: pdftoppm (poppler-utils)
+字段: fileInput（PDF），dpi（72|150|300，默认 150）
+返回: image/png（单页）| application/zip（多页）
+依赖: pdftoppm（poppler-utils）
 ```
 
-### Office → PDF
+### Office 转 PDF
 ```
 POST /api/v1/convert/office/pdf
-Fields: fileInput (Office document)
-Returns: application/pdf
-Requires: LibreOffice
+字段: fileInput（Office 文档）
+返回: application/pdf
+依赖: LibreOffice
 ```
 
 ---
 
-## Architecture Notes
+## 架构说明
 
-### fetch-only HTTP client
+### fetch-only HTTP 客户端
 
-All frontend HTTP requests use native `fetch` — no axios dependency.
-See `frontend/src/api/client.ts`:
+前端所有 HTTP 请求使用原生 `fetch`，无 axios 依赖。参见 `frontend/src/api/client.ts`。
 
-```typescript
-export async function uploadFiles(
-  endpoint: string,
-  files: File | File[],
-  params: Record<string, string | number | boolean> = {}
-): Promise<Blob> {
-  const formData = new FormData();
-  // ... build form data ...
-  const response = await fetch(`/api/v1${endpoint}`, { method: "POST", body: formData });
-  if (!response.ok) throw new Error(/* ... */);
-  return response.blob();
-}
-```
+### useToolOperation 组合式函数
 
-### useToolOperation composable
-
-Every tool uses a single composable for consistent state management:
+每个工具通过统一的组合式函数管理状态：
 
 ```typescript
 const { loading, error, resultBlob, execute } = useToolOperation({
@@ -294,10 +234,11 @@ const { loading, error, resultBlob, execute } = useToolOperation({
 });
 ```
 
-### PDF processing
+### PDF 处理
 
-- Pure Node.js operations (merge, split, rotate, watermark, metadata) → **pdf-lib**
-- Compression → **Ghostscript CLI** (`gs`)
-- Encryption → **qpdf CLI**
-- Office conversion → **LibreOffice CLI**
-- PDF rendering → **pdftoppm CLI** (poppler-utils)
+- 纯 Node.js 操作（合并、拆分、旋转、水印、元数据）→ **pdf-lib**
+- 压缩 → **Ghostscript CLI**（`gs`）
+- 加密 → **qpdf CLI**
+- Office 转换 → **LibreOffice CLI**
+- PDF 渲染 → **pdftoppm CLI**（poppler-utils）
+

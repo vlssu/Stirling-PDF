@@ -1,38 +1,38 @@
 <template>
-  <ToolShell title="Edit Metadata" description="View and update title, author, subject and more">
-    <FileUploader v-model:files="files" accept=".pdf" hint="Select a PDF file" @change="loadMeta" />
+  <ToolShell title="编辑元数据" description="查看并更新标题、作者、主题等元数据">
+    <FileUploader v-model:files="files" accept=".pdf" hint="选择一个 PDF 文件" @change="loadMeta" />
 
     <div v-if="metaLoaded" class="meta-form">
-      <el-divider content-position="left">Current Metadata</el-divider>
+      <el-divider content-position="left">当前元数据</el-divider>
       <el-form label-position="top">
         <el-row :gutter="16">
           <el-col :span="12">
-            <el-form-item label="Title">
+            <el-form-item label="标题">
               <el-input v-model="meta.title" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="Author">
+            <el-form-item label="作者">
               <el-input v-model="meta.author" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="Subject">
+            <el-form-item label="主题">
               <el-input v-model="meta.subject" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="Keywords">
+            <el-form-item label="关键词">
               <el-input v-model="meta.keywords" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="Producer">
+            <el-form-item label="生产者">
               <el-input v-model="meta.producer" />
             </el-form-item>
           </el-col>
           <el-col :span="12">
-            <el-form-item label="Creator">
+            <el-form-item label="创建者">
               <el-input v-model="meta.creator" />
             </el-form-item>
           </el-col>
@@ -48,7 +48,7 @@
         :disabled="files.length === 0"
         @click="handleUpdateMeta"
       >
-        Update Metadata
+        更新元数据
       </el-button>
     </div>
 
