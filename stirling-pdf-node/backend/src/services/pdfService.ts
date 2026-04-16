@@ -3,12 +3,15 @@ import {
   degrees,
   rgb,
   StandardFonts,
-  PDFName,
-  PDFString,
-  PDFHexString,
 } from "pdf-lib";
 import sharp from "sharp";
 import fs from "fs";
+import path from "path";
+import os from "os";
+import { execFile } from "child_process";
+import { promisify } from "util";
+
+const execFileAsync = promisify(execFile);
 
 // ---------------------------------------------------------------------------
 // Merge
@@ -224,14 +227,13 @@ export async function imagesToPdf(
     const isJpeg =
       img.mimetype === "image/jpeg" || img.mimetype === "image/jpg";
 
-    // Convert to PNG via sharp if not jpeg/png
     let buf = img.buffer;
     let embedFn: typeof doc.embedJpg | typeof doc.embedPng;
 
     if (isJpeg) {
       embedFn = doc.embedJpg.bind(doc);
     } else {
-      // Use sharp to convert to PNG if needed
+      // Convert any non-JPEG format to PNG via sharp
       buf = await sharp(img.buffer).png().toBuffer();
       embedFn = doc.embedPng.bind(doc);
     }
@@ -251,17 +253,10 @@ export async function imagesToPdf(
 // ---------------------------------------------------------------------------
 // PDF → Images
 // ---------------------------------------------------------------------------
-// NOTE: PDF→image rendering requires a native PDF renderer.
-// We use an external CLI (pdftoppm / mutool) when available; otherwise return
-// a placeholder explaining the limitation.  The endpoint provides a best-effort
-// implementation that shells out to `pdftoppm` if present on the PATH.
-
-import { execFile } from "child_process";
-import { promisify } from "util";
-import path from "path";
-import os from "os";
-
-const execFileAsync = promisify(execFile);
+// Shells out to `pdftoppm` (poppler-utils).
+// If pdftoppm is not installed, this function will throw an error.
+// Install with: apt-get install poppler-utils (Debian/Ubuntu)
+//               brew install poppler (macOS)
 
 /**
  * Convert a PDF buffer to PNG image buffers (one per page).
@@ -309,6 +304,7 @@ export async function pdfToImages(
 /**
  * Compress a PDF using Ghostscript.
  * Quality: "screen" | "ebook" | "printer" | "prepress" | "default"
+ * Requires `gs` (Ghostscript) to be installed on the host.
  */
 export async function compressPdf(
   buffer: Buffer,
@@ -348,6 +344,7 @@ export async function compressPdf(
 
 /**
  * Convert an Office document (docx, xlsx, pptx…) to PDF using LibreOffice.
+ * Requires `libreoffice` to be installed on the host.
  */
 export async function officeToPdf(
   buffer: Buffer,
@@ -386,14 +383,12 @@ export async function officeToPdf(
 }
 
 // ---------------------------------------------------------------------------
-// Encrypt / Decrypt  (pdf-lib does not support encryption natively; we use
-// a light-weight approach: add a user-password using PDF standard encryption
-// fields via qpdf CLI when available, or fall back to a note in the PDF body)
+// Encrypt / Decrypt  (via qpdf CLI)
 // ---------------------------------------------------------------------------
 
 /**
  * Add password protection to a PDF using qpdf CLI.
- * If qpdf is unavailable, throws an informative error.
+ * Requires `qpdf` to be installed on the host.
  */
 export async function encryptPdf(
   buffer: Buffer,
@@ -409,7 +404,7 @@ export async function encryptPdf(
     fs.writeFileSync(inFile, buffer);
 
     await execFileAsync("qpdf", [
-      `--encrypt`,
+      "--encrypt",
       userPassword,
       ownerPassword,
       String(keyLength),
@@ -430,6 +425,7 @@ export async function encryptPdf(
 
 /**
  * Remove password protection from a PDF using qpdf CLI.
+ * Requires `qpdf` to be installed on the host.
  */
 export async function decryptPdf(
   buffer: Buffer,

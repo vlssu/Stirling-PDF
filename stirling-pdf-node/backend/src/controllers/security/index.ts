@@ -3,11 +3,10 @@ import { upload } from "../../middleware/upload";
 import { AppError } from "../../middleware/errorHandler";
 import {
   addWatermark,
-  getMetadata,
   encryptPdf,
   decryptPdf,
 } from "../../services/pdfService";
-import { cleanupFiles, generateFilename } from "../../utils/fileUtils";
+import { cleanupFiles, generateFilename, validateTempFilePath } from "../../utils/fileUtils";
 import fs from "fs";
 
 export const securityRouter = Router();
@@ -23,10 +22,15 @@ securityRouter.post(
     const file = req.file;
     if (!file) return next(new AppError(400, "fileInput is required"));
 
-    const body = req.body as Record<string, string>;
-    const password = body.password ?? "";
-    const ownerPassword = body.ownerPassword ?? password;
-    const keyLength = parseInt(body.keyLength ?? "256", 10) as 40 | 128 | 256;
+    const body = req.body as Record<string, unknown>;
+    const password = typeof body.password === "string" ? body.password : "";
+    const ownerPassword =
+      typeof body.ownerPassword === "string" ? body.ownerPassword : password;
+    const rawKeyLength = typeof body.keyLength === "string" ? parseInt(body.keyLength, 10) : 256;
+    const keyLength = ([40, 128, 256].includes(rawKeyLength) ? rawKeyLength : 256) as
+      | 40
+      | 128
+      | 256;
 
     if (!password) {
       cleanupFiles(file.path);
@@ -34,7 +38,8 @@ securityRouter.post(
     }
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const result = await encryptPdf(buffer, password, ownerPassword, keyLength);
       const filename = generateFilename(file.originalname, "_encrypted");
 
@@ -58,11 +63,12 @@ securityRouter.post(
     const file = req.file;
     if (!file) return next(new AppError(400, "fileInput is required"));
 
-    const body = req.body as Record<string, string>;
-    const password = body.password ?? "";
+    const body = req.body as Record<string, unknown>;
+    const password = typeof body.password === "string" ? body.password : "";
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const result = await decryptPdf(buffer, password);
       const filename = generateFilename(file.originalname, "_decrypted");
 
@@ -86,19 +92,20 @@ securityRouter.post(
     const file = req.file;
     if (!file) return next(new AppError(400, "fileInput is required"));
 
-    const body = req.body as Record<string, string>;
-    const text = body.text ?? "WATERMARK";
-    const fontSize = parseInt(body.fontSize ?? "50", 10);
-    const opacity = parseFloat(body.opacity ?? "0.3");
-    const rotation = parseInt(body.rotation ?? "45", 10);
+    const body = req.body as Record<string, unknown>;
+    const text = typeof body.text === "string" ? body.text : "WATERMARK";
+    const fontSize = parseInt(typeof body.fontSize === "string" ? body.fontSize : "50", 10);
+    const opacity = parseFloat(typeof body.opacity === "string" ? body.opacity : "0.3");
+    const rotation = parseInt(typeof body.rotation === "string" ? body.rotation : "45", 10);
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const result = await addWatermark(buffer, {
         text,
-        fontSize,
-        opacity,
-        rotation,
+        fontSize: isNaN(fontSize) ? 50 : fontSize,
+        opacity: isNaN(opacity) ? 0.3 : opacity,
+        rotation: isNaN(rotation) ? 45 : rotation,
       });
       const filename = generateFilename(file.originalname, "_watermarked");
 

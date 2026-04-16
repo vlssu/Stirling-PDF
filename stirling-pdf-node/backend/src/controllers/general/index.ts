@@ -10,7 +10,12 @@ import {
   removePagesFromPdf,
   extractPages,
 } from "../../services/pdfService";
-import { cleanupFiles, generateFilename, parsePageNumbers } from "../../utils/fileUtils";
+import {
+  cleanupFiles,
+  generateFilename,
+  parsePageNumbers,
+  validateTempFilePath,
+} from "../../utils/fileUtils";
 import fs from "fs";
 import path from "path";
 import os from "os";
@@ -25,21 +30,18 @@ generalRouter.post(
   "/merge-pdfs",
   upload.array("fileInput", 50),
   async (req: Request, res: Response, next: NextFunction) => {
-    const files = req.files as Express.Multer.File[] | undefined;
-    if (!files || files.length < 2) {
+    const files = Array.isArray(req.files) ? (req.files as Express.Multer.File[]) : [];
+    if (files.length < 2) {
       return next(new AppError(400, "At least two PDF files are required"));
     }
 
     try {
-      const buffers = files.map((f) => fs.readFileSync(f.path));
+      const buffers = files.map((f) => fs.readFileSync(validateTempFilePath(f.path)));
       const merged = await mergePdfs(buffers);
       const filename = generateFilename(files[0].originalname, "_merged");
 
       res.setHeader("Content-Type", "application/pdf");
-      res.setHeader(
-        "Content-Disposition",
-        `attachment; filename="${filename}"`
-      );
+      res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
       res.send(merged);
     } finally {
       cleanupFiles(...files.map((f) => f.path));
@@ -59,20 +61,17 @@ generalRouter.post(
     if (!file) return next(new AppError(400, "fileInput is required"));
 
     try {
-      const buffer = fs.readFileSync(file.path);
-      
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const src = await PDFDocument.load(buffer);
       const totalPages = src.getPageCount();
-      const pageSpec: string = (req.body as Record<string, string>).pageNumbers ?? "all";
+      const body = req.body as Record<string, unknown>;
+      const pageSpec = typeof body.pageNumbers === "string" ? body.pageNumbers : "all";
       const indices = parsePageNumbers(pageSpec, totalPages);
 
       const pages = await splitPdf(buffer, indices);
 
-      // Return a zip of individual PDFs
-      const zipPath = path.join(
-        os.tmpdir(),
-        `spdf-split-${Date.now()}.zip`
-      );
+      const zipPath = path.join(os.tmpdir(), `spdf-split-${Date.now()}.zip`);
       const output = fs.createWriteStream(zipPath);
       const archive = archiver("zip", { zlib: { level: 6 } });
 
@@ -92,15 +91,9 @@ generalRouter.post(
       const zipBuffer = fs.readFileSync(zipPath);
       cleanupFiles(zipPath);
 
-      const zipFilename = generateFilename(file.originalname, "_split").replace(
-        ".pdf",
-        ".zip"
-      );
+      const zipFilename = generateFilename(file.originalname, "_split").replace(".pdf", ".zip");
       res.setHeader("Content-Type", "application/zip");
-      res.setHeader(
-        "Content-Disposition",
-        `attachment; filename="${zipFilename}"`
-      );
+      res.setHeader("Content-Disposition", `attachment; filename="${zipFilename}"`);
       res.send(zipBuffer);
     } finally {
       cleanupFiles(file.path);
@@ -119,22 +112,22 @@ generalRouter.post(
     const file = req.file;
     if (!file) return next(new AppError(400, "fileInput is required"));
 
-    const angle = parseInt((req.body as Record<string, string>).angle ?? "90", 10);
+    const body = req.body as Record<string, unknown>;
+    const angleStr = typeof body.angle === "string" ? body.angle : "90";
+    const angle = parseInt(angleStr, 10);
     if (isNaN(angle) || angle % 90 !== 0) {
       cleanupFiles(file.path);
       return next(new AppError(400, "angle must be a multiple of 90"));
     }
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const rotated = await rotatePdf(buffer, angle);
       const filename = generateFilename(file.originalname, "_rotated");
 
       res.setHeader("Content-Type", "application/pdf");
-      res.setHeader(
-        "Content-Disposition",
-        `attachment; filename="${filename}"`
-      );
+      res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
       res.send(rotated);
     } finally {
       cleanupFiles(file.path);
@@ -154,12 +147,13 @@ generalRouter.post(
     if (!file) return next(new AppError(400, "fileInput is required"));
 
     try {
-      const buffer = fs.readFileSync(file.path);
-      
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const src = await PDFDocument.load(buffer);
       const totalPages = src.getPageCount();
 
-      const pageSpec: string = (req.body as Record<string, string>).pageNumbers ?? "";
+      const body = req.body as Record<string, unknown>;
+      const pageSpec = typeof body.pageNumbers === "string" ? body.pageNumbers : "";
       if (!pageSpec) {
         return next(new AppError(400, "pageNumbers is required"));
       }
@@ -169,10 +163,7 @@ generalRouter.post(
       const filename = generateFilename(file.originalname, "_pages_removed");
 
       res.setHeader("Content-Type", "application/pdf");
-      res.setHeader(
-        "Content-Disposition",
-        `attachment; filename="${filename}"`
-      );
+      res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
       res.send(result);
     } finally {
       cleanupFiles(file.path);
@@ -192,21 +183,19 @@ generalRouter.post(
     if (!file) return next(new AppError(400, "fileInput is required"));
 
     try {
-      const buffer = fs.readFileSync(file.path);
-      
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const src = await PDFDocument.load(buffer);
       const totalPages = src.getPageCount();
 
-      const pageSpec: string = (req.body as Record<string, string>).pageNumbers ?? "all";
+      const body = req.body as Record<string, unknown>;
+      const pageSpec = typeof body.pageNumbers === "string" ? body.pageNumbers : "all";
       const indices = parsePageNumbers(pageSpec, totalPages);
       const result = await extractPages(buffer, indices);
       const filename = generateFilename(file.originalname, "_extracted");
 
       res.setHeader("Content-Type", "application/pdf");
-      res.setHeader(
-        "Content-Disposition",
-        `attachment; filename="${filename}"`
-      );
+      res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
       res.send(result);
     } finally {
       cleanupFiles(file.path);

@@ -6,7 +6,7 @@ import {
   pdfToImages,
   officeToPdf,
 } from "../../services/pdfService";
-import { cleanupFiles, generateFilename } from "../../utils/fileUtils";
+import { cleanupFiles, generateFilename, validateTempFilePath } from "../../utils/fileUtils";
 import fs from "fs";
 import path from "path";
 import archiver from "archiver";
@@ -22,14 +22,14 @@ convertersRouter.post(
   "/img/pdf",
   upload.array("fileInput", 50),
   async (req: Request, res: Response, next: NextFunction) => {
-    const files = req.files as Express.Multer.File[] | undefined;
-    if (!files || files.length === 0) {
+    const files = Array.isArray(req.files) ? (req.files as Express.Multer.File[]) : [];
+    if (files.length === 0) {
       return next(new AppError(400, "At least one image file is required"));
     }
 
     try {
       const images = files.map((f) => ({
-        buffer: fs.readFileSync(f.path),
+        buffer: fs.readFileSync(validateTempFilePath(f.path)),
         mimetype: f.mimetype,
       }));
 
@@ -59,17 +59,17 @@ convertersRouter.post(
     const file = req.file;
     if (!file) return next(new AppError(400, "fileInput is required"));
 
-    const dpi = parseInt((req.body as Record<string, string>).dpi ?? "150", 10);
+    const body = req.body as Record<string, unknown>;
+    const rawDpi = typeof body.dpi === "string" ? parseInt(body.dpi, 10) : 150;
+    const dpi = isNaN(rawDpi) || rawDpi <= 0 ? 150 : Math.min(rawDpi, 600);
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const images = await pdfToImages(buffer, dpi);
 
       if (images.length === 1) {
-        const filename = generateFilename(file.originalname, "_page1").replace(
-          ".pdf",
-          ".png"
-        );
+        const filename = generateFilename(file.originalname, "_page1").replace(".pdf", ".png");
         res.setHeader("Content-Type", "image/png");
         res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
         res.send(images[0]);
@@ -94,10 +94,7 @@ convertersRouter.post(
         const zipBuffer = fs.readFileSync(zipPath);
         cleanupFiles(zipPath);
 
-        const zipFilename = generateFilename(file.originalname, "_images").replace(
-          ".pdf",
-          ".zip"
-        );
+        const zipFilename = generateFilename(file.originalname, "_images").replace(".pdf", ".zip");
         res.setHeader("Content-Type", "application/zip");
         res.setHeader("Content-Disposition", `attachment; filename="${zipFilename}"`);
         res.send(zipBuffer);
@@ -120,8 +117,11 @@ convertersRouter.post(
     if (!file) return next(new AppError(400, "fileInput is required"));
 
     try {
-      const buffer = fs.readFileSync(file.path);
-      const pdfBuffer = await officeToPdf(buffer, file.originalname);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
+      // Use only the basename to avoid path traversal in the CLI call
+      const safeName = path.basename(file.originalname);
+      const pdfBuffer = await officeToPdf(buffer, safeName);
       const filename = generateFilename(
         path.basename(file.originalname, path.extname(file.originalname)) + ".pdf",
         "_converted"

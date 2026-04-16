@@ -21,8 +21,10 @@ export function errorHandler(
   console.error("[error]", err.message);
 
   const statusCode = err instanceof AppError ? err.statusCode : 500;
+  // Use a generic label for unexpected errors to avoid leaking internal class names
+  const errorName = err instanceof AppError ? err.name : "ServerError";
   const body: ErrorResponse = {
-    error: err.name ?? "Error",
+    error: errorName,
     message: err.message ?? "Internal Server Error",
     status: statusCode,
   };

@@ -6,13 +6,13 @@ import {
   setMetadata,
   compressPdf,
 } from "../../services/pdfService";
-import { cleanupFiles, generateFilename } from "../../utils/fileUtils";
+import { cleanupFiles, generateFilename, validateTempFilePath } from "../../utils/fileUtils";
 import fs from "fs";
 
 export const miscRouter = Router();
 
 // ---------------------------------------------------------------------------
-// GET /api/v1/misc/get-metadata
+// POST /api/v1/misc/get-metadata
 // Body: fileInput (PDF)
 // ---------------------------------------------------------------------------
 miscRouter.post(
@@ -23,7 +23,8 @@ miscRouter.post(
     if (!file) return next(new AppError(400, "fileInput is required"));
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const meta = await getMetadata(buffer);
       res.json(meta);
     } finally {
@@ -43,17 +44,20 @@ miscRouter.post(
     const file = req.file;
     if (!file) return next(new AppError(400, "fileInput is required"));
 
-    const body = req.body as Record<string, string>;
+    const body = req.body as Record<string, unknown>;
+    const str = (key: string) =>
+      typeof body[key] === "string" ? (body[key] as string) : undefined;
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const result = await setMetadata(buffer, {
-        title: body.title,
-        author: body.author,
-        subject: body.subject,
-        keywords: body.keywords,
-        producer: body.producer,
-        creator: body.creator,
+        title: str("title"),
+        author: str("author"),
+        subject: str("subject"),
+        keywords: str("keywords"),
+        producer: str("producer"),
+        creator: str("creator"),
       });
       const filename = generateFilename(file.originalname, "_metadata");
 
@@ -77,16 +81,17 @@ miscRouter.post(
     const file = req.file;
     if (!file) return next(new AppError(400, "fileInput is required"));
 
-    const body = req.body as Record<string, string>;
-    const quality = (body.quality ?? "ebook") as
-      | "screen"
-      | "ebook"
-      | "printer"
-      | "prepress"
-      | "default";
+    const body = req.body as Record<string, unknown>;
+    const allowedQuality = ["screen", "ebook", "printer", "prepress", "default"] as const;
+    type Quality = (typeof allowedQuality)[number];
+    const raw = typeof body.quality === "string" ? body.quality : "ebook";
+    const quality: Quality = allowedQuality.includes(raw as Quality)
+      ? (raw as Quality)
+      : "ebook";
 
     try {
-      const buffer = fs.readFileSync(file.path);
+      const safePath = validateTempFilePath(file.path);
+      const buffer = fs.readFileSync(safePath);
       const result = await compressPdf(buffer, quality);
       const filename = generateFilename(file.originalname, "_compressed");
 
