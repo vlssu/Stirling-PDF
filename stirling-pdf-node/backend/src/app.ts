@@ -18,9 +18,12 @@ const PORT = parseInt(process.env.PORT ?? "3001", 10);
 // Rate limiting — applied to all /api routes
 // Limits each IP to 60 requests per minute to protect CPU-intensive PDF ops.
 // ---------------------------------------------------------------------------
+const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1 minute
+const RATE_LIMIT_MAX_REQUESTS = 60;     // max requests per window
+
 const apiLimiter = rateLimit({
-  windowMs: 60 * 1000,
-  max: 60,
+  windowMs: RATE_LIMIT_WINDOW_MS,
+  max: RATE_LIMIT_MAX_REQUESTS,
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: "TooManyRequests", message: "Too many requests, please try again later.", status: 429 },

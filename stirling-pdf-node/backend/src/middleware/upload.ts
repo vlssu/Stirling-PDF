@@ -13,7 +13,10 @@ const storage: StorageEngine = multer.diskStorage({
   },
 });
 
+/** Max upload size: 500 MB */
+const MAX_FILE_SIZE_BYTES = 500 * 1024 * 1024;
+
 export const upload = multer({
   storage,
-  limits: { fileSize: 500 * 1024 * 1024 }, // 500 MB per file
+  limits: { fileSize: MAX_FILE_SIZE_BYTES },
 });

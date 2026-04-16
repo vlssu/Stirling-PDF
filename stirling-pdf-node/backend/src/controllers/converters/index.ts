@@ -14,6 +14,11 @@ import os from "os";
 
 export const convertersRouter = Router();
 
+/** Default DPI for PDF→image conversion */
+const DEFAULT_DPI = 150;
+/** Maximum allowed DPI to prevent excessive resource usage */
+const MAX_DPI = 600;
+
 // ---------------------------------------------------------------------------
 // POST /api/v1/convert/img/pdf
 // Body: fileInput[] (images: JPEG/PNG/etc.)
@@ -60,8 +65,8 @@ convertersRouter.post(
     if (!file) return next(new AppError(400, "fileInput is required"));
 
     const body = req.body as Record<string, unknown>;
-    const rawDpi = typeof body.dpi === "string" ? parseInt(body.dpi, 10) : 150;
-    const dpi = isNaN(rawDpi) || rawDpi <= 0 ? 150 : Math.min(rawDpi, 600);
+    const rawDpi = typeof body.dpi === "string" ? parseInt(body.dpi, 10) : DEFAULT_DPI;
+    const dpi = isNaN(rawDpi) || rawDpi <= 0 ? DEFAULT_DPI : Math.min(rawDpi, MAX_DPI);
 
     try {
       const safePath = validateTempFilePath(file.path);

@@ -363,7 +363,11 @@ export async function officeToPdf(
       "--outdir",
       tmpDir,
       inFile,
-    ]);
+    ]).catch((err: Error) => {
+      throw new Error(
+        `LibreOffice conversion failed. Ensure libreoffice is installed and on the PATH. Original error: ${err.message}`
+      );
+    });
 
     const baseName = path.basename(originalName, path.extname(originalName));
     const outFile = path.join(tmpDir, `${baseName}.pdf`);
